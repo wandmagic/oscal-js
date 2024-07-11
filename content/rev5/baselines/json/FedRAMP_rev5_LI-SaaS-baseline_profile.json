@@ -1,80 +1,15 @@
 {
   "profile" : {
-    "uuid" : "ece2fd2d-87f7-476a-a295-6e1ec8153771",
-    "imports" : [ {
-      "href" : "#051a77c1-b61d-4995-8275-dacfe688d510",
-      "include-controls" : [ {
-        "with-ids" : [ "ac-1", "ac-2", "ac-3", "ac-7", "ac-8", "ac-14", "ac-17", "ac-18", "ac-19", "ac-20", "ac-22", "at-1", "at-2", "at-2.2", "at-3", "at-4", "au-1", "au-2", "au-3", "au-4", "au-5", "au-6", "au-8", "au-9", "au-11", "au-12", "ca-1", "ca-2", "ca-2.1", "ca-3", "ca-5", "ca-6", "ca-7", "ca-7.4", "ca-8", "ca-9", "cm-1", "cm-2", "cm-4", "cm-5", "cm-6", "cm-7", "cm-8", "cm-10", "cm-11", "cp-1", "cp-2", "cp-3", "cp-4", "cp-9", "cp-10", "ia-1", "ia-2", "ia-2.1", "ia-2.2", "ia-2.8", "ia-2.12", "ia-4", "ia-5", "ia-5.1", "ia-6", "ia-7", "ia-8", "ia-8.1", "ia-8.2", "ia-8.4", "ia-11", "ir-1", "ir-2", "ir-4", "ir-5", "ir-6", "ir-7", "ir-8", "ma-1", "ma-2", "ma-4", "ma-5", "mp-1", "mp-2", "mp-6", "mp-7", "pe-1", "pe-2", "pe-3", "pe-6", "pe-8", "pe-12", "pe-13", "pe-14", "pe-15", "pe-16", "pl-1", "pl-2", "pl-4", "pl-4.1", "pl-8", "pl-10", "pl-11", "ps-1", "ps-2", "ps-3", "ps-4", "ps-5", "ps-6", "ps-7", "ps-8", "ps-9", "ra-1", "ra-2", "ra-3", "ra-3.1", "ra-5", "ra-5.2", "ra-5.11", "ra-7", "sa-1", "sa-2", "sa-3", "sa-4", "sa-4.10", "sa-5", "sa-8", "sa-9", "sa-22", "sc-1", "sc-5", "sc-7", "sc-8", "sc-8.1", "sc-12", "sc-13", "sc-15", "sc-20", "sc-21", "sc-22", "sc-28", "sc-28.1", "sc-39", "si-1", "si-2", "si-3", "si-4", "si-5", "si-12", "sr-1", "sr-2", "sr-2.1", "sr-3", "sr-5", "sr-8", "sr-10", "sr-11", "sr-11.1", "sr-11.2", "sr-12" ]
-      } ]
-    } ],
-    "metadata" : {
-      "published" : "2023-08-31T00:00:00Z",
-      "version" : "5.1.1+fedramp-20240111-0",
-      "parties" : [ {
-        "email-addresses" : [ "info@fedramp.gov" ],
-        "links" : [ {
-          "href" : "https://fedramp.gov",
-          "rel" : "homepage"
-        }, {
-          "href" : "#a2381e87-3d04-4108-a30b-b4d2f36d001f",
-          "rel" : "logo"
-        }, {
-          "href" : "#985475ee-d4d6-4581-8fdf-d84d3d8caa48",
-          "rel" : "reference"
-        } ],
-        "short-name" : "FedRAMP PMO",
-        "addresses" : [ {
-          "addr-lines" : [ "1800 F St. NW" ],
-          "country" : "US",
-          "city" : "Washington",
-          "state" : "DC",
-          "type" : "work",
-          "postal-code" : "20006"
-        } ],
-        "uuid" : "8cc0b8e5-9650-4d5f-9796-316f05fa9a2d",
-        "name" : "Federal Risk and Authorization Management Program: Program Management Office",
-        "type" : "organization"
-      }, {
-        "links" : [ {
-          "href" : "#a2381e87-3d04-4108-a30b-b4d2f36d001f",
-          "rel" : "logo"
-        } ],
-        "short-name" : "FedRAMP JAB",
-        "uuid" : "ca9ba80e-1342-4bfd-b32a-abac468c24b4",
-        "name" : "Federal Risk and Authorization Management Program: Joint Authorization Board",
-        "type" : "organization"
-      } ],
-      "oscal-version" : "1.1.1",
-      "last-modified" : "2024-01-11T23:40:17Z",
-      "responsible-parties" : [ {
-        "party-uuids" : [ "8cc0b8e5-9650-4d5f-9796-316f05fa9a2d" ],
-        "role-id" : "prepared-by"
-      }, {
-        "party-uuids" : [ "8cc0b8e5-9650-4d5f-9796-316f05fa9a2d" ],
-        "role-id" : "fedramp-pmo"
-      }, {
-        "party-uuids" : [ "ca9ba80e-1342-4bfd-b32a-abac468c24b4" ],
-        "role-id" : "fedramp-jab"
-      } ],
-      "title" : "FedRAMP Rev 5 Tailored Low Impact Software as a Service (LI-SaaS) Baseline",
-      "roles" : [ {
-        "title" : "Document creator",
-        "id" : "prepared-by"
-      }, {
-        "title" : "The FedRAMP Program Management Office (PMO)",
-        "id" : "fedramp-pmo",
-        "short-name" : "PMO"
-      }, {
-        "title" : "The FedRAMP Joint Authorization Board (JAB)",
-        "id" : "fedramp-jab",
-        "short-name" : "JAB"
-      } ]
-    },
     "merge" : {
       "as-is" : true
     },
     "modify" : {
       "alters" : [ {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -83,91 +18,8 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ac-1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ac-1"
       }, {
-        "adds" : [ {
-          "props" : [ {
-            "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "response-point"
-          } ],
-          "position" : "starting",
-          "by-id" : "ac-2_smt"
-        }, {
-          "parts" : [ {
-            "name" : "assessment-objective",
-            "id" : "ac-2_obj_fr",
-            "props" : [ {
-              "value" : "Required",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "response-point"
-            }, {
-              "class" : "fedramp",
-              "value" : "EXAMINE",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method"
-            }, {
-              "class" : "fedramp",
-              "value" : "INTERVIEW",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method"
-            }, {
-              "class" : "fedramp",
-              "value" : "TEST",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method"
-            } ],
-            "prose" : "Determine if the organization defines information system account types to be identified and selected to support organizational missions/business functions."
-          }, {
-            "name" : "assessment-method",
-            "id" : "ac-2_asmt_fr.1",
-            "props" : [ {
-              "value" : "EXAMINE",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method"
-            } ],
-            "parts" : [ {
-              "name" : "assessment-objects",
-              "prose" : "Access control policy; procedures addressing account management; security plan; information system design documentation; information system configuration settings and associated documentation; list of active system accounts along with the name of the individual associated with each account; list of conditions for group and role membership; notifications or records of recently transferred, separated, or terminated employees; list of recently disabled information system accounts along with the name of the individual associated with each account; access authorization records; account management compliance reviews; information system monitoring records; information system audit records; other relevant documents or records."
-            } ]
-          }, {
-            "name" : "assessment-method",
-            "id" : "ac-2_asmt_fr.2",
-            "props" : [ {
-              "value" : "INTERVIEW",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method"
-            } ],
-            "parts" : [ {
-              "name" : "assessment-objects",
-              "prose" : "Organizational personnel with account management responsibilities; system/network administrators; organizational personnel with information security responsibilities."
-            } ]
-          }, {
-            "name" : "assessment-method",
-            "id" : "ac-2_asmt_fr.3",
-            "props" : [ {
-              "value" : "TEST",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method"
-            } ],
-            "parts" : [ {
-              "name" : "assessment-objects",
-              "prose" : "Organizational processes for account management on the information system; automated mechanisms for implementing account management."
-            } ]
-          } ],
-          "props" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
-            "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "method"
-          } ]
-        } ],
-        "control-id" : "ac-2",
         "removes" : [ {
           "by-id" : "ac-2_smt.b"
         }, {
@@ -188,7 +40,85 @@
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
+        } ],
+        "adds" : [ {
+          "props" : [ {
+            "value" : "Required",
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
+          } ],
+          "position" : "starting",
+          "by-id" : "ac-2_smt"
+        }, {
+          "parts" : [ {
+            "props" : [ {
+              "value" : "Required",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "response-point"
+            }, {
+              "class" : "fedramp",
+              "value" : "EXAMINE",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
+            }, {
+              "class" : "fedramp",
+              "value" : "INTERVIEW",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
+            }, {
+              "class" : "fedramp",
+              "value" : "TEST",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
+            } ],
+            "prose" : "Determine if the organization defines information system account types to be identified and selected to support organizational missions/business functions.",
+            "name" : "assessment-objective",
+            "id" : "ac-2_obj_fr"
+          }, {
+            "props" : [ {
+              "value" : "EXAMINE",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
+            } ],
+            "parts" : [ {
+              "prose" : "Access control policy; procedures addressing account management; security plan; information system design documentation; information system configuration settings and associated documentation; list of active system accounts along with the name of the individual associated with each account; list of conditions for group and role membership; notifications or records of recently transferred, separated, or terminated employees; list of recently disabled information system accounts along with the name of the individual associated with each account; access authorization records; account management compliance reviews; information system monitoring records; information system audit records; other relevant documents or records.",
+              "name" : "assessment-objects"
+            } ],
+            "name" : "assessment-method",
+            "id" : "ac-2_asmt_fr.1"
+          }, {
+            "props" : [ {
+              "value" : "INTERVIEW",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
+            } ],
+            "parts" : [ {
+              "prose" : "Organizational personnel with account management responsibilities; system/network administrators; organizational personnel with information security responsibilities.",
+              "name" : "assessment-objects"
+            } ],
+            "name" : "assessment-method",
+            "id" : "ac-2_asmt_fr.2"
+          }, {
+            "props" : [ {
+              "value" : "TEST",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
+            } ],
+            "parts" : [ {
+              "prose" : "Organizational processes for account management on the information system; automated mechanisms for implementing account management.",
+              "name" : "assessment-objects"
+            } ],
+            "name" : "assessment-method",
+            "id" : "ac-2_asmt_fr.3"
+          } ],
+          "props" : [ {
+            "class" : "FedRAMP-Tailored-LI-SaaS",
+            "value" : "ASSESS",
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
+          } ]
+        } ],
+        "control-id" : "ac-2"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -218,9 +148,9 @@
           "by-id" : "ac-7_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "NSO for non-privileged users. Attestation for privileged users related to multi-factor identification and authentication."
+            "prose" : "NSO for non-privileged users. Attestation for privileged users related to multi-factor identification and authentication.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -236,11 +166,16 @@
         } ],
         "control-id" : "ac-7"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "FED - This is related to agency data and agency policy solution."
+            "prose" : "FED - This is related to agency data and agency policy solution.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -249,18 +184,18 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ac-8",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ac-8"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "FED - This is related to agency data and agency policy solution."
+            "prose" : "FED - This is related to agency data and agency policy solution.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -269,12 +204,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ac-14",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ac-14"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -294,11 +224,16 @@
         } ],
         "control-id" : "ac-17"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "NSO - All access to Cloud SaaS are via web services and/or API. The device accessed from or whether via wired or wireless connection is out of scope. Regardless of device accessed from, must utilize approved remote access methods (AC-17), secure communication with strong encryption (SC-13), key management (SC-12), and multi-factor authentication for privileged access (IA-2\\[1\\])."
+            "prose" : "NSO - All access to Cloud SaaS are via web services and/or API. The device accessed from or whether via wired or wireless connection is out of scope. Regardless of device accessed from, must utilize approved remote access methods (AC-17), secure communication with strong encryption (SC-13), key management (SC-12), and multi-factor authentication for privileged access (IA-2\\[1\\]).",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -307,18 +242,18 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ac-18",
+        "control-id" : "ac-18"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "NSO - All access to Cloud SaaS are via web service and/or API. The device accessed from is out of the scope. Regardless of device accessed from, must utilize approved remote access methods (AC-17), secure communication with strong encryption (SC-13), key management (SC-12), and multi-factor authentication for privileged access (IA-2 \\[1\\])."
+            "prose" : "NSO - All access to Cloud SaaS are via web service and/or API. The device accessed from is out of the scope. Regardless of device accessed from, must utilize approved remote access methods (AC-17), secure communication with strong encryption (SC-13), key management (SC-12), and multi-factor authentication for privileged access (IA-2 \\[1\\]).",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -327,13 +262,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ac-19",
+        "control-id" : "ac-19"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -342,12 +277,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ac-20",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ac-20"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -367,6 +297,11 @@
         } ],
         "control-id" : "ac-22"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -375,13 +310,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "at-1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "at-1"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -390,13 +325,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "at-2",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "at-2"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -405,13 +340,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "at-2.2",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "at-2.2"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -420,13 +355,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "at-3",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "at-3"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -435,13 +370,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "at-4",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "at-4"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -450,13 +385,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "au-1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "au-1"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -465,12 +400,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "au-2",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "au-2"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -490,11 +420,16 @@
         } ],
         "control-id" : "au-3"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "NSO - Loss of availability of the audit data has been determined to have little or no impact to government business/mission needs."
+            "prose" : "NSO - Loss of availability of the audit data has been determined to have little or no impact to government business/mission needs.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -503,12 +438,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "au-4",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "au-4"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -546,6 +476,11 @@
         } ],
         "control-id" : "au-6"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -554,13 +489,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "au-8",
+        "control-id" : "au-8"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -569,18 +504,18 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "au-9",
+        "control-id" : "au-9"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "NSO - Loss of availability of the audit data has been determined as little or no impact to government business/mission needs."
+            "prose" : "NSO - Loss of availability of the audit data has been determined as little or no impact to government business/mission needs.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -589,13 +524,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "au-11",
+        "control-id" : "au-11"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -604,13 +539,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "au-12",
+        "control-id" : "au-12"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -619,12 +554,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ca-1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ca-1"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -644,6 +574,11 @@
         } ],
         "control-id" : "ca-2"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -652,12 +587,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ca-2.1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ca-2.1"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -669,9 +599,9 @@
           "by-id" : "ca-3_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: There are connection(s) to external systems. Connections (if any) shall be authorized and must: 1) Identify the interface/connection. 2) Detail what data is involved and its sensitivity. 3) Determine whether the connection is one-way or bi-directional. 4) Identify how the connection is secured."
+            "prose" : "Condition: There are connection(s) to external systems. Connections (if any) shall be authorized and must: 1) Identify the interface/connection. 2) Detail what data is involved and its sensitivity. 3) Determine whether the connection is one-way or bi-directional. 4) Identify how the connection is secured.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -687,11 +617,16 @@
         } ],
         "control-id" : "ca-3"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Attestation - for compliance with FedRAMP Tailored LI-SaaS Continuous Monitoring Requirements."
+            "prose" : "Attestation - for compliance with FedRAMP Tailored LI-SaaS Continuous Monitoring Requirements.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -700,12 +635,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ca-5",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ca-5"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -789,9 +719,9 @@
           "by-id" : "ca-9_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: There are connection(s) to external systems. Connections (if any) shall be authorized and must: 1) Identify the interface/connection. 2) Detail what data is involved and its sensitivity. 3) Determine whether the connection is one-way or bi-directional. 4) Identify how the connection is secured."
+            "prose" : "Condition: There are connection(s) to external systems. Connections (if any) shall be authorized and must: 1) Identify the interface/connection. 2) Detail what data is involved and its sensitivity. 3) Determine whether the connection is one-way or bi-directional. 4) Identify how the connection is secured.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -807,6 +737,11 @@
         } ],
         "control-id" : "ca-9"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -815,13 +750,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "cm-1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "cm-1"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -830,12 +765,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "cm-2",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "cm-2"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -883,38 +813,38 @@
           "by-id" : "cm-6_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Required - Specifically include details of least functionality."
+            "prose" : "Required - Specifically include details of least functionality.",
+            "name" : "guidance"
           }, {
-            "name" : "item",
-            "title" : "CM-6(a) Additional FedRAMP Requirements and Guidance",
-            "id" : "cm-6_fr",
             "parts" : [ {
-              "name" : "item",
-              "id" : "cm-6_fr_smt.1",
               "props" : [ {
                 "value" : "Requirement 1:",
                 "name" : "label"
               } ],
-              "prose" : "The service provider shall use the Center for Internet Security guidelines (Level 1) to establish configuration settings or establishes its own configuration settings if USGCB is not available."
-            }, {
+              "prose" : "The service provider shall use the Center for Internet Security guidelines (Level 1) to establish configuration settings or establishes its own configuration settings if USGCB is not available.",
               "name" : "item",
-              "id" : "cm-6_fr_smt.2",
+              "id" : "cm-6_fr_smt.1"
+            }, {
               "props" : [ {
                 "value" : "Requirement 2:",
                 "name" : "label"
               } ],
-              "prose" : "The service provider shall ensure that checklists for configuration settings are Security Content Automation Protocol (SCAP) (<http://scap.nist.gov/>) validated or SCAP compatible (if validated checklists are not available)."
+              "prose" : "The service provider shall ensure that checklists for configuration settings are Security Content Automation Protocol (SCAP) (<http://scap.nist.gov/>) validated or SCAP compatible (if validated checklists are not available).",
+              "name" : "item",
+              "id" : "cm-6_fr_smt.2"
             }, {
-              "name" : "guidance",
-              "id" : "cm-6_fr_gdn.1",
               "props" : [ {
                 "value" : "Guidance:",
                 "name" : "label"
               } ],
-              "prose" : "Information on the USGCB checklists can be found at: <https://csrc.nist.gov/Projects/United-States-Government-Configuration-Baseline>."
-            } ]
+              "prose" : "Information on the USGCB checklists can be found at: <https://csrc.nist.gov/Projects/United-States-Government-Configuration-Baseline>.",
+              "name" : "guidance",
+              "id" : "cm-6_fr_gdn.1"
+            } ],
+            "name" : "item",
+            "title" : "CM-6(a) Additional FedRAMP Requirements and Guidance",
+            "id" : "cm-6_fr"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -925,6 +855,11 @@
         } ],
         "control-id" : "cm-6"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -933,12 +868,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "cm-7",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "cm-7"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -958,11 +888,16 @@
         } ],
         "control-id" : "cm-8"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "NSO- Not directly related to protection of the data."
+            "prose" : "NSO- Not directly related to protection of the data.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -971,18 +906,18 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "cm-10",
+        "control-id" : "cm-10"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "NSO - Boundary is specific to SaaS environment; all access is via web services; users' machine or internal network are not contemplated. External services (SA-9), internal connection (CA-9), remote access (AC-17), and secure access (SC-12 and SC-13), and privileged authentication (IA-2\\[1\\]) are considerations."
+            "prose" : "NSO - Boundary is specific to SaaS environment; all access is via web services; users' machine or internal network are not contemplated. External services (SA-9), internal connection (CA-9), remote access (AC-17), and secure access (SC-12 and SC-13), and privileged authentication (IA-2\\[1\\]) are considerations.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -991,13 +926,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "cm-11",
+        "control-id" : "cm-11"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1006,18 +941,18 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "cp-1",
+        "control-id" : "cp-1"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs."
+            "prose" : "NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1026,18 +961,18 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "cp-2",
+        "control-id" : "cp-2"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs."
+            "prose" : "NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1046,18 +981,18 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "cp-3",
+        "control-id" : "cp-3"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs."
+            "prose" : "NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1066,12 +1001,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "cp-4",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "cp-4"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -1091,11 +1021,16 @@
         } ],
         "control-id" : "cp-9"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs."
+            "prose" : "NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1104,13 +1039,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "cp-10",
+        "control-id" : "cp-10"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1119,18 +1054,18 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ia-1",
+        "control-id" : "ia-1"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "NSO for non-privileged users. Attestation for privileged users related to multi-factor identification and authentication - specifically include description of management of service accounts."
+            "prose" : "NSO for non-privileged users. Attestation for privileged users related to multi-factor identification and authentication - specifically include description of management of service accounts.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1144,12 +1079,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ia-2",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ia-2"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -1161,14 +1091,14 @@
           "by-id" : "ia-2.1_smt"
         }, {
           "parts" : [ {
+            "parts" : [ {
+              "class" : "FedRAMP-Tailored-LI-SaaS",
+              "prose" : "FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP.",
+              "name" : "guidance"
+            } ],
             "name" : "item",
             "title" : "IA-2(1) Additional FedRAMP Requirements and Guidance",
-            "id" : "ia-2.1_fr",
-            "parts" : [ {
-              "name" : "guidance",
-              "class" : "FedRAMP-Tailored-LI-SaaS",
-              "prose" : "FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP."
-            } ]
+            "id" : "ia-2.1_fr"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1179,6 +1109,11 @@
         } ],
         "control-id" : "ia-2.1"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "value" : "Required",
@@ -1195,12 +1130,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ia-2.2",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ia-2.2"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -1230,8 +1160,6 @@
           "by-id" : "ia-2.12_smt"
         }, {
           "parts" : [ {
-            "name" : "objective",
-            "id" : "ia-2.12_obj_fr",
             "props" : [ {
               "value" : "Required",
               "ns" : "https://fedramp.gov/ns/oscal",
@@ -1252,7 +1180,9 @@
               "ns" : "https://fedramp.gov/ns/oscal",
               "name" : "method"
             } ],
-            "prose" : "Determine if the information system:\n\n- Accepts PIV credentials.\n- Electronically verifies PIV credentials."
+            "prose" : "Determine if the information system:\n\n- Accepts PIV credentials.\n- Electronically verifies PIV credentials.",
+            "name" : "objective",
+            "id" : "ia-2.12_obj_fr"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1268,6 +1198,11 @@
         } ],
         "control-id" : "ia-2.12"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1276,13 +1211,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ia-4",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ia-4"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1291,13 +1226,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ia-5",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ia-5"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1306,12 +1241,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ia-5.1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ia-5.1"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -1331,6 +1261,11 @@
         } ],
         "control-id" : "ia-6"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "value" : "Required",
@@ -1347,13 +1282,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ia-7",
+        "control-id" : "ia-7"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1362,12 +1297,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ia-8",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ia-8"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -1379,9 +1309,9 @@
           "by-id" : "ia-8.1_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP."
+            "prose" : "Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1407,9 +1337,9 @@
           "by-id" : "ia-8.2_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP."
+            "prose" : "Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1425,6 +1355,11 @@
         } ],
         "control-id" : "ia-8.2"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1433,13 +1368,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ia-8.4",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ia-8.4"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1448,13 +1383,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ia-11",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ia-11"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1463,13 +1398,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ir-1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ir-1"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1478,12 +1413,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ir-2",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ir-2"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -1503,6 +1433,11 @@
         } ],
         "control-id" : "ir-4"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1511,12 +1446,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ir-5",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ir-5"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -1536,6 +1466,11 @@
         } ],
         "control-id" : "ir-6"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1544,18 +1479,18 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ir-7",
+        "control-id" : "ir-7"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Attestation - Specifically attest to US-CERT compliance."
+            "prose" : "Attestation - Specifically attest to US-CERT compliance.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1564,13 +1499,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ir-8",
+        "control-id" : "ir-8"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1579,12 +1514,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ma-1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ma-1"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -1596,9 +1526,9 @@
           "by-id" : "ma-2_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
+            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1614,6 +1544,11 @@
         } ],
         "control-id" : "ma-2"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1622,12 +1557,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ma-4",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ma-4"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -1639,9 +1569,9 @@
           "by-id" : "ma-5_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
+            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1657,6 +1587,11 @@
         } ],
         "control-id" : "ma-5"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1665,12 +1600,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "mp-1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "mp-1"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -1682,9 +1612,9 @@
           "by-id" : "mp-2_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
+            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1710,9 +1640,9 @@
           "by-id" : "mp-6_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
+            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1738,9 +1668,9 @@
           "by-id" : "mp-7_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
+            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1756,6 +1686,11 @@
         } ],
         "control-id" : "mp-7"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1764,12 +1699,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "pe-1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "pe-1"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -1781,9 +1711,9 @@
           "by-id" : "pe-2_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
+            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1809,9 +1739,9 @@
           "by-id" : "pe-3_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
+            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1837,9 +1767,9 @@
           "by-id" : "pe-6_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
+            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1865,9 +1795,9 @@
           "by-id" : "pe-8_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
+            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1893,9 +1823,9 @@
           "by-id" : "pe-12_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
+            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1921,9 +1851,9 @@
           "by-id" : "pe-13_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
+            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1949,9 +1879,9 @@
           "by-id" : "pe-14_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
+            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -1966,18 +1896,18 @@
           } ]
         }, {
           "parts" : [ {
-            "name" : "item",
-            "title" : "PE-14(a) Additional FedRAMP Requirements and Guidance",
-            "id" : "pe-14_fr",
             "parts" : [ {
-              "name" : "item",
-              "id" : "pe-14_fr_smt.a",
               "props" : [ {
                 "value" : "(a) Requirement:",
                 "name" : "label"
               } ],
-              "prose" : "The service provider measures temperature at server inlets and humidity levels by dew point."
-            } ]
+              "prose" : "The service provider measures temperature at server inlets and humidity levels by dew point.",
+              "name" : "item",
+              "id" : "pe-14_fr_smt.a"
+            } ],
+            "name" : "item",
+            "title" : "PE-14(a) Additional FedRAMP Requirements and Guidance",
+            "id" : "pe-14_fr"
           } ],
           "by-id" : "pe-14_smt"
         } ],
@@ -1993,9 +1923,9 @@
           "by-id" : "pe-15_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
+            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2021,9 +1951,9 @@
           "by-id" : "pe-16_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
+            "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2039,6 +1969,11 @@
         } ],
         "control-id" : "pe-16"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2047,12 +1982,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "pl-1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "pl-1"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -2072,6 +2002,11 @@
         } ],
         "control-id" : "pl-2"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2080,13 +2015,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "pl-4",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "pl-4"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2095,12 +2030,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "pl-4.1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "pl-4.1"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -2120,6 +2050,11 @@
         } ],
         "control-id" : "pl-8"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2128,13 +2063,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "pl-10",
+        "control-id" : "pl-10"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2143,13 +2078,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "pl-11",
+        "control-id" : "pl-11"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2158,13 +2093,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ps-1",
+        "control-id" : "ps-1"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2173,12 +2108,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ps-2",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ps-2"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -2198,6 +2128,11 @@
         } ],
         "control-id" : "ps-3"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2206,13 +2141,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ps-4",
+        "control-id" : "ps-4"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2221,13 +2156,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ps-5",
+        "control-id" : "ps-5"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2236,18 +2171,18 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ps-6",
+        "control-id" : "ps-6"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Attestation - Specifically stating that any third-party security personnel are treated as CSP employees."
+            "prose" : "Attestation - Specifically stating that any third-party security personnel are treated as CSP employees.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2256,13 +2191,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ps-7",
+        "control-id" : "ps-7"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2271,13 +2206,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ps-8",
+        "control-id" : "ps-8"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2286,13 +2221,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ps-9",
+        "control-id" : "ps-9"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2301,13 +2236,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ra-1",
+        "control-id" : "ra-1"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "value" : "Required",
@@ -2324,12 +2259,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ra-2",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ra-2"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -2349,6 +2279,11 @@
         } ],
         "control-id" : "ra-3"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2357,12 +2292,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "ra-3.1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "ra-3.1"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -2436,6 +2366,11 @@
         } ],
         "control-id" : "ra-7"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2444,13 +2379,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sa-1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "sa-1"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2459,13 +2394,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sa-2",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "sa-2"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2474,13 +2409,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sa-3",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "sa-3"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2489,13 +2424,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sa-4",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "sa-4"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2504,13 +2439,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sa-4.10",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "sa-4.10"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2519,13 +2454,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sa-5",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "sa-5"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2534,12 +2469,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sa-8",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "sa-8"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -2577,6 +2507,11 @@
         } ],
         "control-id" : "sa-22"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2585,12 +2520,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sc-1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "sc-1"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -2602,9 +2532,9 @@
           "by-id" : "sc-5_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: If availability is a requirement, define protections in place as per control requirement."
+            "prose" : "Condition: If availability is a requirement, define protections in place as per control requirement.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2702,9 +2632,9 @@
           "by-id" : "sc-13_smt"
         }, {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Condition: If implementing need to detail how they meet it or don't meet it."
+            "prose" : "Condition: If implementing need to detail how they meet it or don't meet it.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2720,11 +2650,16 @@
         } ],
         "control-id" : "sc-13"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "NSO - Not directly related to the security of the SaaS."
+            "prose" : "NSO - Not directly related to the security of the SaaS.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2733,13 +2668,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sc-15",
+        "control-id" : "sc-15"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2748,13 +2683,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sc-20",
+        "control-id" : "sc-20"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2763,13 +2698,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sc-21",
+        "control-id" : "sc-21"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2778,12 +2713,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sc-22",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "sc-22"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -2821,6 +2751,11 @@
         } ],
         "control-id" : "sc-28.1"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2829,13 +2764,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sc-39",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "sc-39"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2844,12 +2779,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "si-1",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "si-1"
       }, {
         "adds" : [ {
           "props" : [ {
@@ -2905,6 +2835,11 @@
         } ],
         "control-id" : "si-4"
       }, {
+        "removes" : [ {
+          "by-name" : "assessment-objective"
+        }, {
+          "by-name" : "assessment-method"
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2913,18 +2848,18 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "si-5",
+        "control-id" : "si-5"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "parts" : [ {
-            "name" : "guidance",
             "class" : "FedRAMP-Tailored-LI-SaaS",
-            "prose" : "Attestation - Specifically related to US-CERT and FedRAMP communications procedures."
+            "prose" : "Attestation - Specifically related to US-CERT and FedRAMP communications procedures.",
+            "name" : "guidance"
           } ],
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2933,13 +2868,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "si-12",
+        "control-id" : "si-12"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2948,13 +2883,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sr-1",
+        "control-id" : "sr-1"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2963,13 +2898,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sr-2",
+        "control-id" : "sr-2"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2978,13 +2913,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sr-2.1",
+        "control-id" : "sr-2.1"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -2993,13 +2928,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sr-3",
+        "control-id" : "sr-3"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -3008,13 +2943,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sr-5",
+        "control-id" : "sr-5"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -3023,13 +2958,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sr-8",
+        "control-id" : "sr-8"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -3038,13 +2973,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sr-10",
+        "control-id" : "sr-10"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -3053,13 +2988,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sr-11",
+        "control-id" : "sr-11"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -3068,13 +3003,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sr-11.1",
+        "control-id" : "sr-11.1"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -3083,13 +3018,13 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sr-11.2",
+        "control-id" : "sr-11.2"
+      }, {
         "removes" : [ {
           "by-name" : "assessment-objective"
         }, {
           "by-name" : "assessment-method"
-        } ]
-      }, {
+        } ],
         "adds" : [ {
           "props" : [ {
             "class" : "FedRAMP-Tailored-LI-SaaS",
@@ -3098,12 +3033,7 @@
             "name" : "method"
           } ]
         } ],
-        "control-id" : "sr-12",
-        "removes" : [ {
-          "by-name" : "assessment-objective"
-        }, {
-          "by-name" : "assessment-method"
-        } ]
+        "control-id" : "sr-12"
       } ],
       "set-parameters" : [ {
         "constraints" : [ {
@@ -3895,26 +3825,96 @@
         } ],
         "uuid" : "985475ee-d4d6-4581-8fdf-d84d3d8caa48"
       }, {
-        "rlinks" : [ {
-          "href" : "https://www.fedramp.gov/assets/img/logo-main-fedramp.png"
-        } ],
-        "uuid" : "a2381e87-3d04-4108-a30b-b4d2f36d001f",
         "props" : [ {
           "value" : "logo",
           "name" : "type"
         } ],
-        "description" : "FedRAMP Logo"
-      }, {
-        "title" : "NIST Special Publication (SP) 800-53 revision 5",
+        "description" : "FedRAMP Logo",
         "rlinks" : [ {
-          "media-type" : "application/oscal+xml",
-          "href" : "NIST_SP-800-53_rev5_catalog.xml"
+          "href" : "https://www.fedramp.gov/assets/img/logo-main-fedramp.png"
         } ],
-        "uuid" : "051a77c1-b61d-4995-8275-dacfe688d510",
+        "uuid" : "a2381e87-3d04-4108-a30b-b4d2f36d001f"
+      }, {
         "props" : [ {
           "value" : "5.1.1",
           "name" : "version"
+        } ],
+        "title" : "NIST Special Publication (SP) 800-53 revision 5",
+        "rlinks" : [ {
+          "href" : "NIST_SP-800-53_rev5_catalog.xml",
+          "media-type" : "application/oscal+xml"
+        } ],
+        "uuid" : "051a77c1-b61d-4995-8275-dacfe688d510"
+      } ]
+    },
+    "uuid" : "ece2fd2d-87f7-476a-a295-6e1ec8153771",
+    "imports" : [ {
+      "href" : "#051a77c1-b61d-4995-8275-dacfe688d510",
+      "include-controls" : [ {
+        "with-ids" : [ "ac-1", "ac-2", "ac-3", "ac-7", "ac-8", "ac-14", "ac-17", "ac-18", "ac-19", "ac-20", "ac-22", "at-1", "at-2", "at-2.2", "at-3", "at-4", "au-1", "au-2", "au-3", "au-4", "au-5", "au-6", "au-8", "au-9", "au-11", "au-12", "ca-1", "ca-2", "ca-2.1", "ca-3", "ca-5", "ca-6", "ca-7", "ca-7.4", "ca-8", "ca-9", "cm-1", "cm-2", "cm-4", "cm-5", "cm-6", "cm-7", "cm-8", "cm-10", "cm-11", "cp-1", "cp-2", "cp-3", "cp-4", "cp-9", "cp-10", "ia-1", "ia-2", "ia-2.1", "ia-2.2", "ia-2.8", "ia-2.12", "ia-4", "ia-5", "ia-5.1", "ia-6", "ia-7", "ia-8", "ia-8.1", "ia-8.2", "ia-8.4", "ia-11", "ir-1", "ir-2", "ir-4", "ir-5", "ir-6", "ir-7", "ir-8", "ma-1", "ma-2", "ma-4", "ma-5", "mp-1", "mp-2", "mp-6", "mp-7", "pe-1", "pe-2", "pe-3", "pe-6", "pe-8", "pe-12", "pe-13", "pe-14", "pe-15", "pe-16", "pl-1", "pl-2", "pl-4", "pl-4.1", "pl-8", "pl-10", "pl-11", "ps-1", "ps-2", "ps-3", "ps-4", "ps-5", "ps-6", "ps-7", "ps-8", "ps-9", "ra-1", "ra-2", "ra-3", "ra-3.1", "ra-5", "ra-5.2", "ra-5.11", "ra-7", "sa-1", "sa-2", "sa-3", "sa-4", "sa-4.10", "sa-5", "sa-8", "sa-9", "sa-22", "sc-1", "sc-5", "sc-7", "sc-8", "sc-8.1", "sc-12", "sc-13", "sc-15", "sc-20", "sc-21", "sc-22", "sc-28", "sc-28.1", "sc-39", "si-1", "si-2", "si-3", "si-4", "si-5", "si-12", "sr-1", "sr-2", "sr-2.1", "sr-3", "sr-5", "sr-8", "sr-10", "sr-11", "sr-11.1", "sr-11.2", "sr-12" ]
+      } ]
+    } ],
+    "metadata" : {
+      "published" : "2023-08-31T00:00:00Z",
+      "version" : "5.1.1+fedramp-20240111-0",
+      "parties" : [ {
+        "short-name" : "FedRAMP PMO",
+        "addresses" : [ {
+          "country" : "US",
+          "city" : "Washington",
+          "state" : "DC",
+          "type" : "work",
+          "postal-code" : "20006",
+          "addr-lines" : [ "1800 F St. NW" ]
+        } ],
+        "uuid" : "8cc0b8e5-9650-4d5f-9796-316f05fa9a2d",
+        "name" : "Federal Risk and Authorization Management Program: Program Management Office",
+        "type" : "organization",
+        "email-addresses" : [ "info@fedramp.gov" ],
+        "links" : [ {
+          "rel" : "homepage",
+          "href" : "https://fedramp.gov"
+        }, {
+          "rel" : "logo",
+          "href" : "#a2381e87-3d04-4108-a30b-b4d2f36d001f"
+        }, {
+          "rel" : "reference",
+          "href" : "#985475ee-d4d6-4581-8fdf-d84d3d8caa48"
         } ]
+      }, {
+        "short-name" : "FedRAMP JAB",
+        "uuid" : "ca9ba80e-1342-4bfd-b32a-abac468c24b4",
+        "name" : "Federal Risk and Authorization Management Program: Joint Authorization Board",
+        "type" : "organization",
+        "links" : [ {
+          "rel" : "logo",
+          "href" : "#a2381e87-3d04-4108-a30b-b4d2f36d001f"
+        } ]
+      } ],
+      "oscal-version" : "1.1.1",
+      "last-modified" : "2024-01-11T23:40:17Z",
+      "responsible-parties" : [ {
+        "party-uuids" : [ "8cc0b8e5-9650-4d5f-9796-316f05fa9a2d" ],
+        "role-id" : "prepared-by"
+      }, {
+        "party-uuids" : [ "8cc0b8e5-9650-4d5f-9796-316f05fa9a2d" ],
+        "role-id" : "fedramp-pmo"
+      }, {
+        "party-uuids" : [ "ca9ba80e-1342-4bfd-b32a-abac468c24b4" ],
+        "role-id" : "fedramp-jab"
+      } ],
+      "title" : "FedRAMP Rev 5 Tailored Low Impact Software as a Service (LI-SaaS) Baseline",
+      "roles" : [ {
+        "title" : "Document creator",
+        "id" : "prepared-by"
+      }, {
+        "title" : "The FedRAMP Program Management Office (PMO)",
+        "id" : "fedramp-pmo",
+        "short-name" : "PMO"
+      }, {
+        "title" : "The FedRAMP Joint Authorization Board (JAB)",
+        "id" : "fedramp-jab",
+        "short-name" : "JAB"
       } ]
     }
   }
