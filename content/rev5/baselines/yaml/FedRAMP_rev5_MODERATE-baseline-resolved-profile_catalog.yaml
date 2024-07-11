@@ -1,5 +1,16 @@
 ---
 catalog:
+  metadata:
+    links:
+    - href: file:///home/runner/work/oscal-js/oscal-js/content/rev5/baselines/xml/FedRAMP_rev5_MODERATE-baseline_profile.xml
+      rel: source-profile
+    title: FedRAMP Rev 5 Moderate Baseline
+    version: 5.1.1+fedramp-20240111-0
+    props:
+    - name: resolution-tool
+      value: libOSCAL-Java
+    oscal-version: 1.1.2
+    last-modified: 2024-07-11T21:16:22.013882Z
   back-matter:
     resources:
     - citation:
@@ -919,11 +930,11 @@ catalog:
           class: sp800-53a
           value: "AC-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: ac-01_odp.03
         props:
         - name: alt-identifier
@@ -941,9 +952,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current access control policy is reviewed and updated is defined;
         id: ac-01_odp.05
         label: frequency
@@ -953,6 +962,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current access control policy to be reviewed and updated are defined;
         id: ac-01_odp.06
@@ -963,9 +974,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current access control procedures are reviewed and updated is defined;
         id: ac-01_odp.07
         label: frequency
@@ -975,9 +984,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require procedures to be reviewed and updated are defined;
         id: ac-01_odp.08
         label: events
@@ -987,6 +996,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -1586,18 +1597,16 @@ catalog:
           name: implementation-level
           value: organization
       - params:
-        - constraints:
-          - description: "Selection: disables"
-          id: ac-02.02_odp.01
+        - id: ac-02.02_odp.01
           props:
           - name: alt-identifier
             value: ac-2.2_prm_1
           - name: label
             class: sp800-53a
             value: "AC-02(02)_ODP[01]"
-        - constraints:
-          - description: no more than 96 hours from last use
-          guidelines:
+          constraints:
+          - description: "Selection: disables"
+        - guidelines:
           - prose: the time period after which to automatically remove or disable temporary or emergency accounts is defined;
           id: ac-02.02_odp.02
           label: time period
@@ -1610,6 +1619,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "AC-02(02)_ODP[02]"
+          constraints:
+          - description: no more than 96 hours from last use
         title: Automated Temporary and Emergency Account Management
         links:
         - href: '#ac-2'
@@ -1722,9 +1733,7 @@ catalog:
           name: implementation-level
           value: system
       - params:
-        - constraints:
-          - description: 24 hours for user accounts
-          guidelines:
+        - guidelines:
           - prose: time period within which to disable accounts is defined;
           id: ac-02.03_odp.01
           label: time period
@@ -1734,9 +1743,9 @@ catalog:
           - name: label
             class: sp800-53a
             value: "AC-02(03)_ODP[01]"
-        - constraints:
-          - description: ninety (90) days (See additional requirements and guidance.)
-          guidelines:
+          constraints:
+          - description: 24 hours for user accounts
+        - guidelines:
           - prose: time period for account inactivity before disabling is defined;
           id: ac-02.03_odp.02
           label: time period
@@ -1746,6 +1755,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "AC-02(03)_ODP[02]"
+          constraints:
+          - description: ninety (90) days (See additional requirements and guidance.)
         title: Disable Accounts
         links:
         - href: '#ac-2'
@@ -2161,9 +2172,7 @@ catalog:
           name: implementation-level
           value: system
       - params:
-        - constraints:
-          - description: "for privileged users, it is the end of a user's standard work period"
-          guidelines:
+        - guidelines:
           - prose: the time period of expected inactivity or description of when to log out is defined;
           id: ac-02.05_odp
           label: time period of expected inactivity or description of when to log out
@@ -2173,6 +2182,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: AC-02(05)_ODP
+          constraints:
+          - description: "for privileged users, it is the end of a user's standard work period"
         title: Inactivity Logout
         links:
         - href: '#ac-2'
@@ -2529,9 +2540,7 @@ catalog:
           name: implementation-level
           value: organization
       - params:
-        - constraints:
-          - description: organization-defined need with justification statement that explains why such accounts are necessary
-          guidelines:
+        - guidelines:
           - prose: conditions for establishing shared and group accounts are defined;
           id: ac-02.09_odp
           label: conditions
@@ -2544,6 +2553,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: AC-02(09)_ODP
+          constraints:
+          - description: organization-defined need with justification statement that explains why such accounts are necessary
         title: Restrictions on Use of Shared and Group Accounts
         links:
         - href: '#ac-2'
@@ -2678,9 +2689,7 @@ catalog:
           - name: label
             class: sp800-53a
             value: "AC-02(12)_ODP[01]"
-        - constraints:
-          - description: "at a minimum, the ISSO and/or similar role within the organization"
-          guidelines:
+        - guidelines:
           - prose: personnel or roles to report atypical usage is/are defined;
           id: ac-02.12_odp.02
           label: personnel or roles
@@ -2690,6 +2699,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "AC-02(12)_ODP[02]"
+          constraints:
+          - description: "at a minimum, the ISSO and/or similar role within the organization"
         title: Account Monitoring for Atypical Usage
         links:
         - href: '#ac-2'
@@ -2885,9 +2896,7 @@ catalog:
           name: implementation-level
           value: system
       - params:
-        - constraints:
-          - description: one (1) hour
-          guidelines:
+        - guidelines:
           - prose: time period within which to disable accounts of individuals who are discovered to pose significant risk is defined;
           id: ac-02.13_odp.01
           label: time period
@@ -2897,6 +2906,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "AC-02(13)_ODP[01]"
+          constraints:
+          - description: one (1) hour
         - guidelines:
           - prose: significant risks leading to disabling accounts are defined;
           id: ac-02.13_odp.02
@@ -3075,9 +3086,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-02_ODP[05]"
-      - constraints:
-        - description: twenty-four (24) hours
-        guidelines:
+      - guidelines:
         - prose: time period within which to notify account managers when accounts are no longer required is defined;
         id: ac-02_odp.06
         label: time period
@@ -3087,9 +3096,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-02_ODP[06]"
-      - constraints:
-        - description: eight (8) hours
-        guidelines:
+        constraints:
+        - description: twenty-four (24) hours
+      - guidelines:
         - prose: time period within which to notify account managers when users are terminated or transferred is defined;
         id: ac-02_odp.07
         label: time period
@@ -3099,9 +3108,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-02_ODP[07]"
-      - constraints:
+        constraints:
         - description: eight (8) hours
-        guidelines:
+      - guidelines:
         - prose: time period within which to notify account managers when system usage or the need to know changes for an individual is defined;
         id: ac-02_odp.08
         label: time period
@@ -3111,6 +3120,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-02_ODP[08]"
+        constraints:
+        - description: eight (8) hours
       - guidelines:
         - prose: attributes needed to authorize system access (as required) are defined;
         id: ac-02_odp.09
@@ -3121,9 +3132,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-02_ODP[09]"
-      - constraints:
-        - description: "quarterly for privileged access, annually for non-privileged access"
-        guidelines:
+      - guidelines:
         - prose: the frequency of account review is defined;
         id: ac-02_odp.10
         label: frequency
@@ -3133,6 +3142,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-02_ODP[10]"
+        constraints:
+        - description: "quarterly for privileged access, annually for non-privileged access"
       title: Account Management
       links:
       - href: '#2956e175-f674-43f4-b1b9-e074ad9fc39c'
@@ -5009,9 +5020,7 @@ catalog:
           name: implementation-level
           value: organization
       - params:
-        - constraints:
-          - description: all security functions
-          guidelines:
+        - guidelines:
           - prose: "security functions or security-relevant information, the access to which requires users to use non-privileged accounts to access non-security functions, are defined;"
           id: ac-06.02_odp
           label: security functions or security-relevant information
@@ -5021,6 +5030,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: AC-06(02)_ODP
+          constraints:
+          - description: all security functions
         title: Non-privileged Access for Nonsecurity Functions
         links:
         - href: '#ac-6'
@@ -5279,9 +5290,7 @@ catalog:
           name: implementation-level
           value: organization
       - params:
-        - constraints:
-          - description: "at a minimum, annually"
-          guidelines:
+        - guidelines:
           - prose: the frequency at which to review the privileges assigned to roles or classes of users is defined;
           id: ac-06.07_odp.01
           label: frequency
@@ -5291,9 +5300,9 @@ catalog:
           - name: label
             class: sp800-53a
             value: "AC-06(07)_ODP[01]"
-        - constraints:
-          - description: all users with privileges
-          guidelines:
+          constraints:
+          - description: "at a minimum, annually"
+        - guidelines:
           - prose: roles or classes of users to which privileges are assigned are defined;
           id: ac-06.07_odp.02
           label: roles and classes
@@ -5306,6 +5315,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "AC-06(07)_ODP[02]"
+          constraints:
+          - description: all users with privileges
         title: Review of User Privileges
         links:
         - href: '#ac-6'
@@ -5847,13 +5858,13 @@ catalog:
           class: sp800-53a
           value: "AC-07_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - "lock the account or node for {{ insert: param, ac-07_odp.04 }}"
           - lock the account or node until released by an administrator
           - "delay next logon prompt per {{ insert: param, ac-07_odp.05 }}"
           - notify system administrator
           - "take other {{ insert: param, ac-07_odp.06 }}"
-          how-many: one-or-more
         id: ac-07_odp.03
         props:
         - name: alt-identifier
@@ -6067,9 +6078,7 @@ catalog:
         name: implementation-level
         value: system
     - params:
-      - constraints:
-        - description: see additional Requirements and Guidance
-        guidelines:
+      - guidelines:
         - prose: system use notification message or banner to be displayed by the system to users before granting access to the system is defined;
         id: ac-08_odp.01
         label: system use notification
@@ -6082,9 +6091,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-08_ODP[01]"
-      - constraints:
+        constraints:
         - description: see additional Requirements and Guidance
-        guidelines:
+      - guidelines:
         - prose: conditions for system use to be displayed by the system before granting further access are defined;
         id: ac-08_odp.02
         label: conditions
@@ -6094,6 +6103,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-08_ODP[02]"
+        constraints:
+        - description: see additional Requirements and Guidance
       title: System Use Notification
       links:
       - href: '#ac-14'
@@ -6577,10 +6588,10 @@ catalog:
           value: system
       params:
       - select:
+          how-many: one-or-more
           choice:
           - "initiating a device lock after {{ insert: param, ac-11_odp.02 }} of inactivity"
           - requiring the user to initiate a device lock before leaving the system unattended
-          how-many: one-or-more
         id: ac-11_odp.01
         props:
         - name: alt-identifier
@@ -6588,9 +6599,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-11_ODP[01]"
-      - constraints:
-        - description: fifteen (15) minutes
-        guidelines:
+      - guidelines:
         - prose: time period of inactivity after which a device lock is initiated is defined (if selected);
         id: ac-11_odp.02
         label: time period
@@ -6600,6 +6609,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AC-11_ODP[02]"
+        constraints:
+        - description: fifteen (15) minutes
       title: Device Lock
       links:
       - href: '#ac-2'
@@ -7904,10 +7915,10 @@ catalog:
     - controls:
       - params:
         - select:
+            how-many: one-or-more
             choice:
             - users
             - devices
-            how-many: one-or-more
           id: ac-18.01_odp
           props:
           - name: alt-identifier
@@ -9026,10 +9037,10 @@ catalog:
           value: organization
       params:
       - select:
+          how-many: one-or-more
           choice:
           - "establish {{ insert: param, ac-20_odp.02 }}"
           - "identify {{ insert: param, ac-20_odp.03 }}"
-          how-many: one-or-more
         id: ac-20_odp.01
         props:
         - name: alt-identifier
@@ -9516,9 +9527,7 @@ catalog:
         name: implementation-level
         value: organization
     - params:
-      - constraints:
-        - description: at least quarterly
-        guidelines:
+      - guidelines:
         - prose: the frequency at which to review the content on the publicly accessible system for non-public information is defined;
         id: ac-22_odp
         label: frequency
@@ -9528,6 +9537,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: AC-22_ODP
+        constraints:
+        - description: at least quarterly
       title: Publicly Accessible Content
       links:
       - href: '#18e71fec-c6fd-475a-925a-5d8495cf8455'
@@ -9802,11 +9813,11 @@ catalog:
           class: sp800-53a
           value: "AT-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: at-01_odp.03
         props:
         - name: alt-identifier
@@ -9824,9 +9835,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AT-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current awareness and training policy is reviewed and updated is defined;
         id: at-01_odp.05
         label: frequency
@@ -9836,6 +9845,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AT-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current awareness and training policy to be reviewed and updated are defined;
         id: at-01_odp.06
@@ -9846,9 +9857,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AT-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current awareness and training procedures are reviewed and updated is defined;
         id: at-01_odp.07
         label: frequency
@@ -9858,9 +9867,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AT-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require procedures to be reviewed and updated are defined;
         id: at-01_odp.08
         label: events
@@ -9870,6 +9879,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AT-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -10617,9 +10628,7 @@ catalog:
         - ns: http://csrc.nist.gov/ns/rmf
           name: aggregates
           value: at-02_odp.04
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: "the frequency at which to provide security literacy training to system users (including managers, senior executives, and contractors) after initial training is defined;"
         id: at-02_odp.01
         label: frequency
@@ -10627,9 +10636,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AT-02_ODP[01]"
-      - constraints:
+        constraints:
         - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: "the frequency at which to provide privacy literacy training to system users (including managers, senior executives, and contractors) after initial training is defined;"
         id: at-02_odp.02
         label: frequency
@@ -10637,6 +10646,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AT-02_ODP[02]"
+        constraints:
+        - description: at least annually
       - guidelines:
         - prose: events that require security literacy training for system users are defined;
         id: at-02_odp.03
@@ -10663,9 +10674,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AT-02_ODP[05]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which to update literacy training and awareness content is defined;
         id: at-02_odp.06
         label: frequency
@@ -10675,6 +10684,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AT-02_ODP[06]"
+        constraints:
+        - description: at least annually
       - guidelines:
         - prose: events that would require literacy training and awareness content to be updated are defined;
         id: at-02_odp.07
@@ -11127,9 +11138,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AT-03_ODP[02]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which to provide role-based security and privacy training to assigned personnel after initial training is defined;
         id: at-03_odp.03
         label: frequency
@@ -11139,9 +11148,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AT-03_ODP[03]"
-      - constraints:
+        constraints:
         - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which to update role-based training content is defined;
         id: at-03_odp.04
         label: frequency
@@ -11151,6 +11160,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AT-03_ODP[04]"
+        constraints:
+        - description: at least annually
       - guidelines:
         - prose: events that require role-based training content to be updated are defined;
         id: at-03_odp.05
@@ -11519,9 +11530,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: at least one (1) year or 1 year after completion of a specific training program
-        guidelines:
+      - guidelines:
         - prose: time period for retaining individual training records is defined;
         id: at-04_odp
         label: time period
@@ -11531,6 +11540,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: AT-04_ODP
+        constraints:
+        - description: at least one (1) year or 1 year after completion of a specific training program
       title: Training Records
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -11737,11 +11748,11 @@ catalog:
           class: sp800-53a
           value: "AU-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: au-01_odp.03
         props:
         - name: alt-identifier
@@ -11759,9 +11770,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AU-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current audit and accountability policy is reviewed and updated is defined;
         id: au-01_odp.05
         label: frequency
@@ -11771,6 +11780,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AU-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current audit and accountability policy to be reviewed and updated are defined;
         id: au-01_odp.06
@@ -11781,9 +11792,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AU-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current audit and accountability procedures are reviewed and updated is defined;
         id: au-01_odp.07
         label: frequency
@@ -11793,9 +11802,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AU-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require audit and accountability procedures to be reviewed and updated are defined;
         id: au-01_odp.08
         label: events
@@ -11805,6 +11814,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AU-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#c7ac44e8-10db-4b64-b2b9-9e32ec1efed0'
@@ -12282,9 +12293,7 @@ catalog:
         - ns: http://csrc.nist.gov/ns/rmf
           name: aggregates
           value: au-02_odp.03
-      - constraints:
-        - description: "successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events. For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes"
-        guidelines:
+      - guidelines:
         - prose: the event types that the system is capable of logging in support of the audit function are defined;
         id: au-02_odp.01
         label: event types
@@ -12297,9 +12306,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AU-02_ODP[01]"
-      - constraints:
-        - description: organization-defined subset of the auditable events defined in AU-2a to be audited continually for each identified event.
-        guidelines:
+        constraints:
+        - description: "successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events. For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes"
+      - guidelines:
         - prose: "the event types (subset of AU-02_ODP\\[01\\]) for logging within the system are defined;"
         id: au-02_odp.02
         label: "event types (subset of AU-02_ODP\\[01\\])"
@@ -12307,9 +12316,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AU-02_ODP[02]"
-      - constraints:
+        constraints:
         - description: organization-defined subset of the auditable events defined in AU-2a to be audited continually for each identified event.
-        guidelines:
+      - guidelines:
         - prose: the frequency or situation requiring logging for each specified event type is defined;
         id: au-02_odp.03
         label: frequency or situation
@@ -12317,9 +12326,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AU-02_ODP[03]"
-      - constraints:
-        - description: annually and whenever there is a change in the threat environment
-        guidelines:
+        constraints:
+        - description: organization-defined subset of the auditable events defined in AU-2a to be audited continually for each identified event.
+      - guidelines:
         - prose: the frequency of event types selected for logging are reviewed and updated;
         id: au-02_odp.04
         label: frequency
@@ -12329,6 +12338,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AU-02_ODP[04]"
+        constraints:
+        - description: annually and whenever there is a change in the threat environment
       title: Event Logging
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -12696,9 +12707,7 @@ catalog:
         value: organization
     - controls:
       - params:
-        - constraints:
-          - description: "session, connection, transaction, or activity duration; for client-server transactions, the number of bytes received and bytes sent; additional informational messages to diagnose or identify the event; characteristics that describe or identify the object or resource being acted upon; individual identities of group account users; full-text of privileged commands"
-          guidelines:
+        - guidelines:
           - prose: additional information to be included in audit records is defined;
           id: au-03.01_odp
           label: additional information
@@ -12708,6 +12717,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: AU-03(01)_ODP
+          constraints:
+          - description: "session, connection, transaction, or activity duration; for client-server transactions, the number of bytes received and bytes sent; additional informational messages to diagnose or identify the event; characteristics that describe or identify the object or resource being acted upon; individual identities of group account users; full-text of privileged commands"
         title: Additional Audit Information
         links:
         - href: '#au-3'
@@ -13249,9 +13260,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AU-05_ODP[02]"
-      - constraints:
-        - description: overwrite oldest record
-        guidelines:
+      - guidelines:
         - prose: additional actions to be taken in the event of an audit logging process failure are defined;
         id: au-05_odp.03
         label: additional actions
@@ -13261,6 +13270,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AU-05_ODP[03]"
+        constraints:
+        - description: overwrite oldest record
       title: Response to Audit Logging Process Failures
       links:
       - href: '#au-2'
@@ -13682,9 +13693,7 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       params:
-      - constraints:
-        - description: at least weekly
-        guidelines:
+      - guidelines:
         - prose: frequency at which system audit records are reviewed and analyzed is defined;
         id: au-06_odp.01
         label: frequency
@@ -13694,6 +13703,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AU-06_ODP[01]"
+        constraints:
+        - description: at least weekly
       - guidelines:
         - prose: inappropriate or unusual activity is defined;
         id: au-06_odp.02
@@ -14334,9 +14345,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: one second granularity of time measurement
-        guidelines:
+      - guidelines:
         - prose: granularity of time measurement for audit record timestamps is defined;
         id: au-08_odp
         label: granularity of time measurement
@@ -14346,6 +14355,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: AU-08_ODP
+        constraints:
+        - description: one second granularity of time measurement
       title: Time Stamps
       links:
       - href: '#au-3'
@@ -14841,9 +14852,7 @@ catalog:
         name: implementation-level
         value: system
     - params:
-      - constraints:
-        - description: a time period in compliance with M-21-31
-        guidelines:
+      - guidelines:
         - prose: a time period to retain audit records that is consistent with the records retention policy is defined;
         id: au-11_odp
         label: time period
@@ -14856,6 +14865,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: AU-11_ODP
+        constraints:
+        - description: a time period in compliance with M-21-31
       title: Audit Record Retention
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -15004,9 +15015,7 @@ catalog:
         name: implementation-level
         value: organization
     - params:
-      - constraints:
-        - description: all information system and network components where audit capability is deployed/available
-        guidelines:
+      - guidelines:
         - prose: "system components that provide an audit record generation capability for the events types (defined in AU-02_ODP\\[02\\]) are defined;"
         id: au-12_odp.01
         label: system components
@@ -15016,6 +15025,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "AU-12_ODP[01]"
+        constraints:
+        - description: all information system and network components where audit capability is deployed/available
       - guidelines:
         - prose: personnel or roles allowed to select the event types that are to be logged by specific components of the system is/are defined;
         id: au-12_odp.02
@@ -15279,11 +15290,11 @@ catalog:
           class: sp800-53a
           value: "CA-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: ca-01_odp.03
         props:
         - name: alt-identifier
@@ -15301,9 +15312,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: "the frequency at which the current assessment, authorization, and monitoring policy is reviewed and updated is defined;"
         id: ca-01_odp.05
         label: frequency
@@ -15313,6 +15322,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: "events that would require the current assessment, authorization, and monitoring policy to be reviewed and updated are defined;"
         id: ca-01_odp.06
@@ -15323,9 +15334,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: "the frequency at which the current assessment, authorization, and monitoring procedures are reviewed and updated is defined;"
         id: ca-01_odp.07
         label: frequency
@@ -15335,9 +15344,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: "events that would require assessment, authorization, and monitoring procedures to be reviewed and updated are defined;"
         id: ca-01_odp.08
         label: events
@@ -15347,6 +15356,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -15944,9 +15955,7 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       - params:
-        - constraints:
-          - description: any FedRAMP Accredited 3PAO
-          guidelines:
+        - guidelines:
           - prose: external organization(s) from which the results of control assessments are leveraged are defined;
           id: ca-02.03_odp.01
           label: external organization(s)
@@ -15959,6 +15968,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CA-02(03)_ODP[01]"
+          constraints:
+          - description: any FedRAMP Accredited 3PAO
         - guidelines:
           - prose: system on which a control assessment was performed by an external organization is defined;
           id: ca-02.03_odp.02
@@ -15969,9 +15980,7 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CA-02(03)_ODP[02]"
-        - constraints:
-          - description: the conditions of the JAB/AO in the FedRAMP Repository
-          guidelines:
+        - guidelines:
           - prose: requirements to be met by the control assessment performed by an external organization on the system are defined;
           id: ca-02.03_odp.03
           label: requirements
@@ -15981,6 +15990,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CA-02(03)_ODP[03]"
+          constraints:
+          - description: the conditions of the JAB/AO in the FedRAMP Repository
         title: Leveraging Results from External Organizations
         links:
         - href: '#ca-2'
@@ -16087,9 +16098,7 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       params:
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which to assess controls in the system and its environment of operation is defined;
         id: ca-02_odp.01
         label: assessment frequency
@@ -16102,9 +16111,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-02_ODP[01]"
-      - constraints:
-        - description: individuals or roles to include FedRAMP PMO
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: individuals or roles to whom control assessment results are to be provided are defined;
         id: ca-02_odp.02
         label: individuals or roles
@@ -16114,6 +16123,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-02_ODP[02]"
+        constraints:
+        - description: individuals or roles to include FedRAMP PMO
       title: Control Assessments
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -16564,6 +16575,7 @@ catalog:
         value: "true"
     - params:
       - select:
+          how-many: one-or-more
           choice:
           - interconnection security agreements
           - information exchange security agreements
@@ -16572,7 +16584,6 @@ catalog:
           - user agreements
           - non-disclosure agreements
           - "{{ insert: param, ca-03_odp.02 }}"
-          how-many: one-or-more
         id: ca-03_odp.01
         props:
         - name: alt-identifier
@@ -16590,9 +16601,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-03_ODP[02]"
-      - constraints:
-        - description: at least annually and on input from JAB/AO
-        guidelines:
+      - guidelines:
         - prose: the frequency at which to review and update agreements is defined;
         id: ca-03_odp.03
         label: frequency
@@ -16602,6 +16611,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-03_ODP[03]"
+        constraints:
+        - description: at least annually and on input from JAB/AO
       title: Information Exchange
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -16878,9 +16889,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: at least monthly
-        guidelines:
+      - guidelines:
         - prose: "the frequency at which to update an existing plan of action and milestones based on the findings from control assessments, independent audits or reviews, and continuous monitoring activities is defined;"
         id: ca-05_odp
         label: frequency
@@ -16890,6 +16899,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: CA-05_ODP
+        constraints:
+        - description: at least monthly
       title: Plan of Action and Milestones
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -17082,9 +17093,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: in accordance with OMB A-130 requirements or when a significant change occurs
-        guidelines:
+      - guidelines:
         - prose: frequency at which to update the authorizations is defined;
         id: ca-06_odp
         label: frequency
@@ -17094,6 +17103,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: CA-06_ODP
+        constraints:
+        - description: in accordance with OMB A-130 requirements or when a significant change occurs
       title: Authorization
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -17770,9 +17781,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-07_ODP[03]"
-      - constraints:
-        - description: to include JAB/AO
-        guidelines:
+      - guidelines:
         - prose: personnel or roles to whom the security status of the system is reported are defined;
         id: ca-07_odp.04
         label: personnel or roles
@@ -17780,6 +17789,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-07_ODP[04]"
+        constraints:
+        - description: to include JAB/AO
       - guidelines:
         - prose: frequency at which the security status of the system is reported is defined;
         id: ca-07_odp.05
@@ -17788,9 +17799,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-07_ODP[05]"
-      - constraints:
-        - description: to include JAB/AO
-        guidelines:
+      - guidelines:
         - prose: personnel or roles to whom the privacy status of the system is reported are defined;
         id: ca-07_odp.06
         label: personnel or roles
@@ -17798,6 +17807,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-07_ODP[06]"
+        constraints:
+        - description: to include JAB/AO
       - guidelines:
         - prose: frequency at which the privacy status of the system is reported is defined;
         id: ca-07_odp.07
@@ -18608,9 +18619,7 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       params:
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: frequency at which to conduct penetration testing on systems or system components is defined;
         id: ca-08_odp.01
         label: frequency
@@ -18620,6 +18629,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-08_ODP[01]"
+        constraints:
+        - description: at least annually
       - guidelines:
         - prose: systems or system components on which penetration testing is to be conducted are defined;
         id: ca-08_odp.02
@@ -18793,9 +18804,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-09_ODP[02]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: frequency at which to review the continued need for each internal connection is defined;
         id: ca-09_odp.03
         label: frequency
@@ -18805,6 +18814,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CA-09_ODP[03]"
+        constraints:
+        - description: at least annually
       title: Internal System Connections
       links:
       - href: '#0f66be67-85e7-4ca6-bd19-39453e9f4394'
@@ -19112,11 +19123,11 @@ catalog:
           class: sp800-53a
           value: "CM-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: cm-01_odp.03
         props:
         - name: alt-identifier
@@ -19134,9 +19145,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CM-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current configuration management policy is reviewed and updated is defined;
         id: cm-01_odp.05
         label: frequency
@@ -19146,6 +19155,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CM-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current configuration management policy to be reviewed and updated are defined;
         id: cm-01_odp.06
@@ -19156,9 +19167,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CM-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current configuration management procedures are reviewed and updated is defined;
         id: cm-01_odp.07
         label: frequency
@@ -19168,9 +19177,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CM-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require configuration management procedures to be reviewed and updated are defined;
         id: cm-01_odp.08
         label: events
@@ -19180,6 +19189,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CM-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -20153,9 +20164,7 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       params:
-      - constraints:
-        - description: at least annually and when a significant change occurs
-        guidelines:
+      - guidelines:
         - prose: the frequency of baseline configuration review and update is defined;
         id: cm-02_odp.01
         label: frequency
@@ -20165,9 +20174,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CM-02_ODP[01]"
-      - constraints:
-        - description: to include when directed by the JAB
-        guidelines:
+        constraints:
+        - description: at least annually and when a significant change occurs
+      - guidelines:
         - prose: the circumstances requiring baseline configuration review and update are defined;
         id: cm-02_odp.02
         label: circumstances
@@ -20177,6 +20186,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CM-02_ODP[02]"
+        constraints:
+        - description: to include when directed by the JAB
       title: Baseline Configuration
       links:
       - href: '#0f66be67-85e7-4ca6-bd19-39453e9f4394'
@@ -20666,9 +20677,7 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CM-03(04)_ODP[02]"
-        - constraints:
-          - description: Configuration control board (CCB) or similar (as defined in CM-3)
-          guidelines:
+        - guidelines:
           - prose: the configuration change control element of which the security and privacy representatives are to be members is defined;
           id: cm-03.04_odp.03
           label: configuration change control element
@@ -20678,6 +20687,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CM-03(04)_ODP[03]"
+          constraints:
+          - description: Configuration control board (CCB) or similar (as defined in CM-3)
         title: Security and Privacy Representatives
         links:
         - href: '#cm-3'
@@ -20824,10 +20835,10 @@ catalog:
           class: sp800-53a
           value: "CM-03_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - "{{ insert: param, cm-03_odp.04 }}"
           - "when {{ insert: param, cm-03_odp.05 }}"
-          how-many: one-or-more
         id: cm-03_odp.03
         props:
         - name: alt-identifier
@@ -21875,9 +21886,7 @@ catalog:
           - ns: http://csrc.nist.gov/ns/rmf
             name: aggregates
             value: cm-05.05_odp.02
-        - constraints:
-          - description: at least quarterly
-          guidelines:
+        - guidelines:
           - prose: frequency at which to review privileges is defined;
           id: cm-05.05_odp.01
           label: frequency
@@ -21885,9 +21894,9 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CM-05(05)_ODP[01]"
-        - constraints:
+          constraints:
           - description: at least quarterly
-          guidelines:
+        - guidelines:
           - prose: frequency at which to reevaluate privileges is defined;
           id: cm-05.05_odp.02
           label: frequency
@@ -21895,6 +21904,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CM-05(05)_ODP[02]"
+          constraints:
+          - description: at least quarterly
         title: Privilege Limitation for Production and Operation
         links:
         - href: '#cm-5'
@@ -22930,9 +22941,7 @@ catalog:
           - ns: http://csrc.nist.gov/ns/rmf
             name: aggregates
             value: cm-07.01_odp.06
-        - constraints:
-          - description: at least annually
-          guidelines:
+        - guidelines:
           - prose: "the frequency at which to review the system to identify unnecessary and/or non-secure functions, ports, protocols, software, and/or services is defined;"
           id: cm-07.01_odp.01
           label: frequency
@@ -22942,6 +22951,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CM-07(01)_ODP[01]"
+          constraints:
+          - description: at least annually
         - guidelines:
           - prose: functions to be disabled or removed when deemed unnecessary or non-secure are defined;
           id: cm-07.01_odp.02
@@ -23206,10 +23217,10 @@ catalog:
           value: system
       - params:
         - select:
+            how-many: one-or-more
             choice:
             - "{{ insert: param, cm-07.02_odp.02 }}"
             - rules authorizing the terms and conditions of software program usage
-            how-many: one-or-more
           id: cm-07.02_odp.01
           props:
           - name: alt-identifier
@@ -23385,9 +23396,7 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CM-07(05)_ODP[01]"
-        - constraints:
-          - description: at least quarterly or when there is a change
-          guidelines:
+        - guidelines:
           - prose: frequency at which to review and update the list of authorized software programs is defined;
           id: cm-07.05_odp.02
           label: frequency
@@ -23397,6 +23406,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CM-07(05)_ODP[02]"
+          constraints:
+          - description: at least quarterly or when there is a change
         title: Authorized Software — Allow-by-exception
         links:
         - href: '#cm-7'
@@ -24119,9 +24130,7 @@ catalog:
           - ns: http://csrc.nist.gov/ns/rmf
             name: aggregates
             value: cm-08.03_odp.03
-        - constraints:
-          - description: automated mechanisms with a maximum five-minute delay in detection
-          guidelines:
+        - guidelines:
           - prose: automated mechanisms used to detect the presence of unauthorized hardware within the system are defined;
           id: cm-08.03_odp.01
           label: automated mechanisms
@@ -24129,9 +24138,9 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CM-08(03)_ODP[01]"
-        - constraints:
+          constraints:
           - description: automated mechanisms with a maximum five-minute delay in detection
-          guidelines:
+        - guidelines:
           - prose: automated mechanisms used to detect the presence of unauthorized software within the system are defined;
           id: cm-08.03_odp.02
           label: automated mechanisms
@@ -24139,9 +24148,9 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CM-08(03)_ODP[02]"
-        - constraints:
+          constraints:
           - description: automated mechanisms with a maximum five-minute delay in detection
-          guidelines:
+        - guidelines:
           - prose: automated mechanisms used to detect the presence of unauthorized firmware within the system are defined;
           id: cm-08.03_odp.03
           label: automated mechanisms
@@ -24149,9 +24158,9 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CM-08(03)_ODP[03]"
-        - constraints:
-          - description: continuously
-          guidelines:
+          constraints:
+          - description: automated mechanisms with a maximum five-minute delay in detection
+        - guidelines:
           - prose: frequency at which automated mechanisms are used to detect the presence of unauthorized system components within the system is defined;
           id: cm-08.03_odp.04
           label: frequency
@@ -24161,12 +24170,14 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CM-08(03)_ODP[04]"
+          constraints:
+          - description: continuously
         - select:
+            how-many: one-or-more
             choice:
             - disable network access by unauthorized components
             - isolate unauthorized components
             - "notify {{ insert: param, cm-08.03_odp.06 }}"
-            how-many: one-or-more
           id: cm-08.03_odp.05
           props:
           - name: alt-identifier
@@ -24445,9 +24456,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CM-08_ODP[01]"
-      - constraints:
-        - description: at least monthly
-        guidelines:
+      - guidelines:
         - prose: frequency at which to review and update the system component inventory is defined;
         id: cm-08_odp.02
         label: frequency
@@ -24457,6 +24466,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CM-08_ODP[02]"
+        constraints:
+        - description: at least monthly
       title: System Component Inventory
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -25451,9 +25462,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CM-11_ODP[02]"
-      - constraints:
-        - description: Continuously (via CM-7 (5))
-        guidelines:
+      - guidelines:
         - prose: frequency with which to monitor compliance is defined;
         id: cm-11_odp.03
         label: frequency
@@ -25463,6 +25472,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CM-11_ODP[03]"
+        constraints:
+        - description: Continuously (via CM-7 (5))
       title: User-installed Software
       links:
       - href: '#ac-3'
@@ -25681,9 +25692,7 @@ catalog:
         value: organization
     - controls:
       - params:
-        - constraints:
-          - description: Federal data and system data that must be protected at the High or Moderate impact levels
-          guidelines:
+        - guidelines:
           - prose: information to be protected is defined by information type;
           id: cm-12.01_odp.01
           label: information by information type
@@ -25693,6 +25702,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CM-12(01)_ODP[01]"
+          constraints:
+          - description: Federal data and system data that must be protected at the High or Moderate impact levels
         - guidelines:
           - prose: system components where the information is located are defined;
           id: cm-12.01_odp.02
@@ -26222,11 +26233,11 @@ catalog:
           class: sp800-53a
           value: "CP-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: cp-01_odp.03
         props:
         - name: alt-identifier
@@ -26244,9 +26255,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current contingency planning policy is reviewed and updated is defined;
         id: cp-01_odp.05
         label: frequency
@@ -26256,6 +26265,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current contingency planning policy to be reviewed and updated are defined;
         id: cp-01_odp.06
@@ -26266,9 +26277,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current contingency planning procedures are reviewed and updated is defined;
         id: cp-01_odp.07
         label: frequency
@@ -26278,9 +26287,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require procedures to be reviewed and updated are defined;
         id: cp-01_odp.08
         label: events
@@ -26290,6 +26299,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#c7ac44e8-10db-4b64-b2b9-9e32ec1efed0'
@@ -26869,18 +26880,16 @@ catalog:
           name: implementation-level
           value: organization
       - params:
-        - constraints:
-          - description: all
-          id: cp-02.03_odp.01
+        - id: cp-02.03_odp.01
           props:
           - name: alt-identifier
             value: cp-2.3_prm_1
           - name: label
             class: sp800-53a
             value: "CP-02(03)_ODP[01]"
-        - constraints:
-          - description: time period defined in service provider and organization SLA
-          guidelines:
+          constraints:
+          - description: all
+        - guidelines:
           - prose: the contingency plan activation time period within which to resume mission and business functions is defined;
           id: cp-02.03_odp.02
           label: time period
@@ -26890,6 +26899,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CP-02(03)_ODP[02]"
+          constraints:
+          - description: time period defined in service provider and organization SLA
         title: Resume Mission and Business Functions
         links:
         - href: '#cp-2'
@@ -27168,9 +27179,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-02_ODP[04]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: frequency of contingency plan review is defined;
         id: cp-02_odp.05
         label: frequency
@@ -27180,6 +27189,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-02_ODP[05]"
+        constraints:
+        - description: at least annually
       - guidelines:
         - prose: key contingency personnel (identified by name and/or by role) to communicate changes to are defined;
         id: cp-02_odp.06
@@ -27962,9 +27973,7 @@ catalog:
         name: implementation-level
         value: organization
     - params:
-      - constraints:
-        - description: \*See Additional Requirements
-        guidelines:
+      - guidelines:
         - prose: the time period within which to provide contingency training after assuming a contingency role or responsibility is defined;
         id: cp-03_odp.01
         label: time period
@@ -27974,9 +27983,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-03_ODP[01]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+        constraints:
+        - description: \*See Additional Requirements
+      - guidelines:
         - prose: frequency at which to provide training to system users with a contingency role or responsibility is defined;
         id: cp-03_odp.02
         label: frequency
@@ -27986,9 +27995,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-03_ODP[02]"
-      - constraints:
+        constraints:
         - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: frequency at which to review and update contingency training content is defined;
         id: cp-03_odp.03
         label: frequency
@@ -27998,6 +28007,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-03_ODP[03]"
+        constraints:
+        - description: at least annually
       - guidelines:
         - prose: events necessitating review and update of contingency training are defined;
         id: cp-03_odp.04
@@ -28424,9 +28435,7 @@ catalog:
         - ns: http://csrc.nist.gov/ns/rmf
           name: aggregates
           value: cp-04_odp.03
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: frequency of testing the contingency plan for the system is defined;
         id: cp-04_odp.01
         label: frequency
@@ -28436,9 +28445,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-04_ODP[01]"
-      - constraints:
-        - description: functional exercises
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: tests for determining the effectiveness of the contingency plan are defined;
         id: cp-04_odp.02
         label: tests
@@ -28446,9 +28455,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-04_ODP[02]"
-      - constraints:
+        constraints:
         - description: functional exercises
-        guidelines:
+      - guidelines:
         - prose: tests for determining readiness to execute the contingency plan are defined;
         id: cp-04_odp.03
         label: tests
@@ -28456,6 +28465,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-04_ODP[03]"
+        constraints:
+        - description: functional exercises
       title: Contingency Plan Testing
       links:
       - href: '#628d22a1-6a11-4784-bc59-5cd9497b5445'
@@ -30277,9 +30288,7 @@ catalog:
           - ns: http://csrc.nist.gov/ns/rmf
             name: aggregates
             value: cp-09.01_odp.02
-        - constraints:
-          - description: at least annually
-          guidelines:
+        - guidelines:
           - prose: frequency at which to test backup information for media reliability is defined;
           id: cp-09.01_odp.01
           label: frequency
@@ -30287,9 +30296,9 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CP-09(01)_ODP[01]"
-        - constraints:
+          constraints:
           - description: at least annually
-          guidelines:
+        - guidelines:
           - prose: frequency at which to test backup information for information integrity is defined;
           id: cp-09.01_odp.02
           label: frequency
@@ -30297,6 +30306,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "CP-09(01)_ODP[02]"
+          constraints:
+          - description: at least annually
         title: Testing for Reliability and Integrity
         links:
         - href: '#cp-9'
@@ -30433,9 +30444,7 @@ catalog:
           name: implementation-level
           value: organization
       - params:
-        - constraints:
-          - description: all backup files
-          guidelines:
+        - guidelines:
           - prose: backup information to protect against unauthorized disclosure and modification is defined;
           id: cp-09.08_odp
           label: backup information
@@ -30445,6 +30454,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: CP-09(08)_ODP
+          constraints:
+          - description: all backup files
         title: Cryptographic Protection
         links:
         - href: '#cp-9'
@@ -30582,9 +30593,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-09_ODP[01]"
-      - constraints:
-        - description: daily incremental; weekly full
-        guidelines:
+      - guidelines:
         - prose: frequency at which to conduct backups of user-level information consistent with recovery time and recovery point objectives is defined;
         id: cp-09_odp.02
         label: frequency
@@ -30597,9 +30606,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-09_ODP[02]"
-      - constraints:
+        constraints:
         - description: daily incremental; weekly full
-        guidelines:
+      - guidelines:
         - prose: frequency at which to conduct backups of system-level information consistent with recovery time and recovery point objectives is defined;
         id: cp-09_odp.03
         label: frequency
@@ -30612,9 +30621,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-09_ODP[03]"
-      - constraints:
+        constraints:
         - description: daily incremental; weekly full
-        guidelines:
+      - guidelines:
         - prose: frequency at which to conduct backups of system documentation consistent with recovery time and recovery point objectives is defined;
         id: cp-09_odp.04
         label: frequency
@@ -30627,6 +30636,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "CP-09_ODP[04]"
+        constraints:
+        - description: daily incremental; weekly full
       title: System Backup
       links:
       - href: '#678e3d6c-150b-4393-aec5-6e3481eb1e00'
@@ -31273,11 +31284,11 @@ catalog:
           class: sp800-53a
           value: "IA-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: ia-01_odp.03
         props:
         - name: alt-identifier
@@ -31295,9 +31306,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IA-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current identification and authentication policy is reviewed and updated is defined;
         id: ia-01_odp.05
         label: frequency
@@ -31307,6 +31316,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IA-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current identification and authentication policy to be reviewed and updated are defined;
         id: ia-01_odp.06
@@ -31317,9 +31328,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IA-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current identification and authentication procedures are reviewed and updated is defined;
         id: ia-01_odp.07
         label: frequency
@@ -31329,9 +31338,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IA-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require identification and authentication procedures to be reviewed and updated are defined;
         id: ia-01_odp.08
         label: events
@@ -31341,6 +31350,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IA-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -32224,27 +32235,25 @@ catalog:
           name: implementation-level
           value: system
       - params:
-        - constraints:
-          - description: "local, network and remote"
-          id: ia-02.06_odp.01
+        - id: ia-02.06_odp.01
           props:
           - name: alt-identifier
             value: ia-2.6_prm_1
           - name: label
             class: sp800-53a
             value: "IA-02(06)_ODP[01]"
-        - constraints:
-          - description: privileged accounts; non-privileged accounts
-          id: ia-02.06_odp.02
+          constraints:
+          - description: "local, network and remote"
+        - id: ia-02.06_odp.02
           props:
           - name: alt-identifier
             value: ia-2.6_prm_2
           - name: label
             class: sp800-53a
             value: "IA-02(06)_ODP[02]"
-        - constraints:
-          - description: FIPS-validated or NSA-approved cryptography
-          guidelines:
+          constraints:
+          - description: privileged accounts; non-privileged accounts
+        - guidelines:
           - prose: the strength of mechanism requirements to be enforced by a device separate from the system gaining access to accounts is defined;
           id: ia-02.06_odp.03
           label: strength of mechanism requirements
@@ -32254,6 +32263,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "IA-02(06)_ODP[03]"
+          constraints:
+          - description: FIPS-validated or NSA-approved cryptography
         title: Access to Accounts —separate Device
         links:
         - href: '#ia-2'
@@ -32437,15 +32448,15 @@ catalog:
           name: implementation-level
           value: system
       - params:
-        - constraints:
-          - description: privileged accounts; non-privileged accounts
-          id: ia-02.08_odp
+        - id: ia-02.08_odp
           props:
           - name: alt-identifier
             value: ia-2.8_prm_1
           - name: label
             class: sp800-53a
             value: IA-02(08)_ODP
+          constraints:
+          - description: privileged accounts; non-privileged accounts
         title: Access to Accounts — Replay Resistant
         links:
         - href: '#ia-2'
@@ -32971,11 +32982,11 @@ catalog:
           class: sp800-53a
           value: "IA-03_ODP[01]"
       - select:
+          how-many: one-or-more
           choice:
           - local
           - remote
           - network
-          how-many: one-or-more
         id: ia-03_odp.02
         props:
         - name: alt-identifier
@@ -33117,9 +33128,7 @@ catalog:
         value: system
     - controls:
       - params:
-        - constraints:
-          - description: contractors; foreign nationals
-          guidelines:
+        - guidelines:
           - prose: characteristics used to identify individual status is defined;
           id: ia-04.04_odp
           label: characteristics
@@ -33132,6 +33141,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: IA-04(04)_ODP
+          constraints:
+          - description: contractors; foreign nationals
         title: Identify User Status
         links:
         - href: '#ia-4'
@@ -33237,9 +33248,7 @@ catalog:
           name: implementation-level
           value: organization
       params:
-      - constraints:
-        - description: "at a minimum, the ISSO (or similar role within the organization)"
-        guidelines:
+      - guidelines:
         - prose: personnel or roles from whom authorization must be received to assign an identifier are defined;
         id: ia-04_odp.01
         label: personnel or roles
@@ -33249,9 +33258,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IA-04_ODP[01]"
-      - constraints:
-        - description: at least two (2) years
-        guidelines:
+        constraints:
+        - description: "at a minimum, the ISSO (or similar role within the organization)"
+      - guidelines:
         - prose: a time period for preventing reuse of identifiers is defined;
         id: ia-04_odp.02
         label: time period
@@ -33261,6 +33270,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IA-04_ODP[02]"
+        constraints:
+        - description: at least two (2) years
       title: Identifier Management
       links:
       - href: '#7ba1d91c-3934-4d5a-8532-b32f864ad34c'
@@ -36476,11 +36487,11 @@ catalog:
           class: sp800-53a
           value: "IR-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: ir-01_odp.03
         props:
         - name: alt-identifier
@@ -36498,9 +36509,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current incident response policy is reviewed and updated is defined;
         id: ir-01_odp.05
         label: frequency
@@ -36510,6 +36519,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current incident response policy to be reviewed and updated are defined;
         id: ir-01_odp.06
@@ -36520,9 +36531,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current incident response procedures are reviewed and updated is defined;
         id: ir-01_odp.07
         label: frequency
@@ -36532,9 +36541,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require the incident response procedures to be reviewed and updated are defined;
         id: ir-01_odp.08
         label: events
@@ -36544,6 +36553,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -37020,9 +37031,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: "ten (10) days for privileged users, thirty (30) days for Incident Response roles"
-        guidelines:
+      - guidelines:
         - prose: a time period within which incident response training is to be provided to system users assuming an incident response role or responsibility is defined;
         id: ir-02_odp.01
         label: time period
@@ -37032,9 +37041,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-02_ODP[01]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+        constraints:
+        - description: "ten (10) days for privileged users, thirty (30) days for Incident Response roles"
+      - guidelines:
         - prose: frequency at which to provide incident response training to users is defined;
         id: ir-02_odp.02
         label: frequency
@@ -37044,9 +37053,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-02_ODP[02]"
-      - constraints:
+        constraints:
         - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: frequency at which to review and update incident response training content is defined;
         id: ir-02_odp.03
         label: frequency
@@ -37056,6 +37065,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-02_ODP[03]"
+        constraints:
+        - description: at least annually
       - guidelines:
         - prose: events that initiate a review of the incident response training content are defined;
         id: ir-02_odp.04
@@ -37447,9 +37458,7 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       params:
-      - constraints:
-        - description: "functional, at least annually"
-        guidelines:
+      - guidelines:
         - prose: frequency at which to test the effectiveness of the incident response capability for the system is defined;
         id: ir-03_odp.01
         label: frequency
@@ -37459,6 +37468,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-03_ODP[01]"
+        constraints:
+        - description: "functional, at least annually"
       - guidelines:
         - prose: tests used to test the effectiveness of the incident response capability for the system are defined;
         id: ir-03_odp.02
@@ -38568,9 +38579,7 @@ catalog:
           name: implementation-level
           value: organization
       params:
-      - constraints:
-        - description: US-CERT incident reporting timelines as specified in NIST Special Publication 800-61 (as amended)
-        guidelines:
+      - guidelines:
         - prose: time period for personnel to report suspected incidents to the organizational incident response capability is defined;
         id: ir-06_odp.01
         label: time period
@@ -38580,6 +38589,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-06_ODP[01]"
+        constraints:
+        - description: US-CERT incident reporting timelines as specified in NIST Special Publication 800-61 (as amended)
       - guidelines:
         - prose: authorities to whom incident information is to be reported are defined;
         id: ir-06_odp.02
@@ -39086,9 +39097,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-08_ODP[01]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which to review and approve the incident response plan is defined;
         id: ir-08_odp.02
         label: frequency
@@ -39098,6 +39107,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-08_ODP[02]"
+        constraints:
+        - description: at least annually
       - guidelines:
         - prose: "entities, personnel, or roles with designated responsibility for incident response are defined;"
         id: ir-08_odp.03
@@ -39108,9 +39119,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-08_ODP[03]"
-      - constraints:
-        - description: see additional FedRAMP Requirements and Guidance
-        guidelines:
+      - guidelines:
         - prose: incident response personnel (identified by name and/or by role) to whom copies of the incident response plan are to be distributed is/are defined;
         id: ir-08_odp.04
         label: incident response personnel
@@ -39123,9 +39132,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-08_ODP[04]"
-      - constraints:
+        constraints:
         - description: see additional FedRAMP Requirements and Guidance
-        guidelines:
+      - guidelines:
         - prose: organizational elements to which copies of the incident response plan are to be distributed are defined;
         id: ir-08_odp.05
         label: organizational elements
@@ -39133,9 +39142,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-08_ODP[05]"
-      - constraints:
+        constraints:
         - description: see additional FedRAMP Requirements and Guidance
-        guidelines:
+      - guidelines:
         - prose: incident response personnel (identified by name and/or by role) to whom changes to the incident response plan is/are communicated are defined;
         id: ir-08_odp.06
         label: incident response personnel
@@ -39143,9 +39152,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-08_ODP[06]"
-      - constraints:
+        constraints:
         - description: see additional FedRAMP Requirements and Guidance
-        guidelines:
+      - guidelines:
         - prose: organizational elements to which changes to the incident response plan are communicated are defined;
         id: ir-08_odp.07
         label: organizational elements
@@ -39153,6 +39162,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "IR-08_ODP[07]"
+        constraints:
+        - description: see additional FedRAMP Requirements and Guidance
       title: Incident Response Plan
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -39711,9 +39722,7 @@ catalog:
         value: organization
     - controls:
       - params:
-        - constraints:
-          - description: at least annually
-          guidelines:
+        - guidelines:
           - prose: frequency at which to provide information spillage response training is defined;
           id: ir-09.02_odp
           label: frequency
@@ -39723,6 +39732,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: IR-09(02)_ODP
+          constraints:
+          - description: at least annually
         title: Training
         links:
         - href: '#ir-9'
@@ -40425,11 +40436,11 @@ catalog:
           class: sp800-53a
           value: "MA-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: ma-01_odp.03
         props:
         - name: alt-identifier
@@ -40447,9 +40458,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MA-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency with which the current maintenance policy is reviewed and updated is defined;
         id: ma-01_odp.05
         label: frequency
@@ -40459,6 +40468,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MA-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current maintenance policy to be reviewed and updated are defined;
         id: ma-01_odp.06
@@ -40469,9 +40480,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MA-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency with which the current maintenance procedures are reviewed and updated is defined;
         id: ma-01_odp.07
         label: frequency
@@ -40481,9 +40490,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MA-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require the maintenance procedures to be reviewed and updated are defined;
         id: ma-01_odp.08
         label: events
@@ -40493,6 +40502,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MA-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -41578,9 +41589,7 @@ catalog:
           name: implementation-level
           value: organization
       - params:
-        - constraints:
-          - description: the information owner
-          guidelines:
+        - guidelines:
           - prose: personnel or roles who can authorize removal of equipment from the facility is/are defined;
           id: ma-03.03_odp
           label: personnel or roles
@@ -41590,6 +41599,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: MA-03(03)_ODP
+          constraints:
+          - description: the information owner
         title: Prevent Unauthorized Removal
         links:
         - href: '#ma-3'
@@ -41785,9 +41796,7 @@ catalog:
           name: implementation-level
           value: organization
       params:
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: frequency at which to review previously approved system maintenance tools is defined;
         id: ma-03_odp
         label: frequency
@@ -41797,6 +41806,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: MA-03_ODP
+        constraints:
+        - description: at least annually
       title: Maintenance Tools
       links:
       - href: '#a5b1d18d-e670-4586-9e6d-4a88b7ba3df6'
@@ -42831,9 +42842,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MA-06_ODP[01]"
-      - constraints:
-        - description: a timeframe to support advertised uptime and availability
-        guidelines:
+      - guidelines:
         - prose: time period within which maintenance support and/or spare parts are to be obtained after a failure are defined;
         id: ma-06_odp.02
         label: time period
@@ -42843,6 +42852,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MA-06_ODP[02]"
+        constraints:
+        - description: a timeframe to support advertised uptime and availability
       title: Timely Maintenance
       links:
       - href: '#cm-8'
@@ -43002,11 +43013,11 @@ catalog:
           class: sp800-53a
           value: "MP-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: mp-01_odp.03
         props:
         - name: alt-identifier
@@ -43024,9 +43035,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency with which the current media protection policy is reviewed and updated is defined;
         id: mp-01_odp.05
         label: frequency
@@ -43036,6 +43045,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current media protection policy to be reviewed and updated are defined;
         id: mp-01_odp.06
@@ -43046,9 +43057,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency with which the current media protection procedures are reviewed and updated is defined;
         id: mp-01_odp.07
         label: frequency
@@ -43058,9 +43067,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require media protection procedures to be reviewed and updated are defined;
         id: mp-01_odp.08
         label: events
@@ -43070,6 +43079,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -43560,9 +43571,7 @@ catalog:
         - ns: http://csrc.nist.gov/ns/rmf
           name: aggregates
           value: mp-02_odp.04
-      - constraints:
-        - description: all types of digital and/or non-digital media containing sensitive information
-        guidelines:
+      - guidelines:
         - prose: types of digital media to which access is restricted are defined;
         id: mp-02_odp.01
         label: types of digital media
@@ -43570,6 +43579,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-02_ODP[01]"
+        constraints:
+        - description: all types of digital and/or non-digital media containing sensitive information
       - guidelines:
         - prose: personnel or roles authorized to access digital media is/are defined;
         id: mp-02_odp.02
@@ -43578,9 +43589,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-02_ODP[02]"
-      - constraints:
-        - description: all types of digital and/or non-digital media containing sensitive information
-        guidelines:
+      - guidelines:
         - prose: types of non-digital media to which access is restricted are defined;
         id: mp-02_odp.03
         label: types of non-digital media
@@ -43588,6 +43597,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-02_ODP[03]"
+        constraints:
+        - description: all types of digital and/or non-digital media containing sensitive information
       - guidelines:
         - prose: personnel or roles authorized to access non-digital media is/are defined;
         id: mp-02_odp.04
@@ -43779,9 +43790,7 @@ catalog:
         name: implementation-level
         value: organization
     - params:
-      - constraints:
-        - description: no removable media types
-        guidelines:
+      - guidelines:
         - prose: types of system media exempt from marking when remaining in controlled areas are defined;
         id: mp-03_odp.01
         label: types of media exempted from marking
@@ -43794,9 +43803,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-03_ODP[01]"
-      - constraints:
-        - description: organization-defined security safeguards not applicable
-        guidelines:
+        constraints:
+        - description: no removable media types
+      - guidelines:
         - prose: controlled areas where media is exempt from marking are defined;
         id: mp-03_odp.02
         label: controlled areas
@@ -43806,6 +43815,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-03_ODP[02]"
+        constraints:
+        - description: organization-defined security safeguards not applicable
       title: Media Marking
       links:
       - href: '#34a5571f-e252-4309-a8a1-2fdb2faefbcd'
@@ -44001,9 +44012,7 @@ catalog:
         - ns: http://csrc.nist.gov/ns/rmf
           name: aggregates
           value: mp-04_odp.06
-      - constraints:
-        - description: all types of digital and non-digital media with sensitive information
-        guidelines:
+      - guidelines:
         - prose: types of digital media to be physically controlled are defined (if selected);
         id: mp-04_odp.01
         label: types of digital media
@@ -44011,9 +44020,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-04_ODP[01]"
-      - constraints:
+        constraints:
         - description: all types of digital and non-digital media with sensitive information
-        guidelines:
+      - guidelines:
         - prose: types of non-digital media to be physically controlled are defined (if selected);
         id: mp-04_odp.02
         label: types of non-digital media
@@ -44021,9 +44030,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-04_ODP[02]"
-      - constraints:
+        constraints:
         - description: all types of digital and non-digital media with sensitive information
-        guidelines:
+      - guidelines:
         - prose: types of digital media to be securely stored are defined (if selected);
         id: mp-04_odp.03
         label: types of digital media
@@ -44031,9 +44040,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-04_ODP[03]"
-      - constraints:
+        constraints:
         - description: all types of digital and non-digital media with sensitive information
-        guidelines:
+      - guidelines:
         - prose: types of non-digital media to be securely stored are defined (if selected);
         id: mp-04_odp.04
         label: types of non-digital media
@@ -44041,9 +44050,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-04_ODP[04]"
-      - constraints:
-        - description: see additional FedRAMP requirements and guidance
-        guidelines:
+        constraints:
+        - description: all types of digital and non-digital media with sensitive information
+      - guidelines:
         - prose: controlled areas within which to securely store digital media are defined;
         id: mp-04_odp.05
         label: controlled areas
@@ -44051,9 +44060,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-04_ODP[05]"
-      - constraints:
+        constraints:
         - description: see additional FedRAMP requirements and guidance
-        guidelines:
+      - guidelines:
         - prose: controlled areas within which to securely store non-digital media are defined;
         id: mp-04_odp.06
         label: controlled areas
@@ -44061,6 +44070,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-04_ODP[06]"
+        constraints:
+        - description: see additional FedRAMP requirements and guidance
       title: Media Storage
       links:
       - href: '#628d22a1-6a11-4784-bc59-5cd9497b5445'
@@ -44372,9 +44383,7 @@ catalog:
         - ns: http://csrc.nist.gov/ns/rmf
           name: aggregates
           value: mp-05_odp.03
-      - constraints:
-        - description: all media with sensitive information
-        guidelines:
+      - guidelines:
         - prose: types of system media to protect and control during transport outside of controlled areas are defined;
         id: mp-05_odp.01
         label: types of system media
@@ -44384,9 +44393,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-05_ODP[01]"
-      - constraints:
-        - description: "prior to leaving secure/controlled environment: for digital media, encryption in compliance with Federal requirements and utilizes FIPS validated or NSA approved cryptography (see SC-13.); for non-digital media, secured in locked container"
-        guidelines:
+        constraints:
+        - description: all media with sensitive information
+      - guidelines:
         - prose: controls used to protect system media outside of controlled areas are defined;
         id: mp-05_odp.02
         label: controls
@@ -44394,9 +44403,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-05_ODP[02]"
-      - constraints:
+        constraints:
         - description: "prior to leaving secure/controlled environment: for digital media, encryption in compliance with Federal requirements and utilizes FIPS validated or NSA approved cryptography (see SC-13.); for non-digital media, secured in locked container"
-        guidelines:
+      - guidelines:
         - prose: controls used to control system media outside of controlled areas are defined;
         id: mp-05_odp.03
         label: controls
@@ -44404,6 +44413,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-05_ODP[03]"
+        constraints:
+        - description: "prior to leaving secure/controlled environment: for digital media, encryption in compliance with Federal requirements and utilizes FIPS validated or NSA approved cryptography (see SC-13.); for non-digital media, secured in locked container"
       title: Media Transport
       links:
       - href: '#628d22a1-6a11-4784-bc59-5cd9497b5445'
@@ -44738,9 +44749,7 @@ catalog:
         - ns: http://csrc.nist.gov/ns/rmf
           name: aggregates
           value: mp-06_odp.06
-      - constraints:
-        - description: "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
-        guidelines:
+      - guidelines:
         - prose: system media to be sanitized prior to disposal is defined;
         id: mp-06_odp.01
         label: system media
@@ -44748,9 +44757,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-06_ODP[01]"
-      - constraints:
+        constraints:
         - description: "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
-        guidelines:
+      - guidelines:
         - prose: system media to be sanitized prior to release from organizational control is defined;
         id: mp-06_odp.02
         label: system media
@@ -44758,9 +44767,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-06_ODP[02]"
-      - constraints:
+        constraints:
         - description: "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
-        guidelines:
+      - guidelines:
         - prose: system media to be sanitized prior to release for reuse is defined;
         id: mp-06_odp.03
         label: system media
@@ -44768,6 +44777,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "MP-06_ODP[03]"
+        constraints:
+        - description: "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
       - guidelines:
         - prose: sanitization techniques and procedures to be used for sanitization prior to disposal are defined;
         id: mp-06_odp.04
@@ -45291,11 +45302,11 @@ catalog:
           class: sp800-53a
           value: "PE-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: pe-01_odp.03
         props:
         - name: alt-identifier
@@ -45313,9 +45324,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current physical and environmental protection policy is reviewed and updated is defined;
         id: pe-01_odp.05
         label: frequency
@@ -45325,6 +45334,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current physical and environmental protection policy to be reviewed and updated are defined;
         id: pe-01_odp.06
@@ -45335,9 +45346,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current physical and environmental protection procedures are reviewed and updated is defined;
         id: pe-01_odp.07
         label: frequency
@@ -45347,9 +45356,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require the physical and environmental protection procedures to be reviewed and updated are defined;
         id: pe-01_odp.08
         label: events
@@ -45359,6 +45368,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#c7ac44e8-10db-4b64-b2b9-9e32ec1efed0'
@@ -45831,9 +45842,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: frequency at which to review the access list detailing authorized facility access by individuals is defined;
         id: pe-02_odp
         label: frequency
@@ -45843,6 +45852,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: PE-02_ODP
+        constraints:
+        - description: at least annually
       title: Physical Access Authorizations
       links:
       - href: '#7ba1d91c-3934-4d5a-8532-b32f864ad34c'
@@ -46134,15 +46145,15 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-03_ODP[01]"
-      - constraints:
-        - description: CSP defined physical access control systems/devices AND guards
-        id: pe-03_odp.02
+      - id: pe-03_odp.02
         props:
         - name: alt-identifier
           value: pe-3_prm_2
         - name: label
           class: sp800-53a
           value: "PE-03_ODP[02]"
+        constraints:
+        - description: CSP defined physical access control systems/devices AND guards
       - guidelines:
         - prose: physical access control systems or devices used to control ingress and egress to the facility are defined (if selected);
         id: pe-03_odp.03
@@ -46176,9 +46187,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-03_ODP[05]"
-      - constraints:
-        - description: in all circumstances within restricted access area where the information system resides
-        guidelines:
+      - guidelines:
         - prose: circumstances requiring visitor escorts and control of visitor activity are defined;
         id: pe-03_odp.06
         label: circumstances
@@ -46191,6 +46200,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-03_ODP[06]"
+        constraints:
+        - description: in all circumstances within restricted access area where the information system resides
       - guidelines:
         - prose: physical access devices to be inventoried are defined;
         id: pe-03_odp.07
@@ -46201,9 +46212,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-03_ODP[07]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: frequency at which to inventory physical access devices is defined;
         id: pe-03_odp.08
         label: frequency
@@ -46213,9 +46222,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-03_ODP[08]"
-      - constraints:
-        - description: at least annually or earlier as required by a security relevant event.
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: frequency at which to change combinations is defined;
         id: pe-03_odp.09
         label: frequency
@@ -46223,9 +46232,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-03_ODP[09]"
-      - constraints:
+        constraints:
         - description: at least annually or earlier as required by a security relevant event.
-        guidelines:
+      - guidelines:
         - prose: frequency at which to change keys is defined;
         id: pe-03_odp.10
         label: frequency
@@ -46233,6 +46242,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-03_ODP[10]"
+        constraints:
+        - description: at least annually or earlier as required by a security relevant event.
       title: Physical Access Control
       links:
       - href: '#7ba1d91c-3934-4d5a-8532-b32f864ad34c'
@@ -47136,9 +47147,7 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       params:
-      - constraints:
-        - description: at least monthly
-        guidelines:
+      - guidelines:
         - prose: the frequency at which to review physical access logs is defined;
         id: pe-06_odp.01
         label: frequency
@@ -47148,6 +47157,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-06_ODP[01]"
+        constraints:
+        - description: at least monthly
       - guidelines:
         - prose: events or potential indication of events requiring physical access logs to be reviewed are defined;
         id: pe-06_odp.02
@@ -47419,9 +47430,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: for a minimum of one (1) year
-        guidelines:
+      - guidelines:
         - prose: time period for which to maintain visitor access records for the facility where the system resides is defined;
         id: pe-08_odp.01
         label: time period
@@ -47431,9 +47440,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-08_ODP[01]"
-      - constraints:
-        - description: at least monthly
-        guidelines:
+        constraints:
+        - description: for a minimum of one (1) year
+      - guidelines:
         - prose: the frequency at which to review visitor access records is defined;
         id: pe-08_odp.02
         label: frequency
@@ -47443,6 +47452,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-08_ODP[02]"
+        constraints:
+        - description: at least monthly
       - guidelines:
         - prose: personnel to whom visitor access records anomalies are reported to is/are defined;
         id: pe-08_odp.03
@@ -47769,9 +47780,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-10_ODP[01]"
-      - constraints:
-        - description: near more than one egress point of the IT area and ensures it is labeled and protected by a cover to prevent accidental shut-off
-        guidelines:
+      - guidelines:
         - prose: location of emergency shutoff switches or devices by system or system component is defined;
         id: pe-10_odp.02
         label: location
@@ -47784,6 +47793,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-10_ODP[02]"
+        constraints:
+        - description: near more than one egress point of the IT area and ensures it is labeled and protected by a cover to prevent accidental shut-off
       title: Emergency Shutoff
       links:
       - href: '#pe-15'
@@ -48247,9 +48258,7 @@ catalog:
         value: organization
     - controls:
       - params:
-        - constraints:
-          - description: service provider building maintenance/physical security personnel
-          guidelines:
+        - guidelines:
           - prose: personnel or roles to be notified in the event of a fire is/are defined;
           id: pe-13.01_odp.01
           label: personnel or roles
@@ -48259,9 +48268,9 @@ catalog:
           - name: label
             class: sp800-53a
             value: "PE-13(01)_ODP[01]"
-        - constraints:
-          - description: service provider emergency responders with incident response responsibilities
-          guidelines:
+          constraints:
+          - description: service provider building maintenance/physical security personnel
+        - guidelines:
           - prose: emergency responders to be notified in the event of a fire are defined;
           id: pe-13.01_odp.02
           label: emergency responders
@@ -48271,6 +48280,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "PE-13(01)_ODP[02]"
+          constraints:
+          - description: service provider emergency responders with incident response responsibilities
         title: Detection Systems — Automatic Activation and Notification
         links:
         - href: '#pe-13'
@@ -48881,15 +48892,15 @@ catalog:
         name: implementation-level
         value: organization
     - params:
-      - constraints:
-        - description: "consistent with American Society of Heating, Refrigerating and Air-conditioning Engineers (ASHRAE) document entitled Thermal Guidelines for Data Processing Environments"
-        id: pe-14_odp.01
+      - id: pe-14_odp.01
         props:
         - name: alt-identifier
           value: pe-14_prm_1
         - name: label
           class: sp800-53a
           value: "PE-14_ODP[01]"
+        constraints:
+        - description: "consistent with American Society of Heating, Refrigerating and Air-conditioning Engineers (ASHRAE) document entitled Thermal Guidelines for Data Processing Environments"
       - guidelines:
         - prose: environmental control(s) for which to maintain a specified level in the facility where the system resides are defined (if selected);
         id: pe-14_odp.02
@@ -48910,9 +48921,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-14_ODP[03]"
-      - constraints:
-        - description: continuously
-        guidelines:
+      - guidelines:
         - prose: frequency at which to monitor environmental control levels is defined;
         id: pe-14_odp.04
         label: frequency
@@ -48922,6 +48931,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-14_ODP[04]"
+        constraints:
+        - description: continuously
       title: Environmental Controls
       links:
       - href: '#at-3'
@@ -49281,9 +49292,7 @@ catalog:
         - ns: http://csrc.nist.gov/ns/rmf
           name: aggregates
           value: pe-16_odp.02
-      - constraints:
-        - description: all information system components
-        guidelines:
+      - guidelines:
         - prose: types of system components to be authorized and controlled when entering the facility are defined;
         id: pe-16_odp.01
         label: types of system components
@@ -49291,9 +49300,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-16_ODP[01]"
-      - constraints:
+        constraints:
         - description: all information system components
-        guidelines:
+      - guidelines:
         - prose: types of system components to be authorized and controlled when exiting the facility are defined;
         id: pe-16_odp.02
         label: types of system components
@@ -49301,6 +49310,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PE-16_ODP[02]"
+        constraints:
+        - description: all information system components
       title: Delivery and Removal
       links:
       - href: '#cm-3'
@@ -49820,11 +49831,11 @@ catalog:
           class: sp800-53a
           value: "PL-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: pl-01_odp.03
         props:
         - name: alt-identifier
@@ -49842,9 +49853,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PL-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency with which the current planning policy is reviewed and updated is defined;
         id: pl-01_odp.05
         label: frequency
@@ -49854,6 +49863,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PL-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current planning policy to be reviewed and updated are defined;
         id: pl-01_odp.06
@@ -49864,9 +49875,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PL-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency with which the current planning procedures are reviewed and updated is defined;
         id: pl-01_odp.07
         label: frequency
@@ -49876,9 +49885,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PL-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require procedures to be reviewed and updated are defined;
         id: pl-01_odp.08
         label: events
@@ -49888,6 +49897,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PL-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -50360,9 +50371,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: to include chief privacy and ISSO and/or similar role or designees
-        guidelines:
+      - guidelines:
         - prose: individuals or groups with whom security and privacy-related activities affecting the system that require planning and coordination is/are assigned;
         id: pl-02_odp.01
         label: individuals or groups
@@ -50372,9 +50381,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PL-02_ODP[01]"
-      - constraints:
-        - description: to include chief privacy and ISSO and/or similar role
-        guidelines:
+        constraints:
+        - description: to include chief privacy and ISSO and/or similar role or designees
+      - guidelines:
         - prose: personnel or roles to receive distributed copies of the system security and privacy plans is/are assigned;
         id: pl-02_odp.02
         label: personnel or roles
@@ -50384,9 +50393,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PL-02_ODP[02]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+        constraints:
+        - description: to include chief privacy and ISSO and/or similar role
+      - guidelines:
         - prose: frequency to review system security and privacy plans is defined;
         id: pl-02_odp.03
         label: frequency
@@ -50396,6 +50405,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PL-02_ODP[03]"
+        constraints:
+        - description: at least annually
       title: System Security and Privacy Plans
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -51754,9 +51765,7 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       params:
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: frequency for reviewing and updating the rules of behavior is defined;
         id: pl-04_odp.01
         label: frequency
@@ -51766,15 +51775,17 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PL-04_ODP[01]"
-      - constraints:
-        - description: at least annually and when the rules are revised or changed
-        id: pl-04_odp.02
+        constraints:
+        - description: at least every 3 years
+      - id: pl-04_odp.02
         props:
         - name: alt-identifier
           value: pl-4_prm_2
         - name: label
           class: sp800-53a
           value: "PL-04_ODP[02]"
+        constraints:
+        - description: at least annually and when the rules are revised or changed
       - guidelines:
         - prose: frequency for individuals to read and re-acknowledge the rules of behavior is defined (if selected);
         id: pl-04_odp.03
@@ -52063,9 +52074,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: at least annually and when a significant change occurs
-        guidelines:
+      - guidelines:
         - prose: frequency for review and update to reflect changes in the enterprise architecture;
         id: pl-08_odp
         label: frequency
@@ -52075,6 +52084,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: PL-08_ODP
+        constraints:
+        - description: at least annually and when a significant change occurs
       title: Security and Privacy Architectures
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -52891,11 +52902,11 @@ catalog:
           class: sp800-53a
           value: "PS-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: ps-01_odp.03
         props:
         - name: alt-identifier
@@ -52913,9 +52924,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current personnel security policy is reviewed and updated is defined;
         id: ps-01_odp.05
         label: frequency
@@ -52925,6 +52934,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current personnel security policy to be reviewed and updated are defined;
         id: ps-01_odp.06
@@ -52935,9 +52946,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current personnel security procedures are reviewed and updated is defined;
         id: ps-01_odp.07
         label: frequency
@@ -52947,9 +52956,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require the personnel security procedures to be reviewed and updated are defined;
         id: ps-01_odp.08
         label: events
@@ -52959,6 +52968,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#c7ac44e8-10db-4b64-b2b9-9e32ec1efed0'
@@ -53433,9 +53444,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: at least every three years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which to review and update position risk designations is defined;
         id: ps-02_odp
         label: frequency
@@ -53445,6 +53454,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: PS-02_ODP
+        constraints:
+        - description: at least every three years
       title: Position Risk Designation
       links:
       - href: '#a5ef5e56-5c1a-4911-b419-37dddc1b3581'
@@ -53651,9 +53662,7 @@ catalog:
         value: organization
     - controls:
       - params:
-        - constraints:
-          - description: personnel screening criteria - as required by specific information
-          guidelines:
+        - guidelines:
           - prose: "additional personnel screening criteria to be satisfied for individuals accessing a system processing, storing, or transmitting information requiring special protection are defined;"
           id: ps-03.03_odp
           label: additional personnel screening criteria
@@ -53663,6 +53672,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: PS-03(03)_ODP
+          constraints:
+          - description: personnel screening criteria - as required by specific information
         title: Information Requiring Special Protective Measures
         links:
         - href: '#ps-3'
@@ -53826,12 +53837,7 @@ catalog:
         - ns: http://csrc.nist.gov/ns/rmf
           name: aggregates
           value: ps-03_odp.02
-      - constraints:
-        - description: |-
-            For national security clearances; a reinvestigation is required during the fifth (5th) year for top secret security clearance, the tenth (10th) year for secret security clearance, and fifteenth (15th) year for confidential security clearance.
-
-            For moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the fifth (5th) year. There is no reinvestigation for other moderate risk positions or any low risk positions
-        guidelines:
+      - guidelines:
         - prose: conditions requiring rescreening of individuals are defined;
         id: ps-03_odp.01
         label: conditions requiring rescreening
@@ -53839,12 +53845,12 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-03_ODP[01]"
-      - constraints:
+        constraints:
         - description: |-
-            for national security clearances; a reinvestigation is required during the fifth (5th) year for top secret security clearance, the tenth (10th) year for secret security clearance, and fifteenth (15th) year for confidential security clearance.
+            For national security clearances; a reinvestigation is required during the fifth (5th) year for top secret security clearance, the tenth (10th) year for secret security clearance, and fifteenth (15th) year for confidential security clearance.
 
             For moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the fifth (5th) year. There is no reinvestigation for other moderate risk positions or any low risk positions
-        guidelines:
+      - guidelines:
         - prose: the frequency of rescreening individuals where it is so indicated is defined;
         id: ps-03_odp.02
         label: frequency
@@ -53852,6 +53858,11 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-03_ODP[02]"
+        constraints:
+        - description: |-
+            for national security clearances; a reinvestigation is required during the fifth (5th) year for top secret security clearance, the tenth (10th) year for secret security clearance, and fifteenth (15th) year for confidential security clearance.
+
+            For moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the fifth (5th) year. There is no reinvestigation for other moderate risk positions or any low risk positions
       title: Personnel Screening
       links:
       - href: '#55b0c93a-5e48-457a-baa6-5ce81c239c49'
@@ -54074,9 +54085,7 @@ catalog:
         name: implementation-level
         value: organization
     - params:
-      - constraints:
-        - description: four (4) hours
-        guidelines:
+      - guidelines:
         - prose: a time period within which to disable system access is defined;
         id: ps-04_odp.01
         label: time period
@@ -54086,6 +54095,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-04_ODP[01]"
+        constraints:
+        - description: four (4) hours
       - guidelines:
         - prose: information security topics to be discussed when conducting exit interviews are defined;
         id: ps-04_odp.02
@@ -54360,9 +54371,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-05_ODP[01]"
-      - constraints:
-        - description: twenty-four (24) hours
-        guidelines:
+      - guidelines:
         - prose: the time period within which transfer or reassignment actions must occur following transfer or reassignment is defined;
         id: ps-05_odp.02
         label: time period following the formal transfer action
@@ -54372,9 +54381,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-05_ODP[02]"
-      - constraints:
-        - description: including access control personnel responsible for the system
-        guidelines:
+        constraints:
+        - description: twenty-four (24) hours
+      - guidelines:
         - prose: personnel or roles to be notified when individuals are reassigned or transferred to other positions within the organization is/are defined;
         id: ps-05_odp.03
         label: personnel or roles
@@ -54384,9 +54393,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-05_ODP[03]"
-      - constraints:
-        - description: twenty-four (24) hours
-        guidelines:
+        constraints:
+        - description: including access control personnel responsible for the system
+      - guidelines:
         - prose: time period within which to notify organization-defined personnel or roles when individuals are reassigned or transferred to other positions within the organization is defined;
         id: ps-05_odp.04
         label: time period
@@ -54396,6 +54405,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-05_ODP[04]"
+        constraints:
+        - description: twenty-four (24) hours
       title: Personnel Transfer
       links:
       - href: '#ac-2'
@@ -54619,9 +54630,7 @@ catalog:
         name: implementation-level
         value: organization
     - params:
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which to review and update access agreements is defined;
         id: ps-06_odp.01
         label: frequency
@@ -54631,9 +54640,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-06_ODP[01]"
-      - constraints:
-        - description: at least annually and any time there is a change to the user's level of access
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: the frequency at which to re-sign access agreements to maintain access to organizational information is defined;
         id: ps-06_odp.02
         label: frequency
@@ -54643,6 +54652,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-06_ODP[02]"
+        constraints:
+        - description: at least annually and any time there is a change to the user's level of access
       title: Access Agreements
       links:
       - href: '#ac-17'
@@ -54895,9 +54906,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: "including access control personnel responsible for the system and/or facilities, as appropriate"
-        guidelines:
+      - guidelines:
         - prose: personnel or roles to be notified of any personnel transfers or terminations of external personnel who possess organizational credentials and/or badges or who have system privileges is/are defined;
         id: ps-07_odp.01
         label: personnel or roles
@@ -54907,9 +54916,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-07_ODP[01]"
-      - constraints:
-        - description: within twenty-four (24) hours
-        guidelines:
+        constraints:
+        - description: "including access control personnel responsible for the system and/or facilities, as appropriate"
+      - guidelines:
         - prose: time period within which third-party providers are required to notify organization-defined personnel or roles of any personnel transfers or terminations of external personnel who possess organizational credentials and/or badges or who have system privileges is defined;
         id: ps-07_odp.02
         label: time period
@@ -54919,6 +54928,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-07_ODP[02]"
+        constraints:
+        - description: within twenty-four (24) hours
       title: External Personnel Security
       links:
       - href: '#77faf0bc-c394-44ad-9154-bbac3b79c8ad'
@@ -55195,9 +55206,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: to include the ISSO and/or similar role within the organization
-        guidelines:
+      - guidelines:
         - prose: personnel or roles to be notified when a formal employee sanctions process is initiated is/are defined;
         id: ps-08_odp.01
         label: personnel or roles
@@ -55207,9 +55216,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-08_ODP[01]"
-      - constraints:
-        - description: 24 hours
-        guidelines:
+        constraints:
+        - description: to include the ISSO and/or similar role within the organization
+      - guidelines:
         - prose: the time period within which organization-defined personnel or roles must be notified when a formal employee sanctions process is initiated is defined;
         id: ps-08_odp.02
         label: time period
@@ -55219,6 +55228,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "PS-08_ODP[02]"
+        constraints:
+        - description: 24 hours
       title: Personnel Sanctions
       links:
       - href: '#pl-4'
@@ -55540,11 +55551,11 @@ catalog:
           class: sp800-53a
           value: "RA-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: ra-01_odp.03
         props:
         - name: alt-identifier
@@ -55562,9 +55573,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "RA-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current risk assessment policy is reviewed and updated is defined;
         id: ra-01_odp.05
         label: frequency
@@ -55574,6 +55583,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "RA-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current risk assessment policy to be reviewed and updated are defined;
         id: ra-01_odp.06
@@ -55584,9 +55595,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "RA-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current risk assessment procedures are reviewed and updated is defined;
         id: ra-01_odp.07
         label: frequency
@@ -55596,9 +55605,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "RA-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require risk assessment procedures to be reviewed and updated are defined;
         id: ra-01_odp.08
         label: events
@@ -55608,6 +55617,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "RA-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -56501,15 +56512,15 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       params:
-      - constraints:
-        - description: security assessment report
-        id: ra-03_odp.01
+      - id: ra-03_odp.01
         props:
         - name: alt-identifier
           value: ra-3_prm_1
         - name: label
           class: sp800-53a
           value: "RA-03_ODP[01]"
+        constraints:
+        - description: security assessment report
       - guidelines:
         - prose: a document in which risk assessment results are to be documented (if not documented in the security and privacy plans or risk assessment report) is defined (if selected);
         id: ra-03_odp.02
@@ -56520,9 +56531,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "RA-03_ODP[02]"
-      - constraints:
-        - description: at least every three (3) years and when a significant change occurs
-        guidelines:
+      - guidelines:
         - prose: the frequency to review risk assessment results is defined;
         id: ra-03_odp.03
         label: frequency
@@ -56532,6 +56541,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "RA-03_ODP[03]"
+        constraints:
+        - description: at least every three (3) years and when a significant change occurs
       - guidelines:
         - prose: personnel or roles to whom risk assessment results are to be disseminated is/are defined;
         id: ra-03_odp.04
@@ -56542,9 +56553,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "RA-03_ODP[04]"
-      - constraints:
-        - description: at least every three (3) years
-        guidelines:
+      - guidelines:
         - prose: the frequency to update the risk assessment is defined;
         id: ra-03_odp.05
         label: frequency
@@ -56554,6 +56563,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "RA-03_ODP[05]"
+        constraints:
+        - description: at least every three (3) years
       title: Risk Assessment
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -56994,15 +57005,15 @@ catalog:
         value: "true"
     - controls:
       - params:
-        - constraints:
-          - description: within 24 hours prior to running scans
-          id: ra-05.02_odp.01
+        - id: ra-05.02_odp.01
           props:
           - name: alt-identifier
             value: ra-5.2_prm_1
           - name: label
             class: sp800-53a
             value: "RA-05(02)_ODP[01]"
+          constraints:
+          - description: within 24 hours prior to running scans
         - guidelines:
           - prose: the frequency for updating the system vulnerabilities to be scanned is defined (if selected);
           id: ra-05.02_odp.02
@@ -57248,9 +57259,7 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       - params:
-        - constraints:
-          - description: all components that support authentication
-          guidelines:
+        - guidelines:
           - prose: system components to which privileged access is authorized for selected vulnerability scanning activities are defined;
           id: ra-05.05_odp.01
           label: system components
@@ -57260,9 +57269,9 @@ catalog:
           - name: label
             class: sp800-53a
             value: "RA-05(05)_ODP[01]"
-        - constraints:
-          - description: all scans
-          guidelines:
+          constraints:
+          - description: all components that support authentication
+        - guidelines:
           - prose: vulnerability scanning activities selected for privileged access authorization to system components are defined;
           id: ra-05.05_odp.02
           label: vulnerability scanning activities
@@ -57272,6 +57281,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "RA-05(05)_ODP[02]"
+          constraints:
+          - description: all scans
         title: Privileged Access
         links:
         - href: '#ra-5'
@@ -57530,9 +57541,7 @@ catalog:
         - ns: http://csrc.nist.gov/ns/rmf
           name: aggregates
           value: ra-05_odp.02
-      - constraints:
-        - description: monthly operating system/infrastructure; monthly web applications (including APIs) and databases
-        guidelines:
+      - guidelines:
         - prose: frequency for monitoring systems and hosted applications for vulnerabilities is defined;
         id: ra-05_odp.01
         label: frequency and/or randomly in accordance with organization-defined process
@@ -57540,9 +57549,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "RA-05_ODP[01]"
-      - constraints:
+        constraints:
         - description: monthly operating system/infrastructure; monthly web applications (including APIs) and databases
-        guidelines:
+      - guidelines:
         - prose: frequency for scanning systems and hosted applications for vulnerabilities is defined;
         id: ra-05_odp.02
         label: frequency and/or randomly in accordance with organization-defined process
@@ -57550,9 +57559,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "RA-05_ODP[02]"
-      - constraints:
-        - description: high-risk vulnerabilities mitigated within thirty (30) days from date of discovery; moderate-risk vulnerabilities mitigated within ninety (90) days from date of discovery; low risk vulnerabilities mitigated within one hundred and eighty (180) days from date of discovery
-        guidelines:
+        constraints:
+        - description: monthly operating system/infrastructure; monthly web applications (including APIs) and databases
+      - guidelines:
         - prose: response times to remediate legitimate vulnerabilities in accordance with an organizational assessment of risk are defined;
         id: ra-05_odp.03
         label: response times
@@ -57562,6 +57571,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "RA-05_ODP[03]"
+        constraints:
+        - description: high-risk vulnerabilities mitigated within thirty (30) days from date of discovery; moderate-risk vulnerabilities mitigated within ninety (90) days from date of discovery; low risk vulnerabilities mitigated within one hundred and eighty (180) days from date of discovery
       - guidelines:
         - prose: personnel or roles with whom information obtained from the vulnerability scanning process and control assessments is to be shared;
         id: ra-05_odp.04
@@ -58429,11 +58440,11 @@ catalog:
           class: sp800-53a
           value: "SA-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: sa-01_odp.03
         props:
         - name: alt-identifier
@@ -58451,9 +58462,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SA-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current system and services acquisition policy is reviewed and updated is defined;
         id: sa-01_odp.05
         label: frequency
@@ -58463,6 +58472,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SA-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current system and services acquisition policy to be reviewed and updated are defined;
         id: sa-01_odp.06
@@ -58473,9 +58484,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SA-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current system and services acquisition procedures are reviewed and updated is defined;
         id: sa-01_odp.07
         label: frequency
@@ -58485,9 +58494,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SA-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require the system and services acquisition procedures to be reviewed and updated are defined;
         id: sa-01_odp.08
         label: events
@@ -58497,6 +58506,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SA-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -59816,15 +59827,15 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       - params:
-        - constraints:
-          - description: at a minimum to include security-relevant external system interfaces; high-level design; low-level design; source code or network and data flow diagram;
-          id: sa-04.02_odp.01
+        - id: sa-04.02_odp.01
           props:
           - name: alt-identifier
             value: sa-4.2_prm_1
           - name: label
             class: sp800-53a
             value: "SA-04(02)_ODP[01]"
+          constraints:
+          - description: at a minimum to include security-relevant external system interfaces; high-level design; low-level design; source code or network and data flow diagram;
         - guidelines:
           - prose: design and implementation information is defined (if selected);
           id: sa-04.02_odp.02
@@ -60245,10 +60256,10 @@ catalog:
           value: "true"
       params:
       - select:
+          how-many: one-or-more
           choice:
           - standardized contract language
           - "{{ insert: param, sa-04_odp.02 }}"
-          how-many: one-or-more
         id: sa-04_odp.01
         props:
         - name: alt-identifier
@@ -60913,9 +60924,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SA-05_ODP[01]"
-      - constraints:
-        - description: "at a minimum, the ISSO (or similar role within the organization)"
-        guidelines:
+      - guidelines:
         - prose: personnel or roles to distribute system documentation to is/are defined;
         id: sa-05_odp.02
         label: personnel or roles
@@ -60925,6 +60934,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SA-05_ODP[02]"
+        constraints:
+        - description: "at a minimum, the ISSO (or similar role within the organization)"
       title: System Documentation
       links:
       - href: '#e3cc0520-a366-4fc9-abc2-5272db7e3564'
@@ -62220,9 +62231,7 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       - params:
-        - constraints:
-          - description: all external systems where Federal information is processed or stored
-          guidelines:
+        - guidelines:
           - prose: "external system services that require the identification of functions, ports, protocols, and other services are defined;"
           id: sa-09.02_odp
           label: external system services
@@ -62232,6 +62241,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: SA-09(02)_ODP
+          constraints:
+          - description: all external systems where Federal information is processed or stored
         title: "Identification of Functions, Ports, Protocols, and Services"
         links:
         - href: '#sa-9'
@@ -62344,15 +62355,15 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       - params:
-        - constraints:
-          - description: "information processing, information or data, AND system services"
-          id: sa-09.05_odp.01
+        - id: sa-09.05_odp.01
           props:
           - name: alt-identifier
             value: sa-9.5_prm_1
           - name: label
             class: sp800-53a
             value: "SA-09(05)_ODP[01]"
+          constraints:
+          - description: "information processing, information or data, AND system services"
         - guidelines:
           - prose: "locations where {{ insert: param, sa-09.05_odp.01 }} is/are to be restricted are defined;"
           id: sa-09.05_odp.02
@@ -62507,9 +62518,7 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       params:
-      - constraints:
-        - description: Appropriate FedRAMP Security Controls Baseline (s) if Federal information is processed or stored within the external system
-        guidelines:
+      - guidelines:
         - prose: controls to be employed by external system service providers are defined;
         id: sa-09_odp.01
         label: controls
@@ -62519,9 +62528,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SA-09_ODP[01]"
-      - constraints:
-        - description: Federal/FedRAMP Continuous Monitoring requirements must be met for external systems where Federal information is processed or stored
-        guidelines:
+        constraints:
+        - description: Appropriate FedRAMP Security Controls Baseline (s) if Federal information is processed or stored within the external system
+      - guidelines:
         - prose: "processes, methods, and techniques employed to monitor control compliance by external service providers are defined;"
         id: sa-09_odp.02
         label: "processes, methods, and techniques"
@@ -62531,6 +62540,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SA-09_ODP[02]"
+        constraints:
+        - description: Federal/FedRAMP Continuous Monitoring requirements must be met for external systems where Federal information is processed or stored
       title: External System Services
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -62841,15 +62852,15 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: "development, implementation, AND operation"
-        id: sa-10_odp.01
+      - id: sa-10_odp.01
         props:
         - name: alt-identifier
           value: sa-10_prm_1
         - name: label
           class: sp800-53a
           value: "SA-10_ODP[01]"
+        constraints:
+        - description: "development, implementation, AND operation"
       - guidelines:
         - prose: configuration items under configuration management are defined;
         id: sa-10_odp.02
@@ -64027,12 +64038,12 @@ catalog:
           value: "true"
       params:
       - select:
+          how-many: one-or-more
           choice:
           - unit
           - integration
           - system
           - regression
-          how-many: one-or-more
         id: sa-11_odp.01
         props:
         - name: alt-identifier
@@ -64716,9 +64727,7 @@ catalog:
         - ns: http://csrc.nist.gov/ns/rmf
           name: aggregates
           value: sa-15_odp.03
-      - constraints:
-        - description: frequency at least annually
-        guidelines:
+      - guidelines:
         - prose: "frequency at which to review the development process, standards, tools, tool options, and tool configurations is defined;"
         id: sa-15_odp.01
         label: frequency
@@ -64728,9 +64737,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SA-15_ODP[01]"
-      - constraints:
-        - description: FedRAMP Security Authorization requirements
-        guidelines:
+        constraints:
+        - description: frequency at least annually
+      - guidelines:
         - prose: "security requirements to be satisfied by the process, standards, tools, tool options, and tool configurations are defined;"
         id: sa-15_odp.02
         label: security requirements
@@ -64738,6 +64747,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SA-15_ODP[02]"
+        constraints:
+        - description: FedRAMP Security Authorization requirements
       - guidelines:
         - prose: "privacy requirements to be satisfied by the process, standards, tools, tool options, and tool configurations are defined;"
         id: sa-15_odp.03
@@ -65146,10 +65157,10 @@ catalog:
         value: "true"
     - params:
       - select:
+          how-many: one-or-more
           choice:
           - in-house support
           - "{{ insert: param, sa-22_odp.02 }}"
-          how-many: one-or-more
         id: sa-22_odp.01
         props:
         - name: alt-identifier
@@ -65362,11 +65373,11 @@ catalog:
           class: sp800-53a
           value: "SC-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business-process-level
           - system-level
-          how-many: one-or-more
         id: sc-01_odp.03
         props:
         - name: alt-identifier
@@ -65384,9 +65395,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SC-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current system and communications protection policy is reviewed and updated is defined;
         id: sc-01_odp.05
         label: frequency
@@ -65396,6 +65405,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SC-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current system and communications protection policy to be reviewed and updated are defined;
         id: sc-01_odp.06
@@ -65406,9 +65417,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SC-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current system and communications protection procedures are reviewed and updated is defined;
         id: sc-01_odp.07
         label: frequency
@@ -65418,9 +65427,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SC-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require the system and communications protection procedures to be reviewed and updated are defined;
         id: sc-01_odp.08
         label: events
@@ -65430,6 +65439,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SC-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -66157,9 +66168,7 @@ catalog:
         name: implementation-level
         value: system
     - params:
-      - constraints:
-        - description: "at a minimum: ICMP (ping) flood, SYN flood, slowloris, buffer overflow attack, and volume attack"
-        guidelines:
+      - guidelines:
         - prose: types of denial-of-service events to be protected against or limited are defined;
         id: sc-05_odp.01
         label: types of denial-of-service events
@@ -66169,15 +66178,17 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SC-05_ODP[01]"
-      - constraints:
-        - description: Protect against
-        id: sc-05_odp.02
+        constraints:
+        - description: "at a minimum: ICMP (ping) flood, SYN flood, slowloris, buffer overflow attack, and volume attack"
+      - id: sc-05_odp.02
         props:
         - name: alt-identifier
           value: sc-5_prm_1
         - name: label
           class: sp800-53a
           value: "SC-05_ODP[02]"
+        constraints:
+        - description: Protect against
       - guidelines:
         - prose: controls to achieve the denial-of-service objective by type of denial-of-service event are defined;
         id: sc-05_odp.03
@@ -66475,9 +66486,7 @@ catalog:
           name: implementation-level
           value: system
       - params:
-        - constraints:
-          - description: at least every 180 days or whenever there is a change in the threat environment that warrants a review of the exceptions
-          guidelines:
+        - guidelines:
           - prose: the frequency at which to review exceptions to traffic flow policy is defined;
           id: sc-07.04_odp
           label: frequency
@@ -66487,6 +66496,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: SC-07(04)_ODP
+          constraints:
+          - description: at least every 180 days or whenever there is a change in the threat environment that warrants a review of the exceptions
         title: External Telecommunications Services
         links:
         - href: '#sc-7'
@@ -66907,15 +66918,15 @@ catalog:
           name: implementation-level
           value: organization
       - params:
-        - constraints:
-          - description: any systems
-          id: sc-07.05_odp.01
+        - id: sc-07.05_odp.01
           props:
           - name: alt-identifier
             value: sc-7.5_prm_1
           - name: label
             class: sp800-53a
             value: "SC-07(05)_ODP[01]"
+          constraints:
+          - description: any systems
         - guidelines:
           - prose: systems for which network communications traffic is denied by default and network communications traffic is allowed by exception are defined (if selected).
           id: sc-07.05_odp.02
@@ -67217,9 +67228,7 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SC-07(08)_ODP[01]"
-        - constraints:
-          - description: any network outside of organizational control and any network outside the authorization boundary
-          guidelines:
+        - guidelines:
           - prose: external networks to which internal communications traffic is to be routed are defined;
           id: sc-07.08_odp.02
           label: external networks
@@ -67229,6 +67238,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SC-07(08)_ODP[02]"
+          constraints:
+          - description: any network outside of organizational control and any network outside the authorization boundary
         title: Route Traffic to Authenticated Proxy Servers
         links:
         - href: '#sc-7'
@@ -67351,9 +67362,7 @@ catalog:
           name: implementation-level
           value: system
       - params:
-        - constraints:
-          - description: "Host Intrusion Prevention System (HIPS), Host Intrusion Detection System (HIDS), or minimally a host-based firewall"
-          guidelines:
+        - guidelines:
           - prose: host-based boundary protection mechanisms to be implemented are defined;
           id: sc-07.12_odp.01
           label: host-based boundary protection mechanisms
@@ -67363,6 +67372,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SC-07(12)_ODP[01]"
+          constraints:
+          - description: "Host Intrusion Prevention System (HIPS), Host Intrusion Detection System (HIDS), or minimally a host-based firewall"
         - guidelines:
           - prose: system components where host-based boundary protection mechanisms are to be implemented are defined;
           id: sc-07.12_odp.02
@@ -67975,15 +67986,15 @@ catalog:
         value: system
     - controls:
       - params:
-        - constraints:
-          - description: prevent unauthorized disclosure of information AND detect changes to information
-          id: sc-08.01_odp
+        - id: sc-08.01_odp
           props:
           - name: alt-identifier
             value: sc-8.1_prm_1
           - name: label
             class: sp800-53a
             value: SC-08(01)_ODP
+          constraints:
+          - description: prevent unauthorized disclosure of information AND detect changes to information
         title: Cryptographic Protection
         links:
         - href: '#sc-8'
@@ -68140,15 +68151,15 @@ catalog:
           name: implementation-level
           value: system
       params:
-      - constraints:
-        - description: confidentiality AND integrity
-        id: sc-08_odp
+      - id: sc-08_odp
         props:
         - name: alt-identifier
           value: sc-8_prm_1
         - name: label
           class: sp800-53a
           value: SC-08_ODP
+        constraints:
+        - description: confidentiality AND integrity
       title: Transmission Confidentiality and Integrity
       links:
       - href: '#678e3d6c-150b-4393-aec5-6e3481eb1e00'
@@ -68363,9 +68374,7 @@ catalog:
         name: implementation-level
         value: system
     - params:
-      - constraints:
-        - description: no longer than ten (10) minutes for privileged sessions and no longer than fifteen (15) minutes for user sessions
-        guidelines:
+      - guidelines:
         - prose: a time period of inactivity after which the system terminates a network connection associated with a communication session is defined;
         id: sc-10_odp
         label: time period
@@ -68375,6 +68384,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: SC-10_ODP
+        constraints:
+        - description: no longer than ten (10) minutes for privileged sessions and no longer than fifteen (15) minutes for user sessions
       title: Network Disconnect
       links:
       - href: '#ac-17'
@@ -68490,9 +68501,7 @@ catalog:
         name: implementation-level
         value: system
     - params:
-      - constraints:
-        - description: In accordance with Federal requirements
-        guidelines:
+      - guidelines:
         - prose: "requirements for key generation, distribution, storage, access, and destruction are defined;"
         id: sc-12_odp
         label: requirements
@@ -68505,6 +68514,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: SC-12_ODP
+        constraints:
+        - description: In accordance with Federal requirements
       title: Cryptographic Key Establishment and Management
       links:
       - href: '#678e3d6c-150b-4393-aec5-6e3481eb1e00'
@@ -68736,9 +68747,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SC-13_ODP[01]"
-      - constraints:
-        - description: FIPS-validated or NSA-approved cryptography
-        guidelines:
+      - guidelines:
         - prose: types of cryptography for each specified cryptographic use are defined;
         id: sc-13_odp.02
         label: types of cryptography
@@ -68751,6 +68760,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SC-13_ODP[02]"
+        constraints:
+        - description: FIPS-validated or NSA-approved cryptography
       title: Cryptographic Protection
       links:
       - href: '#678e3d6c-150b-4393-aec5-6e3481eb1e00'
@@ -69034,9 +69045,7 @@ catalog:
         name: implementation-level
         value: system
     - params:
-      - constraints:
-        - description: no exceptions for computing devices
-        guidelines:
+      - guidelines:
         - prose: exceptions where remote activation is to be allowed are defined;
         id: sc-15_odp
         label: exceptions where remote activation is to be allowed
@@ -69046,6 +69055,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: SC-15_ODP
+        constraints:
+        - description: no exceptions for computing devices
       title: Collaborative Computing Devices and Applications
       links:
       - href: '#ac-21'
@@ -70388,9 +70399,7 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SC-28(01)_ODP[01]"
-        - constraints:
-          - description: all information system components storing Federal data or system data that must be protected at the High or Moderate impact levels
-          guidelines:
+        - guidelines:
           - prose: system components or media requiring cryptographic protection is/are defined;
           id: sc-28.01_odp.02
           label: system components or media
@@ -70400,6 +70409,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SC-28(01)_ODP[02]"
+          constraints:
+          - description: all information system components storing Federal data or system data that must be protected at the High or Moderate impact levels
         title: Cryptographic Protection
         links:
         - href: '#sc-28'
@@ -70560,15 +70571,15 @@ catalog:
           name: implementation-level
           value: system
       params:
-      - constraints:
-        - description: confidentiality AND integrity
-        id: sc-28_odp.01
+      - id: sc-28_odp.01
         props:
         - name: alt-identifier
           value: sc-28_prm_1
         - name: label
           class: sp800-53a
           value: "SC-28_ODP[01]"
+        constraints:
+        - description: confidentiality AND integrity
       - guidelines:
         - prose: information at rest requiring protection is defined;
         id: sc-28_odp.02
@@ -70899,9 +70910,7 @@ catalog:
         value: "true"
     - controls:
       - params:
-        - constraints:
-          - description: At least hourly
-          guidelines:
+        - guidelines:
           - prose: the frequency at which to compare the internal system clocks with the authoritative time source is defined;
           id: sc-45.01_odp.01
           label: frequency
@@ -70911,9 +70920,9 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SC-45(01)_ODP[01]"
-        - constraints:
-          - description: http://tf.nist.gov/tf-cgi/servers.cgi
-          guidelines:
+          constraints:
+          - description: At least hourly
+        - guidelines:
           - prose: the authoritative time source to which internal system clocks are to be compared is defined;
           id: sc-45.01_odp.02
           label: authoritative time source
@@ -70923,9 +70932,9 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SC-45(01)_ODP[02]"
-        - constraints:
-          - description: any difference
-          guidelines:
+          constraints:
+          - description: http://tf.nist.gov/tf-cgi/servers.cgi
+        - guidelines:
           - prose: the time period to compare the internal system clocks with the authoritative time source is defined;
           id: sc-45.01_odp.03
           label: time period
@@ -70935,6 +70944,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SC-45(01)_ODP[03]"
+          constraints:
+          - description: any difference
         title: Synchronization with Authoritative Time Source
         links:
         - href: '#sc-45'
@@ -71260,11 +71271,11 @@ catalog:
           class: sp800-53a
           value: "SI-01_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: si-01_odp.03
         props:
         - name: alt-identifier
@@ -71282,9 +71293,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SI-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current system and information integrity policy is reviewed and updated is defined;
         id: si-01_odp.05
         label: frequency
@@ -71294,6 +71303,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SI-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that would require the current system and information integrity policy to be reviewed and updated are defined;
         id: si-01_odp.06
@@ -71304,9 +71315,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SI-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current system and information integrity procedures are reviewed and updated is defined;
         id: si-01_odp.07
         label: frequency
@@ -71316,9 +71325,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SI-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that would require the system and information integrity procedures to be reviewed and updated are defined;
         id: si-01_odp.08
         label: events
@@ -71328,6 +71337,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SI-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -71809,9 +71820,7 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SI-02(02)_ODP[01]"
-        - constraints:
-          - description: at least monthly
-          guidelines:
+        - guidelines:
           - prose: the frequency at which to determine if applicable security-relevant software and firmware updates are installed on system components is defined;
           id: si-02.02_odp.02
           label: frequency
@@ -71821,6 +71830,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SI-02(02)_ODP[02]"
+          constraints:
+          - description: at least monthly
         title: Automated Flaw Remediation Status
         links:
         - href: '#si-2'
@@ -72117,9 +72128,7 @@ catalog:
           name: implementation-level
           value: organization
       params:
-      - constraints:
-        - description: within thirty (30) days of release of updates
-        guidelines:
+      - guidelines:
         - prose: time period within which to install security-relevant software updates after the release of the updates is defined;
         id: si-02_odp
         label: time period
@@ -72129,6 +72138,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: SI-02_ODP
+        constraints:
+        - description: within thirty (30) days of release of updates
       title: Flaw Remediation
       links:
       - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
@@ -72499,18 +72510,16 @@ catalog:
         name: implementation-level
         value: organization
     - params:
-      - constraints:
-        - description: signature based and non-signature based
-        id: si-03_odp.01
+      - id: si-03_odp.01
         props:
         - name: alt-identifier
           value: si-3_prm_1
         - name: label
           class: sp800-53a
           value: "SI-03_ODP[01]"
-      - constraints:
-        - description: at least weekly
-        guidelines:
+        constraints:
+        - description: signature based and non-signature based
+      - guidelines:
         - prose: the frequency at which malicious code protection mechanisms perform scans is defined;
         id: si-03_odp.02
         label: frequency
@@ -72520,27 +72529,27 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SI-03_ODP[02]"
-      - constraints:
-        - description: to include endpoints and network entry and exit points
-        id: si-03_odp.03
+        constraints:
+        - description: at least weekly
+      - id: si-03_odp.03
         props:
         - name: alt-identifier
           value: si-3_prm_3
         - name: label
           class: sp800-53a
           value: "SI-03_ODP[03]"
-      - constraints:
-        - description: to include blocking and quarantining malicious code
-        id: si-03_odp.04
+        constraints:
+        - description: to include endpoints and network entry and exit points
+      - id: si-03_odp.04
         props:
         - name: alt-identifier
           value: si-3_prm_4
         - name: label
           class: sp800-53a
           value: "SI-03_ODP[04]"
-      - constraints:
-        - description: administrator or defined security personnel near-realtime
-        guidelines:
+        constraints:
+        - description: to include blocking and quarantining malicious code
+      - guidelines:
         - prose: action to be taken in response to malicious code detection are defined (if selected);
         id: si-03_odp.05
         label: action
@@ -72550,6 +72559,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SI-03_ODP[05]"
+        constraints:
+        - description: administrator or defined security personnel near-realtime
       - guidelines:
         - prose: personnel or roles to be alerted when malicious code is detected is/are defined;
         id: si-03_odp.06
@@ -73293,9 +73304,7 @@ catalog:
           - ns: http://csrc.nist.gov/ns/rmf
             name: aggregates
             value: si-04.04_odp.04
-        - constraints:
-          - description: continuously
-          guidelines:
+        - guidelines:
           - prose: the frequency at which to monitor inbound communications traffic for unusual or unauthorized activities or conditions is defined;
           id: si-04.04_odp.01
           label: frequency
@@ -73303,6 +73312,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SI-04(04)_ODP[01]"
+          constraints:
+          - description: continuously
         - guidelines:
           - prose: unusual or unauthorized activities or conditions that are to be monitored in inbound communications traffic are defined;
           id: si-04.04_odp.02
@@ -73311,9 +73322,7 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SI-04(04)_ODP[02]"
-        - constraints:
-          - description: continuously
-          guidelines:
+        - guidelines:
           - prose: the frequency at which to monitor outbound communications traffic for unusual or unauthorized activities or conditions is defined;
           id: si-04.04_odp.03
           label: frequency
@@ -73321,6 +73330,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SI-04(04)_ODP[03]"
+          constraints:
+          - description: continuously
         - guidelines:
           - prose: unusual or unauthorized activities or conditions that are to be monitored in outbound communications traffic are defined;
           id: si-04.04_odp.04
@@ -74208,10 +74219,10 @@ catalog:
           class: sp800-53a
           value: "SI-04_ODP[04]"
       - select:
+          how-many: one-or-more
           choice:
           - as needed
           - "{{ insert: param, si-04_odp.06 }}"
-          how-many: one-or-more
         id: si-04_odp.05
         props:
         - name: alt-identifier
@@ -74813,9 +74824,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: to include US-CERT and Cybersecurity and Infrastructure Security Agency (CISA) Directives
-        guidelines:
+      - guidelines:
         - prose: "external organizations from whom system security alerts, advisories, and directives are to be received on an ongoing basis are defined;"
         id: si-05_odp.01
         label: external organizations
@@ -74825,15 +74834,17 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SI-05_ODP[01]"
-      - constraints:
-        - description: to include system security personnel and administrators with configuration/patch-management responsibilities
-        id: si-05_odp.02
+        constraints:
+        - description: to include US-CERT and Cybersecurity and Infrastructure Security Agency (CISA) Directives
+      - id: si-05_odp.02
         props:
         - name: alt-identifier
           value: si-5_prm_2
         - name: label
           class: sp800-53a
           value: "SI-05_ODP[02]"
+        constraints:
+        - description: to include system security personnel and administrators with configuration/patch-management responsibilities
       - guidelines:
         - prose: "personnel or roles to whom security alerts, advisories, and directives are to be disseminated is/are defined (if selected);"
         id: si-05_odp.03
@@ -75137,11 +75148,11 @@ catalog:
           class: sp800-53a
           value: "SI-06_ODP[02]"
       - select:
+          how-many: one-or-more
           choice:
           - "{{ insert: param, si-06_odp.04 }}"
           - upon command by user with appropriate privilege
           - "{{ insert: param, si-06_odp.05 }}"
-          how-many: one-or-more
         id: si-06_odp.03
         props:
         - name: alt-identifier
@@ -75149,9 +75160,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SI-06_ODP[03]"
-      - constraints:
-        - description: to include upon system startup and/or restart
-        guidelines:
+      - guidelines:
         - prose: system transitional states requiring the verification of security and privacy functions are defined; (if selected)
         id: si-06_odp.04
         label: system transitional states
@@ -75161,9 +75170,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SI-06_ODP[04]"
-      - constraints:
-        - description: at least monthly
-        guidelines:
+        constraints:
+        - description: to include upon system startup and/or restart
+      - guidelines:
         - prose: frequency at which to verify the correct operation of security and privacy functions is defined; (if selected)
         id: si-06_odp.05
         label: frequency
@@ -75173,9 +75182,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SI-06_ODP[05]"
-      - constraints:
-        - description: to include system administrators and security personnel
-        guidelines:
+        constraints:
+        - description: at least monthly
+      - guidelines:
         - prose: personnel or roles to be alerted of failed security and privacy verification tests is/are defined;
         id: si-06_odp.06
         label: personnel or roles
@@ -75185,12 +75194,14 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SI-06_ODP[06]"
+        constraints:
+        - description: to include system administrators and security personnel
       - select:
+          how-many: one-or-more
           choice:
           - shut the system down
           - restart the system
           - "{{ insert: param, si-06_odp.08 }}"
-          how-many: one-or-more
         id: si-06_odp.07
         props:
         - name: alt-identifier
@@ -75523,11 +75534,11 @@ catalog:
             name: aggregates
             value: si-07.01_odp.09
         - select:
+            how-many: one-or-more
             choice:
             - at startup
             - "at {{ insert: param, si-7.1_prm_3 }}"
             - "{{ insert: param, si-7.1_prm_4 }}"
-            how-many: one-or-more
           id: si-7.1_prm_2
           props:
           - ns: http://csrc.nist.gov/ns/rmf
@@ -75572,19 +75583,17 @@ catalog:
             class: sp800-53a
             value: "SI-07(01)_ODP[01]"
         - select:
+            how-many: one-or-more
             choice:
             - at startup
             - "at {{ insert: param, si-07.01_odp.03 }}"
             - "{{ insert: param, si-07.01_odp.04 }}"
-            how-many: one-or-more
           id: si-07.01_odp.02
           props:
           - name: label
             class: sp800-53a
             value: "SI-07(01)_ODP[02]"
-        - constraints:
-          - description: selection to include security relevant event
-          guidelines:
+        - guidelines:
           - prose: transitional states or security-relevant events requiring integrity checks (on software) are defined (if selected);
           id: si-07.01_odp.03
           label: transitional states or security-relevant events
@@ -75592,9 +75601,9 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SI-07(01)_ODP[03]"
-        - constraints:
-          - description: at least monthly
-          guidelines:
+          constraints:
+          - description: selection to include security relevant event
+        - guidelines:
           - prose: frequency with which to perform an integrity check (on software) is defined (if selected);
           id: si-07.01_odp.04
           label: frequency
@@ -75602,6 +75611,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SI-07(01)_ODP[04]"
+          constraints:
+          - description: at least monthly
         - guidelines:
           - prose: firmware on which an integrity check is to be performed is defined;
           id: si-07.01_odp.05
@@ -75611,19 +75622,17 @@ catalog:
             class: sp800-53a
             value: "SI-07(01)_ODP[05]"
         - select:
+            how-many: one-or-more
             choice:
             - at startup
             - "at {{ insert: param, si-07.01_odp.07 }}"
             - "{{ insert: param, si-07.01_odp.08 }}"
-            how-many: one-or-more
           id: si-07.01_odp.06
           props:
           - name: label
             class: sp800-53a
             value: "SI-07(01)_ODP[06]"
-        - constraints:
-          - description: selection to include security relevant event
-          guidelines:
+        - guidelines:
           - prose: transitional states or security-relevant events requiring integrity checks (on firmware) are defined (if selected);
           id: si-07.01_odp.07
           label: transitional states or security-relevant events
@@ -75631,9 +75640,9 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SI-07(01)_ODP[07]"
-        - constraints:
-          - description: at least monthly
-          guidelines:
+          constraints:
+          - description: selection to include security relevant event
+        - guidelines:
           - prose: frequency with which to perform an integrity check (on firmware) is defined (if selected);
           id: si-07.01_odp.08
           label: frequency
@@ -75641,6 +75650,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SI-07(01)_ODP[08]"
+          constraints:
+          - description: at least monthly
         - guidelines:
           - prose: information on which an integrity check is to be performed is defined;
           id: si-07.01_odp.09
@@ -75650,19 +75661,17 @@ catalog:
             class: sp800-53a
             value: "SI-07(01)_ODP[09]"
         - select:
+            how-many: one-or-more
             choice:
             - at startup
             - "at {{ insert: param, si-07.01_odp.11 }}"
             - "{{ insert: param, si-07.01_odp.12 }}"
-            how-many: one-or-more
           id: si-07.01_odp.10
           props:
           - name: label
             class: sp800-53a
             value: "SI-07(01)_ODP[10]"
-        - constraints:
-          - description: selection to include security relevant event
-          guidelines:
+        - guidelines:
           - prose: transitional states or security-relevant events requiring integrity checks (of information) are defined (if selected);
           id: si-07.01_odp.11
           label: transitional states or security-relevant events
@@ -75670,9 +75679,9 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SI-07(01)_ODP[11]"
-        - constraints:
-          - description: at least monthly
-          guidelines:
+          constraints:
+          - description: selection to include security relevant event
+        - guidelines:
           - prose: frequency with which to perform an integrity check (of information) is defined (if selected);
           id: si-07.01_odp.12
           label: frequency
@@ -75680,6 +75689,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: "SI-07(01)_ODP[12]"
+          constraints:
+          - description: at least monthly
         title: Integrity Checks
         links:
         - href: '#si-7'
@@ -76855,9 +76866,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: to include the ISSO and/or similar role within the organization
-        guidelines:
+      - guidelines:
         - prose: personnel or roles to whom error messages are to be revealed is/are defined;
         id: si-11_odp
         label: personnel or roles
@@ -76867,6 +76876,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: SI-11_ODP
+        constraints:
+        - description: to include the ISSO and/or similar role within the organization
       title: Error Handling
       links:
       - href: '#au-2'
@@ -77404,9 +77415,7 @@ catalog:
         - ns: http://csrc.nist.gov/ns/rmf
           name: aggregates
           value: sr-01_odp.02
-      - constraints:
-        - description: to include chief privacy and ISSO and/or similar role or designees
-        guidelines:
+      - guidelines:
         - prose: personnel or roles to whom supply chain risk management policy is to be disseminated to is/are defined;
         id: sr-01_odp.01
         label: personnel or roles
@@ -77414,9 +77423,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SR-01_ODP[01]"
-      - constraints:
+        constraints:
         - description: to include chief privacy and ISSO and/or similar role or designees
-        guidelines:
+      - guidelines:
         - prose: personnel or roles to whom supply chain risk management procedures are disseminated to is/are defined;
         id: sr-01_odp.02
         label: personnel or roles
@@ -77424,12 +77433,14 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SR-01_ODP[02]"
+        constraints:
+        - description: to include chief privacy and ISSO and/or similar role or designees
       - select:
+          how-many: one-or-more
           choice:
           - organization-level
           - mission/business process-level
           - system-level
-          how-many: one-or-more
         id: sr-01_odp.03
         props:
         - name: alt-identifier
@@ -77447,9 +77458,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SR-01_ODP[04]"
-      - constraints:
-        - description: at least every 3 years
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current supply chain risk management policy is reviewed and updated is defined;
         id: sr-01_odp.05
         label: frequency
@@ -77459,6 +77468,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SR-01_ODP[05]"
+        constraints:
+        - description: at least every 3 years
       - guidelines:
         - prose: events that require the current supply chain risk management policy to be reviewed and updated are defined;
         id: sr-01_odp.06
@@ -77469,9 +77480,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SR-01_ODP[06]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which the current supply chain risk management procedure is reviewed and updated is defined;
         id: sr-01_odp.07
         label: frequency
@@ -77481,9 +77490,9 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SR-01_ODP[07]"
-      - constraints:
-        - description: significant changes
-        guidelines:
+        constraints:
+        - description: at least annually
+      - guidelines:
         - prose: events that require the supply chain risk management procedures to be reviewed and updated are defined;
         id: sr-01_odp.08
         label: events
@@ -77493,6 +77502,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SR-01_ODP[08]"
+        constraints:
+        - description: significant changes
       title: Policy and Procedures
       links:
       - href: '#4ff10ed3-d8fe-4246-99e3-443045e27482'
@@ -78121,9 +78132,7 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SR-02_ODP[01]"
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: the frequency at which to review and update the supply chain risk management plan is defined;
         id: sr-02_odp.02
         label: frequency
@@ -78133,6 +78142,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: "SR-02_ODP[02]"
+        constraints:
+        - description: at least annually
       title: Supply Chain Risk Management Plan
       links:
       - href: '#4ff10ed3-d8fe-4246-99e3-443045e27482'
@@ -78597,11 +78608,11 @@ catalog:
           class: sp800-53a
           value: "SR-03_ODP[03]"
       - select:
+          how-many: one-or-more
           choice:
           - security and privacy plans
           - supply chain risk management plan
           - "{{ insert: param, sr-03_odp.05 }}"
-          how-many: one-or-more
         id: sr-03_odp.04
         props:
         - name: alt-identifier
@@ -79144,9 +79155,7 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: at least annually
-        guidelines:
+      - guidelines:
         - prose: "the frequency at which to assess and review the supply chain-related risks associated with suppliers or contractors and the systems, system components, or system services they provide is defined;"
         id: sr-06_odp
         label: frequency
@@ -79156,6 +79165,8 @@ catalog:
         - name: label
           class: sp800-53a
           value: SR-06_ODP
+        constraints:
+        - description: at least annually
       title: Supplier Assessments and Reviews
       links:
       - href: '#4ff10ed3-d8fe-4246-99e3-443045e27482'
@@ -79313,15 +79324,15 @@ catalog:
         name: contributes-to-assurance
         value: "true"
     - params:
-      - constraints:
-        - description: notification of supply chain compromises and results of assessment or audits
-        id: sr-08_odp.01
+      - id: sr-08_odp.01
         props:
         - name: alt-identifier
           value: sr-8_prm_1
         - name: label
           class: sp800-53a
           value: "SR-08_ODP[01]"
+        constraints:
+        - description: notification of supply chain compromises and results of assessment or audits
       - guidelines:
         - prose: information for which agreements and procedures are to be established are defined (if selected);
         id: sr-08_odp.02
@@ -79492,11 +79503,11 @@ catalog:
           class: sp800-53a
           value: "SR-10_ODP[01]"
       - select:
+          how-many: one-or-more
           choice:
           - at random
           - "at {{ insert: param, sr-10_odp.03 }}"
           - "upon {{ insert: param, sr-10_odp.04 }}"
-          how-many: one-or-more
         id: sr-10_odp.02
         props:
         - name: alt-identifier
@@ -79798,9 +79809,7 @@ catalog:
           name: contributes-to-assurance
           value: "true"
       - params:
-        - constraints:
-          - description: all
-          guidelines:
+        - guidelines:
           - prose: system components requiring configuration control are defined;
           id: sr-11.02_odp
           label: system components
@@ -79810,6 +79819,8 @@ catalog:
           - name: label
             class: sp800-53a
             value: SR-11(02)_ODP
+          constraints:
+          - description: all
         title: Configuration Control for Component Service and Repair
         links:
         - href: '#sr-11'
@@ -79956,11 +79967,11 @@ catalog:
           value: "true"
       params:
       - select:
+          how-many: one-or-more
           choice:
           - source of counterfeit component
           - "{{ insert: param, sr-11_odp.02 }}"
           - "{{ insert: param, sr-11_odp.03 }}"
-          how-many: one-or-more
         id: sr-11_odp.01
         props:
         - name: alt-identifier
@@ -80401,15 +80412,4 @@ catalog:
         value: "true"
     title: Supply Chain Risk Management
     id: sr
-  uuid: 5940af47-8dd7-4e02-b9b3-2d471f4c6c3d
-  metadata:
-    version: 5.1.1+fedramp-20240111-0
-    props:
-    - name: resolution-tool
-      value: libOSCAL-Java
-    oscal-version: 1.1.2
-    last-modified: 2024-07-11T20:47:41.038168Z
-    links:
-    - href: file:///home/runner/work/oscal-js/oscal-js/content/rev5/baselines/xml/FedRAMP_rev5_MODERATE-baseline_profile.xml
-      rel: source-profile
-    title: FedRAMP Rev 5 Moderate Baseline
+  uuid: beca3567-881c-4560-a36a-9f8c122f0d3a

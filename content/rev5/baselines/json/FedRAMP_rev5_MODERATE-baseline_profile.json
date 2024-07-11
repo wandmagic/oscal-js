@@ -1340,62 +1340,62 @@
       } ],
       "alters" : [ {
         "adds" : [ {
+          "by-id" : "cp-2_obj.f",
           "parts" : [ {
+            "name" : "assessment-objective",
             "links" : [ {
               "rel" : "assessment-for",
               "href" : "#cp-2_smt.g"
             } ],
             "id" : "cp-2_obj.g",
             "props" : [ {
+              "name" : "response-point",
               "value" : "You must fill in this response point.",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "response-point"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
+              "name" : "method",
+              "class" : "fedramp",
               "value" : "EXAMINE",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method",
-              "class" : "fedramp"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
+              "name" : "method",
+              "class" : "fedramp",
               "value" : "INTERVIEW",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method",
-              "class" : "fedramp"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
-              "value" : "CP-02g.",
               "name" : "label",
-              "class" : "sp800-53a"
+              "class" : "sp800-53a",
+              "value" : "CP-02g."
             } ],
             "parts" : [ {
+              "prose" : "lessons learned from contingency plan testing or actual contingency activities are incorporated into contingency testing;",
+              "name" : "assessment-objective",
               "links" : [ {
                 "rel" : "assessment-for",
                 "href" : "#cp-2_smt.g"
               } ],
               "id" : "cp-2_obj.g-1",
               "props" : [ {
-                "value" : "CP-02g.[01]",
                 "name" : "label",
-                "class" : "sp800-53a"
-              } ],
-              "prose" : "lessons learned from contingency plan testing or actual contingency activities are incorporated into contingency testing;",
-              "name" : "assessment-objective"
+                "class" : "sp800-53a",
+                "value" : "CP-02g.[01]"
+              } ]
             }, {
+              "prose" : "lessons learned from contingency plan training or actual contingency activities are incorporated into contingency testing and training;",
+              "name" : "assessment-objective",
               "links" : [ {
                 "rel" : "assessment-for",
                 "href" : "#cp-2_smt.g"
               } ],
               "id" : "cp-2_obj.g-2",
               "props" : [ {
-                "value" : "CP-02g.[02]",
                 "name" : "label",
-                "class" : "sp800-53a"
-              } ],
-              "prose" : "lessons learned from contingency plan training or actual contingency activities are incorporated into contingency testing and training;",
-              "name" : "assessment-objective"
-            } ],
-            "name" : "assessment-objective"
+                "class" : "sp800-53a",
+                "value" : "CP-02g.[02]"
+              } ]
+            } ]
           } ],
-          "position" : "after",
-          "by-id" : "cp-2_obj.f"
+          "position" : "after"
         } ],
         "control-id" : "cp-2",
         "removes" : [ {
@@ -1403,17 +1403,17 @@
         } ]
       }, {
         "adds" : [ {
+          "by-id" : "ia-5_fr",
           "parts" : [ {
+            "prose" : "Authenticators must be compliant with NIST SP 800-63-3 Digital Identity Guidelines IAL, AAL, FAL level 2. Link https://pages.nist.gov/800-63-3",
+            "name" : "item",
             "id" : "ia-5_fr_smt.1",
             "props" : [ {
-              "value" : "Requirement:",
-              "name" : "label"
+              "name" : "label",
+              "value" : "Requirement:"
             } ],
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "prose" : "Authenticators must be compliant with NIST SP 800-63-3 Digital Identity Guidelines IAL, AAL, FAL level 2. Link https://pages.nist.gov/800-63-3",
-            "name" : "item"
-          } ],
-          "by-id" : "ia-5_fr"
+            "ns" : "https://fedramp.gov/ns/oscal"
+          } ]
         } ],
         "control-id" : "ia-5",
         "removes" : [ {
@@ -1421,17 +1421,17 @@
         } ]
       }, {
         "adds" : [ {
+          "by-id" : "ia-11_fr",
           "parts" : [ {
+            "prose" : "The fixed time period cannot exceed the limits set in SP 800-63. At this writing they are:\n\n- AAL2 (moderate baseline)\n  - 12 hours or\n  - 30 minutes of inactivity",
+            "name" : "guidance",
             "id" : "ia-11_fr_gdn.1",
             "props" : [ {
-              "value" : "Guidance:",
-              "name" : "label"
+              "name" : "label",
+              "value" : "Guidance:"
             } ],
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "prose" : "The fixed time period cannot exceed the limits set in SP 800-63. At this writing they are:\n\n- AAL2 (moderate baseline)\n  - 12 hours or\n  - 30 minutes of inactivity",
-            "name" : "guidance"
-          } ],
-          "by-id" : "ia-11_fr"
+            "ns" : "https://fedramp.gov/ns/oscal"
+          } ]
         } ],
         "control-id" : "ia-11",
         "removes" : [ {
@@ -1439,109 +1439,109 @@
         } ]
       }, {
         "adds" : [ {
+          "by-id" : "ma-5.1_smt",
           "parts" : [ {
+            "name" : "item",
             "title" : "MA-5 (1) Additional FedRAMP Requirements and Guidance",
             "id" : "ma-5.1_fr",
             "parts" : [ {
+              "prose" : "Only MA-5 (1) (a) (1) is required by FedRAMP Moderate Baseline",
+              "name" : "item",
               "id" : "ma-5.1_fr_smt.1",
               "props" : [ {
-                "value" : "Requirement:",
-                "name" : "label"
+                "name" : "label",
+                "value" : "Requirement:"
               } ],
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "prose" : "Only MA-5 (1) (a) (1) is required by FedRAMP Moderate Baseline",
-              "name" : "item"
+              "ns" : "https://fedramp.gov/ns/oscal"
             } ],
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "item"
-          } ],
-          "by-id" : "ma-5.1_smt"
+            "ns" : "https://fedramp.gov/ns/oscal"
+          } ]
         } ],
         "control-id" : "ma-5.1"
       }, {
         "adds" : [ {
+          "by-id" : "pe-3_obj.d",
           "parts" : [ {
+            "name" : "assessment-objective",
             "links" : [ {
               "rel" : "assessment-for",
               "href" : "#pe-3_smt.e"
             } ],
             "id" : "pe-3_obj.e",
             "props" : [ {
-              "value" : "PE-03e.",
               "name" : "label",
-              "class" : "sp800-53a"
+              "class" : "sp800-53a",
+              "value" : "PE-03e."
             } ],
             "parts" : [ {
+              "prose" : "keys are secured;",
+              "name" : "assessment-objective",
               "links" : [ {
                 "rel" : "assessment-for",
                 "href" : "#pe-3_smt.e"
               } ],
               "id" : "pe-3_obj.e-1",
               "props" : [ {
-                "value" : "PE-03e.[01]",
                 "name" : "label",
-                "class" : "sp800-53a"
+                "class" : "sp800-53a",
+                "value" : "PE-03e.[01]"
               }, {
+                "name" : "response-point",
                 "value" : "You must fill in this response point.",
-                "ns" : "https://fedramp.gov/ns/oscal",
-                "name" : "response-point"
+                "ns" : "https://fedramp.gov/ns/oscal"
               }, {
-                "value" : "TEST",
-                "ns" : "https://fedramp.gov/ns/oscal",
                 "name" : "method",
-                "class" : "fedramp"
-              } ],
-              "prose" : "keys are secured;",
-              "name" : "assessment-objective"
+                "class" : "fedramp",
+                "value" : "TEST",
+                "ns" : "https://fedramp.gov/ns/oscal"
+              } ]
             }, {
+              "prose" : "combinations are secured;",
+              "name" : "assessment-objective",
               "links" : [ {
                 "rel" : "assessment-for",
                 "href" : "#pe-3_smt.e"
               } ],
               "id" : "pe-3_obj.e-2",
               "props" : [ {
-                "value" : "PE-03e.[02]",
                 "name" : "label",
-                "class" : "sp800-53a"
+                "class" : "sp800-53a",
+                "value" : "PE-03e.[02]"
               }, {
+                "name" : "response-point",
                 "value" : "You must fill in this response point.",
-                "ns" : "https://fedramp.gov/ns/oscal",
-                "name" : "response-point"
+                "ns" : "https://fedramp.gov/ns/oscal"
               }, {
-                "value" : "TEST",
-                "ns" : "https://fedramp.gov/ns/oscal",
                 "name" : "method",
-                "class" : "fedramp"
-              } ],
-              "prose" : "combinations are secured;",
-              "name" : "assessment-objective"
+                "class" : "fedramp",
+                "value" : "TEST",
+                "ns" : "https://fedramp.gov/ns/oscal"
+              } ]
             }, {
+              "prose" : "other physical access devices are secured;",
+              "name" : "assessment-objective",
               "links" : [ {
                 "rel" : "assessment-for",
                 "href" : "#pe-3_smt.e"
               } ],
               "id" : "pe-3_obj.e-3",
               "props" : [ {
-                "value" : "PE-03e.[03]",
                 "name" : "label",
-                "class" : "sp800-53a"
+                "class" : "sp800-53a",
+                "value" : "PE-03e.[03]"
               }, {
+                "name" : "response-point",
                 "value" : "You must fill in this response point.",
-                "ns" : "https://fedramp.gov/ns/oscal",
-                "name" : "response-point"
+                "ns" : "https://fedramp.gov/ns/oscal"
               }, {
-                "value" : "TEST",
-                "ns" : "https://fedramp.gov/ns/oscal",
                 "name" : "method",
-                "class" : "fedramp"
-              } ],
-              "prose" : "other physical access devices are secured;",
-              "name" : "assessment-objective"
-            } ],
-            "name" : "assessment-objective"
+                "class" : "fedramp",
+                "value" : "TEST",
+                "ns" : "https://fedramp.gov/ns/oscal"
+              } ]
+            } ]
           } ],
-          "position" : "after",
-          "by-id" : "pe-3_obj.d"
+          "position" : "after"
         } ],
         "control-id" : "pe-3",
         "removes" : [ {
@@ -1549,63 +1549,63 @@
         } ]
       }, {
         "adds" : [ {
+          "by-id" : "ps-3_obj.b",
           "parts" : [ {
+            "prose" : "individuals are rescreened in accordance with {{ insert: param, ps-03_odp.01 }};",
+            "name" : "assessment-objective",
             "links" : [ {
               "rel" : "assessment-for",
               "href" : "#ps-3_smt.b"
             } ],
             "id" : "ps-3_obj.b-1",
             "props" : [ {
-              "value" : "PS-03b.[01]",
               "name" : "label",
-              "class" : "sp800-53a"
+              "class" : "sp800-53a",
+              "value" : "PS-03b.[01]"
             }, {
+              "name" : "response-point",
               "value" : "You must fill in this response point.",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "response-point"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
+              "name" : "method",
+              "class" : "fedramp",
               "value" : "EXAMINE",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method",
-              "class" : "fedramp"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
-              "value" : "INTERVIEW",
-              "ns" : "https://fedramp.gov/ns/oscal",
               "name" : "method",
-              "class" : "fedramp"
-            } ],
-            "prose" : "individuals are rescreened in accordance with {{ insert: param, ps-03_odp.01 }};",
-            "name" : "assessment-objective"
+              "class" : "fedramp",
+              "value" : "INTERVIEW",
+              "ns" : "https://fedramp.gov/ns/oscal"
+            } ]
           }, {
+            "prose" : "where rescreening is so indicated, individuals are rescreened {{ insert: param, ps-03_odp.02 }}.",
+            "name" : "assessment-objective",
             "links" : [ {
               "rel" : "assessment-for",
               "href" : "#ps-3_smt.b"
             } ],
             "id" : "ps-3_obj.b-2",
             "props" : [ {
-              "value" : "PS-03b.[02]",
               "name" : "label",
-              "class" : "sp800-53a"
+              "class" : "sp800-53a",
+              "value" : "PS-03b.[02]"
             }, {
+              "name" : "response-point",
               "value" : "You must fill in this response point.",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "response-point"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
+              "name" : "method",
+              "class" : "fedramp",
               "value" : "EXAMINE",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method",
-              "class" : "fedramp"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
-              "value" : "INTERVIEW",
-              "ns" : "https://fedramp.gov/ns/oscal",
               "name" : "method",
-              "class" : "fedramp"
-            } ],
-            "prose" : "where rescreening is so indicated, individuals are rescreened {{ insert: param, ps-03_odp.02 }}.",
-            "name" : "assessment-objective"
+              "class" : "fedramp",
+              "value" : "INTERVIEW",
+              "ns" : "https://fedramp.gov/ns/oscal"
+            } ]
           } ],
-          "position" : "starting",
-          "by-id" : "ps-3_obj.b"
+          "position" : "starting"
         } ],
         "control-id" : "ps-3",
         "removes" : [ {
@@ -1615,144 +1615,144 @@
         } ]
       }, {
         "adds" : [ {
+          "by-id" : "sa-8_obj-5",
           "parts" : [ {
+            "prose" : "{{ insert: param, sa-08_odp.02 }} are applied in the specification of the system and system components;",
+            "name" : "assessment-objective",
             "links" : [ {
               "rel" : "assessment-for",
               "href" : "#sa-8_smt"
             } ],
             "id" : "sa-8_obj-6",
             "props" : [ {
+              "name" : "response-point",
               "value" : "You must fill in this response point.",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "response-point"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
+              "name" : "method",
+              "class" : "fedramp",
               "value" : "EXAMINE",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method",
-              "class" : "fedramp"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
+              "name" : "method",
+              "class" : "fedramp",
               "value" : "TEST",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method",
-              "class" : "fedramp"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
-              "value" : "SA-08[06]",
               "name" : "label",
-              "class" : "sp800-53a"
-            } ],
-            "prose" : "{{ insert: param, sa-08_odp.02 }} are applied in the specification of the system and system components;",
-            "name" : "assessment-objective"
+              "class" : "sp800-53a",
+              "value" : "SA-08[06]"
+            } ]
           }, {
+            "prose" : "{{ insert: param, sa-08_odp.02 }} are applied in the design of the system and system components;",
+            "name" : "assessment-objective",
             "links" : [ {
               "rel" : "assessment-for",
               "href" : "#sa-8_smt"
             } ],
             "id" : "sa-8_obj-7",
             "props" : [ {
+              "name" : "response-point",
               "value" : "You must fill in this response point.",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "response-point"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
+              "name" : "method",
+              "class" : "fedramp",
               "value" : "EXAMINE",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method",
-              "class" : "fedramp"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
+              "name" : "method",
+              "class" : "fedramp",
               "value" : "TEST",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method",
-              "class" : "fedramp"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
-              "value" : "SA-08[07]",
               "name" : "label",
-              "class" : "sp800-53a"
-            } ],
-            "prose" : "{{ insert: param, sa-08_odp.02 }} are applied in the design of the system and system components;",
-            "name" : "assessment-objective"
+              "class" : "sp800-53a",
+              "value" : "SA-08[07]"
+            } ]
           }, {
+            "prose" : "{{ insert: param, sa-08_odp.02 }} are applied in the development of the system and system components;",
+            "name" : "assessment-objective",
             "links" : [ {
               "rel" : "assessment-for",
               "href" : "#sa-8_smt"
             } ],
             "id" : "sa-8_obj-8",
             "props" : [ {
+              "name" : "response-point",
               "value" : "You must fill in this response point.",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "response-point"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
+              "name" : "method",
+              "class" : "fedramp",
               "value" : "EXAMINE",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method",
-              "class" : "fedramp"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
+              "name" : "method",
+              "class" : "fedramp",
               "value" : "TEST",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method",
-              "class" : "fedramp"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
-              "value" : "SA-08[08]",
               "name" : "label",
-              "class" : "sp800-53a"
-            } ],
-            "prose" : "{{ insert: param, sa-08_odp.02 }} are applied in the development of the system and system components;",
-            "name" : "assessment-objective"
+              "class" : "sp800-53a",
+              "value" : "SA-08[08]"
+            } ]
           }, {
+            "prose" : "{{ insert: param, sa-08_odp.02 }} are applied in the implementation of the system and system components;",
+            "name" : "assessment-objective",
             "links" : [ {
               "rel" : "assessment-for",
               "href" : "#sa-8_smt"
             } ],
             "id" : "sa-8_obj-9",
             "props" : [ {
+              "name" : "response-point",
               "value" : "You must fill in this response point.",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "response-point"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
+              "name" : "method",
+              "class" : "fedramp",
               "value" : "EXAMINE",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method",
-              "class" : "fedramp"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
+              "name" : "method",
+              "class" : "fedramp",
               "value" : "TEST",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method",
-              "class" : "fedramp"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
-              "value" : "SA-08[09]",
               "name" : "label",
-              "class" : "sp800-53a"
-            } ],
-            "prose" : "{{ insert: param, sa-08_odp.02 }} are applied in the implementation of the system and system components;",
-            "name" : "assessment-objective"
+              "class" : "sp800-53a",
+              "value" : "SA-08[09]"
+            } ]
           }, {
+            "prose" : "{{ insert: param, sa-08_odp.02 }} are applied in the modification of the system and system components.",
+            "name" : "assessment-objective",
             "links" : [ {
               "rel" : "assessment-for",
               "href" : "#sa-8_smt"
             } ],
             "id" : "sa-8_obj-10",
             "props" : [ {
+              "name" : "response-point",
               "value" : "You must fill in this response point.",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "response-point"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
+              "name" : "method",
+              "class" : "fedramp",
               "value" : "EXAMINE",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method",
-              "class" : "fedramp"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
+              "name" : "method",
+              "class" : "fedramp",
               "value" : "TEST",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "method",
-              "class" : "fedramp"
+              "ns" : "https://fedramp.gov/ns/oscal"
             }, {
-              "value" : "SA-08[10]",
               "name" : "label",
-              "class" : "sp800-53a"
-            } ],
-            "prose" : "{{ insert: param, sa-08_odp.02 }} are applied in the modification of the system and system components.",
-            "name" : "assessment-objective"
+              "class" : "sp800-53a",
+              "value" : "SA-08[10]"
+            } ]
           } ],
-          "position" : "after",
-          "by-id" : "sa-8_obj-5"
+          "position" : "after"
         } ],
         "control-id" : "sa-8",
         "removes" : [ {
@@ -1782,8 +1782,8 @@
         } ],
         "uuid" : "051a77c1-b61d-4995-8275-dacfe688d510",
         "props" : [ {
-          "value" : "5.1.1",
-          "name" : "version"
+          "name" : "version",
+          "value" : "5.1.1"
         } ]
       } ]
     },
