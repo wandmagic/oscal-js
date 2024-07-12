@@ -6,28 +6,43 @@
     },
     "uuid" : "9809eddf-2cd5-468f-97c5-9769905d0629",
     "control-implementation" : {
+      "description" : "Appendix A - FedRAMP SSP Rev5 Template\n\nThis description field is required by OSCAL.\n\nFedRAMP does not require any specific information here.",
       "implemented-requirements" : [ {
+        "control-id" : "ac-1",
+        "props" : [ {
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "name" : "planned-completion-date",
+          "value" : "2024-01-31Z"
+        }, {
+          "remarks" : "Describe the plan to complete the implementation.",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "name" : "implementation-status",
+          "value" : "planned"
+        }, {
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "name" : "control-origination",
+          "value" : "sp-system"
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "ac-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "ac-01_odp.05"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "ac-01_odp.07"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "d9d1ce66-ff47-474d-8596-5fdf2af60179"
+            "uuid" : "d9d1ce66-ff47-474d-8596-5fdf2af60179",
+            "set-parameters" : [ {
+              "param-id" : "ac-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "ac-01_odp.05",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "ac-01_odp.07",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "ac-1_smt",
           "uuid" : "240fa015-01df-4741-bff5-6958c7fb85e5"
         }, {
           "by-components" : [ {
-            "remarks" : "The specified component is the system itself.\n\nAny control implementation response that can not be associated with another component is associated with the component representing the system.",
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how Part a is satisfied within the system.\n\nLegacy approach. If no policy component is defined, describe here how the policy satisfies part a.\n\nIn this case, a link must be provided to the policy.\n\nFedRAMP prefers all policies and procedures be attached as a resource in the back-matter. The link points to a resource.",
             "links" : [ {
@@ -37,7 +52,8 @@
               "href" : "#e1fa7a30-efb8-4738-b4e2-7fbeb86644cd",
               "rel" : "procedure"
             } ],
-            "uuid" : "3f5612a4-cd1d-4c47-8cae-75d2eaa332cd"
+            "uuid" : "3f5612a4-cd1d-4c47-8cae-75d2eaa332cd",
+            "remarks" : "The specified component is the system itself.\n\nAny control implementation response that can not be associated with another component is associated with the component representing the system."
           }, {
             "component-uuid" : "88b8d7bb-ba23-4430-bf62-028eab822050",
             "description" : "Describe how this policy component satisfies part a.\n\nComponent approach. This links to a component representing the Identity Management and Access Control Policy.\n\nThat component contains a link to the policy, so it does not have to be linked here too.",
@@ -81,107 +97,8 @@
           "href" : "#e1fa7a30-efb8-4738-b4e2-7fbeb86644cd",
           "rel" : "procedure"
         } ],
-        "uuid" : "eee8697a-bc39-45aa-accc-d3e534932efb",
-        "control-id" : "ac-1",
-        "props" : [ {
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "planned-completion-date",
-          "value" : "2024-01-31Z"
-        }, {
-          "remarks" : "Describe the plan to complete the implementation.",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "implementation-status",
-          "value" : "planned"
-        }, {
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "control-origination",
-          "value" : "sp-system"
-        } ]
+        "uuid" : "eee8697a-bc39-45aa-accc-d3e534932efb"
       }, {
-        "statements" : [ {
-          "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "[SAMPLE]privileged, non-privileged" ],
-              "param-id" : "ac-2_prm_1"
-            }, {
-              "values" : [ "[SAMPLE]all" ],
-              "param-id" : "ac-2_prm_2"
-            }, {
-              "values" : [ "[SAMPLE]The Access Control Procedure" ],
-              "param-id" : "ac-2_prm_3"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "ac-2_prm_4"
-            } ],
-            "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
-            "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "eb710146-1ede-4876-9a3b-02c18408e506"
-          } ],
-          "statement-id" : "ac-2_smt",
-          "uuid" : "4a2428eb-41eb-447a-81db-4f6d98a003ce"
-        }, {
-          "by-components" : [ {
-            "export" : {
-              "provided" : [ {
-                "description" : "Leveraged system's statement of capabilities which may be inherited by a leveraging systems to satisfy AC-2, part a.",
-                "uuid" : "b068e08a-53b9-4f80-ac5f-0476c35c6e46"
-              } ],
-              "responsibilities" : [ {
-                "description" : "Leveraged system's statement of a leveraging system's responsibilities in satisfaction of AC-2, part a.\n\nNot associated with inheritance, thus associated this with the by-component for \"this system\".",
-                "responsible-roles" : [ {
-                  "party-uuids" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
-                  "role-id" : "cloud-service-provider"
-                } ],
-                "provided-uuid" : "b068e08a-53b9-4f80-ac5f-0476c35c6e46",
-                "uuid" : "39e5b068-deb7-4f93-9a32-2dcce15b1107"
-              } ]
-            },
-            "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
-            "description" : "Describe how AC-2, part a is satisfied within this system.\n\nThis points to the \"This System\" component, and is used any time a more specific component reference is not available.",
-            "uuid" : "b29d1505-69fa-4ad0-834b-d179e7f44f98"
-          }, {
-            "remarks" : "The component-uuid above points to the \"this system\" component.\n\nAny control response content that does not cleanly fit another system component is placed here. This includes customer responsibility content.\n\nThis can also be used to provide a summary, such as a holistic overview of how multiple components work together.\n\nWhile the \"this system\" component is not explicitly required within every `statement`, it will typically be present.",
-            "export" : {
-              "provided" : [ {
-                "responsible-roles" : [ {
-                  "party-uuids" : [ "f595397b-cbe4-4a87-8c86-9bff91c4e7fd" ],
-                  "role-id" : "customer"
-                } ],
-                "description" : "Consumer-appropriate description of what may be inherited from this application component by a leveraging system.\n\nIn the context of the application component in satisfaction of AC-2, part a.",
-                "uuid" : "11111111-0000-4000-9009-002001002001"
-              } ],
-              "responsibilities" : [ {
-                "description" : "Leveraging system's responsibilities with respect to inheriting this capability from this application.\n\nIn the context of the application component in satisfaction of AC-2, part a.",
-                "responsible-roles" : [ {
-                  "party-uuids" : [ "f595397b-cbe4-4a87-8c86-9bff91c4e7fd" ],
-                  "role-id" : "customer"
-                } ],
-                "provided-uuid" : "11111111-0000-4000-9009-002001002001",
-                "uuid" : "11111111-0000-4000-9009-002001002002"
-              } ]
-            },
-            "component-uuid" : "d5841417-de4c-4d84-ab3c-39dd1fd32a96",
-            "description" : "For the portion of the control satisfied by the application component of this system, describe **how** the control is met.",
-            "uuid" : "8a72663c-28c7-41c2-8739-f1ee2d5761ac"
-          }, {
-            "component-uuid" : "e82e6e07-0c62-417e-8a19-3744991b4c65",
-            "description" : "For the portion inherited from an underlying FedRAMP-authorized provider, describe **what** is inherited.",
-            "inherited" : [ {
-              "description" : "Optional description.\n\nConsumer-appropriate description of what may be inherited as provided by the leveraged system.\n\nIn the context of this component in satisfaction of AC-2, part a.\n\nThe `provided-uuid` links this to the same statement in the leveraged system's SSP.\n\nIt may be linked directly, but is more commonly provided via an OSCAL-based CRM (Inheritance and Responsibility Model).",
-              "provided-uuid" : "11111111-0000-4000-9009-002001002001",
-              "uuid" : "780a3910-2019-4d33-a2f9-5c6ac91929d6"
-            } ],
-            "satisfied" : [ {
-              "description" : "Description of how the responsibility was satisfied.\n\nThe `responsibility-uuid` links this to the same statement in the leveraged system's SSP.\n\nIt may be linked directly, but is more commonly provided via an OSCAL-based CRM (Inheritance and Responsibility Model).\n\nTools should use this to ensure all identified customer `responsibility` statements have a corresponding `satisfied` statement in the leveraging system's SSP.\n\nTool developers should be mindful that",
-              "uuid" : "6486f725-1372-434f-9b1b-7cf3f50c32d1",
-              "responsibility-uuid" : "11111111-0000-4000-9009-002001002002"
-            } ],
-            "uuid" : "84de735f-ba37-4bb4-b784-79760f986a40"
-          } ],
-          "statement-id" : "ac-2_smt.a",
-          "uuid" : "24a85abb-25ad-4686-850c-5c0e8ab69a0c"
-        } ],
-        "uuid" : "7a36cf53-156d-4d1f-9a8b-433f61cc57b7",
         "control-id" : "ac-2",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
@@ -208,23 +125,126 @@
         }, {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "at-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "at-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "at-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "490ebd59-a44b-46d6-9ecf-48a9e0103488"
+            "uuid" : "eb710146-1ede-4876-9a3b-02c18408e506",
+            "set-parameters" : [ {
+              "param-id" : "ac-2_prm_1",
+              "values" : [ "[SAMPLE]privileged, non-privileged" ]
+            }, {
+              "param-id" : "ac-2_prm_2",
+              "values" : [ "[SAMPLE]all" ]
+            }, {
+              "param-id" : "ac-2_prm_3",
+              "values" : [ "[SAMPLE]The Access Control Procedure" ]
+            }, {
+              "param-id" : "ac-2_prm_4",
+              "values" : [ "at least annually" ]
+            } ]
+          } ],
+          "statement-id" : "ac-2_smt",
+          "uuid" : "4a2428eb-41eb-447a-81db-4f6d98a003ce"
+        }, {
+          "by-components" : [ {
+            "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
+            "description" : "Describe how AC-2, part a is satisfied within this system.\n\nThis points to the \"This System\" component, and is used any time a more specific component reference is not available.",
+            "uuid" : "b29d1505-69fa-4ad0-834b-d179e7f44f98",
+            "export" : {
+              "provided" : [ {
+                "description" : "Leveraged system's statement of capabilities which may be inherited by a leveraging systems to satisfy AC-2, part a.",
+                "uuid" : "b068e08a-53b9-4f80-ac5f-0476c35c6e46"
+              } ],
+              "responsibilities" : [ {
+                "description" : "Leveraged system's statement of a leveraging system's responsibilities in satisfaction of AC-2, part a.\n\nNot associated with inheritance, thus associated this with the by-component for \"this system\".",
+                "responsible-roles" : [ {
+                  "party-uuids" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
+                  "role-id" : "cloud-service-provider"
+                } ],
+                "provided-uuid" : "b068e08a-53b9-4f80-ac5f-0476c35c6e46",
+                "uuid" : "39e5b068-deb7-4f93-9a32-2dcce15b1107"
+              } ]
+            }
+          }, {
+            "component-uuid" : "d5841417-de4c-4d84-ab3c-39dd1fd32a96",
+            "description" : "For the portion of the control satisfied by the application component of this system, describe **how** the control is met.",
+            "uuid" : "8a72663c-28c7-41c2-8739-f1ee2d5761ac",
+            "remarks" : "The component-uuid above points to the \"this system\" component.\n\nAny control response content that does not cleanly fit another system component is placed here. This includes customer responsibility content.\n\nThis can also be used to provide a summary, such as a holistic overview of how multiple components work together.\n\nWhile the \"this system\" component is not explicitly required within every `statement`, it will typically be present.",
+            "export" : {
+              "provided" : [ {
+                "description" : "Consumer-appropriate description of what may be inherited from this application component by a leveraging system.\n\nIn the context of the application component in satisfaction of AC-2, part a.",
+                "uuid" : "11111111-0000-4000-9009-002001002001",
+                "responsible-roles" : [ {
+                  "party-uuids" : [ "f595397b-cbe4-4a87-8c86-9bff91c4e7fd" ],
+                  "role-id" : "customer"
+                } ]
+              } ],
+              "responsibilities" : [ {
+                "description" : "Leveraging system's responsibilities with respect to inheriting this capability from this application.\n\nIn the context of the application component in satisfaction of AC-2, part a.",
+                "responsible-roles" : [ {
+                  "party-uuids" : [ "f595397b-cbe4-4a87-8c86-9bff91c4e7fd" ],
+                  "role-id" : "customer"
+                } ],
+                "provided-uuid" : "11111111-0000-4000-9009-002001002001",
+                "uuid" : "11111111-0000-4000-9009-002001002002"
+              } ]
+            }
+          }, {
+            "component-uuid" : "e82e6e07-0c62-417e-8a19-3744991b4c65",
+            "description" : "For the portion inherited from an underlying FedRAMP-authorized provider, describe **what** is inherited.",
+            "inherited" : [ {
+              "description" : "Optional description.\n\nConsumer-appropriate description of what may be inherited as provided by the leveraged system.\n\nIn the context of this component in satisfaction of AC-2, part a.\n\nThe `provided-uuid` links this to the same statement in the leveraged system's SSP.\n\nIt may be linked directly, but is more commonly provided via an OSCAL-based CRM (Inheritance and Responsibility Model).",
+              "provided-uuid" : "11111111-0000-4000-9009-002001002001",
+              "uuid" : "780a3910-2019-4d33-a2f9-5c6ac91929d6"
+            } ],
+            "satisfied" : [ {
+              "description" : "Description of how the responsibility was satisfied.\n\nThe `responsibility-uuid` links this to the same statement in the leveraged system's SSP.\n\nIt may be linked directly, but is more commonly provided via an OSCAL-based CRM (Inheritance and Responsibility Model).\n\nTools should use this to ensure all identified customer `responsibility` statements have a corresponding `satisfied` statement in the leveraging system's SSP.\n\nTool developers should be mindful that",
+              "uuid" : "6486f725-1372-434f-9b1b-7cf3f50c32d1",
+              "responsibility-uuid" : "11111111-0000-4000-9009-002001002002"
+            } ],
+            "uuid" : "84de735f-ba37-4bb4-b784-79760f986a40"
+          } ],
+          "statement-id" : "ac-2_smt.a",
+          "uuid" : "24a85abb-25ad-4686-850c-5c0e8ab69a0c"
+        } ],
+        "uuid" : "7a36cf53-156d-4d1f-9a8b-433f61cc57b7"
+      }, {
+        "control-id" : "at-1",
+        "props" : [ {
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "name" : "planned-completion-date",
+          "value" : "2024-01-31Z"
+        }, {
+          "remarks" : "Describe the plan to complete the implementation.",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "name" : "implementation-status",
+          "value" : "planned"
+        }, {
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "name" : "control-origination",
+          "value" : "sp-system"
+        } ],
+        "responsible-roles" : [ {
+          "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
+          "role-id" : "information-system-security-officer"
+        } ],
+        "statements" : [ {
+          "by-components" : [ {
+            "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
+            "description" : "Describe how the control is satisfied within the system.",
+            "uuid" : "490ebd59-a44b-46d6-9ecf-48a9e0103488",
+            "set-parameters" : [ {
+              "param-id" : "at-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "at-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "at-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "at-1_smt",
           "uuid" : "ba380f9b-4364-4c0e-8629-cbada5d7d6b9"
@@ -268,8 +288,9 @@
           "href" : "#ce9f3af2-f4bc-47b5-bc25-df52a917748b",
           "rel" : "procedure"
         } ],
-        "uuid" : "c332a6f8-bbe6-4ee9-aaea-d89d251c68df",
-        "control-id" : "at-1",
+        "uuid" : "c332a6f8-bbe6-4ee9-aaea-d89d251c68df"
+      }, {
+        "control-id" : "au-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -287,23 +308,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "au-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "au-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "au-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "e985ae45-6ab4-4f12-8699-3ebf87e35bd5"
+            "uuid" : "e985ae45-6ab4-4f12-8699-3ebf87e35bd5",
+            "set-parameters" : [ {
+              "param-id" : "au-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "au-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "au-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "au-1_smt",
           "uuid" : "a9a883f4-f550-4f11-941a-2eb9ce9c3faf"
@@ -359,8 +379,9 @@
           "href" : "#b1cdaad8-2127-4563-b248-3d2777307c4f",
           "rel" : "procedure"
         } ],
-        "uuid" : "381c8d0c-e6ec-41a9-9b16-01657226c70f",
-        "control-id" : "au-1",
+        "uuid" : "381c8d0c-e6ec-41a9-9b16-01657226c70f"
+      }, {
+        "control-id" : "ca-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -378,23 +399,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "ca-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "ca-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "ca-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "48f6a417-4669-4f18-a350-d2274d15e859"
+            "uuid" : "48f6a417-4669-4f18-a350-d2274d15e859",
+            "set-parameters" : [ {
+              "param-id" : "ca-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "ca-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "ca-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "ca-1_smt",
           "uuid" : "cf2fa346-171d-48a1-a96a-0c6ca209f19c"
@@ -438,8 +458,9 @@
           "href" : "#a552272e-803c-40db-895c-5de35c76d871",
           "rel" : "procedure"
         } ],
-        "uuid" : "43e388d9-3854-44f6-8c6f-17a6d51ee6a2",
-        "control-id" : "ca-1",
+        "uuid" : "43e388d9-3854-44f6-8c6f-17a6d51ee6a2"
+      }, {
+        "control-id" : "cm-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -457,23 +478,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "cm-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "cm-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "cm-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "406e6a62-7b5f-48c6-b56f-1f17974fbde8"
+            "uuid" : "406e6a62-7b5f-48c6-b56f-1f17974fbde8",
+            "set-parameters" : [ {
+              "param-id" : "cm-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "cm-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "cm-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "cm-1_smt",
           "uuid" : "ad732048-a744-456f-9555-c80fdf4cd304"
@@ -517,8 +537,9 @@
           "href" : "#b4c87da0-0f96-4231-a3c1-2d1a9d0b99a3",
           "rel" : "procedure"
         } ],
-        "uuid" : "c8e45d78-2afe-42ae-80e1-c1e2499a0346",
-        "control-id" : "cm-1",
+        "uuid" : "c8e45d78-2afe-42ae-80e1-c1e2499a0346"
+      }, {
+        "control-id" : "cp-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -536,23 +557,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "cp-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "cp-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "cp-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "adff4737-d9be-4859-a682-bcf1ce9cfb8d"
+            "uuid" : "adff4737-d9be-4859-a682-bcf1ce9cfb8d",
+            "set-parameters" : [ {
+              "param-id" : "cp-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "cp-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "cp-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "cp-1_smt",
           "uuid" : "a719de81-694c-4455-b8db-5f2b6b1d9076"
@@ -589,8 +609,9 @@
           "statement-id" : "cp-1_smt.b.2",
           "uuid" : "db5b3977-bd51-4505-b3e2-1597bbd4d930"
         } ],
-        "uuid" : "13af9343-73e7-4d71-b386-9a0844fa7e45",
-        "control-id" : "cp-1",
+        "uuid" : "13af9343-73e7-4d71-b386-9a0844fa7e45"
+      }, {
+        "control-id" : "ia-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -608,23 +629,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "ia-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "ia-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "ia-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "7ebf7f73-652d-432d-aa9c-16c718cc5692"
+            "uuid" : "7ebf7f73-652d-432d-aa9c-16c718cc5692",
+            "set-parameters" : [ {
+              "param-id" : "ia-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "ia-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "ia-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "ia-1_smt",
           "uuid" : "3146724d-b623-45de-a9af-fd7a0556a273"
@@ -668,8 +688,9 @@
           "href" : "#08a6ab70-8c56-4713-ae9c-81fbb6594943",
           "rel" : "procedure"
         } ],
-        "uuid" : "4050c933-3ecc-4a8d-8da7-391364685cbb",
-        "control-id" : "ia-1",
+        "uuid" : "4050c933-3ecc-4a8d-8da7-391364685cbb"
+      }, {
+        "control-id" : "ir-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -687,23 +708,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "ir-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "ir-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "ir-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "053cfba5-18d9-4b51-968c-f486069ec53a"
+            "uuid" : "053cfba5-18d9-4b51-968c-f486069ec53a",
+            "set-parameters" : [ {
+              "param-id" : "ir-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "ir-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "ir-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "ir-1_smt",
           "uuid" : "c0d7699a-45d8-49af-abba-81c5d2fc5d1b"
@@ -747,8 +767,9 @@
           "href" : "#649eac51-c21b-4cb2-bd10-7828e0522e50",
           "rel" : "procedure"
         } ],
-        "uuid" : "229846dc-83cc-4ff2-a9ed-210490a343d9",
-        "control-id" : "ir-1",
+        "uuid" : "229846dc-83cc-4ff2-a9ed-210490a343d9"
+      }, {
+        "control-id" : "ma-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -766,23 +787,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "ma-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "ma-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "ma-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "82d21629-d0e1-40cd-955f-5fccd7bb652a"
+            "uuid" : "82d21629-d0e1-40cd-955f-5fccd7bb652a",
+            "set-parameters" : [ {
+              "param-id" : "ma-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "ma-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "ma-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "ma-1_smt",
           "uuid" : "36fd8d6c-4d47-46af-a5be-fca3c0fa143c"
@@ -826,8 +846,9 @@
           "href" : "#fd29a63b-2a08-4d56-b91e-aadfa4c0f55b",
           "rel" : "procedure"
         } ],
-        "uuid" : "f0c6b63f-6b94-448f-bb16-db3d54b91734",
-        "control-id" : "ma-1",
+        "uuid" : "f0c6b63f-6b94-448f-bb16-db3d54b91734"
+      }, {
+        "control-id" : "mp-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -845,23 +866,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "mp-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "mp-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "mp-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "a7e29aef-1cf2-4736-bc9a-ee885d433848"
+            "uuid" : "a7e29aef-1cf2-4736-bc9a-ee885d433848",
+            "set-parameters" : [ {
+              "param-id" : "mp-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "mp-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "mp-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "_smt",
           "uuid" : "a2653c46-fbfc-4a70-b318-403f5f13cc46"
@@ -905,8 +925,9 @@
           "href" : "#908175c9-7502-4ab4-b469-80450ed18a8b",
           "rel" : "procedure"
         } ],
-        "uuid" : "fa3a9747-3451-456a-aae9-9896e03a52c8",
-        "control-id" : "mp-1",
+        "uuid" : "fa3a9747-3451-456a-aae9-9896e03a52c8"
+      }, {
+        "control-id" : "pe-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -924,23 +945,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "pe-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "pe-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "pe-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "978ac2cf-b4ce-4eb1-aefd-831b4a6b0f44"
+            "uuid" : "978ac2cf-b4ce-4eb1-aefd-831b4a6b0f44",
+            "set-parameters" : [ {
+              "param-id" : "pe-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "pe-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "pe-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "_smt",
           "uuid" : "35d98964-5e8c-4068-abed-2729cbb1a5e3"
@@ -984,8 +1004,9 @@
           "href" : "#22522abe-fd09-4476-b09f-c6422b72bf12",
           "rel" : "procedure"
         } ],
-        "uuid" : "a85ff28e-517c-4455-8bd4-866103a2c94a",
-        "control-id" : "pe-1",
+        "uuid" : "a85ff28e-517c-4455-8bd4-866103a2c94a"
+      }, {
+        "control-id" : "pl-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -1003,23 +1024,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "pl-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "pl-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "pl-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "50a9c8fa-53a8-4f6a-a75f-cfa7ea6f5a7a"
+            "uuid" : "50a9c8fa-53a8-4f6a-a75f-cfa7ea6f5a7a",
+            "set-parameters" : [ {
+              "param-id" : "pl-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "pl-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "pl-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "pl-1_smt",
           "uuid" : "0acd7328-133f-4df8-8518-b9b3cb3bd4ed"
@@ -1063,8 +1083,9 @@
           "href" : "#937dfbb6-9d82-4974-be85-23f1e4b130d8",
           "rel" : "procedure"
         } ],
-        "uuid" : "97ba1f95-92a8-480b-a489-960661e4206b",
-        "control-id" : "pl-1",
+        "uuid" : "97ba1f95-92a8-480b-a489-960661e4206b"
+      }, {
+        "control-id" : "ps-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -1082,23 +1103,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "ps-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "ps-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "ps-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "f0c81ea6-7063-42b5-8adb-92e28eb030e9"
+            "uuid" : "f0c81ea6-7063-42b5-8adb-92e28eb030e9",
+            "set-parameters" : [ {
+              "param-id" : "ps-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "ps-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "ps-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "ps-1_smt",
           "uuid" : "98f8537b-cce1-4904-b220-02552eae76e5"
@@ -1142,8 +1162,9 @@
           "href" : "#552dec25-74a9-4cbe-b3b0-f865d99bfa9d",
           "rel" : "procedure"
         } ],
-        "uuid" : "5e7498de-b540-4a28-b041-4381b023e98a",
-        "control-id" : "ps-1",
+        "uuid" : "5e7498de-b540-4a28-b041-4381b023e98a"
+      }, {
+        "control-id" : "ra-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -1161,23 +1182,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "ra-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "ra-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "ra-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "b36613ac-b0ea-459d-b5a2-2fc574d1185a"
+            "uuid" : "b36613ac-b0ea-459d-b5a2-2fc574d1185a",
+            "set-parameters" : [ {
+              "param-id" : "ra-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "ra-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "ra-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "ra-1_smt",
           "uuid" : "ffb439c2-3445-495c-ba10-ba0ca4e30465"
@@ -1221,8 +1241,9 @@
           "href" : "#1a852337-d28f-4a66-a367-68aebec35698",
           "rel" : "procedure"
         } ],
-        "uuid" : "789e6c0f-acda-4a94-9b48-7d41dd4c607c",
-        "control-id" : "ra-1",
+        "uuid" : "789e6c0f-acda-4a94-9b48-7d41dd4c607c"
+      }, {
+        "control-id" : "sa-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -1240,23 +1261,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "sa-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "sa-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "sa-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "8c9ac356-b5ef-4be2-a540-35ce69faef42"
+            "uuid" : "8c9ac356-b5ef-4be2-a540-35ce69faef42",
+            "set-parameters" : [ {
+              "param-id" : "sa-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "sa-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "sa-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "sa-1_smt",
           "uuid" : "d0dc3f13-50cc-40d1-a980-fe78797c7417"
@@ -1300,8 +1320,9 @@
           "href" : "#4a59a06d-3b1b-410f-b067-3fe1dab083f2",
           "rel" : "procedure"
         } ],
-        "uuid" : "55358f60-db9b-4d75-a313-5fa6c328273c",
-        "control-id" : "sa-1",
+        "uuid" : "55358f60-db9b-4d75-a313-5fa6c328273c"
+      }, {
+        "control-id" : "sc-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -1319,23 +1340,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "sc-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "sc-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "sc-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "8c52b949-a7ad-4bef-9da2-b342cef3dc45"
+            "uuid" : "8c52b949-a7ad-4bef-9da2-b342cef3dc45",
+            "set-parameters" : [ {
+              "param-id" : "sc-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "sc-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "sc-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "sc-1_smt",
           "uuid" : "3f1307fa-7405-42ea-a9ad-61b7a94bc704"
@@ -1379,8 +1399,9 @@
           "href" : "#936093ce-a567-4592-8fcc-eeeef024cdd4",
           "rel" : "procedure"
         } ],
-        "uuid" : "9e2852c6-f48a-47b2-9ea5-77cbbb42b365",
-        "control-id" : "sc-1",
+        "uuid" : "9e2852c6-f48a-47b2-9ea5-77cbbb42b365"
+      }, {
+        "control-id" : "si-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -1398,23 +1419,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "si-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "si-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "si-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "663f84e5-9c13-49a5-b7de-25ced4e8aef8"
+            "uuid" : "663f84e5-9c13-49a5-b7de-25ced4e8aef8",
+            "set-parameters" : [ {
+              "param-id" : "si-1_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "si-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "si-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "si-1_smt",
           "uuid" : "9e061e1e-10fa-4896-8597-294d8fd8e52a"
@@ -1458,8 +1478,44 @@
           "href" : "#ac953d62-a392-499f-b832-b90b325cceb6",
           "rel" : "procedure"
         } ],
-        "uuid" : "81ba4fe8-1649-437b-9ecf-367fd87336e6",
-        "control-id" : "si-1",
+        "uuid" : "81ba4fe8-1649-437b-9ecf-367fd87336e6"
+      }, {
+        "control-id" : "si-8",
+        "props" : [ {
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "name" : "control-origination",
+          "value" : "sp-system"
+        }, {
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "name" : "implementation-status",
+          "value" : "implemented"
+        } ],
+        "responsible-roles" : [ {
+          "party-uuids" : [ "59cdc953-5902-4fa4-a878-f3163854624c" ],
+          "role-id" : "asset-administrator"
+        } ],
+        "statements" : [ {
+          "by-components" : [ {
+            "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f5",
+            "description" : "Describe how the control is satisfied within the system.\n\nDMARC is employed.\n\nSPF is employed.\n\nDKIM is employed.",
+            "uuid" : "d63e6f79-c7c5-455b-8b42-8c60c4e7939b",
+            "set-parameters" : [ {
+              "param-id" : "si-8_prm_1",
+              "values" : [ "organization-defined personnel or roles" ]
+            }, {
+              "param-id" : "si-8_prm_2",
+              "values" : [ "[specify frequency]" ]
+            }, {
+              "param-id" : "si-8_prm_3",
+              "values" : [ "[specify frequency]" ]
+            } ]
+          } ],
+          "statement-id" : "si-8_smt",
+          "uuid" : "9e061e1e-10fa-4896-8597-294d8fd8e52b"
+        } ],
+        "uuid" : "f33674dc-d16f-4a8c-8902-b8e60f947ce7"
+      }, {
+        "control-id" : "sr-1",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "planned-completion-date",
@@ -1477,58 +1533,22 @@
         "responsible-roles" : [ {
           "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
           "role-id" : "information-system-security-officer"
-        } ]
-      }, {
+        } ],
         "statements" : [ {
           "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "organization-defined personnel or roles" ],
-              "param-id" : "si-8_prm_1"
-            }, {
-              "values" : [ "[specify frequency]" ],
-              "param-id" : "si-8_prm_2"
-            }, {
-              "values" : [ "[specify frequency]" ],
-              "param-id" : "si-8_prm_3"
-            } ],
-            "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f5",
-            "description" : "Describe how the control is satisfied within the system.\n\nDMARC is employed.\n\nSPF is employed.\n\nDKIM is employed.",
-            "uuid" : "d63e6f79-c7c5-455b-8b42-8c60c4e7939b"
-          } ],
-          "statement-id" : "si-8_smt",
-          "uuid" : "9e061e1e-10fa-4896-8597-294d8fd8e52b"
-        } ],
-        "uuid" : "f33674dc-d16f-4a8c-8902-b8e60f947ce7",
-        "control-id" : "si-8",
-        "props" : [ {
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "control-origination",
-          "value" : "sp-system"
-        }, {
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "implementation-status",
-          "value" : "implemented"
-        } ],
-        "responsible-roles" : [ {
-          "party-uuids" : [ "59cdc953-5902-4fa4-a878-f3163854624c" ],
-          "role-id" : "asset-administrator"
-        } ]
-      }, {
-        "statements" : [ {
-          "by-components" : [ {
-            "set-parameters" : [ {
-              "values" : [ "to include chief privacy and ISSO and/or similar role or designees" ],
-              "param-id" : "sr-1_prm_1"
-            }, {
-              "values" : [ "at least every 3 years" ],
-              "param-id" : "sr-1_prm_2"
-            }, {
-              "values" : [ "at least annually" ],
-              "param-id" : "sr-1_prm_3"
-            } ],
             "component-uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
             "description" : "Describe how the control is satisfied within the system.",
-            "uuid" : "ea3cc181-1a55-4350-94a6-faf42f003045"
+            "uuid" : "ea3cc181-1a55-4350-94a6-faf42f003045",
+            "set-parameters" : [ {
+              "param-id" : "sr-1_prm_1",
+              "values" : [ "to include chief privacy and ISSO and/or similar role or designees" ]
+            }, {
+              "param-id" : "sr-1_prm_2",
+              "values" : [ "at least every 3 years" ]
+            }, {
+              "param-id" : "sr-1_prm_3",
+              "values" : [ "at least annually" ]
+            } ]
           } ],
           "statement-id" : "sr-1_smt",
           "uuid" : "ea3cc181-1a55-4350-94a6-faf42f003045"
@@ -1556,60 +1576,28 @@
           "href" : "#b2aaedad-5ff0-4b0c-b490-bbe64b2033b0",
           "rel" : "procedure"
         } ],
-        "uuid" : "2286bf93-2664-4852-bc4c-e235ec076b94",
-        "control-id" : "sr-1",
-        "props" : [ {
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "planned-completion-date",
-          "value" : "2024-01-31Z"
-        }, {
-          "remarks" : "Describe the plan to complete the implementation.",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "implementation-status",
-          "value" : "planned"
-        }, {
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "control-origination",
-          "value" : "sp-system"
-        } ],
-        "responsible-roles" : [ {
-          "party-uuids" : [ "36b8d6c0-3b25-42cc-b529-cf4066145cdd" ],
-          "role-id" : "information-system-security-officer"
-        } ]
-      } ],
-      "description" : "Appendix A - FedRAMP SSP Rev5 Template\n\nThis description field is required by OSCAL.\n\nFedRAMP does not require any specific information here."
+        "uuid" : "2286bf93-2664-4852-bc4c-e235ec076b94"
+      } ]
     },
     "system-characteristics" : {
-      "system-name-short" : "System's Short Name or Acronym",
-      "system-ids" : [ {
-        "identifier-type" : "https://fedramp.gov",
-        "id" : "F00000000"
-      } ],
-      "description" : "\\[Insert CSO Name\\] is delivered as \\[a/an\\] \\[insert based on the Service Model above\\] offering using a multi-tenant \\[insert based on the Deployment Model above\\] cloud computing environment. It is available to \\[Insert scope of customers in accordance with instructions above (for example, the public, federal, state, local, and tribal governments, as well as research institutions, federal contractors, government contractors etc.)\\].\n\nNOTE: Additional description, including the purpose and functions of this system may be added here. This includes any narrative text usually included in section 9.1 of the SSP.\n\nNOTE: The description is expected to be at least 32 words in length.",
-      "authorization-boundary" : {
-        "diagrams" : [ {
-          "description" : "A diagram-specific explanation.",
-          "links" : [ {
-            "href" : "#d2eb3c18-6754-4e3a-a933-03d289e3fad5",
-            "rel" : "diagram"
-          } ],
-          "caption" : "Authorization Boundary Diagram",
-          "uuid" : "dbf46c27-52a9-49c4-beb6-b6399cd75497"
-        } ],
-        "description" : "A holistic, top-level explanation of the FedRAMP authorization boundary."
-      },
       "security-sensitivity-level" : "fips-199-moderate",
       "security-impact-level" : {
-        "security-objective-confidentiality" : "fips-199-moderate",
         "security-objective-integrity" : "fips-199-moderate",
-        "security-objective-availability" : "fips-199-moderate"
+        "security-objective-availability" : "fips-199-moderate",
+        "security-objective-confidentiality" : "fips-199-moderate"
       },
       "system-name" : "System's Full Name",
       "system-information" : {
         "information-types" : [ {
+          "integrity-impact" : {
+            "base" : "fips-199-moderate",
+            "selected" : "fips-199-moderate",
+            "adjustment-justification" : "Required if the base and selected values do not match."
+          },
+          "description" : "A description of the information.",
           "categorizations" : [ {
-            "information-type-ids" : [ "C.2.4.1" ],
-            "system" : "https://doi.org/10.6028/NIST.SP.800-60v2r1"
+            "system" : "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+            "information-type-ids" : [ "C.2.4.1" ]
           } ],
           "title" : "Information Type Name",
           "uuid" : "06ecba4f-db96-4491-a3a2-7febfa227435",
@@ -1622,13 +1610,7 @@
             "base" : "fips-199-moderate",
             "selected" : "fips-199-moderate",
             "adjustment-justification" : "Required if the base and selected values do not match."
-          },
-          "integrity-impact" : {
-            "base" : "fips-199-moderate",
-            "selected" : "fips-199-moderate",
-            "adjustment-justification" : "Required if the base and selected values do not match."
-          },
-          "description" : "A description of the information."
+          }
         } ]
       },
       "props" : [ {
@@ -1682,15 +1664,30 @@
         "description" : "A holistic, top-level explanation of the network architecture."
       },
       "status" : {
-        "state" : "operational",
-        "remarks" : "Remarks are optional if status/state is \"operational\".\n\nRemarks are required otherwise."
+        "remarks" : "Remarks are optional if status/state is \"operational\".\n\nRemarks are required otherwise.",
+        "state" : "operational"
+      },
+      "system-name-short" : "System's Short Name or Acronym",
+      "system-ids" : [ {
+        "id" : "F00000000",
+        "identifier-type" : "https://fedramp.gov"
+      } ],
+      "description" : "\\[Insert CSO Name\\] is delivered as \\[a/an\\] \\[insert based on the Service Model above\\] offering using a multi-tenant \\[insert based on the Deployment Model above\\] cloud computing environment. It is available to \\[Insert scope of customers in accordance with instructions above (for example, the public, federal, state, local, and tribal governments, as well as research institutions, federal contractors, government contractors etc.)\\].\n\nNOTE: Additional description, including the purpose and functions of this system may be added here. This includes any narrative text usually included in section 9.1 of the SSP.\n\nNOTE: The description is expected to be at least 32 words in length.",
+      "authorization-boundary" : {
+        "diagrams" : [ {
+          "description" : "A diagram-specific explanation.",
+          "links" : [ {
+            "href" : "#d2eb3c18-6754-4e3a-a933-03d289e3fad5",
+            "rel" : "diagram"
+          } ],
+          "caption" : "Authorization Boundary Diagram",
+          "uuid" : "dbf46c27-52a9-49c4-beb6-b6399cd75497"
+        } ],
+        "description" : "A holistic, top-level explanation of the FedRAMP authorization boundary."
       }
     },
     "back-matter" : {
       "resources" : [ {
-        "title" : "Resolution Resource",
-        "uuid" : "ace2963d-ecb4-4be5-bdd0-1f6fd7610f41",
-        "remarks" : "This \"resolution resource\" is used by FedRAMP as a local, authoritative indicator of what version SSP (rev 4 or rev 5) this OSCAL document is for.",
         "props" : [ {
           "name" : "dataset",
           "class" : "collection",
@@ -1707,72 +1704,63 @@
           "name" : "dataset",
           "class" : "organization",
           "value" : "gov.nist.csrc"
-        } ]
-      }, {
-        "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./signed-ssp.pdf"
         } ],
-        "uuid" : "2ff2eb61-d8b3-4d17-8257-727468329c82",
-        "base64" : {
-          "media-type" : "application/pdf",
-          "filename" : "ssp.pdf",
-          "value" : "00000000"
-        },
-        "remarks" : "FedRAMP is formulating guidelines for handling digital/electronic signatures in OSCAL, and welcome feedback on solutions.\n\nFor now, FedRAMP recommends one of the following:\n\n- Render the OSCAL SSP content as a PDF that is digitally signed and attached.\n- Render the OSCAL SSP content as a printed page that is physically signed, scanned, and attached.\n\nIf your organization prefers another approach, please seek prior approval from the FedRAMP PMO.",
+        "title" : "Resolution Resource",
+        "uuid" : "ace2963d-ecb4-4be5-bdd0-1f6fd7610f41",
+        "remarks" : "This \"resolution resource\" is used by FedRAMP as a local, authoritative indicator of what version SSP (rev 4 or rev 5) this OSCAL document is for."
+      }, {
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "type",
           "value" : "signed-ssp"
         } ],
-        "description" : "SSP Signature"
+        "description" : "SSP Signature",
+        "rlinks" : [ {
+          "href" : "./signed-ssp.pdf",
+          "media-type" : "application/pdf"
+        } ],
+        "uuid" : "2ff2eb61-d8b3-4d17-8257-727468329c82",
+        "base64" : {
+          "filename" : "ssp.pdf",
+          "value" : "00000000",
+          "media-type" : "application/pdf"
+        },
+        "remarks" : "FedRAMP is formulating guidelines for handling digital/electronic signatures in OSCAL, and welcome feedback on solutions.\n\nFor now, FedRAMP recommends one of the following:\n\n- Render the OSCAL SSP content as a PDF that is digitally signed and attached.\n- Render the OSCAL SSP content as a printed page that is physically signed, scanned, and attached.\n\nIf your organization prefers another approach, please seek prior approval from the FedRAMP PMO."
       }, {
+        "props" : [ {
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "name" : "type",
+          "value" : "fedramp-citations"
+        } ],
         "title" : "FedRAMP Applicable Laws and Regulations",
         "rlinks" : [ {
           "href" : "https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx"
         } ],
         "uuid" : "985475ee-d4d6-4581-8fdf-d84d3d8caa48",
         "base64" : {
-          "media-type" : "application/vnd.ms-excel",
           "filename" : "SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/vnd.ms-excel"
         },
-        "remarks" : "Must be present in a FedRAMP SAP.",
+        "remarks" : "Must be present in a FedRAMP SAP."
+      }, {
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "type",
-          "value" : "fedramp-citations"
-        } ]
-      }, {
+          "value" : "fedramp-acronyms"
+        } ],
         "title" : "FedRAMP Master Acronym and Glossary",
         "rlinks" : [ {
           "href" : "https://www.fedramp.gov/assets/resources/documents/FedRAMP_Master_Acronym_and_Glossary.pdf"
         } ],
         "uuid" : "1a23a771-d481-4594-9a1a-71d584fa4123",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "FedRAMP_Master_Acronym_and_Glossary.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Must be present in a FedRAMP SSP.",
-        "props" : [ {
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "type",
-          "value" : "fedramp-acronyms"
-        } ]
+        "remarks" : "Must be present in a FedRAMP SSP."
       }, {
-        "title" : "Access Control Policy Title",
-        "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_AC_policy.pdf"
-        } ],
-        "uuid" : "330bac69-5840-479a-981b-afda037d7a6f",
-        "base64" : {
-          "media-type" : "application/pdf",
-          "filename" : "sample_policy.pdf",
-          "value" : "00000000"
-        },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
         "props" : [ {
           "name" : "type",
           "class" : "ac",
@@ -1784,20 +1772,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "AC Policy document"
-      }, {
-        "title" : "Awareness and Training Policy Title",
+        "description" : "AC Policy document",
+        "title" : "Access Control Policy Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_AT_policy.pdf"
+          "href" : "./documents/policies/sample_AC_policy.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "184d2fc9-6c9e-4302-acb3-8c24f6843c79",
+        "uuid" : "330bac69-5840-479a-981b-afda037d7a6f",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "at",
@@ -1809,20 +1797,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "AT Policy document"
-      }, {
-        "title" : "Audit and Accountability Policy Title",
+        "description" : "AT Policy document",
+        "title" : "Awareness and Training Policy Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_AU_policy.pdf"
+          "href" : "./documents/policies/sample_AT_policy.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "64977a9e-cd62-4c04-891e-7943e9046179",
+        "uuid" : "184d2fc9-6c9e-4302-acb3-8c24f6843c79",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "au",
@@ -1834,20 +1822,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "AU Policy document"
-      }, {
-        "title" : "Security Assessment and Authorization Policy Title",
+        "description" : "AU Policy document",
+        "title" : "Audit and Accountability Policy Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_CA_policy.pdf"
+          "href" : "./documents/policies/sample_AU_policy.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "f81fe324-844f-4b53-b915-8c72b6fde8cf",
+        "uuid" : "64977a9e-cd62-4c04-891e-7943e9046179",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "ca",
@@ -1859,20 +1847,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "CA Policy document"
-      }, {
-        "title" : "Configuration Management Policy Title",
+        "description" : "CA Policy document",
+        "title" : "Security Assessment and Authorization Policy Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_CM_policy.pdf"
+          "href" : "./documents/policies/sample_CA_policy.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "eb4467a5-c3ca-4cac-9181-557886d7d1dc",
+        "uuid" : "f81fe324-844f-4b53-b915-8c72b6fde8cf",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "cm",
@@ -1884,20 +1872,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "CM Policy document"
-      }, {
-        "title" : "Contingency Planning Policy Title",
+        "description" : "CM Policy document",
+        "title" : "Configuration Management Policy Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_CP_policy.pdf"
+          "href" : "./documents/policies/sample_CM_policy.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "4c4395c5-a126-4b77-8c62-cac98c563915",
+        "uuid" : "eb4467a5-c3ca-4cac-9181-557886d7d1dc",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "cp",
@@ -1909,20 +1897,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "CP Policy document"
-      }, {
-        "title" : "Identification and Authentication Policy Title",
+        "description" : "CP Policy document",
+        "title" : "Contingency Planning Policy Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_IA_policy.pdf"
+          "href" : "./documents/policies/sample_CP_policy.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "f6070655-ac54-4c4c-847e-d073bcf23baf",
+        "uuid" : "4c4395c5-a126-4b77-8c62-cac98c563915",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "ia",
@@ -1934,20 +1922,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "IA Policy document"
-      }, {
-        "title" : "Incident Response Policy Title",
+        "description" : "IA Policy document",
+        "title" : "Identification and Authentication Policy Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_IR_policy.pdf"
+          "href" : "./documents/policies/sample_IA_policy.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "e39a9f53-984b-429f-a062-a815228c6687",
+        "uuid" : "f6070655-ac54-4c4c-847e-d073bcf23baf",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "ir",
@@ -1959,20 +1947,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "IR Policy document"
-      }, {
-        "title" : "Maintenance Policy Title",
+        "description" : "IR Policy document",
+        "title" : "Incident Response Policy Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_MA_policy.pdf"
+          "href" : "./documents/policies/sample_IR_policy.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "8b009787-771c-4b02-9a8f-3f3b581e9464",
+        "uuid" : "e39a9f53-984b-429f-a062-a815228c6687",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "ma",
@@ -1984,20 +1972,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "MA Policy document"
-      }, {
-        "title" : "Media Protection Policy Title",
+        "description" : "MA Policy document",
+        "title" : "Maintenance Policy Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_MP_policy.pdf"
+          "href" : "./documents/policies/sample_MA_policy.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "776b9f3b-2896-4118-87d9-7a5e62149afb",
+        "uuid" : "8b009787-771c-4b02-9a8f-3f3b581e9464",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "mp",
@@ -2009,20 +1997,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "MP Policy document"
-      }, {
-        "title" : "Physical and Environmental Protection Policy Title",
+        "description" : "MP Policy document",
+        "title" : "Media Protection Policy Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_PE_policy.pdf"
+          "href" : "./documents/policies/sample_MP_policy.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "a54bc32c-6bae-4c89-b5b4-9299c56893fb",
+        "uuid" : "776b9f3b-2896-4118-87d9-7a5e62149afb",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "pe",
@@ -2034,20 +2022,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "PE Policy document"
-      }, {
-        "title" : "Planning Policy Title",
+        "description" : "PE Policy document",
+        "title" : "Physical and Environmental Protection Policy Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_PL_policy.pdf"
+          "href" : "./documents/policies/sample_PE_policy.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "9de28452-4b02-4b49-b316-59142a7633c1",
+        "uuid" : "a54bc32c-6bae-4c89-b5b4-9299c56893fb",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "pl",
@@ -2059,43 +2047,44 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "PL Policy document"
+        "description" : "PL Policy document",
+        "title" : "Planning Policy Title",
+        "rlinks" : [ {
+          "href" : "./documents/policies/sample_PL_policy.pdf",
+          "media-type" : "application/pdf"
+        } ],
+        "uuid" : "9de28452-4b02-4b49-b316-59142a7633c1",
+        "base64" : {
+          "filename" : "sample_policy.pdf",
+          "value" : "00000000",
+          "media-type" : "application/pdf"
+        },
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
       }, {
+        "props" : [ {
+          "name" : "type",
+          "class" : "ps",
+          "value" : "policy"
+        }, {
+          "name" : "published",
+          "value" : "2023-01-01T00:00:00Z"
+        }, {
+          "name" : "version",
+          "value" : "Document Version"
+        } ],
+        "description" : "PS Policy document",
         "title" : "Personnel Security Policy Title",
         "rlinks" : [ {
           "href" : "./documents/policies/sample_PS_policy.pdf"
         } ],
         "uuid" : "34f3388e-e5b2-4d85-b050-19f62dba6d7e",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
-        "props" : [ {
-          "name" : "type",
-          "class" : "ps",
-          "value" : "policy"
-        }, {
-          "name" : "published",
-          "value" : "2023-01-01T00:00:00Z"
-        }, {
-          "name" : "version",
-          "value" : "Document Version"
-        } ],
-        "description" : "PS Policy document"
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
       }, {
-        "title" : "Risk Adjustment Policy Title",
-        "rlinks" : [ {
-          "href" : "./documents/policies/sample_RA_policy.pdf"
-        } ],
-        "uuid" : "53fbc1b6-0f3c-4298-9554-da5acfef3a5a",
-        "base64" : {
-          "media-type" : "application/pdf",
-          "filename" : "sample_policy.pdf",
-          "value" : "00000000"
-        },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
         "props" : [ {
           "name" : "type",
           "class" : "ra",
@@ -2107,19 +2096,19 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "RA Policy document"
-      }, {
-        "title" : "System and Service Acquisition Policy Title",
+        "description" : "RA Policy document",
+        "title" : "Risk Adjustment Policy Title",
         "rlinks" : [ {
-          "href" : "./documents/policies/sample_SA_policy.pdf"
+          "href" : "./documents/policies/sample_RA_policy.pdf"
         } ],
-        "uuid" : "f969f849-8920-4325-9abe-dcc7133518d6",
+        "uuid" : "53fbc1b6-0f3c-4298-9554-da5acfef3a5a",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "sa",
@@ -2131,19 +2120,19 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "SA Policy document"
-      }, {
-        "title" : "System and Communications Protection Policy Title",
+        "description" : "SA Policy document",
+        "title" : "System and Service Acquisition Policy Title",
         "rlinks" : [ {
-          "href" : "./documents/policies/sample_SC_policy.pdf"
+          "href" : "./documents/policies/sample_SA_policy.pdf"
         } ],
-        "uuid" : "03ae437f-fffc-48e3-81f1-4040fce2d6e3",
+        "uuid" : "f969f849-8920-4325-9abe-dcc7133518d6",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "sc",
@@ -2155,19 +2144,19 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "SC Policy document"
-      }, {
-        "title" : "System and Information Integrity Policy Title",
+        "description" : "SC Policy document",
+        "title" : "System and Communications Protection Policy Title",
         "rlinks" : [ {
-          "href" : "./documents/policies/sample_SI_policy.pdf"
+          "href" : "./documents/policies/sample_SC_policy.pdf"
         } ],
-        "uuid" : "7a5ee0b7-402c-487f-8ac7-e1735b991674",
+        "uuid" : "03ae437f-fffc-48e3-81f1-4040fce2d6e3",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "si",
@@ -2179,19 +2168,19 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "SI Policy document"
-      }, {
-        "title" : "Supply Chain Risk Policy Title",
+        "description" : "SI Policy document",
+        "title" : "System and Information Integrity Policy Title",
         "rlinks" : [ {
-          "href" : "./documents/policies/sample_SR_policy.pdf"
+          "href" : "./documents/policies/sample_SI_policy.pdf"
         } ],
-        "uuid" : "7d440e15-ca4d-4e4a-8fcc-50bb05ffa2fd",
+        "uuid" : "7a5ee0b7-402c-487f-8ac7-e1735b991674",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "sr",
@@ -2203,20 +2192,19 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "SR Policy document"
-      }, {
-        "title" : "Access Control Procedure Title",
+        "description" : "SR Policy document",
+        "title" : "Supply Chain Risk Policy Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_AC_procedure.pdf"
+          "href" : "./documents/policies/sample_SR_policy.pdf"
         } ],
-        "uuid" : "e1fa7a30-efb8-4738-b4e2-7fbeb86644cd",
+        "uuid" : "7d440e15-ca4d-4e4a-8fcc-50bb05ffa2fd",
         "base64" : {
-          "media-type" : "application/pdf",
-          "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "filename" : "sample_policy.pdf",
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Policy Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "ac",
@@ -2228,20 +2216,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "AC Procedure document"
-      }, {
-        "title" : "Awareness and Training Procedure Title",
+        "description" : "AC Procedure document",
+        "title" : "Access Control Procedure Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_AT_procedure.pdf"
+          "href" : "./documents/policies/sample_AC_procedure.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "ce9f3af2-f4bc-47b5-bc25-df52a917748b",
+        "uuid" : "e1fa7a30-efb8-4738-b4e2-7fbeb86644cd",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "at",
@@ -2253,20 +2241,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "AT Procedure document"
-      }, {
-        "title" : "Audit and Accountability Procedure Title",
+        "description" : "AT Procedure document",
+        "title" : "Awareness and Training Procedure Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_AU_procedure.pdf"
+          "href" : "./documents/policies/sample_AT_procedure.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "b1cdaad8-2127-4563-b248-3d2777307c4f",
+        "uuid" : "ce9f3af2-f4bc-47b5-bc25-df52a917748b",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "au",
@@ -2278,20 +2266,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "AU Procedure document"
-      }, {
-        "title" : "Security Assessment and Authorization Procedure Title",
+        "description" : "AU Procedure document",
+        "title" : "Audit and Accountability Procedure Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_CA_procedure.pdf"
+          "href" : "./documents/policies/sample_AU_procedure.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "a552272e-803c-40db-895c-5de35c76d871",
+        "uuid" : "b1cdaad8-2127-4563-b248-3d2777307c4f",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "ca",
@@ -2303,20 +2291,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "CA Procedure document"
-      }, {
-        "title" : "Configuration Management Procedure Title",
+        "description" : "CA Procedure document",
+        "title" : "Security Assessment and Authorization Procedure Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_CM_procedure.pdf"
+          "href" : "./documents/policies/sample_CA_procedure.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "b4c87da0-0f96-4231-a3c1-2d1a9d0b99a3",
+        "uuid" : "a552272e-803c-40db-895c-5de35c76d871",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "cm",
@@ -2328,20 +2316,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "CM Procedure document"
-      }, {
-        "title" : "Contingency Planning Procedure Title",
+        "description" : "CM Procedure document",
+        "title" : "Configuration Management Procedure Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_CP_procedure.pdf"
+          "href" : "./documents/policies/sample_CM_procedure.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "2f1cb360-a743-4ebe-915a-27f215f44dc5",
+        "uuid" : "b4c87da0-0f96-4231-a3c1-2d1a9d0b99a3",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "cp",
@@ -2353,20 +2341,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "CP Procedure document"
-      }, {
-        "title" : "Identification and Authentication Procedure Title",
+        "description" : "CP Procedure document",
+        "title" : "Contingency Planning Procedure Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_IA_procedure.pdf"
+          "href" : "./documents/policies/sample_CP_procedure.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "08a6ab70-8c56-4713-ae9c-81fbb6594943",
+        "uuid" : "2f1cb360-a743-4ebe-915a-27f215f44dc5",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "ia",
@@ -2378,20 +2366,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "IA Procedure document"
-      }, {
-        "title" : "Incident Response Procedure Title",
+        "description" : "IA Procedure document",
+        "title" : "Identification and Authentication Procedure Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_IR_procedure.pdf"
+          "href" : "./documents/policies/sample_IA_procedure.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "649eac51-c21b-4cb2-bd10-7828e0522e50",
+        "uuid" : "08a6ab70-8c56-4713-ae9c-81fbb6594943",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "ir",
@@ -2403,20 +2391,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "IR Procedure document"
-      }, {
-        "title" : "Maintenance Procedure Title",
+        "description" : "IR Procedure document",
+        "title" : "Incident Response Procedure Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_MA_procedure.pdf"
+          "href" : "./documents/policies/sample_IR_procedure.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "fd29a63b-2a08-4d56-b91e-aadfa4c0f55b",
+        "uuid" : "649eac51-c21b-4cb2-bd10-7828e0522e50",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "ma",
@@ -2428,20 +2416,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "MA Procedure document"
-      }, {
-        "title" : "Media Protection Procedure Title",
+        "description" : "MA Procedure document",
+        "title" : "Maintenance Procedure Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_MP_procedure.pdf"
+          "href" : "./documents/policies/sample_MA_procedure.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "908175c9-7502-4ab4-b469-80450ed18a8b",
+        "uuid" : "fd29a63b-2a08-4d56-b91e-aadfa4c0f55b",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "mp",
@@ -2453,20 +2441,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "MP Procedure document"
-      }, {
-        "title" : "Physical and Environmental Protection Procedure Title",
+        "description" : "MP Procedure document",
+        "title" : "Media Protection Procedure Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_PE_procedure.pdf"
+          "href" : "./documents/policies/sample_MP_procedure.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "22522abe-fd09-4476-b09f-c6422b72bf12",
+        "uuid" : "908175c9-7502-4ab4-b469-80450ed18a8b",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "pe",
@@ -2478,20 +2466,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "PE Procedure document"
-      }, {
-        "title" : "Planning Procedure Title",
+        "description" : "PE Procedure document",
+        "title" : "Physical and Environmental Protection Procedure Title",
         "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./documents/policies/sample_PL_procedure.pdf"
+          "href" : "./documents/policies/sample_PE_procedure.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "937dfbb6-9d82-4974-be85-23f1e4b130d8",
+        "uuid" : "22522abe-fd09-4476-b09f-c6422b72bf12",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "pl",
@@ -2503,19 +2491,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "PL Procedure document"
-      }, {
-        "title" : "Personnel Security Procedure Title",
+        "description" : "PL Procedure document",
+        "title" : "Planning Procedure Title",
         "rlinks" : [ {
-          "href" : "./documents/policies/sample_PS_procedure.pdf"
+          "href" : "./documents/policies/sample_PL_procedure.pdf",
+          "media-type" : "application/pdf"
         } ],
-        "uuid" : "552dec25-74a9-4cbe-b3b0-f865d99bfa9d",
+        "uuid" : "937dfbb6-9d82-4974-be85-23f1e4b130d8",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "ps",
@@ -2527,19 +2516,19 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "PS Procedure document"
-      }, {
-        "title" : "Risk Adjustment Procedure Title",
+        "description" : "PS Procedure document",
+        "title" : "Personnel Security Procedure Title",
         "rlinks" : [ {
-          "href" : "./documents/policies/sample_RA_procedure.pdf"
+          "href" : "./documents/policies/sample_PS_procedure.pdf"
         } ],
-        "uuid" : "1a852337-d28f-4a66-a367-68aebec35698",
+        "uuid" : "552dec25-74a9-4cbe-b3b0-f865d99bfa9d",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "ra",
@@ -2551,19 +2540,19 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "RA Procedure document"
-      }, {
-        "title" : "System and Service Acquisition Procedure Title",
+        "description" : "RA Procedure document",
+        "title" : "Risk Adjustment Procedure Title",
         "rlinks" : [ {
-          "href" : "./documents/policies/sample_SA_procedure.pdf"
+          "href" : "./documents/policies/sample_RA_procedure.pdf"
         } ],
-        "uuid" : "4a59a06d-3b1b-410f-b067-3fe1dab083f2",
+        "uuid" : "1a852337-d28f-4a66-a367-68aebec35698",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "sa",
@@ -2575,19 +2564,19 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "SA Procedure document"
-      }, {
-        "title" : "System and Communications Protection Procedure Title",
+        "description" : "SA Procedure document",
+        "title" : "System and Service Acquisition Procedure Title",
         "rlinks" : [ {
-          "href" : "./documents/policies/sample_SC_procedure.pdf"
+          "href" : "./documents/policies/sample_SA_procedure.pdf"
         } ],
-        "uuid" : "936093ce-a567-4592-8fcc-eeeef024cdd4",
+        "uuid" : "4a59a06d-3b1b-410f-b067-3fe1dab083f2",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "sc",
@@ -2599,19 +2588,19 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "SC Procedure document"
-      }, {
-        "title" : "System and Information Integrity Procedure Title",
+        "description" : "SC Procedure document",
+        "title" : "System and Communications Protection Procedure Title",
         "rlinks" : [ {
-          "href" : "./documents/policies/sample_SI_procedure.pdf"
+          "href" : "./documents/policies/sample_SC_procedure.pdf"
         } ],
-        "uuid" : "ac953d62-a392-499f-b832-b90b325cceb6",
+        "uuid" : "936093ce-a567-4592-8fcc-eeeef024cdd4",
         "base64" : {
-          "media-type" : "application/pdf",
           "filename" : "sample_procedure.pdf",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "si",
@@ -2623,19 +2612,19 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "SI Procedure document"
-      }, {
-        "title" : "Supply Chain Risk Procedure Title",
+        "description" : "SI Procedure document",
+        "title" : "System and Information Integrity Procedure Title",
         "rlinks" : [ {
-          "href" : "./documents/policies/sample_SR_procedure.pdf"
+          "href" : "./documents/policies/sample_SI_procedure.pdf"
         } ],
-        "uuid" : "b2aaedad-5ff0-4b0c-b490-bbe64b2033b0",
+        "uuid" : "ac953d62-a392-499f-b832-b90b325cceb6",
         "base64" : {
-          "media-type" : "application/pdf",
-          "filename" : "sample_policy.pdf",
-          "value" : "00000000"
+          "filename" : "sample_procedure.pdf",
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "sr",
@@ -2647,14 +2636,19 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "SR Procedure document"
-      }, {
-        "title" : "User's Guide",
+        "description" : "SR Procedure document",
+        "title" : "Supply Chain Risk Procedure Title",
         "rlinks" : [ {
-          "href" : "./documents/guides/sample_guide.pdf"
+          "href" : "./documents/policies/sample_SR_procedure.pdf"
         } ],
-        "uuid" : "90a128ac-c850-48f6-8fff-a55692f80b41",
-        "remarks" : "Table 12-1 Attachments: User's Guide Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "uuid" : "b2aaedad-5ff0-4b0c-b490-bbe64b2033b0",
+        "base64" : {
+          "filename" : "sample_policy.pdf",
+          "value" : "00000000",
+          "media-type" : "application/pdf"
+        },
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "value" : "users-guide"
@@ -2662,20 +2656,14 @@
           "name" : "published",
           "value" : "2023-01-01T00:00:00Z"
         } ],
-        "description" : "User's Guide"
-      }, {
-        "title" : "Document Title",
+        "description" : "User's Guide",
+        "title" : "User's Guide",
         "rlinks" : [ {
-          "media-type" : "application/msword",
-          "href" : "./documents/rob.docx"
+          "href" : "./documents/guides/sample_guide.pdf"
         } ],
-        "uuid" : "489112e1-57f2-4c29-8dd0-95b1442fbf3b",
-        "base64" : {
-          "media-type" : "application/msword",
-          "filename" : "rob.docx",
-          "value" : "00000000"
-        },
-        "remarks" : "Table 12-1 Attachments: Rules of Behavior (ROB)\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "uuid" : "90a128ac-c850-48f6-8fff-a55692f80b41",
+        "remarks" : "Table 12-1 Attachments: User's Guide Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "value" : "rules-of-behavior"
@@ -2686,20 +2674,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "Rules of Behavior"
-      }, {
+        "description" : "Rules of Behavior",
         "title" : "Document Title",
         "rlinks" : [ {
-          "media-type" : "application/msword",
-          "href" : "./documents/cp.docx"
+          "href" : "./documents/rob.docx",
+          "media-type" : "application/msword"
         } ],
-        "uuid" : "c7860916-f2f4-43aa-b578-d48cf8e6d381",
+        "uuid" : "489112e1-57f2-4c29-8dd0-95b1442fbf3b",
         "base64" : {
-          "media-type" : "application/msword",
-          "filename" : "cp.docx",
-          "value" : "00000000"
+          "filename" : "rob.docx",
+          "value" : "00000000",
+          "media-type" : "application/msword"
         },
-        "remarks" : "Table 12-1 Attachments: Contingency Plan (CP) Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Rules of Behavior (ROB)\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "information-system-contingency-plan",
@@ -2711,20 +2699,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "Contingency Plan (CP)"
-      }, {
+        "description" : "Contingency Plan (CP)",
         "title" : "Document Title",
         "rlinks" : [ {
-          "media-type" : "application/msword",
-          "href" : "./documents/CM_Plan.docx"
+          "href" : "./documents/cp.docx",
+          "media-type" : "application/msword"
         } ],
-        "uuid" : "ab56cf27-0dae-40d6-89b7-d750137309af",
+        "uuid" : "c7860916-f2f4-43aa-b578-d48cf8e6d381",
         "base64" : {
-          "media-type" : "application/msword",
-          "filename" : "CM_Plan.docx",
-          "value" : "00000000"
+          "filename" : "cp.docx",
+          "value" : "00000000",
+          "media-type" : "application/msword"
         },
-        "remarks" : "Table 12-1 Attachments: Configuration Management (CM) Plan Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Contingency Plan (CP) Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "configuration-management-plan",
@@ -2736,20 +2724,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "Configuration Management (CM) Plan"
-      }, {
+        "description" : "Configuration Management (CM) Plan",
         "title" : "Document Title",
         "rlinks" : [ {
-          "media-type" : "application/msword",
-          "href" : "./documents/IR_Plan.docx"
+          "href" : "./documents/CM_Plan.docx",
+          "media-type" : "application/msword"
         } ],
-        "uuid" : "3f771ab5-8016-4571-98d1-f0fb962e15e2",
+        "uuid" : "ab56cf27-0dae-40d6-89b7-d750137309af",
         "base64" : {
-          "media-type" : "application/msword",
-          "filename" : "IR_Plan.docx",
-          "value" : "00000000"
+          "filename" : "CM_Plan.docx",
+          "value" : "00000000",
+          "media-type" : "application/msword"
         },
-        "remarks" : "Table 12-1 Attachments: Incident Response (IR) Plan Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+        "remarks" : "Table 12-1 Attachments: Configuration Management (CM) Plan Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "incident-response-plan",
@@ -2761,18 +2749,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "Incident Response (IR) Plan"
-      }, {
-        "title" : "\\[SAMPLE\\] Laws and Regulations",
+        "description" : "Incident Response (IR) Plan",
+        "title" : "Document Title",
         "rlinks" : [ {
-          "href" : "https://example.com/path/to/document.pdf"
+          "href" : "./documents/IR_Plan.docx",
+          "media-type" : "application/msword"
         } ],
-        "uuid" : "a8a0cc81-800f-479f-93d3-8b8743d9b98d",
+        "uuid" : "3f771ab5-8016-4571-98d1-f0fb962e15e2",
         "base64" : {
-          "media-type" : "application/pdf",
-          "filename" : "document.pdf",
-          "value" : "00000000"
+          "filename" : "IR_Plan.docx",
+          "value" : "00000000",
+          "media-type" : "application/msword"
         },
+        "remarks" : "Table 12-1 Attachments: Incident Response (IR) Plan Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "type",
           "value" : "law"
@@ -2783,20 +2773,18 @@
         "document-ids" : [ {
           "identifier" : "Identification Number",
           "scheme" : "https://www.doi.org/"
-        } ]
-      }, {
-        "title" : "Document Title",
-        "rlinks" : [ {
-          "media-type" : "application/msword",
-          "href" : "./documents/ConMon_Plan.docx"
         } ],
-        "uuid" : "47ba08df-d619-4f18-9daf-78d416eede79",
+        "title" : "\\[SAMPLE\\] Laws and Regulations",
+        "rlinks" : [ {
+          "href" : "https://example.com/path/to/document.pdf"
+        } ],
+        "uuid" : "a8a0cc81-800f-479f-93d3-8b8743d9b98d",
         "base64" : {
-          "media-type" : "application/msword",
-          "filename" : "ConMon_Plan.docx",
-          "value" : "00000000"
-        },
-        "remarks" : "Table 12-1 Attachments: Continuous Monitoring Plan Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+          "filename" : "document.pdf",
+          "value" : "00000000",
+          "media-type" : "application/pdf"
+        }
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "continuous-monitoring-plan",
@@ -2808,18 +2796,20 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "Continuous Monitoring Plan"
-      }, {
-        "title" : "\\[SAMPLE\\]Plan of Actions and Milestones (POAM)",
+        "description" : "Continuous Monitoring Plan",
+        "title" : "Document Title",
         "rlinks" : [ {
-          "href" : "./documents/POAMs/SAMPLE_POAM_20230531.xml"
+          "href" : "./documents/ConMon_Plan.docx",
+          "media-type" : "application/msword"
         } ],
-        "uuid" : "e33c2763-d661-4638-a630-bd9138af1238",
+        "uuid" : "47ba08df-d619-4f18-9daf-78d416eede79",
         "base64" : {
-          "media-type" : "application/xml",
-          "filename" : "SAMPLE_POAM_20230531.xml",
-          "value" : "00000000"
+          "filename" : "ConMon_Plan.docx",
+          "value" : "00000000",
+          "media-type" : "application/msword"
         },
+        "remarks" : "Table 12-1 Attachments: Continuous Monitoring Plan Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "published",
           "value" : "2023-05-31T00:00:00Z"
@@ -2830,19 +2820,18 @@
           "name" : "type",
           "class" : "poam",
           "value" : "plan"
-        } ]
-      }, {
-        "title" : "Supply Chain Risk Management Plan",
-        "rlinks" : [ {
-          "href" : "./documents/plans/sample_SCRMP_procedure.pdf"
         } ],
-        "uuid" : "bdbb4fef-505f-466b-810a-0a5ba03e9fc9",
+        "title" : "\\[SAMPLE\\]Plan of Actions and Milestones (POAM)",
+        "rlinks" : [ {
+          "href" : "./documents/POAMs/SAMPLE_POAM_20230531.xml"
+        } ],
+        "uuid" : "e33c2763-d661-4638-a630-bd9138af1238",
         "base64" : {
-          "media-type" : "application/pdf",
-          "filename" : "sample_SCRMP.pdf",
-          "value" : "00000000"
-        },
-        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`.",
+          "filename" : "SAMPLE_POAM_20230531.xml",
+          "value" : "00000000",
+          "media-type" : "application/xml"
+        }
+      }, {
         "props" : [ {
           "name" : "type",
           "class" : "scrmp",
@@ -2854,18 +2843,19 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "Supply Chain Risk Management Plan"
-      }, {
-        "title" : "\\[SAMPLE\\]Interconnection Security Agreement Title",
+        "description" : "Supply Chain Risk Management Plan",
+        "title" : "Supply Chain Risk Management Plan",
         "rlinks" : [ {
-          "href" : "./documents/ISAs/ISA-1.docx"
+          "href" : "./documents/plans/sample_SCRMP_procedure.pdf"
         } ],
-        "uuid" : "9d6cf2b4-8e88-4040-a33c-7bc206553a1a",
+        "uuid" : "bdbb4fef-505f-466b-810a-0a5ba03e9fc9",
         "base64" : {
-          "media-type" : "application/msword",
-          "filename" : "ISA-1.docx",
-          "value" : "00000000"
+          "filename" : "sample_SCRMP.pdf",
+          "value" : "00000000",
+          "media-type" : "application/pdf"
         },
+        "remarks" : "Table 12-1 Attachments: Procedure Attachment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+      }, {
         "props" : [ {
           "name" : "published",
           "value" : "2023-01-01T00:00:00Z"
@@ -2876,105 +2866,103 @@
           "name" : "type",
           "class" : "isa",
           "value" : "agreement"
-        } ]
+        } ],
+        "title" : "\\[SAMPLE\\]Interconnection Security Agreement Title",
+        "rlinks" : [ {
+          "href" : "./documents/ISAs/ISA-1.docx"
+        } ],
+        "uuid" : "9d6cf2b4-8e88-4040-a33c-7bc206553a1a",
+        "base64" : {
+          "filename" : "ISA-1.docx",
+          "value" : "00000000",
+          "media-type" : "application/msword"
+        }
       }, {
+        "props" : [ {
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "name" : "type",
+          "value" : "fedramp-logo"
+        } ],
+        "description" : "FedRAMP Logo",
         "title" : "FedRAMP Logo",
         "rlinks" : [ {
           "href" : "https://www.fedramp.gov/assets/img/logo-main-fedramp.png"
         } ],
         "uuid" : "a2381e87-3d04-4108-a30b-b4d2f36d001f",
         "base64" : {
-          "media-type" : "image/png",
           "filename" : "logo-main-fedramp.png",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "image/png"
         },
-        "remarks" : "Must be present in a FedRAMP SSP.",
-        "props" : [ {
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "type",
-          "value" : "fedramp-logo"
-        } ],
-        "description" : "FedRAMP Logo"
+        "remarks" : "Must be present in a FedRAMP SSP."
       }, {
+        "description" : "CSP Logo",
         "title" : "CSP Logo",
         "rlinks" : [ {
-          "media-type" : "image/png",
-          "href" : "./img/logo.png"
+          "href" : "./img/logo.png",
+          "media-type" : "image/png"
         } ],
         "uuid" : "31a46c4f-2959-4287-bc1c-67297d7da60b",
         "base64" : {
-          "media-type" : "image/png",
           "filename" : "logo.png",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "image/png"
         },
-        "remarks" : "May use `rlink` with a relative path, or embedded as `base64`.\n\nFedRAMP prefers `base64` for images and diagrams.\n\nImages must be in sufficient resolution to read all detail when rendered in a browser via HTML5.",
-        "description" : "CSP Logo"
+        "remarks" : "May use `rlink` with a relative path, or embedded as `base64`.\n\nFedRAMP prefers `base64` for images and diagrams.\n\nImages must be in sufficient resolution to read all detail when rendered in a browser via HTML5."
       }, {
+        "description" : "3PAO Logo",
         "title" : "3PAO Logo",
         "rlinks" : [ {
-          "media-type" : "image/png",
-          "href" : "./img/logo.png"
+          "href" : "./img/logo.png",
+          "media-type" : "image/png"
         } ],
         "uuid" : "2c1747d6-874a-49a2-8488-2fd9735416bf",
         "base64" : {
-          "media-type" : "image/png",
           "filename" : "logo.png",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "image/png"
         },
-        "remarks" : "May use `rlink` with a relative path, or embedded as `base64`.\n\nFedRAMP prefers `base64` for images and diagrams.\n\nImages must be in sufficient resolution to read all detail when rendered in a browser via HTML5.",
-        "description" : "3PAO Logo"
+        "remarks" : "May use `rlink` with a relative path, or embedded as `base64`.\n\nFedRAMP prefers `base64` for images and diagrams.\n\nImages must be in sufficient resolution to read all detail when rendered in a browser via HTML5."
       }, {
+        "description" : "The primary authorization boundary diagram.",
         "title" : "Boundary Diagram",
         "rlinks" : [ {
           "href" : "./diagrams/boundary.png"
         } ],
         "uuid" : "d2eb3c18-6754-4e3a-a933-03d289e3fad5",
         "base64" : {
-          "media-type" : "image/png",
           "filename" : "logo.png",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "image/png"
         },
-        "remarks" : "Section 8.1, Figure 8-1 Authorization Boundary Diagram (graphic)\n\nThis should be referenced in the system-characteristics/authorization-boundary/diagram/link/@href flag using a value of \"#d2eb3c18-6754-4e3a-a933-03d289e3fad5\"\n\nMay use `rlink` with a relative path, or embedded as `base64`.\n\nFedRAMP prefers `base64` for images and diagrams.\n\nImages must be in sufficient resolution to read all detail when rendered in a browser via HTML5.",
-        "description" : "The primary authorization boundary diagram."
+        "remarks" : "Section 8.1, Figure 8-1 Authorization Boundary Diagram (graphic)\n\nThis should be referenced in the system-characteristics/authorization-boundary/diagram/link/@href flag using a value of \"#d2eb3c18-6754-4e3a-a933-03d289e3fad5\"\n\nMay use `rlink` with a relative path, or embedded as `base64`.\n\nFedRAMP prefers `base64` for images and diagrams.\n\nImages must be in sufficient resolution to read all detail when rendered in a browser via HTML5."
       }, {
+        "description" : "The primary network diagram.",
         "title" : "Network Diagram",
         "rlinks" : [ {
           "href" : "./diagrams/network.png"
         } ],
         "uuid" : "61081e81-850b-43c1-bf43-1ecbddcb9e7f",
         "base64" : {
-          "media-type" : "image/png",
           "filename" : "network.png",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "image/png"
         },
-        "remarks" : "Section 8.1, Figure 8-2 Network Diagram (graphic)\n\nThis should be referenced in the system-characteristics/network-architecture/diagram/link/@href flag using a value of \"#61081e81-850b-43c1-bf43-1ecbddcb9e7f\"\n\nMay use `rlink` with a relative path, or embedded as `base64`.\n\nFedRAMP prefers `base64` for images and diagrams.\n\nImages must be in sufficient resolution to read all detail when rendered in a browser via HTML5.",
-        "description" : "The primary network diagram."
+        "remarks" : "Section 8.1, Figure 8-2 Network Diagram (graphic)\n\nThis should be referenced in the system-characteristics/network-architecture/diagram/link/@href flag using a value of \"#61081e81-850b-43c1-bf43-1ecbddcb9e7f\"\n\nMay use `rlink` with a relative path, or embedded as `base64`.\n\nFedRAMP prefers `base64` for images and diagrams.\n\nImages must be in sufficient resolution to read all detail when rendered in a browser via HTML5."
       }, {
+        "description" : "The primary data flow diagram.",
         "title" : "Data Flow Diagram",
         "rlinks" : [ {
           "href" : "./diagrams/dataflow.png"
         } ],
         "uuid" : "ac5d7535-f3b8-45d3-bf3b-735c82c64547",
         "base64" : {
-          "media-type" : "image/png",
           "filename" : "dataflow.png",
-          "value" : "00000000"
+          "value" : "00000000",
+          "media-type" : "image/png"
         },
-        "remarks" : "Section 8.1, Figure 8-3 Data Flow Diagram (graphic)\n\nThis should be referenced in the system-characteristics/data-flow/diagram/link/@href flag using a value of \"#ac5d7535-f3b8-45d3-bf3b-735c82c64547\"\n\nMay use `rlink` with a relative path, or embedded as `base64`.\n\nFedRAMP prefers `base64` for images and diagrams.\n\nImages must be in sufficient resolution to read all detail when rendered in a browser via HTML5.",
-        "description" : "The primary data flow diagram."
+        "remarks" : "Section 8.1, Figure 8-3 Data Flow Diagram (graphic)\n\nThis should be referenced in the system-characteristics/data-flow/diagram/link/@href flag using a value of \"#ac5d7535-f3b8-45d3-bf3b-735c82c64547\"\n\nMay use `rlink` with a relative path, or embedded as `base64`.\n\nFedRAMP prefers `base64` for images and diagrams.\n\nImages must be in sufficient resolution to read all detail when rendered in a browser via HTML5."
       }, {
-        "title" : "Separation of Duties Matrix",
-        "rlinks" : [ {
-          "media-type" : "application/msword",
-          "href" : "./documents/Sep_Matrix.docx"
-        } ],
-        "uuid" : "49fb4631-1da2-41ca-b0b3-e1b1006d4025",
-        "base64" : {
-          "media-type" : "application/msword",
-          "filename" : "Sep_Matrix.docx",
-          "value" : "00000000"
-        },
-        "remarks" : "May use `rlink` with a relative path, or embedded as `base64`.",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "type",
@@ -2986,10 +2974,322 @@
           "name" : "version",
           "value" : "Document Version"
         } ],
-        "description" : "Separation of Duties Matrix"
+        "description" : "Separation of Duties Matrix",
+        "title" : "Separation of Duties Matrix",
+        "rlinks" : [ {
+          "href" : "./documents/Sep_Matrix.docx",
+          "media-type" : "application/msword"
+        } ],
+        "uuid" : "49fb4631-1da2-41ca-b0b3-e1b1006d4025",
+        "base64" : {
+          "filename" : "Sep_Matrix.docx",
+          "value" : "00000000",
+          "media-type" : "application/msword"
+        },
+        "remarks" : "May use `rlink` with a relative path, or embedded as `base64`."
       } ]
     },
     "metadata" : {
+      "remarks" : "This OSCAL-based FedRAMP SSP Template can be used for the FedRAMP Low, Moderate, and High baselines.\n\nGuidance for OSCAL-based FedRAMP Tailored Low Impact - Software as a Service (LI-SaaS) content has not yet been developed.",
+      "published" : "2023-08-31T00:00:00Z",
+      "version" : "fedramp2.0.0-oscal1.0.4",
+      "parties" : [ {
+        "remarks" : "Replace sample CSP information.\n\nCSP information must be present and associated with the \"cloud-service-provider\" role via `responsible-party`.",
+        "uuid" : "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb",
+        "name" : "Cloud Service Provider (CSP) Name",
+        "type" : "organization",
+        "location-uuids" : [ "27b78960-59ef-4619-82b0-ae20b9c709ac" ],
+        "links" : [ {
+          "href" : "#31a46c4f-2959-4287-bc1c-67297d7da60b",
+          "rel" : "logo"
+        } ],
+        "short-name" : "CSP Acronym/Short Name"
+      }, {
+        "remarks" : "This party entry must be present in a FedRAMP SSP.\n\nThe uuid may be different; however, the uuid must be associated with the \"fedramp-pmo\" role in the responsible-party assemblies.",
+        "addresses" : [ {
+          "country" : "US",
+          "city" : "Washington",
+          "state" : "DC",
+          "type" : "work",
+          "postal-code" : "20006",
+          "addr-lines" : [ "1800 F St. NW" ]
+        } ],
+        "uuid" : "77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d",
+        "name" : "Federal Risk and Authorization Management Program: Program Management Office",
+        "type" : "organization",
+        "email-addresses" : [ "info@fedramp.gov" ],
+        "links" : [ {
+          "href" : "https://fedramp.gov",
+          "rel" : "homepage"
+        }, {
+          "href" : "#a2381e87-3d04-4108-a30b-b4d2f36d001f",
+          "rel" : "logo"
+        }, {
+          "href" : "#1a23a771-d481-4594-9a1a-71d584fa4123",
+          "rel" : "reference"
+        } ],
+        "short-name" : "FedRAMP PMO"
+      }, {
+        "remarks" : "This party entry must be present in a FedRAMP SSP.\n\nThe uuid may be different; however, the uuid must be associated with the \"fedramp-jab\" role in the responsible-party assemblies.",
+        "uuid" : "49017ec3-9f51-4dbd-9253-858c2b1295fd",
+        "name" : "Federal Risk and Authorization Management Program: Joint Authorization Board",
+        "type" : "organization",
+        "links" : [ {
+          "href" : "#a2381e87-3d04-4108-a30b-b4d2f36d001f",
+          "rel" : "logo"
+        } ],
+        "short-name" : "FedRAMP JAB"
+      }, {
+        "remarks" : "Generic placeholder for any external organization.",
+        "uuid" : "78992555-4a99-4eaa-868c-f2c249679dd3",
+        "name" : "External Organization",
+        "type" : "organization",
+        "short-name" : "External"
+      }, {
+        "remarks" : "Generic placeholder for an authorizing agency.",
+        "uuid" : "f595397b-cbe4-4a87-8c86-9bff91c4e7fd",
+        "name" : "Agency Name",
+        "type" : "organization",
+        "short-name" : "A.N."
+      }, {
+        "addresses" : [ {
+          "country" : "US",
+          "city" : "Washington",
+          "state" : "DC",
+          "type" : "work",
+          "postal-code" : "00000",
+          "addr-lines" : [ "3333 Corporate Way" ]
+        } ],
+        "uuid" : "8e3d39da-4851-4d2a-adb5-4b5585ded952",
+        "name" : "Name of Consulting Org",
+        "type" : "organization",
+        "email-addresses" : [ "poc@example.com" ],
+        "links" : [ {
+          "href" : "https://example.com"
+        }, {
+          "href" : "#2c1747d6-874a-49a2-8488-2fd9735416bf",
+          "rel" : "logo"
+        } ],
+        "short-name" : "NOCO"
+      }, {
+        "uuid" : "80361ec4-bfce-4b5c-85c8-313d6ebd220b",
+        "name" : "[SAMPLE]Remote System Org Name",
+        "type" : "organization"
+      }, {
+        "member-of-organizations" : [ "80361ec4-bfce-4b5c-85c8-313d6ebd220b" ],
+        "telephone-numbers" : [ {
+          "number" : "2025551212"
+        } ],
+        "uuid" : "09ad840f-aa79-43aa-9f22-25182c2ab11b",
+        "props" : [ {
+          "name" : "job-title",
+          "value" : "Individual's Title"
+        } ],
+        "name" : "[SAMPLE]ICA POC's Name",
+        "type" : "person",
+        "email-addresses" : [ "person@ica.example.org" ]
+      }, {
+        "remarks" : "Underlying service provider. Leveraged Authorization.",
+        "uuid" : "f0bc13a4-3303-47dd-80d3-380e159c8362",
+        "name" : "[SAMPLE]Example IaaS Provider",
+        "type" : "organization",
+        "short-name" : "E.I.P."
+      }, {
+        "member-of-organizations" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
+        "telephone-numbers" : [ {
+          "number" : "2020000001"
+        } ],
+        "uuid" : "3360e343-9860-4bda-9dfc-ff427c3dfab6",
+        "props" : [ {
+          "name" : "job-title",
+          "value" : "Individual's Title"
+        }, {
+          "name" : "mail-stop",
+          "value" : "Mailstop A-1"
+        } ],
+        "name" : "[SAMPLE]Person Name 1",
+        "type" : "person",
+        "location-uuids" : [ "27b78960-59ef-4619-82b0-ae20b9c709ac" ],
+        "email-addresses" : [ "name@example.com" ]
+      }, {
+        "member-of-organizations" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
+        "telephone-numbers" : [ {
+          "number" : "2020000002"
+        } ],
+        "addresses" : [ {
+          "country" : "US",
+          "city" : "City",
+          "state" : "ST",
+          "type" : "work",
+          "postal-code" : "00000",
+          "addr-lines" : [ "Address Line" ]
+        } ],
+        "uuid" : "36b8d6c0-3b25-42cc-b529-cf4066145cdd",
+        "props" : [ {
+          "name" : "job-title",
+          "value" : "Individual's Title"
+        } ],
+        "name" : "[SAMPLE]Person Name 2",
+        "type" : "person",
+        "email-addresses" : [ "name@example.com" ]
+      }, {
+        "member-of-organizations" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
+        "telephone-numbers" : [ {
+          "number" : "2020000003"
+        } ],
+        "addresses" : [ {
+          "country" : "US",
+          "city" : "City",
+          "state" : "ST",
+          "type" : "work",
+          "postal-code" : "00000",
+          "addr-lines" : [ "Address Line" ]
+        } ],
+        "uuid" : "0cec09d9-20c6-470b-9ffc-85763375880b",
+        "props" : [ {
+          "name" : "job-title",
+          "value" : "Individual's Title"
+        } ],
+        "name" : "[SAMPLE]Person Name 3",
+        "type" : "person",
+        "email-addresses" : [ "name@example.com" ]
+      }, {
+        "member-of-organizations" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
+        "telephone-numbers" : [ {
+          "number" : "2020000004"
+        } ],
+        "addresses" : [ {
+          "country" : "US",
+          "city" : "City",
+          "state" : "ST",
+          "type" : "work",
+          "postal-code" : "00000",
+          "addr-lines" : [ "Address Line" ]
+        } ],
+        "uuid" : "f75e21f6-43d8-46ab-890d-7f2eebc5a830",
+        "props" : [ {
+          "name" : "job-title",
+          "value" : "Individual's Title"
+        } ],
+        "name" : "[SAMPLE]Person Name 4",
+        "type" : "person",
+        "email-addresses" : [ "name@example.com" ]
+      }, {
+        "member-of-organizations" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
+        "telephone-numbers" : [ {
+          "number" : "2020000005"
+        } ],
+        "addresses" : [ {
+          "country" : "US",
+          "city" : "City",
+          "state" : "ST",
+          "type" : "work",
+          "postal-code" : "00000",
+          "addr-lines" : [ "Address Line" ]
+        } ],
+        "uuid" : "132953a9-640c-46f7-9de9-3fa15ec99361",
+        "props" : [ {
+          "name" : "job-title",
+          "value" : "Individual's Title"
+        } ],
+        "name" : "[SAMPLE]Person Name 5",
+        "type" : "person",
+        "email-addresses" : [ "name@example.com" ]
+      }, {
+        "member-of-organizations" : [ "78992555-4a99-4eaa-868c-f2c249679dd3" ],
+        "telephone-numbers" : [ {
+          "number" : "2020000006"
+        } ],
+        "addresses" : [ {
+          "country" : "US",
+          "city" : "City",
+          "state" : "ST",
+          "type" : "work",
+          "postal-code" : "00000",
+          "addr-lines" : [ "Address Line" ]
+        } ],
+        "uuid" : "4fded5fd-7a65-47ea-bd76-df57c46e27d1",
+        "props" : [ {
+          "name" : "job-title",
+          "value" : "Individual's Title"
+        } ],
+        "name" : "[SAMPLE]Person Name 6",
+        "type" : "person",
+        "email-addresses" : [ "name@example.com" ]
+      }, {
+        "member-of-organizations" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
+        "telephone-numbers" : [ {
+          "number" : "2020000007"
+        } ],
+        "addresses" : [ {
+          "country" : "US",
+          "city" : "City",
+          "state" : "ST",
+          "type" : "work",
+          "postal-code" : "00000",
+          "addr-lines" : [ "Address Line" ]
+        } ],
+        "uuid" : "db234cb7-1776-425c-9ac4-b067c1723011",
+        "props" : [ {
+          "name" : "job-title",
+          "value" : "Individual's Title"
+        } ],
+        "name" : "[SAMPLE]Person Name 7",
+        "type" : "person",
+        "email-addresses" : [ "name@example.com" ]
+      }, {
+        "uuid" : "b306f5af-b93a-4a7f-a2b2-37a44fc92a79",
+        "name" : "[SAMPLE] IT Department",
+        "type" : "organization"
+      }, {
+        "uuid" : "59cdc953-5902-4fa4-a878-f3163854624c",
+        "name" : "[SAMPLE]Security Team",
+        "type" : "organization"
+      } ],
+      "locations" : [ {
+        "address" : {
+          "city" : "Haven",
+          "state" : "ME",
+          "type" : "work",
+          "postal-code" : "00000",
+          "addr-lines" : [ "Suite 0000", "1234 Some Street" ]
+        },
+        "title" : "CSP HQ",
+        "uuid" : "27b78960-59ef-4619-82b0-ae20b9c709ac",
+        "remarks" : "There must be one location identifying the CSP's primary business address, such as the CSP's HQ, or the address of the system owner's primary business location."
+      }, {
+        "props" : [ {
+          "name" : "type",
+          "class" : "primary",
+          "value" : "data-center"
+        } ],
+        "address" : {
+          "country" : "US",
+          "city" : "Anywhere",
+          "state" : "--",
+          "postal-code" : "00000-0000",
+          "addr-lines" : [ "2222 Main Street" ]
+        },
+        "title" : "Primary Data Center",
+        "uuid" : "16adcc8d-65d8-4583-80d3-9cf007744fec",
+        "remarks" : "There must be one location for each data center.\n\nThere must be at least two data center locations.\n\nFor a data center, briefly summarize the components at this location.\n\nAll data centers must have a \"type\" property with a value of \"data-center\".\n\nThe type property must also have a class of \"primary\" or \"alternate\"."
+      }, {
+        "props" : [ {
+          "name" : "type",
+          "class" : "alternate",
+          "value" : "data-center"
+        } ],
+        "address" : {
+          "country" : "US",
+          "city" : "Anywhere",
+          "state" : "--",
+          "postal-code" : "00000-0000",
+          "addr-lines" : [ "3333 Small Road" ]
+        },
+        "title" : "Secondary Data Center",
+        "uuid" : "ad321514-7b9f-4374-8409-efb18eea6e5d",
+        "remarks" : "There must be one location for each data center.\n\nThere must be at least two data center locations.\n\nFor a data center, briefly summarize the components at this location.\n\nAll data centers must have a \"type\" property with a value of \"data-center\".\n\nThe type property must also have a class of \"primary\" or \"alternate\"."
+      } ],
       "props" : [ {
         "name" : "marking",
         "value" : "Controlled Unclassified Information"
@@ -3053,6 +3353,7 @@
         "role-id" : "fedramp-jab"
       } ],
       "revisions" : [ {
+        "remarks" : "Initial publication.",
         "oscal-version" : "1.0.4",
         "version" : "1.0",
         "published" : "2023-06-30T00:00:00Z",
@@ -3061,9 +3362,9 @@
           "name" : "party-uuid",
           "uuid" : "528974e9-fcde-494f-a2fa-35d6f1e31171",
           "value" : "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb"
-        } ],
-        "remarks" : "Initial publication."
+        } ]
       }, {
+        "remarks" : "Minor `prop` updates.",
         "oscal-version" : "1.0.4",
         "version" : "1.1",
         "published" : "2023-07-06T00:00:00Z",
@@ -3072,8 +3373,7 @@
           "name" : "party-uuid",
           "uuid" : "528974e9-fcde-494f-a2fa-35d6f1e31171",
           "value" : "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb"
-        } ],
-        "remarks" : "Minor `prop` updates."
+        } ]
       } ],
       "title" : "FedRAMP System Security Plan (SSP)",
       "roles" : [ {
@@ -3174,306 +3474,6 @@
         "id" : "admin-client",
         "description" : "This is a sample role.",
         "title" : "\\[SAMPLE\\]Client Administrator"
-      } ],
-      "remarks" : "This OSCAL-based FedRAMP SSP Template can be used for the FedRAMP Low, Moderate, and High baselines.\n\nGuidance for OSCAL-based FedRAMP Tailored Low Impact - Software as a Service (LI-SaaS) content has not yet been developed.",
-      "published" : "2023-08-31T00:00:00Z",
-      "version" : "fedramp2.0.0-oscal1.0.4",
-      "parties" : [ {
-        "name" : "Cloud Service Provider (CSP) Name",
-        "type" : "organization",
-        "location-uuids" : [ "27b78960-59ef-4619-82b0-ae20b9c709ac" ],
-        "links" : [ {
-          "href" : "#31a46c4f-2959-4287-bc1c-67297d7da60b",
-          "rel" : "logo"
-        } ],
-        "short-name" : "CSP Acronym/Short Name",
-        "remarks" : "Replace sample CSP information.\n\nCSP information must be present and associated with the \"cloud-service-provider\" role via `responsible-party`.",
-        "uuid" : "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb"
-      }, {
-        "name" : "Federal Risk and Authorization Management Program: Program Management Office",
-        "type" : "organization",
-        "email-addresses" : [ "info@fedramp.gov" ],
-        "links" : [ {
-          "href" : "https://fedramp.gov",
-          "rel" : "homepage"
-        }, {
-          "href" : "#a2381e87-3d04-4108-a30b-b4d2f36d001f",
-          "rel" : "logo"
-        }, {
-          "href" : "#1a23a771-d481-4594-9a1a-71d584fa4123",
-          "rel" : "reference"
-        } ],
-        "short-name" : "FedRAMP PMO",
-        "remarks" : "This party entry must be present in a FedRAMP SSP.\n\nThe uuid may be different; however, the uuid must be associated with the \"fedramp-pmo\" role in the responsible-party assemblies.",
-        "addresses" : [ {
-          "country" : "US",
-          "city" : "Washington",
-          "state" : "DC",
-          "type" : "work",
-          "postal-code" : "20006",
-          "addr-lines" : [ "1800 F St. NW" ]
-        } ],
-        "uuid" : "77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d"
-      }, {
-        "name" : "Federal Risk and Authorization Management Program: Joint Authorization Board",
-        "type" : "organization",
-        "links" : [ {
-          "href" : "#a2381e87-3d04-4108-a30b-b4d2f36d001f",
-          "rel" : "logo"
-        } ],
-        "short-name" : "FedRAMP JAB",
-        "remarks" : "This party entry must be present in a FedRAMP SSP.\n\nThe uuid may be different; however, the uuid must be associated with the \"fedramp-jab\" role in the responsible-party assemblies.",
-        "uuid" : "49017ec3-9f51-4dbd-9253-858c2b1295fd"
-      }, {
-        "name" : "External Organization",
-        "type" : "organization",
-        "short-name" : "External",
-        "remarks" : "Generic placeholder for any external organization.",
-        "uuid" : "78992555-4a99-4eaa-868c-f2c249679dd3"
-      }, {
-        "name" : "Agency Name",
-        "type" : "organization",
-        "short-name" : "A.N.",
-        "remarks" : "Generic placeholder for an authorizing agency.",
-        "uuid" : "f595397b-cbe4-4a87-8c86-9bff91c4e7fd"
-      }, {
-        "name" : "Name of Consulting Org",
-        "type" : "organization",
-        "email-addresses" : [ "poc@example.com" ],
-        "links" : [ {
-          "href" : "https://example.com"
-        }, {
-          "href" : "#2c1747d6-874a-49a2-8488-2fd9735416bf",
-          "rel" : "logo"
-        } ],
-        "short-name" : "NOCO",
-        "addresses" : [ {
-          "country" : "US",
-          "city" : "Washington",
-          "state" : "DC",
-          "type" : "work",
-          "postal-code" : "00000",
-          "addr-lines" : [ "3333 Corporate Way" ]
-        } ],
-        "uuid" : "8e3d39da-4851-4d2a-adb5-4b5585ded952"
-      }, {
-        "name" : "[SAMPLE]Remote System Org Name",
-        "type" : "organization",
-        "uuid" : "80361ec4-bfce-4b5c-85c8-313d6ebd220b"
-      }, {
-        "name" : "[SAMPLE]ICA POC's Name",
-        "type" : "person",
-        "email-addresses" : [ "person@ica.example.org" ],
-        "member-of-organizations" : [ "80361ec4-bfce-4b5c-85c8-313d6ebd220b" ],
-        "telephone-numbers" : [ {
-          "number" : "2025551212"
-        } ],
-        "uuid" : "09ad840f-aa79-43aa-9f22-25182c2ab11b",
-        "props" : [ {
-          "name" : "job-title",
-          "value" : "Individual's Title"
-        } ]
-      }, {
-        "name" : "[SAMPLE]Example IaaS Provider",
-        "type" : "organization",
-        "short-name" : "E.I.P.",
-        "remarks" : "Underlying service provider. Leveraged Authorization.",
-        "uuid" : "f0bc13a4-3303-47dd-80d3-380e159c8362"
-      }, {
-        "name" : "[SAMPLE]Person Name 1",
-        "type" : "person",
-        "location-uuids" : [ "27b78960-59ef-4619-82b0-ae20b9c709ac" ],
-        "email-addresses" : [ "name@example.com" ],
-        "member-of-organizations" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
-        "telephone-numbers" : [ {
-          "number" : "2020000001"
-        } ],
-        "uuid" : "3360e343-9860-4bda-9dfc-ff427c3dfab6",
-        "props" : [ {
-          "name" : "job-title",
-          "value" : "Individual's Title"
-        }, {
-          "name" : "mail-stop",
-          "value" : "Mailstop A-1"
-        } ]
-      }, {
-        "name" : "[SAMPLE]Person Name 2",
-        "type" : "person",
-        "email-addresses" : [ "name@example.com" ],
-        "member-of-organizations" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
-        "telephone-numbers" : [ {
-          "number" : "2020000002"
-        } ],
-        "addresses" : [ {
-          "country" : "US",
-          "city" : "City",
-          "state" : "ST",
-          "type" : "work",
-          "postal-code" : "00000",
-          "addr-lines" : [ "Address Line" ]
-        } ],
-        "uuid" : "36b8d6c0-3b25-42cc-b529-cf4066145cdd",
-        "props" : [ {
-          "name" : "job-title",
-          "value" : "Individual's Title"
-        } ]
-      }, {
-        "name" : "[SAMPLE]Person Name 3",
-        "type" : "person",
-        "email-addresses" : [ "name@example.com" ],
-        "member-of-organizations" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
-        "telephone-numbers" : [ {
-          "number" : "2020000003"
-        } ],
-        "addresses" : [ {
-          "country" : "US",
-          "city" : "City",
-          "state" : "ST",
-          "type" : "work",
-          "postal-code" : "00000",
-          "addr-lines" : [ "Address Line" ]
-        } ],
-        "uuid" : "0cec09d9-20c6-470b-9ffc-85763375880b",
-        "props" : [ {
-          "name" : "job-title",
-          "value" : "Individual's Title"
-        } ]
-      }, {
-        "name" : "[SAMPLE]Person Name 4",
-        "type" : "person",
-        "email-addresses" : [ "name@example.com" ],
-        "member-of-organizations" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
-        "telephone-numbers" : [ {
-          "number" : "2020000004"
-        } ],
-        "addresses" : [ {
-          "country" : "US",
-          "city" : "City",
-          "state" : "ST",
-          "type" : "work",
-          "postal-code" : "00000",
-          "addr-lines" : [ "Address Line" ]
-        } ],
-        "uuid" : "f75e21f6-43d8-46ab-890d-7f2eebc5a830",
-        "props" : [ {
-          "name" : "job-title",
-          "value" : "Individual's Title"
-        } ]
-      }, {
-        "name" : "[SAMPLE]Person Name 5",
-        "type" : "person",
-        "email-addresses" : [ "name@example.com" ],
-        "member-of-organizations" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
-        "telephone-numbers" : [ {
-          "number" : "2020000005"
-        } ],
-        "addresses" : [ {
-          "country" : "US",
-          "city" : "City",
-          "state" : "ST",
-          "type" : "work",
-          "postal-code" : "00000",
-          "addr-lines" : [ "Address Line" ]
-        } ],
-        "uuid" : "132953a9-640c-46f7-9de9-3fa15ec99361",
-        "props" : [ {
-          "name" : "job-title",
-          "value" : "Individual's Title"
-        } ]
-      }, {
-        "name" : "[SAMPLE]Person Name 6",
-        "type" : "person",
-        "email-addresses" : [ "name@example.com" ],
-        "member-of-organizations" : [ "78992555-4a99-4eaa-868c-f2c249679dd3" ],
-        "telephone-numbers" : [ {
-          "number" : "2020000006"
-        } ],
-        "addresses" : [ {
-          "country" : "US",
-          "city" : "City",
-          "state" : "ST",
-          "type" : "work",
-          "postal-code" : "00000",
-          "addr-lines" : [ "Address Line" ]
-        } ],
-        "uuid" : "4fded5fd-7a65-47ea-bd76-df57c46e27d1",
-        "props" : [ {
-          "name" : "job-title",
-          "value" : "Individual's Title"
-        } ]
-      }, {
-        "name" : "[SAMPLE]Person Name 7",
-        "type" : "person",
-        "email-addresses" : [ "name@example.com" ],
-        "member-of-organizations" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
-        "telephone-numbers" : [ {
-          "number" : "2020000007"
-        } ],
-        "addresses" : [ {
-          "country" : "US",
-          "city" : "City",
-          "state" : "ST",
-          "type" : "work",
-          "postal-code" : "00000",
-          "addr-lines" : [ "Address Line" ]
-        } ],
-        "uuid" : "db234cb7-1776-425c-9ac4-b067c1723011",
-        "props" : [ {
-          "name" : "job-title",
-          "value" : "Individual's Title"
-        } ]
-      }, {
-        "name" : "[SAMPLE] IT Department",
-        "type" : "organization",
-        "uuid" : "b306f5af-b93a-4a7f-a2b2-37a44fc92a79"
-      }, {
-        "name" : "[SAMPLE]Security Team",
-        "type" : "organization",
-        "uuid" : "59cdc953-5902-4fa4-a878-f3163854624c"
-      } ],
-      "locations" : [ {
-        "title" : "CSP HQ",
-        "uuid" : "27b78960-59ef-4619-82b0-ae20b9c709ac",
-        "remarks" : "There must be one location identifying the CSP's primary business address, such as the CSP's HQ, or the address of the system owner's primary business location.",
-        "address" : {
-          "city" : "Haven",
-          "state" : "ME",
-          "type" : "work",
-          "postal-code" : "00000",
-          "addr-lines" : [ "Suite 0000", "1234 Some Street" ]
-        }
-      }, {
-        "title" : "Primary Data Center",
-        "uuid" : "16adcc8d-65d8-4583-80d3-9cf007744fec",
-        "remarks" : "There must be one location for each data center.\n\nThere must be at least two data center locations.\n\nFor a data center, briefly summarize the components at this location.\n\nAll data centers must have a \"type\" property with a value of \"data-center\".\n\nThe type property must also have a class of \"primary\" or \"alternate\".",
-        "props" : [ {
-          "name" : "type",
-          "class" : "primary",
-          "value" : "data-center"
-        } ],
-        "address" : {
-          "country" : "US",
-          "city" : "Anywhere",
-          "state" : "--",
-          "postal-code" : "00000-0000",
-          "addr-lines" : [ "2222 Main Street" ]
-        }
-      }, {
-        "title" : "Secondary Data Center",
-        "uuid" : "ad321514-7b9f-4374-8409-efb18eea6e5d",
-        "remarks" : "There must be one location for each data center.\n\nThere must be at least two data center locations.\n\nFor a data center, briefly summarize the components at this location.\n\nAll data centers must have a \"type\" property with a value of \"data-center\".\n\nThe type property must also have a class of \"primary\" or \"alternate\".",
-        "props" : [ {
-          "name" : "type",
-          "class" : "alternate",
-          "value" : "data-center"
-        } ],
-        "address" : {
-          "country" : "US",
-          "city" : "Anywhere",
-          "state" : "--",
-          "postal-code" : "00000-0000",
-          "addr-lines" : [ "3333 Small Road" ]
-        }
       } ]
     },
     "system-implementation" : {
@@ -3864,8 +3864,6 @@
         "uuid" : "13c94c20-e4c4-44ee-bbbf-3d14fb01cb18"
       } ],
       "users" : [ {
-        "title" : "\\[SAMPLE\\]Unix System Administrator",
-        "uuid" : "9cb0fab0-78bd-44ba-bcb8-3e9801cc952f",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "sensitivity",
@@ -3883,12 +3881,12 @@
         } ],
         "role-ids" : [ "admin-unix" ],
         "authorized-privileges" : [ {
-          "functions-performed" : [ "Add/remove users and hardware", "install and configure software", "OS updates, patches and hotfixes", "perform backups" ],
-          "title" : "Full administrative access (root)"
-        } ]
+          "title" : "Full administrative access (root)",
+          "functions-performed" : [ "Add/remove users and hardware", "install and configure software", "OS updates, patches and hotfixes", "perform backups" ]
+        } ],
+        "title" : "\\[SAMPLE\\]Unix System Administrator",
+        "uuid" : "9cb0fab0-78bd-44ba-bcb8-3e9801cc952f"
       }, {
-        "title" : "\\[SAMPLE\\]Client Administrator",
-        "uuid" : "16ec71e7-025c-43e4-9d3f-3acb485fac2e",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "sensitivity",
@@ -3906,12 +3904,12 @@
         } ],
         "role-ids" : [ "admin-client" ],
         "authorized-privileges" : [ {
-          "functions-performed" : [ "Add/remove client users", "Create, modify and delete client applications" ],
-          "title" : "Portal administration"
-        } ]
+          "title" : "Portal administration",
+          "functions-performed" : [ "Add/remove client users", "Create, modify and delete client applications" ]
+        } ],
+        "title" : "\\[SAMPLE\\]Client Administrator",
+        "uuid" : "16ec71e7-025c-43e4-9d3f-3acb485fac2e"
       }, {
-        "title" : "\\[SAMPLE\\]Program Director",
-        "uuid" : "ba7708c1-4041-48ab-9b7b-1ddb5e175fe0",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "sensitivity",
@@ -3929,15 +3927,15 @@
         } ],
         "role-ids" : [ "information-system-security-officer", "isa-poc-local", "isa-authorizing-official-local" ],
         "authorized-privileges" : [ {
-          "functions-performed" : [ "Approves access requests for administrative accounts." ],
-          "title" : "Administrative Access Approver"
+          "title" : "Administrative Access Approver",
+          "functions-performed" : [ "Approves access requests for administrative accounts." ]
         }, {
-          "functions-performed" : [ "Approves access requests for administrative accounts." ],
-          "title" : "Access Approver"
-        } ]
+          "title" : "Access Approver",
+          "functions-performed" : [ "Approves access requests for administrative accounts." ]
+        } ],
+        "title" : "\\[SAMPLE\\]Program Director",
+        "uuid" : "ba7708c1-4041-48ab-9b7b-1ddb5e175fe0"
       }, {
-        "title" : "\\[SAMPLE\\]ISA POC",
-        "uuid" : "73ae456f-5581-4ff7-9ada-49fc057b2e0b",
         "props" : [ {
           "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "sensitivity",
@@ -3955,9 +3953,11 @@
         } ],
         "role-ids" : [ "isa-poc-remote", "isa-authorizing-official-remote" ],
         "authorized-privileges" : [ {
-          "functions-performed" : [ "Authorizes access to external interconnected system." ],
-          "title" : "External System Access Provider"
-        } ]
+          "title" : "External System Access Provider",
+          "functions-performed" : [ "Authorizes access to external interconnected system." ]
+        } ],
+        "title" : "\\[SAMPLE\\]ISA POC",
+        "uuid" : "73ae456f-5581-4ff7-9ada-49fc057b2e0b"
       } ],
       "leveraged-authorizations" : [ {
         "remarks" : "Use one leveraged-authorization assembly for each underlying system. In the legacy world, these may be general support systems.\n\nThe link fields are optional, but preferred when known. Often, a leveraging system's SSP author will not have access to the leveraged system's SSP, but should have access to the leveraged system's CRM.",
@@ -3987,16 +3987,14 @@
         "title" : "GovCloud"
       } ],
       "components" : [ {
-        "description" : "The entire system as depicted in the system authorization boundary\n\nEmail is employed",
-        "uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4",
         "title" : "This System",
         "type" : "this-system",
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "The entire system as depicted in the system authorization boundary\n\nEmail is employed",
+        "uuid" : "60f92bcf-f353-4236-9803-2a5d417555f4"
       }, {
-        "description" : "Provide a description and any pertinent note regarding the use of this CM.\n\nFor data-at-rest modules, describe type of encryption implemented (e.g., full disk, file, record-level, etc.)\n\nLastly, provide any supporting notes on FIPS status (e.g. historical) or lack of FIPS compliance (e.g., Module in Process).",
-        "uuid" : "95beec7e-6f82-4aaa-8211-969cd7c1f1ab",
         "title" : "\\[SAMPLE\\]Cryptographic Module Name",
         "type" : "validation",
         "props" : [ {
@@ -4024,10 +4022,10 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "Provide a description and any pertinent note regarding the use of this CM.\n\nFor data-at-rest modules, describe type of encryption implemented (e.g., full disk, file, record-level, etc.)\n\nLastly, provide any supporting notes on FIPS status (e.g. historical) or lack of FIPS compliance (e.g., Module in Process).",
+        "uuid" : "95beec7e-6f82-4aaa-8211-969cd7c1f1ab"
       }, {
-        "description" : "Provide a description and any pertinent note regarding the use of this CM.\n\nFor example, any supporting notes on FIPS status (e.g. historical) or lack of FIPS compliance (e.g., Module in Process).",
-        "uuid" : "1eaaabbd-b3a6-4316-a868-7b815e7c40f5",
         "title" : "\\[SAMPLE\\]Cryptographic Module Name",
         "type" : "validation",
         "props" : [ {
@@ -4055,10 +4053,10 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "Provide a description and any pertinent note regarding the use of this CM.\n\nFor example, any supporting notes on FIPS status (e.g. historical) or lack of FIPS compliance (e.g., Module in Process).",
+        "uuid" : "1eaaabbd-b3a6-4316-a868-7b815e7c40f5"
       }, {
-        "description" : "If the leveraged system owner provides a UUID for their system (such as in an OSCAL-based CRM), it should be reflected in the `inherited-uuid` property.\n\nMust include all leveraged services and features from the leveraged authorization here.",
-        "uuid" : "e82e6e07-0c62-417e-8a19-3744991b4c65",
         "title" : "Name of Leveraged System",
         "type" : "leveraged-system",
         "props" : [ {
@@ -4110,10 +4108,10 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "If the leveraged system owner provides a UUID for their system (such as in an OSCAL-based CRM), it should be reflected in the `inherited-uuid` property.\n\nMust include all leveraged services and features from the leveraged authorization here.",
+        "uuid" : "e82e6e07-0c62-417e-8a19-3744991b4c65"
       }, {
-        "description" : "If the leveraged system owner provides a UUID for their service (such as in an OSCAL-based CRM), it should be reflected in the `inherited-uuid` property.\n\nMust include all leveraged services and features from the leveraged authorization here.",
-        "uuid" : "77a1614a-57b3-4b32-9fee-613a6520ec58",
         "title" : "Service Provided by Leveraged System",
         "type" : "service",
         "props" : [ {
@@ -4132,10 +4130,10 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "If the leveraged system owner provides a UUID for their service (such as in an OSCAL-based CRM), it should be reflected in the `inherited-uuid` property.\n\nMust include all leveraged services and features from the leveraged authorization here.",
+        "uuid" : "77a1614a-57b3-4b32-9fee-613a6520ec58"
       }, {
-        "description" : "Describe the purpose of the external system/service; specifically, provide reasons for connectivity (e.g., system monitoring, system alerting, download updates, etc.).",
-        "uuid" : "2812ef51-61e7-4505-afbb-da5a073a2a5b",
         "title" : "\\[EXAMPLE\\]Authorized Connection Information System Name",
         "remarks" : "Optional notes about this interconnection",
         "responsible-roles" : [ {
@@ -4254,10 +4252,10 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "Describe the purpose of the external system/service; specifically, provide reasons for connectivity (e.g., system monitoring, system alerting, download updates, etc.).",
+        "uuid" : "2812ef51-61e7-4505-afbb-da5a073a2a5b"
       }, {
-        "description" : "FUNCTION: Describe typical component function.",
-        "uuid" : "05ceb8df-52e7-49db-9719-891723f366bd",
         "title" : "\\[SAMPLE\\]Product Name",
         "remarks" : "COMMENTS: Provide other comments as needed.",
         "responsible-roles" : [ {
@@ -4291,10 +4289,10 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
-      }, {
+        },
         "description" : "FUNCTION: Describe typical component function.",
-        "uuid" : "1541015b-6d19-42cb-a991-624cc082ed4d",
+        "uuid" : "05ceb8df-52e7-49db-9719-891723f366bd"
+      }, {
         "title" : "\\[SAMPLE\\]Product",
         "remarks" : "COMMENTS: Provide other comments as needed.",
         "responsible-roles" : [ {
@@ -4328,10 +4326,10 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "FUNCTION: Describe typical component function.",
+        "uuid" : "1541015b-6d19-42cb-a991-624cc082ed4d"
       }, {
-        "description" : "None",
-        "uuid" : "6617f60b-8bac-422d-9939-94f43ddc0f7a",
         "title" : "OS Sample",
         "type" : "software",
         "props" : [ {
@@ -4350,10 +4348,10 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
-      }, {
+        },
         "description" : "None",
-        "uuid" : "120f1404-7c9f-4856-a247-63bd89d9e769",
+        "uuid" : "6617f60b-8bac-422d-9939-94f43ddc0f7a"
+      }, {
         "title" : "Database Sample",
         "type" : "software",
         "props" : [ {
@@ -4372,10 +4370,10 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
-      }, {
+        },
         "description" : "None",
-        "uuid" : "8f230d84-2f9b-44a3-acdb-019566ab2554",
+        "uuid" : "120f1404-7c9f-4856-a247-63bd89d9e769"
+      }, {
         "title" : "Appliance Sample",
         "type" : "software",
         "props" : [ {
@@ -4399,10 +4397,10 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "None",
+        "uuid" : "8f230d84-2f9b-44a3-acdb-019566ab2554"
       }, {
-        "description" : "\\[EXAMPLE\\]component representing a collection of policies in appendix A.",
-        "uuid" : "88b8d7bb-ba23-4430-bf62-028eab822050",
         "title" : "\\[EXAMPLE\\]Policies",
         "remarks" : "Links to the components, attached as a `resource` in `back-matter`.",
         "type" : "policy",
@@ -4460,10 +4458,10 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "\\[EXAMPLE\\]component representing a collection of policies in appendix A.",
+        "uuid" : "88b8d7bb-ba23-4430-bf62-028eab822050"
       }, {
-        "description" : "\\[EXAMPLE\\]component representing a collection of procedures in appendix A.",
-        "uuid" : "fa90644a-8bf8-47da-b0d3-82bffc708afc",
         "title" : "\\[EXAMPLE\\]Procedures",
         "remarks" : "Links to the components, attached as a `resource` in `back-matter`.",
         "type" : "procedure",
@@ -4521,28 +4519,27 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "\\[EXAMPLE\\]component representing a collection of procedures in appendix A.",
+        "uuid" : "fa90644a-8bf8-47da-b0d3-82bffc708afc"
       }, {
-        "description" : "Describe the service",
-        "uuid" : "d5841417-de4c-4d84-ab3c-39dd1fd32a96",
-        "purpose" : "Describe the reason the service is needed.",
         "title" : "\\[SAMPLE\\]Service Name",
         "protocols" : [ {
+          "name" : "http",
+          "uuid" : "653ad9b9-9c78-4bc0-8a93-6ebd3c0fce54",
           "port-ranges" : [ {
             "end" : 80,
             "start" : 80,
             "transport" : "TCP"
-          } ],
-          "name" : "http",
-          "uuid" : "653ad9b9-9c78-4bc0-8a93-6ebd3c0fce54"
+          } ]
         }, {
+          "name" : "https",
+          "uuid" : "3ac9b137-479e-47d4-bc7e-aaa97c76aa63",
           "port-ranges" : [ {
             "end" : 443,
             "start" : 443,
             "transport" : "TCP"
-          } ],
-          "name" : "https",
-          "uuid" : "3ac9b137-479e-47d4-bc7e-aaa97c76aa63"
+          } ]
         } ],
         "remarks" : "Section 10.2, Table 10-1. Ports, Protocols and Services\n\n**SERVICES ARE NOW COMPONENTS WITH type='service'**",
         "type" : "service",
@@ -4555,10 +4552,11 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "Describe the service",
+        "uuid" : "d5841417-de4c-4d84-ab3c-39dd1fd32a96",
+        "purpose" : "Describe the reason the service is needed."
       }, {
-        "description" : "Briefly describe the interconnection.",
-        "uuid" : "2812ef51-61e7-4505-afbb-da5a073a2a5b",
         "title" : "\\[EXAMPLE\\]Authorized Connection Information System Name",
         "remarks" : "Optional notes about this interconnection",
         "responsible-roles" : [ {
@@ -4617,26 +4615,26 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "Briefly describe the interconnection.",
+        "uuid" : "2812ef51-61e7-4505-afbb-da5a073a2a5b"
       }, {
-        "description" : "IPv4 Production Subnet.",
-        "uuid" : "55b55b3d-3bd9-409a-bc87-3b9a2074bacd",
         "title" : "IPv4 Production Subnet",
         "type" : "network",
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "IPv4 Production Subnet.",
+        "uuid" : "55b55b3d-3bd9-409a-bc87-3b9a2074bacd"
       }, {
-        "description" : "IPv4 Management Subnet.",
-        "uuid" : "c0dbefa1-c8e8-4ca8-bd73-67cb7b1fa3f6",
         "title" : "IPv4 Management Subnet",
         "type" : "network",
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "IPv4 Management Subnet.",
+        "uuid" : "c0dbefa1-c8e8-4ca8-bd73-67cb7b1fa3f6"
       }, {
-        "description" : "Email Service",
-        "uuid" : "60f92bcf-f353-4236-9803-2a5d417555f5",
         "title" : "Email Service",
         "type" : "service",
         "links" : [ {
@@ -4645,7 +4643,9 @@
         } ],
         "status" : {
           "state" : "operational"
-        }
+        },
+        "description" : "Email Service",
+        "uuid" : "60f92bcf-f353-4236-9803-2a5d417555f5"
       } ]
     }
   }

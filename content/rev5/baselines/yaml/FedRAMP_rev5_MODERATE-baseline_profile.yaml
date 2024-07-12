@@ -1,19 +1,1148 @@
 ---
 profile:
-  back-matter:
-    resources:
-    - props:
-      - value: 5.1.1
-        name: version
-      title: FedRAMP Modified NIST Special Publication (SP) 800-53 revision 5
-      rlinks:
-      - href: FedRAMP_rev5_catalog_tailoring_profile.xml
-        media-type: application/oscal+xml
-      uuid: 051a77c1-b61d-4995-8275-dacfe688d510
-  uuid: b3d53132-0160-417a-ae1b-c9da8385d698
+  modify:
+    set-parameters:
+    - param-id: ac-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: ac-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: ac-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: ac-02_odp.06
+      constraints:
+      - description: twenty-four (24) hours
+    - param-id: ac-02_odp.07
+      constraints:
+      - description: eight (8) hours
+    - param-id: ac-02_odp.08
+      constraints:
+      - description: eight (8) hours
+    - param-id: ac-02_odp.10
+      constraints:
+      - description: "quarterly for privileged access, annually for non-privileged access"
+    - param-id: ac-02.02_odp.01
+      constraints:
+      - description: "Selection: disables"
+    - param-id: ac-02.02_odp.02
+      constraints:
+      - description: no more than 96 hours from last use
+    - param-id: ac-02.03_odp.01
+      constraints:
+      - description: 24 hours for user accounts
+    - param-id: ac-02.03_odp.02
+      constraints:
+      - description: ninety (90) days (See additional requirements and guidance.)
+    - param-id: ac-02.05_odp
+      constraints:
+      - description: "for privileged users, it is the end of a user's standard work period"
+    - param-id: ac-02.09_odp
+      constraints:
+      - description: organization-defined need with justification statement that explains why such accounts are necessary
+    - param-id: ac-02.12_odp.02
+      constraints:
+      - description: "at a minimum, the ISSO and/or similar role within the organization"
+    - param-id: ac-02.13_odp.01
+      constraints:
+      - description: one (1) hour
+    - param-id: ac-06.02_odp
+      constraints:
+      - description: all security functions
+    - param-id: ac-06.07_odp.01
+      constraints:
+      - description: "at a minimum, annually"
+    - param-id: ac-06.07_odp.02
+      constraints:
+      - description: all users with privileges
+    - param-id: ac-08_odp.01
+      constraints:
+      - description: see additional Requirements and Guidance
+    - param-id: ac-08_odp.02
+      constraints:
+      - description: see additional Requirements and Guidance
+    - param-id: ac-11_odp.02
+      constraints:
+      - description: fifteen (15) minutes
+    - param-id: ac-22_odp
+      constraints:
+      - description: at least quarterly
+    - param-id: at-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: at-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: at-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: at-02_odp.01
+      constraints:
+      - description: at least annually
+    - param-id: at-02_odp.02
+      constraints:
+      - description: at least annually
+    - param-id: at-02_odp.06
+      constraints:
+      - description: at least annually
+    - param-id: at-03_odp.03
+      constraints:
+      - description: at least annually
+    - param-id: at-03_odp.04
+      constraints:
+      - description: at least annually
+    - param-id: at-04_odp
+      constraints:
+      - description: at least one (1) year or 1 year after completion of a specific training program
+    - param-id: au-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: au-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: au-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: au-02_odp.01
+      constraints:
+      - description: "successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events. For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes"
+    - param-id: au-02_odp.02
+      constraints:
+      - description: organization-defined subset of the auditable events defined in AU-2a to be audited continually for each identified event.
+    - param-id: au-02_odp.03
+      constraints:
+      - description: organization-defined subset of the auditable events defined in AU-2a to be audited continually for each identified event.
+    - param-id: au-02_odp.04
+      constraints:
+      - description: annually and whenever there is a change in the threat environment
+    - param-id: au-03.01_odp
+      constraints:
+      - description: "session, connection, transaction, or activity duration; for client-server transactions, the number of bytes received and bytes sent; additional informational messages to diagnose or identify the event; characteristics that describe or identify the object or resource being acted upon; individual identities of group account users; full-text of privileged commands"
+    - param-id: au-05_odp.03
+      constraints:
+      - description: overwrite oldest record
+    - param-id: au-06_odp.01
+      constraints:
+      - description: at least weekly
+    - param-id: au-08_odp
+      constraints:
+      - description: one second granularity of time measurement
+    - param-id: au-11_odp
+      constraints:
+      - description: a time period in compliance with M-21-31
+    - param-id: au-12_odp.01
+      constraints:
+      - description: all information system and network components where audit capability is deployed/available
+    - param-id: ca-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: ca-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: ca-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: ca-02_odp.01
+      constraints:
+      - description: at least annually
+    - param-id: ca-02_odp.02
+      constraints:
+      - description: individuals or roles to include FedRAMP PMO
+    - param-id: ca-02.03_odp.01
+      constraints:
+      - description: any FedRAMP Accredited 3PAO
+    - param-id: ca-02.03_odp.03
+      constraints:
+      - description: the conditions of the JAB/AO in the FedRAMP Repository
+    - param-id: ca-03_odp.03
+      constraints:
+      - description: at least annually and on input from JAB/AO
+    - param-id: ca-05_odp
+      constraints:
+      - description: at least monthly
+    - param-id: ca-06_odp
+      constraints:
+      - description: in accordance with OMB A-130 requirements or when a significant change occurs
+    - param-id: ca-07_odp.04
+      constraints:
+      - description: to include JAB/AO
+    - param-id: ca-07_odp.06
+      constraints:
+      - description: to include JAB/AO
+    - param-id: ca-08_odp.01
+      constraints:
+      - description: at least annually
+    - param-id: ca-09_odp.03
+      constraints:
+      - description: at least annually
+    - param-id: cm-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: cm-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: cm-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: cm-02_odp.01
+      constraints:
+      - description: at least annually and when a significant change occurs
+    - param-id: cm-02_odp.02
+      constraints:
+      - description: to include when directed by the JAB
+    - param-id: cm-03.04_odp.03
+      constraints:
+      - description: Configuration control board (CCB) or similar (as defined in CM-3)
+    - param-id: cm-05.05_odp.01
+      constraints:
+      - description: at least quarterly
+    - param-id: cm-05.05_odp.02
+      constraints:
+      - description: at least quarterly
+    - param-id: cm-07.01_odp.01
+      constraints:
+      - description: at least annually
+    - param-id: cm-07.05_odp.02
+      constraints:
+      - description: at least quarterly or when there is a change
+    - param-id: cm-08_odp.02
+      constraints:
+      - description: at least monthly
+    - param-id: cm-08.03_odp.01
+      constraints:
+      - description: automated mechanisms with a maximum five-minute delay in detection
+    - param-id: cm-08.03_odp.02
+      constraints:
+      - description: automated mechanisms with a maximum five-minute delay in detection
+    - param-id: cm-08.03_odp.03
+      constraints:
+      - description: automated mechanisms with a maximum five-minute delay in detection
+    - param-id: cm-08.03_odp.04
+      constraints:
+      - description: continuously
+    - param-id: cm-11_odp.03
+      constraints:
+      - description: Continuously (via CM-7 (5))
+    - param-id: cm-12.01_odp.01
+      constraints:
+      - description: Federal data and system data that must be protected at the High or Moderate impact levels
+    - param-id: cp-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: cp-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: cp-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: cp-02_odp.05
+      constraints:
+      - description: at least annually
+    - param-id: cp-02.03_odp.01
+      constraints:
+      - description: all
+    - param-id: cp-02.03_odp.02
+      constraints:
+      - description: time period defined in service provider and organization SLA
+    - param-id: cp-03_odp.01
+      constraints:
+      - description: \*See Additional Requirements
+    - param-id: cp-03_odp.02
+      constraints:
+      - description: at least annually
+    - param-id: cp-03_odp.03
+      constraints:
+      - description: at least annually
+    - param-id: cp-04_odp.01
+      constraints:
+      - description: at least annually
+    - param-id: cp-04_odp.02
+      constraints:
+      - description: functional exercises
+    - param-id: cp-04_odp.03
+      constraints:
+      - description: functional exercises
+    - param-id: cp-09_odp.02
+      constraints:
+      - description: daily incremental; weekly full
+    - param-id: cp-09_odp.03
+      constraints:
+      - description: daily incremental; weekly full
+    - param-id: cp-09_odp.04
+      constraints:
+      - description: daily incremental; weekly full
+    - param-id: cp-09.01_odp.01
+      constraints:
+      - description: at least annually
+    - param-id: cp-09.01_odp.02
+      constraints:
+      - description: at least annually
+    - param-id: cp-09.08_odp
+      constraints:
+      - description: all backup files
+    - param-id: ia-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: ia-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: ia-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: ia-02.06_odp.01
+      constraints:
+      - description: "local, network and remote"
+    - param-id: ia-02.06_odp.02
+      constraints:
+      - description: privileged accounts; non-privileged accounts
+    - param-id: ia-02.06_odp.03
+      constraints:
+      - description: FIPS-validated or NSA-approved cryptography
+    - param-id: ia-02.08_odp
+      constraints:
+      - description: privileged accounts; non-privileged accounts
+    - param-id: ia-04_odp.01
+      constraints:
+      - description: "at a minimum, the ISSO (or similar role within the organization)"
+    - param-id: ia-04_odp.02
+      constraints:
+      - description: at least two (2) years
+    - param-id: ia-04.04_odp
+      constraints:
+      - description: contractors; foreign nationals
+    - param-id: ir-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: ir-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: ir-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: ir-02_odp.01
+      constraints:
+      - description: "ten (10) days for privileged users, thirty (30) days for Incident Response roles"
+    - param-id: ir-02_odp.02
+      constraints:
+      - description: at least annually
+    - param-id: ir-02_odp.03
+      constraints:
+      - description: at least annually
+    - param-id: ir-03_odp.01
+      constraints:
+      - description: "functional, at least annually"
+    - param-id: ir-06_odp.01
+      constraints:
+      - description: US-CERT incident reporting timelines as specified in NIST Special Publication 800-61 (as amended)
+    - param-id: ir-08_odp.02
+      constraints:
+      - description: at least annually
+    - param-id: ir-08_odp.04
+      constraints:
+      - description: see additional FedRAMP Requirements and Guidance
+    - param-id: ir-08_odp.05
+      constraints:
+      - description: see additional FedRAMP Requirements and Guidance
+    - param-id: ir-08_odp.06
+      constraints:
+      - description: see additional FedRAMP Requirements and Guidance
+    - param-id: ir-08_odp.07
+      constraints:
+      - description: see additional FedRAMP Requirements and Guidance
+    - param-id: ir-09.02_odp
+      constraints:
+      - description: at least annually
+    - param-id: ma-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: ma-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: ma-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: ma-03_odp
+      constraints:
+      - description: at least annually
+    - param-id: ma-03.03_odp
+      constraints:
+      - description: the information owner
+    - param-id: ma-06_odp.02
+      constraints:
+      - description: a timeframe to support advertised uptime and availability
+    - param-id: mp-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: mp-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: mp-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: mp-02_odp.01
+      constraints:
+      - description: all types of digital and/or non-digital media containing sensitive information
+    - param-id: mp-02_odp.03
+      constraints:
+      - description: all types of digital and/or non-digital media containing sensitive information
+    - param-id: mp-03_odp.01
+      constraints:
+      - description: no removable media types
+    - param-id: mp-03_odp.02
+      constraints:
+      - description: organization-defined security safeguards not applicable
+    - param-id: mp-04_odp.01
+      constraints:
+      - description: all types of digital and non-digital media with sensitive information
+    - param-id: mp-04_odp.02
+      constraints:
+      - description: all types of digital and non-digital media with sensitive information
+    - param-id: mp-04_odp.03
+      constraints:
+      - description: all types of digital and non-digital media with sensitive information
+    - param-id: mp-04_odp.04
+      constraints:
+      - description: all types of digital and non-digital media with sensitive information
+    - param-id: mp-04_odp.05
+      constraints:
+      - description: see additional FedRAMP requirements and guidance
+    - param-id: mp-04_odp.06
+      constraints:
+      - description: see additional FedRAMP requirements and guidance
+    - param-id: mp-05_odp.01
+      constraints:
+      - description: all media with sensitive information
+    - param-id: mp-05_odp.02
+      constraints:
+      - description: "prior to leaving secure/controlled environment: for digital media, encryption in compliance with Federal requirements and utilizes FIPS validated or NSA approved cryptography (see SC-13.); for non-digital media, secured in locked container"
+    - param-id: mp-05_odp.03
+      constraints:
+      - description: "prior to leaving secure/controlled environment: for digital media, encryption in compliance with Federal requirements and utilizes FIPS validated or NSA approved cryptography (see SC-13.); for non-digital media, secured in locked container"
+    - param-id: mp-06_odp.01
+      constraints:
+      - description: "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
+    - param-id: mp-06_odp.02
+      constraints:
+      - description: "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
+    - param-id: mp-06_odp.03
+      constraints:
+      - description: "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
+    - param-id: pe-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: pe-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: pe-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: pe-02_odp
+      constraints:
+      - description: at least annually
+    - param-id: pe-03_odp.02
+      constraints:
+      - description: CSP defined physical access control systems/devices AND guards
+    - param-id: pe-03_odp.06
+      constraints:
+      - description: in all circumstances within restricted access area where the information system resides
+    - param-id: pe-03_odp.08
+      constraints:
+      - description: at least annually
+    - param-id: pe-03_odp.09
+      constraints:
+      - description: at least annually or earlier as required by a security relevant event.
+    - param-id: pe-03_odp.10
+      constraints:
+      - description: at least annually or earlier as required by a security relevant event.
+    - param-id: pe-06_odp.01
+      constraints:
+      - description: at least monthly
+    - param-id: pe-08_odp.01
+      constraints:
+      - description: for a minimum of one (1) year
+    - param-id: pe-08_odp.02
+      constraints:
+      - description: at least monthly
+    - param-id: pe-10_odp.02
+      constraints:
+      - description: near more than one egress point of the IT area and ensures it is labeled and protected by a cover to prevent accidental shut-off
+    - param-id: pe-13.01_odp.01
+      constraints:
+      - description: service provider building maintenance/physical security personnel
+    - param-id: pe-13.01_odp.02
+      constraints:
+      - description: service provider emergency responders with incident response responsibilities
+    - param-id: pe-14_odp.01
+      constraints:
+      - description: "consistent with American Society of Heating, Refrigerating and Air-conditioning Engineers (ASHRAE) document entitled Thermal Guidelines for Data Processing Environments"
+    - param-id: pe-14_odp.04
+      constraints:
+      - description: continuously
+    - param-id: pe-16_odp.01
+      constraints:
+      - description: all information system components
+    - param-id: pe-16_odp.02
+      constraints:
+      - description: all information system components
+    - param-id: pl-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: pl-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: pl-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: pl-02_odp.01
+      constraints:
+      - description: to include chief privacy and ISSO and/or similar role or designees
+    - param-id: pl-02_odp.02
+      constraints:
+      - description: to include chief privacy and ISSO and/or similar role
+    - param-id: pl-02_odp.03
+      constraints:
+      - description: at least annually
+    - param-id: pl-04_odp.01
+      constraints:
+      - description: at least every 3 years
+    - param-id: pl-04_odp.02
+      constraints:
+      - description: at least annually and when the rules are revised or changed
+    - param-id: pl-08_odp
+      constraints:
+      - description: at least annually and when a significant change occurs
+    - param-id: ps-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: ps-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: ps-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: ps-02_odp
+      constraints:
+      - description: at least every three years
+    - param-id: ps-03_odp.01
+      constraints:
+      - description: |-
+          For national security clearances; a reinvestigation is required during the fifth (5th) year for top secret security clearance, the tenth (10th) year for secret security clearance, and fifteenth (15th) year for confidential security clearance.
+
+          For moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the fifth (5th) year. There is no reinvestigation for other moderate risk positions or any low risk positions
+    - param-id: ps-03_odp.02
+      constraints:
+      - description: |-
+          for national security clearances; a reinvestigation is required during the fifth (5th) year for top secret security clearance, the tenth (10th) year for secret security clearance, and fifteenth (15th) year for confidential security clearance.
+
+          For moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the fifth (5th) year. There is no reinvestigation for other moderate risk positions or any low risk positions
+    - param-id: ps-03.03_odp
+      constraints:
+      - description: personnel screening criteria - as required by specific information
+    - param-id: ps-04_odp.01
+      constraints:
+      - description: four (4) hours
+    - param-id: ps-05_odp.02
+      constraints:
+      - description: twenty-four (24) hours
+    - param-id: ps-05_odp.03
+      constraints:
+      - description: including access control personnel responsible for the system
+    - param-id: ps-05_odp.04
+      constraints:
+      - description: twenty-four (24) hours
+    - param-id: ps-06_odp.01
+      constraints:
+      - description: at least annually
+    - param-id: ps-06_odp.02
+      constraints:
+      - description: at least annually and any time there is a change to the user's level of access
+    - param-id: ps-07_odp.01
+      constraints:
+      - description: "including access control personnel responsible for the system and/or facilities, as appropriate"
+    - param-id: ps-07_odp.02
+      constraints:
+      - description: within twenty-four (24) hours
+    - param-id: ps-08_odp.01
+      constraints:
+      - description: to include the ISSO and/or similar role within the organization
+    - param-id: ps-08_odp.02
+      constraints:
+      - description: 24 hours
+    - param-id: ra-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: ra-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: ra-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: ra-03_odp.01
+      constraints:
+      - description: security assessment report
+    - param-id: ra-03_odp.03
+      constraints:
+      - description: at least every three (3) years and when a significant change occurs
+    - param-id: ra-03_odp.05
+      constraints:
+      - description: at least every three (3) years
+    - param-id: ra-05_odp.01
+      constraints:
+      - description: monthly operating system/infrastructure; monthly web applications (including APIs) and databases
+    - param-id: ra-05_odp.02
+      constraints:
+      - description: monthly operating system/infrastructure; monthly web applications (including APIs) and databases
+    - param-id: ra-05_odp.03
+      constraints:
+      - description: high-risk vulnerabilities mitigated within thirty (30) days from date of discovery; moderate-risk vulnerabilities mitigated within ninety (90) days from date of discovery; low risk vulnerabilities mitigated within one hundred and eighty (180) days from date of discovery
+    - param-id: ra-05.02_odp.01
+      constraints:
+      - description: within 24 hours prior to running scans
+    - param-id: ra-05.05_odp.01
+      constraints:
+      - description: all components that support authentication
+    - param-id: ra-05.05_odp.02
+      constraints:
+      - description: all scans
+    - param-id: sa-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: sa-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: sa-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: sa-04.02_odp.01
+      constraints:
+      - description: at a minimum to include security-relevant external system interfaces; high-level design; low-level design; source code or network and data flow diagram;
+    - param-id: sa-05_odp.02
+      constraints:
+      - description: "at a minimum, the ISSO (or similar role within the organization)"
+    - param-id: sa-09_odp.01
+      constraints:
+      - description: Appropriate FedRAMP Security Controls Baseline (s) if Federal information is processed or stored within the external system
+    - param-id: sa-09_odp.02
+      constraints:
+      - description: Federal/FedRAMP Continuous Monitoring requirements must be met for external systems where Federal information is processed or stored
+    - param-id: sa-09.02_odp
+      constraints:
+      - description: all external systems where Federal information is processed or stored
+    - param-id: sa-09.05_odp.01
+      constraints:
+      - description: "information processing, information or data, AND system services"
+    - param-id: sa-10_odp.01
+      constraints:
+      - description: "development, implementation, AND operation"
+    - param-id: sa-15_odp.01
+      constraints:
+      - description: frequency at least annually
+    - param-id: sa-15_odp.02
+      constraints:
+      - description: FedRAMP Security Authorization requirements
+    - param-id: sc-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: sc-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: sc-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: sc-05_odp.02
+      constraints:
+      - description: Protect against
+    - param-id: sc-05_odp.01
+      constraints:
+      - description: "at a minimum: ICMP (ping) flood, SYN flood, slowloris, buffer overflow attack, and volume attack"
+    - param-id: sc-07.04_odp
+      constraints:
+      - description: at least every 180 days or whenever there is a change in the threat environment that warrants a review of the exceptions
+    - param-id: sc-07.05_odp.01
+      constraints:
+      - description: any systems
+    - param-id: sc-07.08_odp.02
+      constraints:
+      - description: any network outside of organizational control and any network outside the authorization boundary
+    - param-id: sc-07.12_odp.01
+      constraints:
+      - description: "Host Intrusion Prevention System (HIPS), Host Intrusion Detection System (HIDS), or minimally a host-based firewall"
+    - param-id: sc-08_odp
+      constraints:
+      - description: confidentiality AND integrity
+    - param-id: sc-08.01_odp
+      constraints:
+      - description: prevent unauthorized disclosure of information AND detect changes to information
+    - param-id: sc-10_odp
+      constraints:
+      - description: no longer than ten (10) minutes for privileged sessions and no longer than fifteen (15) minutes for user sessions
+    - param-id: sc-12_odp
+      constraints:
+      - description: In accordance with Federal requirements
+    - param-id: sc-13_odp.02
+      constraints:
+      - description: FIPS-validated or NSA-approved cryptography
+    - param-id: sc-15_odp
+      constraints:
+      - description: no exceptions for computing devices
+    - param-id: sc-28_odp.01
+      constraints:
+      - description: confidentiality AND integrity
+    - param-id: sc-28.01_odp.02
+      constraints:
+      - description: all information system components storing Federal data or system data that must be protected at the High or Moderate impact levels
+    - param-id: sc-45.01_odp.01
+      constraints:
+      - description: At least hourly
+    - param-id: sc-45.01_odp.02
+      constraints:
+      - description: http://tf.nist.gov/tf-cgi/servers.cgi
+    - param-id: sc-45.01_odp.03
+      constraints:
+      - description: any difference
+    - param-id: si-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: si-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: si-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: si-02_odp
+      constraints:
+      - description: within thirty (30) days of release of updates
+    - param-id: si-02.02_odp.02
+      constraints:
+      - description: at least monthly
+    - param-id: si-03_odp.01
+      constraints:
+      - description: signature based and non-signature based
+    - param-id: si-03_odp.02
+      constraints:
+      - description: at least weekly
+    - param-id: si-03_odp.03
+      constraints:
+      - description: to include endpoints and network entry and exit points
+    - param-id: si-03_odp.04
+      constraints:
+      - description: to include blocking and quarantining malicious code
+    - param-id: si-03_odp.05
+      constraints:
+      - description: administrator or defined security personnel near-realtime
+    - param-id: si-04.04_odp.01
+      constraints:
+      - description: continuously
+    - param-id: si-04.04_odp.03
+      constraints:
+      - description: continuously
+    - param-id: si-05_odp.01
+      constraints:
+      - description: to include US-CERT and Cybersecurity and Infrastructure Security Agency (CISA) Directives
+    - param-id: si-05_odp.02
+      constraints:
+      - description: to include system security personnel and administrators with configuration/patch-management responsibilities
+    - param-id: si-06_odp.04
+      constraints:
+      - description: to include upon system startup and/or restart
+    - param-id: si-06_odp.05
+      constraints:
+      - description: at least monthly
+    - param-id: si-06_odp.06
+      constraints:
+      - description: to include system administrators and security personnel
+    - param-id: si-07.01_odp.03
+      constraints:
+      - description: selection to include security relevant event
+    - param-id: si-07.01_odp.07
+      constraints:
+      - description: selection to include security relevant event
+    - param-id: si-07.01_odp.11
+      constraints:
+      - description: selection to include security relevant event
+    - param-id: si-07.01_odp.04
+      constraints:
+      - description: at least monthly
+    - param-id: si-07.01_odp.08
+      constraints:
+      - description: at least monthly
+    - param-id: si-07.01_odp.12
+      constraints:
+      - description: at least monthly
+    - param-id: si-11_odp
+      constraints:
+      - description: to include the ISSO and/or similar role within the organization
+    - param-id: sr-01_odp.01
+      constraints:
+      - description: to include chief privacy and ISSO and/or similar role or designees
+    - param-id: sr-01_odp.02
+      constraints:
+      - description: to include chief privacy and ISSO and/or similar role or designees
+    - param-id: sr-01_odp.05
+      constraints:
+      - description: at least every 3 years
+    - param-id: sr-01_odp.07
+      constraints:
+      - description: at least annually
+    - param-id: sr-01_odp.08
+      constraints:
+      - description: significant changes
+    - param-id: sr-02_odp.02
+      constraints:
+      - description: at least annually
+    - param-id: sr-06_odp
+      constraints:
+      - description: at least annually
+    - param-id: sr-08_odp.01
+      constraints:
+      - description: notification of supply chain compromises and results of assessment or audits
+    - param-id: sr-11.02_odp
+      constraints:
+      - description: all
+    alters:
+    - control-id: cp-2
+      adds:
+      - by-id: cp-2_obj.f
+        position: after
+        parts:
+        - links:
+          - rel: assessment-for
+            href: '#cp-2_smt.g'
+          name: assessment-objective
+          parts:
+          - links:
+            - rel: assessment-for
+              href: '#cp-2_smt.g'
+            name: assessment-objective
+            prose: lessons learned from contingency plan testing or actual contingency activities are incorporated into contingency testing;
+            props:
+            - class: sp800-53a
+              name: label
+              value: "CP-02g.[01]"
+            id: cp-2_obj.g-1
+          - links:
+            - rel: assessment-for
+              href: '#cp-2_smt.g'
+            name: assessment-objective
+            prose: lessons learned from contingency plan training or actual contingency activities are incorporated into contingency testing and training;
+            props:
+            - class: sp800-53a
+              name: label
+              value: "CP-02g.[02]"
+            id: cp-2_obj.g-2
+          props:
+          - name: response-point
+            ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: INTERVIEW
+          - class: sp800-53a
+            name: label
+            value: CP-02g.
+          id: cp-2_obj.g
+      removes:
+      - by-id: cp-2_obj.g
+    - control-id: ia-5
+      adds:
+      - by-id: ia-5_fr
+        parts:
+        - name: item
+          prose: "Authenticators must be compliant with NIST SP 800-63-3 Digital Identity Guidelines IAL, AAL, FAL level 2. Link https://pages.nist.gov/800-63-3"
+          ns: https://fedramp.gov/ns/oscal
+          props:
+          - name: label
+            value: 'Requirement:'
+          id: ia-5_fr_smt.1
+      removes:
+      - by-id: ia-5_fr_smt.1
+    - control-id: ia-11
+      adds:
+      - by-id: ia-11_fr
+        parts:
+        - name: guidance
+          prose: |-
+            The fixed time period cannot exceed the limits set in SP 800-63. At this writing they are:
+
+            - AAL2 (moderate baseline)
+              - 12 hours or
+              - 30 minutes of inactivity
+          ns: https://fedramp.gov/ns/oscal
+          props:
+          - name: label
+            value: 'Guidance:'
+          id: ia-11_fr_gdn.1
+      removes:
+      - by-id: ia-11_fr_gdn.1
+    - control-id: ma-5.1
+      adds:
+      - by-id: ma-5.1_smt
+        parts:
+        - title: MA-5 (1) Additional FedRAMP Requirements and Guidance
+          name: item
+          ns: https://fedramp.gov/ns/oscal
+          parts:
+          - name: item
+            prose: Only MA-5 (1) (a) (1) is required by FedRAMP Moderate Baseline
+            ns: https://fedramp.gov/ns/oscal
+            props:
+            - name: label
+              value: 'Requirement:'
+            id: ma-5.1_fr_smt.1
+          id: ma-5.1_fr
+    - control-id: pe-3
+      adds:
+      - by-id: pe-3_obj.d
+        position: after
+        parts:
+        - links:
+          - rel: assessment-for
+            href: '#pe-3_smt.e'
+          name: assessment-objective
+          parts:
+          - links:
+            - rel: assessment-for
+              href: '#pe-3_smt.e'
+            name: assessment-objective
+            prose: keys are secured;
+            props:
+            - class: sp800-53a
+              name: label
+              value: "PE-03e.[01]"
+            - name: response-point
+              ns: https://fedramp.gov/ns/oscal
+              value: You must fill in this response point.
+            - class: fedramp
+              name: method
+              ns: https://fedramp.gov/ns/oscal
+              value: TEST
+            id: pe-3_obj.e-1
+          - links:
+            - rel: assessment-for
+              href: '#pe-3_smt.e'
+            name: assessment-objective
+            prose: combinations are secured;
+            props:
+            - class: sp800-53a
+              name: label
+              value: "PE-03e.[02]"
+            - name: response-point
+              ns: https://fedramp.gov/ns/oscal
+              value: You must fill in this response point.
+            - class: fedramp
+              name: method
+              ns: https://fedramp.gov/ns/oscal
+              value: TEST
+            id: pe-3_obj.e-2
+          - links:
+            - rel: assessment-for
+              href: '#pe-3_smt.e'
+            name: assessment-objective
+            prose: other physical access devices are secured;
+            props:
+            - class: sp800-53a
+              name: label
+              value: "PE-03e.[03]"
+            - name: response-point
+              ns: https://fedramp.gov/ns/oscal
+              value: You must fill in this response point.
+            - class: fedramp
+              name: method
+              ns: https://fedramp.gov/ns/oscal
+              value: TEST
+            id: pe-3_obj.e-3
+          props:
+          - class: sp800-53a
+            name: label
+            value: PE-03e.
+          id: pe-3_obj.e
+      removes:
+      - by-id: pe-3_obj.e
+    - control-id: ps-3
+      adds:
+      - by-id: ps-3_obj.b
+        position: starting
+        parts:
+        - links:
+          - rel: assessment-for
+            href: '#ps-3_smt.b'
+          name: assessment-objective
+          prose: "individuals are rescreened in accordance with {{ insert: param, ps-03_odp.01 }};"
+          props:
+          - class: sp800-53a
+            name: label
+            value: "PS-03b.[01]"
+          - name: response-point
+            ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: INTERVIEW
+          id: ps-3_obj.b-1
+        - links:
+          - rel: assessment-for
+            href: '#ps-3_smt.b'
+          name: assessment-objective
+          prose: "where rescreening is so indicated, individuals are rescreened {{ insert: param, ps-03_odp.02 }}."
+          props:
+          - class: sp800-53a
+            name: label
+            value: "PS-03b.[02]"
+          - name: response-point
+            ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: INTERVIEW
+          id: ps-3_obj.b-2
+      removes:
+      - by-id: ps-3_obj.b-1
+      - by-id: ps-3_obj.b-2
+    - control-id: sa-8
+      adds:
+      - by-id: sa-8_obj-5
+        position: after
+        parts:
+        - links:
+          - rel: assessment-for
+            href: '#sa-8_smt'
+          name: assessment-objective
+          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the specification of the system and system components;"
+          props:
+          - name: response-point
+            ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: TEST
+          - class: sp800-53a
+            name: label
+            value: "SA-08[06]"
+          id: sa-8_obj-6
+        - links:
+          - rel: assessment-for
+            href: '#sa-8_smt'
+          name: assessment-objective
+          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the design of the system and system components;"
+          props:
+          - name: response-point
+            ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: TEST
+          - class: sp800-53a
+            name: label
+            value: "SA-08[07]"
+          id: sa-8_obj-7
+        - links:
+          - rel: assessment-for
+            href: '#sa-8_smt'
+          name: assessment-objective
+          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the development of the system and system components;"
+          props:
+          - name: response-point
+            ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: TEST
+          - class: sp800-53a
+            name: label
+            value: "SA-08[08]"
+          id: sa-8_obj-8
+        - links:
+          - rel: assessment-for
+            href: '#sa-8_smt'
+          name: assessment-objective
+          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the implementation of the system and system components;"
+          props:
+          - name: response-point
+            ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: TEST
+          - class: sp800-53a
+            name: label
+            value: "SA-08[09]"
+          id: sa-8_obj-9
+        - links:
+          - rel: assessment-for
+            href: '#sa-8_smt'
+          name: assessment-objective
+          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the modification of the system and system components."
+          props:
+          - name: response-point
+            ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+          - class: fedramp
+            name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: TEST
+          - class: sp800-53a
+            name: label
+            value: "SA-08[10]"
+          id: sa-8_obj-10
+      removes:
+      - by-id: sa-8_obj-6
+      - by-id: sa-8_obj-7
+      - by-id: sa-8_obj-8
+      - by-id: sa-8_obj-9
+      - by-id: sa-8_obj-10
+    - control-id: sc-20
+      removes:
+      - by-id: sc-20_fr_smt.2
+  merge:
+    as-is: true
+  metadata:
+    title: FedRAMP Rev 5 Moderate Baseline
+    last-modified: 2024-06-24T00:00:00Z
+    oscal-version: 1.1.1
+    version: 5.1.1+fedramp-20240111-0
+    published: 2024-06-24T00:00:00Z
   imports:
-  - href: '#051a77c1-b61d-4995-8275-dacfe688d510'
-    include-controls:
+  - include-controls:
     - with-ids:
       - ac-1
       - ac-2
@@ -338,1144 +1467,15 @@ profile:
       - sr-11.1
       - sr-11.2
       - sr-12
-  metadata:
-    oscal-version: 1.1.1
-    last-modified: 2024-06-24T00:00:00Z
-    title: FedRAMP Rev 5 Moderate Baseline
-    published: 2024-06-24T00:00:00Z
-    version: 5.1.1+fedramp-20240111-0
-  merge:
-    as-is: true
-  modify:
-    set-parameters:
-    - constraints:
-      - description: at least every 3 years
-      param-id: ac-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: ac-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: ac-01_odp.08
-    - constraints:
-      - description: twenty-four (24) hours
-      param-id: ac-02_odp.06
-    - constraints:
-      - description: eight (8) hours
-      param-id: ac-02_odp.07
-    - constraints:
-      - description: eight (8) hours
-      param-id: ac-02_odp.08
-    - constraints:
-      - description: "quarterly for privileged access, annually for non-privileged access"
-      param-id: ac-02_odp.10
-    - constraints:
-      - description: "Selection: disables"
-      param-id: ac-02.02_odp.01
-    - constraints:
-      - description: no more than 96 hours from last use
-      param-id: ac-02.02_odp.02
-    - constraints:
-      - description: 24 hours for user accounts
-      param-id: ac-02.03_odp.01
-    - constraints:
-      - description: ninety (90) days (See additional requirements and guidance.)
-      param-id: ac-02.03_odp.02
-    - constraints:
-      - description: "for privileged users, it is the end of a user's standard work period"
-      param-id: ac-02.05_odp
-    - constraints:
-      - description: organization-defined need with justification statement that explains why such accounts are necessary
-      param-id: ac-02.09_odp
-    - constraints:
-      - description: "at a minimum, the ISSO and/or similar role within the organization"
-      param-id: ac-02.12_odp.02
-    - constraints:
-      - description: one (1) hour
-      param-id: ac-02.13_odp.01
-    - constraints:
-      - description: all security functions
-      param-id: ac-06.02_odp
-    - constraints:
-      - description: "at a minimum, annually"
-      param-id: ac-06.07_odp.01
-    - constraints:
-      - description: all users with privileges
-      param-id: ac-06.07_odp.02
-    - constraints:
-      - description: see additional Requirements and Guidance
-      param-id: ac-08_odp.01
-    - constraints:
-      - description: see additional Requirements and Guidance
-      param-id: ac-08_odp.02
-    - constraints:
-      - description: fifteen (15) minutes
-      param-id: ac-11_odp.02
-    - constraints:
-      - description: at least quarterly
-      param-id: ac-22_odp
-    - constraints:
-      - description: at least every 3 years
-      param-id: at-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: at-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: at-01_odp.08
-    - constraints:
-      - description: at least annually
-      param-id: at-02_odp.01
-    - constraints:
-      - description: at least annually
-      param-id: at-02_odp.02
-    - constraints:
-      - description: at least annually
-      param-id: at-02_odp.06
-    - constraints:
-      - description: at least annually
-      param-id: at-03_odp.03
-    - constraints:
-      - description: at least annually
-      param-id: at-03_odp.04
-    - constraints:
-      - description: at least one (1) year or 1 year after completion of a specific training program
-      param-id: at-04_odp
-    - constraints:
-      - description: at least every 3 years
-      param-id: au-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: au-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: au-01_odp.08
-    - constraints:
-      - description: "successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events. For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes"
-      param-id: au-02_odp.01
-    - constraints:
-      - description: organization-defined subset of the auditable events defined in AU-2a to be audited continually for each identified event.
-      param-id: au-02_odp.02
-    - constraints:
-      - description: organization-defined subset of the auditable events defined in AU-2a to be audited continually for each identified event.
-      param-id: au-02_odp.03
-    - constraints:
-      - description: annually and whenever there is a change in the threat environment
-      param-id: au-02_odp.04
-    - constraints:
-      - description: "session, connection, transaction, or activity duration; for client-server transactions, the number of bytes received and bytes sent; additional informational messages to diagnose or identify the event; characteristics that describe or identify the object or resource being acted upon; individual identities of group account users; full-text of privileged commands"
-      param-id: au-03.01_odp
-    - constraints:
-      - description: overwrite oldest record
-      param-id: au-05_odp.03
-    - constraints:
-      - description: at least weekly
-      param-id: au-06_odp.01
-    - constraints:
-      - description: one second granularity of time measurement
-      param-id: au-08_odp
-    - constraints:
-      - description: a time period in compliance with M-21-31
-      param-id: au-11_odp
-    - constraints:
-      - description: all information system and network components where audit capability is deployed/available
-      param-id: au-12_odp.01
-    - constraints:
-      - description: at least every 3 years
-      param-id: ca-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: ca-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: ca-01_odp.08
-    - constraints:
-      - description: at least annually
-      param-id: ca-02_odp.01
-    - constraints:
-      - description: individuals or roles to include FedRAMP PMO
-      param-id: ca-02_odp.02
-    - constraints:
-      - description: any FedRAMP Accredited 3PAO
-      param-id: ca-02.03_odp.01
-    - constraints:
-      - description: the conditions of the JAB/AO in the FedRAMP Repository
-      param-id: ca-02.03_odp.03
-    - constraints:
-      - description: at least annually and on input from JAB/AO
-      param-id: ca-03_odp.03
-    - constraints:
-      - description: at least monthly
-      param-id: ca-05_odp
-    - constraints:
-      - description: in accordance with OMB A-130 requirements or when a significant change occurs
-      param-id: ca-06_odp
-    - constraints:
-      - description: to include JAB/AO
-      param-id: ca-07_odp.04
-    - constraints:
-      - description: to include JAB/AO
-      param-id: ca-07_odp.06
-    - constraints:
-      - description: at least annually
-      param-id: ca-08_odp.01
-    - constraints:
-      - description: at least annually
-      param-id: ca-09_odp.03
-    - constraints:
-      - description: at least every 3 years
-      param-id: cm-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: cm-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: cm-01_odp.08
-    - constraints:
-      - description: at least annually and when a significant change occurs
-      param-id: cm-02_odp.01
-    - constraints:
-      - description: to include when directed by the JAB
-      param-id: cm-02_odp.02
-    - constraints:
-      - description: Configuration control board (CCB) or similar (as defined in CM-3)
-      param-id: cm-03.04_odp.03
-    - constraints:
-      - description: at least quarterly
-      param-id: cm-05.05_odp.01
-    - constraints:
-      - description: at least quarterly
-      param-id: cm-05.05_odp.02
-    - constraints:
-      - description: at least annually
-      param-id: cm-07.01_odp.01
-    - constraints:
-      - description: at least quarterly or when there is a change
-      param-id: cm-07.05_odp.02
-    - constraints:
-      - description: at least monthly
-      param-id: cm-08_odp.02
-    - constraints:
-      - description: automated mechanisms with a maximum five-minute delay in detection
-      param-id: cm-08.03_odp.01
-    - constraints:
-      - description: automated mechanisms with a maximum five-minute delay in detection
-      param-id: cm-08.03_odp.02
-    - constraints:
-      - description: automated mechanisms with a maximum five-minute delay in detection
-      param-id: cm-08.03_odp.03
-    - constraints:
-      - description: continuously
-      param-id: cm-08.03_odp.04
-    - constraints:
-      - description: Continuously (via CM-7 (5))
-      param-id: cm-11_odp.03
-    - constraints:
-      - description: Federal data and system data that must be protected at the High or Moderate impact levels
-      param-id: cm-12.01_odp.01
-    - constraints:
-      - description: at least every 3 years
-      param-id: cp-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: cp-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: cp-01_odp.08
-    - constraints:
-      - description: at least annually
-      param-id: cp-02_odp.05
-    - constraints:
-      - description: all
-      param-id: cp-02.03_odp.01
-    - constraints:
-      - description: time period defined in service provider and organization SLA
-      param-id: cp-02.03_odp.02
-    - constraints:
-      - description: \*See Additional Requirements
-      param-id: cp-03_odp.01
-    - constraints:
-      - description: at least annually
-      param-id: cp-03_odp.02
-    - constraints:
-      - description: at least annually
-      param-id: cp-03_odp.03
-    - constraints:
-      - description: at least annually
-      param-id: cp-04_odp.01
-    - constraints:
-      - description: functional exercises
-      param-id: cp-04_odp.02
-    - constraints:
-      - description: functional exercises
-      param-id: cp-04_odp.03
-    - constraints:
-      - description: daily incremental; weekly full
-      param-id: cp-09_odp.02
-    - constraints:
-      - description: daily incremental; weekly full
-      param-id: cp-09_odp.03
-    - constraints:
-      - description: daily incremental; weekly full
-      param-id: cp-09_odp.04
-    - constraints:
-      - description: at least annually
-      param-id: cp-09.01_odp.01
-    - constraints:
-      - description: at least annually
-      param-id: cp-09.01_odp.02
-    - constraints:
-      - description: all backup files
-      param-id: cp-09.08_odp
-    - constraints:
-      - description: at least every 3 years
-      param-id: ia-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: ia-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: ia-01_odp.08
-    - constraints:
-      - description: "local, network and remote"
-      param-id: ia-02.06_odp.01
-    - constraints:
-      - description: privileged accounts; non-privileged accounts
-      param-id: ia-02.06_odp.02
-    - constraints:
-      - description: FIPS-validated or NSA-approved cryptography
-      param-id: ia-02.06_odp.03
-    - constraints:
-      - description: privileged accounts; non-privileged accounts
-      param-id: ia-02.08_odp
-    - constraints:
-      - description: "at a minimum, the ISSO (or similar role within the organization)"
-      param-id: ia-04_odp.01
-    - constraints:
-      - description: at least two (2) years
-      param-id: ia-04_odp.02
-    - constraints:
-      - description: contractors; foreign nationals
-      param-id: ia-04.04_odp
-    - constraints:
-      - description: at least every 3 years
-      param-id: ir-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: ir-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: ir-01_odp.08
-    - constraints:
-      - description: "ten (10) days for privileged users, thirty (30) days for Incident Response roles"
-      param-id: ir-02_odp.01
-    - constraints:
-      - description: at least annually
-      param-id: ir-02_odp.02
-    - constraints:
-      - description: at least annually
-      param-id: ir-02_odp.03
-    - constraints:
-      - description: "functional, at least annually"
-      param-id: ir-03_odp.01
-    - constraints:
-      - description: US-CERT incident reporting timelines as specified in NIST Special Publication 800-61 (as amended)
-      param-id: ir-06_odp.01
-    - constraints:
-      - description: at least annually
-      param-id: ir-08_odp.02
-    - constraints:
-      - description: see additional FedRAMP Requirements and Guidance
-      param-id: ir-08_odp.04
-    - constraints:
-      - description: see additional FedRAMP Requirements and Guidance
-      param-id: ir-08_odp.05
-    - constraints:
-      - description: see additional FedRAMP Requirements and Guidance
-      param-id: ir-08_odp.06
-    - constraints:
-      - description: see additional FedRAMP Requirements and Guidance
-      param-id: ir-08_odp.07
-    - constraints:
-      - description: at least annually
-      param-id: ir-09.02_odp
-    - constraints:
-      - description: at least every 3 years
-      param-id: ma-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: ma-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: ma-01_odp.08
-    - constraints:
-      - description: at least annually
-      param-id: ma-03_odp
-    - constraints:
-      - description: the information owner
-      param-id: ma-03.03_odp
-    - constraints:
-      - description: a timeframe to support advertised uptime and availability
-      param-id: ma-06_odp.02
-    - constraints:
-      - description: at least every 3 years
-      param-id: mp-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: mp-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: mp-01_odp.08
-    - constraints:
-      - description: all types of digital and/or non-digital media containing sensitive information
-      param-id: mp-02_odp.01
-    - constraints:
-      - description: all types of digital and/or non-digital media containing sensitive information
-      param-id: mp-02_odp.03
-    - constraints:
-      - description: no removable media types
-      param-id: mp-03_odp.01
-    - constraints:
-      - description: organization-defined security safeguards not applicable
-      param-id: mp-03_odp.02
-    - constraints:
-      - description: all types of digital and non-digital media with sensitive information
-      param-id: mp-04_odp.01
-    - constraints:
-      - description: all types of digital and non-digital media with sensitive information
-      param-id: mp-04_odp.02
-    - constraints:
-      - description: all types of digital and non-digital media with sensitive information
-      param-id: mp-04_odp.03
-    - constraints:
-      - description: all types of digital and non-digital media with sensitive information
-      param-id: mp-04_odp.04
-    - constraints:
-      - description: see additional FedRAMP requirements and guidance
-      param-id: mp-04_odp.05
-    - constraints:
-      - description: see additional FedRAMP requirements and guidance
-      param-id: mp-04_odp.06
-    - constraints:
-      - description: all media with sensitive information
-      param-id: mp-05_odp.01
-    - constraints:
-      - description: "prior to leaving secure/controlled environment: for digital media, encryption in compliance with Federal requirements and utilizes FIPS validated or NSA approved cryptography (see SC-13.); for non-digital media, secured in locked container"
-      param-id: mp-05_odp.02
-    - constraints:
-      - description: "prior to leaving secure/controlled environment: for digital media, encryption in compliance with Federal requirements and utilizes FIPS validated or NSA approved cryptography (see SC-13.); for non-digital media, secured in locked container"
-      param-id: mp-05_odp.03
-    - constraints:
-      - description: "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
-      param-id: mp-06_odp.01
-    - constraints:
-      - description: "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
-      param-id: mp-06_odp.02
-    - constraints:
-      - description: "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
-      param-id: mp-06_odp.03
-    - constraints:
-      - description: at least every 3 years
-      param-id: pe-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: pe-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: pe-01_odp.08
-    - constraints:
-      - description: at least annually
-      param-id: pe-02_odp
-    - constraints:
-      - description: CSP defined physical access control systems/devices AND guards
-      param-id: pe-03_odp.02
-    - constraints:
-      - description: in all circumstances within restricted access area where the information system resides
-      param-id: pe-03_odp.06
-    - constraints:
-      - description: at least annually
-      param-id: pe-03_odp.08
-    - constraints:
-      - description: at least annually or earlier as required by a security relevant event.
-      param-id: pe-03_odp.09
-    - constraints:
-      - description: at least annually or earlier as required by a security relevant event.
-      param-id: pe-03_odp.10
-    - constraints:
-      - description: at least monthly
-      param-id: pe-06_odp.01
-    - constraints:
-      - description: for a minimum of one (1) year
-      param-id: pe-08_odp.01
-    - constraints:
-      - description: at least monthly
-      param-id: pe-08_odp.02
-    - constraints:
-      - description: near more than one egress point of the IT area and ensures it is labeled and protected by a cover to prevent accidental shut-off
-      param-id: pe-10_odp.02
-    - constraints:
-      - description: service provider building maintenance/physical security personnel
-      param-id: pe-13.01_odp.01
-    - constraints:
-      - description: service provider emergency responders with incident response responsibilities
-      param-id: pe-13.01_odp.02
-    - constraints:
-      - description: "consistent with American Society of Heating, Refrigerating and Air-conditioning Engineers (ASHRAE) document entitled Thermal Guidelines for Data Processing Environments"
-      param-id: pe-14_odp.01
-    - constraints:
-      - description: continuously
-      param-id: pe-14_odp.04
-    - constraints:
-      - description: all information system components
-      param-id: pe-16_odp.01
-    - constraints:
-      - description: all information system components
-      param-id: pe-16_odp.02
-    - constraints:
-      - description: at least every 3 years
-      param-id: pl-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: pl-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: pl-01_odp.08
-    - constraints:
-      - description: to include chief privacy and ISSO and/or similar role or designees
-      param-id: pl-02_odp.01
-    - constraints:
-      - description: to include chief privacy and ISSO and/or similar role
-      param-id: pl-02_odp.02
-    - constraints:
-      - description: at least annually
-      param-id: pl-02_odp.03
-    - constraints:
-      - description: at least every 3 years
-      param-id: pl-04_odp.01
-    - constraints:
-      - description: at least annually and when the rules are revised or changed
-      param-id: pl-04_odp.02
-    - constraints:
-      - description: at least annually and when a significant change occurs
-      param-id: pl-08_odp
-    - constraints:
-      - description: at least every 3 years
-      param-id: ps-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: ps-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: ps-01_odp.08
-    - constraints:
-      - description: at least every three years
-      param-id: ps-02_odp
-    - constraints:
-      - description: |-
-          For national security clearances; a reinvestigation is required during the fifth (5th) year for top secret security clearance, the tenth (10th) year for secret security clearance, and fifteenth (15th) year for confidential security clearance.
-
-          For moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the fifth (5th) year. There is no reinvestigation for other moderate risk positions or any low risk positions
-      param-id: ps-03_odp.01
-    - constraints:
-      - description: |-
-          for national security clearances; a reinvestigation is required during the fifth (5th) year for top secret security clearance, the tenth (10th) year for secret security clearance, and fifteenth (15th) year for confidential security clearance.
-
-          For moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the fifth (5th) year. There is no reinvestigation for other moderate risk positions or any low risk positions
-      param-id: ps-03_odp.02
-    - constraints:
-      - description: personnel screening criteria - as required by specific information
-      param-id: ps-03.03_odp
-    - constraints:
-      - description: four (4) hours
-      param-id: ps-04_odp.01
-    - constraints:
-      - description: twenty-four (24) hours
-      param-id: ps-05_odp.02
-    - constraints:
-      - description: including access control personnel responsible for the system
-      param-id: ps-05_odp.03
-    - constraints:
-      - description: twenty-four (24) hours
-      param-id: ps-05_odp.04
-    - constraints:
-      - description: at least annually
-      param-id: ps-06_odp.01
-    - constraints:
-      - description: at least annually and any time there is a change to the user's level of access
-      param-id: ps-06_odp.02
-    - constraints:
-      - description: "including access control personnel responsible for the system and/or facilities, as appropriate"
-      param-id: ps-07_odp.01
-    - constraints:
-      - description: within twenty-four (24) hours
-      param-id: ps-07_odp.02
-    - constraints:
-      - description: to include the ISSO and/or similar role within the organization
-      param-id: ps-08_odp.01
-    - constraints:
-      - description: 24 hours
-      param-id: ps-08_odp.02
-    - constraints:
-      - description: at least every 3 years
-      param-id: ra-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: ra-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: ra-01_odp.08
-    - constraints:
-      - description: security assessment report
-      param-id: ra-03_odp.01
-    - constraints:
-      - description: at least every three (3) years and when a significant change occurs
-      param-id: ra-03_odp.03
-    - constraints:
-      - description: at least every three (3) years
-      param-id: ra-03_odp.05
-    - constraints:
-      - description: monthly operating system/infrastructure; monthly web applications (including APIs) and databases
-      param-id: ra-05_odp.01
-    - constraints:
-      - description: monthly operating system/infrastructure; monthly web applications (including APIs) and databases
-      param-id: ra-05_odp.02
-    - constraints:
-      - description: high-risk vulnerabilities mitigated within thirty (30) days from date of discovery; moderate-risk vulnerabilities mitigated within ninety (90) days from date of discovery; low risk vulnerabilities mitigated within one hundred and eighty (180) days from date of discovery
-      param-id: ra-05_odp.03
-    - constraints:
-      - description: within 24 hours prior to running scans
-      param-id: ra-05.02_odp.01
-    - constraints:
-      - description: all components that support authentication
-      param-id: ra-05.05_odp.01
-    - constraints:
-      - description: all scans
-      param-id: ra-05.05_odp.02
-    - constraints:
-      - description: at least every 3 years
-      param-id: sa-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: sa-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: sa-01_odp.08
-    - constraints:
-      - description: at a minimum to include security-relevant external system interfaces; high-level design; low-level design; source code or network and data flow diagram;
-      param-id: sa-04.02_odp.01
-    - constraints:
-      - description: "at a minimum, the ISSO (or similar role within the organization)"
-      param-id: sa-05_odp.02
-    - constraints:
-      - description: Appropriate FedRAMP Security Controls Baseline (s) if Federal information is processed or stored within the external system
-      param-id: sa-09_odp.01
-    - constraints:
-      - description: Federal/FedRAMP Continuous Monitoring requirements must be met for external systems where Federal information is processed or stored
-      param-id: sa-09_odp.02
-    - constraints:
-      - description: all external systems where Federal information is processed or stored
-      param-id: sa-09.02_odp
-    - constraints:
-      - description: "information processing, information or data, AND system services"
-      param-id: sa-09.05_odp.01
-    - constraints:
-      - description: "development, implementation, AND operation"
-      param-id: sa-10_odp.01
-    - constraints:
-      - description: frequency at least annually
-      param-id: sa-15_odp.01
-    - constraints:
-      - description: FedRAMP Security Authorization requirements
-      param-id: sa-15_odp.02
-    - constraints:
-      - description: at least every 3 years
-      param-id: sc-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: sc-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: sc-01_odp.08
-    - constraints:
-      - description: Protect against
-      param-id: sc-05_odp.02
-    - constraints:
-      - description: "at a minimum: ICMP (ping) flood, SYN flood, slowloris, buffer overflow attack, and volume attack"
-      param-id: sc-05_odp.01
-    - constraints:
-      - description: at least every 180 days or whenever there is a change in the threat environment that warrants a review of the exceptions
-      param-id: sc-07.04_odp
-    - constraints:
-      - description: any systems
-      param-id: sc-07.05_odp.01
-    - constraints:
-      - description: any network outside of organizational control and any network outside the authorization boundary
-      param-id: sc-07.08_odp.02
-    - constraints:
-      - description: "Host Intrusion Prevention System (HIPS), Host Intrusion Detection System (HIDS), or minimally a host-based firewall"
-      param-id: sc-07.12_odp.01
-    - constraints:
-      - description: confidentiality AND integrity
-      param-id: sc-08_odp
-    - constraints:
-      - description: prevent unauthorized disclosure of information AND detect changes to information
-      param-id: sc-08.01_odp
-    - constraints:
-      - description: no longer than ten (10) minutes for privileged sessions and no longer than fifteen (15) minutes for user sessions
-      param-id: sc-10_odp
-    - constraints:
-      - description: In accordance with Federal requirements
-      param-id: sc-12_odp
-    - constraints:
-      - description: FIPS-validated or NSA-approved cryptography
-      param-id: sc-13_odp.02
-    - constraints:
-      - description: no exceptions for computing devices
-      param-id: sc-15_odp
-    - constraints:
-      - description: confidentiality AND integrity
-      param-id: sc-28_odp.01
-    - constraints:
-      - description: all information system components storing Federal data or system data that must be protected at the High or Moderate impact levels
-      param-id: sc-28.01_odp.02
-    - constraints:
-      - description: At least hourly
-      param-id: sc-45.01_odp.01
-    - constraints:
-      - description: http://tf.nist.gov/tf-cgi/servers.cgi
-      param-id: sc-45.01_odp.02
-    - constraints:
-      - description: any difference
-      param-id: sc-45.01_odp.03
-    - constraints:
-      - description: at least every 3 years
-      param-id: si-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: si-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: si-01_odp.08
-    - constraints:
-      - description: within thirty (30) days of release of updates
-      param-id: si-02_odp
-    - constraints:
-      - description: at least monthly
-      param-id: si-02.02_odp.02
-    - constraints:
-      - description: signature based and non-signature based
-      param-id: si-03_odp.01
-    - constraints:
-      - description: at least weekly
-      param-id: si-03_odp.02
-    - constraints:
-      - description: to include endpoints and network entry and exit points
-      param-id: si-03_odp.03
-    - constraints:
-      - description: to include blocking and quarantining malicious code
-      param-id: si-03_odp.04
-    - constraints:
-      - description: administrator or defined security personnel near-realtime
-      param-id: si-03_odp.05
-    - constraints:
-      - description: continuously
-      param-id: si-04.04_odp.01
-    - constraints:
-      - description: continuously
-      param-id: si-04.04_odp.03
-    - constraints:
-      - description: to include US-CERT and Cybersecurity and Infrastructure Security Agency (CISA) Directives
-      param-id: si-05_odp.01
-    - constraints:
-      - description: to include system security personnel and administrators with configuration/patch-management responsibilities
-      param-id: si-05_odp.02
-    - constraints:
-      - description: to include upon system startup and/or restart
-      param-id: si-06_odp.04
-    - constraints:
-      - description: at least monthly
-      param-id: si-06_odp.05
-    - constraints:
-      - description: to include system administrators and security personnel
-      param-id: si-06_odp.06
-    - constraints:
-      - description: selection to include security relevant event
-      param-id: si-07.01_odp.03
-    - constraints:
-      - description: selection to include security relevant event
-      param-id: si-07.01_odp.07
-    - constraints:
-      - description: selection to include security relevant event
-      param-id: si-07.01_odp.11
-    - constraints:
-      - description: at least monthly
-      param-id: si-07.01_odp.04
-    - constraints:
-      - description: at least monthly
-      param-id: si-07.01_odp.08
-    - constraints:
-      - description: at least monthly
-      param-id: si-07.01_odp.12
-    - constraints:
-      - description: to include the ISSO and/or similar role within the organization
-      param-id: si-11_odp
-    - constraints:
-      - description: to include chief privacy and ISSO and/or similar role or designees
-      param-id: sr-01_odp.01
-    - constraints:
-      - description: to include chief privacy and ISSO and/or similar role or designees
-      param-id: sr-01_odp.02
-    - constraints:
-      - description: at least every 3 years
-      param-id: sr-01_odp.05
-    - constraints:
-      - description: at least annually
-      param-id: sr-01_odp.07
-    - constraints:
-      - description: significant changes
-      param-id: sr-01_odp.08
-    - constraints:
-      - description: at least annually
-      param-id: sr-02_odp.02
-    - constraints:
-      - description: at least annually
-      param-id: sr-06_odp
-    - constraints:
-      - description: notification of supply chain compromises and results of assessment or audits
-      param-id: sr-08_odp.01
-    - constraints:
-      - description: all
-      param-id: sr-11.02_odp
-    alters:
-    - removes:
-      - by-id: cp-2_obj.g
-      adds:
-      - parts:
-        - props:
-          - value: You must fill in this response point.
-            ns: https://fedramp.gov/ns/oscal
-            name: response-point
-          - class: fedramp
-            value: EXAMINE
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          - class: fedramp
-            value: INTERVIEW
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          - class: sp800-53a
-            value: CP-02g.
-            name: label
-          parts:
-          - props:
-            - class: sp800-53a
-              value: "CP-02g.[01]"
-              name: label
-            prose: lessons learned from contingency plan testing or actual contingency activities are incorporated into contingency testing;
-            name: assessment-objective
-            links:
-            - href: '#cp-2_smt.g'
-              rel: assessment-for
-            id: cp-2_obj.g-1
-          - props:
-            - class: sp800-53a
-              value: "CP-02g.[02]"
-              name: label
-            prose: lessons learned from contingency plan training or actual contingency activities are incorporated into contingency testing and training;
-            name: assessment-objective
-            links:
-            - href: '#cp-2_smt.g'
-              rel: assessment-for
-            id: cp-2_obj.g-2
-          name: assessment-objective
-          links:
-          - href: '#cp-2_smt.g'
-            rel: assessment-for
-          id: cp-2_obj.g
-        position: after
-        by-id: cp-2_obj.f
-      control-id: cp-2
-    - removes:
-      - by-id: ia-5_fr_smt.1
-      adds:
-      - parts:
-        - props:
-          - value: 'Requirement:'
-            name: label
-          ns: https://fedramp.gov/ns/oscal
-          prose: "Authenticators must be compliant with NIST SP 800-63-3 Digital Identity Guidelines IAL, AAL, FAL level 2. Link https://pages.nist.gov/800-63-3"
-          name: item
-          id: ia-5_fr_smt.1
-        by-id: ia-5_fr
-      control-id: ia-5
-    - removes:
-      - by-id: ia-11_fr_gdn.1
-      adds:
-      - parts:
-        - props:
-          - value: 'Guidance:'
-            name: label
-          ns: https://fedramp.gov/ns/oscal
-          prose: |-
-            The fixed time period cannot exceed the limits set in SP 800-63. At this writing they are:
-
-            - AAL2 (moderate baseline)
-              - 12 hours or
-              - 30 minutes of inactivity
-          name: guidance
-          id: ia-11_fr_gdn.1
-        by-id: ia-11_fr
-      control-id: ia-11
-    - adds:
-      - parts:
-        - parts:
-          - props:
-            - value: 'Requirement:'
-              name: label
-            ns: https://fedramp.gov/ns/oscal
-            prose: Only MA-5 (1) (a) (1) is required by FedRAMP Moderate Baseline
-            name: item
-            id: ma-5.1_fr_smt.1
-          ns: https://fedramp.gov/ns/oscal
-          name: item
-          title: MA-5 (1) Additional FedRAMP Requirements and Guidance
-          id: ma-5.1_fr
-        by-id: ma-5.1_smt
-      control-id: ma-5.1
-    - removes:
-      - by-id: pe-3_obj.e
-      adds:
-      - parts:
-        - props:
-          - class: sp800-53a
-            value: PE-03e.
-            name: label
-          parts:
-          - props:
-            - class: sp800-53a
-              value: "PE-03e.[01]"
-              name: label
-            - value: You must fill in this response point.
-              ns: https://fedramp.gov/ns/oscal
-              name: response-point
-            - class: fedramp
-              value: TEST
-              ns: https://fedramp.gov/ns/oscal
-              name: method
-            prose: keys are secured;
-            name: assessment-objective
-            links:
-            - href: '#pe-3_smt.e'
-              rel: assessment-for
-            id: pe-3_obj.e-1
-          - props:
-            - class: sp800-53a
-              value: "PE-03e.[02]"
-              name: label
-            - value: You must fill in this response point.
-              ns: https://fedramp.gov/ns/oscal
-              name: response-point
-            - class: fedramp
-              value: TEST
-              ns: https://fedramp.gov/ns/oscal
-              name: method
-            prose: combinations are secured;
-            name: assessment-objective
-            links:
-            - href: '#pe-3_smt.e'
-              rel: assessment-for
-            id: pe-3_obj.e-2
-          - props:
-            - class: sp800-53a
-              value: "PE-03e.[03]"
-              name: label
-            - value: You must fill in this response point.
-              ns: https://fedramp.gov/ns/oscal
-              name: response-point
-            - class: fedramp
-              value: TEST
-              ns: https://fedramp.gov/ns/oscal
-              name: method
-            prose: other physical access devices are secured;
-            name: assessment-objective
-            links:
-            - href: '#pe-3_smt.e'
-              rel: assessment-for
-            id: pe-3_obj.e-3
-          name: assessment-objective
-          links:
-          - href: '#pe-3_smt.e'
-            rel: assessment-for
-          id: pe-3_obj.e
-        position: after
-        by-id: pe-3_obj.d
-      control-id: pe-3
-    - removes:
-      - by-id: ps-3_obj.b-1
-      - by-id: ps-3_obj.b-2
-      adds:
-      - parts:
-        - props:
-          - class: sp800-53a
-            value: "PS-03b.[01]"
-            name: label
-          - value: You must fill in this response point.
-            ns: https://fedramp.gov/ns/oscal
-            name: response-point
-          - class: fedramp
-            value: EXAMINE
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          - class: fedramp
-            value: INTERVIEW
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          prose: "individuals are rescreened in accordance with {{ insert: param, ps-03_odp.01 }};"
-          name: assessment-objective
-          links:
-          - href: '#ps-3_smt.b'
-            rel: assessment-for
-          id: ps-3_obj.b-1
-        - props:
-          - class: sp800-53a
-            value: "PS-03b.[02]"
-            name: label
-          - value: You must fill in this response point.
-            ns: https://fedramp.gov/ns/oscal
-            name: response-point
-          - class: fedramp
-            value: EXAMINE
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          - class: fedramp
-            value: INTERVIEW
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          prose: "where rescreening is so indicated, individuals are rescreened {{ insert: param, ps-03_odp.02 }}."
-          name: assessment-objective
-          links:
-          - href: '#ps-3_smt.b'
-            rel: assessment-for
-          id: ps-3_obj.b-2
-        position: starting
-        by-id: ps-3_obj.b
-      control-id: ps-3
-    - removes:
-      - by-id: sa-8_obj-6
-      - by-id: sa-8_obj-7
-      - by-id: sa-8_obj-8
-      - by-id: sa-8_obj-9
-      - by-id: sa-8_obj-10
-      adds:
-      - parts:
-        - props:
-          - value: You must fill in this response point.
-            ns: https://fedramp.gov/ns/oscal
-            name: response-point
-          - class: fedramp
-            value: EXAMINE
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          - class: fedramp
-            value: TEST
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          - class: sp800-53a
-            value: "SA-08[06]"
-            name: label
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the specification of the system and system components;"
-          name: assessment-objective
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          id: sa-8_obj-6
-        - props:
-          - value: You must fill in this response point.
-            ns: https://fedramp.gov/ns/oscal
-            name: response-point
-          - class: fedramp
-            value: EXAMINE
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          - class: fedramp
-            value: TEST
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          - class: sp800-53a
-            value: "SA-08[07]"
-            name: label
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the design of the system and system components;"
-          name: assessment-objective
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          id: sa-8_obj-7
-        - props:
-          - value: You must fill in this response point.
-            ns: https://fedramp.gov/ns/oscal
-            name: response-point
-          - class: fedramp
-            value: EXAMINE
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          - class: fedramp
-            value: TEST
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          - class: sp800-53a
-            value: "SA-08[08]"
-            name: label
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the development of the system and system components;"
-          name: assessment-objective
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          id: sa-8_obj-8
-        - props:
-          - value: You must fill in this response point.
-            ns: https://fedramp.gov/ns/oscal
-            name: response-point
-          - class: fedramp
-            value: EXAMINE
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          - class: fedramp
-            value: TEST
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          - class: sp800-53a
-            value: "SA-08[09]"
-            name: label
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the implementation of the system and system components;"
-          name: assessment-objective
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          id: sa-8_obj-9
-        - props:
-          - value: You must fill in this response point.
-            ns: https://fedramp.gov/ns/oscal
-            name: response-point
-          - class: fedramp
-            value: EXAMINE
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          - class: fedramp
-            value: TEST
-            ns: https://fedramp.gov/ns/oscal
-            name: method
-          - class: sp800-53a
-            value: "SA-08[10]"
-            name: label
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the modification of the system and system components."
-          name: assessment-objective
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          id: sa-8_obj-10
-        position: after
-        by-id: sa-8_obj-5
-      control-id: sa-8
-    - removes:
-      - by-id: sc-20_fr_smt.2
-      control-id: sc-20
+    href: '#051a77c1-b61d-4995-8275-dacfe688d510'
+  uuid: b3d53132-0160-417a-ae1b-c9da8385d698
+  back-matter:
+    resources:
+    - title: FedRAMP Modified NIST Special Publication (SP) 800-53 revision 5
+      props:
+      - name: version
+        value: 5.1.1
+      uuid: 051a77c1-b61d-4995-8275-dacfe688d510
+      rlinks:
+      - media-type: application/oscal+xml
+        href: FedRAMP_rev5_catalog_tailoring_profile.xml

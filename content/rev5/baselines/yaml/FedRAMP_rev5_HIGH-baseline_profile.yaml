@@ -941,11 +941,11 @@ profile:
   merge:
     as-is: true
   metadata:
+    version: 5.1.1+fedramp-20240111-0
+    published: 2024-06-24T00:00:00Z
     title: FedRAMP Rev 5 High Baseline
     last-modified: 2024-06-24T00:00:00Z
     oscal-version: 1.1.1
-    version: 5.1.1+fedramp-20240111-0
-    published: 2024-06-24T00:00:00Z
   imports:
   - include-controls:
     - with-ids:

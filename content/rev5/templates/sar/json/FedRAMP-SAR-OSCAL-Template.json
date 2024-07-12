@@ -1,7 +1,369 @@
 {
   "assessment-results" : {
+    "import-ap" : {
+      "remarks" : "FedRAMP prefers the path for the SAP be relative to the location of this SAR file. Absolute links will not work when FedRAMP tools import the content.\n\nIn this example, the SAR points to the SAP as a back-matter resource using a URI fragment.",
+      "href" : "#5cce2310-8fcc-49f8-8cae-8e31dc8048f1"
+    },
+    "local-definitions" : {
+      "activities" : [ {
+        "title" : "Locally Defined Activity",
+        "uuid" : "1bc8f0bb-e601-4946-a0e6-fcb934ebaa06",
+        "props" : [ {
+          "name" : "type",
+          "value" : "manual",
+          "ns" : "https://fedramp.gov/ns/oscal"
+        } ],
+        "description" : "This describes an activity that was not defined in the SAP, but was performed during the assessment. The justification must be included.",
+        "steps" : [ {
+          "uuid" : "fb039fd7-5a2b-4c0f-867c-88cce9c3778c",
+          "description" : "Describe test step #1",
+          "props" : [ {
+            "name" : "sort-id",
+            "value" : "001",
+            "ns" : "https://fedramp.gov/ns/oscal"
+          } ]
+        }, {
+          "uuid" : "fb039fd7-5a2b-4c0f-867c-88cce9c3778c",
+          "description" : "Describe test step #2",
+          "props" : [ {
+            "name" : "sort-id",
+            "value" : "002",
+            "ns" : "https://fedramp.gov/ns/oscal"
+          } ]
+        }, {
+          "uuid" : "fb039fd7-5a2b-4c0f-867c-88cce9c3778c",
+          "description" : "Describe test step #3",
+          "props" : [ {
+            "name" : "sort-id",
+            "value" : "003",
+            "ns" : "https://fedramp.gov/ns/oscal"
+          } ]
+        } ]
+      } ],
+      "objectives-and-methods" : [ {
+        "parts" : [ {
+          "title" : "SAP Inserted Objective",
+          "id" : "sap-obj",
+          "props" : [ {
+            "name" : "method-id",
+            "value" : "sap-obj-1"
+          }, {
+            "name" : "label",
+            "value" : "AC-2 SAP-1"
+          } ],
+          "name" : "assessment-objective"
+        }, {
+          "id" : "sap-obj-1",
+          "props" : [ {
+            "name" : "method",
+            "value" : "INTERVIEW"
+          } ],
+          "parts" : [ {
+            "id" : "sap-obj-1_object",
+            "prose" : "Insert assessment object description",
+            "name" : "assessment-objects"
+          } ],
+          "name" : "assessment-method"
+        } ],
+        "control-id" : "ac-2"
+      }, {
+        "parts" : [ {
+          "title" : "Assessment Objective",
+          "id" : "ac-2.a_obj.1",
+          "props" : [ {
+            "name" : "method-id",
+            "value" : "ac-2.a_obj.1-1"
+          } ],
+          "prose" : "Determine if the organization:\n\n- defines information system account types to be identified and selected to support organizational missions/business functions",
+          "name" : "assessment-objective"
+        }, {
+          "id" : "ac-2.a_obj.1-1",
+          "props" : [ {
+            "name" : "method",
+            "value" : "EXAMINE"
+          } ],
+          "parts" : [ {
+            "id" : "ac-2.f_obj.1-1_object",
+            "prose" : "Access control policy; procedures addressing account management; security plan; information system design documentation; information system configuration settings and associated documentation; list of active system accounts along with the name of the individual associated with each account; list of conditions for group and role membership; notifications or records of recently transferred, separated, or terminated employees; list of recently disabled information system accounts along with the name of the individual associated with each account; access authorization records; account management compliance reviews; information system monitoring records; information system audit records; other relevant documents or records",
+            "name" : "assessment-objects"
+          } ],
+          "name" : "assessment-method"
+        } ],
+        "control-id" : "ac-2"
+      }, {
+        "parts" : [ {
+          "title" : "Assessment Objective",
+          "id" : "ac-2.a_obj.2",
+          "props" : [ {
+            "name" : "method-id",
+            "value" : "ac-2.a_obj.2-1"
+          } ],
+          "prose" : "Determine if the organization:\n\n- identifies and selects organization-defined information system account types to support organizational missions/business functions",
+          "name" : "assessment-objective"
+        }, {
+          "id" : "ac-2.a_obj.2-1",
+          "props" : [ {
+            "name" : "method",
+            "value" : "EXAMINE"
+          } ],
+          "parts" : [ {
+            "id" : "ac-2.a_obj.2-1_object",
+            "prose" : "Access control policy; procedures addressing account management; security plan; information system design documentation; information system configuration settings and associated documentation; list of active system accounts along with the name of the individual associated with each account; list of conditions for group and role membership; notifications or records of recently transferred, separated, or terminated employees; list of recently disabled information system accounts along with the name of the individual associated with each account; access authorization records; account management compliance reviews; information system monitoring records; information system audit records; other relevant documents or records",
+            "name" : "assessment-objects"
+          } ],
+          "name" : "assessment-method"
+        } ],
+        "control-id" : "ac-2"
+      }, {
+        "parts" : [ {
+          "title" : "Assessment Objective",
+          "id" : "ac-2.a_obj.2",
+          "props" : [ {
+            "name" : "method-id",
+            "value" : "ac-2.a_obj.2-2"
+          } ],
+          "prose" : "Determine if the organization:\n\n- identifies and selects organization-defined information system account types to support organizational missions/business functions",
+          "name" : "assessment-objective"
+        }, {
+          "id" : "ac-2.a_obj.2-2",
+          "props" : [ {
+            "name" : "method",
+            "value" : "INTERVIEW"
+          } ],
+          "parts" : [ {
+            "id" : "ac-2.a_obj.2-1_object",
+            "prose" : "Organizational personnel with account management responsibilities; system/network administrators; organizational personnel with information security responsibilities",
+            "name" : "assessment-objects"
+          } ],
+          "name" : "assessment-method"
+        } ],
+        "control-id" : "ac-2"
+      } ]
+    },
+    "back-matter" : {
+      "resources" : [ {
+        "title" : "Resolution Resource",
+        "uuid" : "ace2963d-ecb4-4be5-bdd0-1f6fd7610f41",
+        "remarks" : "This \"resolution resource\" is used by FedRAMP as a local, authoritative indicator of what version SAR (rev 4 or rev 5) this OSCAL document is for.",
+        "props" : [ {
+          "name" : "dataset",
+          "class" : "collection",
+          "value" : "Special Publication"
+        }, {
+          "name" : "dataset",
+          "class" : "name",
+          "value" : "800-53"
+        }, {
+          "name" : "dataset",
+          "class" : "version",
+          "value" : "5.0.2"
+        }, {
+          "name" : "dataset",
+          "class" : "organization",
+          "value" : "gov.nist.csrc"
+        } ]
+      }, {
+        "title" : "\\[System Name\\] \\[FIPS-199 Level\\] SAP",
+        "rlinks" : [ {
+          "href" : "../../sap/xml/FedRAMP-SAP-OSCAL-Template.xml",
+          "media-type" : "text/xml"
+        } ],
+        "uuid" : "5cce2310-8fcc-49f8-8cae-8e31dc8048f1",
+        "props" : [ {
+          "name" : "type",
+          "value" : "security-assessment-plan",
+          "ns" : "https://fedramp.gov/ns/oscal"
+        }, {
+          "name" : "published",
+          "value" : "2023-06-30T00:00:00Z"
+        }, {
+          "name" : "version",
+          "value" : "SAP Version"
+        } ]
+      }, {
+        "title" : "FedRAMP Applicable Laws and Regulations",
+        "rlinks" : [ {
+          "href" : "https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx"
+        } ],
+        "uuid" : "985475ee-d4d6-4581-8fdf-d84d3d8caa48",
+        "base64" : {
+          "filename" : "SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx",
+          "value" : "00000000",
+          "media-type" : "application/vnd.ms-excel"
+        },
+        "remarks" : "Must be present in a FedRAMP SAR.",
+        "props" : [ {
+          "name" : "type",
+          "value" : "fedramp-citations",
+          "ns" : "https://fedramp.gov/ns/oscal"
+        } ]
+      }, {
+        "title" : "FedRAMP Master Acronym and Glossary",
+        "rlinks" : [ {
+          "href" : "https://www.fedramp.gov/assets/resources/documents/FedRAMP_Master_Acronym_and_Glossary.pdf"
+        } ],
+        "uuid" : "1a23a771-d481-4594-9a1a-71d584fa4123",
+        "base64" : {
+          "filename" : "FedRAMP_Master_Acronym_and_Glossary.pdf",
+          "value" : "00000000",
+          "media-type" : "application/pdf"
+        },
+        "remarks" : "Must be present in a FedRAMP SAR.",
+        "props" : [ {
+          "name" : "type",
+          "value" : "fedramp-acronyms",
+          "ns" : "https://fedramp.gov/ns/oscal"
+        } ]
+      }, {
+        "rlinks" : [ {
+          "href" : "./signed-sar.pdf",
+          "media-type" : "application/pdf"
+        } ],
+        "uuid" : "3a9ace38-c36a-4478-bd2a-f00961889214",
+        "remarks" : "FedRAMP is formulating guidelines for handling digital/electronic signatures in OSCAL, and welcome feedback on solutions.\n\nFor now, FedRAMP recommends one of the following:\n\n- Render the OSCAL SAR content as a PDF that is digitally signed and attached.\n- Render the OSCAL SAR content as printed pages that are physically signed, scanned, and attached.\n\nIf your organization prefers another approach, please seek prior approval from the FedRAMP PMO.",
+        "props" : [ {
+          "name" : "type",
+          "value" : "signature",
+          "ns" : "https://fedramp.gov/ns/oscal"
+        } ],
+        "description" : "Signed SAR"
+      }, {
+        "title" : "\\[EXAMPLE\\]Interview Notes",
+        "rlinks" : [ {
+          "href" : "./evidence/interview-notes.docx",
+          "media-type" : "application/msword"
+        } ],
+        "uuid" : "65fb91b1-f7dc-46bf-8b99-bd98f1a5293d",
+        "base64" : {
+          "filename" : "interview-notes.docx",
+          "value" : "00000000",
+          "media-type" : "application/msword"
+        },
+        "remarks" : "A tool could use either an rlink or base64 field.\n\nIf both are present, FedRAMP tools will give preference to the base64 content.\n\nThere may be more than one rlink.\n\nIf there is no base64 field, at lest one of the rlink fields must include a relative path.",
+        "props" : [ {
+          "name" : "type",
+          "value" : "evidence"
+        } ]
+      }, {
+        "title" : "\\[EXAMPLE\\]AC Policy",
+        "rlinks" : [ {
+          "href" : "./artifacts/AC_Policy.pdf",
+          "media-type" : "application/pdf"
+        } ],
+        "uuid" : "f32b7ab1-baf1-451a-b3a1-1dfdadbe8dc7",
+        "base64" : {
+          "filename" : "AC_Policy.pdf",
+          "value" : "00000000",
+          "media-type" : "application/pdf"
+        },
+        "remarks" : "A tool could use either an rlink or base64 field.\n\nIf both are present, FedRAMP tools will give preference to the base64 content.\n\nThere may be more than one rlink.\n\nIf there is no base64 field, at lest one of the rlink fields must include a relative path.",
+        "props" : [ {
+          "name" : "type",
+          "value" : "artifact"
+        }, {
+          "name" : "type",
+          "value" : "policy"
+        }, {
+          "name" : "version",
+          "value" : "2.1"
+        }, {
+          "name" : "published",
+          "value" : "2023-06-01T00:00:00Z"
+        } ]
+      }, {
+        "title" : "\\[EXAMPLE\\]Screen Shot",
+        "rlinks" : [ {
+          "href" : "./evidence/screen-shot.jpg",
+          "media-type" : "image/jpeg"
+        } ],
+        "uuid" : "53af7193-b25d-4ed2-a82f-5954d2d0df61",
+        "base64" : {
+          "filename" : "screen-shot.jpg",
+          "value" : "00000000",
+          "media-type" : "image/jepg"
+        },
+        "remarks" : "A tool could use either an rlink or base64 field.\n\nIf both are present, FedRAMP tools will give preference to the base64 content.\n\nThere may be more than one rlink.\n\nIf there is no base64 field, at lest one of the rlink fields must include a relative path.",
+        "props" : [ {
+          "name" : "type",
+          "value" : "evidence"
+        } ]
+      }, {
+        "title" : "\\[EXAMPLE\\]Raw Scan Results - Discovery Scan",
+        "rlinks" : [ {
+          "href" : "./scans/raw_tool_output.csv",
+          "media-type" : "text/csv"
+        } ],
+        "uuid" : "19a07333-4e87-46dc-abab-adad60e706b9",
+        "remarks" : "A SAR tool could use either an rlink or base64 field.\n\nIf both are present, FedRAMP tools will give preference to the base64 content.\n\nThere may be more than one rlink.\n\nIf there is no base64 field, at lest one of the rlink fields must include a relative path.",
+        "props" : [ {
+          "name" : "type",
+          "value" : "evidence"
+        }, {
+          "name" : "type",
+          "value" : "tool-output"
+        } ],
+        "description" : "Raw scan results exported from the scanning tool."
+      }, {
+        "title" : "\\[EXAMPLE\\]Raw Scan Results - OS and Inf Scans",
+        "rlinks" : [ {
+          "href" : "./scans/raw_tool_output.csv",
+          "media-type" : "text/csv"
+        } ],
+        "uuid" : "171b44a2-9b52-4c46-b912-54bd274b2761",
+        "remarks" : "A SAR tool could use either an rlink or base64 field.\n\nIf both are present, FedRAMP tools will give preference to the base64 content.\n\nThere may be more than one rlink.\n\nIf there is no base64 field, at lest one of the rlink fields must include a relative path.",
+        "props" : [ {
+          "name" : "type",
+          "value" : "evidence"
+        }, {
+          "name" : "type",
+          "value" : "tool-output"
+        } ],
+        "description" : "Raw scan results exported from the scanning tool."
+      }, {
+        "title" : "Penetration Test Report",
+        "rlinks" : [ {
+          "href" : "./pen_test_report.pdf",
+          "media-type" : "application/pdf"
+        } ],
+        "uuid" : "e552fb72-d662-4c01-b2d7-4dcb2086bb07",
+        "remarks" : "A SAR tool could use either an rlink or base64 field.\n\nIf both are present, FedRAMP tools will give preference to the base64 content.\n\nThere may be more than one rlink.\n\nIf there is no base64 field, at lest one of the rlink fields must include a relative path.",
+        "props" : [ {
+          "name" : "type",
+          "value" : "penetration-test-report",
+          "ns" : "https://fedramp.gov/ns/oscal"
+        }, {
+          "name" : "type",
+          "value" : "report"
+        } ]
+      }, {
+        "rlinks" : [ {
+          "href" : "./logo.png",
+          "media-type" : "image/png"
+        } ],
+        "uuid" : "91d242d0-ccf9-4ff0-996d-e204c19dac52",
+        "base64" : {
+          "value" : "00000000"
+        },
+        "props" : [ {
+          "name" : "type",
+          "value" : "logo"
+        } ],
+        "description" : "3PAO Logo"
+      }, {
+        "rlinks" : [ {
+          "href" : "https://github.com/GSA/fedramp-automation/raw/master/assets/FedRAMP_LOGO.png"
+        } ],
+        "uuid" : "031a32be-f9ef-45a0-994e-20eb58456dee",
+        "props" : [ {
+          "name" : "type",
+          "value" : "logo"
+        } ],
+        "description" : "FedRAMP Logo"
+      } ]
+    },
     "uuid" : "26a53d2c-4249-4e0c-9939-410590f3ae9e",
     "results" : [ {
+      "title" : "2023 Annual Assessment",
       "reviewed-controls" : {
         "control-selections" : [ {
           "include-all" : { },
@@ -16,165 +378,166 @@
       },
       "assessment-log" : {
         "entries" : [ {
-          "description" : "optional description here",
-          "end" : "2023-06-15T00:00:00Z",
           "title" : "Prepare Test Plan",
           "start" : "2023-06-01T00:00:00Z",
-          "uuid" : "17030aaf-7712-4228-8607-a5a97a785efa"
-        }, {
+          "uuid" : "17030aaf-7712-4228-8607-a5a97a785efa",
           "description" : "optional description here",
-          "end" : "2023-06-15T00:00:00Z",
+          "end" : "2023-06-15T00:00:00Z"
+        }, {
           "title" : "Meeting to Review Test Plan",
           "start" : "2023-06-01T00:00:00Z",
-          "uuid" : "b65e7779-bd3d-4a49-9de5-3122c290792f"
-        }, {
+          "uuid" : "b65e7779-bd3d-4a49-9de5-3122c290792f",
           "description" : "optional description here",
-          "end" : "2023-06-15T00:00:00Z",
+          "end" : "2023-06-15T00:00:00Z"
+        }, {
           "title" : "Test Plan Update",
           "start" : "2023-06-01T00:00:00Z",
-          "uuid" : "b8389553-f0f7-4ae9-9331-203608222770"
-        }, {
+          "uuid" : "b8389553-f0f7-4ae9-9331-203608222770",
           "description" : "optional description here",
-          "end" : "2023-06-15T00:00:00Z",
+          "end" : "2023-06-15T00:00:00Z"
+        }, {
           "title" : "Review CSP Documentation",
           "start" : "2023-06-01T00:00:00Z",
-          "uuid" : "e1890486-a9f0-4388-b2bc-34fb6c623686"
-        }, {
+          "uuid" : "e1890486-a9f0-4388-b2bc-34fb6c623686",
           "description" : "optional description here",
-          "end" : "2023-06-15T00:00:00Z",
+          "end" : "2023-06-15T00:00:00Z"
+        }, {
           "title" : "Conduct Interviews of CSP Staff",
           "start" : "2023-06-01T00:00:00Z",
-          "uuid" : "172d4ba2-3362-4e3b-9379-a65a50e399bf"
-        }, {
+          "uuid" : "172d4ba2-3362-4e3b-9379-a65a50e399bf",
           "description" : "optional description here",
-          "end" : "2023-06-15T00:00:00Z",
+          "end" : "2023-06-15T00:00:00Z"
+        }, {
           "title" : "Perform Assessment Testing",
           "start" : "2023-06-01T00:00:00Z",
-          "uuid" : "aa5344be-18c4-4529-8937-0f4b873b8fcd"
-        }, {
+          "uuid" : "aa5344be-18c4-4529-8937-0f4b873b8fcd",
           "description" : "optional description here",
-          "end" : "2023-06-15T00:00:00Z",
+          "end" : "2023-06-15T00:00:00Z"
+        }, {
           "title" : "Perform Penetration Testing",
           "start" : "2023-06-01T00:00:00Z",
-          "uuid" : "8937348c-5ebb-40bd-a8eb-faff99af156e"
-        }, {
+          "uuid" : "8937348c-5ebb-40bd-a8eb-faff99af156e",
           "description" : "optional description here",
-          "end" : "2023-06-15T00:00:00Z",
+          "end" : "2023-06-15T00:00:00Z"
+        }, {
           "title" : "Vulnerability Analysis and Threat Assessment",
           "start" : "2023-06-01T00:00:00Z",
-          "uuid" : "7f2a5095-5f53-461b-b12f-3d649f6d7a6c"
-        }, {
+          "uuid" : "7f2a5095-5f53-461b-b12f-3d649f6d7a6c",
           "description" : "optional description here",
-          "end" : "2023-06-15T00:00:00Z",
+          "end" : "2023-06-15T00:00:00Z"
+        }, {
           "title" : "Risk Exposure Table Development",
           "start" : "2023-06-01T00:00:00Z",
-          "uuid" : "4f90df2a-c94c-494f-9999-0695a4dbe9ca"
-        }, {
+          "uuid" : "4f90df2a-c94c-494f-9999-0695a4dbe9ca",
           "description" : "optional description here",
-          "end" : "2023-06-15T00:00:00Z",
+          "end" : "2023-06-15T00:00:00Z"
+        }, {
           "title" : "Complete Draft SAR",
           "start" : "2023-06-01T00:00:00Z",
-          "uuid" : "0378802d-1288-4305-9eaf-bec8ee1a138c"
-        }, {
+          "uuid" : "0378802d-1288-4305-9eaf-bec8ee1a138c",
           "description" : "optional description here",
-          "end" : "2023-06-15T00:00:00Z",
+          "end" : "2023-06-15T00:00:00Z"
+        }, {
           "title" : "Draft SAR Delivered to CSP",
           "start" : "2023-06-01T00:00:00Z",
-          "uuid" : "2a04884f-6b75-4133-857b-ded12e12b38c"
-        }, {
+          "uuid" : "2a04884f-6b75-4133-857b-ded12e12b38c",
           "description" : "optional description here",
-          "end" : "2023-06-15T00:00:00Z",
+          "end" : "2023-06-15T00:00:00Z"
+        }, {
           "title" : "Issue Resolution Meeting",
           "start" : "2023-06-01T00:00:00Z",
-          "uuid" : "933b1eea-6ec3-4fbf-850a-33c8f5c44225"
-        }, {
+          "uuid" : "933b1eea-6ec3-4fbf-850a-33c8f5c44225",
           "description" : "optional description here",
-          "end" : "2023-06-15T00:00:00Z",
+          "end" : "2023-06-15T00:00:00Z"
+        }, {
           "title" : "Complete Final Version of SAR",
           "start" : "2023-06-01T00:00:00Z",
-          "uuid" : "7f377a32-5012-4d76-becf-9f70d6a9f104"
-        }, {
+          "uuid" : "7f377a32-5012-4d76-becf-9f70d6a9f104",
           "description" : "optional description here",
-          "end" : "2023-06-15T00:00:00Z",
+          "end" : "2023-06-15T00:00:00Z"
+        }, {
           "title" : "Send Final Version of SAR to CSP and ISSO",
           "start" : "2023-06-01T00:00:00Z",
-          "uuid" : "45e2af99-bebf-4a2b-ad6f-b325e910aa12"
+          "uuid" : "45e2af99-bebf-4a2b-ad6f-b325e910aa12",
+          "description" : "optional description here",
+          "end" : "2023-06-15T00:00:00Z"
         } ]
       },
       "end" : "2023-03-12T00:00:00Z",
       "attestations" : [ {
         "parts" : [ {
-          "name" : "authorization-statements",
           "props" : [ {
+            "name" : "recommend-authorization",
             "value" : "yes",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "recommend-authorization"
+            "ns" : "https://fedramp.gov/ns/oscal"
           } ],
           "parts" : [ {
-            "name" : "authorization-statement",
             "props" : [ {
+              "name" : "sort-id",
               "value" : "001",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "sort-id"
+              "ns" : "https://fedramp.gov/ns/oscal"
             } ],
-            "prose" : "\\[IA Name\\] recommends this system for authorization."
+            "prose" : "\\[IA Name\\] recommends this system for authorization.",
+            "name" : "authorization-statement"
           }, {
-            "name" : "authorization-statement",
             "props" : [ {
+              "name" : "sort-id",
               "value" : "001",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "sort-id"
+              "ns" : "https://fedramp.gov/ns/oscal"
             } ],
-            "prose" : "\\[IA Name\\] does not recommend this system for authorization."
+            "prose" : "\\[IA Name\\] does not recommend this system for authorization.",
+            "name" : "authorization-statement"
           }, {
-            "name" : "authorization-statement",
             "props" : [ {
+              "name" : "sort-id",
               "value" : "001",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "sort-id"
+              "ns" : "https://fedramp.gov/ns/oscal"
             } ],
-            "prose" : "\\[IA Name\\] recommends this system for continued authorization."
+            "prose" : "\\[IA Name\\] recommends this system for continued authorization.",
+            "name" : "authorization-statement"
           }, {
-            "name" : "authorization-statement",
             "props" : [ {
+              "name" : "sort-id",
               "value" : "001",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "sort-id"
+              "ns" : "https://fedramp.gov/ns/oscal"
             } ],
-            "prose" : "\\[IA Name\\] does not recommend this system for continued authorization."
+            "prose" : "\\[IA Name\\] does not recommend this system for continued authorization.",
+            "name" : "authorization-statement"
           }, {
-            "name" : "authorization-statement",
             "props" : [ {
+              "name" : "sort-id",
               "value" : "001",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "sort-id"
+              "ns" : "https://fedramp.gov/ns/oscal"
             } ],
-            "prose" : "\\[IA Name\\] recommends the following \\[significant change/significant changes\\] for authorization:\n\n- \\[list significant changes approved for authorization\\]"
+            "prose" : "\\[IA Name\\] recommends the following \\[significant change/significant changes\\] for authorization:\n\n- \\[list significant changes approved for authorization\\]",
+            "name" : "authorization-statement"
           }, {
-            "name" : "authorization-statement",
             "props" : [ {
+              "name" : "sort-id",
               "value" : "001",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "sort-id"
+              "ns" : "https://fedramp.gov/ns/oscal"
             } ],
-            "prose" : "\\[IA Name\\] does not recommend the following \\[significant change/significant changes\\] for authorization:\n\n- \\[list significant changes not approved for authorization\\]"
-          } ]
+            "prose" : "\\[IA Name\\] does not recommend the following \\[significant change/significant changes\\] for authorization:\n\n- \\[list significant changes not approved for authorization\\]",
+            "name" : "authorization-statement"
+          } ],
+          "name" : "authorization-statements"
         } ]
       } ],
       "risks" : [ {
+        "title" : "Risk Title",
         "characterizations" : [ {
           "facets" : [ {
             "props" : [ {
-              "value" : "initial",
-              "name" : "state"
+              "name" : "state",
+              "value" : "initial"
             } ],
             "value" : "high",
             "name" : "impact",
             "system" : "https://fedramp.gov"
           }, {
             "props" : [ {
-              "value" : "initial",
-              "name" : "state"
+              "name" : "state",
+              "value" : "initial"
             } ],
             "value" : "moderate",
             "name" : "likelihood",
@@ -182,8 +545,8 @@
           } ],
           "origin" : {
             "actors" : [ {
-              "type" : "party",
-              "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0"
+              "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+              "type" : "party"
             } ]
           }
         } ],
@@ -191,27 +554,27 @@
         "description" : "This is a description of the identified risk.\n\nTCW: Identified Risk.\n\nScans: Vulnerability Description.\n\nPen Test: Risk Description.\n\nRET: Description.",
         "uuid" : "1689ec06-100a-4fed-9df9-e69f07d3f3c9",
         "remediations" : [ {
-          "description" : "A description of the recommended remediation.\n\nTCW: Assessor's recommended remediation (lifecycle=\"recommendation\").\n\nScans: Tool's recommended remediation (lifecycle=\"recommendation\")\n\nPen Test: Assessor's recommended remediation (lifecycle=\"recommendation\")\n\nRET: Assessor's recommended remediation (lifecycle=\"recommendation\").\n\nPOA\\&M: CSP's intended remediation (no type flag).",
           "title" : "Remediation Title",
           "lifecycle" : "recommendation",
-          "uuid" : "fde4758d-6417-4f35-ba71-278af4f008f8"
+          "uuid" : "fde4758d-6417-4f35-ba71-278af4f008f8",
+          "description" : "A description of the recommended remediation.\n\nTCW: Assessor's recommended remediation (lifecycle=\"recommendation\").\n\nScans: Tool's recommended remediation (lifecycle=\"recommendation\")\n\nPen Test: Assessor's recommended remediation (lifecycle=\"recommendation\")\n\nRET: Assessor's recommended remediation (lifecycle=\"recommendation\").\n\nPOA\\&M: CSP's intended remediation (no type flag)."
         } ],
-        "status" : "open",
-        "title" : "Risk Title"
+        "status" : "open"
       }, {
+        "title" : "Risk Title",
         "characterizations" : [ {
           "facets" : [ {
             "props" : [ {
-              "value" : "initial",
-              "name" : "state"
+              "name" : "state",
+              "value" : "initial"
             } ],
             "value" : "moderate",
             "name" : "impact",
             "system" : "https://fedramp.gov"
           }, {
             "props" : [ {
-              "value" : "initial",
-              "name" : "state"
+              "name" : "state",
+              "value" : "initial"
             } ],
             "value" : "low",
             "name" : "likelihood",
@@ -219,8 +582,8 @@
           } ],
           "origin" : {
             "actors" : [ {
-              "type" : "party",
-              "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0"
+              "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+              "type" : "party"
             } ]
           }
         } ],
@@ -228,19 +591,19 @@
         "description" : "This is a description of the identified risk.\n\nTCW: Identified Risk.\n\nScans: Vulnerability Description.\n\nPen Test: Risk Description.\n\nRET: Description.",
         "uuid" : "6038458c-9120-4736-b1c8-78f6c1ad3a48",
         "remediations" : [ {
+          "lifecycle" : "recommendation",
+          "uuid" : "6038458c-9120-4736-b1c8-78f6c1ad3a48",
           "description" : "A description of the recommended remediation.\n\nTCW: Assessor's recommended remediation (lifecycle=\"recommendation\").\n\nScans: Tool's recommended remediation (lifecycle=\"recommendation\")\n\nPen Test: Assessor's recommended remediation (lifecycle=\"recommendation\")\n\nRET: Assessor's recommended remediation (lifecycle=\"recommendation\").\n\nPOA\\&M: CSP's intended remediation (no type flag).",
           "origins" : [ {
             "actors" : [ {
-              "type" : "party",
-              "actor-uuid" : "49f73135-efab-4275-9a79-003656ad890a"
+              "actor-uuid" : "49f73135-efab-4275-9a79-003656ad890a",
+              "type" : "party"
             } ]
-          } ],
-          "lifecycle" : "recommendation",
-          "uuid" : "6038458c-9120-4736-b1c8-78f6c1ad3a48"
+          } ]
         } ],
-        "status" : "open",
-        "title" : "Risk Title"
+        "status" : "open"
       }, {
+        "title" : "Vulnerability Title",
         "risk-log" : {
           "entries" : [ {
             "status-change" : "closed",
@@ -277,32 +640,32 @@
             "system" : "http://www.first.org/cvss/v3.1"
           }, {
             "props" : [ {
-              "value" : "initial",
-              "name" : "state"
+              "name" : "state",
+              "value" : "initial"
             } ],
             "value" : "high",
             "name" : "likelihood",
             "system" : "https://fedramp.gov"
           }, {
             "props" : [ {
-              "value" : "initial",
-              "name" : "state"
+              "name" : "state",
+              "value" : "initial"
             } ],
             "value" : "high",
             "name" : "impact",
             "system" : "https://fedramp.gov"
           }, {
             "props" : [ {
-              "value" : "adjusted",
-              "name" : "state"
+              "name" : "state",
+              "value" : "adjusted"
             } ],
             "value" : "moderate",
             "name" : "likelihood",
             "system" : "https://fedramp.gov"
           }, {
             "props" : [ {
-              "value" : "adjusted",
-              "name" : "state"
+              "name" : "state",
+              "value" : "adjusted"
             } ],
             "value" : "moderate",
             "name" : "impact",
@@ -310,8 +673,8 @@
           } ],
           "origin" : {
             "actors" : [ {
-              "type" : "tool",
-              "actor-uuid" : "040937c3-2e0e-407a-bb3c-d4e61ac1c460"
+              "actor-uuid" : "040937c3-2e0e-407a-bb3c-d4e61ac1c460",
+              "type" : "tool"
             } ]
           }
         } ],
@@ -319,71 +682,71 @@
         "description" : "This is a description of the vulnerability provided by the tool.",
         "uuid" : "ae628cc5-b64c-4030-af30-57e6b24a6ae7",
         "props" : [ {
+          "name" : "priority",
           "value" : "1",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "priority"
+          "ns" : "https://fedramp.gov/ns/oscal"
         }, {
+          "name" : "operational-requirement",
           "value" : "approved",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "operational-requirement"
+          "ns" : "https://fedramp.gov/ns/oscal"
         }, {
+          "name" : "false-positive",
           "value" : "withdrawn",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "false-positive"
+          "ns" : "https://fedramp.gov/ns/oscal"
         }, {
+          "name" : "risk-adjustment",
           "value" : "approved",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "risk-adjustment"
+          "ns" : "https://fedramp.gov/ns/oscal"
         } ],
         "remediations" : [ {
-          "description" : "A description of the recommended remediation as provided by the tool.",
-          "origins" : [ {
-            "actors" : [ {
-              "type" : "tool",
-              "actor-uuid" : "040937c3-2e0e-407a-bb3c-d4e61ac1c460"
-            } ]
-          } ],
           "title" : "Tool's Recommendation",
           "lifecycle" : "recommendation",
           "uuid" : "a3106e23-8b79-4b1b-abf4-74f16c51ad0c",
-          "remarks" : "Recommended and planned remediation entries should remain when the risk is closed.\n\nSimply add the closure-actions field and change the risk-status to \"closed\"."
-        }, {
-          "description" : "A description of the recommended remediation as provided by the assessor.",
+          "remarks" : "Recommended and planned remediation entries should remain when the risk is closed.\n\nSimply add the closure-actions field and change the risk-status to \"closed\".",
+          "description" : "A description of the recommended remediation as provided by the tool.",
           "origins" : [ {
             "actors" : [ {
-              "type" : "party",
-              "actor-uuid" : "49f73135-efab-4275-9a79-003656ad890a"
+              "actor-uuid" : "040937c3-2e0e-407a-bb3c-d4e61ac1c460",
+              "type" : "tool"
             } ]
-          } ],
+          } ]
+        }, {
           "title" : "Assessor's Recommendation",
           "lifecycle" : "recommendation",
           "uuid" : "69344d05-937e-40f4-9c3f-9aa8702ad99d",
-          "remarks" : "The assessor may add their recommendation in addition to the tool's recommendation, or if no tool recommendation is provided.\n\nThe assessor should leave the tool recommendation, even if adding their own.\n\nRecommended and planned remediation entries should remain when the risk is closed.\n\nSimply add the closure-actions field and change the risk-status to \"closed\"."
+          "remarks" : "The assessor may add their recommendation in addition to the tool's recommendation, or if no tool recommendation is provided.\n\nThe assessor should leave the tool recommendation, even if adding their own.\n\nRecommended and planned remediation entries should remain when the risk is closed.\n\nSimply add the closure-actions field and change the risk-status to \"closed\".",
+          "description" : "A description of the recommended remediation as provided by the assessor.",
+          "origins" : [ {
+            "actors" : [ {
+              "actor-uuid" : "49f73135-efab-4275-9a79-003656ad890a",
+              "type" : "party"
+            } ]
+          } ]
         } ],
         "mitigating-factors" : [ {
           "description" : "Describe mitigating factor",
           "uuid" : "260d3c0a-fc2e-4627-9fb9-a003acdc4b14"
         }, {
-          "implementation-uuid" : "46f4c261-e488-4fb5-84d6-6a61dd30c3d7",
           "description" : "Describe why the cited implementation statement justifies lowering the risk.",
-          "uuid" : "fd061039-e9b0-4b4c-a78b-ca024d411174"
+          "uuid" : "fd061039-e9b0-4b4c-a78b-ca024d411174",
+          "implementation-uuid" : "46f4c261-e488-4fb5-84d6-6a61dd30c3d7"
         } ],
-        "status" : "closed",
-        "title" : "Vulnerability Title"
+        "status" : "closed"
       }, {
+        "title" : "Risk Title",
         "characterizations" : [ {
           "facets" : [ {
             "props" : [ {
-              "value" : "initial",
-              "name" : "state"
+              "name" : "state",
+              "value" : "initial"
             } ],
             "value" : "high",
             "name" : "likelihood",
             "system" : "https://fedramp.gov"
           }, {
             "props" : [ {
-              "value" : "initial",
-              "name" : "state"
+              "name" : "state",
+              "value" : "initial"
             } ],
             "value" : "high",
             "name" : "impact",
@@ -391,8 +754,8 @@
           } ],
           "origin" : {
             "actors" : [ {
-              "type" : "party",
-              "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0"
+              "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+              "type" : "party"
             } ]
           }
         } ],
@@ -400,25 +763,24 @@
         "description" : "This is a description of the issue found by the penetration testing team.",
         "uuid" : "e552fb72-d662-4c01-b2d7-4dcb2086bb07",
         "props" : [ {
+          "name" : "priority",
           "value" : "2",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "priority"
+          "ns" : "https://fedramp.gov/ns/oscal"
         } ],
         "remediations" : [ {
-          "description" : "A description of the recommended remediation as provided by the assessor.",
-          "origins" : [ {
-            "actors" : [ {
-              "type" : "party",
-              "actor-uuid" : "49f73135-efab-4275-9a79-003656ad890a"
-            } ]
-          } ],
           "title" : "Assessor's Recommendation",
           "lifecycle" : "recommendation",
           "uuid" : "69344d05-937e-40f4-9c3f-9aa8702ad99d",
-          "remarks" : "The assessor may add their recommendation."
+          "remarks" : "The assessor may add their recommendation.",
+          "description" : "A description of the recommended remediation as provided by the assessor.",
+          "origins" : [ {
+            "actors" : [ {
+              "actor-uuid" : "49f73135-efab-4275-9a79-003656ad890a",
+              "type" : "party"
+            } ]
+          } ]
         } ],
-        "status" : "open",
-        "title" : "Risk Title"
+        "status" : "open"
       } ],
       "start" : "2023-03-01T00:00:00Z",
       "description" : "Brief assessment description.",
@@ -426,11 +788,11 @@
       "findings" : [ {
         "origins" : [ {
           "actors" : [ {
-            "type" : "party",
-            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0"
+            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+            "type" : "party"
           }, {
-            "type" : "party",
-            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe"
+            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe",
+            "type" : "party"
           } ]
         } ],
         "description" : "An overall statement about the system's satisfaction of this objective.",
@@ -444,9 +806,9 @@
         "target" : {
           "target-id" : "ac-1.a.1_obj.1",
           "props" : [ {
+            "name" : "implementation-status",
             "value" : "implemented",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "implementation-status"
+            "ns" : "https://fedramp.gov/ns/oscal"
           } ],
           "status" : {
             "state" : "satisfied"
@@ -458,11 +820,11 @@
       }, {
         "origins" : [ {
           "actors" : [ {
-            "type" : "party",
-            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0"
+            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+            "type" : "party"
           }, {
-            "type" : "party",
-            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe"
+            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe",
+            "type" : "party"
           } ]
         } ],
         "description" : "An overall statement about the system's satisfaction of this objective.",
@@ -476,9 +838,9 @@
         "target" : {
           "target-id" : "ac-1.a.1_obj.2",
           "props" : [ {
+            "name" : "implementation-status",
             "value" : "implemented",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "implementation-status"
+            "ns" : "https://fedramp.gov/ns/oscal"
           } ],
           "status" : {
             "state" : "satisfied"
@@ -490,11 +852,11 @@
       }, {
         "origins" : [ {
           "actors" : [ {
-            "type" : "party",
-            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0"
+            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+            "type" : "party"
           }, {
-            "type" : "party",
-            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe"
+            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe",
+            "type" : "party"
           } ]
         } ],
         "description" : "An overall statement about the system's satisfaction of this objective.",
@@ -510,9 +872,9 @@
         "target" : {
           "target-id" : "ac-1.a.1_obj.3",
           "props" : [ {
+            "name" : "implementation-status",
             "value" : "implemented",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "implementation-status"
+            "ns" : "https://fedramp.gov/ns/oscal"
           } ],
           "status" : {
             "state" : "satisfied"
@@ -524,11 +886,11 @@
       }, {
         "origins" : [ {
           "actors" : [ {
-            "type" : "party",
-            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0"
+            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+            "type" : "party"
           }, {
-            "type" : "party",
-            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe"
+            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe",
+            "type" : "party"
           } ]
         } ],
         "description" : "\\[EXAMPLE\\]There is an issue with an SSP Statement.",
@@ -549,11 +911,11 @@
       }, {
         "origins" : [ {
           "actors" : [ {
-            "type" : "party",
-            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0"
+            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+            "type" : "party"
           }, {
-            "type" : "party",
-            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe"
+            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe",
+            "type" : "party"
           } ]
         } ],
         "description" : "The results of the discovery scan.",
@@ -573,11 +935,11 @@
       }, {
         "origins" : [ {
           "actors" : [ {
-            "type" : "party",
-            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0"
+            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+            "type" : "party"
           }, {
-            "type" : "party",
-            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe"
+            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe",
+            "type" : "party"
           } ]
         } ],
         "description" : "An example set of infrastructure scan findings.",
@@ -605,11 +967,11 @@
       }, {
         "origins" : [ {
           "actors" : [ {
-            "type" : "party",
-            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0"
+            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+            "type" : "party"
           }, {
-            "type" : "party",
-            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe"
+            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe",
+            "type" : "party"
           } ]
         } ],
         "description" : "The Results of the spear phishing test.",
@@ -620,9 +982,9 @@
         "target" : {
           "target-id" : "at-2.c_obj.2",
           "props" : [ {
+            "name" : "implementation-status",
             "value" : "partial",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "implementation-status"
+            "ns" : "https://fedramp.gov/ns/oscal"
           } ],
           "implementation-status" : {
             "state" : "partial"
@@ -637,11 +999,11 @@
       }, {
         "origins" : [ {
           "actors" : [ {
-            "type" : "party",
-            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0"
+            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+            "type" : "party"
           }, {
-            "type" : "party",
-            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe"
+            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe",
+            "type" : "party"
           } ]
         } ],
         "description" : "A finding from penetration testing activities.",
@@ -655,9 +1017,9 @@
         "target" : {
           "target-id" : "ca-8.1_obj",
           "props" : [ {
+            "name" : "implementation-status",
             "value" : "alternative",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "implementation-status"
+            "ns" : "https://fedramp.gov/ns/oscal"
           } ],
           "implementation-status" : {
             "state" : "alternative"
@@ -671,21 +1033,8 @@
         "remarks" : "If a penetration test result is favorable, such as to say the SOC detected the activities appropriately, no risk is required.\n\nIf a penetration test result identifies a vulnerability or deficiency, the risk assembly is required."
       } ],
       "local-definitions" : {
-        "inventory-items" : [ {
-          "props" : [ {
-            "value" : "10.1.1.99",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "ipv4-address"
-          }, {
-            "value" : "yes",
-            "name" : "allows-authenticated-scan"
-          } ],
-          "uuid" : "efa0013f-d35b-43a3-a8b6-674740e6af62",
-          "description" : "A Windows laptop, which is not defined in the SSP inventory."
-        } ],
         "assessment-assets" : {
           "assessment-platforms" : [ {
-            "remarks" : "This is an example of a revised assessment platform.\n\nIdeally, all assessment platforms and components are defined in the SAP. If there is a departure from what is defined in the SAP, it must be defined in the SAR.\n\nThis is a mixed example showing a revised component (a different assessment laptop defined as a component in the SAR) being paired with tools previously defined in the SAP.",
             "title" : "Revised Assessment Platform",
             "uses-components" : [ {
               "component-uuid" : "c1461f8a-684f-4727-8c08-4bb56c33a8dd",
@@ -697,13 +1046,14 @@
               "component-uuid" : "8f01c4ab-123f-4d1e-8bbf-22ad454b0bc1",
               "remarks" : "Cites the XYZ Database Scanning Tool identified in the SAP."
             } ],
-            "uuid" : "67d98337-884a-46ff-98b1-42c53a4a7611"
+            "uuid" : "67d98337-884a-46ff-98b1-42c53a4a7611",
+            "remarks" : "This is an example of a revised assessment platform.\n\nIdeally, all assessment platforms and components are defined in the SAP. If there is a departure from what is defined in the SAP, it must be defined in the SAR.\n\nThis is a mixed example showing a revised component (a different assessment laptop defined as a component in the SAR) being paired with tools previously defined in the SAP."
           } ],
           "components" : [ {
             "props" : [ {
+              "name" : "ipv4-address",
               "value" : "10.10.10.10",
-              "ns" : "https://fedramp.gov/ns/oscal",
-              "name" : "ipv4-address"
+              "ns" : "https://fedramp.gov/ns/oscal"
             } ],
             "status" : {
               "state" : "operational"
@@ -722,7 +1072,19 @@
             "title" : "Assessor Scanning Tool",
             "type" : "tool"
           } ]
-        }
+        },
+        "inventory-items" : [ {
+          "description" : "A Windows laptop, which is not defined in the SSP inventory.",
+          "props" : [ {
+            "name" : "ipv4-address",
+            "value" : "10.1.1.99",
+            "ns" : "https://fedramp.gov/ns/oscal"
+          }, {
+            "name" : "allows-authenticated-scan",
+            "value" : "yes"
+          } ],
+          "uuid" : "efa0013f-d35b-43a3-a8b6-674740e6af62"
+        } ]
       },
       "observations" : [ {
         "title" : "\\[EXAMPLE\\]Examine AC Policy",
@@ -751,8 +1113,8 @@
             "task-uuid" : "e1890486-a9f0-4388-b2bc-34fb6c623686"
           } ],
           "actors" : [ {
-            "type" : "party",
-            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0"
+            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+            "type" : "party"
           } ]
         } ]
       }, {
@@ -777,8 +1139,8 @@
             "task-uuid" : "172d4ba2-3362-4e3b-9379-a65a50e399bf"
           } ],
           "actors" : [ {
-            "type" : "party",
-            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0"
+            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+            "type" : "party"
           } ]
         } ]
       }, {
@@ -811,8 +1173,8 @@
         "collected" : "2023-05-10T00:00:00Z",
         "origins" : [ {
           "actors" : [ {
-            "type" : "tool",
-            "actor-uuid" : "fff18c72-4c24-44a2-999d-24fcb13a46d0"
+            "actor-uuid" : "fff18c72-4c24-44a2-999d-24fcb13a46d0",
+            "type" : "tool"
           } ]
         } ]
       }, {
@@ -844,8 +1206,8 @@
         "collected" : "2023-05-10T00:00:00Z",
         "origins" : [ {
           "actors" : [ {
-            "type" : "tool",
-            "actor-uuid" : "fff18c72-4c24-44a2-999d-24fcb13a46d0"
+            "actor-uuid" : "fff18c72-4c24-44a2-999d-24fcb13a46d0",
+            "type" : "tool"
           } ]
         } ]
       }, {
@@ -906,8 +1268,8 @@
             "task-uuid" : "8937348c-5ebb-40bd-a8eb-faff99af156e"
           } ],
           "actors" : [ {
-            "type" : "party",
-            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe"
+            "actor-uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe",
+            "type" : "party"
           } ]
         } ]
       }, {
@@ -917,20 +1279,20 @@
         "uuid" : "6d4435b2-c1b4-4adc-9057-0bf40635728b",
         "collected" : "2023-05-10T00:00:00Z",
         "props" : [ {
-          "value" : "95",
-          "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "scan-percentage",
-          "class" : "infrastructure"
+          "class" : "infrastructure",
+          "value" : "95",
+          "ns" : "https://fedramp.gov/ns/oscal"
         }, {
-          "value" : "no",
-          "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "discrepancies",
-          "class" : "infrastructure"
+          "class" : "infrastructure",
+          "value" : "no",
+          "ns" : "https://fedramp.gov/ns/oscal"
         }, {
-          "value" : "yes",
-          "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "ia-manual-review",
-          "class" : "infrastructure"
+          "class" : "infrastructure",
+          "value" : "yes",
+          "ns" : "https://fedramp.gov/ns/oscal"
         } ]
       }, {
         "methods" : [ "EXAMINE" ],
@@ -939,20 +1301,20 @@
         "uuid" : "6d4435b2-c1b4-4adc-9057-0bf40635728b",
         "collected" : "2023-05-10T03:00:00Z",
         "props" : [ {
-          "value" : "100",
-          "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "scan-percentage",
-          "class" : "database"
+          "class" : "database",
+          "value" : "100",
+          "ns" : "https://fedramp.gov/ns/oscal"
         }, {
-          "value" : "no",
-          "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "discrepancies",
-          "class" : "database"
-        }, {
+          "class" : "database",
           "value" : "no",
-          "ns" : "https://fedramp.gov/ns/oscal",
+          "ns" : "https://fedramp.gov/ns/oscal"
+        }, {
           "name" : "ia-manual-review",
-          "class" : "database"
+          "class" : "database",
+          "value" : "no",
+          "ns" : "https://fedramp.gov/ns/oscal"
         } ]
       }, {
         "methods" : [ "EXAMINE" ],
@@ -961,26 +1323,26 @@
         "uuid" : "6d4435b2-c1b4-4adc-9057-0bf40635728b",
         "collected" : "2023-05-10T03:00:00Z",
         "props" : [ {
-          "value" : "75",
-          "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "scan-percentage",
-          "class" : "web"
+          "class" : "web",
+          "value" : "75",
+          "ns" : "https://fedramp.gov/ns/oscal"
         }, {
-          "value" : "yes",
-          "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "discrepancies",
-          "class" : "web"
+          "class" : "web",
+          "value" : "yes",
+          "ns" : "https://fedramp.gov/ns/oscal"
         }, {
+          "name" : "discrepancies-reason",
+          "class" : "web",
           "value" : "yes",
           "remarks" : "EXAMPLE - Next Gen Web Application Firewall is blocking requests from scanner.",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "discrepancies-reason",
-          "class" : "web"
+          "ns" : "https://fedramp.gov/ns/oscal"
         }, {
-          "value" : "yes",
-          "ns" : "https://fedramp.gov/ns/oscal",
           "name" : "ia-manual-review",
-          "class" : "web"
+          "class" : "web",
+          "value" : "yes",
+          "ns" : "https://fedramp.gov/ns/oscal"
         } ]
       }, {
         "methods" : [ "TEST" ],
@@ -997,8 +1359,8 @@
             "task-uuid" : "8937348c-5ebb-40bd-a8eb-faff99af156e"
           } ],
           "actors" : [ {
-            "type" : "party",
-            "actor-uuid" : "ca9fca9c-4a8a-4487-8242-0a06d6fbed1f"
+            "actor-uuid" : "ca9fca9c-4a8a-4487-8242-0a06d6fbed1f",
+            "type" : "party"
           } ]
         } ]
       }, {
@@ -1010,122 +1372,122 @@
         "collected" : "2023-05-10T00:00:00Z",
         "origins" : [ {
           "actors" : [ {
-            "type" : "party",
-            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0"
+            "actor-uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+            "type" : "party"
           } ]
         } ]
-      } ],
-      "title" : "2023 Annual Assessment"
+      } ]
     }, {
+      "title" : "2022 Annual Assessment",
       "reviewed-controls" : {
         "control-selections" : [ {
-          "remarks" : "Other controls omitted from example.",
           "include-controls" : [ {
             "control-id" : "ac-1"
           }, {
             "control-id" : "ac-2"
-          } ]
+          } ],
+          "remarks" : "Other controls omitted from example."
         } ]
       },
       "end" : "2022-03-12T00:00:00Z",
       "attestations" : [ {
         "parts" : [ {
-          "name" : "authorization-statements",
           "props" : [ {
+            "name" : "recommend-authorization",
             "value" : "yes",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "recommend-authorization"
-          } ]
+            "ns" : "https://fedramp.gov/ns/oscal"
+          } ],
+          "name" : "authorization-statements"
         } ]
       } ],
       "start" : "2022-03-01T00:00:00Z",
       "description" : "Description",
-      "uuid" : "cfa9b157-540e-456b-980d-efa789e50ace",
-      "title" : "2022 Annual Assessment"
+      "uuid" : "cfa9b157-540e-456b-980d-efa789e50ace"
     }, {
+      "title" : "Initial (2021) Assessment",
       "reviewed-controls" : {
         "control-selections" : [ {
-          "remarks" : "Other controls omitted from example.",
           "include-controls" : [ {
             "control-id" : "ac-1"
           }, {
             "control-id" : "ac-2"
-          } ]
+          } ],
+          "remarks" : "Other controls omitted from example."
         } ]
       },
       "end" : "2021-03-12T00:00:00Z",
       "attestations" : [ {
         "parts" : [ {
-          "name" : "authorization-statements",
           "props" : [ {
+            "name" : "recommend-authorization",
             "value" : "yes",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "recommend-authorization"
-          } ]
+            "ns" : "https://fedramp.gov/ns/oscal"
+          } ],
+          "name" : "authorization-statements"
         } ]
       } ],
       "start" : "2021-03-01T00:00:00Z",
       "description" : "Description",
-      "uuid" : "d755e7fd-346d-40f0-b538-1b1da1aa5821",
-      "title" : "Initial (2021) Assessment"
+      "uuid" : "d755e7fd-346d-40f0-b538-1b1da1aa5821"
     } ],
     "metadata" : {
+      "title" : "\\[System Name\\] FedRAMP Security Assessment Results (SAR)",
       "roles" : [ {
+        "description" : "The organization that prepared this SSP. If developed in-house, this is the CSP itself.",
         "title" : "FedRAMP Program Management Office",
-        "id" : "fedramp-pmo",
-        "description" : "The organization that prepared this SSP. If developed in-house, this is the CSP itself."
+        "id" : "fedramp-pmo"
       }, {
+        "description" : "The organization that prepared this SAR.",
         "title" : "Prepared By",
-        "id" : "prepared-by",
-        "description" : "The organization that prepared this SAR."
+        "id" : "prepared-by"
       }, {
+        "description" : "The organization for which this SAR was prepared. Typically the CSP.",
         "title" : "Prepared For",
-        "id" : "prepared-for",
-        "description" : "The organization for which this SAR was prepared. Typically the CSP."
+        "id" : "prepared-for"
       }, {
+        "description" : "The individual or individuals accountable for the accuracy of this SAR.",
         "title" : "Security Assessment Plan Approval",
-        "id" : "content-approver",
-        "description" : "The individual or individuals accountable for the accuracy of this SAR."
+        "id" : "content-approver"
       }, {
+        "description" : "The organization performing the assessment.",
         "title" : "Assessment Organization",
-        "id" : "assessor",
-        "description" : "The organization performing the assessment."
+        "id" : "assessor"
       }, {
+        "description" : "The individual or individuals performing the assessment.",
         "title" : "Assessment Team",
-        "id" : "assessment-team",
-        "description" : "The individual or individuals performing the assessment."
+        "id" : "assessment-team"
       }, {
+        "description" : "The individual leading the assessment activities.",
         "title" : "Assessment Lead",
-        "id" : "assessment-lead",
-        "description" : "The individual leading the assessment activities."
+        "id" : "assessment-lead"
       }, {
+        "description" : "The individual or individuals performing the penetration test.",
         "title" : "Penetration Test Team",
-        "id" : "penetration-test-team",
-        "description" : "The individual or individuals performing the penetration test."
+        "id" : "penetration-test-team"
       }, {
+        "description" : "The individual leading the penetration test activities.",
         "title" : "Penetration Test Lead",
-        "id" : "penetration-test-lead",
-        "description" : "The individual leading the penetration test activities."
+        "id" : "penetration-test-lead"
       }, {
+        "description" : "The management-level POC within the assessor's organization accountable for the organization's assessment performance.",
         "title" : "Assessment Organization's Managerial POC",
-        "id" : "assessment-executive",
-        "description" : "The management-level POC within the assessor's organization accountable for the organization's assessment performance."
+        "id" : "assessment-executive"
       }, {
+        "description" : "At least three CSP testing points of contact must be identified in a FedRAMP SAP.",
         "title" : "CSP POCs During Testing",
-        "id" : "csp-assessment-poc",
-        "description" : "At least three CSP testing points of contact must be identified in a FedRAMP SAP."
+        "id" : "csp-assessment-poc"
       }, {
+        "description" : "An operations center role, such as a SOC or NOC.",
         "title" : "CSP Operations POC",
-        "id" : "csp-operations-center",
-        "description" : "An operations center role, such as a SOC or NOC."
+        "id" : "csp-operations-center"
       }, {
+        "description" : "A role for an individual within the CSP to be notified by the assessor when testing is complete.",
         "title" : "CSP's End of Testing Notification POC",
-        "id" : "csp-end-of-testing-poc",
-        "description" : "A role for an individual within the CSP to be notified by the assessor when testing is complete."
+        "id" : "csp-end-of-testing-poc"
       }, {
+        "description" : "A role for the individuals within the CSP who are to receive the assessment results.",
         "title" : "CSP Results POCs",
-        "id" : "csp-results-poc",
-        "description" : "A role for the individuals within the CSP who are to receive the assessment results."
+        "id" : "csp-results-poc"
       } ],
       "remarks" : "This OSCAL-based FedRAMP SAR Template can be used for the FedRAMP initial or annual assessment reporting.",
       "published" : "2023-07-06T00:00:00Z",
@@ -1141,10 +1503,10 @@
         "remarks" : "Replace sample 3PAO information.\n\nIf the assessor is A2LA Certified, include the ISO/IEC-17020",
         "uuid" : "49f73135-efab-4275-9a79-003656ad890a",
         "props" : [ {
+          "name" : "iso-iec-17020-identifier",
           "uuid" : "2fdac229-9dc9-4115-a2ff-34d4c8b6b60b",
           "value" : "0000.00",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "iso-iec-17020-identifier"
+          "ns" : "https://fedramp.gov/ns/oscal"
         } ],
         "name" : "Assessment Organization Name"
       }, {
@@ -1166,12 +1528,12 @@
         "short-name" : "FedRAMP PMO",
         "remarks" : "This party entry must be present in a FedRAMP SAR.\n\nThe uuid may be different; however, the uuid must be associated with the \"fedramp-pmo\" role in the responsible-party assemblies.",
         "addresses" : [ {
-          "addr-lines" : [ "1800 F St. NW" ],
           "country" : "US",
           "city" : "Washington",
           "state" : "DC",
           "type" : "work",
-          "postal-code" : "20006"
+          "postal-code" : "20006",
+          "addr-lines" : [ "1800 F St. NW" ]
         } ],
         "uuid" : "77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d",
         "name" : "Federal Risk and Authorization Management Program: Program Management Office"
@@ -1185,13 +1547,13 @@
         } ],
         "uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
         "props" : [ {
+          "name" : "job-title",
           "uuid" : "c97c29fe-0c17-4d63-af00-f2a55ec399d5",
-          "value" : "Individual's Title",
-          "name" : "job-title"
+          "value" : "Individual's Title"
         }, {
+          "name" : "mail-stop",
           "uuid" : "92e19c7f-b097-456e-9a13-714dd0e34ee8",
-          "value" : "Office 1-A",
-          "name" : "mail-stop"
+          "value" : "Office 1-A"
         } ],
         "name" : "[SAMPLE]Person Name 1"
       }, {
@@ -1204,9 +1566,9 @@
         } ],
         "uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe",
         "props" : [ {
+          "name" : "mail-stop",
           "uuid" : "b6aeaaa9-cb22-456c-ba62-847a791f6f48",
-          "value" : "Mailstop 2-B",
-          "name" : "mail-stop"
+          "value" : "Mailstop 2-B"
         } ],
         "name" : "[SAMPLE]Person Name 2"
       }, {
@@ -1219,9 +1581,9 @@
         } ],
         "uuid" : "bcf47707-49e4-4acc-bf43-e63156046390",
         "props" : [ {
+          "name" : "mail-stop",
           "uuid" : "cf479652-2676-4d1b-9861-e46bd07f34fe",
-          "value" : "Mailstop 3-C",
-          "name" : "mail-stop"
+          "value" : "Mailstop 3-C"
         } ],
         "name" : "[SAMPLE]Person Name 3"
       }, {
@@ -1234,9 +1596,9 @@
         } ],
         "uuid" : "abc15ce6-1f43-4951-bcd5-ab62cdff7ed9",
         "props" : [ {
+          "name" : "mail-stop",
           "uuid" : "674694e1-b704-4257-99d9-a3effec0dd56",
-          "value" : "Mailstop 4-D",
-          "name" : "mail-stop"
+          "value" : "Mailstop 4-D"
         } ],
         "name" : "[SAMPLE]Person Name 4"
       }, {
@@ -1249,13 +1611,13 @@
         } ],
         "uuid" : "9135b789-a40c-4a20-9be6-fab23c0ab0f3",
         "props" : [ {
+          "name" : "job-title",
           "uuid" : "902460ae-5c57-44c8-82c4-676ab25dce90",
-          "value" : "Individual's Title",
-          "name" : "job-title"
+          "value" : "Individual's Title"
         }, {
+          "name" : "mail-stop",
           "uuid" : "35104264-7126-4d29-b3b8-40b34ac1b8d5",
-          "value" : "Mailstop 5-E",
-          "name" : "mail-stop"
+          "value" : "Mailstop 5-E"
         } ],
         "name" : "[SAMPLE]Person Name 5"
       }, {
@@ -1268,13 +1630,13 @@
         } ],
         "uuid" : "ca9fca9c-4a8a-4487-8242-0a06d6fbed1f",
         "props" : [ {
+          "name" : "job-title",
           "uuid" : "5ae47d93-affd-4571-b7c0-94f666235067",
-          "value" : "Individual's Title",
-          "name" : "job-title"
+          "value" : "Individual's Title"
         }, {
+          "name" : "mail-stop",
           "uuid" : "a3f7a62f-c9bd-40ae-ba4a-a9222fb6ab7b",
-          "value" : "Mailstop 6-F",
-          "name" : "mail-stop"
+          "value" : "Mailstop 6-F"
         } ],
         "name" : "[SAMPLE]Person Name 6"
       }, {
@@ -1285,17 +1647,17 @@
           "type" : "office"
         } ],
         "addresses" : [ {
-          "addr-lines" : [ "Suite 0000", "1234 Some Street" ],
           "city" : "Haven",
           "state" : "ME",
           "type" : "work",
-          "postal-code" : "00000"
+          "postal-code" : "00000",
+          "addr-lines" : [ "Suite 0000", "1234 Some Street" ]
         } ],
         "uuid" : "877e5bdc-07c3-45da-a2b4-35367a9a0cd0",
         "props" : [ {
+          "name" : "job-title",
           "uuid" : "b835391b-b607-4c98-a5cd-05898a6a28e3",
-          "value" : "Individual's Title",
-          "name" : "job-title"
+          "value" : "Individual's Title"
         } ],
         "name" : "[SAMPLE]Person Name 7"
       } ],
@@ -1304,441 +1666,79 @@
         "uuid" : "2ba201ac-8ee9-4a1d-812a-a755591a3963",
         "remarks" : "The assessor's HQ, or the address of the assessment team's primary business location.",
         "address" : {
-          "addr-lines" : [ "Suite 0000", "1234 Some Street" ],
           "country" : "US",
           "city" : "Haven",
           "state" : "ME",
           "type" : "work",
-          "postal-code" : "00000"
+          "postal-code" : "00000",
+          "addr-lines" : [ "Suite 0000", "1234 Some Street" ]
         }
       } ],
       "props" : [ {
-        "value" : "Controlled Unclassified Information",
-        "name" : "marking"
+        "name" : "marking",
+        "value" : "Controlled Unclassified Information"
       }, {
+        "name" : "resolution-resource",
         "value" : "ace2963d-ecb4-4be5-bdd0-1f6fd7610f41",
-        "ns" : "https://fedramp.gov/ns/oscal",
-        "name" : "resolution-resource"
+        "ns" : "https://fedramp.gov/ns/oscal"
       } ],
       "oscal-version" : "1.0.4",
       "last-modified" : "2023-07-06T00:00:00Z",
       "responsible-parties" : [ {
-        "role-id" : "fedramp-pmo",
-        "party-uuids" : [ "77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d" ]
+        "party-uuids" : [ "77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d" ],
+        "role-id" : "fedramp-pmo"
       }, {
+        "party-uuids" : [ "49f73135-efab-4275-9a79-003656ad890a" ],
         "role-id" : "prepared-by",
-        "remarks" : "Exactly one party\n\nThis is the assessor.",
-        "party-uuids" : [ "49f73135-efab-4275-9a79-003656ad890a" ]
+        "remarks" : "Exactly one party\n\nThis is the assessor."
       }, {
+        "party-uuids" : [ "77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d" ],
         "role-id" : "prepared-for",
-        "remarks" : "Exactly one party.\n\nThis is the UUID for the CSP in the SSP.\n\nIf no OSCAL-based SSP exists, create a CSP party in the SAP, and provide that UUID here.",
-        "party-uuids" : [ "77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d" ]
+        "remarks" : "Exactly one party.\n\nThis is the UUID for the CSP in the SSP.\n\nIf no OSCAL-based SSP exists, create a CSP party in the SAP, and provide that UUID here."
       }, {
+        "party-uuids" : [ "f4568fda-c6d2-4640-adec-0012015af7d0" ],
         "role-id" : "content-approver",
-        "remarks" : "One ore more parties",
-        "party-uuids" : [ "f4568fda-c6d2-4640-adec-0012015af7d0" ]
+        "remarks" : "One ore more parties"
       }, {
+        "party-uuids" : [ "49f73135-efab-4275-9a79-003656ad890a" ],
         "role-id" : "assessor",
-        "remarks" : "Exactly one party\n\nAssessment Organization (3PAO)",
-        "party-uuids" : [ "49f73135-efab-4275-9a79-003656ad890a" ]
+        "remarks" : "Exactly one party\n\nAssessment Organization (3PAO)"
       }, {
+        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe", "bcf47707-49e4-4acc-bf43-e63156046390", "abc15ce6-1f43-4951-bcd5-ab62cdff7ed9", "9135b789-a40c-4a20-9be6-fab23c0ab0f3" ],
         "role-id" : "assessment-team",
-        "remarks" : "One or more parties",
-        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe", "bcf47707-49e4-4acc-bf43-e63156046390", "abc15ce6-1f43-4951-bcd5-ab62cdff7ed9", "9135b789-a40c-4a20-9be6-fab23c0ab0f3" ]
+        "remarks" : "One or more parties"
       }, {
+        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ],
         "role-id" : "assessment-lead",
-        "remarks" : "Exactly one party",
-        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ]
+        "remarks" : "Exactly one party"
       }, {
+        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe", "ca9fca9c-4a8a-4487-8242-0a06d6fbed1f", "877e5bdc-07c3-45da-a2b4-35367a9a0cd0" ],
         "role-id" : "penetration-test-team",
-        "remarks" : "One or more partys",
-        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe", "ca9fca9c-4a8a-4487-8242-0a06d6fbed1f", "877e5bdc-07c3-45da-a2b4-35367a9a0cd0" ]
+        "remarks" : "One or more partys"
       }, {
+        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ],
         "role-id" : "penetration-test-lead",
-        "remarks" : "Exactly one party",
-        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ]
+        "remarks" : "Exactly one party"
       }, {
+        "party-uuids" : [ "f4568fda-c6d2-4640-adec-0012015af7d0" ],
         "role-id" : "assessment-executive",
-        "remarks" : "Exactly one party",
-        "party-uuids" : [ "f4568fda-c6d2-4640-adec-0012015af7d0" ]
+        "remarks" : "Exactly one party"
       }, {
+        "party-uuids" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
         "role-id" : "csp-operations-center",
-        "remarks" : "Exactly one party\n\nThe party-uuid should reference a party in the SSP.\n\nIf an appropriate party does not exist in the SSP, the SAP tool should add a party to the SAP, or have the CSP add the party to the SSP..\n\nThe SAP tool should not modify the SSP.",
-        "party-uuids" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ]
+        "remarks" : "Exactly one party\n\nThe party-uuid should reference a party in the SSP.\n\nIf an appropriate party does not exist in the SSP, the SAP tool should add a party to the SAP, or have the CSP add the party to the SSP..\n\nThe SAP tool should not modify the SSP."
       }, {
+        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe", "bcf47707-49e4-4acc-bf43-e63156046390" ],
         "role-id" : "csp-assessment-poc",
-        "remarks" : "There should be at least three CSP Assessment POCs.\n\nAt least one should be available 24x7 during assessment activities.\n\nAt least one should be an operations center, such a SOC or NOC.\n\nThe party-uuid should reference a party in the SSP or SAP.\n\nIf an appropriate party does not exist in the SSP or SAP, the SAR tool should add a party to the SAR.\n\nThe SAP tool should not modify the SSP.",
-        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe", "bcf47707-49e4-4acc-bf43-e63156046390" ]
+        "remarks" : "There should be at least three CSP Assessment POCs.\n\nAt least one should be available 24x7 during assessment activities.\n\nAt least one should be an operations center, such a SOC or NOC.\n\nThe party-uuid should reference a party in the SSP or SAP.\n\nIf an appropriate party does not exist in the SSP or SAP, the SAR tool should add a party to the SAR.\n\nThe SAP tool should not modify the SSP."
       }, {
+        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ],
         "role-id" : "csp-end-of-testing-poc",
-        "remarks" : "One or more parties",
-        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ]
+        "remarks" : "One or more parties"
       }, {
+        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ],
         "role-id" : "csp-results-poc",
-        "remarks" : "One or more parties",
-        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ]
-      } ],
-      "title" : "\\[System Name\\] FedRAMP Security Assessment Results (SAR)"
-    },
-    "import-ap" : {
-      "remarks" : "FedRAMP prefers the path for the SAP be relative to the location of this SAR file. Absolute links will not work when FedRAMP tools import the content.\n\nIn this example, the SAR points to the SAP as a back-matter resource using a URI fragment.",
-      "href" : "#5cce2310-8fcc-49f8-8cae-8e31dc8048f1"
-    },
-    "local-definitions" : {
-      "objectives-and-methods" : [ {
-        "parts" : [ {
-          "name" : "assessment-objective",
-          "title" : "SAP Inserted Objective",
-          "id" : "sap-obj",
-          "props" : [ {
-            "value" : "sap-obj-1",
-            "name" : "method-id"
-          }, {
-            "value" : "AC-2 SAP-1",
-            "name" : "label"
-          } ]
-        }, {
-          "name" : "assessment-method",
-          "id" : "sap-obj-1",
-          "props" : [ {
-            "value" : "INTERVIEW",
-            "name" : "method"
-          } ],
-          "parts" : [ {
-            "name" : "assessment-objects",
-            "id" : "sap-obj-1_object",
-            "prose" : "Insert assessment object description"
-          } ]
-        } ],
-        "control-id" : "ac-2"
-      }, {
-        "parts" : [ {
-          "name" : "assessment-objective",
-          "title" : "Assessment Objective",
-          "id" : "ac-2.a_obj.1",
-          "props" : [ {
-            "value" : "ac-2.a_obj.1-1",
-            "name" : "method-id"
-          } ],
-          "prose" : "Determine if the organization:\n\n- defines information system account types to be identified and selected to support organizational missions/business functions"
-        }, {
-          "name" : "assessment-method",
-          "id" : "ac-2.a_obj.1-1",
-          "props" : [ {
-            "value" : "EXAMINE",
-            "name" : "method"
-          } ],
-          "parts" : [ {
-            "name" : "assessment-objects",
-            "id" : "ac-2.f_obj.1-1_object",
-            "prose" : "Access control policy; procedures addressing account management; security plan; information system design documentation; information system configuration settings and associated documentation; list of active system accounts along with the name of the individual associated with each account; list of conditions for group and role membership; notifications or records of recently transferred, separated, or terminated employees; list of recently disabled information system accounts along with the name of the individual associated with each account; access authorization records; account management compliance reviews; information system monitoring records; information system audit records; other relevant documents or records"
-          } ]
-        } ],
-        "control-id" : "ac-2"
-      }, {
-        "parts" : [ {
-          "name" : "assessment-objective",
-          "title" : "Assessment Objective",
-          "id" : "ac-2.a_obj.2",
-          "props" : [ {
-            "value" : "ac-2.a_obj.2-1",
-            "name" : "method-id"
-          } ],
-          "prose" : "Determine if the organization:\n\n- identifies and selects organization-defined information system account types to support organizational missions/business functions"
-        }, {
-          "name" : "assessment-method",
-          "id" : "ac-2.a_obj.2-1",
-          "props" : [ {
-            "value" : "EXAMINE",
-            "name" : "method"
-          } ],
-          "parts" : [ {
-            "name" : "assessment-objects",
-            "id" : "ac-2.a_obj.2-1_object",
-            "prose" : "Access control policy; procedures addressing account management; security plan; information system design documentation; information system configuration settings and associated documentation; list of active system accounts along with the name of the individual associated with each account; list of conditions for group and role membership; notifications or records of recently transferred, separated, or terminated employees; list of recently disabled information system accounts along with the name of the individual associated with each account; access authorization records; account management compliance reviews; information system monitoring records; information system audit records; other relevant documents or records"
-          } ]
-        } ],
-        "control-id" : "ac-2"
-      }, {
-        "parts" : [ {
-          "name" : "assessment-objective",
-          "title" : "Assessment Objective",
-          "id" : "ac-2.a_obj.2",
-          "props" : [ {
-            "value" : "ac-2.a_obj.2-2",
-            "name" : "method-id"
-          } ],
-          "prose" : "Determine if the organization:\n\n- identifies and selects organization-defined information system account types to support organizational missions/business functions"
-        }, {
-          "name" : "assessment-method",
-          "id" : "ac-2.a_obj.2-2",
-          "props" : [ {
-            "value" : "INTERVIEW",
-            "name" : "method"
-          } ],
-          "parts" : [ {
-            "name" : "assessment-objects",
-            "id" : "ac-2.a_obj.2-1_object",
-            "prose" : "Organizational personnel with account management responsibilities; system/network administrators; organizational personnel with information security responsibilities"
-          } ]
-        } ],
-        "control-id" : "ac-2"
-      } ],
-      "activities" : [ {
-        "title" : "Locally Defined Activity",
-        "uuid" : "1bc8f0bb-e601-4946-a0e6-fcb934ebaa06",
-        "props" : [ {
-          "value" : "manual",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "type"
-        } ],
-        "description" : "This describes an activity that was not defined in the SAP, but was performed during the assessment. The justification must be included.",
-        "steps" : [ {
-          "description" : "Describe test step #1",
-          "props" : [ {
-            "value" : "001",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "sort-id"
-          } ],
-          "uuid" : "fb039fd7-5a2b-4c0f-867c-88cce9c3778c"
-        }, {
-          "description" : "Describe test step #2",
-          "props" : [ {
-            "value" : "002",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "sort-id"
-          } ],
-          "uuid" : "fb039fd7-5a2b-4c0f-867c-88cce9c3778c"
-        }, {
-          "description" : "Describe test step #3",
-          "props" : [ {
-            "value" : "003",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "name" : "sort-id"
-          } ],
-          "uuid" : "fb039fd7-5a2b-4c0f-867c-88cce9c3778c"
-        } ]
-      } ]
-    },
-    "back-matter" : {
-      "resources" : [ {
-        "title" : "Resolution Resource",
-        "uuid" : "ace2963d-ecb4-4be5-bdd0-1f6fd7610f41",
-        "remarks" : "This \"resolution resource\" is used by FedRAMP as a local, authoritative indicator of what version SAR (rev 4 or rev 5) this OSCAL document is for.",
-        "props" : [ {
-          "value" : "Special Publication",
-          "name" : "dataset",
-          "class" : "collection"
-        }, {
-          "value" : "800-53",
-          "name" : "dataset",
-          "class" : "name"
-        }, {
-          "value" : "5.0.2",
-          "name" : "dataset",
-          "class" : "version"
-        }, {
-          "value" : "gov.nist.csrc",
-          "name" : "dataset",
-          "class" : "organization"
-        } ]
-      }, {
-        "title" : "\\[System Name\\] \\[FIPS-199 Level\\] SAP",
-        "rlinks" : [ {
-          "media-type" : "text/xml",
-          "href" : "../../sap/xml/FedRAMP-SAP-OSCAL-Template.xml"
-        } ],
-        "uuid" : "5cce2310-8fcc-49f8-8cae-8e31dc8048f1",
-        "props" : [ {
-          "value" : "security-assessment-plan",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "type"
-        }, {
-          "value" : "2023-06-30T00:00:00Z",
-          "name" : "published"
-        }, {
-          "value" : "SAP Version",
-          "name" : "version"
-        } ]
-      }, {
-        "title" : "FedRAMP Applicable Laws and Regulations",
-        "rlinks" : [ {
-          "href" : "https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx"
-        } ],
-        "uuid" : "985475ee-d4d6-4581-8fdf-d84d3d8caa48",
-        "base64" : {
-          "value" : "00000000",
-          "media-type" : "application/vnd.ms-excel",
-          "filename" : "SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx"
-        },
-        "remarks" : "Must be present in a FedRAMP SAR.",
-        "props" : [ {
-          "value" : "fedramp-citations",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "type"
-        } ]
-      }, {
-        "title" : "FedRAMP Master Acronym and Glossary",
-        "rlinks" : [ {
-          "href" : "https://www.fedramp.gov/assets/resources/documents/FedRAMP_Master_Acronym_and_Glossary.pdf"
-        } ],
-        "uuid" : "1a23a771-d481-4594-9a1a-71d584fa4123",
-        "base64" : {
-          "value" : "00000000",
-          "media-type" : "application/pdf",
-          "filename" : "FedRAMP_Master_Acronym_and_Glossary.pdf"
-        },
-        "remarks" : "Must be present in a FedRAMP SAR.",
-        "props" : [ {
-          "value" : "fedramp-acronyms",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "type"
-        } ]
-      }, {
-        "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./signed-sar.pdf"
-        } ],
-        "uuid" : "3a9ace38-c36a-4478-bd2a-f00961889214",
-        "remarks" : "FedRAMP is formulating guidelines for handling digital/electronic signatures in OSCAL, and welcome feedback on solutions.\n\nFor now, FedRAMP recommends one of the following:\n\n- Render the OSCAL SAR content as a PDF that is digitally signed and attached.\n- Render the OSCAL SAR content as printed pages that are physically signed, scanned, and attached.\n\nIf your organization prefers another approach, please seek prior approval from the FedRAMP PMO.",
-        "props" : [ {
-          "value" : "signature",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "type"
-        } ],
-        "description" : "Signed SAR"
-      }, {
-        "title" : "\\[EXAMPLE\\]Interview Notes",
-        "rlinks" : [ {
-          "media-type" : "application/msword",
-          "href" : "./evidence/interview-notes.docx"
-        } ],
-        "uuid" : "65fb91b1-f7dc-46bf-8b99-bd98f1a5293d",
-        "base64" : {
-          "value" : "00000000",
-          "media-type" : "application/msword",
-          "filename" : "interview-notes.docx"
-        },
-        "remarks" : "A tool could use either an rlink or base64 field.\n\nIf both are present, FedRAMP tools will give preference to the base64 content.\n\nThere may be more than one rlink.\n\nIf there is no base64 field, at lest one of the rlink fields must include a relative path.",
-        "props" : [ {
-          "value" : "evidence",
-          "name" : "type"
-        } ]
-      }, {
-        "title" : "\\[EXAMPLE\\]AC Policy",
-        "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./artifacts/AC_Policy.pdf"
-        } ],
-        "uuid" : "f32b7ab1-baf1-451a-b3a1-1dfdadbe8dc7",
-        "base64" : {
-          "value" : "00000000",
-          "media-type" : "application/pdf",
-          "filename" : "AC_Policy.pdf"
-        },
-        "remarks" : "A tool could use either an rlink or base64 field.\n\nIf both are present, FedRAMP tools will give preference to the base64 content.\n\nThere may be more than one rlink.\n\nIf there is no base64 field, at lest one of the rlink fields must include a relative path.",
-        "props" : [ {
-          "value" : "artifact",
-          "name" : "type"
-        }, {
-          "value" : "policy",
-          "name" : "type"
-        }, {
-          "value" : "2.1",
-          "name" : "version"
-        }, {
-          "value" : "2023-06-01T00:00:00Z",
-          "name" : "published"
-        } ]
-      }, {
-        "title" : "\\[EXAMPLE\\]Screen Shot",
-        "rlinks" : [ {
-          "media-type" : "image/jpeg",
-          "href" : "./evidence/screen-shot.jpg"
-        } ],
-        "uuid" : "53af7193-b25d-4ed2-a82f-5954d2d0df61",
-        "base64" : {
-          "value" : "00000000",
-          "media-type" : "image/jepg",
-          "filename" : "screen-shot.jpg"
-        },
-        "remarks" : "A tool could use either an rlink or base64 field.\n\nIf both are present, FedRAMP tools will give preference to the base64 content.\n\nThere may be more than one rlink.\n\nIf there is no base64 field, at lest one of the rlink fields must include a relative path.",
-        "props" : [ {
-          "value" : "evidence",
-          "name" : "type"
-        } ]
-      }, {
-        "title" : "\\[EXAMPLE\\]Raw Scan Results - Discovery Scan",
-        "rlinks" : [ {
-          "media-type" : "text/csv",
-          "href" : "./scans/raw_tool_output.csv"
-        } ],
-        "uuid" : "19a07333-4e87-46dc-abab-adad60e706b9",
-        "remarks" : "A SAR tool could use either an rlink or base64 field.\n\nIf both are present, FedRAMP tools will give preference to the base64 content.\n\nThere may be more than one rlink.\n\nIf there is no base64 field, at lest one of the rlink fields must include a relative path.",
-        "props" : [ {
-          "value" : "evidence",
-          "name" : "type"
-        }, {
-          "value" : "tool-output",
-          "name" : "type"
-        } ],
-        "description" : "Raw scan results exported from the scanning tool."
-      }, {
-        "title" : "\\[EXAMPLE\\]Raw Scan Results - OS and Inf Scans",
-        "rlinks" : [ {
-          "media-type" : "text/csv",
-          "href" : "./scans/raw_tool_output.csv"
-        } ],
-        "uuid" : "171b44a2-9b52-4c46-b912-54bd274b2761",
-        "remarks" : "A SAR tool could use either an rlink or base64 field.\n\nIf both are present, FedRAMP tools will give preference to the base64 content.\n\nThere may be more than one rlink.\n\nIf there is no base64 field, at lest one of the rlink fields must include a relative path.",
-        "props" : [ {
-          "value" : "evidence",
-          "name" : "type"
-        }, {
-          "value" : "tool-output",
-          "name" : "type"
-        } ],
-        "description" : "Raw scan results exported from the scanning tool."
-      }, {
-        "title" : "Penetration Test Report",
-        "rlinks" : [ {
-          "media-type" : "application/pdf",
-          "href" : "./pen_test_report.pdf"
-        } ],
-        "uuid" : "e552fb72-d662-4c01-b2d7-4dcb2086bb07",
-        "remarks" : "A SAR tool could use either an rlink or base64 field.\n\nIf both are present, FedRAMP tools will give preference to the base64 content.\n\nThere may be more than one rlink.\n\nIf there is no base64 field, at lest one of the rlink fields must include a relative path.",
-        "props" : [ {
-          "value" : "penetration-test-report",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "name" : "type"
-        }, {
-          "value" : "report",
-          "name" : "type"
-        } ]
-      }, {
-        "rlinks" : [ {
-          "media-type" : "image/png",
-          "href" : "./logo.png"
-        } ],
-        "uuid" : "91d242d0-ccf9-4ff0-996d-e204c19dac52",
-        "base64" : {
-          "value" : "00000000"
-        },
-        "props" : [ {
-          "value" : "logo",
-          "name" : "type"
-        } ],
-        "description" : "3PAO Logo"
-      }, {
-        "rlinks" : [ {
-          "href" : "https://github.com/GSA/fedramp-automation/raw/master/assets/FedRAMP_LOGO.png"
-        } ],
-        "uuid" : "031a32be-f9ef-45a0-994e-20eb58456dee",
-        "props" : [ {
-          "value" : "logo",
-          "name" : "type"
-        } ],
-        "description" : "FedRAMP Logo"
+        "remarks" : "One or more parties"
       } ]
     }
   }
