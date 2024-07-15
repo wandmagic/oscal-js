@@ -1,13 +1,16 @@
 ---
 profile:
-  merge:
-    as-is: true
-  metadata:
-    title: FedRAMP Rev 5 High Baseline
-    last-modified: 2024-06-24T00:00:00Z
-    oscal-version: 1.1.1
-    version: 5.1.1+fedramp-20240111-0
-    published: 2024-06-24T00:00:00Z
+  back-matter:
+    resources:
+    - title: FedRAMP Modified NIST Special Publication (SP) 800-53 revision 5
+      rlinks:
+      - href: FedRAMP_rev5_catalog_tailoring_profile.xml
+        media-type: application/oscal+xml
+      uuid: 051a77c1-b61d-4995-8275-dacfe688d510
+      props:
+      - value: 5.1.1
+        name: version
+  uuid: 2ef3cdd1-6928-494b-b2ef-593e774fae38
   imports:
   - include-controls:
     - with-ids:
@@ -422,17 +425,14 @@ profile:
       - sr-11.2
       - sr-12
     href: '#051a77c1-b61d-4995-8275-dacfe688d510'
-  uuid: 2ef3cdd1-6928-494b-b2ef-593e774fae38
-  back-matter:
-    resources:
-    - props:
-      - name: version
-        value: 5.1.1
-      uuid: 051a77c1-b61d-4995-8275-dacfe688d510
-      rlinks:
-      - href: FedRAMP_rev5_catalog_tailoring_profile.xml
-        media-type: application/oscal+xml
-      title: FedRAMP Modified NIST Special Publication (SP) 800-53 revision 5
+  metadata:
+    published: 2024-06-24T00:00:00Z
+    version: 5.1.1+fedramp-20240111-0
+    oscal-version: 1.1.1
+    last-modified: 2024-06-24T00:00:00Z
+    title: FedRAMP Rev 5 High Baseline
+  merge:
+    as-is: true
   modify:
     set-parameters:
     - constraints:
