@@ -1,620 +1,41 @@
 {
   "assessment-plan" : {
-    "tasks" : [ {
-      "uuid" : "17030aaf-7712-4228-8607-a5a97a785efa",
-      "description" : "optional description here",
-      "timing" : {
-        "within-date-range" : {
-          "start" : "2023-09-01T00:00:00Z",
-          "end" : "2020-09-15T00:00:00Z"
-        }
-      },
-      "title" : "Prepare SAP",
-      "type" : "action"
-    }, {
-      "uuid" : "b65e7779-bd3d-4a49-9de5-3122c290792f",
-      "description" : "optional description here",
-      "timing" : {
-        "within-date-range" : {
-          "start" : "2023-09-15T14:00:00Z",
-          "end" : "2023-09-15T15:00:00Z"
-        }
-      },
-      "title" : "Meeting to Review SAP",
-      "type" : "action"
-    }, {
-      "uuid" : "b8389553-f0f7-4ae9-9331-203608222770",
-      "description" : "optional description here",
-      "timing" : {
-        "within-date-range" : {
-          "start" : "2023-09-16T00:00:00Z",
-          "end" : "2023-09-20T00:00:00Z"
-        }
-      },
-      "title" : "Update and Finalize SAP",
-      "type" : "action"
-    }, {
-      "uuid" : "e1890486-a9f0-4388-b2bc-34fb6c623686",
-      "description" : "optional description here",
-      "timing" : {
-        "within-date-range" : {
-          "start" : "2020-09-20T00:00:00Z",
-          "end" : "2023-09-25T00:00:00Z"
-        }
-      },
-      "title" : "Review CSP Documentation",
-      "type" : "action"
-    }, {
-      "uuid" : "172d4ba2-3362-4e3b-9379-a65a50e399bf",
-      "description" : "optional description here",
-      "timing" : {
-        "within-date-range" : {
-          "start" : "2023-09-25T00:00:00Z",
-          "end" : "2023-10-05T00:00:00Z"
-        }
-      },
-      "title" : "Conduct Interviews of CSP Staff",
-      "type" : "action"
-    }, {
-      "uuid" : "aa5344be-18c4-4529-8937-0f4b873b8fcd",
-      "description" : "optional description here",
-      "timing" : {
-        "within-date-range" : {
-          "start" : "2023-10-05T00:00:00Z",
-          "end" : "2023-10-15T00:00:00Z"
-        }
-      },
-      "title" : "Perform Testing",
-      "type" : "action"
-    }, {
-      "uuid" : "8937348c-5ebb-40bd-a8eb-faff99af156e",
-      "description" : "optional description here",
-      "timing" : {
-        "within-date-range" : {
-          "start" : "2023-10-05T00:00:00Z",
-          "end" : "2023-10-15T00:00:00Z"
-        }
-      },
-      "title" : "Perform Penetration Testing",
-      "type" : "action"
-    }, {
-      "uuid" : "7f2a5095-5f53-461b-b12f-3d649f6d7a6c",
-      "description" : "optional description here",
-      "timing" : {
-        "within-date-range" : {
-          "start" : "2023-10-05T00:00:00Z",
-          "end" : "2023-10-15T00:00:00Z"
-        }
-      },
-      "title" : "Vulnerability Analysis and Threat Assessment",
-      "type" : "action"
-    }, {
-      "uuid" : "4f90df2a-c94c-494f-9999-0695a4dbe9ca",
-      "description" : "optional description here",
-      "timing" : {
-        "within-date-range" : {
-          "start" : "2023-10-15T00:00:00Z",
-          "end" : "2023-10-20T00:00:00Z"
-        }
-      },
-      "title" : "Risk Exposure Table Development",
-      "type" : "action"
-    }, {
-      "uuid" : "0378802d-1288-4305-9eaf-bec8ee1a138c",
-      "description" : "optional description here",
-      "timing" : {
-        "within-date-range" : {
-          "start" : "2023-10-20T00:00:00Z",
-          "end" : "2023-10-25T00:00:00Z"
-        }
-      },
-      "title" : "Complete Draft SAR",
-      "type" : "action"
-    }, {
-      "uuid" : "2a04884f-6b75-4133-857b-ded12e12b38c",
-      "description" : "optional description here",
-      "timing" : {
-        "within-date-range" : {
-          "start" : "2023-10-25T00:00:00Z",
-          "end" : "2023-10-25T00:00:00Z"
-        }
-      },
-      "title" : "Draft SAR Delivered to CSP",
-      "type" : "action"
-    }, {
-      "uuid" : "933b1eea-6ec3-4fbf-850a-33c8f5c44225",
-      "description" : "optional description here",
-      "timing" : {
-        "within-date-range" : {
-          "start" : "2023-10-30T00:00:00Z",
-          "end" : "2023-10-30T00:00:00Z"
-        }
-      },
-      "title" : "Issue Resolution Meeting",
-      "type" : "action"
-    }, {
-      "uuid" : "7f377a32-5012-4d76-becf-9f70d6a9f104",
-      "description" : "optional description here",
-      "timing" : {
-        "within-date-range" : {
-          "start" : "2023-10-30T00:00:00Z",
-          "end" : "2023-11-05T00:00:00Z"
-        }
-      },
-      "title" : "Complete Final Version of SAR",
-      "type" : "action"
-    }, {
-      "uuid" : "45e2af99-bebf-4a2b-ad6f-b325e910aa12",
-      "description" : "optional description here",
-      "timing" : {
-        "within-date-range" : {
-          "start" : "2023-11-05T00:00:00Z",
-          "end" : "2023-11-05T00:00:00Z"
-        }
-      },
-      "title" : "Send Final Version of SAR to CSP and ISSO",
-      "type" : "action"
-    }, {
-      "uuid" : "bdf4380d-6d23-4d02-bafe-483b7b64d1fb",
-      "title" : "Web Application Tests",
-      "type" : "action",
-      "tasks" : [ {
-        "props" : [ {
-          "name" : "test-type",
-          "ns" : "http://fedramp.gov/ns/oscal",
-          "value" : "web-application"
-        }, {
-          "name" : "login-url",
-          "ns" : "http://fedramp.gov/ns/oscal",
-          "value" : "https://service.offering.com/login"
-        }, {
-          "name" : "login-id",
-          "ns" : "http://fedramp.gov/ns/oscal",
-          "value" : "test-user"
-        } ],
-        "uuid" : "16cc716d-b519-416a-ba61-edd4affbdddb",
-        "associated-activities" : [ {
-          "activity-uuid" : "315b3118-3d2e-420b-b4fb-5acf13b08381",
-          "subjects" : [ {
-            "include-subjects" : [ {
-              "remarks" : "References an inventory item, which is linked to a component. The component has a `scan-type` FedRAMP Extension with a value of \"web\"",
-              "type" : "inventory-item",
-              "subject-uuid" : "779d4e89-bba6-432c-b50d-d699fe534129"
-            } ],
-            "type" : "inventory-item"
-          } ]
-        } ],
-        "title" : "Web Application Test #1",
-        "type" : "action"
-      }, {
-        "props" : [ {
-          "name" : "test-type",
-          "ns" : "http://fedramp.gov/ns/oscal",
-          "value" : "web-application"
-        }, {
-          "name" : "login-url",
-          "ns" : "http://fedramp.gov/ns/oscal",
-          "value" : "https://admin-portal.offering.com/login"
-        }, {
-          "name" : "login-id",
-          "ns" : "http://fedramp.gov/ns/oscal",
-          "value" : "test-admin"
-        } ],
-        "uuid" : "fc869008-9cd5-4499-82c8-6bc532a86142",
-        "associated-activities" : [ {
-          "activity-uuid" : "64142a6f-d8d4-47c6-8bb1-a0e33f17664d",
-          "subjects" : [ {
-            "remarks" : "References an inventory item, which is linked to a component. The component has a `scan-type` FedRAMP Extension with a value of \"web\"",
-            "include-subjects" : [ {
-              "type" : "inventory-item",
-              "subject-uuid" : "779d4e89-bba6-432c-b50d-d699fe534129"
-            } ],
-            "type" : "inventory-item"
-          } ]
-        } ],
-        "title" : "Web Application Test #2",
-        "type" : "action"
-      } ]
-    }, {
-      "uuid" : "eddbcfa9-d296-4818-adcc-3d5465ed3fdd",
-      "title" : "Role-Based Tests",
-      "type" : "action",
-      "tasks" : [ {
-        "props" : [ {
-          "name" : "test-type",
-          "ns" : "http://fedramp.gov/ns/oscal",
-          "value" : "role-based"
-        }, {
-          "name" : "login-id",
-          "ns" : "http://fedramp.gov/ns/oscal",
-          "value" : "test-user"
-        }, {
-          "name" : "user-uuid",
-          "ns" : "http://fedramp.gov/ns/oscal",
-          "value" : "9cb0fab0-78bd-44ba-bcb8-3e9801cc952f"
-        } ],
-        "uuid" : "cfcb0f24-2e1b-49d7-b938-5f58479ed874",
-        "associated-activities" : [ {
-          "activity-uuid" : "dc858ece-b430-485d-886c-3a812bb77b13",
-          "subjects" : [ {
-            "remarks" : "References an inventory item, which is linked to a component. The component has a `scan-type` FedRAMP Extension with a value of \"web\"",
-            "include-subjects" : [ {
-              "type" : "inventory-item",
-              "subject-uuid" : "779d4e89-bba6-432c-b50d-d699fe534129"
-            } ],
-            "type" : "inventory-item"
-          } ]
-        } ],
-        "title" : "Role Based Test #1",
-        "type" : "action"
-      }, {
-        "props" : [ {
-          "name" : "test-type",
-          "ns" : "http://fedramp.gov/ns/oscal",
-          "value" : "role-based"
-        }, {
-          "name" : "login-id",
-          "ns" : "http://fedramp.gov/ns/oscal",
-          "value" : "test-admin"
-        }, {
-          "name" : "user-uuid",
-          "ns" : "http://fedramp.gov/ns/oscal",
-          "value" : "sys-role-2"
-        } ],
-        "uuid" : "74830d19-2820-4487-bd1d-91d8656b7eb0",
-        "associated-activities" : [ {
-          "activity-uuid" : "64142a6f-d8d4-47c6-8bb1-a0e33f17664d",
-          "subjects" : [ {
-            "remarks" : "References an inventory item, which is linked to a component. The component has a `scan-type` FedRAMP Extension with a value of \"web\"",
-            "include-subjects" : [ {
-              "type" : "inventory-item",
-              "subject-uuid" : "779d4e89-bba6-432c-b50d-d699fe534129"
-            } ],
-            "type" : "inventory-item"
-          } ]
-        } ],
-        "title" : "Role Based Test #2",
-        "type" : "action"
-      } ]
-    } ],
-    "local-definitions" : {
-      "activities" : [ {
-        "props" : [ {
-          "name" : "method",
-          "value" : "EXAMINE"
-        }, {
-          "name" : "type",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "manual"
-        }, {
-          "name" : "label",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "Test ID"
-        } ],
-        "uuid" : "2715174e-9355-4775-bea4-4068e59e916b",
-        "title" : "Title of the Manual Test",
-        "steps" : [ {
-          "props" : [ {
-            "name" : "sort-id",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "value" : "001"
-          } ],
-          "description" : "Describe test step #1",
-          "uuid" : "fb039fd7-5a2b-4c0f-867c-88cce9c3778c"
-        }, {
-          "props" : [ {
-            "name" : "sort-id",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "value" : "002"
-          } ],
-          "description" : "Describe test step #2",
-          "uuid" : "fb039fd7-5a2b-4c0f-867c-88cce9c3778c"
-        }, {
-          "props" : [ {
-            "name" : "sort-id",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "value" : "003"
-          } ],
-          "description" : "Describe test step #3",
-          "uuid" : "fb039fd7-5a2b-4c0f-867c-88cce9c3778c"
-        } ],
-        "description" : "Description of the manual test"
-      }, {
-        "props" : [ {
-          "name" : "method",
-          "value" : "TEST"
-        }, {
-          "name" : "type",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "manual"
-        }, {
-          "name" : "label",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "Test ID"
-        } ],
-        "uuid" : "3ba68918-80ef-4846-89e0-9f1def7e5223",
-        "title" : "\\[SAMPLE\\]Forceful Browsing",
-        "description" : "We will login as a customer and try to see if we can gain access to the Network Administrator and Database Administrator privileges and authorizations by navigating to different views and manually forcing the browser to various URLs"
-      }, {
-        "props" : [ {
-          "name" : "method",
-          "value" : "TEST"
-        }, {
-          "name" : "type",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "manual"
-        }, {
-          "name" : "label",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "Test ID"
-        } ],
-        "uuid" : "2233cf20-282a-4967-ab07-a4b7d1ae3a4b",
-        "title" : "\\[SAMPLE\\]CAPTCHA",
-        "description" : "We will test the CAPTCHA function on the web form manually"
-      }, {
-        "props" : [ {
-          "name" : "method",
-          "value" : "EXAMINE"
-        }, {
-          "name" : "type",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "manual"
-        }, {
-          "name" : "label",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "Test ID"
-        } ],
-        "uuid" : "f818a896-3438-409f-a2a4-583a56fa41b4",
-        "title" : "\\[SAMPLE\\]OCSP",
-        "description" : "We will manually test to see if OCSP is validating certificates."
-      }, {
-        "props" : [ {
-          "name" : "method",
-          "value" : "TEST"
-        }, {
-          "name" : "type",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "web-application"
-        } ],
-        "uuid" : "315b3118-3d2e-420b-b4fb-5acf13b08381",
-        "title" : "Web Application Test #1",
-        "description" : "Describe this web application test."
-      }, {
-        "props" : [ {
-          "name" : "method",
-          "value" : "TEST"
-        }, {
-          "name" : "type",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "web-application"
-        } ],
-        "uuid" : "64142a6f-d8d4-47c6-8bb1-a0e33f17664d",
-        "title" : "Web Application Test #2",
-        "description" : "Describe this web application test."
-      }, {
-        "props" : [ {
-          "name" : "method",
-          "value" : "TEST"
-        }, {
-          "name" : "type",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "role-based"
-        } ],
-        "uuid" : "dc858ece-b430-485d-886c-3a812bb77b13",
-        "title" : "Role Based Test #1",
-        "description" : "Describe this role based test."
-      }, {
-        "props" : [ {
-          "name" : "method",
-          "value" : "INTERVIEW"
-        }, {
-          "name" : "type",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "role-based"
-        } ],
-        "uuid" : "74830d19-2820-4487-bd1d-91d8656b7eb0",
-        "title" : "Role Based Test #2",
-        "description" : "Describe this role based test."
-      } ],
-      "objectives-and-methods" : [ {
-        "control-id" : "ac-2",
-        "parts" : [ {
-          "props" : [ {
-            "name" : "method-id",
-            "value" : "ac-2.f_obj.1-1"
-          } ],
-          "id" : "ac-2.f_obj.1",
-          "title" : "Assessment Objective",
-          "name" : "assessment-objective",
-          "prose" : "Determine if the organization:\n\n- defines procedures or conditions to:\n  - create information system accounts\n  - enable information system accounts\n  - modify information system accounts\n  - disable information system accounts\n  - remove information system accounts"
-        }, {
-          "parts" : [ {
-            "id" : "ac-2.f_obj.1-1_object",
-            "name" : "assessment-objects",
-            "prose" : "Access control policy; procedures addressing account management; security plan; information system design documentation; information system configuration settings and associated documentation; list of active system accounts along with the name of the individual associated with each account; list of conditions for group and role membership; notifications or records of recently transferred, separated, or terminated employees; list of recently disabled information system accounts along with the name of the individual associated with each account; access authorization records; account management compliance reviews; information system monitoring records; information system audit records; other relevant documents or records"
-          } ],
-          "props" : [ {
-            "name" : "method",
-            "value" : "EXAMINE"
-          } ],
-          "id" : "ac-2.f_obj.1-1",
-          "name" : "assessment-method"
-        } ]
-      }, {
-        "control-id" : "ac-2",
-        "parts" : [ {
-          "id" : "ac-2.f_obj.2",
-          "title" : "Assessment Objective",
-          "name" : "assessment-objective",
-          "prose" : "Determine if the organization:\n\n- in accordance with organization-defined procedures or conditions:\n  - create information system accounts\n  - enable information system accounts\n  - modify information system accounts\n  - disable information system accounts\n  - remove information system accounts"
-        }, {
-          "parts" : [ {
-            "id" : "ac-2.f_obj.2-1_object",
-            "name" : "assessment-objects",
-            "prose" : "Organizational personnel with account management responsibilities; system/network administrators; organizational personnel with information security responsibilities"
-          } ],
-          "props" : [ {
-            "name" : "method",
-            "value" : "INTERVIEW"
-          } ],
-          "id" : "ac-2.f_obj.2-1",
-          "name" : "assessment-method"
-        }, {
-          "parts" : [ {
-            "id" : "ac-2.f_obj.2-2_object",
-            "name" : "assessment-objects",
-            "prose" : "Organizational processes for account management on the information system; automated mechanisms for implementing account management"
-          } ],
-          "props" : [ {
-            "name" : "method",
-            "value" : "TEST"
-          } ],
-          "id" : "ac-2.f_obj.2-2",
-          "name" : "assessment-method"
-        } ]
-      } ],
-      "inventory-items" : [ {
-        "description" : "A network appliance, not defined in the SSP inventory.\n\nThis could be component that is modified/added as part of a significant change.",
-        "remarks" : "Use any needed prop/annotation allowed in an SSP inventory-item.\n\nIf correcting existing SSP, use the \"updates-uuid\" property to cite the original content.\n\nThis could be component that is modified/added as part of a significant change.",
-        "uuid" : "ce6b1a6e-0391-45d1-997e-3cc97db97d9f",
-        "props" : [ {
-          "name" : "ipv4-address",
-          "value" : "10.1.2.99"
-        }, {
-          "name" : "virtual",
-          "value" : "no"
-        }, {
-          "name" : "public",
-          "value" : "no"
-        }, {
-          "name" : "fqdn",
-          "value" : "dns.name"
-        }, {
-          "name" : "mac-address",
-          "value" : "00:00:00:00:00:00"
-        }, {
-          "name" : "hardware-model",
-          "value" : "hardware-model"
-        }, {
-          "name" : "vendor-name",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "vendor-name"
-        }, {
-          "name" : "asset-type",
-          "value" : "appliance"
-        }, {
-          "name" : "scan-type",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "infrastructure"
-        }, {
-          "name" : "scan-type",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "web"
-        }, {
-          "name" : "allows-authenticated-scan",
-          "value" : "no"
-        } ]
-      }, {
-        "description" : "A Windows laptop, not defined in the SSP inventory.",
-        "remarks" : "Use any needed prop/annotation allowed in an SSP inventory-item.\n\nIf correcting existing SSP, use the \"updates-uuid\" property to cite the original content.",
-        "uuid" : "0f9049ed-a01f-484a-b70d-b1894fd196b8",
-        "props" : [ {
-          "name" : "ipv4-address",
-          "value" : "10.1.1.99"
-        }, {
-          "name" : "virtual",
-          "value" : "no"
-        }, {
-          "name" : "public",
-          "value" : "no"
-        }, {
-          "name" : "fqdn",
-          "value" : "dns.name"
-        }, {
-          "name" : "mac-address",
-          "value" : "00:00:00:00:00:00"
-        }, {
-          "name" : "os-name",
-          "value" : "Windows 10"
-        }, {
-          "name" : "os-version",
-          "value" : "10.0.190944"
-        }, {
-          "name" : "hardware-model",
-          "value" : "hardware-model"
-        }, {
-          "name" : "vendor-name",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "vendor-name"
-        }, {
-          "name" : "asset-type",
-          "value" : "operating-system"
-        }, {
-          "name" : "scan-type",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "infrastructure"
-        }, {
-          "name" : "allows-authenticated-scan",
-          "value" : "yes"
-        } ]
-      } ],
+    "assessment-assets" : {
       "components" : [ {
-        "remarks" : "Use any needed prop/annotation allowed in an SSP inventory-item.\n\nIf correcting existing SSP, use the \"updates-uuid\" property to cite the original content.\n\nThis could be component that is modified/added as part of a significant change.",
-        "title" : "Subnet",
-        "uuid" : "59406025-116a-4fee-84c3-932a9968de54",
-        "description" : "A known subnet, which is not defined in the SSP inventory.",
         "status" : {
           "state" : "operational"
         },
         "props" : [ {
-          "name" : "ipv4-subnet",
+          "name" : "ipv4-address",
           "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "10.20.30.0/24"
+          "value" : "10.10.10.10"
         } ],
-        "type" : "subnet"
-      } ],
-      "users" : [ {
-        "remarks" : "The UUID assigned to the origional incorrect role in the SSP must be cited in the \"updates-uuid\" property.\n\nThe SAP syntax duplicates the SSP user syntax.\n\nThis local entry completely replaces the entry in the SSP.\n\nTools should duplicate the entire assembly from the SSP to this location, then allow the assessor to add or change the details.\n\nThis ensures the entry here is complete.",
-        "uuid" : "ba6b8bd4-c6f1-4b60-aa0f-69875b108f16",
-        "title" : "Updated Role",
-        "authorized-privileges" : [ {
-          "title" : "Corrected Function List",
-          "functions-performed" : [ "Add/Remove Groups", "Add/Remove other admins", "Manage logs" ]
-        } ],
-        "description" : "# Existing Role - Incorrect Associated Functions"
-      }, {
-        "remarks" : "The ID assigned to this missing role must not be used in the SSP user list.\n\nThe SAP user assembly duplicates the SSP user assembly, which requires a role-id.\n\nIf an existing role in the SSP is appropriate, reference it here.\n\nIf no appropriate role exists in the SSP, the role-id may be left blank in the SAP.",
-        "uuid" : "58bb5a77-b40a-4104-ac29-299a1691f76a",
-        "title" : "Missing Role",
-        "authorized-privileges" : [ {
-          "title" : "Typical External User",
-          "functions-performed" : [ "View Team Content", "View/Edit Individual Content" ]
-        } ]
-      } ]
-    },
-    "import-ssp" : {
-      "remarks" : "Link the SAP to the SSP.\n\nFedRAMP prefers the path for the SSP be relative to the location of this SAP file. Absolute links will likely not work when FedRAMP tools import the content.\n\nThis may point to a back-matter resource using a URI fragment.\n\nIf no OSCAL-based SSP exists, this must be a URI fragment pointing to a special back-matter resource. The resource must include the `no-oscal-ssp` conformity tag.",
-      "href" : "#7c30125f-c056-4888-9f1a-7ed1b6a1b638"
-    },
-    "assessment-assets" : {
-      "components" : [ {
+        "type" : "hardware",
         "remarks" : "Ideally, this assessment laptop would have been defined in the SAP, and not repeated here.\n\nIf the laptop was not known at the time the SAP was drafted, or something different was used, it must be defined here.",
         "title" : "Assessment Laptop",
         "uuid" : "ba991c3f-1e00-4c38-bf81-86a9e503f3b9",
-        "description" : "Describe assessment laptop.",
+        "description" : "Describe assessment laptop."
+      }, {
         "status" : {
           "state" : "operational"
         },
         "props" : [ {
-          "name" : "ipv4-address",
+          "name" : "vendor-name",
           "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "10.10.10.10"
+          "value" : "Vendor Name"
+        }, {
+          "name" : "name",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "Tool Name"
+        }, {
+          "name" : "version",
+          "value" : "1.2.3"
         } ],
-        "type" : "hardware"
-      }, {
+        "type" : "software",
         "title" : "XYZ Vulnerability Scanning Tool",
         "uuid" : "040937c3-2e0e-407a-bb3c-d4e61ac1c460",
-        "description" : "Describe the purpose of the tool here.",
+        "description" : "Describe the purpose of the tool here."
+      }, {
         "status" : {
           "state" : "operational"
         },
@@ -630,51 +51,20 @@
           "name" : "version",
           "value" : "1.2.3"
         } ],
-        "type" : "software"
-      }, {
+        "type" : "software",
         "title" : "XYZ Database Scanning Tool",
         "uuid" : "c50104b9-69b3-4383-a1f1-d8a6f6f806f7",
-        "description" : "Describe the purpose of the tool here.",
+        "description" : "Describe the purpose of the tool here."
+      }, {
         "status" : {
           "state" : "operational"
         },
-        "props" : [ {
-          "name" : "vendor-name",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "Vendor Name"
-        }, {
-          "name" : "name",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "Tool Name"
-        }, {
-          "name" : "version",
-          "value" : "1.2.3"
-        } ],
-        "type" : "software"
-      }, {
+        "type" : "assessment-origination",
         "title" : "Assessment Addresses",
         "uuid" : "332517e5-2033-47dd-a4d0-6ca9c9786f6b",
-        "description" : "Identifies all addresses from which the assessment may be conducted, including scans and penetration testing activities.",
-        "status" : {
-          "state" : "operational"
-        },
-        "type" : "assessment-origination"
+        "description" : "Identifies all addresses from which the assessment may be conducted, including scans and penetration testing activities."
       } ],
       "assessment-platforms" : [ {
-        "props" : [ {
-          "name" : "ipv4-address",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "10.10.10.10"
-        }, {
-          "name" : "ipv4-address",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "10.10.10.11"
-        }, {
-          "name" : "ipv4-address",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "10.10.10.12"
-        } ],
-        "title" : "Scanning Tools",
         "uuid" : "60218fe9-b01a-4553-b705-dbe9dec44aa1",
         "uses-components" : [ {
           "remarks" : "Cites assessment laptop.",
@@ -688,7 +78,21 @@
         }, {
           "remarks" : "Cites Database Scanning Tool",
           "component-uuid" : "c50104b9-69b3-4383-a1f1-d8a6f6f806f7"
-        } ]
+        } ],
+        "props" : [ {
+          "name" : "ipv4-address",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "10.10.10.10"
+        }, {
+          "name" : "ipv4-address",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "10.10.10.11"
+        }, {
+          "name" : "ipv4-address",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "10.10.10.12"
+        } ],
+        "title" : "Scanning Tools"
       } ]
     },
     "back-matter" : {
@@ -728,11 +132,12 @@
         "remarks" : "Use this to point to an OSCAL-based SSP.\n\nFor FedRAMP, do not attach the SSP. This should be delivered by the CSP.",
         "uuid" : "7c30125f-c056-4888-9f1a-7ed1b6a1b638",
         "rlinks" : [ {
-          "href" : "../../ssp/xml/FedRAMP-SSP-OSCAL-Template.xml",
-          "media-type" : "text/xml"
+          "media-type" : "text/xml",
+          "href" : "../../ssp/xml/FedRAMP-SSP-OSCAL-Template.xml"
         } ],
         "title" : "\\[System Name\\] \\[FIPS-199 Level\\] SSP"
       }, {
+        "description" : "# ONLY USE THIS RESOURCE WHEN NO OSCAL-BASED SSP EXISTS\n\nBriefly describe the system. This will appear in the SAR.",
         "props" : [ {
           "name" : "type",
           "ns" : "https://fedramp.gov/ns/oscal",
@@ -760,8 +165,7 @@
         } ],
         "remarks" : "Only include this resource if no OSCAL-based SSP is available.\n\nDelete it otherwise.",
         "uuid" : "a78f7e4c-a27a-4b1e-901b-ebfecf2b0301",
-        "title" : "System's Full Name",
-        "description" : "# ONLY USE THIS RESOURCE WHEN NO OSCAL-BASED SSP EXISTS\n\nBriefly describe the system. This will appear in the SAR."
+        "title" : "System's Full Name"
       }, {
         "props" : [ {
           "name" : "type",
@@ -770,9 +174,9 @@
         } ],
         "remarks" : "Must be present in a FedRAMP SAP.",
         "base64" : {
+          "media-type" : "application/vnd.ms-excel",
           "value" : "00000000",
-          "filename" : "SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx",
-          "media-type" : "application/vnd.ms-excel"
+          "filename" : "SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx"
         },
         "uuid" : "985475ee-d4d6-4581-8fdf-d84d3d8caa48",
         "rlinks" : [ {
@@ -787,9 +191,9 @@
         } ],
         "remarks" : "Must be present in a FedRAMP SAP.",
         "base64" : {
+          "media-type" : "application/pdf",
           "value" : "00000000",
-          "filename" : "FedRAMP_Master_Acronym_and_Glossary.pdf",
-          "media-type" : "application/pdf"
+          "filename" : "FedRAMP_Master_Acronym_and_Glossary.pdf"
         },
         "uuid" : "1a23a771-d481-4594-9a1a-71d584fa4123",
         "rlinks" : [ {
@@ -797,6 +201,7 @@
         } ],
         "title" : "FedRAMP Master Acronym and Glossary"
       }, {
+        "description" : "The following individuals at \\[IA Name\\] and \\[CSP Name\\] have been identified as having the authority to agree to security testing of \\[CSO Name\\]. \\[CSP Name\\] has validated that the \\[IA Name\\] assessors assigned to this project fulfill the FedRAMP assessor requirements, as noted in Section 6.1 and formally named in Table 6-1. This section must be signed and dated prior to an IA beginning an assessment.",
         "props" : [ {
           "name" : "type",
           "ns" : "https://fedramp.gov/ns/oscal",
@@ -804,18 +209,18 @@
         } ],
         "remarks" : "FedRAMP is formulating guidelines for handling digital/electronic signatures in OSCAL, and welcome feedback on solutions.\n\nFor now, FedRAMP recommends one of the following:\n\n- Render the OSCAL SAP signature page as a PDF that is digitally signed and attached.\n- Render the OSCAL SAP signature page as a printed page that is physically signed, scanned, and attached.\n\nIf your organization prefers another approach, please seek prior approval from the FedRAMP PMO.",
         "base64" : {
+          "media-type" : "application/pdf",
           "value" : "00000000",
-          "filename" : "sap-signature.pdf",
-          "media-type" : "application/pdf"
+          "filename" : "sap-signature.pdf"
         },
         "uuid" : "671dcc43-fb4d-4d93-b321-88beb2844673",
         "rlinks" : [ {
-          "href" : "./signed-sap.pdf",
-          "media-type" : "application/pdf"
+          "media-type" : "application/pdf",
+          "href" : "./signed-sap.pdf"
         } ],
-        "title" : "Signatures",
-        "description" : "The following individuals at \\[IA Name\\] and \\[CSP Name\\] have been identified as having the authority to agree to security testing of \\[CSO Name\\]. \\[CSP Name\\] has validated that the \\[IA Name\\] assessors assigned to this project fulfill the FedRAMP assessor requirements, as noted in Section 6.1 and formally named in Table 6-1. This section must be signed and dated prior to an IA beginning an assessment."
+        "title" : "Signatures"
       }, {
+        "description" : "Embed or reference copies of the sampling methodology for security controls assessment and vulnerability scanning (if applicable).",
         "props" : [ {
           "name" : "type",
           "ns" : "https://fedramp.gov/ns/oscal",
@@ -823,33 +228,33 @@
         } ],
         "uuid" : "10617261-3e54-403f-9096-b8e4e79ad2b2",
         "rlinks" : [ {
-          "href" : "./sampling-methodology-reference-1.pdf",
-          "media-type" : "application/pdf"
+          "media-type" : "application/pdf",
+          "href" : "./sampling-methodology-reference-1.pdf"
         }, {
-          "href" : "./sampling-methodology-reference-2.docx",
-          "media-type" : "application/msword"
+          "media-type" : "application/msword",
+          "href" : "./sampling-methodology-reference-2.docx"
         } ],
-        "title" : "Sampling Methodology",
-        "description" : "Embed or reference copies of the sampling methodology for security controls assessment and vulnerability scanning (if applicable)."
+        "title" : "Sampling Methodology"
       }, {
+        "description" : "The following table captures the minimum requirements for penetration testing based on FedRAMP requirements. Additional attack vectors are outlined in the table below and will be recorded in the \\[CSO Name\\] Penetration Test Report. Deviations between this list and the Penetration Test Report will be recorded and explained in the SAR table \"Deviations from the SAP\".\n\nTechniques to test each system may vary depending on the service offering (IaaS, PaaS, SaaS, and Hybrid). Due to system commonalities, the mandatory attack vectors apply to all systems, as indicated by the \"x\" in the \"Include\" column. Ensure that all the appropriate threat models and attack models are marked a \"x\", as well. The \\[CSO Name\\] Penetration Test Report will include the testing of all the parameters, as indicated in this table.\n\n| Include |                Mandatory Attack Vectors                | Include |             Threat Models             | Include |    Attack Models     |\n|---------|--------------------------------------------------------|---------|---------------------------------------|---------|----------------------|\n| x       | External to Corporate                                  |         | Internet based (untrusted)            |         | Enterprise           |\n| x       | External to CSP Target System                          |         | Network Threat Actor                  |         | Reconnaissance       |\n| x       | Tenant to CSP Management System                        |         | Attack on CSP managed user            |         | Resource Development |\n| x       | Tenant to Tenant                                       |         | Email attack against CSP managed user |         | Initial Access       |\n| x       | Mobile Application to Target System                    |         | Application Threat Actor              |         | Execution            |\n| x       | Client-side Application and/or Agents to Target System |         | Physical based attack                 |         | Persistence          |",
         "props" : [ {
           "name" : "type",
           "ns" : "https://fedramp.gov/ns/oscal",
           "value" : "penetration-test-plan"
         } ],
         "base64" : {
+          "media-type" : "application/pdf",
           "value" : "00000000",
-          "filename" : "pen_test_plan.pdf",
-          "media-type" : "application/pdf"
+          "filename" : "pen_test_plan.pdf"
         },
         "uuid" : "8e8d05e4-0d47-4bf9-bbf0-b7070d60a671",
         "rlinks" : [ {
-          "href" : "./pen_test_plan.pdf",
-          "media-type" : "application/pdf"
+          "media-type" : "application/pdf",
+          "href" : "./pen_test_plan.pdf"
         } ],
-        "title" : "Penetration Testing Plan and Methodology",
-        "description" : "The following table captures the minimum requirements for penetration testing based on FedRAMP requirements. Additional attack vectors are outlined in the table below and will be recorded in the \\[CSO Name\\] Penetration Test Report. Deviations between this list and the Penetration Test Report will be recorded and explained in the SAR table \"Deviations from the SAP\".\n\nTechniques to test each system may vary depending on the service offering (IaaS, PaaS, SaaS, and Hybrid). Due to system commonalities, the mandatory attack vectors apply to all systems, as indicated by the \"x\" in the \"Include\" column. Ensure that all the appropriate threat models and attack models are marked a \"x\", as well. The \\[CSO Name\\] Penetration Test Report will include the testing of all the parameters, as indicated in this table.\n\n| Include |                Mandatory Attack Vectors                | Include |             Threat Models             | Include |    Attack Models     |\n|---------|--------------------------------------------------------|---------|---------------------------------------|---------|----------------------|\n| x       | External to Corporate                                  |         | Internet based (untrusted)            |         | Enterprise           |\n| x       | External to CSP Target System                          |         | Network Threat Actor                  |         | Reconnaissance       |\n| x       | Tenant to CSP Management System                        |         | Attack on CSP managed user            |         | Resource Development |\n| x       | Tenant to Tenant                                       |         | Email attack against CSP managed user |         | Initial Access       |\n| x       | Mobile Application to Target System                    |         | Application Threat Actor              |         | Execution            |\n| x       | Client-side Application and/or Agents to Target System |         | Physical based attack                 |         | Persistence          |"
+        "title" : "Penetration Testing Plan and Methodology"
       }, {
+        "description" : "The following is SCR documentation that was submitted by \\[CSP Name\\] to \\[Choose One: AO/JAB\\]\n\n- the SCR Form(s) and Supporting Documents\n- the SCR Inventory (e.g., any components that are being added to the inventory, removed from the inventory, or are being modified or directly impacted by the change(s).\n- the Embedded Excel File using the FedRAMP Standard Inventory Template\n\nRoles are described in the \\[CSO Name\\] SSP, Section 11, Separation of Duties. Additional roles that are being introduced as part of significant changes will be tested and are noted in Table D-1. Role testing will be performed to test the authorization restrictions for each role. \\[IA Name\\] will access the system while logged in as different user types and attempt to perform restricted functions for that user.\n\n| Role Name | Test User ID | Associated Functions |\n|-----------|--------------|----------------------|\n|           |              |                      |",
         "props" : [ {
           "name" : "type",
           "ns" : "https://fedramp.gov/ns/oscal",
@@ -857,18 +262,18 @@
         } ],
         "uuid" : "c965ffb0-cd67-4a80-9014-0c7a217c1f85",
         "rlinks" : [ {
-          "href" : "./fedramp_scr_form.pdf",
-          "media-type" : "application/pdf"
+          "media-type" : "application/pdf",
+          "href" : "./fedramp_scr_form.pdf"
         }, {
-          "href" : "./scr_inventory.xlsx",
-          "media-type" : "application/vnd.ms-excel"
+          "media-type" : "application/vnd.ms-excel",
+          "href" : "./scr_inventory.xlsx"
         }, {
-          "href" : "./other_scr_files.zip",
-          "media-type" : "application/zip"
+          "media-type" : "application/zip",
+          "href" : "./other_scr_files.zip"
         } ],
-        "title" : "Significant Change Request Documentation",
-        "description" : "The following is SCR documentation that was submitted by \\[CSP Name\\] to \\[Choose One: AO/JAB\\]\n\n- the SCR Form(s) and Supporting Documents\n- the SCR Inventory (e.g., any components that are being added to the inventory, removed from the inventory, or are being modified or directly impacted by the change(s).\n- the Embedded Excel File using the FedRAMP Standard Inventory Template\n\nRoles are described in the \\[CSO Name\\] SSP, Section 11, Separation of Duties. Additional roles that are being introduced as part of significant changes will be tested and are noted in Table D-1. Role testing will be performed to test the authorization restrictions for each role. \\[IA Name\\] will access the system while logged in as different user types and attempt to perform restricted functions for that user.\n\n| Role Name | Test User ID | Associated Functions |\n|-----------|--------------|----------------------|\n|           |              |                      |"
+        "title" : "Significant Change Request Documentation"
       }, {
+        "description" : "3PAO Logo",
         "props" : [ {
           "name" : "type",
           "value" : "logo"
@@ -878,11 +283,11 @@
         },
         "uuid" : "91d242d0-ccf9-4ff0-996d-e204c19dac52",
         "rlinks" : [ {
-          "href" : "./logo.png",
-          "media-type" : "image/png"
-        } ],
-        "description" : "3PAO Logo"
+          "media-type" : "image/png",
+          "href" : "./logo.png"
+        } ]
       }, {
+        "description" : "FedRAMP Logo",
         "props" : [ {
           "name" : "type",
           "value" : "logo"
@@ -890,11 +295,173 @@
         "uuid" : "031a32be-f9ef-45a0-994e-20eb58456dee",
         "rlinks" : [ {
           "href" : "https://github.com/GSA/fedramp-automation/raw/master/assets/FedRAMP_LOGO.png"
-        } ],
-        "description" : "FedRAMP Logo"
+        } ]
       } ]
     },
     "metadata" : {
+      "parties" : [ {
+        "type" : "organization",
+        "name" : "Assessment Organization Name",
+        "props" : [ {
+          "name" : "iso-iec-17020-identifier",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "0000.00"
+        } ],
+        "uuid" : "49f73135-efab-4275-9a79-003656ad890a",
+        "remarks" : "Replace sample 3PAO information.\n\nIf the assessor is A2LA Certified, include the ISO/IEC-17020",
+        "short-name" : "Acronym/Short Name",
+        "links" : [ {
+          "rel" : "home-page",
+          "href" : "https://assessor.web.site"
+        } ],
+        "location-uuids" : [ "2ba201ac-8ee9-4a1d-812a-a755591a3963" ]
+      }, {
+        "type" : "organization",
+        "name" : "Federal Risk and Authorization Management Program: Program Management Office",
+        "uuid" : "77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d",
+        "addresses" : [ {
+          "addr-lines" : [ "1800 F St. NW" ],
+          "postal-code" : "20006",
+          "type" : "work",
+          "state" : "DC",
+          "city" : "Washington",
+          "country" : "US"
+        } ],
+        "remarks" : "This party entry must be present in a FedRAMP SAP.\n\nThe uuid may be different; however, the uuid must be associated with the \"fedramp-pmo\" role in the responsible-party assemblies.",
+        "short-name" : "FedRAMP PMO",
+        "links" : [ {
+          "rel" : "homepage",
+          "href" : "https://fedramp.gov"
+        }, {
+          "rel" : "logo",
+          "href" : "#a2381e87-3d04-4108-a30b-b4d2f36d001f"
+        } ],
+        "email-addresses" : [ "info@fedramp.gov" ]
+      }, {
+        "type" : "person",
+        "name" : "[SAMPLE]Person Name 1",
+        "props" : [ {
+          "uuid" : "1146fc8a-3a2e-4196-b098-fb6944bd364f",
+          "name" : "job-title",
+          "value" : "Individual's Title"
+        }, {
+          "uuid" : "7709b968-6f59-4e7c-9fda-259a5b3ff316",
+          "name" : "mail-stop",
+          "value" : "Office 1-A"
+        } ],
+        "uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
+        "telephone-numbers" : [ {
+          "number" : "202-000-0001"
+        } ],
+        "member-of-organizations" : [ "49f73135-efab-4275-9a79-003656ad890a" ],
+        "email-addresses" : [ "name@example.com" ],
+        "location-uuids" : [ "2ba201ac-8ee9-4a1d-812a-a755591a3963" ]
+      }, {
+        "type" : "person",
+        "name" : "[SAMPLE]Person Name 2",
+        "props" : [ {
+          "uuid" : "3ddccafa-e9c8-4832-a085-bc42557fc10f",
+          "name" : "mail-stop",
+          "value" : "Office 2-B"
+        } ],
+        "uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe",
+        "telephone-numbers" : [ {
+          "number" : "202-000-0002"
+        } ],
+        "member-of-organizations" : [ "49f73135-efab-4275-9a79-003656ad890a" ],
+        "email-addresses" : [ "name@example.com" ],
+        "location-uuids" : [ "2ba201ac-8ee9-4a1d-812a-a755591a3963" ]
+      }, {
+        "type" : "person",
+        "name" : "[SAMPLE]Person Name 3",
+        "props" : [ {
+          "uuid" : "14c88675-1e7d-4e19-94e2-18e653dac452",
+          "name" : "mail-stop",
+          "value" : "Office 3-C"
+        } ],
+        "uuid" : "bcf47707-49e4-4acc-bf43-e63156046390",
+        "telephone-numbers" : [ {
+          "number" : "202-000-0003"
+        } ],
+        "member-of-organizations" : [ "49f73135-efab-4275-9a79-003656ad890a" ],
+        "email-addresses" : [ "name@example.com" ],
+        "location-uuids" : [ "2ba201ac-8ee9-4a1d-812a-a755591a3963" ]
+      }, {
+        "type" : "person",
+        "name" : "[SAMPLE]Person Name 4",
+        "props" : [ {
+          "uuid" : "9618632e-0d9a-4478-ad75-9373ae5310a0",
+          "name" : "mail-stop",
+          "value" : "Office 4-D"
+        } ],
+        "uuid" : "abc15ce6-1f43-4951-bcd5-ab62cdff7ed9",
+        "telephone-numbers" : [ {
+          "number" : "202-000-0004"
+        } ],
+        "member-of-organizations" : [ "49f73135-efab-4275-9a79-003656ad890a" ],
+        "email-addresses" : [ "name@example.com" ],
+        "location-uuids" : [ "2ba201ac-8ee9-4a1d-812a-a755591a3963" ]
+      }, {
+        "type" : "person",
+        "name" : "[SAMPLE]Person Name 5",
+        "props" : [ {
+          "uuid" : "0662559e-78c3-43a7-80f2-6b9b5e1fa3fb",
+          "name" : "job-title",
+          "value" : "Individual's Title"
+        }, {
+          "uuid" : "db2999e9-526d-4ec6-9fad-4bdf1f8b0d4a",
+          "name" : "mail-stop",
+          "value" : "Office 5-E"
+        } ],
+        "uuid" : "9135b789-a40c-4a20-9be6-fab23c0ab0f3",
+        "telephone-numbers" : [ {
+          "number" : "202-000-0005"
+        } ],
+        "member-of-organizations" : [ "49f73135-efab-4275-9a79-003656ad890a" ],
+        "email-addresses" : [ "name@example.com" ],
+        "location-uuids" : [ "2ba201ac-8ee9-4a1d-812a-a755591a3963" ]
+      }, {
+        "type" : "person",
+        "name" : "[SAMPLE]Person Name 6",
+        "props" : [ {
+          "uuid" : "fbd2d7c3-d71e-4cb0-adfb-e466e4d4470a",
+          "name" : "job-title",
+          "value" : "Individual's Title"
+        }, {
+          "uuid" : "f80b13b8-be5b-4242-bf2a-033c25b3c448",
+          "name" : "mail-stop",
+          "value" : "Office 6-F"
+        } ],
+        "uuid" : "ca9fca9c-4a8a-4487-8242-0a06d6fbed1f",
+        "telephone-numbers" : [ {
+          "type" : "mobile",
+          "number" : "000-000-0000"
+        } ],
+        "email-addresses" : [ "name@example.com" ],
+        "location-uuids" : [ "2ba201ac-8ee9-4a1d-812a-a755591a3963" ]
+      }, {
+        "type" : "person",
+        "name" : "[SAMPLE]Person Name 7",
+        "props" : [ {
+          "uuid" : "d76162f8-2448-406f-9524-5585fb996bfe",
+          "name" : "job-title",
+          "value" : "Individual's Title"
+        } ],
+        "uuid" : "877e5bdc-07c3-45da-a2b4-35367a9a0cd0",
+        "addresses" : [ {
+          "addr-lines" : [ "Suite 0000", "1234 Some Street" ],
+          "postal-code" : "00000",
+          "type" : "work",
+          "state" : "ME",
+          "city" : "Haven"
+        } ],
+        "telephone-numbers" : [ {
+          "type" : "office",
+          "number" : "000-000-0000"
+        } ],
+        "email-addresses" : [ "name@example.com" ]
+      } ],
+      "version" : "fedramp2.0.0-oscal1.0.4",
       "published" : "2023-07-06T00:00:00Z",
       "remarks" : "This OSCAL-based FedRAMP SAP Template can be used for the FedRAMP initial or annual assessment planning.",
       "roles" : [ {
@@ -959,25 +526,26 @@
       } ],
       "title" : "\\[System Name\\] FedRAMP Security Assessment Plan (SAP)",
       "responsible-parties" : [ {
-        "role-id" : "fedramp-pmo",
-        "party-uuids" : [ "77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d" ]
+        "party-uuids" : [ "77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d" ],
+        "role-id" : "fedramp-pmo"
       }, {
+        "party-uuids" : [ "49f73135-efab-4275-9a79-003656ad890a" ],
         "remarks" : "Exactly one party\n\nThis is the assessor.",
-        "role-id" : "prepared-by",
-        "party-uuids" : [ "49f73135-efab-4275-9a79-003656ad890a" ]
+        "role-id" : "prepared-by"
       }, {
+        "party-uuids" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
         "remarks" : "Exactly one party.\n\nThis is the UUID for the CSP in the imported SSP.\n\nIf no OSCAL-based SSP exists, create a CSP party in the SAP, and provide that UUID here.",
-        "role-id" : "prepared-for",
-        "party-uuids" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ]
+        "role-id" : "prepared-for"
       }, {
+        "party-uuids" : [ "f4568fda-c6d2-4640-adec-0012015af7d0" ],
         "remarks" : "One ore more parties",
-        "role-id" : "content-approver",
-        "party-uuids" : [ "f4568fda-c6d2-4640-adec-0012015af7d0" ]
+        "role-id" : "content-approver"
       }, {
+        "party-uuids" : [ "49f73135-efab-4275-9a79-003656ad890a" ],
         "remarks" : "Exactly one party\n\nAssessment Organization (3PAO)",
-        "role-id" : "assessor",
-        "party-uuids" : [ "49f73135-efab-4275-9a79-003656ad890a" ]
+        "role-id" : "assessor"
       }, {
+        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe", "bcf47707-49e4-4acc-bf43-e63156046390", "abc15ce6-1f43-4951-bcd5-ab62cdff7ed9" ],
         "props" : [ {
           "name" : "ia-validated",
           "ns" : "https://fedramp.gov/ns/oscal",
@@ -988,9 +556,9 @@
           "value" : "yes"
         } ],
         "remarks" : "One or more parties\n\nIf the \"responsible-party\" contains multiple \"party-uuid\", FedRAMP assumes the \"ia-validated\" and \"csp-validated\" prop values apply to each referenced party.\n\nAlternatively, assessment team member can be specified in separate \"responsible-party\" data items, each with their own \"ia-validated\" and \"csp-validated\" prop.",
-        "role-id" : "assessment-team",
-        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe", "bcf47707-49e4-4acc-bf43-e63156046390", "abc15ce6-1f43-4951-bcd5-ab62cdff7ed9" ]
+        "role-id" : "assessment-team"
       }, {
+        "party-uuids" : [ "9135b789-a40c-4a20-9be6-fab23c0ab0f3" ],
         "props" : [ {
           "name" : "ia-validated",
           "ns" : "https://fedramp.gov/ns/oscal",
@@ -1000,40 +568,39 @@
           "ns" : "https://fedramp.gov/ns/oscal",
           "value" : "no"
         } ],
-        "role-id" : "assessment-team",
-        "party-uuids" : [ "9135b789-a40c-4a20-9be6-fab23c0ab0f3" ]
+        "role-id" : "assessment-team"
       }, {
+        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ],
         "remarks" : "Exactly one party",
-        "role-id" : "assessment-lead",
-        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ]
+        "role-id" : "assessment-lead"
       }, {
+        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe", "ca9fca9c-4a8a-4487-8242-0a06d6fbed1f", "877e5bdc-07c3-45da-a2b4-35367a9a0cd0" ],
         "remarks" : "One or more parties",
-        "role-id" : "penetration-test-team",
-        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe", "ca9fca9c-4a8a-4487-8242-0a06d6fbed1f", "877e5bdc-07c3-45da-a2b4-35367a9a0cd0" ]
+        "role-id" : "penetration-test-team"
       }, {
+        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ],
         "remarks" : "Exactly one party",
-        "role-id" : "penetration-test-lead",
-        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ]
+        "role-id" : "penetration-test-lead"
       }, {
+        "party-uuids" : [ "f4568fda-c6d2-4640-adec-0012015af7d0" ],
         "remarks" : "Exactly one party",
-        "role-id" : "assessment-executive",
-        "party-uuids" : [ "f4568fda-c6d2-4640-adec-0012015af7d0" ]
+        "role-id" : "assessment-executive"
       }, {
+        "party-uuids" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ],
         "remarks" : "Exactly one party\n\nThe party-uuid should observation-source a party in the SSP.\n\nIf an appropriate party does not exist in the SSP, the SAP tool should add a party to the SAP, or have the CSP add the party to the SSP.\n\nThe SAP tool should not modify the SSP.",
-        "role-id" : "csp-operations-center",
-        "party-uuids" : [ "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb" ]
+        "role-id" : "csp-operations-center"
       }, {
+        "party-uuids" : [ "f4568fda-c6d2-4640-adec-0012015af7d0", "e934d8b5-13e5-4f77-b55e-871e6f2df2fe", "877e5bdc-07c3-45da-a2b4-35367a9a0cd0" ],
         "remarks" : "There should be at least three CSP Assessment POCs.\n\nAt least one should be available 24x7 during assessment activities.\n\nAt least one should be an operations center, such a SOC or NOC.\n\nThe party-uuid should observation-source a party in the SSP or SAP.\n\nIf an appropriate party does not exist in the SSP or SAP, the SAR tool should add a party to the SAR.\n\nThe SAP tool should not modify the SSP.",
-        "role-id" : "csp-assessment-poc",
-        "party-uuids" : [ "f4568fda-c6d2-4640-adec-0012015af7d0", "e934d8b5-13e5-4f77-b55e-871e6f2df2fe", "877e5bdc-07c3-45da-a2b4-35367a9a0cd0" ]
+        "role-id" : "csp-assessment-poc"
       }, {
+        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ],
         "remarks" : "One or more parties",
-        "role-id" : "csp-end-of-testing-poc",
-        "party-uuids" : [ "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ]
+        "role-id" : "csp-end-of-testing-poc"
       }, {
+        "party-uuids" : [ "f4568fda-c6d2-4640-adec-0012015af7d0", "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ],
         "remarks" : "One or more parties",
-        "role-id" : "csp-results-poc",
-        "party-uuids" : [ "f4568fda-c6d2-4640-adec-0012015af7d0", "e934d8b5-13e5-4f77-b55e-871e6f2df2fe" ]
+        "role-id" : "csp-results-poc"
       } ],
       "last-modified" : "2023-07-06T00:00:00Z",
       "oscal-version" : "1.0.4",
@@ -1060,181 +627,18 @@
         "value" : "many"
       } ],
       "locations" : [ {
+        "address" : {
+          "addr-lines" : [ "Suite 0000", "1234 Some Street" ],
+          "postal-code" : "00000",
+          "type" : "work",
+          "state" : "ME",
+          "city" : "Haven",
+          "country" : "US"
+        },
         "remarks" : "The assessor's HQ, or the address of the assessment team's primary business location.",
         "uuid" : "2ba201ac-8ee9-4a1d-812a-a755591a3963",
-        "title" : "Assessor's HQ",
-        "address" : {
-          "country" : "US",
-          "addr-lines" : [ "Suite 0000", "1234 Some Street" ],
-          "postal-code" : "00000",
-          "type" : "work",
-          "state" : "ME",
-          "city" : "Haven"
-        }
-      } ],
-      "parties" : [ {
-        "name" : "Assessment Organization Name",
-        "props" : [ {
-          "name" : "iso-iec-17020-identifier",
-          "ns" : "https://fedramp.gov/ns/oscal",
-          "value" : "0000.00"
-        } ],
-        "uuid" : "49f73135-efab-4275-9a79-003656ad890a",
-        "remarks" : "Replace sample 3PAO information.\n\nIf the assessor is A2LA Certified, include the ISO/IEC-17020",
-        "short-name" : "Acronym/Short Name",
-        "links" : [ {
-          "rel" : "home-page",
-          "href" : "https://assessor.web.site"
-        } ],
-        "location-uuids" : [ "2ba201ac-8ee9-4a1d-812a-a755591a3963" ],
-        "type" : "organization"
-      }, {
-        "name" : "Federal Risk and Authorization Management Program: Program Management Office",
-        "uuid" : "77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d",
-        "addresses" : [ {
-          "country" : "US",
-          "addr-lines" : [ "1800 F St. NW" ],
-          "postal-code" : "20006",
-          "type" : "work",
-          "state" : "DC",
-          "city" : "Washington"
-        } ],
-        "remarks" : "This party entry must be present in a FedRAMP SAP.\n\nThe uuid may be different; however, the uuid must be associated with the \"fedramp-pmo\" role in the responsible-party assemblies.",
-        "short-name" : "FedRAMP PMO",
-        "links" : [ {
-          "rel" : "homepage",
-          "href" : "https://fedramp.gov"
-        }, {
-          "rel" : "logo",
-          "href" : "#a2381e87-3d04-4108-a30b-b4d2f36d001f"
-        } ],
-        "email-addresses" : [ "info@fedramp.gov" ],
-        "type" : "organization"
-      }, {
-        "name" : "[SAMPLE]Person Name 1",
-        "props" : [ {
-          "name" : "job-title",
-          "value" : "Individual's Title",
-          "uuid" : "1146fc8a-3a2e-4196-b098-fb6944bd364f"
-        }, {
-          "name" : "mail-stop",
-          "value" : "Office 1-A",
-          "uuid" : "7709b968-6f59-4e7c-9fda-259a5b3ff316"
-        } ],
-        "uuid" : "f4568fda-c6d2-4640-adec-0012015af7d0",
-        "telephone-numbers" : [ {
-          "number" : "202-000-0001"
-        } ],
-        "member-of-organizations" : [ "49f73135-efab-4275-9a79-003656ad890a" ],
-        "email-addresses" : [ "name@example.com" ],
-        "location-uuids" : [ "2ba201ac-8ee9-4a1d-812a-a755591a3963" ],
-        "type" : "person"
-      }, {
-        "name" : "[SAMPLE]Person Name 2",
-        "props" : [ {
-          "name" : "mail-stop",
-          "value" : "Office 2-B",
-          "uuid" : "3ddccafa-e9c8-4832-a085-bc42557fc10f"
-        } ],
-        "uuid" : "e934d8b5-13e5-4f77-b55e-871e6f2df2fe",
-        "telephone-numbers" : [ {
-          "number" : "202-000-0002"
-        } ],
-        "member-of-organizations" : [ "49f73135-efab-4275-9a79-003656ad890a" ],
-        "email-addresses" : [ "name@example.com" ],
-        "location-uuids" : [ "2ba201ac-8ee9-4a1d-812a-a755591a3963" ],
-        "type" : "person"
-      }, {
-        "name" : "[SAMPLE]Person Name 3",
-        "props" : [ {
-          "name" : "mail-stop",
-          "value" : "Office 3-C",
-          "uuid" : "14c88675-1e7d-4e19-94e2-18e653dac452"
-        } ],
-        "uuid" : "bcf47707-49e4-4acc-bf43-e63156046390",
-        "telephone-numbers" : [ {
-          "number" : "202-000-0003"
-        } ],
-        "member-of-organizations" : [ "49f73135-efab-4275-9a79-003656ad890a" ],
-        "email-addresses" : [ "name@example.com" ],
-        "location-uuids" : [ "2ba201ac-8ee9-4a1d-812a-a755591a3963" ],
-        "type" : "person"
-      }, {
-        "name" : "[SAMPLE]Person Name 4",
-        "props" : [ {
-          "name" : "mail-stop",
-          "value" : "Office 4-D",
-          "uuid" : "9618632e-0d9a-4478-ad75-9373ae5310a0"
-        } ],
-        "uuid" : "abc15ce6-1f43-4951-bcd5-ab62cdff7ed9",
-        "telephone-numbers" : [ {
-          "number" : "202-000-0004"
-        } ],
-        "member-of-organizations" : [ "49f73135-efab-4275-9a79-003656ad890a" ],
-        "email-addresses" : [ "name@example.com" ],
-        "location-uuids" : [ "2ba201ac-8ee9-4a1d-812a-a755591a3963" ],
-        "type" : "person"
-      }, {
-        "name" : "[SAMPLE]Person Name 5",
-        "props" : [ {
-          "name" : "job-title",
-          "value" : "Individual's Title",
-          "uuid" : "0662559e-78c3-43a7-80f2-6b9b5e1fa3fb"
-        }, {
-          "name" : "mail-stop",
-          "value" : "Office 5-E",
-          "uuid" : "db2999e9-526d-4ec6-9fad-4bdf1f8b0d4a"
-        } ],
-        "uuid" : "9135b789-a40c-4a20-9be6-fab23c0ab0f3",
-        "telephone-numbers" : [ {
-          "number" : "202-000-0005"
-        } ],
-        "member-of-organizations" : [ "49f73135-efab-4275-9a79-003656ad890a" ],
-        "email-addresses" : [ "name@example.com" ],
-        "location-uuids" : [ "2ba201ac-8ee9-4a1d-812a-a755591a3963" ],
-        "type" : "person"
-      }, {
-        "name" : "[SAMPLE]Person Name 6",
-        "props" : [ {
-          "name" : "job-title",
-          "value" : "Individual's Title",
-          "uuid" : "fbd2d7c3-d71e-4cb0-adfb-e466e4d4470a"
-        }, {
-          "name" : "mail-stop",
-          "value" : "Office 6-F",
-          "uuid" : "f80b13b8-be5b-4242-bf2a-033c25b3c448"
-        } ],
-        "uuid" : "ca9fca9c-4a8a-4487-8242-0a06d6fbed1f",
-        "telephone-numbers" : [ {
-          "type" : "mobile",
-          "number" : "000-000-0000"
-        } ],
-        "email-addresses" : [ "name@example.com" ],
-        "location-uuids" : [ "2ba201ac-8ee9-4a1d-812a-a755591a3963" ],
-        "type" : "person"
-      }, {
-        "name" : "[SAMPLE]Person Name 7",
-        "props" : [ {
-          "name" : "job-title",
-          "value" : "Individual's Title",
-          "uuid" : "d76162f8-2448-406f-9524-5585fb996bfe"
-        } ],
-        "uuid" : "877e5bdc-07c3-45da-a2b4-35367a9a0cd0",
-        "addresses" : [ {
-          "addr-lines" : [ "Suite 0000", "1234 Some Street" ],
-          "postal-code" : "00000",
-          "type" : "work",
-          "state" : "ME",
-          "city" : "Haven"
-        } ],
-        "telephone-numbers" : [ {
-          "type" : "office",
-          "number" : "000-000-0000"
-        } ],
-        "email-addresses" : [ "name@example.com" ],
-        "type" : "person"
-      } ],
-      "version" : "fedramp2.0.0-oscal1.0.4"
+        "title" : "Assessor's HQ"
+      } ]
     },
     "assessment-subjects" : [ {
       "remarks" : "FedRAMP and NIST use the term \"component\" differently. The combination of `component` and `inventory-item` assembly in OSCAL, together are equivalent to a FedRAMP \"component\".\n\nThis `assessment-subject` is citing OSCAL `component` assemblies in the SSP.\n\nIf the assessor must cite a component which is either not present in the SSP or is inaccurate in the SSP, it must be defined in the `local-definitions` section of this file.\n\nThe assessor must never modify SSP content directly. The assessor may ask the CSP to update the SSP, and then work with a revised SSP delivered by the CSP.",
@@ -1295,116 +699,120 @@
     } ],
     "terms-and-conditions" : {
       "parts" : [ {
+        "name" : "background",
+        "prose" : "FedRAMP is a government-wide program that provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud services. Security assessments are an integral part of the FedRAMP security authorization process.\n\nCloud services must be assessed by an IA. The use of an IA reduces the potential for conflicts of interest that could occur in verifying the implementation status and effectiveness of the security controls. National Institute of Standards and Technology (NIST) Special Publication (SP) 800-39, Managing Information Security Risk states:",
+        "ns" : "https://fedramp.gov/ns/oscal",
         "parts" : [ {
           "name" : "nist-sp800-39",
           "prose" : "Assessor independence is an important factor in: (i) preserving the impartial and unbiased nature of the assessment process; (ii) determining the credibility of the security assessment results; and (iii) ensuring that the authorizing official receives the most objective information possible in order to make an informed, risk-based, authorization decision.",
           "ns" : "https://fedramp.gov/ns/oscal"
         }, {
-          "props" : [ {
-            "name" : "sort-id",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "value" : "001"
-          } ],
-          "title" : "Purpose",
           "name" : "purpose",
           "prose" : "This SAP has been developed by \\[IA Name\\] and is for \\[an initial assessment/an annual assessment/an annual assessment and significant change assessment/a significant change assessment\\] of the \\[CSP Name\\], \\[CSO Name\\]. The SAP provides the goals for the assessment and details how the assessment will be conducted.",
-          "ns" : "https://fedramp.gov/ns/oscal"
-        }, {
-          "props" : [ {
-            "name" : "sort-id",
-            "ns" : "https://fedramp.gov/ns/oscal",
-            "value" : "002"
-          } ],
-          "title" : "Applicable Laws, Regulations, Standards and Guidance",
-          "name" : "laws-regulations",
-          "prose" : "The FedRAMP-applicable laws, regulations, standards and guidance is included in the \\[CSO Name\\] SSP section – System Security Plan Approvals. Additionally, in Appendix L of the SSP, the \\[CSP Name\\] has included laws, regulations, standards, and guidance that apply specifically to this system.",
-          "ns" : "https://fedramp.gov/ns/oscal"
-        } ],
-        "title" : "Background",
-        "name" : "background",
-        "prose" : "FedRAMP is a government-wide program that provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud services. Security assessments are an integral part of the FedRAMP security authorization process.\n\nCloud services must be assessed by an IA. The use of an IA reduces the potential for conflicts of interest that could occur in verifying the implementation status and effectiveness of the security controls. National Institute of Standards and Technology (NIST) Special Publication (SP) 800-39, Managing Information Security Risk states:",
-        "ns" : "https://fedramp.gov/ns/oscal"
-      }, {
-        "parts" : [ {
+          "ns" : "https://fedramp.gov/ns/oscal",
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "001"
           } ],
-          "title" : "Initial Assessment",
-          "name" : "initial-assessment",
-          "prose" : "This plan is for an initial assessment of \\[CSO Name\\], a \\[One: High/Moderate/ Low\\] baseline system. 100% of the FedRAMP security controls in the system baseline are assessed. The security controls that will be assessed are listed in Appendix A.",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          "title" : "Purpose"
         }, {
-          "title" : "Annual Assessment",
-          "name" : "annual-assessment",
-          "prose" : "This plan is for an annual assessment of \\[CSO Name\\], a \\[One: High/Moderate/ Low\\] baseline system. After the initial security assessment, FedRAMP requires that the system is assessed annually thereafter (12 months from an agency ATO / JAB P-ATO date). While the entire set of security controls is assessed during the initial assessment, a subset is assessed during the annual assessment. The control selection is in accordance with the criteria outlined in the [FedRAMP Annual Assessment Guidance](https://www.fedramp.gov/assets/resources/documents/CSP_Annual_Assessment_Guidance.pdf) and includes:\n\n- Core controls (required annually)\n- CSP-selected controls required to address system changes that have been implemented and/or changed by a CSP since their last assessment (this excludes those controls or portions of controls previously assessed under a significant change within the same annual period)\n- Validation of Plan of Action \\& Milestones (POA\\&Ms) closed since the last assessment\n- Validation of POA\\&Ms identified as vendor dependencies (VDs) or deviation requests (DRs)\n- CSP-selected controls identified as \"Not Applicable\" (N/A) to validate they are, in fact, not applicable\n- Controls that have not been assessed, at least once in a three year period, to ensure controls are meeting periodicity requirements\n\nThe detailed control list, including the rationale for each control’s selection, is included in SAP Appendix A, FedRAMP \\[CSO Name\\] Security Controls Selection Worksheet.",
-          "ns" : "https://fedramp.gov/ns/oscal"
-        }, {
+          "name" : "laws-regulations",
+          "prose" : "The FedRAMP-applicable laws, regulations, standards and guidance is included in the \\[CSO Name\\] SSP section – System Security Plan Approvals. Additionally, in Appendix L of the SSP, the \\[CSP Name\\] has included laws, regulations, standards, and guidance that apply specifically to this system.",
+          "ns" : "https://fedramp.gov/ns/oscal",
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "002"
           } ],
-          "title" : "Significant Change",
+          "title" : "Applicable Laws, Regulations, Standards and Guidance"
+        } ],
+        "title" : "Background"
+      }, {
+        "name" : "scope",
+        "ns" : "https://fedramp.gov/ns/oscal",
+        "parts" : [ {
+          "name" : "initial-assessment",
+          "prose" : "This plan is for an initial assessment of \\[CSO Name\\], a \\[One: High/Moderate/ Low\\] baseline system. 100% of the FedRAMP security controls in the system baseline are assessed. The security controls that will be assessed are listed in Appendix A.",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "props" : [ {
+            "name" : "sort-id",
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "value" : "001"
+          } ],
+          "title" : "Initial Assessment"
+        }, {
+          "name" : "annual-assessment",
+          "prose" : "This plan is for an annual assessment of \\[CSO Name\\], a \\[One: High/Moderate/ Low\\] baseline system. After the initial security assessment, FedRAMP requires that the system is assessed annually thereafter (12 months from an agency ATO / JAB P-ATO date). While the entire set of security controls is assessed during the initial assessment, a subset is assessed during the annual assessment. The control selection is in accordance with the criteria outlined in the [FedRAMP Annual Assessment Guidance](https://www.fedramp.gov/assets/resources/documents/CSP_Annual_Assessment_Guidance.pdf) and includes:\n\n- Core controls (required annually)\n- CSP-selected controls required to address system changes that have been implemented and/or changed by a CSP since their last assessment (this excludes those controls or portions of controls previously assessed under a significant change within the same annual period)\n- Validation of Plan of Action \\& Milestones (POA\\&Ms) closed since the last assessment\n- Validation of POA\\&Ms identified as vendor dependencies (VDs) or deviation requests (DRs)\n- CSP-selected controls identified as \"Not Applicable\" (N/A) to validate they are, in fact, not applicable\n- Controls that have not been assessed, at least once in a three year period, to ensure controls are meeting periodicity requirements\n\nThe detailed control list, including the rationale for each control’s selection, is included in SAP Appendix A, FedRAMP \\[CSO Name\\] Security Controls Selection Worksheet.",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "title" : "Annual Assessment"
+        }, {
           "name" : "significant-change",
           "prose" : "This document \\[is for/also includes\\] the assessment plan for \\[a significant change/several significant changes\\]. Appendix D includes the significant change request documentation submitted by \\[CSP Name\\] to the \\[AO/JAB\\].\n\nAppendix A includes the associated control selections. \\[IA Name\\] will evaluate (review and/or test), as necessary, \\[all items related to continuous monitoring activities/all items related to continuous monitoring activities as well as those that are applicable to the significant change assessment/continuous monitoring activities that are only applicable to the significant change assessment\\], \\[IA Name\\] will evaluate all open POA\\&M items (including VDs); POA\\&M closures (to confirm adequate closure) and validate and confirm continued relevance and applicability of DRs ((false positives (FPs), risk adjustments (RAs), and operational requirements (ORs)) \\[(if significant change(s) are included): including those applicable to the significant change assessment/applicable only to the significant change assessment\\].\n\n\\[CSO Name\\] leverages the FedRAMP Authorized CSOs listed in Table 3-2. \\[CSP Name\\], as a customer of these CSOs, must meet customer requirements documented by the leveraged CSOs in the customer responsibility matrix (CRM). Therefore, \\[IA Name\\] will validate to the best of their ability that \\[CSO Name\\] is in compliance with customer requirements documented in the CRMs of the leveraged CSOs.\n\n|  FedRAMP Package ID   |      CSP Name       |      CSO Name       |\n|-----------------------|---------------------|---------------------|\n| \\[Insert Package ID\\] | \\[Insert CSP Name\\] | \\[Insert CSO Name\\] |",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "props" : [ {
+            "name" : "sort-id",
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "value" : "002"
+          } ],
+          "title" : "Significant Change"
         }, {
-          "title" : "Location of Component",
           "name" : "location",
           "prose" : "The physical locations of all the different components that will be tested are described in Table 3-3.\n\n|    Data Center Site Name    |      Address       | Description of Component(s) |\n|-----------------------------|--------------------|-----------------------------|\n| \\[Insert data center name\\] | \\[Insert address\\] | \\[Insert components\\]       |",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "title" : "Location of Component"
         }, {
-          "title" : "IP Addresses Slated for Testing",
           "name" : "ip-addresses",
           "prose" : "SSP Appendix M, FedRAMP Integrated Inventory Workbook, captures the inventory items for the entire system and includes all the following required to be tested for the authorization of this system:\n\n- Operating systems/infrastructure,\n- Container images (as applicable),\n- Databases, and\n- Web application components\n\nThe SSP Appendix M, FedRAMP Integrated Inventory Workbook. is current for this assessment.\n\nAny components that are being added to the inventory, removed from the inventory, or are being modified or directly impacted by a significant change, are identified in Appendix D of this SAP.\n\nThe methodology section of this document describes the approach to the assessment of the inventory.",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "title" : "IP Addresses Slated for Testing"
         }, {
-          "title" : "Role Testing Exclusions",
           "name" : "role-exclusions",
           "prose" : "|    Role Type    |      Reason for Exclusion       |\n|-----------------|---------------------------------|\n| \\[Insert role\\] | \\[Insert reason for exclusion\\] |",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "title" : "Role Testing Exclusions"
         }, {
-          "title" : "Role Testing for Significant Change Requests",
           "name" : "roles-scr",
           "prose" : "Additional roles that are being introduced as part of significant changes will be tested and are noted in Appendix D. Role testing will be performed to test the authorization restrictions for each role. \\[IA Name\\] will access the system while logged in as different user types and attempt to perform restricted functions for that user.",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "title" : "Role Testing for Significant Change Requests"
         } ],
-        "title" : "Scope",
-        "name" : "scope",
-        "ns" : "https://fedramp.gov/ns/oscal"
+        "title" : "Scope"
       }, {
+        "name" : "assumptions",
+        "prose" : "The following assumptions were agreed upon between \\[CSP Name\\] and \\[IA Name\\] when developing this SAP:\n\n- This SAP is based on \\[CSO Name\\] SSP \\[Version X.X\\], dated \\[MM/DD/YYYY\\], in its entirety. This includes all SSP appendices. The \\[CSP Name\\] is responsible for providing \\[IA Name\\] the most current SSP.\n- Scans will be provided in both machine readable and human readable format.\n- \\[CSO Name\\] resources, including documentation and individuals with knowledge of the \\[CSO Name\\] systems and infrastructure and their contact information, will be available to \\[IA Name\\] staff during the time necessary to complete assessments.\n- The \\[CSP Name\\] will provide login account information / credentials necessary for \\[IA Name\\] to use its testing devices to perform authenticated scans of all devices and applications.\n- The \\[CSP Name\\] will permit \\[IA Name\\] to connect its testing laptops to the \\[CSP Name\\] networks defined within the scope of this assessment.\n- The \\[CSP Name\\]\\> will permit communication from \\[IA Name\\] testing appliances to an internet hosted vulnerability management service to permit the analysis of vulnerability data, as applicable.\n- Security controls that have been identified as \"Not Applicable\" (NA) in the SSP will be validated by \\[IA Name\\] as \"Not Applicable\", and further testing will not be performed on these security controls during the assessment. This process is completed for all assessments, including annual assessments. For this assessment, the following controls identified as NA controls will be validated by \\[IA Name\\]:\n  - List all NA controls that will be validated by the IA for this assessment\n- Significant upgrades or changes to the infrastructure and components of the system undergoing testing will not be performed during the security assessment period.\n- For onsite control assessment, \\[CSP Name\\] personnel will be available should the \\[IA Name\\] staff determine that either after hours work, or weekend work, is necessary to support the security assessment.\n- Add assumptions here; these must be agreed to by the CSP and IA...\n- Add...",
         "props" : [ {
           "name" : "sort-id",
           "ns" : "https://fedramp.gov/ns/oscal",
           "value" : "001"
         } ],
-        "title" : "Assumptions",
-        "name" : "assumptions",
-        "prose" : "The following assumptions were agreed upon between \\[CSP Name\\] and \\[IA Name\\] when developing this SAP:\n\n- This SAP is based on \\[CSO Name\\] SSP \\[Version X.X\\], dated \\[MM/DD/YYYY\\], in its entirety. This includes all SSP appendices. The \\[CSP Name\\] is responsible for providing \\[IA Name\\] the most current SSP.\n- Scans will be provided in both machine readable and human readable format.\n- \\[CSO Name\\] resources, including documentation and individuals with knowledge of the \\[CSO Name\\] systems and infrastructure and their contact information, will be available to \\[IA Name\\] staff during the time necessary to complete assessments.\n- The \\[CSP Name\\] will provide login account information / credentials necessary for \\[IA Name\\] to use its testing devices to perform authenticated scans of all devices and applications.\n- The \\[CSP Name\\] will permit \\[IA Name\\] to connect its testing laptops to the \\[CSP Name\\] networks defined within the scope of this assessment.\n- The \\[CSP Name\\]\\> will permit communication from \\[IA Name\\] testing appliances to an internet hosted vulnerability management service to permit the analysis of vulnerability data, as applicable.\n- Security controls that have been identified as \"Not Applicable\" (NA) in the SSP will be validated by \\[IA Name\\] as \"Not Applicable\", and further testing will not be performed on these security controls during the assessment. This process is completed for all assessments, including annual assessments. For this assessment, the following controls identified as NA controls will be validated by \\[IA Name\\]:\n  - List all NA controls that will be validated by the IA for this assessment\n- Significant upgrades or changes to the infrastructure and components of the system undergoing testing will not be performed during the security assessment period.\n- For onsite control assessment, \\[CSP Name\\] personnel will be available should the \\[IA Name\\] staff determine that either after hours work, or weekend work, is necessary to support the security assessment.\n- Add assumptions here; these must be agreed to by the CSP and IA...\n- Add..."
+        "title" : "Assumptions"
       }, {
+        "name" : "methodology",
         "parts" : [ {
+          "name" : "control-testing",
+          "prose" : "\\[IA Name\\] will perform an assessment of the \\[CSO Name\\] security controls using the methodology described in NIST SP 800-53A, incorporating the methodology required by FedRAMP as noted below, and any other methods of testing that may be required to thoroughly test this system authorization boundary. \\[IA Name\\] will use the FedRAMP Security Requirements Traceability Matrix (SRTM) Workbook to evaluate the security controls. Contained in Excel worksheets, these test procedures contain the test objectives and associated test cases to determine if a control is effectively implemented and operating as intended. The results of the testing shall be recorded in the SRTM workbook for the appropriate High, Moderate, or Low baseline (provided on the FedRAMP Documents and Resources page under Templates) along with information that notes whether the control (or control enhancement) is satisfied or not.\n\n\\[IA Name\\] will ensure that all \\[CSO Name\\] security controls that have an alternative implementation are included in the final SRTM workbook with test procedures that capture the intent of the control. \\[CSP Name\\] is advised that testing alternative control implementations involves additional IA rigor since it is much more difficult to prove the intent of the control is being met. The alternative control implementations that are tested for this assessment are:\n\n- List all alternative control implementations that will be tested by the IA for this assessment\n\nDeviations from the SAP-defined methodology are described below.",
+          "ns" : "https://fedramp.gov/ns/oscal",
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "001"
           } ],
-          "title" : "Control Testing",
-          "name" : "control-testing",
-          "prose" : "\\[IA Name\\] will perform an assessment of the \\[CSO Name\\] security controls using the methodology described in NIST SP 800-53A, incorporating the methodology required by FedRAMP as noted below, and any other methods of testing that may be required to thoroughly test this system authorization boundary. \\[IA Name\\] will use the FedRAMP Security Requirements Traceability Matrix (SRTM) Workbook to evaluate the security controls. Contained in Excel worksheets, these test procedures contain the test objectives and associated test cases to determine if a control is effectively implemented and operating as intended. The results of the testing shall be recorded in the SRTM workbook for the appropriate High, Moderate, or Low baseline (provided on the FedRAMP Documents and Resources page under Templates) along with information that notes whether the control (or control enhancement) is satisfied or not.\n\n\\[IA Name\\] will ensure that all \\[CSO Name\\] security controls that have an alternative implementation are included in the final SRTM workbook with test procedures that capture the intent of the control. \\[CSP Name\\] is advised that testing alternative control implementations involves additional IA rigor since it is much more difficult to prove the intent of the control is being met. The alternative control implementations that are tested for this assessment are:\n\n- List all alternative control implementations that will be tested by the IA for this assessment\n\nDeviations from the SAP-defined methodology are described below.",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          "title" : "Control Testing"
         }, {
+          "name" : "data-gathering",
+          "prose" : "\\[IA Name\\] data gathering activities will consist of the following:\n\n- Request \\[CSP Name\\] to provide FedRAMP required documentation.\n- Ensure \\[CSP Name\\] provides the list of controls identified as \"Alternative Implementation\" and \"Not Applicable\" in the SSP.\n- Request any follow-up documentation, files, or information needed that is not provided in FedRAMP required documentation.\n- Travel to the \\[CSP Name\\] sites as necessary to inspect systems and meet with CSP staff.\n- Obtain information using security testing tools.\n- Ensure that the testing proceeds as outlined in this SAP. If the testing must be augmented or reduced in scope, these are considered \"Deviations\" and must be recorded in the SAR.\n\nSecurity controls will be verified using one or more of the following assessment methods:\n\n- Examine: \\[IA Name\\] will review, analyze, inspect, or observe one or more assessment artifacts as specified in the SRTM. Note that the SSP is considered a \"roadmap\" for identification and collection of other artifacts. Therefore, other CSP artifacts should be provided (e.g., screenshots, policies, procedures, records etc.).\n- Interview: \\[IA Name\\] will conduct discussions with individuals within the organization to facilitate assessor understanding, achieve clarification, or obtain evidence.\n- Technical Tests: \\[IA Name\\] will perform technical tests, including penetration testing on system components, using automated and manual methods.",
+          "ns" : "https://fedramp.gov/ns/oscal",
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "002"
           } ],
-          "title" : "Data Gathering",
-          "name" : "data-gathering",
-          "prose" : "\\[IA Name\\] data gathering activities will consist of the following:\n\n- Request \\[CSP Name\\] to provide FedRAMP required documentation.\n- Ensure \\[CSP Name\\] provides the list of controls identified as \"Alternative Implementation\" and \"Not Applicable\" in the SSP.\n- Request any follow-up documentation, files, or information needed that is not provided in FedRAMP required documentation.\n- Travel to the \\[CSP Name\\] sites as necessary to inspect systems and meet with CSP staff.\n- Obtain information using security testing tools.\n- Ensure that the testing proceeds as outlined in this SAP. If the testing must be augmented or reduced in scope, these are considered \"Deviations\" and must be recorded in the SAR.\n\nSecurity controls will be verified using one or more of the following assessment methods:\n\n- Examine: \\[IA Name\\] will review, analyze, inspect, or observe one or more assessment artifacts as specified in the SRTM. Note that the SSP is considered a \"roadmap\" for identification and collection of other artifacts. Therefore, other CSP artifacts should be provided (e.g., screenshots, policies, procedures, records etc.).\n- Interview: \\[IA Name\\] will conduct discussions with individuals within the organization to facilitate assessor understanding, achieve clarification, or obtain evidence.\n- Technical Tests: \\[IA Name\\] will perform technical tests, including penetration testing on system components, using automated and manual methods.",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          "title" : "Data Gathering"
         }, {
+          "name" : "sampling",
+          "prose" : "The sampling methodology for evidence/artifact gathering, related to controls assessment, is described in Appendix B.\n\n\\[IA Name\\] \\[will/will not\\] use sampling when performing vulnerability scanning.\n\n\\[IA Name\\] \\[will/will not\\] use sampling when testing the following controls:\n\n- List of controls...\n\nThe vulnerability scanning sampling methodology is described in Appendix B and is in accordance with [the FedRAMP Guide for Determining Eligibility and Requirements for the Use of Sampling for Vulnerability Scans](https://www.fedramp.gov/assets/resources/documents/CSP_Vulnerability_Scan_Requirements_Using_Sampling.pdf). While scanning sampling may be conducted for scanning, all scanning will be performed authenticated.\n\n\\[IA Name\\] validates that all components in the authorization boundary as captured in the \\[CSO Name\\] SSP, Appendix M, FedRAMP Integrated Inventory Workbook will be 100% tested, or representative of 100% tested, and will be 100% authenticated vulnerability scans.\n\n\\[IA Name\\] validates that all security controls required to be tested have appropriate sample sizes for items such as account requests, account terminations, account transfers, change control processes as captured in the \\[CSO Name\\] SSP, \\[Version X.X\\], \\[MM/DD/YYYY\\]. The controls sampling methodology is described in Appendix B.",
+          "ns" : "https://fedramp.gov/ns/oscal",
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
@@ -1414,268 +822,266 @@
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "no"
           } ],
-          "title" : "Sampling",
-          "name" : "sampling",
-          "prose" : "The sampling methodology for evidence/artifact gathering, related to controls assessment, is described in Appendix B.\n\n\\[IA Name\\] \\[will/will not\\] use sampling when performing vulnerability scanning.\n\n\\[IA Name\\] \\[will/will not\\] use sampling when testing the following controls:\n\n- List of controls...\n\nThe vulnerability scanning sampling methodology is described in Appendix B and is in accordance with [the FedRAMP Guide for Determining Eligibility and Requirements for the Use of Sampling for Vulnerability Scans](https://www.fedramp.gov/assets/resources/documents/CSP_Vulnerability_Scan_Requirements_Using_Sampling.pdf). While scanning sampling may be conducted for scanning, all scanning will be performed authenticated.\n\n\\[IA Name\\] validates that all components in the authorization boundary as captured in the \\[CSO Name\\] SSP, Appendix M, FedRAMP Integrated Inventory Workbook will be 100% tested, or representative of 100% tested, and will be 100% authenticated vulnerability scans.\n\n\\[IA Name\\] validates that all security controls required to be tested have appropriate sample sizes for items such as account requests, account terminations, account transfers, change control processes as captured in the \\[CSO Name\\] SSP, \\[Version X.X\\], \\[MM/DD/YYYY\\]. The controls sampling methodology is described in Appendix B.",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          "title" : "Sampling"
         }, {
+          "name" : "pen-testing",
+          "prose" : "The Penetration Test Plan and Methodology is attached in Appendix C.",
+          "ns" : "https://fedramp.gov/ns/oscal",
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "004"
-          } ],
-          "name" : "pen-testing",
-          "prose" : "The Penetration Test Plan and Methodology is attached in Appendix C.",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          } ]
         } ],
-        "title" : "Methodology",
-        "name" : "methodology"
+        "title" : "Methodology"
       }, {
+        "name" : "test-plan",
+        "prose" : "The \\[IA Name\\] security assessment team, \\[CSP Name\\] points of contact, testing schedule, and testing tools that will be used are described in the sections that follow.",
+        "ns" : "https://fedramp.gov/ns/oscal",
         "parts" : [ {
+          "name" : "security-assessment-team",
+          "prose" : "The \\[IA Name\\] security assessment team consists of the individuals listed in Table 6-1. \\[CSP Name\\] is urged to check the capabilities of the named individuals to ensure that each is qualified to hold the position, per A2LA’s personnel requirements specified in the [A2LA R311 - Specific Requirements: Federal Risk and Authorization Management Program (FedRAMP)](https://a2la.qualtraxcloud.com/ShowDocument.aspx?ID=5621).\n\nNote that this document is signed in Section 8, by the \\[IA Name\\] and \\[CSP Name\\]. \\[CSP Name\\] has a right and a responsibility to ensure that competent assessors are providing the assessment services. The document should not be signed until \\[CSP Name\\] has validated the IA team.\n\n|           Name            |      Assessment Role      | Validated by IA | Validated by CSP |\n|---------------------------|---------------------------|-----------------|------------------|\n| \\[Insert IA member name\\] | \\[Insert IA member role\\] | \\[yes/no\\]      | \\[yes/no\\]       |",
+          "ns" : "https://fedramp.gov/ns/oscal",
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "001"
           } ],
-          "title" : "Security Assessment Team",
-          "name" : "security-assessment-team",
-          "prose" : "The \\[IA Name\\] security assessment team consists of the individuals listed in Table 6-1. \\[CSP Name\\] is urged to check the capabilities of the named individuals to ensure that each is qualified to hold the position, per A2LA’s personnel requirements specified in the [A2LA R311 - Specific Requirements: Federal Risk and Authorization Management Program (FedRAMP)](https://a2la.qualtraxcloud.com/ShowDocument.aspx?ID=5621).\n\nNote that this document is signed in Section 8, by the \\[IA Name\\] and \\[CSP Name\\]. \\[CSP Name\\] has a right and a responsibility to ensure that competent assessors are providing the assessment services. The document should not be signed until \\[CSP Name\\] has validated the IA team.\n\n|           Name            |      Assessment Role      | Validated by IA | Validated by CSP |\n|---------------------------|---------------------------|-----------------|------------------|\n| \\[Insert IA member name\\] | \\[Insert IA member role\\] | \\[yes/no\\]      | \\[yes/no\\]       |",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          "title" : "Security Assessment Team"
         }, {
+          "name" : "csp-testing-poc",
+          "prose" : "The \\[CSP Name\\] POCs are found in Table 6-2. \\[IA Name\\] has internal processes to contact the CSP should the need arise.\n\n|      Name       |      Role       |\n|-----------------|-----------------|\n| \\[Insert Name\\] | \\[Insert Role\\] |",
+          "ns" : "https://fedramp.gov/ns/oscal",
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "002"
           } ],
-          "title" : "CSP Testing Points of Contact (POCs)",
-          "name" : "csp-testing-poc",
-          "prose" : "The \\[CSP Name\\] POCs are found in Table 6-2. \\[IA Name\\] has internal processes to contact the CSP should the need arise.\n\n|      Name       |      Role       |\n|-----------------|-----------------|\n| \\[Insert Name\\] | \\[Insert Role\\] |",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          "title" : "CSP Testing Points of Contact (POCs)"
         }, {
+          "name" : "automated-tools-testing",
+          "prose" : "\\[IA Name\\] plans to use the following tools noted in Table 6-3 to perform testing of the \\[CSO Name\\].\n\n|      Tool Name       |   Vendor/Organization Name \\& Version   |      Purpose of Tool       |\n|----------------------|-----------------------------------------|----------------------------|\n| \\[Insert tool name\\] | \\[Insert vendor name and tool version\\] | \\[Insert purpose of tool\\] |",
+          "ns" : "https://fedramp.gov/ns/osccal",
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "003"
           } ],
-          "title" : "Testing Performed Using Automated Tools",
-          "name" : "automated-tools-testing",
-          "prose" : "\\[IA Name\\] plans to use the following tools noted in Table 6-3 to perform testing of the \\[CSO Name\\].\n\n|      Tool Name       |   Vendor/Organization Name \\& Version   |      Purpose of Tool       |\n|----------------------|-----------------------------------------|----------------------------|\n| \\[Insert tool name\\] | \\[Insert vendor name and tool version\\] | \\[Insert purpose of tool\\] |",
-          "ns" : "https://fedramp.gov/ns/osccal"
+          "title" : "Testing Performed Using Automated Tools"
         }, {
+          "name" : "manual-methods-testing",
+          "prose" : "|      Test ID       |      Test Name       |           Description            |\n|--------------------|----------------------|----------------------------------|\n| \\[Insert test ID\\] | \\[Insert test name\\] | \\[Insert test description text\\] |",
+          "ns" : "https://fedramp.gov/ns/oscal",
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "004"
           } ],
-          "title" : "Testing Performed Using Manual Methods",
-          "name" : "manual-methods-testing",
-          "prose" : "|      Test ID       |      Test Name       |           Description            |\n|--------------------|----------------------|----------------------------------|\n| \\[Insert test ID\\] | \\[Insert test name\\] | \\[Insert test description text\\] |",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          "title" : "Testing Performed Using Manual Methods"
         }, {
+          "name" : "schedule",
+          "prose" : "The security assessment schedule can be found in Table 6-5. Any deviations from this accepted schedule are recorded in the SAR as Deviations.\n\n|      Task Name       |         Start Date         |       Finish Date        |\n|----------------------|----------------------------|--------------------------|\n| \\[Insert task name\\] | \\[Insert task start date\\] | \\[Insert task end date\\] |",
+          "ns" : "https://fedramp.gov/ns/oscal",
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "005"
           } ],
-          "title" : "Schedule",
-          "name" : "schedule",
-          "prose" : "The security assessment schedule can be found in Table 6-5. Any deviations from this accepted schedule are recorded in the SAR as Deviations.\n\n|      Task Name       |         Start Date         |       Finish Date        |\n|----------------------|----------------------------|--------------------------|\n| \\[Insert task name\\] | \\[Insert task start date\\] | \\[Insert task end date\\] |",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          "title" : "Schedule"
         } ],
-        "title" : "Test Plan",
-        "name" : "test-plan",
-        "prose" : "The \\[IA Name\\] security assessment team, \\[CSP Name\\] points of contact, testing schedule, and testing tools that will be used are described in the sections that follow.",
-        "ns" : "https://fedramp.gov/ns/oscal"
+        "title" : "Test Plan"
       }, {
-        "title" : "Rules of Engagement",
         "name" : "rules-of-engagement",
-        "prose" : "The ROE is a document designed to describe proper notifications and disclosures between an owner of a tested system and an IA. In particular, a ROE includes information about targets of automated scans and IP address origination information of automated scans (and other testing tools). Together with the information provided in preceding sections of this document, this document shall serve as a ROE once signed."
+        "prose" : "The ROE is a document designed to describe proper notifications and disclosures between an owner of a tested system and an IA. In particular, a ROE includes information about targets of automated scans and IP address origination information of automated scans (and other testing tools). Together with the information provided in preceding sections of this document, this document shall serve as a ROE once signed.",
+        "title" : "Rules of Engagement"
       }, {
+        "name" : "disclosures",
         "parts" : [ {
+          "name" : "disclosure",
+          "prose" : "Any testing will be performed according to the terms and conditions, cited in this SAP and the Penetration Testing ROE, once this SAP is signed by both parties. These ROEs must be upheld to minimize risk exposure that could occur during security assessment testing.",
+          "ns" : "https://fedramp.gov/ns/oscal",
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "001"
-          } ],
-          "name" : "disclosure",
-          "prose" : "Any testing will be performed according to the terms and conditions, cited in this SAP and the Penetration Testing ROE, once this SAP is signed by both parties. These ROEs must be upheld to minimize risk exposure that could occur during security assessment testing.",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          } ]
         }, {
+          "name" : "disclosure",
+          "prose" : "The following sections provide additional disclosures accepted by the IA and the CSP for proceeding with this Security Assessment.",
+          "ns" : "https://fedramp.gov/ns/oscal",
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "002"
-          } ],
-          "name" : "disclosure",
-          "prose" : "The following sections provide additional disclosures accepted by the IA and the CSP for proceeding with this Security Assessment.",
-          "ns" : "https://fedramp.gov/ns/oscal"
+          } ]
         }, {
+          "name" : "assessment-inclusions",
+          "prose" : "Every assessment requires certain disclosures. Sometimes a CSO may have the same disclosures as another CSO, but not usually. IAs and CSPs are required to ensure that all requirements contracted between the CSP and IA are adequate for both parties. Examples of inclusive disclosures appear below. Add to and delete from this list, as applicable.",
           "parts" : [ {
+            "name" : "included-activity",
+            "prose" : "Port scans and other network service interaction and queries",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "001"
-            } ],
-            "name" : "included-activity",
-            "prose" : "Port scans and other network service interaction and queries"
+            } ]
           }, {
+            "name" : "included-activity",
+            "prose" : "Port scans and other network service interaction and queries",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "002"
-            } ],
-            "name" : "included-activity",
-            "prose" : "Port scans and other network service interaction and queries"
+            } ]
           }, {
+            "name" : "included-activity",
+            "prose" : "Network sniffing, traffic monitoring, traffic analysis, and host discovery",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "003"
-            } ],
-            "name" : "included-activity",
-            "prose" : "Network sniffing, traffic monitoring, traffic analysis, and host discovery"
+            } ]
           }, {
+            "name" : "included-activity",
+            "prose" : "Attempted logins or other use of systems, with any account name, token, password, and privilege",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "004"
-            } ],
-            "name" : "included-activity",
-            "prose" : "Attempted logins or other use of systems, with any account name, token, password, and privilege"
+            } ]
           }, {
+            "name" : "included-activity",
+            "prose" : "Attempted SQL injection and other forms of input parameter testing",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "005"
-            } ],
-            "name" : "included-activity",
-            "prose" : "Attempted SQL injection and other forms of input parameter testing"
+            } ]
           }, {
+            "name" : "included-activity",
+            "prose" : "Use of exploit code for leveraging discovered vulnerabilities",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "006"
-            } ],
-            "name" : "included-activity",
-            "prose" : "Use of exploit code for leveraging discovered vulnerabilities"
+            } ]
           }, {
+            "name" : "included-activity",
+            "prose" : "Password cracking via capture and scanning of authentication databases",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "007"
-            } ],
-            "name" : "included-activity",
-            "prose" : "Password cracking via capture and scanning of authentication databases"
+            } ]
           }, {
+            "name" : "included-activity",
+            "prose" : "Spoofing or deceiving servers regarding network traffic",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "008"
-            } ],
-            "name" : "included-activity",
-            "prose" : "Spoofing or deceiving servers regarding network traffic"
+            } ]
           }, {
+            "name" : "included-activity",
+            "prose" : "Altering running system configuration except where denial of service would result",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "009"
-            } ],
-            "name" : "included-activity",
-            "prose" : "Altering running system configuration except where denial of service would result"
+            } ]
           }, {
+            "name" : "included-activity",
+            "prose" : "Adding user accounts",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "010"
-            } ],
-            "name" : "included-activity",
-            "prose" : "Adding user accounts"
+            } ]
           }, {
+            "name" : "included-activity",
+            "prose" : "Adding other activities as needed...",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "011"
-            } ],
-            "name" : "included-activity",
-            "prose" : "Adding other activities as needed..."
+            } ]
           } ],
-          "title" : "Security Testing May Include",
-          "name" : "assessment-inclusions",
-          "prose" : "Every assessment requires certain disclosures. Sometimes a CSO may have the same disclosures as another CSO, but not usually. IAs and CSPs are required to ensure that all requirements contracted between the CSP and IA are adequate for both parties. Examples of inclusive disclosures appear below. Add to and delete from this list, as applicable."
+          "title" : "Security Testing May Include"
         }, {
+          "name" : "assessment-exclusions",
+          "prose" : "Examples of exclusive disclosures appear below. Security testing will not include any of the following activities:",
           "parts" : [ {
+            "name" : "excluded-activity",
+            "prose" : "Changes to assigned user passwords",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "001"
-            } ],
-            "name" : "excluded-activity",
-            "prose" : "Changes to assigned user passwords"
+            } ]
           }, {
+            "name" : "excluded-activity",
+            "prose" : "Modification of user files or system files",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "002"
-            } ],
-            "name" : "excluded-activity",
-            "prose" : "Modification of user files or system files"
+            } ]
           }, {
+            "name" : "excluded-activity",
+            "prose" : "Telephone modem probes and scans (active and passive)",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "003"
-            } ],
-            "name" : "excluded-activity",
-            "prose" : "Telephone modem probes and scans (active and passive)"
+            } ]
           }, {
+            "name" : "excluded-activity",
+            "prose" : "Intentional viewing of \\[CSP Name\\] staff email, Internet caches, and/or personnel cookie files",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "004"
-            } ],
-            "name" : "excluded-activity",
-            "prose" : "Intentional viewing of \\[CSP Name\\] staff email, Internet caches, and/or personnel cookie files"
+            } ]
           }, {
+            "name" : "excluded-activity",
+            "prose" : "Denial of Service attacks",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "005"
-            } ],
-            "name" : "excluded-activity",
-            "prose" : "Denial of Service attacks"
+            } ]
           }, {
+            "name" : "excluded-activity",
+            "prose" : "Exploits that will introduce new weaknesses to the system",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "0061"
-            } ],
-            "name" : "excluded-activity",
-            "prose" : "Exploits that will introduce new weaknesses to the system"
+            } ]
           }, {
+            "name" : "excluded-activity",
+            "prose" : "Intentional introduction of malicious code (e.g., viruses, Trojans, worms, etc.)",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "007"
-            } ],
-            "name" : "excluded-activity",
-            "prose" : "Intentional introduction of malicious code (e.g., viruses, Trojans, worms, etc.)"
+            } ]
           }, {
+            "name" : "excluded-activity",
+            "prose" : "Add exclusions here; however, be aware that FedRAMP may not agree with the exclusions listed (e.g., no testing of client side components indicated as imperative for use of the system)",
             "props" : [ {
               "name" : "sort-id",
               "ns" : "https://fedramp.gov/ns/oscal",
               "value" : "008"
-            } ],
-            "name" : "excluded-activity",
-            "prose" : "Add exclusions here; however, be aware that FedRAMP may not agree with the exclusions listed (e.g., no testing of client side components indicated as imperative for use of the system)"
+            } ]
           } ],
-          "title" : "Security Testing Will Not Include",
-          "name" : "assessment-exclusions",
-          "prose" : "Examples of exclusive disclosures appear below. Security testing will not include any of the following activities:"
+          "title" : "Security Testing Will Not Include"
         } ],
-        "title" : "Disclosures",
-        "name" : "disclosures"
+        "title" : "Disclosures"
       }, {
+        "name" : "results-delivery",
         "parts" : [ {
+          "name" : "testing-end",
           "parts" : [ {
             "name" : "testing-end",
             "prose" : "\\[IA Name\\] will notify \\[Name of Person\\] at \\[CSP Name\\] when security testing has been completed."
@@ -1685,9 +1091,9 @@
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "001"
           } ],
-          "title" : "End of Testing",
-          "name" : "testing-end"
+          "title" : "End of Testing"
         }, {
+          "name" : "results-communication",
           "parts" : [ {
             "name" : "results-communication",
             "prose" : "All documentation generated by this security assessment effort, is to be handled securely, in such a way to protect the confidentiality, integrity and availability of the data, and according to \\[CSP Name\\] and \\[IA Name\\] acceptable requirements. Security testing results will be provided and disclosed to the individual POCs at \\[CSP Name\\] as noted in this document. This should be accomplished within \\[Number of Days\\] days after security testing has been completed."
@@ -1697,51 +1103,645 @@
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "002"
           } ],
-          "title" : "Communications of Test Results",
-          "name" : "results-communication"
-        } ],
-        "name" : "results-delivery"
+          "title" : "Communications of Test Results"
+        } ]
       }, {
+        "name" : "liability-limitations",
+        "ns" : "https://fedramp.gov/ns/oscal",
         "parts" : [ {
+          "name" : "liability-limitation",
+          "prose" : "\\[IA Name\\], and its stated partners, shall not be held liable to \\[CSP Name\\] for any and all liabilities, claims, or damages arising out of or relating to the security vulnerability testing portion of this Agreement, howsoever caused and regardless of the legal theory asserted, including breach of contract or warranty, tort, strict liability, statutory liability, or otherwise.",
+          "props" : [ {
+            "name" : "sort-id",
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "value" : "001"
+          } ]
+        }, {
+          "name" : "liability-limitation",
+          "prose" : "\\[CSP Name\\] acknowledges that there are limitations inherent in the methodologies implemented, and the assessment of security and vulnerability relating to information technology is an uncertain process based on past experiences, currently available information, and the anticipation of reasonable threats at the time of the analysis. There is no assurance that an analysis of this nature will identify all vulnerabilities or propose exhaustive and operationally viable recommendations to mitigate all exposure.",
+          "props" : [ {
+            "name" : "sort-id",
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "value" : "002"
+          } ]
+        } ],
+        "title" : "Limitation of Liability"
+      } ]
+    },
+    "reviewed-controls" : {
+      "remarks" : "# IMPORTANT: RESPONSE POINTS\n\nWithin each FedRAMP baseline, FedRAMP has added \"response-point\" properties as a FedRAMP Extension.\n\nThese are found in control statements (for CSPs to use in their SSP) and in control objectives (for assessors to use in their SAP and SAR).\n\nSAP tools should scan the appropriate baseline (as identified by the SSP's `import-profile` statement), find the response points associated with control objectives (ignoring response points associated with statements), and insert one `include-objective` field for each identified response point.\n\nFor this task, tools should either scan the resolved profile catalog version of each baseline, or resolve the profile against its catalog before processing.\n\nXPath for all control objectie response points in a resolved profile catalog: `//control/part[@name='objective']//prop[@name='response-point'][@ns='https://fedramp.gov/ns/oscal']/../@id`\n\nXPath for AC-2(f) control objective response points in a resolved profile catalog: `//*/part[@name='objective' and contains(@id, 'ac-2.f')]/prop[@name='response-point'][@ns='https://fedramp.gov/ns/oscal']/../@id`",
+      "control-objective-selections" : [ {
+        "include-objectives" : [ {
+          "objective-id" : "ac-2.f_obj.1"
+        }, {
+          "objective-id" : "ac-2.f_obj.2"
+        } ],
+        "description" : "# Control Objective Scope\n\nWithin the OSCAL-based FedRAMP baselines, FedRAMP has defined the control objectives for which an assessor must respond. Those must be explicityly listed here.\n\nThis template only includes the AC-2(f) response points from the FedRAMP Moderate Baseline based on NIST SP 800-53 Revision 4.\n\nThis is analgous to the individual rows listed in the empty FedRAMP Test Case Workbook ([Moderate](https://www.fedramp.gov/assets/resources/templates/SAP-AA-FedRAMP-Moderate-Security-Test-Case-Procedures-Template.xlsx)).\n\nNote that the specified objective-ids must exist in the referenced profile / catalog."
+      } ],
+      "control-selections" : [ {
+        "exclude-controls" : [ {
+          "control-id" : "ac-1"
+        } ],
+        "description" : "# Control Scope\n\nInitial assessments include all controls.\n\nAnnual assessment include a subset of controls as defined by FedRAMP Continuous Monitoring Guidance and any adjudicating officials.\n\nThis example demonstrates including all controls identified in the SSP's baseline, and then explicilty excludes AC-1.",
+        "include-all" : { }
+      } ]
+    },
+    "uuid" : "1a58d031-b0ef-4e3a-9d6f-5c5969bb711e",
+    "tasks" : [ {
+      "title" : "Prepare SAP",
+      "type" : "action",
+      "uuid" : "17030aaf-7712-4228-8607-a5a97a785efa",
+      "description" : "optional description here",
+      "timing" : {
+        "within-date-range" : {
+          "end" : "2020-09-15T00:00:00Z",
+          "start" : "2023-09-01T00:00:00Z"
+        }
+      }
+    }, {
+      "title" : "Meeting to Review SAP",
+      "type" : "action",
+      "uuid" : "b65e7779-bd3d-4a49-9de5-3122c290792f",
+      "description" : "optional description here",
+      "timing" : {
+        "within-date-range" : {
+          "end" : "2023-09-15T15:00:00Z",
+          "start" : "2023-09-15T14:00:00Z"
+        }
+      }
+    }, {
+      "title" : "Update and Finalize SAP",
+      "type" : "action",
+      "uuid" : "b8389553-f0f7-4ae9-9331-203608222770",
+      "description" : "optional description here",
+      "timing" : {
+        "within-date-range" : {
+          "end" : "2023-09-20T00:00:00Z",
+          "start" : "2023-09-16T00:00:00Z"
+        }
+      }
+    }, {
+      "title" : "Review CSP Documentation",
+      "type" : "action",
+      "uuid" : "e1890486-a9f0-4388-b2bc-34fb6c623686",
+      "description" : "optional description here",
+      "timing" : {
+        "within-date-range" : {
+          "end" : "2023-09-25T00:00:00Z",
+          "start" : "2020-09-20T00:00:00Z"
+        }
+      }
+    }, {
+      "title" : "Conduct Interviews of CSP Staff",
+      "type" : "action",
+      "uuid" : "172d4ba2-3362-4e3b-9379-a65a50e399bf",
+      "description" : "optional description here",
+      "timing" : {
+        "within-date-range" : {
+          "end" : "2023-10-05T00:00:00Z",
+          "start" : "2023-09-25T00:00:00Z"
+        }
+      }
+    }, {
+      "title" : "Perform Testing",
+      "type" : "action",
+      "uuid" : "aa5344be-18c4-4529-8937-0f4b873b8fcd",
+      "description" : "optional description here",
+      "timing" : {
+        "within-date-range" : {
+          "end" : "2023-10-15T00:00:00Z",
+          "start" : "2023-10-05T00:00:00Z"
+        }
+      }
+    }, {
+      "title" : "Perform Penetration Testing",
+      "type" : "action",
+      "uuid" : "8937348c-5ebb-40bd-a8eb-faff99af156e",
+      "description" : "optional description here",
+      "timing" : {
+        "within-date-range" : {
+          "end" : "2023-10-15T00:00:00Z",
+          "start" : "2023-10-05T00:00:00Z"
+        }
+      }
+    }, {
+      "title" : "Vulnerability Analysis and Threat Assessment",
+      "type" : "action",
+      "uuid" : "7f2a5095-5f53-461b-b12f-3d649f6d7a6c",
+      "description" : "optional description here",
+      "timing" : {
+        "within-date-range" : {
+          "end" : "2023-10-15T00:00:00Z",
+          "start" : "2023-10-05T00:00:00Z"
+        }
+      }
+    }, {
+      "title" : "Risk Exposure Table Development",
+      "type" : "action",
+      "uuid" : "4f90df2a-c94c-494f-9999-0695a4dbe9ca",
+      "description" : "optional description here",
+      "timing" : {
+        "within-date-range" : {
+          "end" : "2023-10-20T00:00:00Z",
+          "start" : "2023-10-15T00:00:00Z"
+        }
+      }
+    }, {
+      "title" : "Complete Draft SAR",
+      "type" : "action",
+      "uuid" : "0378802d-1288-4305-9eaf-bec8ee1a138c",
+      "description" : "optional description here",
+      "timing" : {
+        "within-date-range" : {
+          "end" : "2023-10-25T00:00:00Z",
+          "start" : "2023-10-20T00:00:00Z"
+        }
+      }
+    }, {
+      "title" : "Draft SAR Delivered to CSP",
+      "type" : "action",
+      "uuid" : "2a04884f-6b75-4133-857b-ded12e12b38c",
+      "description" : "optional description here",
+      "timing" : {
+        "within-date-range" : {
+          "end" : "2023-10-25T00:00:00Z",
+          "start" : "2023-10-25T00:00:00Z"
+        }
+      }
+    }, {
+      "title" : "Issue Resolution Meeting",
+      "type" : "action",
+      "uuid" : "933b1eea-6ec3-4fbf-850a-33c8f5c44225",
+      "description" : "optional description here",
+      "timing" : {
+        "within-date-range" : {
+          "end" : "2023-10-30T00:00:00Z",
+          "start" : "2023-10-30T00:00:00Z"
+        }
+      }
+    }, {
+      "title" : "Complete Final Version of SAR",
+      "type" : "action",
+      "uuid" : "7f377a32-5012-4d76-becf-9f70d6a9f104",
+      "description" : "optional description here",
+      "timing" : {
+        "within-date-range" : {
+          "end" : "2023-11-05T00:00:00Z",
+          "start" : "2023-10-30T00:00:00Z"
+        }
+      }
+    }, {
+      "title" : "Send Final Version of SAR to CSP and ISSO",
+      "type" : "action",
+      "uuid" : "45e2af99-bebf-4a2b-ad6f-b325e910aa12",
+      "description" : "optional description here",
+      "timing" : {
+        "within-date-range" : {
+          "end" : "2023-11-05T00:00:00Z",
+          "start" : "2023-11-05T00:00:00Z"
+        }
+      }
+    }, {
+      "title" : "Web Application Tests",
+      "type" : "action",
+      "tasks" : [ {
+        "title" : "Web Application Test #1",
+        "type" : "action",
+        "props" : [ {
+          "name" : "test-type",
+          "ns" : "http://fedramp.gov/ns/oscal",
+          "value" : "web-application"
+        }, {
+          "name" : "login-url",
+          "ns" : "http://fedramp.gov/ns/oscal",
+          "value" : "https://service.offering.com/login"
+        }, {
+          "name" : "login-id",
+          "ns" : "http://fedramp.gov/ns/oscal",
+          "value" : "test-user"
+        } ],
+        "uuid" : "16cc716d-b519-416a-ba61-edd4affbdddb",
+        "associated-activities" : [ {
+          "subjects" : [ {
+            "include-subjects" : [ {
+              "remarks" : "References an inventory item, which is linked to a component. The component has a `scan-type` FedRAMP Extension with a value of \"web\"",
+              "type" : "inventory-item",
+              "subject-uuid" : "779d4e89-bba6-432c-b50d-d699fe534129"
+            } ],
+            "type" : "inventory-item"
+          } ],
+          "activity-uuid" : "315b3118-3d2e-420b-b4fb-5acf13b08381"
+        } ]
+      }, {
+        "title" : "Web Application Test #2",
+        "type" : "action",
+        "props" : [ {
+          "name" : "test-type",
+          "ns" : "http://fedramp.gov/ns/oscal",
+          "value" : "web-application"
+        }, {
+          "name" : "login-url",
+          "ns" : "http://fedramp.gov/ns/oscal",
+          "value" : "https://admin-portal.offering.com/login"
+        }, {
+          "name" : "login-id",
+          "ns" : "http://fedramp.gov/ns/oscal",
+          "value" : "test-admin"
+        } ],
+        "uuid" : "fc869008-9cd5-4499-82c8-6bc532a86142",
+        "associated-activities" : [ {
+          "subjects" : [ {
+            "remarks" : "References an inventory item, which is linked to a component. The component has a `scan-type` FedRAMP Extension with a value of \"web\"",
+            "include-subjects" : [ {
+              "type" : "inventory-item",
+              "subject-uuid" : "779d4e89-bba6-432c-b50d-d699fe534129"
+            } ],
+            "type" : "inventory-item"
+          } ],
+          "activity-uuid" : "64142a6f-d8d4-47c6-8bb1-a0e33f17664d"
+        } ]
+      } ],
+      "uuid" : "bdf4380d-6d23-4d02-bafe-483b7b64d1fb"
+    }, {
+      "title" : "Role-Based Tests",
+      "type" : "action",
+      "tasks" : [ {
+        "title" : "Role Based Test #1",
+        "type" : "action",
+        "props" : [ {
+          "name" : "test-type",
+          "ns" : "http://fedramp.gov/ns/oscal",
+          "value" : "role-based"
+        }, {
+          "name" : "login-id",
+          "ns" : "http://fedramp.gov/ns/oscal",
+          "value" : "test-user"
+        }, {
+          "name" : "user-uuid",
+          "ns" : "http://fedramp.gov/ns/oscal",
+          "value" : "9cb0fab0-78bd-44ba-bcb8-3e9801cc952f"
+        } ],
+        "uuid" : "cfcb0f24-2e1b-49d7-b938-5f58479ed874",
+        "associated-activities" : [ {
+          "subjects" : [ {
+            "remarks" : "References an inventory item, which is linked to a component. The component has a `scan-type` FedRAMP Extension with a value of \"web\"",
+            "include-subjects" : [ {
+              "type" : "inventory-item",
+              "subject-uuid" : "779d4e89-bba6-432c-b50d-d699fe534129"
+            } ],
+            "type" : "inventory-item"
+          } ],
+          "activity-uuid" : "dc858ece-b430-485d-886c-3a812bb77b13"
+        } ]
+      }, {
+        "title" : "Role Based Test #2",
+        "type" : "action",
+        "props" : [ {
+          "name" : "test-type",
+          "ns" : "http://fedramp.gov/ns/oscal",
+          "value" : "role-based"
+        }, {
+          "name" : "login-id",
+          "ns" : "http://fedramp.gov/ns/oscal",
+          "value" : "test-admin"
+        }, {
+          "name" : "user-uuid",
+          "ns" : "http://fedramp.gov/ns/oscal",
+          "value" : "sys-role-2"
+        } ],
+        "uuid" : "74830d19-2820-4487-bd1d-91d8656b7eb0",
+        "associated-activities" : [ {
+          "subjects" : [ {
+            "remarks" : "References an inventory item, which is linked to a component. The component has a `scan-type` FedRAMP Extension with a value of \"web\"",
+            "include-subjects" : [ {
+              "type" : "inventory-item",
+              "subject-uuid" : "779d4e89-bba6-432c-b50d-d699fe534129"
+            } ],
+            "type" : "inventory-item"
+          } ],
+          "activity-uuid" : "64142a6f-d8d4-47c6-8bb1-a0e33f17664d"
+        } ]
+      } ],
+      "uuid" : "eddbcfa9-d296-4818-adcc-3d5465ed3fdd"
+    } ],
+    "local-definitions" : {
+      "objectives-and-methods" : [ {
+        "control-id" : "ac-2",
+        "parts" : [ {
+          "name" : "assessment-objective",
+          "prose" : "Determine if the organization:\n\n- defines procedures or conditions to:\n  - create information system accounts\n  - enable information system accounts\n  - modify information system accounts\n  - disable information system accounts\n  - remove information system accounts",
+          "props" : [ {
+            "name" : "method-id",
+            "value" : "ac-2.f_obj.1-1"
+          } ],
+          "id" : "ac-2.f_obj.1",
+          "title" : "Assessment Objective"
+        }, {
+          "name" : "assessment-method",
+          "parts" : [ {
+            "name" : "assessment-objects",
+            "prose" : "Access control policy; procedures addressing account management; security plan; information system design documentation; information system configuration settings and associated documentation; list of active system accounts along with the name of the individual associated with each account; list of conditions for group and role membership; notifications or records of recently transferred, separated, or terminated employees; list of recently disabled information system accounts along with the name of the individual associated with each account; access authorization records; account management compliance reviews; information system monitoring records; information system audit records; other relevant documents or records",
+            "id" : "ac-2.f_obj.1-1_object"
+          } ],
+          "props" : [ {
+            "name" : "method",
+            "value" : "EXAMINE"
+          } ],
+          "id" : "ac-2.f_obj.1-1"
+        } ]
+      }, {
+        "control-id" : "ac-2",
+        "parts" : [ {
+          "name" : "assessment-objective",
+          "prose" : "Determine if the organization:\n\n- in accordance with organization-defined procedures or conditions:\n  - create information system accounts\n  - enable information system accounts\n  - modify information system accounts\n  - disable information system accounts\n  - remove information system accounts",
+          "id" : "ac-2.f_obj.2",
+          "title" : "Assessment Objective"
+        }, {
+          "name" : "assessment-method",
+          "parts" : [ {
+            "name" : "assessment-objects",
+            "prose" : "Organizational personnel with account management responsibilities; system/network administrators; organizational personnel with information security responsibilities",
+            "id" : "ac-2.f_obj.2-1_object"
+          } ],
+          "props" : [ {
+            "name" : "method",
+            "value" : "INTERVIEW"
+          } ],
+          "id" : "ac-2.f_obj.2-1"
+        }, {
+          "name" : "assessment-method",
+          "parts" : [ {
+            "name" : "assessment-objects",
+            "prose" : "Organizational processes for account management on the information system; automated mechanisms for implementing account management",
+            "id" : "ac-2.f_obj.2-2_object"
+          } ],
+          "props" : [ {
+            "name" : "method",
+            "value" : "TEST"
+          } ],
+          "id" : "ac-2.f_obj.2-2"
+        } ]
+      } ],
+      "inventory-items" : [ {
+        "uuid" : "ce6b1a6e-0391-45d1-997e-3cc97db97d9f",
+        "props" : [ {
+          "name" : "ipv4-address",
+          "value" : "10.1.2.99"
+        }, {
+          "name" : "virtual",
+          "value" : "no"
+        }, {
+          "name" : "public",
+          "value" : "no"
+        }, {
+          "name" : "fqdn",
+          "value" : "dns.name"
+        }, {
+          "name" : "mac-address",
+          "value" : "00:00:00:00:00:00"
+        }, {
+          "name" : "hardware-model",
+          "value" : "hardware-model"
+        }, {
+          "name" : "vendor-name",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "vendor-name"
+        }, {
+          "name" : "asset-type",
+          "value" : "appliance"
+        }, {
+          "name" : "scan-type",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "infrastructure"
+        }, {
+          "name" : "scan-type",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "web"
+        }, {
+          "name" : "allows-authenticated-scan",
+          "value" : "no"
+        } ],
+        "description" : "A network appliance, not defined in the SSP inventory.\n\nThis could be component that is modified/added as part of a significant change.",
+        "remarks" : "Use any needed prop/annotation allowed in an SSP inventory-item.\n\nIf correcting existing SSP, use the \"updates-uuid\" property to cite the original content.\n\nThis could be component that is modified/added as part of a significant change."
+      }, {
+        "uuid" : "0f9049ed-a01f-484a-b70d-b1894fd196b8",
+        "props" : [ {
+          "name" : "ipv4-address",
+          "value" : "10.1.1.99"
+        }, {
+          "name" : "virtual",
+          "value" : "no"
+        }, {
+          "name" : "public",
+          "value" : "no"
+        }, {
+          "name" : "fqdn",
+          "value" : "dns.name"
+        }, {
+          "name" : "mac-address",
+          "value" : "00:00:00:00:00:00"
+        }, {
+          "name" : "os-name",
+          "value" : "Windows 10"
+        }, {
+          "name" : "os-version",
+          "value" : "10.0.190944"
+        }, {
+          "name" : "hardware-model",
+          "value" : "hardware-model"
+        }, {
+          "name" : "vendor-name",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "vendor-name"
+        }, {
+          "name" : "asset-type",
+          "value" : "operating-system"
+        }, {
+          "name" : "scan-type",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "infrastructure"
+        }, {
+          "name" : "allows-authenticated-scan",
+          "value" : "yes"
+        } ],
+        "description" : "A Windows laptop, not defined in the SSP inventory.",
+        "remarks" : "Use any needed prop/annotation allowed in an SSP inventory-item.\n\nIf correcting existing SSP, use the \"updates-uuid\" property to cite the original content."
+      } ],
+      "components" : [ {
+        "status" : {
+          "state" : "operational"
+        },
+        "props" : [ {
+          "name" : "ipv4-subnet",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "10.20.30.0/24"
+        } ],
+        "type" : "subnet",
+        "remarks" : "Use any needed prop/annotation allowed in an SSP inventory-item.\n\nIf correcting existing SSP, use the \"updates-uuid\" property to cite the original content.\n\nThis could be component that is modified/added as part of a significant change.",
+        "title" : "Subnet",
+        "uuid" : "59406025-116a-4fee-84c3-932a9968de54",
+        "description" : "A known subnet, which is not defined in the SSP inventory."
+      } ],
+      "users" : [ {
+        "authorized-privileges" : [ {
+          "functions-performed" : [ "Add/Remove Groups", "Add/Remove other admins", "Manage logs" ],
+          "title" : "Corrected Function List"
+        } ],
+        "description" : "# Existing Role - Incorrect Associated Functions",
+        "remarks" : "The UUID assigned to the origional incorrect role in the SSP must be cited in the \"updates-uuid\" property.\n\nThe SAP syntax duplicates the SSP user syntax.\n\nThis local entry completely replaces the entry in the SSP.\n\nTools should duplicate the entire assembly from the SSP to this location, then allow the assessor to add or change the details.\n\nThis ensures the entry here is complete.",
+        "uuid" : "ba6b8bd4-c6f1-4b60-aa0f-69875b108f16",
+        "title" : "Updated Role"
+      }, {
+        "authorized-privileges" : [ {
+          "functions-performed" : [ "View Team Content", "View/Edit Individual Content" ],
+          "title" : "Typical External User"
+        } ],
+        "remarks" : "The ID assigned to this missing role must not be used in the SSP user list.\n\nThe SAP user assembly duplicates the SSP user assembly, which requires a role-id.\n\nIf an existing role in the SSP is appropriate, reference it here.\n\nIf no appropriate role exists in the SSP, the role-id may be left blank in the SAP.",
+        "uuid" : "58bb5a77-b40a-4104-ac29-299a1691f76a",
+        "title" : "Missing Role"
+      } ],
+      "activities" : [ {
+        "steps" : [ {
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "001"
           } ],
-          "name" : "liability-limitation",
-          "prose" : "\\[IA Name\\], and its stated partners, shall not be held liable to \\[CSP Name\\] for any and all liabilities, claims, or damages arising out of or relating to the security vulnerability testing portion of this Agreement, howsoever caused and regardless of the legal theory asserted, including breach of contract or warranty, tort, strict liability, statutory liability, or otherwise."
+          "description" : "Describe test step #1",
+          "uuid" : "fb039fd7-5a2b-4c0f-867c-88cce9c3778c"
         }, {
           "props" : [ {
             "name" : "sort-id",
             "ns" : "https://fedramp.gov/ns/oscal",
             "value" : "002"
           } ],
-          "name" : "liability-limitation",
-          "prose" : "\\[CSP Name\\] acknowledges that there are limitations inherent in the methodologies implemented, and the assessment of security and vulnerability relating to information technology is an uncertain process based on past experiences, currently available information, and the anticipation of reasonable threats at the time of the analysis. There is no assurance that an analysis of this nature will identify all vulnerabilities or propose exhaustive and operationally viable recommendations to mitigate all exposure."
-        } ],
-        "title" : "Limitation of Liability",
-        "name" : "liability-limitations",
-        "ns" : "https://fedramp.gov/ns/oscal"
-      } ]
-    },
-    "reviewed-controls" : {
-      "remarks" : "# IMPORTANT: RESPONSE POINTS\n\nWithin each FedRAMP baseline, FedRAMP has added \"response-point\" properties as a FedRAMP Extension.\n\nThese are found in control statements (for CSPs to use in their SSP) and in control objectives (for assessors to use in their SAP and SAR).\n\nSAP tools should scan the appropriate baseline (as identified by the SSP's `import-profile` statement), find the response points associated with control objectives (ignoring response points associated with statements), and insert one `include-objective` field for each identified response point.\n\nFor this task, tools should either scan the resolved profile catalog version of each baseline, or resolve the profile against its catalog before processing.\n\nXPath for all control objectie response points in a resolved profile catalog: `//control/part[@name='objective']//prop[@name='response-point'][@ns='https://fedramp.gov/ns/oscal']/../@id`\n\nXPath for AC-2(f) control objective response points in a resolved profile catalog: `//*/part[@name='objective' and contains(@id, 'ac-2.f')]/prop[@name='response-point'][@ns='https://fedramp.gov/ns/oscal']/../@id`",
-      "control-objective-selections" : [ {
-        "description" : "# Control Objective Scope\n\nWithin the OSCAL-based FedRAMP baselines, FedRAMP has defined the control objectives for which an assessor must respond. Those must be explicityly listed here.\n\nThis template only includes the AC-2(f) response points from the FedRAMP Moderate Baseline based on NIST SP 800-53 Revision 4.\n\nThis is analgous to the individual rows listed in the empty FedRAMP Test Case Workbook ([Moderate](https://www.fedramp.gov/assets/resources/templates/SAP-AA-FedRAMP-Moderate-Security-Test-Case-Procedures-Template.xlsx)).\n\nNote that the specified objective-ids must exist in the referenced profile / catalog.",
-        "include-objectives" : [ {
-          "objective-id" : "ac-2.f_obj.1"
+          "description" : "Describe test step #2",
+          "uuid" : "fb039fd7-5a2b-4c0f-867c-88cce9c3778c"
         }, {
-          "objective-id" : "ac-2.f_obj.2"
-        } ]
-      } ],
-      "control-selections" : [ {
-        "description" : "# Control Scope\n\nInitial assessments include all controls.\n\nAnnual assessment include a subset of controls as defined by FedRAMP Continuous Monitoring Guidance and any adjudicating officials.\n\nThis example demonstrates including all controls identified in the SSP's baseline, and then explicilty excludes AC-1.",
-        "include-all" : { },
-        "exclude-controls" : [ {
-          "control-id" : "ac-1"
-        } ]
+          "props" : [ {
+            "name" : "sort-id",
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "value" : "003"
+          } ],
+          "description" : "Describe test step #3",
+          "uuid" : "fb039fd7-5a2b-4c0f-867c-88cce9c3778c"
+        } ],
+        "description" : "Description of the manual test",
+        "props" : [ {
+          "name" : "method",
+          "value" : "EXAMINE"
+        }, {
+          "name" : "type",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "manual"
+        }, {
+          "name" : "label",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "Test ID"
+        } ],
+        "uuid" : "2715174e-9355-4775-bea4-4068e59e916b",
+        "title" : "Title of the Manual Test"
+      }, {
+        "description" : "We will login as a customer and try to see if we can gain access to the Network Administrator and Database Administrator privileges and authorizations by navigating to different views and manually forcing the browser to various URLs",
+        "props" : [ {
+          "name" : "method",
+          "value" : "TEST"
+        }, {
+          "name" : "type",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "manual"
+        }, {
+          "name" : "label",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "Test ID"
+        } ],
+        "uuid" : "3ba68918-80ef-4846-89e0-9f1def7e5223",
+        "title" : "\\[SAMPLE\\]Forceful Browsing"
+      }, {
+        "description" : "We will test the CAPTCHA function on the web form manually",
+        "props" : [ {
+          "name" : "method",
+          "value" : "TEST"
+        }, {
+          "name" : "type",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "manual"
+        }, {
+          "name" : "label",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "Test ID"
+        } ],
+        "uuid" : "2233cf20-282a-4967-ab07-a4b7d1ae3a4b",
+        "title" : "\\[SAMPLE\\]CAPTCHA"
+      }, {
+        "description" : "We will manually test to see if OCSP is validating certificates.",
+        "props" : [ {
+          "name" : "method",
+          "value" : "EXAMINE"
+        }, {
+          "name" : "type",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "manual"
+        }, {
+          "name" : "label",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "Test ID"
+        } ],
+        "uuid" : "f818a896-3438-409f-a2a4-583a56fa41b4",
+        "title" : "\\[SAMPLE\\]OCSP"
+      }, {
+        "description" : "Describe this web application test.",
+        "props" : [ {
+          "name" : "method",
+          "value" : "TEST"
+        }, {
+          "name" : "type",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "web-application"
+        } ],
+        "uuid" : "315b3118-3d2e-420b-b4fb-5acf13b08381",
+        "title" : "Web Application Test #1"
+      }, {
+        "description" : "Describe this web application test.",
+        "props" : [ {
+          "name" : "method",
+          "value" : "TEST"
+        }, {
+          "name" : "type",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "web-application"
+        } ],
+        "uuid" : "64142a6f-d8d4-47c6-8bb1-a0e33f17664d",
+        "title" : "Web Application Test #2"
+      }, {
+        "description" : "Describe this role based test.",
+        "props" : [ {
+          "name" : "method",
+          "value" : "TEST"
+        }, {
+          "name" : "type",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "role-based"
+        } ],
+        "uuid" : "dc858ece-b430-485d-886c-3a812bb77b13",
+        "title" : "Role Based Test #1"
+      }, {
+        "description" : "Describe this role based test.",
+        "props" : [ {
+          "name" : "method",
+          "value" : "INTERVIEW"
+        }, {
+          "name" : "type",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "role-based"
+        } ],
+        "uuid" : "74830d19-2820-4487-bd1d-91d8656b7eb0",
+        "title" : "Role Based Test #2"
       } ]
     },
-    "uuid" : "1a58d031-b0ef-4e3a-9d6f-5c5969bb711e"
+    "import-ssp" : {
+      "href" : "#7c30125f-c056-4888-9f1a-7ed1b6a1b638",
+      "remarks" : "Link the SAP to the SSP.\n\nFedRAMP prefers the path for the SSP be relative to the location of this SAP file. Absolute links will likely not work when FedRAMP tools import the content.\n\nThis may point to a back-matter resource using a URI fragment.\n\nIf no OSCAL-based SSP exists, this must be a URI fragment pointing to a special back-matter resource. The resource must include the `no-oscal-ssp` conformity tag."
+    }
   }
 }

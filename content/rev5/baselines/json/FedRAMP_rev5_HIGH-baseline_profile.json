@@ -1,1575 +1,11 @@
 {
   "profile" : {
-    "imports" : [ {
-      "include-controls" : [ {
-        "with-ids" : [ "ac-1", "ac-2", "ac-2.1", "ac-2.2", "ac-2.3", "ac-2.4", "ac-2.5", "ac-2.7", "ac-2.9", "ac-2.11", "ac-2.12", "ac-2.13", "ac-3", "ac-4", "ac-4.4", "ac-4.21", "ac-5", "ac-6", "ac-6.1", "ac-6.2", "ac-6.3", "ac-6.5", "ac-6.7", "ac-6.8", "ac-6.9", "ac-6.10", "ac-7", "ac-8", "ac-10", "ac-11", "ac-11.1", "ac-12", "ac-14", "ac-17", "ac-17.1", "ac-17.2", "ac-17.3", "ac-17.4", "ac-18", "ac-18.1", "ac-18.3", "ac-18.4", "ac-18.5", "ac-19", "ac-19.5", "ac-20", "ac-20.1", "ac-20.2", "ac-21", "ac-22", "at-1", "at-2", "at-2.2", "at-2.3", "at-3", "at-4", "au-1", "au-2", "au-3", "au-3.1", "au-4", "au-5", "au-5.1", "au-5.2", "au-6", "au-6.1", "au-6.3", "au-6.4", "au-6.5", "au-6.6", "au-6.7", "au-7", "au-7.1", "au-8", "au-9", "au-9.2", "au-9.3", "au-9.4", "au-10", "au-11", "au-12", "au-12.1", "au-12.3", "ca-1", "ca-2", "ca-2.1", "ca-2.2", "ca-2.3", "ca-3", "ca-3.6", "ca-5", "ca-6", "ca-7", "ca-7.1", "ca-7.4", "ca-8", "ca-8.1", "ca-8.2", "ca-9", "cm-1", "cm-2", "cm-2.2", "cm-2.3", "cm-2.7", "cm-3", "cm-3.1", "cm-3.2", "cm-3.4", "cm-3.6", "cm-4", "cm-4.1", "cm-4.2", "cm-5", "cm-5.1", "cm-5.5", "cm-6", "cm-6.1", "cm-6.2", "cm-7", "cm-7.1", "cm-7.2", "cm-7.5", "cm-8", "cm-8.1", "cm-8.2", "cm-8.3", "cm-8.4", "cm-9", "cm-10", "cm-11", "cm-12", "cm-12.1", "cm-14", "cp-1", "cp-2", "cp-2.1", "cp-2.2", "cp-2.3", "cp-2.5", "cp-2.8", "cp-3", "cp-3.1", "cp-4", "cp-4.1", "cp-4.2", "cp-6", "cp-6.1", "cp-6.2", "cp-6.3", "cp-7", "cp-7.1", "cp-7.2", "cp-7.3", "cp-7.4", "cp-8", "cp-8.1", "cp-8.2", "cp-8.3", "cp-8.4", "cp-9", "cp-9.1", "cp-9.2", "cp-9.3", "cp-9.5", "cp-9.8", "cp-10", "cp-10.2", "cp-10.4", "ia-1", "ia-2", "ia-2.1", "ia-2.2", "ia-2.5", "ia-2.6", "ia-2.8", "ia-2.12", "ia-3", "ia-4", "ia-4.4", "ia-5", "ia-5.1", "ia-5.2", "ia-5.6", "ia-5.7", "ia-5.8", "ia-5.13", "ia-6", "ia-7", "ia-8", "ia-8.1", "ia-8.2", "ia-8.4", "ia-11", "ia-12", "ia-12.2", "ia-12.3", "ia-12.4", "ia-12.5", "ir-1", "ir-2", "ir-2.1", "ir-2.2", "ir-3", "ir-3.2", "ir-4", "ir-4.1", "ir-4.2", "ir-4.4", "ir-4.6", "ir-4.11", "ir-5", "ir-5.1", "ir-6", "ir-6.1", "ir-6.3", "ir-7", "ir-7.1", "ir-8", "ir-9", "ir-9.2", "ir-9.3", "ir-9.4", "ma-1", "ma-2", "ma-2.2", "ma-3", "ma-3.1", "ma-3.2", "ma-3.3", "ma-4", "ma-4.3", "ma-5", "ma-5.1", "ma-6", "mp-1", "mp-2", "mp-3", "mp-4", "mp-5", "mp-6", "mp-6.1", "mp-6.2", "mp-6.3", "mp-7", "pe-1", "pe-2", "pe-3", "pe-3.1", "pe-4", "pe-5", "pe-6", "pe-6.1", "pe-6.4", "pe-8", "pe-8.1", "pe-9", "pe-10", "pe-11", "pe-11.1", "pe-12", "pe-13", "pe-13.1", "pe-13.2", "pe-14", "pe-14.2", "pe-15", "pe-15.1", "pe-16", "pe-17", "pe-18", "pl-1", "pl-2", "pl-4", "pl-4.1", "pl-8", "pl-10", "pl-11", "ps-1", "ps-2", "ps-3", "ps-3.3", "ps-4", "ps-4.2", "ps-5", "ps-6", "ps-7", "ps-8", "ps-9", "ra-1", "ra-2", "ra-3", "ra-3.1", "ra-5", "ra-5.2", "ra-5.3", "ra-5.4", "ra-5.5", "ra-5.8", "ra-5.11", "ra-7", "ra-9", "sa-1", "sa-2", "sa-3", "sa-4", "sa-4.1", "sa-4.2", "sa-4.5", "sa-4.9", "sa-4.10", "sa-5", "sa-8", "sa-9", "sa-9.1", "sa-9.2", "sa-9.5", "sa-10", "sa-11", "sa-11.1", "sa-11.2", "sa-15", "sa-15.3", "sa-16", "sa-17", "sa-21", "sa-22", "sc-1", "sc-2", "sc-3", "sc-4", "sc-5", "sc-7", "sc-7.3", "sc-7.4", "sc-7.5", "sc-7.7", "sc-7.8", "sc-7.10", "sc-7.12", "sc-7.18", "sc-7.20", "sc-7.21", "sc-8", "sc-8.1", "sc-10", "sc-12", "sc-12.1", "sc-13", "sc-15", "sc-17", "sc-18", "sc-20", "sc-21", "sc-22", "sc-23", "sc-24", "sc-28", "sc-28.1", "sc-39", "sc-45", "sc-45.1", "si-1", "si-2", "si-2.2", "si-2.3", "si-3", "si-4", "si-4.1", "si-4.2", "si-4.4", "si-4.5", "si-4.10", "si-4.11", "si-4.12", "si-4.14", "si-4.16", "si-4.18", "si-4.19", "si-4.20", "si-4.22", "si-4.23", "si-5", "si-5.1", "si-6", "si-7", "si-7.1", "si-7.2", "si-7.5", "si-7.7", "si-7.15", "si-8", "si-8.2", "si-10", "si-11", "si-12", "si-16", "sr-1", "sr-2", "sr-2.1", "sr-3", "sr-5", "sr-6", "sr-8", "sr-9", "sr-9.1", "sr-10", "sr-11", "sr-11.1", "sr-11.2", "sr-12" ]
-      } ],
-      "href" : "#051a77c1-b61d-4995-8275-dacfe688d510"
-    } ],
-    "metadata" : {
-      "oscal-version" : "1.1.1",
-      "last-modified" : "2024-06-24T00:00:00Z",
-      "title" : "FedRAMP Rev 5 High Baseline",
-      "published" : "2024-06-24T00:00:00Z",
-      "version" : "5.1.1+fedramp-20240111-0"
-    },
-    "merge" : {
-      "as-is" : true
-    },
-    "modify" : {
-      "set-parameters" : [ {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ac-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ac-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "ac-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "twenty-four (24) hours"
-        } ],
-        "param-id" : "ac-02_odp.06"
-      }, {
-        "constraints" : [ {
-          "description" : "eight (8) hours"
-        } ],
-        "param-id" : "ac-02_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "eight (8) hours"
-        } ],
-        "param-id" : "ac-02_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "monthly for privileged accessed, every six (6) months for non-privileged access"
-        } ],
-        "param-id" : "ac-02_odp.10"
-      }, {
-        "constraints" : [ {
-          "description" : "Selection: disables"
-        } ],
-        "param-id" : "ac-02.02_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "no more than 24 hours from last use"
-        } ],
-        "param-id" : "ac-02.02_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "24 hours for user accounts"
-        } ],
-        "param-id" : "ac-02.03_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "thirty-five (35) days (See additional requirements and guidance.)"
-        } ],
-        "param-id" : "ac-02.03_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "inactivity is anticipated to exceed Fifteen (15) minutes"
-        } ],
-        "param-id" : "ac-02.05_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "organization-defined need with justification statement that explains why such accounts are necessary"
-        } ],
-        "param-id" : "ac-02.09_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "at a minimum, the ISSO and/or similar role within the organization"
-        } ],
-        "param-id" : "ac-02.12_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "one (1) hour"
-        } ],
-        "param-id" : "ac-02.13_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "intrusion detection mechanisms"
-        } ],
-        "param-id" : "ac-04.04_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "all functions not publicly accessible"
-        } ],
-        "param-id" : "ac-06.01_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "all functions not publicly accessible"
-        } ],
-        "param-id" : "ac-06.01_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "all functions not publicly accessible"
-        } ],
-        "param-id" : "ac-06.01_odp.04"
-      }, {
-        "constraints" : [ {
-          "description" : "all security-relevant information not publicly available"
-        } ],
-        "param-id" : "ac-06.01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "all security functions"
-        } ],
-        "param-id" : "ac-06.02_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "all privileged commands"
-        } ],
-        "param-id" : "ac-06.03_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at a minimum, annually"
-        } ],
-        "param-id" : "ac-06.07_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "all users with privileges"
-        } ],
-        "param-id" : "ac-06.07_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "any software except software explicitly documented"
-        } ],
-        "param-id" : "ac-06.08_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "see additional Requirements and Guidance"
-        } ],
-        "param-id" : "ac-08_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "see additional Requirements and Guidance"
-        } ],
-        "param-id" : "ac-08_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "three (3) sessions for privileged access and two (2) sessions for non-privileged access"
-        } ],
-        "param-id" : "ac-10_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "fifteen (15) minutes"
-        } ],
-        "param-id" : "ac-11_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least quarterly"
-        } ],
-        "param-id" : "ac-22_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "at-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "at-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "at-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "at-02_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "at-02_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "at-02_odp.06"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "at-03_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "at-03_odp.04"
-      }, {
-        "constraints" : [ {
-          "description" : "five (5) years or 5 years after completion of a specific training program"
-        } ],
-        "param-id" : "at-04_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "au-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "au-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "au-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events. For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes"
-        } ],
-        "param-id" : "au-02_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "organization-defined subset of the auditable events defined in AU-2a to be audited continually for each identified event."
-        } ],
-        "param-id" : "au-02_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "organization-defined subset of the auditable events defined in AU-2a to be audited continually for each identified event."
-        } ],
-        "param-id" : "au-02_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "annually and whenever there is a change in the threat environment"
-        } ],
-        "param-id" : "au-02_odp.04"
-      }, {
-        "constraints" : [ {
-          "description" : "session, connection, transaction, or activity duration; for client-server transactions, the number of bytes received and bytes sent; additional informational messages to diagnose or identify the event; characteristics that describe or identify the object or resource being acted upon; individual identities of group account users; full-text of privileged commands"
-        } ],
-        "param-id" : "au-03.01_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "overwrite oldest record"
-        } ],
-        "param-id" : "au-05_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "75%, or one month before expected negative impact"
-        } ],
-        "param-id" : "au-05.01_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "real-time"
-        } ],
-        "param-id" : "au-05.02_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "service provider personnel with authority to address failed audit events"
-        } ],
-        "param-id" : "au-05.02_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "audit failure events requiring real-time alerts, as defined by organization audit policy"
-        } ],
-        "param-id" : "au-05.02_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "at least weekly"
-        } ],
-        "param-id" : "au-06_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "vulnerability scanning information; performance data; information system monitoring information; penetration test data; {{ insert: param, au-06.05_odp.02 }}"
-        } ],
-        "param-id" : "au-06.05_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "information system process; role; user"
-        } ],
-        "param-id" : "au-06.07_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "one second granularity of time measurement"
-        } ],
-        "param-id" : "au-08_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "at least weekly"
-        } ],
-        "param-id" : "au-09.02_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "minimum actions including the addition, modification, deletion, approval, sending, or receiving of data"
-        } ],
-        "param-id" : "au-10_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "a time period in compliance with M-21-31"
-        } ],
-        "param-id" : "au-11_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "all information system and network components where audit capability is deployed/available"
-        } ],
-        "param-id" : "au-12_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "all network, data storage, and computing devices"
-        } ],
-        "param-id" : "au-12.01_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "service provider-defined individuals or roles with audit configuration responsibilities"
-        } ],
-        "param-id" : "au-12.03_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "all network, data storage, and computing devices"
-        } ],
-        "param-id" : "au-12.03_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ca-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ca-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "ca-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ca-02_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "individuals or roles to include FedRAMP PMO"
-        } ],
-        "param-id" : "ca-02_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ca-02.02_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "any FedRAMP Accredited 3PAO"
-        } ],
-        "param-id" : "ca-02.03_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "the conditions of the JAB/AO in the FedRAMP Repository"
-        } ],
-        "param-id" : "ca-02.03_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually and on input from JAB/AO"
-        } ],
-        "param-id" : "ca-03_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "at least monthly"
-        } ],
-        "param-id" : "ca-05_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "in accordance with OMB A-130 requirements or when a significant change occurs"
-        } ],
-        "param-id" : "ca-06_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "to include JAB/AO"
-        } ],
-        "param-id" : "ca-07_odp.04"
-      }, {
-        "constraints" : [ {
-          "description" : "to include JAB/AO"
-        } ],
-        "param-id" : "ca-07_odp.06"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ca-08_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ca-09_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "cm-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "cm-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "cm-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually and when a significant change occurs"
-        } ],
-        "param-id" : "cm-02_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "to include when directed by the JAB"
-        } ],
-        "param-id" : "cm-02_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "organization-defined number of previous versions of baseline configurations of the previously approved baseline configuration of IS components"
-        } ],
-        "param-id" : "cm-02.03_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "organization agreed upon time period"
-        } ],
-        "param-id" : "cm-03.01_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "organization defined configuration management approval authorities"
-        } ],
-        "param-id" : "cm-03.01_odp.04"
-      }, {
-        "constraints" : [ {
-          "description" : "Configuration control board (CCB) or similar (as defined in CM-3)"
-        } ],
-        "param-id" : "cm-03.04_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "All security safeguards that rely on cryptography"
-        } ],
-        "param-id" : "cm-03.06_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "at least quarterly"
-        } ],
-        "param-id" : "cm-05.05_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least quarterly"
-        } ],
-        "param-id" : "cm-05.05_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "cm-07.01_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least quarterly or when there is a change"
-        } ],
-        "param-id" : "cm-07.05_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least monthly"
-        } ],
-        "param-id" : "cm-08_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "automated mechanisms with a maximum five-minute delay in detection"
-        } ],
-        "param-id" : "cm-08.03_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "automated mechanisms with a maximum five-minute delay in detection"
-        } ],
-        "param-id" : "cm-08.03_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "automated mechanisms with a maximum five-minute delay in detection"
-        } ],
-        "param-id" : "cm-08.03_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "continuously"
-        } ],
-        "param-id" : "cm-08.03_odp.04"
-      }, {
-        "constraints" : [ {
-          "description" : "position and role"
-        } ],
-        "param-id" : "cm-08.04_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "Continuously (via CM-7 (5))"
-        } ],
-        "param-id" : "cm-11_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "Federal data and system data that must be protected at the High or Moderate impact levels"
-        } ],
-        "param-id" : "cm-12.01_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "cp-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "cp-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "cp-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "cp-02_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "all"
-        } ],
-        "param-id" : "cp-02.03_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "time period defined in service provider and organization SLA"
-        } ],
-        "param-id" : "cp-02.03_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "essential"
-        } ],
-        "param-id" : "cp-02.05_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "\\*See Additional Requirements"
-        } ],
-        "param-id" : "cp-03_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "cp-03_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "cp-03_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "cp-04_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "functional exercises"
-        } ],
-        "param-id" : "cp-04_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "functional exercises"
-        } ],
-        "param-id" : "cp-04_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "annually"
-        } ],
-        "param-id" : "cp-08.04_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "annually"
-        } ],
-        "param-id" : "cp-08.04_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "daily incremental; weekly full"
-        } ],
-        "param-id" : "cp-09_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "daily incremental; weekly full"
-        } ],
-        "param-id" : "cp-09_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "daily incremental; weekly full"
-        } ],
-        "param-id" : "cp-09_odp.04"
-      }, {
-        "constraints" : [ {
-          "description" : "at least monthly"
-        } ],
-        "param-id" : "cp-09.01_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least monthly"
-        } ],
-        "param-id" : "cp-09.01_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "time period and transfer rate consistent with the recovery time and recovery point objectives defined in the service provider and organization SLA."
-        } ],
-        "param-id" : "cp-09.05_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "time period and transfer rate consistent with the recovery time and recovery point objectives defined in the service provider and organization SLA."
-        } ],
-        "param-id" : "cp-09.05_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "all backup files"
-        } ],
-        "param-id" : "cp-09.08_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "time period consistent with the restoration time-periods defined in the service provider and organization SLA"
-        } ],
-        "param-id" : "cp-10.04_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ia-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ia-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "ia-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "local, network and remote"
-        } ],
-        "param-id" : "ia-02.06_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "privileged accounts; non-privileged accounts"
-        } ],
-        "param-id" : "ia-02.06_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "FIPS-validated or NSA-approved cryptography"
-        } ],
-        "param-id" : "ia-02.06_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "privileged accounts; non-privileged accounts"
-        } ],
-        "param-id" : "ia-02.08_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "at a minimum, the ISSO (or similar role within the organization)"
-        } ],
-        "param-id" : "ia-04_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least two (2) years"
-        } ],
-        "param-id" : "ia-04_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "contractors; foreign nationals"
-        } ],
-        "param-id" : "ia-04.04_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "different authenticators in different user authentication domains"
-        } ],
-        "param-id" : "ia-05.08_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ir-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ir-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "ir-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "ten (10) days for privileged users, thirty (30) days for Incident Response roles"
-        } ],
-        "param-id" : "ir-02_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ir-02_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ir-02_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "at least every six (6) months, including functional at least annually"
-        } ],
-        "param-id" : "ir-03_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "all network, data storage, and computing devices"
-        } ],
-        "param-id" : "ir-04.02_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "US-CERT incident reporting timelines as specified in NIST Special Publication 800-61 (as amended)"
-        } ],
-        "param-id" : "ir-06_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ir-08_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "see additional FedRAMP Requirements and Guidance"
-        } ],
-        "param-id" : "ir-08_odp.04"
-      }, {
-        "constraints" : [ {
-          "description" : "see additional FedRAMP Requirements and Guidance"
-        } ],
-        "param-id" : "ir-08_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "see additional FedRAMP Requirements and Guidance"
-        } ],
-        "param-id" : "ir-08_odp.06"
-      }, {
-        "constraints" : [ {
-          "description" : "see additional FedRAMP Requirements and Guidance"
-        } ],
-        "param-id" : "ir-08_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ir-09.02_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ma-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ma-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "ma-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ma-03_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "the information owner"
-        } ],
-        "param-id" : "ma-03.03_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "a timeframe to support advertised uptime and availability"
-        } ],
-        "param-id" : "ma-06_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "mp-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "mp-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "mp-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "all types of digital and/or non-digital media containing sensitive information"
-        } ],
-        "param-id" : "mp-02_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "all types of digital and/or non-digital media containing sensitive information"
-        } ],
-        "param-id" : "mp-02_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "no removable media types"
-        } ],
-        "param-id" : "mp-03_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "organization-defined security safeguards not applicable"
-        } ],
-        "param-id" : "mp-03_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "all types of digital and non-digital media with sensitive information"
-        } ],
-        "param-id" : "mp-04_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "all types of digital and non-digital media with sensitive information"
-        } ],
-        "param-id" : "mp-04_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "all types of digital and non-digital media with sensitive information"
-        } ],
-        "param-id" : "mp-04_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "all types of digital and non-digital media with sensitive information"
-        } ],
-        "param-id" : "mp-04_odp.04"
-      }, {
-        "constraints" : [ {
-          "description" : "see additional FedRAMP requirements and guidance"
-        } ],
-        "param-id" : "mp-04_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "see additional FedRAMP requirements and guidance"
-        } ],
-        "param-id" : "mp-04_odp.06"
-      }, {
-        "constraints" : [ {
-          "description" : "all media with sensitive information"
-        } ],
-        "param-id" : "mp-05_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "prior to leaving secure/controlled environment: for digital media, encryption in compliance with Federal requirements and utilizes FIPS validated or NSA approved cryptography (see SC-13.); for non-digital media, secured in locked container"
-        } ],
-        "param-id" : "mp-05_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "prior to leaving secure/controlled environment: for digital media, encryption in compliance with Federal requirements and utilizes FIPS validated or NSA approved cryptography (see SC-13.); for non-digital media, secured in locked container"
-        } ],
-        "param-id" : "mp-05_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
-        } ],
-        "param-id" : "mp-06_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
-        } ],
-        "param-id" : "mp-06_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
-        } ],
-        "param-id" : "mp-06_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "at least every six (6) months"
-        } ],
-        "param-id" : "mp-06.02_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least every six (6) months"
-        } ],
-        "param-id" : "mp-06.02_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "pe-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "pe-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "pe-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "at least every ninety (90) days"
-        } ],
-        "param-id" : "pe-02_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "CSP defined physical access control systems/devices AND guards"
-        } ],
-        "param-id" : "pe-03_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "in all circumstances within restricted access area where the information system resides"
-        } ],
-        "param-id" : "pe-03_odp.06"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "pe-03_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually or earlier as required by a security relevant event."
-        } ],
-        "param-id" : "pe-03_odp.09"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually or earlier as required by a security relevant event."
-        } ],
-        "param-id" : "pe-03_odp.10"
-      }, {
-        "constraints" : [ {
-          "description" : "at least monthly"
-        } ],
-        "param-id" : "pe-06_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "for a minimum of one (1) year"
-        } ],
-        "param-id" : "pe-08_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least monthly"
-        } ],
-        "param-id" : "pe-08_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "near more than one egress point of the IT area and ensures it is labeled and protected by a cover to prevent accidental shut-off"
-        } ],
-        "param-id" : "pe-10_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "automatically"
-        } ],
-        "param-id" : "pe-11.01_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "service provider building maintenance/physical security personnel"
-        } ],
-        "param-id" : "pe-13.01_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "service provider emergency responders with incident response responsibilities"
-        } ],
-        "param-id" : "pe-13.01_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "consistent with American Society of Heating, Refrigerating and Air-conditioning Engineers (ASHRAE) document entitled Thermal Guidelines for Data Processing Environments"
-        } ],
-        "param-id" : "pe-14_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "continuously"
-        } ],
-        "param-id" : "pe-14_odp.04"
-      }, {
-        "constraints" : [ {
-          "description" : "service provider building maintenance/physical security personnel"
-        } ],
-        "param-id" : "pe-15.01_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "all information system components"
-        } ],
-        "param-id" : "pe-16_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "all information system components"
-        } ],
-        "param-id" : "pe-16_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "physical and environmental hazards identified during threat assessment"
-        } ],
-        "param-id" : "pe-18_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "pl-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "pl-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "pl-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "to include chief privacy and ISSO and/or similar role or designees"
-        } ],
-        "param-id" : "pl-02_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "to include chief privacy and ISSO and/or similar role"
-        } ],
-        "param-id" : "pl-02_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "pl-02_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "pl-04_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually and when the rules are revised or changed"
-        } ],
-        "param-id" : "pl-04_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually and when a significant change occurs"
-        } ],
-        "param-id" : "pl-08_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ps-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ps-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "ps-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ps-02_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "for national security clearances; a reinvestigation is required during the fifth (5th) year for top secret security clearance, the tenth (10th) year for secret security clearance, and fifteenth (15th) year for confidential security clearance.\n\nFor moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the fifth (5th) year. There is no reinvestigation for other moderate risk positions or any low risk positions"
-        } ],
-        "param-id" : "ps-03_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "For national security clearances; a reinvestigation is required during the fifth (5th) year for top secret security clearance, the tenth (10th) year for secret security clearance, and fifteenth (15th) year for confidential security clearance.\n\nFor moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the fifth (5th) year. There is no reinvestigation for other moderate risk positions or any low risk positions"
-        } ],
-        "param-id" : "ps-03_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "personnel screening criteria - as required by specific information"
-        } ],
-        "param-id" : "ps-03.03_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "one (1) hour"
-        } ],
-        "param-id" : "ps-04_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "access control personnel responsible for disabling access to the system"
-        } ],
-        "param-id" : "ps-04.02_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "twenty-four (24) hours"
-        } ],
-        "param-id" : "ps-05_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "including access control personnel responsible for the system"
-        } ],
-        "param-id" : "ps-05_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "twenty-four (24) hours"
-        } ],
-        "param-id" : "ps-05_odp.04"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ps-06_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually and any time there is a change to the user's level of access"
-        } ],
-        "param-id" : "ps-06_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "including access control personnel responsible for the system and/or facilities, as appropriate"
-        } ],
-        "param-id" : "ps-07_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "terminations: immediately; transfers: within twenty-four (24) hours"
-        } ],
-        "param-id" : "ps-07_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "to include the ISSO and/or similar role within the organization"
-        } ],
-        "param-id" : "ps-08_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "24 hours"
-        } ],
-        "param-id" : "ps-08_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ra-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "ra-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "ra-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "security assessment report"
-        } ],
-        "param-id" : "ra-03_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually and whenever a significant change occurs"
-        } ],
-        "param-id" : "ra-03_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "annually"
-        } ],
-        "param-id" : "ra-03_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "monthly operating system/infrastructure; monthly web applications (including APIs) and databases"
-        } ],
-        "param-id" : "ra-05_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "monthly operating system/infrastructure; monthly web applications (including APIs) and databases"
-        } ],
-        "param-id" : "ra-05_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "high-risk vulnerabilities mitigated within thirty (30) days from date of discovery; moderate-risk vulnerabilities mitigated within ninety (90) days from date of discovery; low risk vulnerabilities mitigated within one hundred and eighty (180) days from date of discovery"
-        } ],
-        "param-id" : "ra-05_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "within 24 hours prior to running scans"
-        } ],
-        "param-id" : "ra-05.02_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "notify appropriate service provider personnel and follow procedures for organization and service provider-defined corrective actions"
-        } ],
-        "param-id" : "ra-05.04_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "all components that support authentication"
-        } ],
-        "param-id" : "ra-05.05_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "all scans"
-        } ],
-        "param-id" : "ra-05.05_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "sa-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "sa-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "sa-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "at a minimum to include security-relevant external system interfaces; high-level design; low-level design; source code or network and data flow diagram;\n\norganization-defined design/implementation information"
-        } ],
-        "param-id" : "sa-04.02_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "The service provider shall use the DoD STIGs to establish configuration settings; Center for Internet Security up to Level 2 (CIS Level 2) guidelines shall be used if STIGs are not available; Custom baselines shall be used if CIS is not available."
-        } ],
-        "param-id" : "sa-04.05_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "at a minimum, the ISSO (or similar role within the organization)"
-        } ],
-        "param-id" : "sa-05_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "Appropriate FedRAMP Security Controls Baseline (s) if Federal information is processed or stored within the external system"
-        } ],
-        "param-id" : "sa-09_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "Federal/FedRAMP Continuous Monitoring requirements must be met for external systems where Federal information is processed or stored"
-        } ],
-        "param-id" : "sa-09_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "all external systems where Federal information is processed or stored"
-        } ],
-        "param-id" : "sa-09.02_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "information processing, information or data, AND system services"
-        } ],
-        "param-id" : "sa-09.05_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "U.S./U.S. Territories or geographic locations where there is U.S. jurisdiction"
-        } ],
-        "param-id" : "sa-09.05_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "all High impact data, systems, or services"
-        } ],
-        "param-id" : "sa-09.05_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "development, implementation, AND operation"
-        } ],
-        "param-id" : "sa-10_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "frequency as before first use and annually thereafter"
-        } ],
-        "param-id" : "sa-15_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "FedRAMP Security Authorization requirements"
-        } ],
-        "param-id" : "sa-15_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "sc-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "sc-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "sc-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "Protect against"
-        } ],
-        "param-id" : "sc-05_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at a minimum: ICMP (ping) flood, SYN flood, slowloris, buffer overflow attack, and volume attack"
-        } ],
-        "param-id" : "sc-05_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least every ninety (90) days or whenever there is a change in the threat environment that warrants a review of the exceptions"
-        } ],
-        "param-id" : "sc-07.04_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "any systems"
-        } ],
-        "param-id" : "sc-07.05_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "any network outside of organizational control and any network outside the authorization boundary"
-        } ],
-        "param-id" : "sc-07.08_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "Host Intrusion Prevention System (HIPS), Host Intrusion Detection System (HIDS), or minimally a host-based firewall"
-        } ],
-        "param-id" : "sc-07.12_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "confidentiality AND integrity"
-        } ],
-        "param-id" : "sc-08_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "prevent unauthorized disclosure of information AND detect changes to information"
-        } ],
-        "param-id" : "sc-08.01_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "no longer than ten (10) minutes for privileged sessions and no longer than fifteen (15) minutes for user sessions"
-        } ],
-        "param-id" : "sc-10_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "In accordance with Federal requirements"
-        } ],
-        "param-id" : "sc-12_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "FIPS-validated or NSA-approved cryptography"
-        } ],
-        "param-id" : "sc-13_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "no exceptions for computing devices"
-        } ],
-        "param-id" : "sc-15_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "confidentiality AND integrity"
-        } ],
-        "param-id" : "sc-28_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "all information system components storing Federal data or system data that must be protected at the High or Moderate impact levels"
-        } ],
-        "param-id" : "sc-28.01_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "At least hourly"
-        } ],
-        "param-id" : "sc-45.01_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "http://tf.nist.gov/tf-cgi/servers.cgi"
-        } ],
-        "param-id" : "sc-45.01_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "any difference"
-        } ],
-        "param-id" : "sc-45.01_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "si-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "si-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "si-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "within thirty (30) days of release of updates"
-        } ],
-        "param-id" : "si-02_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "at least monthly"
-        } ],
-        "param-id" : "si-02.02_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "signature based and non-signature based"
-        } ],
-        "param-id" : "si-03_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "at least weekly"
-        } ],
-        "param-id" : "si-03_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "to include endpoints and network entry and exit points"
-        } ],
-        "param-id" : "si-03_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "to include blocking and quarantining malicious code"
-        } ],
-        "param-id" : "si-03_odp.04"
-      }, {
-        "constraints" : [ {
-          "description" : "administrator or defined security personnel near-realtime"
-        } ],
-        "param-id" : "si-03_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "continuously"
-        } ],
-        "param-id" : "si-04.04_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "continuously"
-        } ],
-        "param-id" : "si-04.04_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "to include US-CERT and Cybersecurity and Infrastructure Security Agency (CISA) Directives"
-        } ],
-        "param-id" : "si-05_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "to include system security personnel and administrators with configuration/patch-management responsibilities"
-        } ],
-        "param-id" : "si-05_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "to include upon system startup and/or restart"
-        } ],
-        "param-id" : "si-06_odp.04"
-      }, {
-        "constraints" : [ {
-          "description" : "at least monthly"
-        } ],
-        "param-id" : "si-06_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "to include system administrators and security personnel"
-        } ],
-        "param-id" : "si-06_odp.06"
-      }, {
-        "constraints" : [ {
-          "description" : "selection to include security relevant event"
-        } ],
-        "param-id" : "si-07.01_odp.03"
-      }, {
-        "constraints" : [ {
-          "description" : "selection to include security relevant event"
-        } ],
-        "param-id" : "si-07.01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "selection to include security relevant event"
-        } ],
-        "param-id" : "si-07.01_odp.11"
-      }, {
-        "constraints" : [ {
-          "description" : "at least monthly"
-        } ],
-        "param-id" : "si-07.01_odp.04"
-      }, {
-        "constraints" : [ {
-          "description" : "at least monthly"
-        } ],
-        "param-id" : "si-07.01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "at least monthly"
-        } ],
-        "param-id" : "si-07.01_odp.12"
-      }, {
-        "constraints" : [ {
-          "description" : "to include the ISSO and/or similar role within the organization"
-        } ],
-        "param-id" : "si-07.02_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "to include all software and firmware inside the boundary"
-        } ],
-        "param-id" : "si-07.15_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "to include the ISSO and/or similar role within the organization"
-        } ],
-        "param-id" : "si-11_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "to include chief privacy and ISSO and/or similar role or designees"
-        } ],
-        "param-id" : "sr-01_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "to include chief privacy and ISSO and/or similar role or designees"
-        } ],
-        "param-id" : "sr-01_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "sr-01_odp.05"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "sr-01_odp.07"
-      }, {
-        "constraints" : [ {
-          "description" : "significant changes"
-        } ],
-        "param-id" : "sr-01_odp.08"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "sr-02_odp.02"
-      }, {
-        "constraints" : [ {
-          "description" : "at least annually"
-        } ],
-        "param-id" : "sr-06_odp"
-      }, {
-        "constraints" : [ {
-          "description" : "notification of supply chain compromises and results of assessment or audits"
-        } ],
-        "param-id" : "sr-08_odp.01"
-      }, {
-        "constraints" : [ {
-          "description" : "all"
-        } ],
-        "param-id" : "sr-11.02_odp"
-      } ]
-    },
     "back-matter" : {
       "resources" : [ {
         "title" : "FedRAMP Modified NIST Special Publication (SP) 800-53 revision 5",
         "rlinks" : [ {
-          "media-type" : "application/oscal+xml",
-          "href" : "FedRAMP_rev5_catalog_tailoring_profile.xml"
+          "href" : "FedRAMP_rev5_catalog_tailoring_profile.xml",
+          "media-type" : "application/oscal+xml"
         } ],
         "uuid" : "051a77c1-b61d-4995-8275-dacfe688d510",
         "props" : [ {
@@ -1578,6 +14,1570 @@
         } ]
       } ]
     },
-    "uuid" : "2ef3cdd1-6928-494b-b2ef-593e774fae38"
+    "uuid" : "2ef3cdd1-6928-494b-b2ef-593e774fae38",
+    "imports" : [ {
+      "href" : "#051a77c1-b61d-4995-8275-dacfe688d510",
+      "include-controls" : [ {
+        "with-ids" : [ "ac-1", "ac-2", "ac-2.1", "ac-2.2", "ac-2.3", "ac-2.4", "ac-2.5", "ac-2.7", "ac-2.9", "ac-2.11", "ac-2.12", "ac-2.13", "ac-3", "ac-4", "ac-4.4", "ac-4.21", "ac-5", "ac-6", "ac-6.1", "ac-6.2", "ac-6.3", "ac-6.5", "ac-6.7", "ac-6.8", "ac-6.9", "ac-6.10", "ac-7", "ac-8", "ac-10", "ac-11", "ac-11.1", "ac-12", "ac-14", "ac-17", "ac-17.1", "ac-17.2", "ac-17.3", "ac-17.4", "ac-18", "ac-18.1", "ac-18.3", "ac-18.4", "ac-18.5", "ac-19", "ac-19.5", "ac-20", "ac-20.1", "ac-20.2", "ac-21", "ac-22", "at-1", "at-2", "at-2.2", "at-2.3", "at-3", "at-4", "au-1", "au-2", "au-3", "au-3.1", "au-4", "au-5", "au-5.1", "au-5.2", "au-6", "au-6.1", "au-6.3", "au-6.4", "au-6.5", "au-6.6", "au-6.7", "au-7", "au-7.1", "au-8", "au-9", "au-9.2", "au-9.3", "au-9.4", "au-10", "au-11", "au-12", "au-12.1", "au-12.3", "ca-1", "ca-2", "ca-2.1", "ca-2.2", "ca-2.3", "ca-3", "ca-3.6", "ca-5", "ca-6", "ca-7", "ca-7.1", "ca-7.4", "ca-8", "ca-8.1", "ca-8.2", "ca-9", "cm-1", "cm-2", "cm-2.2", "cm-2.3", "cm-2.7", "cm-3", "cm-3.1", "cm-3.2", "cm-3.4", "cm-3.6", "cm-4", "cm-4.1", "cm-4.2", "cm-5", "cm-5.1", "cm-5.5", "cm-6", "cm-6.1", "cm-6.2", "cm-7", "cm-7.1", "cm-7.2", "cm-7.5", "cm-8", "cm-8.1", "cm-8.2", "cm-8.3", "cm-8.4", "cm-9", "cm-10", "cm-11", "cm-12", "cm-12.1", "cm-14", "cp-1", "cp-2", "cp-2.1", "cp-2.2", "cp-2.3", "cp-2.5", "cp-2.8", "cp-3", "cp-3.1", "cp-4", "cp-4.1", "cp-4.2", "cp-6", "cp-6.1", "cp-6.2", "cp-6.3", "cp-7", "cp-7.1", "cp-7.2", "cp-7.3", "cp-7.4", "cp-8", "cp-8.1", "cp-8.2", "cp-8.3", "cp-8.4", "cp-9", "cp-9.1", "cp-9.2", "cp-9.3", "cp-9.5", "cp-9.8", "cp-10", "cp-10.2", "cp-10.4", "ia-1", "ia-2", "ia-2.1", "ia-2.2", "ia-2.5", "ia-2.6", "ia-2.8", "ia-2.12", "ia-3", "ia-4", "ia-4.4", "ia-5", "ia-5.1", "ia-5.2", "ia-5.6", "ia-5.7", "ia-5.8", "ia-5.13", "ia-6", "ia-7", "ia-8", "ia-8.1", "ia-8.2", "ia-8.4", "ia-11", "ia-12", "ia-12.2", "ia-12.3", "ia-12.4", "ia-12.5", "ir-1", "ir-2", "ir-2.1", "ir-2.2", "ir-3", "ir-3.2", "ir-4", "ir-4.1", "ir-4.2", "ir-4.4", "ir-4.6", "ir-4.11", "ir-5", "ir-5.1", "ir-6", "ir-6.1", "ir-6.3", "ir-7", "ir-7.1", "ir-8", "ir-9", "ir-9.2", "ir-9.3", "ir-9.4", "ma-1", "ma-2", "ma-2.2", "ma-3", "ma-3.1", "ma-3.2", "ma-3.3", "ma-4", "ma-4.3", "ma-5", "ma-5.1", "ma-6", "mp-1", "mp-2", "mp-3", "mp-4", "mp-5", "mp-6", "mp-6.1", "mp-6.2", "mp-6.3", "mp-7", "pe-1", "pe-2", "pe-3", "pe-3.1", "pe-4", "pe-5", "pe-6", "pe-6.1", "pe-6.4", "pe-8", "pe-8.1", "pe-9", "pe-10", "pe-11", "pe-11.1", "pe-12", "pe-13", "pe-13.1", "pe-13.2", "pe-14", "pe-14.2", "pe-15", "pe-15.1", "pe-16", "pe-17", "pe-18", "pl-1", "pl-2", "pl-4", "pl-4.1", "pl-8", "pl-10", "pl-11", "ps-1", "ps-2", "ps-3", "ps-3.3", "ps-4", "ps-4.2", "ps-5", "ps-6", "ps-7", "ps-8", "ps-9", "ra-1", "ra-2", "ra-3", "ra-3.1", "ra-5", "ra-5.2", "ra-5.3", "ra-5.4", "ra-5.5", "ra-5.8", "ra-5.11", "ra-7", "ra-9", "sa-1", "sa-2", "sa-3", "sa-4", "sa-4.1", "sa-4.2", "sa-4.5", "sa-4.9", "sa-4.10", "sa-5", "sa-8", "sa-9", "sa-9.1", "sa-9.2", "sa-9.5", "sa-10", "sa-11", "sa-11.1", "sa-11.2", "sa-15", "sa-15.3", "sa-16", "sa-17", "sa-21", "sa-22", "sc-1", "sc-2", "sc-3", "sc-4", "sc-5", "sc-7", "sc-7.3", "sc-7.4", "sc-7.5", "sc-7.7", "sc-7.8", "sc-7.10", "sc-7.12", "sc-7.18", "sc-7.20", "sc-7.21", "sc-8", "sc-8.1", "sc-10", "sc-12", "sc-12.1", "sc-13", "sc-15", "sc-17", "sc-18", "sc-20", "sc-21", "sc-22", "sc-23", "sc-24", "sc-28", "sc-28.1", "sc-39", "sc-45", "sc-45.1", "si-1", "si-2", "si-2.2", "si-2.3", "si-3", "si-4", "si-4.1", "si-4.2", "si-4.4", "si-4.5", "si-4.10", "si-4.11", "si-4.12", "si-4.14", "si-4.16", "si-4.18", "si-4.19", "si-4.20", "si-4.22", "si-4.23", "si-5", "si-5.1", "si-6", "si-7", "si-7.1", "si-7.2", "si-7.5", "si-7.7", "si-7.15", "si-8", "si-8.2", "si-10", "si-11", "si-12", "si-16", "sr-1", "sr-2", "sr-2.1", "sr-3", "sr-5", "sr-6", "sr-8", "sr-9", "sr-9.1", "sr-10", "sr-11", "sr-11.1", "sr-11.2", "sr-12" ]
+      } ]
+    } ],
+    "metadata" : {
+      "published" : "2024-06-24T00:00:00Z",
+      "version" : "5.1.1+fedramp-20240111-0",
+      "oscal-version" : "1.1.1",
+      "last-modified" : "2024-06-24T00:00:00Z",
+      "title" : "FedRAMP Rev 5 High Baseline"
+    },
+    "merge" : {
+      "as-is" : true
+    },
+    "modify" : {
+      "set-parameters" : [ {
+        "param-id" : "ac-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ac-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ac-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "ac-02_odp.06",
+        "constraints" : [ {
+          "description" : "twenty-four (24) hours"
+        } ]
+      }, {
+        "param-id" : "ac-02_odp.07",
+        "constraints" : [ {
+          "description" : "eight (8) hours"
+        } ]
+      }, {
+        "param-id" : "ac-02_odp.08",
+        "constraints" : [ {
+          "description" : "eight (8) hours"
+        } ]
+      }, {
+        "param-id" : "ac-02_odp.10",
+        "constraints" : [ {
+          "description" : "monthly for privileged accessed, every six (6) months for non-privileged access"
+        } ]
+      }, {
+        "param-id" : "ac-02.02_odp.01",
+        "constraints" : [ {
+          "description" : "Selection: disables"
+        } ]
+      }, {
+        "param-id" : "ac-02.02_odp.02",
+        "constraints" : [ {
+          "description" : "no more than 24 hours from last use"
+        } ]
+      }, {
+        "param-id" : "ac-02.03_odp.01",
+        "constraints" : [ {
+          "description" : "24 hours for user accounts"
+        } ]
+      }, {
+        "param-id" : "ac-02.03_odp.02",
+        "constraints" : [ {
+          "description" : "thirty-five (35) days (See additional requirements and guidance.)"
+        } ]
+      }, {
+        "param-id" : "ac-02.05_odp",
+        "constraints" : [ {
+          "description" : "inactivity is anticipated to exceed Fifteen (15) minutes"
+        } ]
+      }, {
+        "param-id" : "ac-02.09_odp",
+        "constraints" : [ {
+          "description" : "organization-defined need with justification statement that explains why such accounts are necessary"
+        } ]
+      }, {
+        "param-id" : "ac-02.12_odp.02",
+        "constraints" : [ {
+          "description" : "at a minimum, the ISSO and/or similar role within the organization"
+        } ]
+      }, {
+        "param-id" : "ac-02.13_odp.01",
+        "constraints" : [ {
+          "description" : "one (1) hour"
+        } ]
+      }, {
+        "param-id" : "ac-04.04_odp.01",
+        "constraints" : [ {
+          "description" : "intrusion detection mechanisms"
+        } ]
+      }, {
+        "param-id" : "ac-06.01_odp.02",
+        "constraints" : [ {
+          "description" : "all functions not publicly accessible"
+        } ]
+      }, {
+        "param-id" : "ac-06.01_odp.03",
+        "constraints" : [ {
+          "description" : "all functions not publicly accessible"
+        } ]
+      }, {
+        "param-id" : "ac-06.01_odp.04",
+        "constraints" : [ {
+          "description" : "all functions not publicly accessible"
+        } ]
+      }, {
+        "param-id" : "ac-06.01_odp.05",
+        "constraints" : [ {
+          "description" : "all security-relevant information not publicly available"
+        } ]
+      }, {
+        "param-id" : "ac-06.02_odp",
+        "constraints" : [ {
+          "description" : "all security functions"
+        } ]
+      }, {
+        "param-id" : "ac-06.03_odp.01",
+        "constraints" : [ {
+          "description" : "all privileged commands"
+        } ]
+      }, {
+        "param-id" : "ac-06.07_odp.01",
+        "constraints" : [ {
+          "description" : "at a minimum, annually"
+        } ]
+      }, {
+        "param-id" : "ac-06.07_odp.02",
+        "constraints" : [ {
+          "description" : "all users with privileges"
+        } ]
+      }, {
+        "param-id" : "ac-06.08_odp",
+        "constraints" : [ {
+          "description" : "any software except software explicitly documented"
+        } ]
+      }, {
+        "param-id" : "ac-08_odp.01",
+        "constraints" : [ {
+          "description" : "see additional Requirements and Guidance"
+        } ]
+      }, {
+        "param-id" : "ac-08_odp.02",
+        "constraints" : [ {
+          "description" : "see additional Requirements and Guidance"
+        } ]
+      }, {
+        "param-id" : "ac-10_odp.02",
+        "constraints" : [ {
+          "description" : "three (3) sessions for privileged access and two (2) sessions for non-privileged access"
+        } ]
+      }, {
+        "param-id" : "ac-11_odp.02",
+        "constraints" : [ {
+          "description" : "fifteen (15) minutes"
+        } ]
+      }, {
+        "param-id" : "ac-22_odp",
+        "constraints" : [ {
+          "description" : "at least quarterly"
+        } ]
+      }, {
+        "param-id" : "at-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "at-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "at-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "at-02_odp.01",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "at-02_odp.02",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "at-02_odp.06",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "at-03_odp.03",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "at-03_odp.04",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "at-04_odp",
+        "constraints" : [ {
+          "description" : "five (5) years or 5 years after completion of a specific training program"
+        } ]
+      }, {
+        "param-id" : "au-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "au-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "au-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "au-02_odp.01",
+        "constraints" : [ {
+          "description" : "successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events. For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes"
+        } ]
+      }, {
+        "param-id" : "au-02_odp.02",
+        "constraints" : [ {
+          "description" : "organization-defined subset of the auditable events defined in AU-2a to be audited continually for each identified event."
+        } ]
+      }, {
+        "param-id" : "au-02_odp.03",
+        "constraints" : [ {
+          "description" : "organization-defined subset of the auditable events defined in AU-2a to be audited continually for each identified event."
+        } ]
+      }, {
+        "param-id" : "au-02_odp.04",
+        "constraints" : [ {
+          "description" : "annually and whenever there is a change in the threat environment"
+        } ]
+      }, {
+        "param-id" : "au-03.01_odp",
+        "constraints" : [ {
+          "description" : "session, connection, transaction, or activity duration; for client-server transactions, the number of bytes received and bytes sent; additional informational messages to diagnose or identify the event; characteristics that describe or identify the object or resource being acted upon; individual identities of group account users; full-text of privileged commands"
+        } ]
+      }, {
+        "param-id" : "au-05_odp.03",
+        "constraints" : [ {
+          "description" : "overwrite oldest record"
+        } ]
+      }, {
+        "param-id" : "au-05.01_odp.03",
+        "constraints" : [ {
+          "description" : "75%, or one month before expected negative impact"
+        } ]
+      }, {
+        "param-id" : "au-05.02_odp.01",
+        "constraints" : [ {
+          "description" : "real-time"
+        } ]
+      }, {
+        "param-id" : "au-05.02_odp.02",
+        "constraints" : [ {
+          "description" : "service provider personnel with authority to address failed audit events"
+        } ]
+      }, {
+        "param-id" : "au-05.02_odp.03",
+        "constraints" : [ {
+          "description" : "audit failure events requiring real-time alerts, as defined by organization audit policy"
+        } ]
+      }, {
+        "param-id" : "au-06_odp.01",
+        "constraints" : [ {
+          "description" : "at least weekly"
+        } ]
+      }, {
+        "param-id" : "au-06.05_odp.01",
+        "constraints" : [ {
+          "description" : "vulnerability scanning information; performance data; information system monitoring information; penetration test data; {{ insert: param, au-06.05_odp.02 }}"
+        } ]
+      }, {
+        "param-id" : "au-06.07_odp",
+        "constraints" : [ {
+          "description" : "information system process; role; user"
+        } ]
+      }, {
+        "param-id" : "au-08_odp",
+        "constraints" : [ {
+          "description" : "one second granularity of time measurement"
+        } ]
+      }, {
+        "param-id" : "au-09.02_odp",
+        "constraints" : [ {
+          "description" : "at least weekly"
+        } ]
+      }, {
+        "param-id" : "au-10_odp",
+        "constraints" : [ {
+          "description" : "minimum actions including the addition, modification, deletion, approval, sending, or receiving of data"
+        } ]
+      }, {
+        "param-id" : "au-11_odp",
+        "constraints" : [ {
+          "description" : "a time period in compliance with M-21-31"
+        } ]
+      }, {
+        "param-id" : "au-12_odp.01",
+        "constraints" : [ {
+          "description" : "all information system and network components where audit capability is deployed/available"
+        } ]
+      }, {
+        "param-id" : "au-12.01_odp.01",
+        "constraints" : [ {
+          "description" : "all network, data storage, and computing devices"
+        } ]
+      }, {
+        "param-id" : "au-12.03_odp.01",
+        "constraints" : [ {
+          "description" : "service provider-defined individuals or roles with audit configuration responsibilities"
+        } ]
+      }, {
+        "param-id" : "au-12.03_odp.02",
+        "constraints" : [ {
+          "description" : "all network, data storage, and computing devices"
+        } ]
+      }, {
+        "param-id" : "ca-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ca-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ca-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "ca-02_odp.01",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ca-02_odp.02",
+        "constraints" : [ {
+          "description" : "individuals or roles to include FedRAMP PMO"
+        } ]
+      }, {
+        "param-id" : "ca-02.02_odp.01",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ca-02.03_odp.01",
+        "constraints" : [ {
+          "description" : "any FedRAMP Accredited 3PAO"
+        } ]
+      }, {
+        "param-id" : "ca-02.03_odp.03",
+        "constraints" : [ {
+          "description" : "the conditions of the JAB/AO in the FedRAMP Repository"
+        } ]
+      }, {
+        "param-id" : "ca-03_odp.03",
+        "constraints" : [ {
+          "description" : "at least annually and on input from JAB/AO"
+        } ]
+      }, {
+        "param-id" : "ca-05_odp",
+        "constraints" : [ {
+          "description" : "at least monthly"
+        } ]
+      }, {
+        "param-id" : "ca-06_odp",
+        "constraints" : [ {
+          "description" : "in accordance with OMB A-130 requirements or when a significant change occurs"
+        } ]
+      }, {
+        "param-id" : "ca-07_odp.04",
+        "constraints" : [ {
+          "description" : "to include JAB/AO"
+        } ]
+      }, {
+        "param-id" : "ca-07_odp.06",
+        "constraints" : [ {
+          "description" : "to include JAB/AO"
+        } ]
+      }, {
+        "param-id" : "ca-08_odp.01",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ca-09_odp.03",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "cm-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "cm-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "cm-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "cm-02_odp.01",
+        "constraints" : [ {
+          "description" : "at least annually and when a significant change occurs"
+        } ]
+      }, {
+        "param-id" : "cm-02_odp.02",
+        "constraints" : [ {
+          "description" : "to include when directed by the JAB"
+        } ]
+      }, {
+        "param-id" : "cm-02.03_odp",
+        "constraints" : [ {
+          "description" : "organization-defined number of previous versions of baseline configurations of the previously approved baseline configuration of IS components"
+        } ]
+      }, {
+        "param-id" : "cm-03.01_odp.03",
+        "constraints" : [ {
+          "description" : "organization agreed upon time period"
+        } ]
+      }, {
+        "param-id" : "cm-03.01_odp.04",
+        "constraints" : [ {
+          "description" : "organization defined configuration management approval authorities"
+        } ]
+      }, {
+        "param-id" : "cm-03.04_odp.03",
+        "constraints" : [ {
+          "description" : "Configuration control board (CCB) or similar (as defined in CM-3)"
+        } ]
+      }, {
+        "param-id" : "cm-03.06_odp",
+        "constraints" : [ {
+          "description" : "All security safeguards that rely on cryptography"
+        } ]
+      }, {
+        "param-id" : "cm-05.05_odp.01",
+        "constraints" : [ {
+          "description" : "at least quarterly"
+        } ]
+      }, {
+        "param-id" : "cm-05.05_odp.02",
+        "constraints" : [ {
+          "description" : "at least quarterly"
+        } ]
+      }, {
+        "param-id" : "cm-07.01_odp.01",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "cm-07.05_odp.02",
+        "constraints" : [ {
+          "description" : "at least quarterly or when there is a change"
+        } ]
+      }, {
+        "param-id" : "cm-08_odp.02",
+        "constraints" : [ {
+          "description" : "at least monthly"
+        } ]
+      }, {
+        "param-id" : "cm-08.03_odp.01",
+        "constraints" : [ {
+          "description" : "automated mechanisms with a maximum five-minute delay in detection"
+        } ]
+      }, {
+        "param-id" : "cm-08.03_odp.02",
+        "constraints" : [ {
+          "description" : "automated mechanisms with a maximum five-minute delay in detection"
+        } ]
+      }, {
+        "param-id" : "cm-08.03_odp.03",
+        "constraints" : [ {
+          "description" : "automated mechanisms with a maximum five-minute delay in detection"
+        } ]
+      }, {
+        "param-id" : "cm-08.03_odp.04",
+        "constraints" : [ {
+          "description" : "continuously"
+        } ]
+      }, {
+        "param-id" : "cm-08.04_odp",
+        "constraints" : [ {
+          "description" : "position and role"
+        } ]
+      }, {
+        "param-id" : "cm-11_odp.03",
+        "constraints" : [ {
+          "description" : "Continuously (via CM-7 (5))"
+        } ]
+      }, {
+        "param-id" : "cm-12.01_odp.01",
+        "constraints" : [ {
+          "description" : "Federal data and system data that must be protected at the High or Moderate impact levels"
+        } ]
+      }, {
+        "param-id" : "cp-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "cp-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "cp-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "cp-02_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "cp-02.03_odp.01",
+        "constraints" : [ {
+          "description" : "all"
+        } ]
+      }, {
+        "param-id" : "cp-02.03_odp.02",
+        "constraints" : [ {
+          "description" : "time period defined in service provider and organization SLA"
+        } ]
+      }, {
+        "param-id" : "cp-02.05_odp",
+        "constraints" : [ {
+          "description" : "essential"
+        } ]
+      }, {
+        "param-id" : "cp-03_odp.01",
+        "constraints" : [ {
+          "description" : "\\*See Additional Requirements"
+        } ]
+      }, {
+        "param-id" : "cp-03_odp.02",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "cp-03_odp.03",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "cp-04_odp.01",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "cp-04_odp.02",
+        "constraints" : [ {
+          "description" : "functional exercises"
+        } ]
+      }, {
+        "param-id" : "cp-04_odp.03",
+        "constraints" : [ {
+          "description" : "functional exercises"
+        } ]
+      }, {
+        "param-id" : "cp-08.04_odp.01",
+        "constraints" : [ {
+          "description" : "annually"
+        } ]
+      }, {
+        "param-id" : "cp-08.04_odp.02",
+        "constraints" : [ {
+          "description" : "annually"
+        } ]
+      }, {
+        "param-id" : "cp-09_odp.02",
+        "constraints" : [ {
+          "description" : "daily incremental; weekly full"
+        } ]
+      }, {
+        "param-id" : "cp-09_odp.03",
+        "constraints" : [ {
+          "description" : "daily incremental; weekly full"
+        } ]
+      }, {
+        "param-id" : "cp-09_odp.04",
+        "constraints" : [ {
+          "description" : "daily incremental; weekly full"
+        } ]
+      }, {
+        "param-id" : "cp-09.01_odp.01",
+        "constraints" : [ {
+          "description" : "at least monthly"
+        } ]
+      }, {
+        "param-id" : "cp-09.01_odp.02",
+        "constraints" : [ {
+          "description" : "at least monthly"
+        } ]
+      }, {
+        "param-id" : "cp-09.05_odp.01",
+        "constraints" : [ {
+          "description" : "time period and transfer rate consistent with the recovery time and recovery point objectives defined in the service provider and organization SLA."
+        } ]
+      }, {
+        "param-id" : "cp-09.05_odp.02",
+        "constraints" : [ {
+          "description" : "time period and transfer rate consistent with the recovery time and recovery point objectives defined in the service provider and organization SLA."
+        } ]
+      }, {
+        "param-id" : "cp-09.08_odp",
+        "constraints" : [ {
+          "description" : "all backup files"
+        } ]
+      }, {
+        "param-id" : "cp-10.04_odp",
+        "constraints" : [ {
+          "description" : "time period consistent with the restoration time-periods defined in the service provider and organization SLA"
+        } ]
+      }, {
+        "param-id" : "ia-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ia-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ia-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "ia-02.06_odp.01",
+        "constraints" : [ {
+          "description" : "local, network and remote"
+        } ]
+      }, {
+        "param-id" : "ia-02.06_odp.02",
+        "constraints" : [ {
+          "description" : "privileged accounts; non-privileged accounts"
+        } ]
+      }, {
+        "param-id" : "ia-02.06_odp.03",
+        "constraints" : [ {
+          "description" : "FIPS-validated or NSA-approved cryptography"
+        } ]
+      }, {
+        "param-id" : "ia-02.08_odp",
+        "constraints" : [ {
+          "description" : "privileged accounts; non-privileged accounts"
+        } ]
+      }, {
+        "param-id" : "ia-04_odp.01",
+        "constraints" : [ {
+          "description" : "at a minimum, the ISSO (or similar role within the organization)"
+        } ]
+      }, {
+        "param-id" : "ia-04_odp.02",
+        "constraints" : [ {
+          "description" : "at least two (2) years"
+        } ]
+      }, {
+        "param-id" : "ia-04.04_odp",
+        "constraints" : [ {
+          "description" : "contractors; foreign nationals"
+        } ]
+      }, {
+        "param-id" : "ia-05.08_odp",
+        "constraints" : [ {
+          "description" : "different authenticators in different user authentication domains"
+        } ]
+      }, {
+        "param-id" : "ir-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ir-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ir-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "ir-02_odp.01",
+        "constraints" : [ {
+          "description" : "ten (10) days for privileged users, thirty (30) days for Incident Response roles"
+        } ]
+      }, {
+        "param-id" : "ir-02_odp.02",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ir-02_odp.03",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ir-03_odp.01",
+        "constraints" : [ {
+          "description" : "at least every six (6) months, including functional at least annually"
+        } ]
+      }, {
+        "param-id" : "ir-04.02_odp.02",
+        "constraints" : [ {
+          "description" : "all network, data storage, and computing devices"
+        } ]
+      }, {
+        "param-id" : "ir-06_odp.01",
+        "constraints" : [ {
+          "description" : "US-CERT incident reporting timelines as specified in NIST Special Publication 800-61 (as amended)"
+        } ]
+      }, {
+        "param-id" : "ir-08_odp.02",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ir-08_odp.04",
+        "constraints" : [ {
+          "description" : "see additional FedRAMP Requirements and Guidance"
+        } ]
+      }, {
+        "param-id" : "ir-08_odp.05",
+        "constraints" : [ {
+          "description" : "see additional FedRAMP Requirements and Guidance"
+        } ]
+      }, {
+        "param-id" : "ir-08_odp.06",
+        "constraints" : [ {
+          "description" : "see additional FedRAMP Requirements and Guidance"
+        } ]
+      }, {
+        "param-id" : "ir-08_odp.07",
+        "constraints" : [ {
+          "description" : "see additional FedRAMP Requirements and Guidance"
+        } ]
+      }, {
+        "param-id" : "ir-09.02_odp",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ma-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ma-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ma-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "ma-03_odp",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ma-03.03_odp",
+        "constraints" : [ {
+          "description" : "the information owner"
+        } ]
+      }, {
+        "param-id" : "ma-06_odp.02",
+        "constraints" : [ {
+          "description" : "a timeframe to support advertised uptime and availability"
+        } ]
+      }, {
+        "param-id" : "mp-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "mp-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "mp-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "mp-02_odp.01",
+        "constraints" : [ {
+          "description" : "all types of digital and/or non-digital media containing sensitive information"
+        } ]
+      }, {
+        "param-id" : "mp-02_odp.03",
+        "constraints" : [ {
+          "description" : "all types of digital and/or non-digital media containing sensitive information"
+        } ]
+      }, {
+        "param-id" : "mp-03_odp.01",
+        "constraints" : [ {
+          "description" : "no removable media types"
+        } ]
+      }, {
+        "param-id" : "mp-03_odp.02",
+        "constraints" : [ {
+          "description" : "organization-defined security safeguards not applicable"
+        } ]
+      }, {
+        "param-id" : "mp-04_odp.01",
+        "constraints" : [ {
+          "description" : "all types of digital and non-digital media with sensitive information"
+        } ]
+      }, {
+        "param-id" : "mp-04_odp.02",
+        "constraints" : [ {
+          "description" : "all types of digital and non-digital media with sensitive information"
+        } ]
+      }, {
+        "param-id" : "mp-04_odp.03",
+        "constraints" : [ {
+          "description" : "all types of digital and non-digital media with sensitive information"
+        } ]
+      }, {
+        "param-id" : "mp-04_odp.04",
+        "constraints" : [ {
+          "description" : "all types of digital and non-digital media with sensitive information"
+        } ]
+      }, {
+        "param-id" : "mp-04_odp.05",
+        "constraints" : [ {
+          "description" : "see additional FedRAMP requirements and guidance"
+        } ]
+      }, {
+        "param-id" : "mp-04_odp.06",
+        "constraints" : [ {
+          "description" : "see additional FedRAMP requirements and guidance"
+        } ]
+      }, {
+        "param-id" : "mp-05_odp.01",
+        "constraints" : [ {
+          "description" : "all media with sensitive information"
+        } ]
+      }, {
+        "param-id" : "mp-05_odp.02",
+        "constraints" : [ {
+          "description" : "prior to leaving secure/controlled environment: for digital media, encryption in compliance with Federal requirements and utilizes FIPS validated or NSA approved cryptography (see SC-13.); for non-digital media, secured in locked container"
+        } ]
+      }, {
+        "param-id" : "mp-05_odp.03",
+        "constraints" : [ {
+          "description" : "prior to leaving secure/controlled environment: for digital media, encryption in compliance with Federal requirements and utilizes FIPS validated or NSA approved cryptography (see SC-13.); for non-digital media, secured in locked container"
+        } ]
+      }, {
+        "param-id" : "mp-06_odp.01",
+        "constraints" : [ {
+          "description" : "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
+        } ]
+      }, {
+        "param-id" : "mp-06_odp.02",
+        "constraints" : [ {
+          "description" : "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
+        } ]
+      }, {
+        "param-id" : "mp-06_odp.03",
+        "constraints" : [ {
+          "description" : "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
+        } ]
+      }, {
+        "param-id" : "mp-06.02_odp.01",
+        "constraints" : [ {
+          "description" : "at least every six (6) months"
+        } ]
+      }, {
+        "param-id" : "mp-06.02_odp.02",
+        "constraints" : [ {
+          "description" : "at least every six (6) months"
+        } ]
+      }, {
+        "param-id" : "pe-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "pe-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "pe-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "pe-02_odp",
+        "constraints" : [ {
+          "description" : "at least every ninety (90) days"
+        } ]
+      }, {
+        "param-id" : "pe-03_odp.02",
+        "constraints" : [ {
+          "description" : "CSP defined physical access control systems/devices AND guards"
+        } ]
+      }, {
+        "param-id" : "pe-03_odp.06",
+        "constraints" : [ {
+          "description" : "in all circumstances within restricted access area where the information system resides"
+        } ]
+      }, {
+        "param-id" : "pe-03_odp.08",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "pe-03_odp.09",
+        "constraints" : [ {
+          "description" : "at least annually or earlier as required by a security relevant event."
+        } ]
+      }, {
+        "param-id" : "pe-03_odp.10",
+        "constraints" : [ {
+          "description" : "at least annually or earlier as required by a security relevant event."
+        } ]
+      }, {
+        "param-id" : "pe-06_odp.01",
+        "constraints" : [ {
+          "description" : "at least monthly"
+        } ]
+      }, {
+        "param-id" : "pe-08_odp.01",
+        "constraints" : [ {
+          "description" : "for a minimum of one (1) year"
+        } ]
+      }, {
+        "param-id" : "pe-08_odp.02",
+        "constraints" : [ {
+          "description" : "at least monthly"
+        } ]
+      }, {
+        "param-id" : "pe-10_odp.02",
+        "constraints" : [ {
+          "description" : "near more than one egress point of the IT area and ensures it is labeled and protected by a cover to prevent accidental shut-off"
+        } ]
+      }, {
+        "param-id" : "pe-11.01_odp",
+        "constraints" : [ {
+          "description" : "automatically"
+        } ]
+      }, {
+        "param-id" : "pe-13.01_odp.01",
+        "constraints" : [ {
+          "description" : "service provider building maintenance/physical security personnel"
+        } ]
+      }, {
+        "param-id" : "pe-13.01_odp.02",
+        "constraints" : [ {
+          "description" : "service provider emergency responders with incident response responsibilities"
+        } ]
+      }, {
+        "param-id" : "pe-14_odp.01",
+        "constraints" : [ {
+          "description" : "consistent with American Society of Heating, Refrigerating and Air-conditioning Engineers (ASHRAE) document entitled Thermal Guidelines for Data Processing Environments"
+        } ]
+      }, {
+        "param-id" : "pe-14_odp.04",
+        "constraints" : [ {
+          "description" : "continuously"
+        } ]
+      }, {
+        "param-id" : "pe-15.01_odp.01",
+        "constraints" : [ {
+          "description" : "service provider building maintenance/physical security personnel"
+        } ]
+      }, {
+        "param-id" : "pe-16_odp.01",
+        "constraints" : [ {
+          "description" : "all information system components"
+        } ]
+      }, {
+        "param-id" : "pe-16_odp.02",
+        "constraints" : [ {
+          "description" : "all information system components"
+        } ]
+      }, {
+        "param-id" : "pe-18_odp",
+        "constraints" : [ {
+          "description" : "physical and environmental hazards identified during threat assessment"
+        } ]
+      }, {
+        "param-id" : "pl-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "pl-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "pl-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "pl-02_odp.01",
+        "constraints" : [ {
+          "description" : "to include chief privacy and ISSO and/or similar role or designees"
+        } ]
+      }, {
+        "param-id" : "pl-02_odp.02",
+        "constraints" : [ {
+          "description" : "to include chief privacy and ISSO and/or similar role"
+        } ]
+      }, {
+        "param-id" : "pl-02_odp.03",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "pl-04_odp.01",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "pl-04_odp.02",
+        "constraints" : [ {
+          "description" : "at least annually and when the rules are revised or changed"
+        } ]
+      }, {
+        "param-id" : "pl-08_odp",
+        "constraints" : [ {
+          "description" : "at least annually and when a significant change occurs"
+        } ]
+      }, {
+        "param-id" : "ps-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ps-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ps-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "ps-02_odp",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ps-03_odp.01",
+        "constraints" : [ {
+          "description" : "for national security clearances; a reinvestigation is required during the fifth (5th) year for top secret security clearance, the tenth (10th) year for secret security clearance, and fifteenth (15th) year for confidential security clearance.\n\nFor moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the fifth (5th) year. There is no reinvestigation for other moderate risk positions or any low risk positions"
+        } ]
+      }, {
+        "param-id" : "ps-03_odp.02",
+        "constraints" : [ {
+          "description" : "For national security clearances; a reinvestigation is required during the fifth (5th) year for top secret security clearance, the tenth (10th) year for secret security clearance, and fifteenth (15th) year for confidential security clearance.\n\nFor moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the fifth (5th) year. There is no reinvestigation for other moderate risk positions or any low risk positions"
+        } ]
+      }, {
+        "param-id" : "ps-03.03_odp",
+        "constraints" : [ {
+          "description" : "personnel screening criteria - as required by specific information"
+        } ]
+      }, {
+        "param-id" : "ps-04_odp.01",
+        "constraints" : [ {
+          "description" : "one (1) hour"
+        } ]
+      }, {
+        "param-id" : "ps-04.02_odp.02",
+        "constraints" : [ {
+          "description" : "access control personnel responsible for disabling access to the system"
+        } ]
+      }, {
+        "param-id" : "ps-05_odp.02",
+        "constraints" : [ {
+          "description" : "twenty-four (24) hours"
+        } ]
+      }, {
+        "param-id" : "ps-05_odp.03",
+        "constraints" : [ {
+          "description" : "including access control personnel responsible for the system"
+        } ]
+      }, {
+        "param-id" : "ps-05_odp.04",
+        "constraints" : [ {
+          "description" : "twenty-four (24) hours"
+        } ]
+      }, {
+        "param-id" : "ps-06_odp.01",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ps-06_odp.02",
+        "constraints" : [ {
+          "description" : "at least annually and any time there is a change to the user's level of access"
+        } ]
+      }, {
+        "param-id" : "ps-07_odp.01",
+        "constraints" : [ {
+          "description" : "including access control personnel responsible for the system and/or facilities, as appropriate"
+        } ]
+      }, {
+        "param-id" : "ps-07_odp.02",
+        "constraints" : [ {
+          "description" : "terminations: immediately; transfers: within twenty-four (24) hours"
+        } ]
+      }, {
+        "param-id" : "ps-08_odp.01",
+        "constraints" : [ {
+          "description" : "to include the ISSO and/or similar role within the organization"
+        } ]
+      }, {
+        "param-id" : "ps-08_odp.02",
+        "constraints" : [ {
+          "description" : "24 hours"
+        } ]
+      }, {
+        "param-id" : "ra-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ra-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "ra-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "ra-03_odp.01",
+        "constraints" : [ {
+          "description" : "security assessment report"
+        } ]
+      }, {
+        "param-id" : "ra-03_odp.03",
+        "constraints" : [ {
+          "description" : "at least annually and whenever a significant change occurs"
+        } ]
+      }, {
+        "param-id" : "ra-03_odp.05",
+        "constraints" : [ {
+          "description" : "annually"
+        } ]
+      }, {
+        "param-id" : "ra-05_odp.01",
+        "constraints" : [ {
+          "description" : "monthly operating system/infrastructure; monthly web applications (including APIs) and databases"
+        } ]
+      }, {
+        "param-id" : "ra-05_odp.02",
+        "constraints" : [ {
+          "description" : "monthly operating system/infrastructure; monthly web applications (including APIs) and databases"
+        } ]
+      }, {
+        "param-id" : "ra-05_odp.03",
+        "constraints" : [ {
+          "description" : "high-risk vulnerabilities mitigated within thirty (30) days from date of discovery; moderate-risk vulnerabilities mitigated within ninety (90) days from date of discovery; low risk vulnerabilities mitigated within one hundred and eighty (180) days from date of discovery"
+        } ]
+      }, {
+        "param-id" : "ra-05.02_odp.01",
+        "constraints" : [ {
+          "description" : "within 24 hours prior to running scans"
+        } ]
+      }, {
+        "param-id" : "ra-05.04_odp",
+        "constraints" : [ {
+          "description" : "notify appropriate service provider personnel and follow procedures for organization and service provider-defined corrective actions"
+        } ]
+      }, {
+        "param-id" : "ra-05.05_odp.01",
+        "constraints" : [ {
+          "description" : "all components that support authentication"
+        } ]
+      }, {
+        "param-id" : "ra-05.05_odp.02",
+        "constraints" : [ {
+          "description" : "all scans"
+        } ]
+      }, {
+        "param-id" : "sa-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "sa-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "sa-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "sa-04.02_odp.01",
+        "constraints" : [ {
+          "description" : "at a minimum to include security-relevant external system interfaces; high-level design; low-level design; source code or network and data flow diagram;\n\norganization-defined design/implementation information"
+        } ]
+      }, {
+        "param-id" : "sa-04.05_odp",
+        "constraints" : [ {
+          "description" : "The service provider shall use the DoD STIGs to establish configuration settings; Center for Internet Security up to Level 2 (CIS Level 2) guidelines shall be used if STIGs are not available; Custom baselines shall be used if CIS is not available."
+        } ]
+      }, {
+        "param-id" : "sa-05_odp.02",
+        "constraints" : [ {
+          "description" : "at a minimum, the ISSO (or similar role within the organization)"
+        } ]
+      }, {
+        "param-id" : "sa-09_odp.01",
+        "constraints" : [ {
+          "description" : "Appropriate FedRAMP Security Controls Baseline (s) if Federal information is processed or stored within the external system"
+        } ]
+      }, {
+        "param-id" : "sa-09_odp.02",
+        "constraints" : [ {
+          "description" : "Federal/FedRAMP Continuous Monitoring requirements must be met for external systems where Federal information is processed or stored"
+        } ]
+      }, {
+        "param-id" : "sa-09.02_odp",
+        "constraints" : [ {
+          "description" : "all external systems where Federal information is processed or stored"
+        } ]
+      }, {
+        "param-id" : "sa-09.05_odp.01",
+        "constraints" : [ {
+          "description" : "information processing, information or data, AND system services"
+        } ]
+      }, {
+        "param-id" : "sa-09.05_odp.02",
+        "constraints" : [ {
+          "description" : "U.S./U.S. Territories or geographic locations where there is U.S. jurisdiction"
+        } ]
+      }, {
+        "param-id" : "sa-09.05_odp.03",
+        "constraints" : [ {
+          "description" : "all High impact data, systems, or services"
+        } ]
+      }, {
+        "param-id" : "sa-10_odp.01",
+        "constraints" : [ {
+          "description" : "development, implementation, AND operation"
+        } ]
+      }, {
+        "param-id" : "sa-15_odp.01",
+        "constraints" : [ {
+          "description" : "frequency as before first use and annually thereafter"
+        } ]
+      }, {
+        "param-id" : "sa-15_odp.02",
+        "constraints" : [ {
+          "description" : "FedRAMP Security Authorization requirements"
+        } ]
+      }, {
+        "param-id" : "sc-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "sc-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "sc-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "sc-05_odp.02",
+        "constraints" : [ {
+          "description" : "Protect against"
+        } ]
+      }, {
+        "param-id" : "sc-05_odp.01",
+        "constraints" : [ {
+          "description" : "at a minimum: ICMP (ping) flood, SYN flood, slowloris, buffer overflow attack, and volume attack"
+        } ]
+      }, {
+        "param-id" : "sc-07.04_odp",
+        "constraints" : [ {
+          "description" : "at least every ninety (90) days or whenever there is a change in the threat environment that warrants a review of the exceptions"
+        } ]
+      }, {
+        "param-id" : "sc-07.05_odp.01",
+        "constraints" : [ {
+          "description" : "any systems"
+        } ]
+      }, {
+        "param-id" : "sc-07.08_odp.02",
+        "constraints" : [ {
+          "description" : "any network outside of organizational control and any network outside the authorization boundary"
+        } ]
+      }, {
+        "param-id" : "sc-07.12_odp.01",
+        "constraints" : [ {
+          "description" : "Host Intrusion Prevention System (HIPS), Host Intrusion Detection System (HIDS), or minimally a host-based firewall"
+        } ]
+      }, {
+        "param-id" : "sc-08_odp",
+        "constraints" : [ {
+          "description" : "confidentiality AND integrity"
+        } ]
+      }, {
+        "param-id" : "sc-08.01_odp",
+        "constraints" : [ {
+          "description" : "prevent unauthorized disclosure of information AND detect changes to information"
+        } ]
+      }, {
+        "param-id" : "sc-10_odp",
+        "constraints" : [ {
+          "description" : "no longer than ten (10) minutes for privileged sessions and no longer than fifteen (15) minutes for user sessions"
+        } ]
+      }, {
+        "param-id" : "sc-12_odp",
+        "constraints" : [ {
+          "description" : "In accordance with Federal requirements"
+        } ]
+      }, {
+        "param-id" : "sc-13_odp.02",
+        "constraints" : [ {
+          "description" : "FIPS-validated or NSA-approved cryptography"
+        } ]
+      }, {
+        "param-id" : "sc-15_odp",
+        "constraints" : [ {
+          "description" : "no exceptions for computing devices"
+        } ]
+      }, {
+        "param-id" : "sc-28_odp.01",
+        "constraints" : [ {
+          "description" : "confidentiality AND integrity"
+        } ]
+      }, {
+        "param-id" : "sc-28.01_odp.02",
+        "constraints" : [ {
+          "description" : "all information system components storing Federal data or system data that must be protected at the High or Moderate impact levels"
+        } ]
+      }, {
+        "param-id" : "sc-45.01_odp.01",
+        "constraints" : [ {
+          "description" : "At least hourly"
+        } ]
+      }, {
+        "param-id" : "sc-45.01_odp.02",
+        "constraints" : [ {
+          "description" : "http://tf.nist.gov/tf-cgi/servers.cgi"
+        } ]
+      }, {
+        "param-id" : "sc-45.01_odp.03",
+        "constraints" : [ {
+          "description" : "any difference"
+        } ]
+      }, {
+        "param-id" : "si-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "si-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "si-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "si-02_odp",
+        "constraints" : [ {
+          "description" : "within thirty (30) days of release of updates"
+        } ]
+      }, {
+        "param-id" : "si-02.02_odp.02",
+        "constraints" : [ {
+          "description" : "at least monthly"
+        } ]
+      }, {
+        "param-id" : "si-03_odp.01",
+        "constraints" : [ {
+          "description" : "signature based and non-signature based"
+        } ]
+      }, {
+        "param-id" : "si-03_odp.02",
+        "constraints" : [ {
+          "description" : "at least weekly"
+        } ]
+      }, {
+        "param-id" : "si-03_odp.03",
+        "constraints" : [ {
+          "description" : "to include endpoints and network entry and exit points"
+        } ]
+      }, {
+        "param-id" : "si-03_odp.04",
+        "constraints" : [ {
+          "description" : "to include blocking and quarantining malicious code"
+        } ]
+      }, {
+        "param-id" : "si-03_odp.05",
+        "constraints" : [ {
+          "description" : "administrator or defined security personnel near-realtime"
+        } ]
+      }, {
+        "param-id" : "si-04.04_odp.01",
+        "constraints" : [ {
+          "description" : "continuously"
+        } ]
+      }, {
+        "param-id" : "si-04.04_odp.03",
+        "constraints" : [ {
+          "description" : "continuously"
+        } ]
+      }, {
+        "param-id" : "si-05_odp.01",
+        "constraints" : [ {
+          "description" : "to include US-CERT and Cybersecurity and Infrastructure Security Agency (CISA) Directives"
+        } ]
+      }, {
+        "param-id" : "si-05_odp.02",
+        "constraints" : [ {
+          "description" : "to include system security personnel and administrators with configuration/patch-management responsibilities"
+        } ]
+      }, {
+        "param-id" : "si-06_odp.04",
+        "constraints" : [ {
+          "description" : "to include upon system startup and/or restart"
+        } ]
+      }, {
+        "param-id" : "si-06_odp.05",
+        "constraints" : [ {
+          "description" : "at least monthly"
+        } ]
+      }, {
+        "param-id" : "si-06_odp.06",
+        "constraints" : [ {
+          "description" : "to include system administrators and security personnel"
+        } ]
+      }, {
+        "param-id" : "si-07.01_odp.03",
+        "constraints" : [ {
+          "description" : "selection to include security relevant event"
+        } ]
+      }, {
+        "param-id" : "si-07.01_odp.07",
+        "constraints" : [ {
+          "description" : "selection to include security relevant event"
+        } ]
+      }, {
+        "param-id" : "si-07.01_odp.11",
+        "constraints" : [ {
+          "description" : "selection to include security relevant event"
+        } ]
+      }, {
+        "param-id" : "si-07.01_odp.04",
+        "constraints" : [ {
+          "description" : "at least monthly"
+        } ]
+      }, {
+        "param-id" : "si-07.01_odp.08",
+        "constraints" : [ {
+          "description" : "at least monthly"
+        } ]
+      }, {
+        "param-id" : "si-07.01_odp.12",
+        "constraints" : [ {
+          "description" : "at least monthly"
+        } ]
+      }, {
+        "param-id" : "si-07.02_odp",
+        "constraints" : [ {
+          "description" : "to include the ISSO and/or similar role within the organization"
+        } ]
+      }, {
+        "param-id" : "si-07.15_odp",
+        "constraints" : [ {
+          "description" : "to include all software and firmware inside the boundary"
+        } ]
+      }, {
+        "param-id" : "si-11_odp",
+        "constraints" : [ {
+          "description" : "to include the ISSO and/or similar role within the organization"
+        } ]
+      }, {
+        "param-id" : "sr-01_odp.01",
+        "constraints" : [ {
+          "description" : "to include chief privacy and ISSO and/or similar role or designees"
+        } ]
+      }, {
+        "param-id" : "sr-01_odp.02",
+        "constraints" : [ {
+          "description" : "to include chief privacy and ISSO and/or similar role or designees"
+        } ]
+      }, {
+        "param-id" : "sr-01_odp.05",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "sr-01_odp.07",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "sr-01_odp.08",
+        "constraints" : [ {
+          "description" : "significant changes"
+        } ]
+      }, {
+        "param-id" : "sr-02_odp.02",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "sr-06_odp",
+        "constraints" : [ {
+          "description" : "at least annually"
+        } ]
+      }, {
+        "param-id" : "sr-08_odp.01",
+        "constraints" : [ {
+          "description" : "notification of supply chain compromises and results of assessment or audits"
+        } ]
+      }, {
+        "param-id" : "sr-11.02_odp",
+        "constraints" : [ {
+          "description" : "all"
+        } ]
+      } ]
+    }
   }
 }
