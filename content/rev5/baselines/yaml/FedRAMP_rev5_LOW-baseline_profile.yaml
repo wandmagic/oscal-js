@@ -1,14 +1,7 @@
 ---
 profile:
-  metadata:
-    title: FedRAMP Rev 5 Low Baseline
-    last-modified: 2024-06-24T00:00:00Z
-    oscal-version: 1.1.1
-    version: 5.1.1+fedramp-20240111-0
-    published: 2024-06-24T00:00:00Z
   imports:
-  - href: '#051a77c1-b61d-4995-8275-dacfe688d510'
-    include-controls:
+  - include-controls:
     - with-ids:
       - ac-1
       - ac-2
@@ -166,18 +159,207 @@ profile:
       - sr-11.1
       - sr-11.2
       - sr-12
-  uuid: 512149a6-7f04-4c01-bb1b-78eafd6a950d
-  back-matter:
-    resources:
-    - uuid: 051a77c1-b61d-4995-8275-dacfe688d510
-      rlinks:
-      - media-type: application/oscal+xml
-        href: FedRAMP_rev5_catalog_tailoring_profile.xml
-      title: FedRAMP Modified NIST Special Publication (SP) 800-53 revision 5
-      props:
-      - value: 5.1.1
-        name: version
+    href: '#051a77c1-b61d-4995-8275-dacfe688d510'
+  metadata:
+    published: 2024-06-24T00:00:00Z
+    version: 5.1.1+fedramp-20240111-0
+    oscal-version: 1.1.1
+    last-modified: 2024-06-24T00:00:00Z
+    title: FedRAMP Rev 5 Low Baseline
+  merge:
+    as-is: true
   modify:
+    alters:
+    - control-id: ca-2.1
+      removes:
+      - by-id: ca-2.1_fr
+    - adds:
+      - by-id: ca-8_fr
+        parts:
+        - ns: https://fedramp.gov/ns/oscal
+          prose: Scope can be limited to public facing applications in alignment with M-22-09. Reference the FedRAMP Penetration Test Guidance.
+          name: guidance
+          id: ca-8_fr_gdn.1
+          props:
+          - value: 'Guidance:'
+            name: label
+      control-id: ca-8
+      removes:
+      - by-id: ca-8_fr_gdn.1
+    - adds:
+      - position: starting
+        by-id: cm-6_fr
+        parts:
+        - ns: https://fedramp.gov/ns/oscal
+          prose: The service provider shall use the DoD STIGs or Center for Internet Security guidelines to establish configuration settings;
+          name: item
+          id: cm-6_fr_smt.1
+          props:
+          - value: '(a) Requirement 1:'
+            name: label
+      control-id: cm-6
+      removes:
+      - by-id: cm-6_fr_smt.1
+    - adds:
+      - by-id: ia-2_fr
+        parts:
+        - ns: https://fedramp.gov/ns/oscal
+          prose: "All uses of encrypted virtual private networks must meet all applicable Federal requirements and architecture, dataflow, and security and privacy controls must be documented, assessed, and authorized to operate."
+          name: guidance
+          id: ia-2_fr_gdn.2
+          props:
+          - value: 'Guidance:'
+            name: label
+      control-id: ia-2
+      removes:
+      - by-id: ia-2_fr_smt.3
+    - adds:
+      - by-id: ia-5_fr
+        parts:
+        - ns: https://fedramp.gov/ns/oscal
+          prose: "Authenticators must be compliant with NIST SP 800-63-3 Digital Identity Guidelines IAL, AAL, FAL level 1. Link https://pages.nist.gov/800-63-3"
+          name: item
+          id: ia-5_fr_smt.1
+          props:
+          - value: 'Requirement:'
+            name: label
+      control-id: ia-5
+      removes:
+      - by-id: ia-5_fr_smt.1
+    - adds:
+      - by-id: ia-11_fr
+        parts:
+        - ns: https://fedramp.gov/ns/oscal
+          prose: |-
+            The fixed time period cannot exceed the limits set in SP 800-63. At this writing they are:
+
+            - AAL1 (low baseline)
+              - 30 days of extended session
+              - No limit on inactivity
+          name: guidance
+          id: ia-11_fr_gdn.1
+          props:
+          - value: 'Guidance:'
+            name: label
+      control-id: ia-11
+      removes:
+      - by-id: ia-11_fr_gdn.1
+    - adds:
+      - position: after
+        by-id: sa-8_obj-5
+        parts:
+        - prose: "{{ insert: param, sa-08_odp.02 }} are applied in the specification of the system and system components;"
+          name: assessment-objective
+          links:
+          - href: '#sa-8_smt'
+            rel: assessment-for
+          id: sa-8_obj-6
+          props:
+          - value: You must fill in this response point.
+            ns: https://fedramp.gov/ns/oscal
+            name: response-point
+          - value: EXAMINE
+            ns: https://fedramp.gov/ns/oscal
+            name: method
+            class: fedramp
+          - value: INTERVIEW
+            ns: https://fedramp.gov/ns/oscal
+            name: method
+            class: fedramp
+          - value: "SA-08[06]"
+            name: label
+            class: sp800-53a
+        - prose: "{{ insert: param, sa-08_odp.02 }} are applied in the design of the system and system components;"
+          name: assessment-objective
+          links:
+          - href: '#sa-8_smt'
+            rel: assessment-for
+          id: sa-8_obj-7
+          props:
+          - value: You must fill in this response point.
+            ns: https://fedramp.gov/ns/oscal
+            name: response-point
+          - value: EXAMINE
+            ns: https://fedramp.gov/ns/oscal
+            name: method
+            class: fedramp
+          - value: INTERVIEW
+            ns: https://fedramp.gov/ns/oscal
+            name: method
+            class: fedramp
+          - value: "SA-08[07]"
+            name: label
+            class: sp800-53a
+        - prose: "{{ insert: param, sa-08_odp.02 }} are applied in the development of the system and system components;"
+          name: assessment-objective
+          links:
+          - href: '#sa-8_smt'
+            rel: assessment-for
+          id: sa-8_obj-8
+          props:
+          - value: You must fill in this response point.
+            ns: https://fedramp.gov/ns/oscal
+            name: response-point
+          - value: EXAMINE
+            ns: https://fedramp.gov/ns/oscal
+            name: method
+            class: fedramp
+          - value: INTERVIEW
+            ns: https://fedramp.gov/ns/oscal
+            name: method
+            class: fedramp
+          - value: "SA-08[08]"
+            name: label
+            class: sp800-53a
+        - prose: "{{ insert: param, sa-08_odp.02 }} are applied in the implementation of the system and system components;"
+          name: assessment-objective
+          links:
+          - href: '#sa-8_smt'
+            rel: assessment-for
+          id: sa-8_obj-9
+          props:
+          - value: You must fill in this response point.
+            ns: https://fedramp.gov/ns/oscal
+            name: response-point
+          - value: EXAMINE
+            ns: https://fedramp.gov/ns/oscal
+            name: method
+            class: fedramp
+          - value: INTERVIEW
+            ns: https://fedramp.gov/ns/oscal
+            name: method
+            class: fedramp
+          - value: "SA-08[09]"
+            name: label
+            class: sp800-53a
+        - prose: "{{ insert: param, sa-08_odp.02 }} are applied in the modification of the system and system components."
+          name: assessment-objective
+          links:
+          - href: '#sa-8_smt'
+            rel: assessment-for
+          id: sa-8_obj-10
+          props:
+          - value: You must fill in this response point.
+            ns: https://fedramp.gov/ns/oscal
+            name: response-point
+          - value: EXAMINE
+            ns: https://fedramp.gov/ns/oscal
+            name: method
+            class: fedramp
+          - value: INTERVIEW
+            ns: https://fedramp.gov/ns/oscal
+            name: method
+            class: fedramp
+          - value: "SA-08[10]"
+            name: label
+            class: sp800-53a
+      control-id: sa-8
+      removes:
+      - by-id: sa-8_obj-6
+      - by-id: sa-8_obj-7
+      - by-id: sa-8_obj-8
+      - by-id: sa-8_obj-9
+      - by-id: sa-8_obj-10
     set-parameters:
     - param-id: ac-01_odp.05
       constraints:
@@ -689,196 +871,14 @@ profile:
     - param-id: sr-11.02_odp
       constraints:
       - description: all
-    alters:
-    - control-id: ca-2.1
-      removes:
-      - by-id: ca-2.1_fr
-    - control-id: ca-8
-      adds:
-      - parts:
-        - id: ca-8_fr_gdn.1
-          name: guidance
-          prose: Scope can be limited to public facing applications in alignment with M-22-09. Reference the FedRAMP Penetration Test Guidance.
-          ns: https://fedramp.gov/ns/oscal
-          props:
-          - value: 'Guidance:'
-            name: label
-        by-id: ca-8_fr
-      removes:
-      - by-id: ca-8_fr_gdn.1
-    - control-id: cm-6
-      adds:
-      - position: starting
-        parts:
-        - id: cm-6_fr_smt.1
-          name: item
-          prose: The service provider shall use the DoD STIGs or Center for Internet Security guidelines to establish configuration settings;
-          ns: https://fedramp.gov/ns/oscal
-          props:
-          - value: '(a) Requirement 1:'
-            name: label
-        by-id: cm-6_fr
-      removes:
-      - by-id: cm-6_fr_smt.1
-    - control-id: ia-2
-      adds:
-      - parts:
-        - id: ia-2_fr_gdn.2
-          name: guidance
-          prose: "All uses of encrypted virtual private networks must meet all applicable Federal requirements and architecture, dataflow, and security and privacy controls must be documented, assessed, and authorized to operate."
-          ns: https://fedramp.gov/ns/oscal
-          props:
-          - value: 'Guidance:'
-            name: label
-        by-id: ia-2_fr
-      removes:
-      - by-id: ia-2_fr_smt.3
-    - control-id: ia-5
-      adds:
-      - parts:
-        - id: ia-5_fr_smt.1
-          name: item
-          prose: "Authenticators must be compliant with NIST SP 800-63-3 Digital Identity Guidelines IAL, AAL, FAL level 1. Link https://pages.nist.gov/800-63-3"
-          ns: https://fedramp.gov/ns/oscal
-          props:
-          - value: 'Requirement:'
-            name: label
-        by-id: ia-5_fr
-      removes:
-      - by-id: ia-5_fr_smt.1
-    - control-id: ia-11
-      adds:
-      - parts:
-        - id: ia-11_fr_gdn.1
-          name: guidance
-          prose: |-
-            The fixed time period cannot exceed the limits set in SP 800-63. At this writing they are:
-
-            - AAL1 (low baseline)
-              - 30 days of extended session
-              - No limit on inactivity
-          ns: https://fedramp.gov/ns/oscal
-          props:
-          - value: 'Guidance:'
-            name: label
-        by-id: ia-11_fr
-      removes:
-      - by-id: ia-11_fr_gdn.1
-    - control-id: sa-8
-      adds:
-      - position: after
-        parts:
-        - id: sa-8_obj-6
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          name: assessment-objective
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the specification of the system and system components;"
-          props:
-          - ns: https://fedramp.gov/ns/oscal
-            value: You must fill in this response point.
-            name: response-point
-          - ns: https://fedramp.gov/ns/oscal
-            value: EXAMINE
-            class: fedramp
-            name: method
-          - ns: https://fedramp.gov/ns/oscal
-            value: INTERVIEW
-            class: fedramp
-            name: method
-          - value: "SA-08[06]"
-            class: sp800-53a
-            name: label
-        - id: sa-8_obj-7
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          name: assessment-objective
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the design of the system and system components;"
-          props:
-          - ns: https://fedramp.gov/ns/oscal
-            value: You must fill in this response point.
-            name: response-point
-          - ns: https://fedramp.gov/ns/oscal
-            value: EXAMINE
-            class: fedramp
-            name: method
-          - ns: https://fedramp.gov/ns/oscal
-            value: INTERVIEW
-            class: fedramp
-            name: method
-          - value: "SA-08[07]"
-            class: sp800-53a
-            name: label
-        - id: sa-8_obj-8
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          name: assessment-objective
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the development of the system and system components;"
-          props:
-          - ns: https://fedramp.gov/ns/oscal
-            value: You must fill in this response point.
-            name: response-point
-          - ns: https://fedramp.gov/ns/oscal
-            value: EXAMINE
-            class: fedramp
-            name: method
-          - ns: https://fedramp.gov/ns/oscal
-            value: INTERVIEW
-            class: fedramp
-            name: method
-          - value: "SA-08[08]"
-            class: sp800-53a
-            name: label
-        - id: sa-8_obj-9
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          name: assessment-objective
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the implementation of the system and system components;"
-          props:
-          - ns: https://fedramp.gov/ns/oscal
-            value: You must fill in this response point.
-            name: response-point
-          - ns: https://fedramp.gov/ns/oscal
-            value: EXAMINE
-            class: fedramp
-            name: method
-          - ns: https://fedramp.gov/ns/oscal
-            value: INTERVIEW
-            class: fedramp
-            name: method
-          - value: "SA-08[09]"
-            class: sp800-53a
-            name: label
-        - id: sa-8_obj-10
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          name: assessment-objective
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the modification of the system and system components."
-          props:
-          - ns: https://fedramp.gov/ns/oscal
-            value: You must fill in this response point.
-            name: response-point
-          - ns: https://fedramp.gov/ns/oscal
-            value: EXAMINE
-            class: fedramp
-            name: method
-          - ns: https://fedramp.gov/ns/oscal
-            value: INTERVIEW
-            class: fedramp
-            name: method
-          - value: "SA-08[10]"
-            class: sp800-53a
-            name: label
-        by-id: sa-8_obj-5
-      removes:
-      - by-id: sa-8_obj-6
-      - by-id: sa-8_obj-7
-      - by-id: sa-8_obj-8
-      - by-id: sa-8_obj-9
-      - by-id: sa-8_obj-10
-  merge:
-    as-is: true
+  back-matter:
+    resources:
+    - title: FedRAMP Modified NIST Special Publication (SP) 800-53 revision 5
+      rlinks:
+      - media-type: application/oscal+xml
+        href: FedRAMP_rev5_catalog_tailoring_profile.xml
+      uuid: 051a77c1-b61d-4995-8275-dacfe688d510
+      props:
+      - value: 5.1.1
+        name: version
+  uuid: 512149a6-7f04-4c01-bb1b-78eafd6a950d
