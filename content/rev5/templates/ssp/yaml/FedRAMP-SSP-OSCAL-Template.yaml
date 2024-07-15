@@ -1,1208 +1,30 @@
 ---
 system-security-plan:
-  back-matter:
-    resources:
-    - props:
-      - class: collection
-        name: dataset
-        value: Special Publication
-      - class: name
-        name: dataset
-        value: 800-53
-      - class: version
-        name: dataset
-        value: 5.0.2
-      - class: organization
-        name: dataset
-        value: gov.nist.csrc
-      remarks: "This \"resolution resource\" is used by FedRAMP as a local, authoritative indicator of what version SSP (rev 4 or rev 5) this OSCAL document is for."
-      uuid: ace2963d-ecb4-4be5-bdd0-1f6fd7610f41
-      title: Resolution Resource
-    - props:
-      - name: type
-        ns: https://fedramp.gov/ns/oscal
-        value: signed-ssp
-      remarks: |-
-        FedRAMP is formulating guidelines for handling digital/electronic signatures in OSCAL, and welcome feedback on solutions.
-
-        For now, FedRAMP recommends one of the following:
-
-        - Render the OSCAL SSP content as a PDF that is digitally signed and attached.
-        - Render the OSCAL SSP content as a printed page that is physically signed, scanned, and attached.
-
-        If your organization prefers another approach, please seek prior approval from the FedRAMP PMO.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: ssp.pdf
-      uuid: 2ff2eb61-d8b3-4d17-8257-727468329c82
-      rlinks:
-      - media-type: application/pdf
-        href: ./signed-ssp.pdf
-      description: SSP Signature
-    - props:
-      - name: type
-        ns: https://fedramp.gov/ns/oscal
-        value: fedramp-citations
-      remarks: Must be present in a FedRAMP SAP.
-      base64:
-        media-type: application/vnd.ms-excel
-        value: "00000000"
-        filename: SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx
-      uuid: 985475ee-d4d6-4581-8fdf-d84d3d8caa48
-      rlinks:
-      - href: https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx
-      title: FedRAMP Applicable Laws and Regulations
-    - props:
-      - name: type
-        ns: https://fedramp.gov/ns/oscal
-        value: fedramp-acronyms
-      remarks: Must be present in a FedRAMP SSP.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: FedRAMP_Master_Acronym_and_Glossary.pdf
-      uuid: 1a23a771-d481-4594-9a1a-71d584fa4123
-      rlinks:
-      - href: https://www.fedramp.gov/assets/resources/documents/FedRAMP_Master_Acronym_and_Glossary.pdf
-      title: FedRAMP Master Acronym and Glossary
-    - props:
-      - class: ac
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: 330bac69-5840-479a-981b-afda037d7a6f
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_AC_policy.pdf
-      title: Access Control Policy Title
-      description: AC Policy document
-    - props:
-      - class: at
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: 184d2fc9-6c9e-4302-acb3-8c24f6843c79
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_AT_policy.pdf
-      title: Awareness and Training Policy Title
-      description: AT Policy document
-    - props:
-      - class: au
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: 64977a9e-cd62-4c04-891e-7943e9046179
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_AU_policy.pdf
-      title: Audit and Accountability Policy Title
-      description: AU Policy document
-    - props:
-      - class: ca
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: f81fe324-844f-4b53-b915-8c72b6fde8cf
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_CA_policy.pdf
-      title: Security Assessment and Authorization Policy Title
-      description: CA Policy document
-    - props:
-      - class: cm
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: eb4467a5-c3ca-4cac-9181-557886d7d1dc
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_CM_policy.pdf
-      title: Configuration Management Policy Title
-      description: CM Policy document
-    - props:
-      - class: cp
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: 4c4395c5-a126-4b77-8c62-cac98c563915
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_CP_policy.pdf
-      title: Contingency Planning Policy Title
-      description: CP Policy document
-    - props:
-      - class: ia
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: f6070655-ac54-4c4c-847e-d073bcf23baf
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_IA_policy.pdf
-      title: Identification and Authentication Policy Title
-      description: IA Policy document
-    - props:
-      - class: ir
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: e39a9f53-984b-429f-a062-a815228c6687
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_IR_policy.pdf
-      title: Incident Response Policy Title
-      description: IR Policy document
-    - props:
-      - class: ma
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: 8b009787-771c-4b02-9a8f-3f3b581e9464
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_MA_policy.pdf
-      title: Maintenance Policy Title
-      description: MA Policy document
-    - props:
-      - class: mp
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: 776b9f3b-2896-4118-87d9-7a5e62149afb
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_MP_policy.pdf
-      title: Media Protection Policy Title
-      description: MP Policy document
-    - props:
-      - class: pe
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: a54bc32c-6bae-4c89-b5b4-9299c56893fb
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_PE_policy.pdf
-      title: Physical and Environmental Protection Policy Title
-      description: PE Policy document
-    - props:
-      - class: pl
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: 9de28452-4b02-4b49-b316-59142a7633c1
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_PL_policy.pdf
-      title: Planning Policy Title
-      description: PL Policy document
-    - props:
-      - class: ps
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: 34f3388e-e5b2-4d85-b050-19f62dba6d7e
-      rlinks:
-      - href: ./documents/policies/sample_PS_policy.pdf
-      title: Personnel Security Policy Title
-      description: PS Policy document
-    - props:
-      - class: ra
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: 53fbc1b6-0f3c-4298-9554-da5acfef3a5a
-      rlinks:
-      - href: ./documents/policies/sample_RA_policy.pdf
-      title: Risk Adjustment Policy Title
-      description: RA Policy document
-    - props:
-      - class: sa
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: f969f849-8920-4325-9abe-dcc7133518d6
-      rlinks:
-      - href: ./documents/policies/sample_SA_policy.pdf
-      title: System and Service Acquisition Policy Title
-      description: SA Policy document
-    - props:
-      - class: sc
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: 03ae437f-fffc-48e3-81f1-4040fce2d6e3
-      rlinks:
-      - href: ./documents/policies/sample_SC_policy.pdf
-      title: System and Communications Protection Policy Title
-      description: SC Policy document
-    - props:
-      - class: si
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: 7a5ee0b7-402c-487f-8ac7-e1735b991674
-      rlinks:
-      - href: ./documents/policies/sample_SI_policy.pdf
-      title: System and Information Integrity Policy Title
-      description: SI Policy document
-    - props:
-      - class: sr
-        name: type
-        value: policy
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Policy Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: 7d440e15-ca4d-4e4a-8fcc-50bb05ffa2fd
-      rlinks:
-      - href: ./documents/policies/sample_SR_policy.pdf
-      title: Supply Chain Risk Policy Title
-      description: SR Policy document
-    - props:
-      - class: ac
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: e1fa7a30-efb8-4738-b4e2-7fbeb86644cd
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_AC_procedure.pdf
-      title: Access Control Procedure Title
-      description: AC Procedure document
-    - props:
-      - class: at
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: ce9f3af2-f4bc-47b5-bc25-df52a917748b
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_AT_procedure.pdf
-      title: Awareness and Training Procedure Title
-      description: AT Procedure document
-    - props:
-      - class: au
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: b1cdaad8-2127-4563-b248-3d2777307c4f
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_AU_procedure.pdf
-      title: Audit and Accountability Procedure Title
-      description: AU Procedure document
-    - props:
-      - class: ca
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: a552272e-803c-40db-895c-5de35c76d871
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_CA_procedure.pdf
-      title: Security Assessment and Authorization Procedure Title
-      description: CA Procedure document
-    - props:
-      - class: cm
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: b4c87da0-0f96-4231-a3c1-2d1a9d0b99a3
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_CM_procedure.pdf
-      title: Configuration Management Procedure Title
-      description: CM Procedure document
-    - props:
-      - class: cp
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: 2f1cb360-a743-4ebe-915a-27f215f44dc5
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_CP_procedure.pdf
-      title: Contingency Planning Procedure Title
-      description: CP Procedure document
-    - props:
-      - class: ia
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: 08a6ab70-8c56-4713-ae9c-81fbb6594943
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_IA_procedure.pdf
-      title: Identification and Authentication Procedure Title
-      description: IA Procedure document
-    - props:
-      - class: ir
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: 649eac51-c21b-4cb2-bd10-7828e0522e50
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_IR_procedure.pdf
-      title: Incident Response Procedure Title
-      description: IR Procedure document
-    - props:
-      - class: ma
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: fd29a63b-2a08-4d56-b91e-aadfa4c0f55b
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_MA_procedure.pdf
-      title: Maintenance Procedure Title
-      description: MA Procedure document
-    - props:
-      - class: mp
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: 908175c9-7502-4ab4-b469-80450ed18a8b
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_MP_procedure.pdf
-      title: Media Protection Procedure Title
-      description: MP Procedure document
-    - props:
-      - class: pe
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: 22522abe-fd09-4476-b09f-c6422b72bf12
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_PE_procedure.pdf
-      title: Physical and Environmental Protection Procedure Title
-      description: PE Procedure document
-    - props:
-      - class: pl
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: 937dfbb6-9d82-4974-be85-23f1e4b130d8
-      rlinks:
-      - media-type: application/pdf
-        href: ./documents/policies/sample_PL_procedure.pdf
-      title: Planning Procedure Title
-      description: PL Procedure document
-    - props:
-      - class: ps
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: 552dec25-74a9-4cbe-b3b0-f865d99bfa9d
-      rlinks:
-      - href: ./documents/policies/sample_PS_procedure.pdf
-      title: Personnel Security Procedure Title
-      description: PS Procedure document
-    - props:
-      - class: ra
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: 1a852337-d28f-4a66-a367-68aebec35698
-      rlinks:
-      - href: ./documents/policies/sample_RA_procedure.pdf
-      title: Risk Adjustment Procedure Title
-      description: RA Procedure document
-    - props:
-      - class: sa
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: 4a59a06d-3b1b-410f-b067-3fe1dab083f2
-      rlinks:
-      - href: ./documents/policies/sample_SA_procedure.pdf
-      title: System and Service Acquisition Procedure Title
-      description: SA Procedure document
-    - props:
-      - class: sc
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: 936093ce-a567-4592-8fcc-eeeef024cdd4
-      rlinks:
-      - href: ./documents/policies/sample_SC_procedure.pdf
-      title: System and Communications Protection Procedure Title
-      description: SC Procedure document
-    - props:
-      - class: si
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_procedure.pdf
-      uuid: ac953d62-a392-499f-b832-b90b325cceb6
-      rlinks:
-      - href: ./documents/policies/sample_SI_procedure.pdf
-      title: System and Information Integrity Procedure Title
-      description: SI Procedure document
-    - props:
-      - class: sr
-        name: type
-        value: procedure
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_policy.pdf
-      uuid: b2aaedad-5ff0-4b0c-b490-bbe64b2033b0
-      rlinks:
-      - href: ./documents/policies/sample_SR_procedure.pdf
-      title: Supply Chain Risk Procedure Title
-      description: SR Procedure document
-    - props:
-      - name: type
-        value: users-guide
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      remarks: |-
-        Table 12-1 Attachments: User's Guide Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      uuid: 90a128ac-c850-48f6-8fff-a55692f80b41
-      rlinks:
-      - href: ./documents/guides/sample_guide.pdf
-      title: User's Guide
-      description: User's Guide
-    - props:
-      - name: type
-        value: rules-of-behavior
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Rules of Behavior (ROB)
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/msword
-        value: "00000000"
-        filename: rob.docx
-      uuid: 489112e1-57f2-4c29-8dd0-95b1442fbf3b
-      rlinks:
-      - media-type: application/msword
-        href: ./documents/rob.docx
-      title: Document Title
-      description: Rules of Behavior
-    - props:
-      - class: information-system-contingency-plan
-        name: type
-        value: plan
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Contingency Plan (CP) Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/msword
-        value: "00000000"
-        filename: cp.docx
-      uuid: c7860916-f2f4-43aa-b578-d48cf8e6d381
-      rlinks:
-      - media-type: application/msword
-        href: ./documents/cp.docx
-      title: Document Title
-      description: Contingency Plan (CP)
-    - props:
-      - class: configuration-management-plan
-        name: type
-        value: plan
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Configuration Management (CM) Plan Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/msword
-        value: "00000000"
-        filename: CM_Plan.docx
-      uuid: ab56cf27-0dae-40d6-89b7-d750137309af
-      rlinks:
-      - media-type: application/msword
-        href: ./documents/CM_Plan.docx
-      title: Document Title
-      description: Configuration Management (CM) Plan
-    - props:
-      - class: incident-response-plan
-        name: type
-        value: plan
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Incident Response (IR) Plan Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/msword
-        value: "00000000"
-        filename: IR_Plan.docx
-      uuid: 3f771ab5-8016-4571-98d1-f0fb962e15e2
-      rlinks:
-      - media-type: application/msword
-        href: ./documents/IR_Plan.docx
-      title: Document Title
-      description: Incident Response (IR) Plan
-    - document-ids:
-      - identifier: Identification Number
-        scheme: https://www.doi.org/
-      props:
-      - name: type
-        value: law
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: document.pdf
-      uuid: a8a0cc81-800f-479f-93d3-8b8743d9b98d
-      rlinks:
-      - href: https://example.com/path/to/document.pdf
-      title: "\\[SAMPLE\\] Laws and Regulations"
-    - props:
-      - class: continuous-monitoring-plan
-        name: type
-        value: plan
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Continuous Monitoring Plan Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/msword
-        value: "00000000"
-        filename: ConMon_Plan.docx
-      uuid: 47ba08df-d619-4f18-9daf-78d416eede79
-      rlinks:
-      - media-type: application/msword
-        href: ./documents/ConMon_Plan.docx
-      title: Document Title
-      description: Continuous Monitoring Plan
-    - props:
-      - name: published
-        value: 2023-05-31T00:00:00Z
-      - name: version
-        value: Document Version
-      - class: poam
-        name: type
-        value: plan
-      base64:
-        media-type: application/xml
-        value: "00000000"
-        filename: SAMPLE_POAM_20230531.xml
-      uuid: e33c2763-d661-4638-a630-bd9138af1238
-      rlinks:
-      - href: ./documents/POAMs/SAMPLE_POAM_20230531.xml
-      title: "\\[SAMPLE\\]Plan of Actions and Milestones (POAM)"
-    - props:
-      - class: scrmp
-        name: type
-        value: plan
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: |-
-        Table 12-1 Attachments: Procedure Attachment
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-      base64:
-        media-type: application/pdf
-        value: "00000000"
-        filename: sample_SCRMP.pdf
-      uuid: bdbb4fef-505f-466b-810a-0a5ba03e9fc9
-      rlinks:
-      - href: ./documents/plans/sample_SCRMP_procedure.pdf
-      title: Supply Chain Risk Management Plan
-      description: Supply Chain Risk Management Plan
-    - props:
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      - class: isa
-        name: type
-        value: agreement
-      base64:
-        media-type: application/msword
-        value: "00000000"
-        filename: ISA-1.docx
-      uuid: 9d6cf2b4-8e88-4040-a33c-7bc206553a1a
-      rlinks:
-      - href: ./documents/ISAs/ISA-1.docx
-      title: "\\[SAMPLE\\]Interconnection Security Agreement Title"
-    - props:
-      - name: type
-        ns: https://fedramp.gov/ns/oscal
-        value: fedramp-logo
-      remarks: Must be present in a FedRAMP SSP.
-      base64:
-        media-type: image/png
-        value: "00000000"
-        filename: logo-main-fedramp.png
-      uuid: a2381e87-3d04-4108-a30b-b4d2f36d001f
-      rlinks:
-      - href: https://www.fedramp.gov/assets/img/logo-main-fedramp.png
-      title: FedRAMP Logo
-      description: FedRAMP Logo
-    - remarks: |-
-        May use `rlink` with a relative path, or embedded as `base64`.
-
-        FedRAMP prefers `base64` for images and diagrams.
-
-        Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
-      base64:
-        media-type: image/png
-        value: "00000000"
-        filename: logo.png
-      uuid: 31a46c4f-2959-4287-bc1c-67297d7da60b
-      rlinks:
-      - media-type: image/png
-        href: ./img/logo.png
-      title: CSP Logo
-      description: CSP Logo
-    - remarks: |-
-        May use `rlink` with a relative path, or embedded as `base64`.
-
-        FedRAMP prefers `base64` for images and diagrams.
-
-        Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
-      base64:
-        media-type: image/png
-        value: "00000000"
-        filename: logo.png
-      uuid: 2c1747d6-874a-49a2-8488-2fd9735416bf
-      rlinks:
-      - media-type: image/png
-        href: ./img/logo.png
-      title: 3PAO Logo
-      description: 3PAO Logo
-    - remarks: |-
-        Section 8.1, Figure 8-1 Authorization Boundary Diagram (graphic)
-
-        This should be referenced in the system-characteristics/authorization-boundary/diagram/link/@href flag using a value of "#d2eb3c18-6754-4e3a-a933-03d289e3fad5"
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-
-        FedRAMP prefers `base64` for images and diagrams.
-
-        Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
-      base64:
-        media-type: image/png
-        value: "00000000"
-        filename: logo.png
-      uuid: d2eb3c18-6754-4e3a-a933-03d289e3fad5
-      rlinks:
-      - href: ./diagrams/boundary.png
-      title: Boundary Diagram
-      description: The primary authorization boundary diagram.
-    - remarks: |-
-        Section 8.1, Figure 8-2 Network Diagram (graphic)
-
-        This should be referenced in the system-characteristics/network-architecture/diagram/link/@href flag using a value of "#61081e81-850b-43c1-bf43-1ecbddcb9e7f"
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-
-        FedRAMP prefers `base64` for images and diagrams.
-
-        Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
-      base64:
-        media-type: image/png
-        value: "00000000"
-        filename: network.png
-      uuid: 61081e81-850b-43c1-bf43-1ecbddcb9e7f
-      rlinks:
-      - href: ./diagrams/network.png
-      title: Network Diagram
-      description: The primary network diagram.
-    - remarks: |-
-        Section 8.1, Figure 8-3 Data Flow Diagram (graphic)
-
-        This should be referenced in the system-characteristics/data-flow/diagram/link/@href flag using a value of "#ac5d7535-f3b8-45d3-bf3b-735c82c64547"
-
-        May use `rlink` with a relative path, or embedded as `base64`.
-
-        FedRAMP prefers `base64` for images and diagrams.
-
-        Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
-      base64:
-        media-type: image/png
-        value: "00000000"
-        filename: dataflow.png
-      uuid: ac5d7535-f3b8-45d3-bf3b-735c82c64547
-      rlinks:
-      - href: ./diagrams/dataflow.png
-      title: Data Flow Diagram
-      description: The primary data flow diagram.
-    - props:
-      - name: type
-        ns: https://fedramp.gov/ns/oscal
-        value: separation-of-duties-matrix
-      - name: published
-        value: 2023-01-01T00:00:00Z
-      - name: version
-        value: Document Version
-      remarks: "May use `rlink` with a relative path, or embedded as `base64`."
-      base64:
-        media-type: application/msword
-        value: "00000000"
-        filename: Sep_Matrix.docx
-      uuid: 49fb4631-1da2-41ca-b0b3-e1b1006d4025
-      rlinks:
-      - media-type: application/msword
-        href: ./documents/Sep_Matrix.docx
-      title: Separation of Duties Matrix
-      description: Separation of Duties Matrix
   system-characteristics:
-    authorization-boundary:
-      diagrams:
-      - links:
-        - rel: diagram
-          href: '#d2eb3c18-6754-4e3a-a933-03d289e3fad5'
-        description: A diagram-specific explanation.
-        uuid: dbf46c27-52a9-49c4-beb6-b6399cd75497
-        caption: Authorization Boundary Diagram
-      description: "A holistic, top-level explanation of the FedRAMP authorization boundary."
-    description: |-
-      \[Insert CSO Name\] is delivered as \[a/an\] \[insert based on the Service Model above\] offering using a multi-tenant \[insert based on the Deployment Model above\] cloud computing environment. It is available to \[Insert scope of customers in accordance with instructions above (for example, the public, federal, state, local, and tribal governments, as well as research institutions, federal contractors, government contractors etc.)\].
-
-      NOTE: Additional description, including the purpose and functions of this system may be added here. This includes any narrative text usually included in section 9.1 of the SSP.
-
-      NOTE: The description is expected to be at least 32 words in length.
-    system-ids:
-    - id: F00000000
-      identifier-type: https://fedramp.gov
     system-name-short: System's Short Name or Acronym
     status:
-      state: operational
       remarks: |-
         Remarks are optional if status/state is "operational".
 
         Remarks are required otherwise.
+      state: operational
     network-architecture:
       diagrams:
-      - links:
+      - uuid: e97c3395-433a-48c1-8cc7-dd1e1555941c
+        caption: Network Diagram
+        links:
         - rel: diagram
           href: '#61081e81-850b-43c1-bf43-1ecbddcb9e7f'
         description: A diagram-specific explanation.
-        uuid: e97c3395-433a-48c1-8cc7-dd1e1555941c
-        caption: Network Diagram
       description: "A holistic, top-level explanation of the network architecture."
     data-flow:
       diagrams:
-      - links:
+      - uuid: e3b98448-4219-46a5-b229-412423c566f3
+        caption: Data Flow Diagram
+        links:
         - rel: diagram
           href: '#ac5d7535-f3b8-45d3-bf3b-735c82c64547'
         description: A diagram-specific explanation.
-        uuid: e3b98448-4219-46a5-b229-412423c566f3
-        caption: Data Flow Diagram
       description: "A holistic, top-level explanation of the system's data flows."
     props:
     - name: cloud-service-model
@@ -1225,7 +47,8 @@ system-security-plan:
       value: fedramp-agency
     system-information:
       information-types:
-      - integrity-impact:
+      - description: A description of the information.
+        integrity-impact:
           selected: fips-199-moderate
           base: fips-199-moderate
           adjustment-justification: Required if the base and selected values do not match.
@@ -1243,14 +66,37 @@ system-security-plan:
         - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
           information-type-ids:
           - C.2.4.1
-        description: A description of the information.
     system-name: System's Full Name
     security-impact-level:
-      security-objective-confidentiality: fips-199-moderate
       security-objective-availability: fips-199-moderate
       security-objective-integrity: fips-199-moderate
+      security-objective-confidentiality: fips-199-moderate
     security-sensitivity-level: fips-199-moderate
+    authorization-boundary:
+      diagrams:
+      - uuid: dbf46c27-52a9-49c4-beb6-b6399cd75497
+        caption: Authorization Boundary Diagram
+        links:
+        - rel: diagram
+          href: '#d2eb3c18-6754-4e3a-a933-03d289e3fad5'
+        description: A diagram-specific explanation.
+      description: "A holistic, top-level explanation of the FedRAMP authorization boundary."
+    description: |-
+      \[Insert CSO Name\] is delivered as \[a/an\] \[insert based on the Service Model above\] offering using a multi-tenant \[insert based on the Deployment Model above\] cloud computing environment. It is available to \[Insert scope of customers in accordance with instructions above (for example, the public, federal, state, local, and tribal governments, as well as research institutions, federal contractors, government contractors etc.)\].
+
+      NOTE: Additional description, including the purpose and functions of this system may be added here. This includes any narrative text usually included in section 9.1 of the SSP.
+
+      NOTE: The description is expected to be at least 32 words in length.
+    system-ids:
+    - id: F00000000
+      identifier-type: https://fedramp.gov
   control-implementation:
+    description: |-
+      Appendix A - FedRAMP SSP Rev5 Template
+
+      This description field is required by OSCAL.
+
+      FedRAMP does not require any specific information here.
     implemented-requirements:
     - props:
       - name: planned-completion-date
@@ -1410,8 +256,8 @@ system-security-plan:
                 party-uuids:
                 - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
             provided:
-            - description: "Leveraged system's statement of capabilities which may be inherited by a leveraging systems to satisfy AC-2, part a."
-              uuid: b068e08a-53b9-4f80-ac5f-0476c35c6e46
+            - uuid: b068e08a-53b9-4f80-ac5f-0476c35c6e46
+              description: "Leveraged system's statement of capabilities which may be inherited by a leveraging systems to satisfy AC-2, part a."
           uuid: b29d1505-69fa-4ad0-834b-d179e7f44f98
           description: |-
             Describe how AC-2, part a is satisfied within this system.
@@ -1431,7 +277,8 @@ system-security-plan:
                 party-uuids:
                 - f595397b-cbe4-4a87-8c86-9bff91c4e7fd
             provided:
-            - description: |-
+            - uuid: 11111111-0000-4000-9009-002001002001
+              description: |-
                 Consumer-appropriate description of what may be inherited from this application component by a leveraging system.
 
                 In the context of the application component in satisfaction of AC-2, part a.
@@ -1439,7 +286,6 @@ system-security-plan:
               - role-id: customer
                 party-uuids:
                 - f595397b-cbe4-4a87-8c86-9bff91c4e7fd
-              uuid: 11111111-0000-4000-9009-002001002001
           remarks: |-
             The component-uuid above points to the "this system" component.
 
@@ -1466,7 +312,8 @@ system-security-plan:
             responsibility-uuid: 11111111-0000-4000-9009-002001002002
             uuid: 6486f725-1372-434f-9b1b-7cf3f50c32d1
           inherited:
-          - provided-uuid: 11111111-0000-4000-9009-002001002001
+          - uuid: 780a3910-2019-4d33-a2f9-5c6ac91929d6
+            provided-uuid: 11111111-0000-4000-9009-002001002001
             description: |-
               Optional description.
 
@@ -1477,7 +324,6 @@ system-security-plan:
               The `provided-uuid` links this to the same statement in the leveraged system's SSP.
 
               It may be linked directly, but is more commonly provided via an OSCAL-based CRM (Inheritance and Responsibility Model).
-            uuid: 780a3910-2019-4d33-a2f9-5c6ac91929d6
           description: "For the portion inherited from an underlying FedRAMP-authorized provider, describe **what** is inherited."
           component-uuid: e82e6e07-0c62-417e-8a19-3744991b4c65
         uuid: 24a85abb-25ad-4686-850c-5c0e8ab69a0c
@@ -2752,12 +1598,6 @@ system-security-plan:
           component-uuid: fa90644a-8bf8-47da-b0d3-82bffc708afc
         uuid: 76bc5347-1fbd-4386-a839-ac042e59ac82
         statement-id: sr-1_smt.a
-    description: |-
-      Appendix A - FedRAMP SSP Rev5 Template
-
-      This description field is required by OSCAL.
-
-      FedRAMP does not require any specific information here.
   uuid: 9809eddf-2cd5-468f-97c5-9769905d0629
   import-profile:
     remarks: |-
@@ -2766,93 +1606,6 @@ system-security-plan:
       Must adjust accordingly for applicable baseline and revision.
     href: https://raw.githubusercontent.com/GSA/fedramp-automation/master/dist/content/rev5/baselines/xml/FedRAMP_rev5_MODERATE-baseline-resolved-profile_catalog.xml
   system-implementation:
-    users:
-    - role-ids:
-      - admin-unix
-      props:
-      - name: sensitivity
-        ns: https://fedramp.gov/ns/oscal
-        value: high-risk
-      - name: privilege-level
-        value: privileged
-      - name: authentication-method
-        ns: https://fedramp.gov/ns/oscal
-        value: multi-factor OTP device
-      - name: type
-        value: internal
-      uuid: 9cb0fab0-78bd-44ba-bcb8-3e9801cc952f
-      title: "\\[SAMPLE\\]Unix System Administrator"
-      authorized-privileges:
-      - functions-performed:
-        - Add/remove users and hardware
-        - install and configure software
-        - "OS updates, patches and hotfixes"
-        - perform backups
-        title: Full administrative access (root)
-    - role-ids:
-      - admin-client
-      props:
-      - name: sensitivity
-        ns: https://fedramp.gov/ns/oscal
-        value: moderate
-      - name: privilege-level
-        value: non-privileged
-      - name: authentication-method
-        ns: https://fedramp.gov/ns/oscal
-        value: memorized seccret plus SF OTP device
-      - name: type
-        value: external
-      uuid: 16ec71e7-025c-43e4-9d3f-3acb485fac2e
-      title: "\\[SAMPLE\\]Client Administrator"
-      authorized-privileges:
-      - functions-performed:
-        - Add/remove client users
-        - "Create, modify and delete client applications"
-        title: Portal administration
-    - role-ids:
-      - information-system-security-officer
-      - isa-poc-local
-      - isa-authorizing-official-local
-      props:
-      - name: sensitivity
-        ns: https://fedramp.gov/ns/oscal
-        value: limited
-      - name: privilege-level
-        value: no-logical-access
-      - name: authentication-method
-        ns: https://fedramp.gov/ns/oscal
-        value: not-applicable
-      - name: type
-        value: internal
-      uuid: ba7708c1-4041-48ab-9b7b-1ddb5e175fe0
-      title: "\\[SAMPLE\\]Program Director"
-      authorized-privileges:
-      - functions-performed:
-        - Approves access requests for administrative accounts.
-        title: Administrative Access Approver
-      - functions-performed:
-        - Approves access requests for administrative accounts.
-        title: Access Approver
-    - role-ids:
-      - isa-poc-remote
-      - isa-authorizing-official-remote
-      props:
-      - name: sensitivity
-        ns: https://fedramp.gov/ns/oscal
-        value: not-applicable
-      - name: privilege-level
-        value: no-logical-access
-      - name: authentication-method
-        ns: https://fedramp.gov/ns/oscal
-        value: not-applicable
-      - name: type
-        value: external
-      uuid: 73ae456f-5581-4ff7-9ada-49fc057b2e0b
-      title: "\\[SAMPLE\\]ISA POC"
-      authorized-privileges:
-      - functions-performed:
-        - Authorizes access to external interconnected system.
-        title: External System Access Provider
     inventory-items:
     - links:
       - rel: validation
@@ -3127,16 +1880,24 @@ system-security-plan:
       ns: https://fedramp.gov/ns/oscal
       value: "0"
     components:
-    - status:
-        state: operational
-      type: this-system
-      title: This System
+    - title: This System
       uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
       description: |-
         The entire system as depicted in the system authorization boundary
 
         Email is employed
-    - status:
+      status:
+        state: operational
+      type: this-system
+    - title: "\\[SAMPLE\\]Cryptographic Module Name"
+      uuid: 95beec7e-6f82-4aaa-8211-969cd7c1f1ab
+      description: |-
+        Provide a description and any pertinent note regarding the use of this CM.
+
+        For data-at-rest modules, describe type of encryption implemented (e.g., full disk, file, record-level, etc.)
+
+        Lastly, provide any supporting notes on FIPS status (e.g. historical) or lack of FIPS compliance (e.g., Module in Process).
+      status:
         state: operational
       links:
       - rel: validation-details
@@ -3156,15 +1917,13 @@ system-security-plan:
       - name: validation-reference
         value: "3928"
       type: validation
-      title: "\\[SAMPLE\\]Cryptographic Module Name"
-      uuid: 95beec7e-6f82-4aaa-8211-969cd7c1f1ab
+    - title: "\\[SAMPLE\\]Cryptographic Module Name"
+      uuid: 1eaaabbd-b3a6-4316-a868-7b815e7c40f5
       description: |-
         Provide a description and any pertinent note regarding the use of this CM.
 
-        For data-at-rest modules, describe type of encryption implemented (e.g., full disk, file, record-level, etc.)
-
-        Lastly, provide any supporting notes on FIPS status (e.g. historical) or lack of FIPS compliance (e.g., Module in Process).
-    - status:
+        For example, any supporting notes on FIPS status (e.g. historical) or lack of FIPS compliance (e.g., Module in Process).
+      status:
         state: operational
       links:
       - rel: validation-details
@@ -3184,13 +1943,13 @@ system-security-plan:
       - name: validation-reference
         value: "3920"
       type: validation
-      title: "\\[SAMPLE\\]Cryptographic Module Name"
-      uuid: 1eaaabbd-b3a6-4316-a868-7b815e7c40f5
+    - title: Name of Leveraged System
+      uuid: e82e6e07-0c62-417e-8a19-3744991b4c65
       description: |-
-        Provide a description and any pertinent note regarding the use of this CM.
+        If the leveraged system owner provides a UUID for their system (such as in an OSCAL-based CRM), it should be reflected in the `inherited-uuid` property.
 
-        For example, any supporting notes on FIPS status (e.g. historical) or lack of FIPS compliance (e.g., Module in Process).
-    - status:
+        Must include all leveraged services and features from the leveraged authorization here.
+      status:
         state: operational
       props:
       - name: asset-type
@@ -3227,13 +1986,13 @@ system-security-plan:
       - name: inherited-uuid
         value: 11111111-0000-4000-9001-000000000001
       type: leveraged-system
-      title: Name of Leveraged System
-      uuid: e82e6e07-0c62-417e-8a19-3744991b4c65
+    - title: Service Provided by Leveraged System
+      uuid: 77a1614a-57b3-4b32-9fee-613a6520ec58
       description: |-
-        If the leveraged system owner provides a UUID for their system (such as in an OSCAL-based CRM), it should be reflected in the `inherited-uuid` property.
+        If the leveraged system owner provides a UUID for their service (such as in an OSCAL-based CRM), it should be reflected in the `inherited-uuid` property.
 
         Must include all leveraged services and features from the leveraged authorization here.
-    - status:
+      status:
         state: operational
       links:
       - rel: used-by
@@ -3246,13 +2005,10 @@ system-security-plan:
       - name: inherited-uuid
         value: 11111111-0000-4000-9001-000000000002
       type: service
-      title: Service Provided by Leveraged System
-      uuid: 77a1614a-57b3-4b32-9fee-613a6520ec58
-      description: |-
-        If the leveraged system owner provides a UUID for their service (such as in an OSCAL-based CRM), it should be reflected in the `inherited-uuid` property.
-
-        Must include all leveraged services and features from the leveraged authorization here.
-    - status:
+    - title: "\\[EXAMPLE\\]Authorized Connection Information System Name"
+      uuid: 2812ef51-61e7-4505-afbb-da5a073a2a5b
+      description: "Describe the purpose of the external system/service; specifically, provide reasons for connectivity (e.g., system monitoring, system alerting, download updates, etc.)."
+      status:
         state: operational
       links:
       - rel: isa-agreement
@@ -3345,10 +2101,10 @@ system-security-plan:
         party-uuids:
         - 09ad840f-aa79-43aa-9f22-25182c2ab11b
       remarks: Optional notes about this interconnection
-      title: "\\[EXAMPLE\\]Authorized Connection Information System Name"
-      uuid: 2812ef51-61e7-4505-afbb-da5a073a2a5b
-      description: "Describe the purpose of the external system/service; specifically, provide reasons for connectivity (e.g., system monitoring, system alerting, download updates, etc.)."
-    - status:
+    - title: "\\[SAMPLE\\]Product Name"
+      uuid: 05ceb8df-52e7-49db-9719-891723f366bd
+      description: "FUNCTION: Describe typical component function."
+      status:
         state: operational
       links:
       - rel: validation
@@ -3373,10 +2129,10 @@ system-security-plan:
         party-uuids:
         - 3360e343-9860-4bda-9dfc-ff427c3dfab6
       remarks: "COMMENTS: Provide other comments as needed."
-      title: "\\[SAMPLE\\]Product Name"
-      uuid: 05ceb8df-52e7-49db-9719-891723f366bd
+    - title: "\\[SAMPLE\\]Product"
+      uuid: 1541015b-6d19-42cb-a991-624cc082ed4d
       description: "FUNCTION: Describe typical component function."
-    - status:
+      status:
         state: operational
       props:
       - name: asset-type
@@ -3402,10 +2158,10 @@ system-security-plan:
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       remarks: "COMMENTS: Provide other comments as needed."
-      title: "\\[SAMPLE\\]Product"
-      uuid: 1541015b-6d19-42cb-a991-624cc082ed4d
-      description: "FUNCTION: Describe typical component function."
-    - status:
+    - title: OS Sample
+      uuid: 6617f60b-8bac-422d-9939-94f43ddc0f7a
+      description: None
+      status:
         state: operational
       props:
       - name: asset-type
@@ -3418,10 +2174,10 @@ system-security-plan:
       - name: allows-authenticated-scan
         value: "yes"
       type: software
-      title: OS Sample
-      uuid: 6617f60b-8bac-422d-9939-94f43ddc0f7a
+    - title: Database Sample
+      uuid: 120f1404-7c9f-4856-a247-63bd89d9e769
       description: None
-    - status:
+      status:
         state: operational
       props:
       - name: asset-type
@@ -3434,10 +2190,10 @@ system-security-plan:
       - name: allows-authenticated-scan
         value: "yes"
       type: software
-      title: Database Sample
-      uuid: 120f1404-7c9f-4856-a247-63bd89d9e769
+    - title: Appliance Sample
+      uuid: 8f230d84-2f9b-44a3-acdb-019566ab2554
       description: None
-    - status:
+      status:
         state: operational
       props:
       - name: asset-type
@@ -3454,10 +2210,10 @@ system-security-plan:
         remarks: Vendor appliance. No admin-level access.
         value: "no"
       type: software
-      title: Appliance Sample
-      uuid: 8f230d84-2f9b-44a3-acdb-019566ab2554
-      description: None
-    - status:
+    - title: "\\[EXAMPLE\\]Policies"
+      uuid: 88b8d7bb-ba23-4430-bf62-028eab822050
+      description: "\\[EXAMPLE\\]component representing a collection of policies in appendix A."
+      status:
         state: operational
       links:
       - rel: policy
@@ -3496,10 +2252,10 @@ system-security-plan:
         href: '#7a5ee0b7-402c-487f-8ac7-e1735b991674'
       type: policy
       remarks: "Links to the components, attached as a `resource` in `back-matter`."
-      title: "\\[EXAMPLE\\]Policies"
-      uuid: 88b8d7bb-ba23-4430-bf62-028eab822050
-      description: "\\[EXAMPLE\\]component representing a collection of policies in appendix A."
-    - status:
+    - title: "\\[EXAMPLE\\]Procedures"
+      uuid: fa90644a-8bf8-47da-b0d3-82bffc708afc
+      description: "\\[EXAMPLE\\]component representing a collection of procedures in appendix A."
+      status:
         state: operational
       links:
       - rel: procedure
@@ -3538,10 +2294,11 @@ system-security-plan:
         href: '#ac953d62-a392-499f-b832-b90b325cceb6'
       type: procedure
       remarks: "Links to the components, attached as a `resource` in `back-matter`."
-      title: "\\[EXAMPLE\\]Procedures"
-      uuid: fa90644a-8bf8-47da-b0d3-82bffc708afc
-      description: "\\[EXAMPLE\\]component representing a collection of procedures in appendix A."
-    - status:
+    - title: "\\[SAMPLE\\]Service Name"
+      purpose: Describe the reason the service is needed.
+      uuid: d5841417-de4c-4d84-ab3c-39dd1fd32a96
+      description: Describe the service
+      status:
         state: operational
       links:
       - rel: used-by
@@ -3557,20 +2314,19 @@ system-security-plan:
       - uuid: 653ad9b9-9c78-4bc0-8a93-6ebd3c0fce54
         name: http
         port-ranges:
-        - end: 80
-          transport: TCP
+        - transport: TCP
           start: 80
+          end: 80
       - uuid: 3ac9b137-479e-47d4-bc7e-aaa97c76aa63
         name: https
         port-ranges:
-        - end: 443
-          transport: TCP
+        - transport: TCP
           start: 443
-      title: "\\[SAMPLE\\]Service Name"
-      purpose: Describe the reason the service is needed.
-      uuid: d5841417-de4c-4d84-ab3c-39dd1fd32a96
-      description: Describe the service
-    - status:
+          end: 443
+    - title: "\\[EXAMPLE\\]Authorized Connection Information System Name"
+      uuid: 2812ef51-61e7-4505-afbb-da5a073a2a5b
+      description: Briefly describe the interconnection.
+      status:
         state: operational
       links:
       - rel: isa-agreement
@@ -3617,30 +2373,27 @@ system-security-plan:
         party-uuids:
         - 09ad840f-aa79-43aa-9f22-25182c2ab11b
       remarks: Optional notes about this interconnection
-      title: "\\[EXAMPLE\\]Authorized Connection Information System Name"
-      uuid: 2812ef51-61e7-4505-afbb-da5a073a2a5b
-      description: Briefly describe the interconnection.
-    - status:
-        state: operational
-      type: network
-      title: IPv4 Production Subnet
+    - title: IPv4 Production Subnet
       uuid: 55b55b3d-3bd9-409a-bc87-3b9a2074bacd
       description: IPv4 Production Subnet.
-    - status:
+      status:
         state: operational
       type: network
-      title: IPv4 Management Subnet
+    - title: IPv4 Management Subnet
       uuid: c0dbefa1-c8e8-4ca8-bd73-67cb7b1fa3f6
       description: IPv4 Management Subnet.
-    - status:
+      status:
+        state: operational
+      type: network
+    - title: Email Service
+      uuid: 60f92bcf-f353-4236-9803-2a5d417555f5
+      description: Email Service
+      status:
         state: operational
       links:
       - rel: used-by
         href: 60f92bcf-f353-4236-9803-2a5d417555f4
       type: service
-      title: Email Service
-      uuid: 60f92bcf-f353-4236-9803-2a5d417555f5
-      description: Email Service
     leveraged-authorizations:
     - links:
       - href: //path/to/leveraged_system_ssp.xml
@@ -3664,7 +2417,175 @@ system-security-plan:
       title: GovCloud
       uuid: 5a9c98ab-8e5e-433d-a7bd-515c07cd1497
       party-uuid: f0bc13a4-3303-47dd-80d3-380e159c8362
+    users:
+    - authorized-privileges:
+      - title: Full administrative access (root)
+        functions-performed:
+        - Add/remove users and hardware
+        - install and configure software
+        - "OS updates, patches and hotfixes"
+        - perform backups
+      role-ids:
+      - admin-unix
+      props:
+      - name: sensitivity
+        ns: https://fedramp.gov/ns/oscal
+        value: high-risk
+      - name: privilege-level
+        value: privileged
+      - name: authentication-method
+        ns: https://fedramp.gov/ns/oscal
+        value: multi-factor OTP device
+      - name: type
+        value: internal
+      uuid: 9cb0fab0-78bd-44ba-bcb8-3e9801cc952f
+      title: "\\[SAMPLE\\]Unix System Administrator"
+    - authorized-privileges:
+      - title: Portal administration
+        functions-performed:
+        - Add/remove client users
+        - "Create, modify and delete client applications"
+      role-ids:
+      - admin-client
+      props:
+      - name: sensitivity
+        ns: https://fedramp.gov/ns/oscal
+        value: moderate
+      - name: privilege-level
+        value: non-privileged
+      - name: authentication-method
+        ns: https://fedramp.gov/ns/oscal
+        value: memorized seccret plus SF OTP device
+      - name: type
+        value: external
+      uuid: 16ec71e7-025c-43e4-9d3f-3acb485fac2e
+      title: "\\[SAMPLE\\]Client Administrator"
+    - authorized-privileges:
+      - title: Administrative Access Approver
+        functions-performed:
+        - Approves access requests for administrative accounts.
+      - title: Access Approver
+        functions-performed:
+        - Approves access requests for administrative accounts.
+      role-ids:
+      - information-system-security-officer
+      - isa-poc-local
+      - isa-authorizing-official-local
+      props:
+      - name: sensitivity
+        ns: https://fedramp.gov/ns/oscal
+        value: limited
+      - name: privilege-level
+        value: no-logical-access
+      - name: authentication-method
+        ns: https://fedramp.gov/ns/oscal
+        value: not-applicable
+      - name: type
+        value: internal
+      uuid: ba7708c1-4041-48ab-9b7b-1ddb5e175fe0
+      title: "\\[SAMPLE\\]Program Director"
+    - authorized-privileges:
+      - title: External System Access Provider
+        functions-performed:
+        - Authorizes access to external interconnected system.
+      role-ids:
+      - isa-poc-remote
+      - isa-authorizing-official-remote
+      props:
+      - name: sensitivity
+        ns: https://fedramp.gov/ns/oscal
+        value: not-applicable
+      - name: privilege-level
+        value: no-logical-access
+      - name: authentication-method
+        ns: https://fedramp.gov/ns/oscal
+        value: not-applicable
+      - name: type
+        value: external
+      uuid: 73ae456f-5581-4ff7-9ada-49fc057b2e0b
+      title: "\\[SAMPLE\\]ISA POC"
   metadata:
+    published: 2023-08-31T00:00:00Z
+    remarks: |-
+      This OSCAL-based FedRAMP SSP Template can be used for the FedRAMP Low, Moderate, and High baselines.
+
+      Guidance for OSCAL-based FedRAMP Tailored Low Impact - Software as a Service (LI-SaaS) content has not yet been developed.
+    roles:
+    - description: The FedRAMP PMO resides within GSA and supports agencies and cloud service providers through the FedRAMP authorization process and maintains a secure repository of FedRAMP authorizations to enable reuse of security packages.
+      id: fedramp-pmo
+      title: FedRAMP Program Management Office
+    - description: "Members of the JAB include the chief information officers (CIOs) from the Department of Defense, Department of Homeland Security, and General Services Administration. The JAB serves as the primary governance and decision-making body for FedRAMP."
+      id: fedramp-jab
+      title: FedRAMP Program Management Office
+    - description: "The organization that prepared this SSP. If developed in-house, this is the CSP itself."
+      id: prepared-by
+      title: Prepared By
+    - description: The organization for which this SSP was prepared. Typically the CSP.
+      id: prepared-for
+      title: Prepared For
+    - description: The individual or individuals accountable for the accuracy of this SSP.
+      id: content-approver
+      title: System Security Plan Approval
+    - short-name: CSP
+      id: cloud-service-provider
+      title: Cloud Service Provider
+    - description: The individual within the CSP who is ultimately accountable for everything related to this system.
+      id: system-owner
+      title: Information System Owner
+    - description: The individual or individuals who must grant this system an authorization to operate.
+      id: authorizing-official
+      title: Authorizing Official
+    - description: The individual representing the authorizing official.
+      id: authorizing-official-poc
+      title: Authorizing Official's Point of Contact
+    - description: The highest level manager who responsible for system operation on behalf of the System Owner.
+      id: system-poc-management
+      title: Information System Management Point of Contact (POC)
+    - description: The individual or individuals leading the technical operation of the system.
+      id: system-poc-technical
+      title: Information System Technical Point of Contact
+    - description: "A general point of contact for the system, designated by the system owner."
+      id: system-poc-other
+      title: General Point of Contact (POC)
+    - description: The individual accountable for the security posture of the system on behalf of the system owner.
+      id: information-system-security-officer
+      title: System Information System Security Officer (or Equivalent)
+    - description: The individual responsible for the privacy threshold analysis and if necessary the privacy impact assessment.
+      id: privacy-poc
+      title: Privacy Official's Point of Contact
+    - id: asset-owner
+      title: Owner of an inventory item within the system.
+    - id: asset-administrator
+      title: Administrative responsibility an inventory item within the system.
+    - description: The point of contact for an interconnection on behalf of this system.
+      id: isa-poc-local
+      title: ICA POC (Local)
+      remarks: Remove this role if there are no ICAs.
+    - description: The point of contact for an interconnection on behalf of this external system to which this system connects.
+      id: isa-poc-remote
+      title: ICA POC (Remote)
+      remarks: Remove this role if there are no ICAs.
+    - description: Responsible for signing an interconnection security agreement on behalf of this system.
+      id: isa-authorizing-official-local
+      title: ICA Signatory (Local)
+      remarks: Remove this role if there are no ICAs.
+    - description: Responsible for signing an interconnection security agreement on behalf of the external system to which this system connects.
+      id: isa-authorizing-official-remote
+      title: ICA Signatory (Remote)
+      remarks: Remove this role if there are no ICAs.
+    - description: Any consultants involved with developing or maintaining this content.
+      id: consultant
+      title: Consultant
+    - description: Represents any customers of this system as may be necessary for assigning customer responsibility.
+      id: customer
+      title: Customer
+    - description: This is a sample role.
+      id: admin-unix
+      title: "\\[SAMPLE\\]Unix Administrator"
+    - description: This is a sample role.
+      id: admin-client
+      title: "\\[SAMPLE\\]Client Administrator"
+    title: FedRAMP System Security Plan (SSP)
     revisions:
     - oscal-version: 1.0.4
       remarks: Initial publication.
@@ -3748,23 +2669,23 @@ system-security-plan:
       value: ace2963d-ecb4-4be5-bdd0-1f6fd7610f41
     locations:
     - address:
-        state: ME
-        city: Haven
         addr-lines:
         - Suite 0000
         - 1234 Some Street
         postal-code: "00000"
         type: work
+        state: ME
+        city: Haven
       remarks: "There must be one location identifying the CSP's primary business address, such as the CSP's HQ, or the address of the system owner's primary business location."
       uuid: 27b78960-59ef-4619-82b0-ae20b9c709ac
       title: CSP HQ
     - address:
-        state: --
-        city: Anywhere
-        country: US
         addr-lines:
         - 2222 Main Street
         postal-code: 00000-0000
+        state: --
+        city: Anywhere
+        country: US
       props:
       - class: primary
         name: type
@@ -3782,12 +2703,12 @@ system-security-plan:
       uuid: 16adcc8d-65d8-4583-80d3-9cf007744fec
       title: Primary Data Center
     - address:
-        state: --
-        city: Anywhere
-        country: US
         addr-lines:
         - 3333 Small Road
         postal-code: 00000-0000
+        state: --
+        city: Anywhere
+        country: US
       props:
       - class: alternate
         name: type
@@ -3805,20 +2726,35 @@ system-security-plan:
       uuid: ad321514-7b9f-4374-8409-efb18eea6e5d
       title: Secondary Data Center
     parties:
-    - links:
-      - rel: logo
-        href: '#31a46c4f-2959-4287-bc1c-67297d7da60b'
-      location-uuids:
-      - 27b78960-59ef-4619-82b0-ae20b9c709ac
-      type: organization
-      name: Cloud Service Provider (CSP) Name
+    - name: Cloud Service Provider (CSP) Name
       uuid: 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
       remarks: |-
         Replace sample CSP information.
 
         CSP information must be present and associated with the "cloud-service-provider" role via `responsible-party`.
       short-name: CSP Acronym/Short Name
-    - links:
+      links:
+      - rel: logo
+        href: '#31a46c4f-2959-4287-bc1c-67297d7da60b'
+      location-uuids:
+      - 27b78960-59ef-4619-82b0-ae20b9c709ac
+      type: organization
+    - name: "Federal Risk and Authorization Management Program: Program Management Office"
+      uuid: 77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d
+      addresses:
+      - addr-lines:
+        - 1800 F St. NW
+        postal-code: "20006"
+        type: work
+        state: DC
+        city: Washington
+        country: US
+      remarks: |-
+        This party entry must be present in a FedRAMP SSP.
+
+        The uuid may be different; however, the uuid must be associated with the "fedramp-pmo" role in the responsible-party assemblies.
+      short-name: FedRAMP PMO
+      links:
       - rel: homepage
         href: https://fedramp.gov
       - rel: logo
@@ -3828,67 +2764,49 @@ system-security-plan:
       email-addresses:
       - info@fedramp.gov
       type: organization
-      name: "Federal Risk and Authorization Management Program: Program Management Office"
-      uuid: 77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d
-      addresses:
-      - state: DC
-        city: Washington
-        country: US
-        addr-lines:
-        - 1800 F St. NW
-        postal-code: "20006"
-        type: work
-      remarks: |-
-        This party entry must be present in a FedRAMP SSP.
-
-        The uuid may be different; however, the uuid must be associated with the "fedramp-pmo" role in the responsible-party assemblies.
-      short-name: FedRAMP PMO
-    - links:
-      - rel: logo
-        href: '#a2381e87-3d04-4108-a30b-b4d2f36d001f'
-      type: organization
-      name: "Federal Risk and Authorization Management Program: Joint Authorization Board"
+    - name: "Federal Risk and Authorization Management Program: Joint Authorization Board"
       uuid: 49017ec3-9f51-4dbd-9253-858c2b1295fd
       remarks: |-
         This party entry must be present in a FedRAMP SSP.
 
         The uuid may be different; however, the uuid must be associated with the "fedramp-jab" role in the responsible-party assemblies.
       short-name: FedRAMP JAB
-    - type: organization
-      name: External Organization
+      links:
+      - rel: logo
+        href: '#a2381e87-3d04-4108-a30b-b4d2f36d001f'
+      type: organization
+    - name: External Organization
       uuid: 78992555-4a99-4eaa-868c-f2c249679dd3
       remarks: Generic placeholder for any external organization.
       short-name: External
-    - type: organization
-      name: Agency Name
+      type: organization
+    - name: Agency Name
       uuid: f595397b-cbe4-4a87-8c86-9bff91c4e7fd
       remarks: Generic placeholder for an authorizing agency.
       short-name: A.N.
-    - links:
+      type: organization
+    - name: Name of Consulting Org
+      uuid: 8e3d39da-4851-4d2a-adb5-4b5585ded952
+      addresses:
+      - addr-lines:
+        - 3333 Corporate Way
+        postal-code: "00000"
+        type: work
+        state: DC
+        city: Washington
+        country: US
+      short-name: NOCO
+      links:
       - href: https://example.com
       - rel: logo
         href: '#2c1747d6-874a-49a2-8488-2fd9735416bf'
       email-addresses:
       - poc@example.com
       type: organization
-      name: Name of Consulting Org
-      uuid: 8e3d39da-4851-4d2a-adb5-4b5585ded952
-      addresses:
-      - state: DC
-        city: Washington
-        country: US
-        addr-lines:
-        - 3333 Corporate Way
-        postal-code: "00000"
-        type: work
-      short-name: NOCO
-    - type: organization
-      name: "[SAMPLE]Remote System Org Name"
+    - name: "[SAMPLE]Remote System Org Name"
       uuid: 80361ec4-bfce-4b5c-85c8-313d6ebd220b
-    - email-addresses:
-      - person@ica.example.org
-      type: person
-      name: "[SAMPLE]ICA POC's Name"
+      type: organization
+    - name: "[SAMPLE]ICA POC's Name"
       props:
       - name: job-title
         value: Individual's Title
@@ -3897,17 +2815,15 @@ system-security-plan:
       - number: "2025551212"
       member-of-organizations:
       - 80361ec4-bfce-4b5c-85c8-313d6ebd220b
-    - type: organization
-      name: "[SAMPLE]Example IaaS Provider"
+      email-addresses:
+      - person@ica.example.org
+      type: person
+    - name: "[SAMPLE]Example IaaS Provider"
       uuid: f0bc13a4-3303-47dd-80d3-380e159c8362
       remarks: Underlying service provider. Leveraged Authorization.
       short-name: E.I.P.
-    - email-addresses:
-      - name@example.com
-      location-uuids:
-      - 27b78960-59ef-4619-82b0-ae20b9c709ac
-      type: person
-      name: "[SAMPLE]Person Name 1"
+      type: organization
+    - name: "[SAMPLE]Person Name 1"
       props:
       - name: job-title
         value: Individual's Title
@@ -3918,211 +2834,1295 @@ system-security-plan:
       - number: "2020000001"
       member-of-organizations:
       - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-    - email-addresses:
+      email-addresses:
       - name@example.com
+      location-uuids:
+      - 27b78960-59ef-4619-82b0-ae20b9c709ac
       type: person
-      name: "[SAMPLE]Person Name 2"
+    - name: "[SAMPLE]Person Name 2"
       props:
       - name: job-title
         value: Individual's Title
       uuid: 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       addresses:
-      - state: ST
-        city: City
-        country: US
-        addr-lines:
+      - addr-lines:
         - Address Line
         postal-code: "00000"
         type: work
+        state: ST
+        city: City
+        country: US
       telephone-numbers:
       - number: "2020000002"
       member-of-organizations:
       - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-    - email-addresses:
+      email-addresses:
       - name@example.com
       type: person
-      name: "[SAMPLE]Person Name 3"
+    - name: "[SAMPLE]Person Name 3"
       props:
       - name: job-title
         value: Individual's Title
       uuid: 0cec09d9-20c6-470b-9ffc-85763375880b
       addresses:
-      - state: ST
-        city: City
-        country: US
-        addr-lines:
+      - addr-lines:
         - Address Line
         postal-code: "00000"
         type: work
+        state: ST
+        city: City
+        country: US
       telephone-numbers:
       - number: "2020000003"
       member-of-organizations:
       - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-    - email-addresses:
+      email-addresses:
       - name@example.com
       type: person
-      name: "[SAMPLE]Person Name 4"
+    - name: "[SAMPLE]Person Name 4"
       props:
       - name: job-title
         value: Individual's Title
       uuid: f75e21f6-43d8-46ab-890d-7f2eebc5a830
       addresses:
-      - state: ST
-        city: City
-        country: US
-        addr-lines:
+      - addr-lines:
         - Address Line
         postal-code: "00000"
         type: work
+        state: ST
+        city: City
+        country: US
       telephone-numbers:
       - number: "2020000004"
       member-of-organizations:
       - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-    - email-addresses:
+      email-addresses:
       - name@example.com
       type: person
-      name: "[SAMPLE]Person Name 5"
+    - name: "[SAMPLE]Person Name 5"
       props:
       - name: job-title
         value: Individual's Title
       uuid: 132953a9-640c-46f7-9de9-3fa15ec99361
       addresses:
-      - state: ST
-        city: City
-        country: US
-        addr-lines:
+      - addr-lines:
         - Address Line
         postal-code: "00000"
         type: work
+        state: ST
+        city: City
+        country: US
       telephone-numbers:
       - number: "2020000005"
       member-of-organizations:
       - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-    - email-addresses:
+      email-addresses:
       - name@example.com
       type: person
-      name: "[SAMPLE]Person Name 6"
+    - name: "[SAMPLE]Person Name 6"
       props:
       - name: job-title
         value: Individual's Title
       uuid: 4fded5fd-7a65-47ea-bd76-df57c46e27d1
       addresses:
-      - state: ST
-        city: City
-        country: US
-        addr-lines:
+      - addr-lines:
         - Address Line
         postal-code: "00000"
         type: work
+        state: ST
+        city: City
+        country: US
       telephone-numbers:
       - number: "2020000006"
       member-of-organizations:
       - 78992555-4a99-4eaa-868c-f2c249679dd3
-    - email-addresses:
+      email-addresses:
       - name@example.com
       type: person
-      name: "[SAMPLE]Person Name 7"
+    - name: "[SAMPLE]Person Name 7"
       props:
       - name: job-title
         value: Individual's Title
       uuid: db234cb7-1776-425c-9ac4-b067c1723011
       addresses:
-      - state: ST
-        city: City
-        country: US
-        addr-lines:
+      - addr-lines:
         - Address Line
         postal-code: "00000"
         type: work
+        state: ST
+        city: City
+        country: US
       telephone-numbers:
       - number: "2020000007"
       member-of-organizations:
       - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-    - type: organization
-      name: "[SAMPLE] IT Department"
+      email-addresses:
+      - name@example.com
+      type: person
+    - name: "[SAMPLE] IT Department"
       uuid: b306f5af-b93a-4a7f-a2b2-37a44fc92a79
-    - type: organization
-      name: "[SAMPLE]Security Team"
+      type: organization
+    - name: "[SAMPLE]Security Team"
       uuid: 59cdc953-5902-4fa4-a878-f3163854624c
+      type: organization
     version: fedramp2.0.0-oscal1.0.4
-    published: 2023-08-31T00:00:00Z
-    remarks: |-
-      This OSCAL-based FedRAMP SSP Template can be used for the FedRAMP Low, Moderate, and High baselines.
+  back-matter:
+    resources:
+    - props:
+      - class: collection
+        name: dataset
+        value: Special Publication
+      - class: name
+        name: dataset
+        value: 800-53
+      - class: version
+        name: dataset
+        value: 5.0.2
+      - class: organization
+        name: dataset
+        value: gov.nist.csrc
+      remarks: "This \"resolution resource\" is used by FedRAMP as a local, authoritative indicator of what version SSP (rev 4 or rev 5) this OSCAL document is for."
+      uuid: ace2963d-ecb4-4be5-bdd0-1f6fd7610f41
+      title: Resolution Resource
+    - description: SSP Signature
+      props:
+      - name: type
+        ns: https://fedramp.gov/ns/oscal
+        value: signed-ssp
+      remarks: |-
+        FedRAMP is formulating guidelines for handling digital/electronic signatures in OSCAL, and welcome feedback on solutions.
 
-      Guidance for OSCAL-based FedRAMP Tailored Low Impact - Software as a Service (LI-SaaS) content has not yet been developed.
-    roles:
-    - description: The FedRAMP PMO resides within GSA and supports agencies and cloud service providers through the FedRAMP authorization process and maintains a secure repository of FedRAMP authorizations to enable reuse of security packages.
-      id: fedramp-pmo
-      title: FedRAMP Program Management Office
-    - description: "Members of the JAB include the chief information officers (CIOs) from the Department of Defense, Department of Homeland Security, and General Services Administration. The JAB serves as the primary governance and decision-making body for FedRAMP."
-      id: fedramp-jab
-      title: FedRAMP Program Management Office
-    - description: "The organization that prepared this SSP. If developed in-house, this is the CSP itself."
-      id: prepared-by
-      title: Prepared By
-    - description: The organization for which this SSP was prepared. Typically the CSP.
-      id: prepared-for
-      title: Prepared For
-    - description: The individual or individuals accountable for the accuracy of this SSP.
-      id: content-approver
-      title: System Security Plan Approval
-    - short-name: CSP
-      id: cloud-service-provider
-      title: Cloud Service Provider
-    - description: The individual within the CSP who is ultimately accountable for everything related to this system.
-      id: system-owner
-      title: Information System Owner
-    - description: The individual or individuals who must grant this system an authorization to operate.
-      id: authorizing-official
-      title: Authorizing Official
-    - description: The individual representing the authorizing official.
-      id: authorizing-official-poc
-      title: Authorizing Official's Point of Contact
-    - description: The highest level manager who responsible for system operation on behalf of the System Owner.
-      id: system-poc-management
-      title: Information System Management Point of Contact (POC)
-    - description: The individual or individuals leading the technical operation of the system.
-      id: system-poc-technical
-      title: Information System Technical Point of Contact
-    - description: "A general point of contact for the system, designated by the system owner."
-      id: system-poc-other
-      title: General Point of Contact (POC)
-    - description: The individual accountable for the security posture of the system on behalf of the system owner.
-      id: information-system-security-officer
-      title: System Information System Security Officer (or Equivalent)
-    - description: The individual responsible for the privacy threshold analysis and if necessary the privacy impact assessment.
-      id: privacy-poc
-      title: Privacy Official's Point of Contact
-    - id: asset-owner
-      title: Owner of an inventory item within the system.
-    - id: asset-administrator
-      title: Administrative responsibility an inventory item within the system.
-    - description: The point of contact for an interconnection on behalf of this system.
-      id: isa-poc-local
-      title: ICA POC (Local)
-      remarks: Remove this role if there are no ICAs.
-    - description: The point of contact for an interconnection on behalf of this external system to which this system connects.
-      id: isa-poc-remote
-      title: ICA POC (Remote)
-      remarks: Remove this role if there are no ICAs.
-    - description: Responsible for signing an interconnection security agreement on behalf of this system.
-      id: isa-authorizing-official-local
-      title: ICA Signatory (Local)
-      remarks: Remove this role if there are no ICAs.
-    - description: Responsible for signing an interconnection security agreement on behalf of the external system to which this system connects.
-      id: isa-authorizing-official-remote
-      title: ICA Signatory (Remote)
-      remarks: Remove this role if there are no ICAs.
-    - description: Any consultants involved with developing or maintaining this content.
-      id: consultant
-      title: Consultant
-    - description: Represents any customers of this system as may be necessary for assigning customer responsibility.
-      id: customer
-      title: Customer
-    - description: This is a sample role.
-      id: admin-unix
-      title: "\\[SAMPLE\\]Unix Administrator"
-    - description: This is a sample role.
-      id: admin-client
-      title: "\\[SAMPLE\\]Client Administrator"
-    title: FedRAMP System Security Plan (SSP)
+        For now, FedRAMP recommends one of the following:
+
+        - Render the OSCAL SSP content as a PDF that is digitally signed and attached.
+        - Render the OSCAL SSP content as a printed page that is physically signed, scanned, and attached.
+
+        If your organization prefers another approach, please seek prior approval from the FedRAMP PMO.
+      base64:
+        value: "00000000"
+        filename: ssp.pdf
+        media-type: application/pdf
+      uuid: 2ff2eb61-d8b3-4d17-8257-727468329c82
+      rlinks:
+      - href: ./signed-ssp.pdf
+        media-type: application/pdf
+    - props:
+      - name: type
+        ns: https://fedramp.gov/ns/oscal
+        value: fedramp-citations
+      remarks: Must be present in a FedRAMP SAP.
+      base64:
+        value: "00000000"
+        filename: SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx
+        media-type: application/vnd.ms-excel
+      uuid: 985475ee-d4d6-4581-8fdf-d84d3d8caa48
+      rlinks:
+      - href: https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx
+      title: FedRAMP Applicable Laws and Regulations
+    - props:
+      - name: type
+        ns: https://fedramp.gov/ns/oscal
+        value: fedramp-acronyms
+      remarks: Must be present in a FedRAMP SSP.
+      base64:
+        value: "00000000"
+        filename: FedRAMP_Master_Acronym_and_Glossary.pdf
+        media-type: application/pdf
+      uuid: 1a23a771-d481-4594-9a1a-71d584fa4123
+      rlinks:
+      - href: https://www.fedramp.gov/assets/resources/documents/FedRAMP_Master_Acronym_and_Glossary.pdf
+      title: FedRAMP Master Acronym and Glossary
+    - description: AC Policy document
+      props:
+      - class: ac
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: 330bac69-5840-479a-981b-afda037d7a6f
+      rlinks:
+      - href: ./documents/policies/sample_AC_policy.pdf
+        media-type: application/pdf
+      title: Access Control Policy Title
+    - description: AT Policy document
+      props:
+      - class: at
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: 184d2fc9-6c9e-4302-acb3-8c24f6843c79
+      rlinks:
+      - href: ./documents/policies/sample_AT_policy.pdf
+        media-type: application/pdf
+      title: Awareness and Training Policy Title
+    - description: AU Policy document
+      props:
+      - class: au
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: 64977a9e-cd62-4c04-891e-7943e9046179
+      rlinks:
+      - href: ./documents/policies/sample_AU_policy.pdf
+        media-type: application/pdf
+      title: Audit and Accountability Policy Title
+    - description: CA Policy document
+      props:
+      - class: ca
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: f81fe324-844f-4b53-b915-8c72b6fde8cf
+      rlinks:
+      - href: ./documents/policies/sample_CA_policy.pdf
+        media-type: application/pdf
+      title: Security Assessment and Authorization Policy Title
+    - description: CM Policy document
+      props:
+      - class: cm
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: eb4467a5-c3ca-4cac-9181-557886d7d1dc
+      rlinks:
+      - href: ./documents/policies/sample_CM_policy.pdf
+        media-type: application/pdf
+      title: Configuration Management Policy Title
+    - description: CP Policy document
+      props:
+      - class: cp
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: 4c4395c5-a126-4b77-8c62-cac98c563915
+      rlinks:
+      - href: ./documents/policies/sample_CP_policy.pdf
+        media-type: application/pdf
+      title: Contingency Planning Policy Title
+    - description: IA Policy document
+      props:
+      - class: ia
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: f6070655-ac54-4c4c-847e-d073bcf23baf
+      rlinks:
+      - href: ./documents/policies/sample_IA_policy.pdf
+        media-type: application/pdf
+      title: Identification and Authentication Policy Title
+    - description: IR Policy document
+      props:
+      - class: ir
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: e39a9f53-984b-429f-a062-a815228c6687
+      rlinks:
+      - href: ./documents/policies/sample_IR_policy.pdf
+        media-type: application/pdf
+      title: Incident Response Policy Title
+    - description: MA Policy document
+      props:
+      - class: ma
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: 8b009787-771c-4b02-9a8f-3f3b581e9464
+      rlinks:
+      - href: ./documents/policies/sample_MA_policy.pdf
+        media-type: application/pdf
+      title: Maintenance Policy Title
+    - description: MP Policy document
+      props:
+      - class: mp
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: 776b9f3b-2896-4118-87d9-7a5e62149afb
+      rlinks:
+      - href: ./documents/policies/sample_MP_policy.pdf
+        media-type: application/pdf
+      title: Media Protection Policy Title
+    - description: PE Policy document
+      props:
+      - class: pe
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: a54bc32c-6bae-4c89-b5b4-9299c56893fb
+      rlinks:
+      - href: ./documents/policies/sample_PE_policy.pdf
+        media-type: application/pdf
+      title: Physical and Environmental Protection Policy Title
+    - description: PL Policy document
+      props:
+      - class: pl
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: 9de28452-4b02-4b49-b316-59142a7633c1
+      rlinks:
+      - href: ./documents/policies/sample_PL_policy.pdf
+        media-type: application/pdf
+      title: Planning Policy Title
+    - description: PS Policy document
+      props:
+      - class: ps
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: 34f3388e-e5b2-4d85-b050-19f62dba6d7e
+      rlinks:
+      - href: ./documents/policies/sample_PS_policy.pdf
+      title: Personnel Security Policy Title
+    - description: RA Policy document
+      props:
+      - class: ra
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: 53fbc1b6-0f3c-4298-9554-da5acfef3a5a
+      rlinks:
+      - href: ./documents/policies/sample_RA_policy.pdf
+      title: Risk Adjustment Policy Title
+    - description: SA Policy document
+      props:
+      - class: sa
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: f969f849-8920-4325-9abe-dcc7133518d6
+      rlinks:
+      - href: ./documents/policies/sample_SA_policy.pdf
+      title: System and Service Acquisition Policy Title
+    - description: SC Policy document
+      props:
+      - class: sc
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: 03ae437f-fffc-48e3-81f1-4040fce2d6e3
+      rlinks:
+      - href: ./documents/policies/sample_SC_policy.pdf
+      title: System and Communications Protection Policy Title
+    - description: SI Policy document
+      props:
+      - class: si
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: 7a5ee0b7-402c-487f-8ac7-e1735b991674
+      rlinks:
+      - href: ./documents/policies/sample_SI_policy.pdf
+      title: System and Information Integrity Policy Title
+    - description: SR Policy document
+      props:
+      - class: sr
+        name: type
+        value: policy
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Policy Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: 7d440e15-ca4d-4e4a-8fcc-50bb05ffa2fd
+      rlinks:
+      - href: ./documents/policies/sample_SR_policy.pdf
+      title: Supply Chain Risk Policy Title
+    - description: AC Procedure document
+      props:
+      - class: ac
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: e1fa7a30-efb8-4738-b4e2-7fbeb86644cd
+      rlinks:
+      - href: ./documents/policies/sample_AC_procedure.pdf
+        media-type: application/pdf
+      title: Access Control Procedure Title
+    - description: AT Procedure document
+      props:
+      - class: at
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: ce9f3af2-f4bc-47b5-bc25-df52a917748b
+      rlinks:
+      - href: ./documents/policies/sample_AT_procedure.pdf
+        media-type: application/pdf
+      title: Awareness and Training Procedure Title
+    - description: AU Procedure document
+      props:
+      - class: au
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: b1cdaad8-2127-4563-b248-3d2777307c4f
+      rlinks:
+      - href: ./documents/policies/sample_AU_procedure.pdf
+        media-type: application/pdf
+      title: Audit and Accountability Procedure Title
+    - description: CA Procedure document
+      props:
+      - class: ca
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: a552272e-803c-40db-895c-5de35c76d871
+      rlinks:
+      - href: ./documents/policies/sample_CA_procedure.pdf
+        media-type: application/pdf
+      title: Security Assessment and Authorization Procedure Title
+    - description: CM Procedure document
+      props:
+      - class: cm
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: b4c87da0-0f96-4231-a3c1-2d1a9d0b99a3
+      rlinks:
+      - href: ./documents/policies/sample_CM_procedure.pdf
+        media-type: application/pdf
+      title: Configuration Management Procedure Title
+    - description: CP Procedure document
+      props:
+      - class: cp
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: 2f1cb360-a743-4ebe-915a-27f215f44dc5
+      rlinks:
+      - href: ./documents/policies/sample_CP_procedure.pdf
+        media-type: application/pdf
+      title: Contingency Planning Procedure Title
+    - description: IA Procedure document
+      props:
+      - class: ia
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: 08a6ab70-8c56-4713-ae9c-81fbb6594943
+      rlinks:
+      - href: ./documents/policies/sample_IA_procedure.pdf
+        media-type: application/pdf
+      title: Identification and Authentication Procedure Title
+    - description: IR Procedure document
+      props:
+      - class: ir
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: 649eac51-c21b-4cb2-bd10-7828e0522e50
+      rlinks:
+      - href: ./documents/policies/sample_IR_procedure.pdf
+        media-type: application/pdf
+      title: Incident Response Procedure Title
+    - description: MA Procedure document
+      props:
+      - class: ma
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: fd29a63b-2a08-4d56-b91e-aadfa4c0f55b
+      rlinks:
+      - href: ./documents/policies/sample_MA_procedure.pdf
+        media-type: application/pdf
+      title: Maintenance Procedure Title
+    - description: MP Procedure document
+      props:
+      - class: mp
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: 908175c9-7502-4ab4-b469-80450ed18a8b
+      rlinks:
+      - href: ./documents/policies/sample_MP_procedure.pdf
+        media-type: application/pdf
+      title: Media Protection Procedure Title
+    - description: PE Procedure document
+      props:
+      - class: pe
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: 22522abe-fd09-4476-b09f-c6422b72bf12
+      rlinks:
+      - href: ./documents/policies/sample_PE_procedure.pdf
+        media-type: application/pdf
+      title: Physical and Environmental Protection Procedure Title
+    - description: PL Procedure document
+      props:
+      - class: pl
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: 937dfbb6-9d82-4974-be85-23f1e4b130d8
+      rlinks:
+      - href: ./documents/policies/sample_PL_procedure.pdf
+        media-type: application/pdf
+      title: Planning Procedure Title
+    - description: PS Procedure document
+      props:
+      - class: ps
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: 552dec25-74a9-4cbe-b3b0-f865d99bfa9d
+      rlinks:
+      - href: ./documents/policies/sample_PS_procedure.pdf
+      title: Personnel Security Procedure Title
+    - description: RA Procedure document
+      props:
+      - class: ra
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: 1a852337-d28f-4a66-a367-68aebec35698
+      rlinks:
+      - href: ./documents/policies/sample_RA_procedure.pdf
+      title: Risk Adjustment Procedure Title
+    - description: SA Procedure document
+      props:
+      - class: sa
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: 4a59a06d-3b1b-410f-b067-3fe1dab083f2
+      rlinks:
+      - href: ./documents/policies/sample_SA_procedure.pdf
+      title: System and Service Acquisition Procedure Title
+    - description: SC Procedure document
+      props:
+      - class: sc
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: 936093ce-a567-4592-8fcc-eeeef024cdd4
+      rlinks:
+      - href: ./documents/policies/sample_SC_procedure.pdf
+      title: System and Communications Protection Procedure Title
+    - description: SI Procedure document
+      props:
+      - class: si
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_procedure.pdf
+        media-type: application/pdf
+      uuid: ac953d62-a392-499f-b832-b90b325cceb6
+      rlinks:
+      - href: ./documents/policies/sample_SI_procedure.pdf
+      title: System and Information Integrity Procedure Title
+    - description: SR Procedure document
+      props:
+      - class: sr
+        name: type
+        value: procedure
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_policy.pdf
+        media-type: application/pdf
+      uuid: b2aaedad-5ff0-4b0c-b490-bbe64b2033b0
+      rlinks:
+      - href: ./documents/policies/sample_SR_procedure.pdf
+      title: Supply Chain Risk Procedure Title
+    - description: User's Guide
+      props:
+      - name: type
+        value: users-guide
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      remarks: |-
+        Table 12-1 Attachments: User's Guide Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      uuid: 90a128ac-c850-48f6-8fff-a55692f80b41
+      rlinks:
+      - href: ./documents/guides/sample_guide.pdf
+      title: User's Guide
+    - description: Rules of Behavior
+      props:
+      - name: type
+        value: rules-of-behavior
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Rules of Behavior (ROB)
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: rob.docx
+        media-type: application/msword
+      uuid: 489112e1-57f2-4c29-8dd0-95b1442fbf3b
+      rlinks:
+      - href: ./documents/rob.docx
+        media-type: application/msword
+      title: Document Title
+    - description: Contingency Plan (CP)
+      props:
+      - class: information-system-contingency-plan
+        name: type
+        value: plan
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Contingency Plan (CP) Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: cp.docx
+        media-type: application/msword
+      uuid: c7860916-f2f4-43aa-b578-d48cf8e6d381
+      rlinks:
+      - href: ./documents/cp.docx
+        media-type: application/msword
+      title: Document Title
+    - description: Configuration Management (CM) Plan
+      props:
+      - class: configuration-management-plan
+        name: type
+        value: plan
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Configuration Management (CM) Plan Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: CM_Plan.docx
+        media-type: application/msword
+      uuid: ab56cf27-0dae-40d6-89b7-d750137309af
+      rlinks:
+      - href: ./documents/CM_Plan.docx
+        media-type: application/msword
+      title: Document Title
+    - description: Incident Response (IR) Plan
+      props:
+      - class: incident-response-plan
+        name: type
+        value: plan
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Incident Response (IR) Plan Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: IR_Plan.docx
+        media-type: application/msword
+      uuid: 3f771ab5-8016-4571-98d1-f0fb962e15e2
+      rlinks:
+      - href: ./documents/IR_Plan.docx
+        media-type: application/msword
+      title: Document Title
+    - document-ids:
+      - scheme: https://www.doi.org/
+        identifier: Identification Number
+      props:
+      - name: type
+        value: law
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      base64:
+        value: "00000000"
+        filename: document.pdf
+        media-type: application/pdf
+      uuid: a8a0cc81-800f-479f-93d3-8b8743d9b98d
+      rlinks:
+      - href: https://example.com/path/to/document.pdf
+      title: "\\[SAMPLE\\] Laws and Regulations"
+    - description: Continuous Monitoring Plan
+      props:
+      - class: continuous-monitoring-plan
+        name: type
+        value: plan
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Continuous Monitoring Plan Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: ConMon_Plan.docx
+        media-type: application/msword
+      uuid: 47ba08df-d619-4f18-9daf-78d416eede79
+      rlinks:
+      - href: ./documents/ConMon_Plan.docx
+        media-type: application/msword
+      title: Document Title
+    - props:
+      - name: published
+        value: 2023-05-31T00:00:00Z
+      - name: version
+        value: Document Version
+      - class: poam
+        name: type
+        value: plan
+      base64:
+        value: "00000000"
+        filename: SAMPLE_POAM_20230531.xml
+        media-type: application/xml
+      uuid: e33c2763-d661-4638-a630-bd9138af1238
+      rlinks:
+      - href: ./documents/POAMs/SAMPLE_POAM_20230531.xml
+      title: "\\[SAMPLE\\]Plan of Actions and Milestones (POAM)"
+    - description: Supply Chain Risk Management Plan
+      props:
+      - class: scrmp
+        name: type
+        value: plan
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: |-
+        Table 12-1 Attachments: Procedure Attachment
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+      base64:
+        value: "00000000"
+        filename: sample_SCRMP.pdf
+        media-type: application/pdf
+      uuid: bdbb4fef-505f-466b-810a-0a5ba03e9fc9
+      rlinks:
+      - href: ./documents/plans/sample_SCRMP_procedure.pdf
+      title: Supply Chain Risk Management Plan
+    - props:
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      - class: isa
+        name: type
+        value: agreement
+      base64:
+        value: "00000000"
+        filename: ISA-1.docx
+        media-type: application/msword
+      uuid: 9d6cf2b4-8e88-4040-a33c-7bc206553a1a
+      rlinks:
+      - href: ./documents/ISAs/ISA-1.docx
+      title: "\\[SAMPLE\\]Interconnection Security Agreement Title"
+    - description: FedRAMP Logo
+      props:
+      - name: type
+        ns: https://fedramp.gov/ns/oscal
+        value: fedramp-logo
+      remarks: Must be present in a FedRAMP SSP.
+      base64:
+        value: "00000000"
+        filename: logo-main-fedramp.png
+        media-type: image/png
+      uuid: a2381e87-3d04-4108-a30b-b4d2f36d001f
+      rlinks:
+      - href: https://www.fedramp.gov/assets/img/logo-main-fedramp.png
+      title: FedRAMP Logo
+    - description: CSP Logo
+      remarks: |-
+        May use `rlink` with a relative path, or embedded as `base64`.
+
+        FedRAMP prefers `base64` for images and diagrams.
+
+        Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
+      base64:
+        value: "00000000"
+        filename: logo.png
+        media-type: image/png
+      uuid: 31a46c4f-2959-4287-bc1c-67297d7da60b
+      rlinks:
+      - href: ./img/logo.png
+        media-type: image/png
+      title: CSP Logo
+    - description: 3PAO Logo
+      remarks: |-
+        May use `rlink` with a relative path, or embedded as `base64`.
+
+        FedRAMP prefers `base64` for images and diagrams.
+
+        Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
+      base64:
+        value: "00000000"
+        filename: logo.png
+        media-type: image/png
+      uuid: 2c1747d6-874a-49a2-8488-2fd9735416bf
+      rlinks:
+      - href: ./img/logo.png
+        media-type: image/png
+      title: 3PAO Logo
+    - description: The primary authorization boundary diagram.
+      remarks: |-
+        Section 8.1, Figure 8-1 Authorization Boundary Diagram (graphic)
+
+        This should be referenced in the system-characteristics/authorization-boundary/diagram/link/@href flag using a value of "#d2eb3c18-6754-4e3a-a933-03d289e3fad5"
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+
+        FedRAMP prefers `base64` for images and diagrams.
+
+        Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
+      base64:
+        value: "00000000"
+        filename: logo.png
+        media-type: image/png
+      uuid: d2eb3c18-6754-4e3a-a933-03d289e3fad5
+      rlinks:
+      - href: ./diagrams/boundary.png
+      title: Boundary Diagram
+    - description: The primary network diagram.
+      remarks: |-
+        Section 8.1, Figure 8-2 Network Diagram (graphic)
+
+        This should be referenced in the system-characteristics/network-architecture/diagram/link/@href flag using a value of "#61081e81-850b-43c1-bf43-1ecbddcb9e7f"
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+
+        FedRAMP prefers `base64` for images and diagrams.
+
+        Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
+      base64:
+        value: "00000000"
+        filename: network.png
+        media-type: image/png
+      uuid: 61081e81-850b-43c1-bf43-1ecbddcb9e7f
+      rlinks:
+      - href: ./diagrams/network.png
+      title: Network Diagram
+    - description: The primary data flow diagram.
+      remarks: |-
+        Section 8.1, Figure 8-3 Data Flow Diagram (graphic)
+
+        This should be referenced in the system-characteristics/data-flow/diagram/link/@href flag using a value of "#ac5d7535-f3b8-45d3-bf3b-735c82c64547"
+
+        May use `rlink` with a relative path, or embedded as `base64`.
+
+        FedRAMP prefers `base64` for images and diagrams.
+
+        Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
+      base64:
+        value: "00000000"
+        filename: dataflow.png
+        media-type: image/png
+      uuid: ac5d7535-f3b8-45d3-bf3b-735c82c64547
+      rlinks:
+      - href: ./diagrams/dataflow.png
+      title: Data Flow Diagram
+    - description: Separation of Duties Matrix
+      props:
+      - name: type
+        ns: https://fedramp.gov/ns/oscal
+        value: separation-of-duties-matrix
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      remarks: "May use `rlink` with a relative path, or embedded as `base64`."
+      base64:
+        value: "00000000"
+        filename: Sep_Matrix.docx
+        media-type: application/msword
+      uuid: 49fb4631-1da2-41ca-b0b3-e1b1006d4025
+      rlinks:
+      - href: ./documents/Sep_Matrix.docx
+        media-type: application/msword
+      title: Separation of Duties Matrix
