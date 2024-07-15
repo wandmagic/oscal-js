@@ -1,500 +1,478 @@
 ---
 profile:
-  uuid: ece2fd2d-87f7-476a-a295-6e1ec8153771
-  back-matter:
-    resources:
-    - uuid: 985475ee-d4d6-4581-8fdf-d84d3d8caa48
-      rlinks:
-      - href: https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx
-      title: FedRAMP Applicable Laws and Regulations
-    - uuid: a2381e87-3d04-4108-a30b-b4d2f36d001f
-      rlinks:
-      - href: https://www.fedramp.gov/assets/img/logo-main-fedramp.png
-      description: FedRAMP Logo
-      props:
-      - name: type
-        value: logo
-    - uuid: 051a77c1-b61d-4995-8275-dacfe688d510
-      rlinks:
-      - href: NIST_SP-800-53_rev5_catalog.xml
-        media-type: application/oscal+xml
-      title: NIST Special Publication (SP) 800-53 revision 5
-      props:
-      - name: version
-        value: 5.1.1
   modify:
     set-parameters:
-    - constraints:
+    - param-id: ac-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: ac-01_odp.05
-    - constraints:
+    - param-id: ac-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: ac-01_odp.07
-    - constraints:
+    - param-id: ac-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: ac-01_odp.08
-    - constraints:
+    - param-id: ac-02_odp.06
+      constraints:
       - description: twenty-four (24) hours
-      param-id: ac-02_odp.06
-    - constraints:
+    - param-id: ac-02_odp.07
+      constraints:
       - description: eight (8) hours
-      param-id: ac-02_odp.07
-    - constraints:
+    - param-id: ac-02_odp.08
+      constraints:
       - description: eight (8) hours
-      param-id: ac-02_odp.08
-    - constraints:
+    - param-id: ac-02_odp.10
+      constraints:
       - description: at least annually
-      param-id: ac-02_odp.10
-    - constraints:
+    - param-id: ac-08_odp.01
+      constraints:
       - description: see additional Requirements and Guidance
-      param-id: ac-08_odp.01
-    - constraints:
+    - param-id: ac-08_odp.02
+      constraints:
       - description: see additional Requirements and Guidance
-      param-id: ac-08_odp.02
-    - constraints:
+    - param-id: ac-22_odp
+      constraints:
       - description: at least quarterly
-      param-id: ac-22_odp
-    - constraints:
+    - param-id: at-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: at-01_odp.05
-    - constraints:
+    - param-id: at-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: at-01_odp.07
-    - constraints:
+    - param-id: at-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: at-01_odp.08
-    - constraints:
+    - param-id: at-2_prm_1
+      constraints:
       - description: at least annually
-      param-id: at-2_prm_1
-    - constraints:
+    - param-id: at-02_odp.06
+      constraints:
       - description: at least annually
-      param-id: at-02_odp.06
-    - constraints:
+    - param-id: at-03_odp.03
+      constraints:
       - description: at least annually
-      param-id: at-03_odp.03
-    - constraints:
+    - param-id: at-03_odp.04
+      constraints:
       - description: at least annually
-      param-id: at-03_odp.04
-    - constraints:
+    - param-id: at-04_odp
+      constraints:
       - description: at least one (1) year or 1 year after completion of a specific training program
-      param-id: at-04_odp
-    - constraints:
+    - param-id: au-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: au-01_odp.05
-    - constraints:
+    - param-id: au-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: au-01_odp.07
-    - constraints:
+    - param-id: au-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: au-01_odp.08
-    - constraints:
+    - param-id: au-02_odp.01
+      constraints:
       - description: "successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events. For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes"
-      param-id: au-02_odp.01
-    - constraints:
+    - param-id: au-2_prm_2
+      constraints:
       - description: organization-defined subset of the auditable events defined in AU-2a to be audited continually for each identified event.
-      param-id: au-2_prm_2
-    - constraints:
+    - param-id: au-02_odp.04
+      constraints:
       - description: annually and whenever there is a change in the threat environment
-      param-id: au-02_odp.04
-    - constraints:
+    - param-id: au-05_odp.03
+      constraints:
       - description: overwrite oldest record
-      param-id: au-05_odp.03
-    - constraints:
+    - param-id: au-06_odp.01
+      constraints:
       - description: at least weekly
-      param-id: au-06_odp.01
-    - constraints:
+    - param-id: au-08_odp
+      constraints:
       - description: one second granularity of time measurement
-      param-id: au-08_odp
-    - constraints:
+    - param-id: au-11_odp
+      constraints:
       - description: a time period in compliance with M-21-31
-      param-id: au-11_odp
-    - constraints:
+    - param-id: au-12_odp.01
+      constraints:
       - description: all information system and network components where audit capability is deployed/available
-      param-id: au-12_odp.01
-    - constraints:
+    - param-id: ca-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: ca-01_odp.05
-    - constraints:
+    - param-id: ca-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: ca-01_odp.07
-    - constraints:
+    - param-id: ca-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: ca-01_odp.08
-    - constraints:
+    - param-id: ca-02_odp.01
+      constraints:
       - description: at least annually
-      param-id: ca-02_odp.01
-    - constraints:
+    - param-id: ca-02_odp.02
+      constraints:
       - description: individuals or roles to include FedRAMP PMO
-      param-id: ca-02_odp.02
-    - constraints:
+    - param-id: ca-03_odp.03
+      constraints:
       - description: at least annually and on input from JAB/AO
-      param-id: ca-03_odp.03
-    - constraints:
+    - param-id: ca-05_odp
+      constraints:
       - description: at least monthly
-      param-id: ca-05_odp
-    - constraints:
+    - param-id: ca-06_odp
+      constraints:
       - description: in accordance with OMB A-130 requirements or when a significant change occurs
-      param-id: ca-06_odp
-    - constraints:
+    - param-id: ca-7_prm_4
+      constraints:
       - description: to include JAB/AO
-      param-id: ca-7_prm_4
-    - constraints:
+    - param-id: ca-08_odp.01
+      constraints:
       - description: at least annually
-      param-id: ca-08_odp.01
-    - constraints:
+    - param-id: cm-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: cm-01_odp.05
-    - constraints:
+    - param-id: cm-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: cm-01_odp.07
-    - constraints:
+    - param-id: cm-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: cm-01_odp.08
-    - constraints:
+    - param-id: cm-02_odp.01
+      constraints:
       - description: at least annually and when a significant change occurs
-      param-id: cm-02_odp.01
-    - constraints:
+    - param-id: cm-02_odp.02
+      constraints:
       - description: to include when directed by the JAB
-      param-id: cm-02_odp.02
-    - constraints:
+    - param-id: cm-08_odp.02
+      constraints:
       - description: at least monthly
-      param-id: cm-08_odp.02
-    - constraints:
+    - param-id: cm-11_odp.03
+      constraints:
       - description: Continuously (via CM-7 (5))
-      param-id: cm-11_odp.03
-    - constraints:
+    - param-id: cp-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: cp-01_odp.05
-    - constraints:
+    - param-id: cp-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: cp-01_odp.07
-    - constraints:
+    - param-id: cp-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: cp-01_odp.08
-    - constraints:
+    - param-id: cp-02_odp.05
+      constraints:
       - description: at least annually
-      param-id: cp-02_odp.05
-    - constraints:
+    - param-id: cp-03_odp.01
+      constraints:
       - description: \*See Additional Requirements
-      param-id: cp-03_odp.01
-    - constraints:
+    - param-id: cp-03_odp.02
+      constraints:
       - description: at least annually
-      param-id: cp-03_odp.02
-    - constraints:
+    - param-id: cp-03_odp.03
+      constraints:
       - description: at least annually
-      param-id: cp-03_odp.03
-    - constraints:
+    - param-id: cp-04_odp.01
+      constraints:
       - description: at least every 3 years
-      param-id: cp-04_odp.01
-    - constraints:
+    - param-id: cp-4_prm_2
+      constraints:
       - description: classroom exercise/table top written tests
-      param-id: cp-4_prm_2
-    - constraints:
+    - param-id: cp-09_odp.02
+      constraints:
       - description: daily incremental; weekly full
-      param-id: cp-09_odp.02
-    - constraints:
+    - param-id: cp-09_odp.03
+      constraints:
       - description: daily incremental; weekly full
-      param-id: cp-09_odp.03
-    - constraints:
+    - param-id: cp-09_odp.04
+      constraints:
       - description: daily incremental; weekly full
-      param-id: cp-09_odp.04
-    - constraints:
+    - param-id: ia-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: ia-01_odp.05
-    - constraints:
+    - param-id: ia-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: ia-01_odp.07
-    - constraints:
+    - param-id: ia-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: ia-01_odp.08
-    - constraints:
+    - param-id: ia-04_odp.01
+      constraints:
       - description: "at a minimum, the ISSO (or similar role within the organization)"
-      param-id: ia-04_odp.01
-    - constraints:
+    - param-id: ia-04_odp.02
+      constraints:
       - description: at least two (2) years
-      param-id: ia-04_odp.02
-    - constraints:
+    - param-id: ir-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: ir-01_odp.05
-    - constraints:
+    - param-id: ir-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: ir-01_odp.07
-    - constraints:
+    - param-id: ir-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: ir-01_odp.08
-    - constraints:
+    - param-id: ir-02_odp.01
+      constraints:
       - description: "ten (10) days for privileged users, thirty (30) days for Incident Response roles"
-      param-id: ir-02_odp.01
-    - constraints:
+    - param-id: ir-02_odp.02
+      constraints:
       - description: at least annually
-      param-id: ir-02_odp.02
-    - constraints:
+    - param-id: ir-02_odp.03
+      constraints:
       - description: at least annually
-      param-id: ir-02_odp.03
-    - constraints:
+    - param-id: ir-06_odp.01
+      constraints:
       - description: US-CERT incident reporting timelines as specified in NIST Special Publication 800-61 (as amended)
-      param-id: ir-06_odp.01
-    - constraints:
+    - param-id: ir-08_odp.02
+      constraints:
       - description: at least annually
-      param-id: ir-08_odp.02
-    - constraints:
+    - param-id: ir-08_odp.04
+      constraints:
       - description: see additional FedRAMP Requirements and Guidance
-      param-id: ir-08_odp.04
-    - constraints:
+    - param-id: ir-8_prm_5
+      constraints:
       - description: see additional FedRAMP Requirements and Guidance
-      param-id: ir-8_prm_5
-    - constraints:
+    - param-id: ma-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: ma-01_odp.05
-    - constraints:
+    - param-id: ma-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: ma-01_odp.07
-    - constraints:
+    - param-id: ma-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: ma-01_odp.08
-    - constraints:
+    - param-id: mp-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: mp-01_odp.05
-    - constraints:
+    - param-id: mp-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: mp-01_odp.07
-    - constraints:
+    - param-id: mp-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: mp-01_odp.08
-    - constraints:
+    - param-id: mp-6_prm_1
+      constraints:
       - description: "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
-      param-id: mp-6_prm_1
-    - constraints:
+    - param-id: pe-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: pe-01_odp.05
-    - constraints:
+    - param-id: pe-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: pe-01_odp.07
-    - constraints:
+    - param-id: pe-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: pe-01_odp.08
-    - constraints:
+    - param-id: pe-02_odp
+      constraints:
       - description: at least annually
-      param-id: pe-02_odp
-    - constraints:
+    - param-id: pe-03_odp.02
+      constraints:
       - description: CSP defined physical access control systems/devices AND guards
-      param-id: pe-03_odp.02
-    - constraints:
+    - param-id: pe-03_odp.06
+      constraints:
       - description: in all circumstances within restricted access area where the information system resides
-      param-id: pe-03_odp.06
-    - constraints:
+    - param-id: pe-03_odp.07
+      constraints:
       - description: at least annually
-      param-id: pe-03_odp.07
-    - constraints:
+    - param-id: pe-3_prm_9
+      constraints:
       - description: at least annually
-      param-id: pe-3_prm_9
-    - constraints:
+    - param-id: pe-06_odp.01
+      constraints:
       - description: at least monthly
-      param-id: pe-06_odp.01
-    - constraints:
+    - param-id: pe-08_odp.01
+      constraints:
       - description: for a minimum of one (1) year
-      param-id: pe-08_odp.01
-    - constraints:
+    - param-id: pe-08_odp.02
+      constraints:
       - description: at least monthly
-      param-id: pe-08_odp.02
-    - constraints:
+    - param-id: pe-14_odp.01
+      constraints:
       - description: "consistent with American Society of Heating, Refrigerating and Air-conditioning Engineers (ASHRAE) document entitled Thermal Guidelines for Data Processing Environments"
-      param-id: pe-14_odp.01
-    - constraints:
+    - param-id: pe-14_odp.04
+      constraints:
       - description: continuously
-      param-id: pe-14_odp.04
-    - constraints:
+    - param-id: pe-16_prm_1
+      constraints:
       - description: all information system components
-      param-id: pe-16_prm_1
-    - constraints:
+    - param-id: pl-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: pl-01_odp.05
-    - constraints:
+    - param-id: pl-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: pl-01_odp.07
-    - constraints:
+    - param-id: pl-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: pl-01_odp.08
-    - constraints:
+    - param-id: pl-02_odp.03
+      constraints:
       - description: at least annually
-      param-id: pl-02_odp.03
-    - constraints:
+    - param-id: pl-04_odp.01
+      constraints:
       - description: at least every 3 years
-      param-id: pl-04_odp.01
-    - constraints:
+    - param-id: pl-04_odp.02
+      constraints:
       - description: at least annually and when the rules are revised or changed
-      param-id: pl-04_odp.02
-    - constraints:
+    - param-id: pl-08_odp
+      constraints:
       - description: at least annually and when a significant change occurs
-      param-id: pl-08_odp
-    - constraints:
+    - param-id: ps-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: ps-01_odp.05
-    - constraints:
+    - param-id: ps-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: ps-01_odp.07
-    - constraints:
+    - param-id: ps-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: ps-01_odp.08
-    - constraints:
+    - param-id: ps-02_odp
+      constraints:
       - description: at least every three years
-      param-id: ps-02_odp
-    - constraints:
+    - param-id: ps-3_prm_1
+      constraints:
       - description: |-
           for national security clearances; a reinvestigation is required during the fifth (5th) year for top secret security clearance, the tenth (10th) year for secret security clearance, and fifteenth (15th) year for confidential security clearance.
 
           For moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the fifth (5th) year. There is no reinvestigation for other moderate risk positions or any low risk positions
-      param-id: ps-3_prm_1
-    - constraints:
+    - param-id: ps-04_odp.01
+      constraints:
       - description: four (4) hours
-      param-id: ps-04_odp.01
-    - constraints:
+    - param-id: ps-05_odp.02
+      constraints:
       - description: twenty-four (24) hours
-      param-id: ps-05_odp.02
-    - constraints:
+    - param-id: ps-05_odp.04
+      constraints:
       - description: twenty-four (24) hours
-      param-id: ps-05_odp.04
-    - constraints:
+    - param-id: ps-06_odp.01
+      constraints:
       - description: at least annually
-      param-id: ps-06_odp.01
-    - constraints:
+    - param-id: ps-06_odp.02
+      constraints:
       - description: at least annually and any time there is a change to the user's level of access
-      param-id: ps-06_odp.02
-    - constraints:
+    - param-id: ps-07_odp.01
+      constraints:
       - description: "including access control personnel responsible for the system and/or facilities, as appropriate"
-      param-id: ps-07_odp.01
-    - constraints:
+    - param-id: ps-07_odp.02
+      constraints:
       - description: within twenty-four (24) hours
-      param-id: ps-07_odp.02
-    - constraints:
+    - param-id: ps-08_odp.01
+      constraints:
       - description: "at a minimum, the ISSO and/or similar role within the organization"
-      param-id: ps-08_odp.01
-    - constraints:
+    - param-id: ra-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: ra-01_odp.05
-    - constraints:
+    - param-id: ra-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: ra-01_odp.07
-    - constraints:
+    - param-id: ra-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: ra-01_odp.08
-    - constraints:
+    - param-id: ra-03_odp.01
+      constraints:
       - description: security assessment report
-      param-id: ra-03_odp.01
-    - constraints:
+    - param-id: ra-03_odp.03
+      constraints:
       - description: at least every three (3) years and when a significant change occurs
-      param-id: ra-03_odp.03
-    - constraints:
+    - param-id: ra-03_odp.05
+      constraints:
       - description: at least every three (3) years
-      param-id: ra-03_odp.05
-    - constraints:
+    - param-id: ra-5_prm_1
+      constraints:
       - description: monthly operating system/infrastructure; monthly web applications (including APIs) and databases
-      param-id: ra-5_prm_1
-    - constraints:
+    - param-id: ra-05_odp.03
+      constraints:
       - description: high-risk vulnerabilities mitigated within thirty (30) days from date of discovery; moderate-risk vulnerabilities mitigated within ninety (90) days from date of discovery; low risk vulnerabilities mitigated within one hundred and eighty (180) days from date of discovery
-      param-id: ra-05_odp.03
-    - constraints:
+    - param-id: ra-05.02_odp.01
+      constraints:
       - description: prior to a new scan
-      param-id: ra-05.02_odp.01
-    - constraints:
+    - param-id: sa-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: sa-01_odp.05
-    - constraints:
+    - param-id: sa-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: sa-01_odp.07
-    - constraints:
+    - param-id: sa-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: sa-01_odp.08
-    - constraints:
+    - param-id: sa-05_odp.02
+      constraints:
       - description: "at a minimum, the ISSO (or similar role within the organization)"
-      param-id: sa-05_odp.02
-    - constraints:
+    - param-id: sa-09_odp.01
+      constraints:
       - description: Appropriate FedRAMP Security Controls Baseline (s) if Federal information is processed or stored within the external system
-      param-id: sa-09_odp.01
-    - constraints:
+    - param-id: sa-09_odp.02
+      constraints:
       - description: Federal/FedRAMP Continuous Monitoring requirements must be met for external systems where Federal information is processed or stored
-      param-id: sa-09_odp.02
-    - constraints:
+    - param-id: sc-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: sc-01_odp.05
-    - constraints:
+    - param-id: sc-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: sc-01_odp.07
-    - constraints:
+    - param-id: sc-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: sc-01_odp.08
-    - constraints:
+    - param-id: sc-05_odp.02
+      constraints:
       - description: Protect against
-      param-id: sc-05_odp.02
-    - constraints:
+    - param-id: sc-05_odp.01
+      constraints:
       - description: "at a minimum: ICMP (ping) flood, SYN flood, slowloris, buffer overflow attack, and volume attack"
-      param-id: sc-05_odp.01
-    - constraints:
+    - param-id: sc-12_odp
+      constraints:
       - description: In accordance with Federal requirements
-      param-id: sc-12_odp
-    - constraints:
+    - param-id: sc-13_odp.02
+      constraints:
       - description: FIPS-validated or NSA-approved cryptography
-      param-id: sc-13_odp.02
-    - constraints:
+    - param-id: sc-15_odp
+      constraints:
       - description: no exceptions for computing devices
-      param-id: sc-15_odp
-    - constraints:
+    - param-id: sc-28.01_odp.02
+      constraints:
       - description: all information system components storing Federal data or system data that must be protected at the High or Moderate impact levels
-      param-id: sc-28.01_odp.02
-    - constraints:
+    - param-id: si-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: si-01_odp.05
-    - constraints:
+    - param-id: si-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: si-01_odp.07
-    - constraints:
+    - param-id: si-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: si-01_odp.08
-    - constraints:
+    - param-id: si-02_odp
+      constraints:
       - description: within thirty (30) days of release of updates
-      param-id: si-02_odp
-    - constraints:
+    - param-id: si-03_odp.01
+      constraints:
       - description: signature based and non-signature based
-      param-id: si-03_odp.01
-    - constraints:
+    - param-id: si-03_odp.02
+      constraints:
       - description: at least weekly
-      param-id: si-03_odp.02
-    - constraints:
+    - param-id: si-03_odp.03
+      constraints:
       - description: to include endpoints and network entry and exit points
-      param-id: si-03_odp.03
-    - constraints:
+    - param-id: si-03_odp.04
+      constraints:
       - description: to include blocking and quarantining malicious code
-      param-id: si-03_odp.04
-    - constraints:
+    - param-id: si-03_odp.05
+      constraints:
       - description: administrator or defined security personnel near-realtime
-      param-id: si-03_odp.05
-    - constraints:
+    - param-id: si-05_odp.01
+      constraints:
       - description: to include US-CERT and Cybersecurity and Infrastructure Security Agency (CISA) Directives
-      param-id: si-05_odp.01
-    - constraints:
+    - param-id: si-05_odp.02
+      constraints:
       - description: to include system security personnel and administrators with configuration/patch-management responsibilities
-      param-id: si-05_odp.02
-    - constraints:
+    - param-id: sr-01_odp.01
+      constraints:
       - description: to include chief privacy and ISSO and/or similar role or designees
-      param-id: sr-01_odp.01
-    - constraints:
+    - param-id: sr-01_odp.05
+      constraints:
       - description: at least every 3 years
-      param-id: sr-01_odp.05
-    - constraints:
+    - param-id: sr-01_odp.07
+      constraints:
       - description: at least annually
-      param-id: sr-01_odp.07
-    - constraints:
+    - param-id: sr-01_odp.08
+      constraints:
       - description: significant changes
-      param-id: sr-01_odp.08
-    - constraints:
+    - param-id: sr-02_odp.02
+      constraints:
       - description: at least annually
-      param-id: sr-02_odp.02
-    - constraints:
+    - param-id: sr-08_odp.01
+      constraints:
       - description: notification of supply chain compromises and results of assessment or audits
-      param-id: sr-08_odp.01
-    - constraints:
+    - param-id: sr-11.02_odp
+      constraints:
       - description: all
-      param-id: sr-11.02_odp
     alters:
     - removes:
       - by-name: assessment-objective
@@ -502,10 +480,10 @@ profile:
       control-id: ac-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-id: ac-2_smt.b
       - by-id: ac-2_smt.c
@@ -526,57 +504,57 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
         parts:
-        - id: ac-2_obj_fr
-          name: assessment-objective
-          prose: Determine if the organization defines information system account types to be identified and selected to support organizational missions/business functions.
-          props:
+        - props:
           - name: response-point
             ns: https://fedramp.gov/ns/oscal
             value: Required
-          - class: fedramp
-            name: method
+          - name: method
             ns: https://fedramp.gov/ns/oscal
             value: EXAMINE
-          - class: fedramp
-            name: method
+            class: fedramp
+          - name: method
             ns: https://fedramp.gov/ns/oscal
             value: INTERVIEW
-          - class: fedramp
-            name: method
+            class: fedramp
+          - name: method
             ns: https://fedramp.gov/ns/oscal
             value: TEST
-        - id: ac-2_asmt_fr.1
-          name: assessment-method
-          parts:
+            class: fedramp
+          id: ac-2_obj_fr
+          name: assessment-objective
+          prose: Determine if the organization defines information system account types to be identified and selected to support organizational missions/business functions.
+        - parts:
           - name: assessment-objects
             prose: "Access control policy; procedures addressing account management; security plan; information system design documentation; information system configuration settings and associated documentation; list of active system accounts along with the name of the individual associated with each account; list of conditions for group and role membership; notifications or records of recently transferred, separated, or terminated employees; list of recently disabled information system accounts along with the name of the individual associated with each account; access authorization records; account management compliance reviews; information system monitoring records; information system audit records; other relevant documents or records."
           props:
           - name: method
             ns: https://fedramp.gov/ns/oscal
             value: EXAMINE
-        - id: ac-2_asmt_fr.2
+          id: ac-2_asmt_fr.1
           name: assessment-method
-          parts:
+        - parts:
           - name: assessment-objects
             prose: Organizational personnel with account management responsibilities; system/network administrators; organizational personnel with information security responsibilities.
           props:
           - name: method
             ns: https://fedramp.gov/ns/oscal
             value: INTERVIEW
-        - id: ac-2_asmt_fr.3
+          id: ac-2_asmt_fr.2
           name: assessment-method
-          parts:
+        - parts:
           - name: assessment-objects
             prose: Organizational processes for account management on the information system; automated mechanisms for implementing account management.
           props:
           - name: method
             ns: https://fedramp.gov/ns/oscal
             value: TEST
+          id: ac-2_asmt_fr.3
+          name: assessment-method
     - control-id: ac-3
       adds:
       - by-id: ac-3_smt
@@ -586,10 +564,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ac-7
       adds:
       - by-id: ac-7_smt
@@ -599,46 +577,46 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: NSO
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        parts:
-        - name: guidance
-          prose: NSO for non-privileged users. Attestation for privileged users related to multi-factor identification and authentication.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: NSO for non-privileged users. Attestation for privileged users related to multi-factor identification and authentication.
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ac-8
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: FED
-        parts:
-        - name: guidance
-          prose: FED - This is related to agency data and agency policy solution.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: FED - This is related to agency data and agency policy solution.
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ac-14
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: FED
-        parts:
-        - name: guidance
-          prose: FED - This is related to agency data and agency policy solution.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: FED - This is related to agency data and agency policy solution.
     - control-id: ac-17
       adds:
       - by-id: ac-17_smt
@@ -648,48 +626,48 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ac-18
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: NSO
-        parts:
-        - name: guidance
-          prose: "NSO - All access to Cloud SaaS are via web services and/or API. The device accessed from or whether via wired or wireless connection is out of scope. Regardless of device accessed from, must utilize approved remote access methods (AC-17), secure communication with strong encryption (SC-13), key management (SC-12), and multi-factor authentication for privileged access (IA-2\\[1\\])."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "NSO - All access to Cloud SaaS are via web services and/or API. The device accessed from or whether via wired or wireless connection is out of scope. Regardless of device accessed from, must utilize approved remote access methods (AC-17), secure communication with strong encryption (SC-13), key management (SC-12), and multi-factor authentication for privileged access (IA-2\\[1\\])."
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ac-19
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: NSO
-        parts:
-        - name: guidance
-          prose: "NSO - All access to Cloud SaaS are via web service and/or API. The device accessed from is out of the scope. Regardless of device accessed from, must utilize approved remote access methods (AC-17), secure communication with strong encryption (SC-13), key management (SC-12), and multi-factor authentication for privileged access (IA-2 \\[1\\])."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "NSO - All access to Cloud SaaS are via web service and/or API. The device accessed from is out of the scope. Regardless of device accessed from, must utilize approved remote access methods (AC-17), secure communication with strong encryption (SC-13), key management (SC-12), and multi-factor authentication for privileged access (IA-2 \\[1\\])."
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ac-20
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ac-22
       adds:
       - by-id: ac-22_smt
@@ -699,80 +677,80 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: at-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: at-2
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: at-2.2
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: at-3
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: at-4
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: au-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: au-2
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: au-3
       adds:
       - by-id: au-3_smt
@@ -782,24 +760,24 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: au-4
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: NSO
-        parts:
-        - name: guidance
-          prose: NSO - Loss of availability of the audit data has been determined to have little or no impact to government business/mission needs.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: NSO - Loss of availability of the audit data has been determined to have little or no impact to government business/mission needs.
     - control-id: au-5
       adds:
       - by-id: au-5_smt
@@ -809,10 +787,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: au-6
       adds:
       - by-id: au-6_smt
@@ -822,64 +800,64 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: au-8
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: au-9
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: au-11
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: NSO
-        parts:
-        - name: guidance
-          prose: NSO - Loss of availability of the audit data has been determined as little or no impact to government business/mission needs.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: NSO - Loss of availability of the audit data has been determined as little or no impact to government business/mission needs.
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: au-12
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ca-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ca-2
       adds:
       - by-id: ca-2_smt
@@ -889,20 +867,20 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ca-2.1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ca-3
       adds:
       - by-id: ca-3_smt
@@ -912,32 +890,32 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: There are connection(s) to external systems. Connections (if any) shall be authorized and must: 1) Identify the interface/connection. 2) Detail what data is involved and its sensitivity. 3) Determine whether the connection is one-way or bi-directional. 4) Identify how the connection is secured."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: There are connection(s) to external systems. Connections (if any) shall be authorized and must: 1) Identify the interface/connection. 2) Detail what data is involved and its sensitivity. 3) Determine whether the connection is one-way or bi-directional. 4) Identify how the connection is secured."
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ca-5
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
-        parts:
-        - name: guidance
-          prose: Attestation - for compliance with FedRAMP Tailored LI-SaaS Continuous Monitoring Requirements.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: Attestation - for compliance with FedRAMP Tailored LI-SaaS Continuous Monitoring Requirements.
     - control-id: ca-6
       adds:
       - by-id: ca-6_smt
@@ -947,10 +925,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ca-7
       adds:
       - by-id: ca-7_smt
@@ -960,10 +938,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ca-7.4
       adds:
       - by-id: ca-7.4_smt
@@ -973,10 +951,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ca-8
       adds:
       - by-id: ca-8_smt
@@ -986,10 +964,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ca-9
       adds:
       - by-id: ca-9_smt
@@ -999,38 +977,38 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: There are connection(s) to external systems. Connections (if any) shall be authorized and must: 1) Identify the interface/connection. 2) Detail what data is involved and its sensitivity. 3) Determine whether the connection is one-way or bi-directional. 4) Identify how the connection is secured."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: There are connection(s) to external systems. Connections (if any) shall be authorized and must: 1) Identify the interface/connection. 2) Detail what data is involved and its sensitivity. 3) Determine whether the connection is one-way or bi-directional. 4) Identify how the connection is secured."
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: cm-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: cm-2
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: cm-4
       adds:
       - by-id: cm-4_smt
@@ -1040,10 +1018,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: cm-5
       adds:
       - by-id: cm-5_smt
@@ -1053,10 +1031,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: cm-6
       adds:
       - by-id: cm-6_smt
@@ -1066,46 +1044,46 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        parts:
-        - name: guidance
-          prose: Required - Specifically include details of least functionality.
           class: FedRAMP-Tailored-LI-SaaS
-        - id: cm-6_fr
-          title: CM-6(a) Additional FedRAMP Requirements and Guidance
-          name: item
-          parts:
-          - id: cm-6_fr_smt.1
-            name: item
-            prose: The service provider shall use the Center for Internet Security guidelines (Level 1) to establish configuration settings or establishes its own configuration settings if USGCB is not available.
-            props:
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: Required - Specifically include details of least functionality.
+        - parts:
+          - props:
             - name: label
               value: 'Requirement 1:'
-          - id: cm-6_fr_smt.2
+            id: cm-6_fr_smt.1
             name: item
-            prose: The service provider shall ensure that checklists for configuration settings are Security Content Automation Protocol (SCAP) (<http://scap.nist.gov/>) validated or SCAP compatible (if validated checklists are not available).
-            props:
+            prose: The service provider shall use the Center for Internet Security guidelines (Level 1) to establish configuration settings or establishes its own configuration settings if USGCB is not available.
+          - props:
             - name: label
               value: 'Requirement 2:'
-          - id: cm-6_fr_gdn.1
-            name: guidance
-            prose: "Information on the USGCB checklists can be found at: <https://csrc.nist.gov/Projects/United-States-Government-Configuration-Baseline>."
-            props:
+            id: cm-6_fr_smt.2
+            name: item
+            prose: The service provider shall ensure that checklists for configuration settings are Security Content Automation Protocol (SCAP) (<http://scap.nist.gov/>) validated or SCAP compatible (if validated checklists are not available).
+          - props:
             - name: label
               value: 'Guidance:'
+            id: cm-6_fr_gdn.1
+            name: guidance
+            prose: "Information on the USGCB checklists can be found at: <https://csrc.nist.gov/Projects/United-States-Government-Configuration-Baseline>."
+          id: cm-6_fr
+          title: CM-6(a) Additional FedRAMP Requirements and Guidance
+          name: item
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: cm-7
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: cm-8
       adds:
       - by-id: cm-8_smt
@@ -1115,90 +1093,90 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: cm-10
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: NSO
-        parts:
-        - name: guidance
-          prose: NSO- Not directly related to protection of the data.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: NSO- Not directly related to protection of the data.
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: cm-11
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: NSO
-        parts:
-        - name: guidance
-          prose: "NSO - Boundary is specific to SaaS environment; all access is via web services; users' machine or internal network are not contemplated. External services (SA-9), internal connection (CA-9), remote access (AC-17), and secure access (SC-12 and SC-13), and privileged authentication (IA-2\\[1\\]) are considerations."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "NSO - Boundary is specific to SaaS environment; all access is via web services; users' machine or internal network are not contemplated. External services (SA-9), internal connection (CA-9), remote access (AC-17), and secure access (SC-12 and SC-13), and privileged authentication (IA-2\\[1\\]) are considerations."
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: cp-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: cp-2
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: NSO
-        parts:
-        - name: guidance
-          prose: NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: cp-3
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: NSO
-        parts:
-        - name: guidance
-          prose: NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: cp-4
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: NSO
-        parts:
-        - name: guidance
-          prose: NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.
     - control-id: cp-9
       adds:
       - by-id: cp-9_smt
@@ -1208,52 +1186,52 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: cp-10
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: NSO
-        parts:
-        - name: guidance
-          prose: NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ia-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ia-2
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: NSO
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
-        parts:
-        - name: guidance
-          prose: NSO for non-privileged users. Attestation for privileged users related to multi-factor identification and authentication - specifically include description of management of service accounts.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: NSO for non-privileged users. Attestation for privileged users related to multi-factor identification and authentication - specifically include description of management of service accounts.
     - control-id: ia-2.1
       adds:
       - by-id: ia-2.1_smt
@@ -1263,18 +1241,18 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
         parts:
-        - id: ia-2.1_fr
+        - parts:
+          - class: FedRAMP-Tailored-LI-SaaS
+            name: guidance
+            prose: "FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP."
+          id: ia-2.1_fr
           title: IA-2(1) Additional FedRAMP Requirements and Guidance
           name: item
-          parts:
-          - name: guidance
-            prose: "FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP."
-            class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
@@ -1287,10 +1265,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ia-2.8
       adds:
       - by-id: ia-2.8_smt
@@ -1300,10 +1278,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ia-2.12
       adds:
       - by-id: ia-2.12_smt
@@ -1313,68 +1291,68 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
+          class: FedRAMP-Tailored-LI-SaaS
         parts:
-        - id: ia-2.12_obj_fr
+        - props:
+          - name: response-point
+            ns: https://fedramp.gov/ns/oscal
+            value: Required
+          - name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+            class: fedramp
+          - name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: INTERVIEW
+            class: fedramp
+          - name: method
+            ns: https://fedramp.gov/ns/oscal
+            value: TEST
+            class: fedramp
+          id: ia-2.12_obj_fr
           name: objective
           prose: |-
             Determine if the information system:
 
             - Accepts PIV credentials.
             - Electronically verifies PIV credentials.
-          props:
-          - name: response-point
-            ns: https://fedramp.gov/ns/oscal
-            value: Required
-          - class: fedramp
-            name: method
-            ns: https://fedramp.gov/ns/oscal
-            value: EXAMINE
-          - class: fedramp
-            name: method
-            ns: https://fedramp.gov/ns/oscal
-            value: INTERVIEW
-          - class: fedramp
-            name: method
-            ns: https://fedramp.gov/ns/oscal
-            value: TEST
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ia-4
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ia-5
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ia-5.1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ia-6
       adds:
       - by-id: ia-6_smt
@@ -1384,10 +1362,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
@@ -1400,20 +1378,20 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ia-8
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ia-8.1
       adds:
       - by-id: ia-8.1_smt
@@ -1423,18 +1401,18 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP."
     - control-id: ia-8.2
       adds:
       - by-id: ia-8.2_smt
@@ -1444,58 +1422,58 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP."
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ia-8.4
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ia-11
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ir-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ir-2
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ir-4
       adds:
       - by-id: ir-4_smt
@@ -1505,20 +1483,20 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ir-5
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ir-6
       adds:
       - by-id: ir-6_smt
@@ -1528,44 +1506,44 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ir-7
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ir-8
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
-        parts:
-        - name: guidance
-          prose: Attestation - Specifically attest to US-CERT compliance.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: Attestation - Specifically attest to US-CERT compliance.
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ma-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ma-2
       adds:
       - by-id: ma-2_smt
@@ -1575,28 +1553,28 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ma-4
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ma-5
       adds:
       - by-id: ma-5_smt
@@ -1606,28 +1584,28 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: mp-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: mp-2
       adds:
       - by-id: mp-2_smt
@@ -1637,18 +1615,18 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
     - control-id: mp-6
       adds:
       - by-id: mp-6_smt
@@ -1658,18 +1636,18 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
     - control-id: mp-7
       adds:
       - by-id: mp-7_smt
@@ -1679,28 +1657,28 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: pe-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: pe-2
       adds:
       - by-id: pe-2_smt
@@ -1710,18 +1688,18 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
     - control-id: pe-3
       adds:
       - by-id: pe-3_smt
@@ -1731,18 +1709,18 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
     - control-id: pe-6
       adds:
       - by-id: pe-6_smt
@@ -1752,18 +1730,18 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
     - control-id: pe-8
       adds:
       - by-id: pe-8_smt
@@ -1773,18 +1751,18 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
     - control-id: pe-12
       adds:
       - by-id: pe-12_smt
@@ -1794,18 +1772,18 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
     - control-id: pe-13
       adds:
       - by-id: pe-13_smt
@@ -1815,18 +1793,18 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
     - control-id: pe-14
       adds:
       - by-id: pe-14_smt
@@ -1836,30 +1814,30 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
       - by-id: pe-14_smt
         parts:
-        - id: pe-14_fr
-          title: PE-14(a) Additional FedRAMP Requirements and Guidance
-          name: item
-          parts:
-          - id: pe-14_fr_smt.a
-            name: item
-            prose: The service provider measures temperature at server inlets and humidity levels by dew point.
-            props:
+        - parts:
+          - props:
             - name: label
               value: '(a) Requirement:'
+            id: pe-14_fr_smt.a
+            name: item
+            prose: The service provider measures temperature at server inlets and humidity levels by dew point.
+          id: pe-14_fr
+          title: PE-14(a) Additional FedRAMP Requirements and Guidance
+          name: item
     - control-id: pe-15
       adds:
       - by-id: pe-15_smt
@@ -1869,18 +1847,18 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
     - control-id: pe-16
       adds:
       - by-id: pe-16_smt
@@ -1890,28 +1868,28 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS."
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: pl-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: pl-2
       adds:
       - by-id: pl-2_smt
@@ -1921,30 +1899,30 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: pl-4
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: pl-4.1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: pl-8
       adds:
       - by-id: pl-8_smt
@@ -1954,50 +1932,50 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: pl-10
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: pl-11
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ps-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ps-2
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: FED
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ps-3
       adds:
       - by-id: ps-3_smt
@@ -2007,84 +1985,84 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ps-4
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ps-5
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ps-6
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ps-7
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
-        parts:
-        - name: guidance
-          prose: Attestation - Specifically stating that any third-party security personnel are treated as CSP employees.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: Attestation - Specifically stating that any third-party security personnel are treated as CSP employees.
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ps-8
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ps-9
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ra-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
@@ -2097,10 +2075,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ra-3
       adds:
       - by-id: ra-3_smt
@@ -2110,20 +2088,20 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: ra-3.1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ra-5
       adds:
       - by-id: ra-5_smt
@@ -2133,10 +2111,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ra-5.2
       adds:
       - by-id: ra-5.2_smt
@@ -2146,10 +2124,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ra-5.11
       adds:
       - by-id: ra-5.11_smt
@@ -2159,10 +2137,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: ra-7
       adds:
       - by-id: ra-7_smt
@@ -2172,80 +2150,80 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sa-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sa-2
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sa-3
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sa-4
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sa-4.10
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sa-5
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sa-8
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: sa-9
       adds:
       - by-id: sa-9_smt
@@ -2255,10 +2233,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: sa-22
       adds:
       - by-id: sa-22_smt
@@ -2268,20 +2246,20 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sc-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: sc-5
       adds:
       - by-id: sc-5_smt
@@ -2291,18 +2269,18 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: If availability is a requirement, define protections in place as per control requirement."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: If availability is a requirement, define protections in place as per control requirement."
     - control-id: sc-7
       adds:
       - by-id: sc-7_smt
@@ -2312,10 +2290,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: sc-8
       adds:
       - by-id: sc-8_smt
@@ -2325,10 +2303,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: sc-8.1
       adds:
       - by-id: sc-8.1_smt
@@ -2338,10 +2316,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: sc-12
       adds:
       - by-id: sc-12_smt
@@ -2351,10 +2329,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: sc-13
       adds:
       - by-id: sc-13_smt
@@ -2364,62 +2342,62 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+          class: FedRAMP-Tailored-LI-SaaS
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: CONDITIONAL
-        parts:
-        - name: guidance
-          prose: "Condition: If implementing need to detail how they meet it or don't meet it."
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: "Condition: If implementing need to detail how they meet it or don't meet it."
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sc-15
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: NSO
-        parts:
-        - name: guidance
-          prose: NSO - Not directly related to the security of the SaaS.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: NSO - Not directly related to the security of the SaaS.
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sc-20
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sc-21
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sc-22
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: sc-28
       adds:
       - by-id: sc-28_smt
@@ -2429,10 +2407,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: sc-28.1
       adds:
       - by-id: sc-28.1_smt
@@ -2442,30 +2420,30 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sc-39
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: si-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: si-2
       adds:
       - by-id: si-2_smt
@@ -2475,10 +2453,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: si-3
       adds:
       - by-id: si-3_smt
@@ -2488,10 +2466,10 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - control-id: si-4
       adds:
       - by-id: si-4_smt
@@ -2501,144 +2479,144 @@ profile:
           ns: https://fedramp.gov/ns/oscal
           value: Required
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ASSESS
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: si-5
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: si-12
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
-        parts:
-        - name: guidance
-          prose: Attestation - Specifically related to US-CERT and FedRAMP communications procedures.
           class: FedRAMP-Tailored-LI-SaaS
+        parts:
+        - class: FedRAMP-Tailored-LI-SaaS
+          name: guidance
+          prose: Attestation - Specifically related to US-CERT and FedRAMP communications procedures.
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sr-1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sr-2
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sr-2.1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sr-3
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sr-5
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sr-8
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sr-10
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sr-11
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sr-11.1
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sr-11.2
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
     - removes:
       - by-name: assessment-objective
       - by-name: assessment-method
       control-id: sr-12
       adds:
       - props:
-        - class: FedRAMP-Tailored-LI-SaaS
-          name: method
+        - name: method
           ns: https://fedramp.gov/ns/oscal
           value: ATTEST
+          class: FedRAMP-Tailored-LI-SaaS
   merge:
     as-is: true
   metadata:
@@ -2655,34 +2633,34 @@ profile:
     last-modified: 2024-01-11T23:40:17Z
     oscal-version: 1.1.1
     parties:
-    - name: "Federal Risk and Authorization Management Program: Program Management Office"
+    - type: organization
+      name: "Federal Risk and Authorization Management Program: Program Management Office"
       uuid: 8cc0b8e5-9650-4d5f-9796-316f05fa9a2d
       addresses:
-      - addr-lines:
+      - city: Washington
+        country: US
+        addr-lines:
         - 1800 F St. NW
         postal-code: "20006"
         type: work
         state: DC
-        city: Washington
-        country: US
       short-name: FedRAMP PMO
       links:
-      - href: https://fedramp.gov
-        rel: homepage
-      - href: '#a2381e87-3d04-4108-a30b-b4d2f36d001f'
-        rel: logo
-      - href: '#985475ee-d4d6-4581-8fdf-d84d3d8caa48'
-        rel: reference
+      - rel: homepage
+        href: https://fedramp.gov
+      - rel: logo
+        href: '#a2381e87-3d04-4108-a30b-b4d2f36d001f'
+      - rel: reference
+        href: '#985475ee-d4d6-4581-8fdf-d84d3d8caa48'
       email-addresses:
       - info@fedramp.gov
-      type: organization
-    - name: "Federal Risk and Authorization Management Program: Joint Authorization Board"
+    - type: organization
+      name: "Federal Risk and Authorization Management Program: Joint Authorization Board"
       uuid: ca9ba80e-1342-4bfd-b32a-abac468c24b4
       short-name: FedRAMP JAB
       links:
-      - href: '#a2381e87-3d04-4108-a30b-b4d2f36d001f'
-        rel: logo
-      type: organization
+      - rel: logo
+        href: '#a2381e87-3d04-4108-a30b-b4d2f36d001f'
     version: 5.1.1+fedramp-20240111-0
     published: 2023-08-31T00:00:00Z
     roles:
@@ -2855,3 +2833,25 @@ profile:
       - sr-11.2
       - sr-12
     href: '#051a77c1-b61d-4995-8275-dacfe688d510'
+  uuid: ece2fd2d-87f7-476a-a295-6e1ec8153771
+  back-matter:
+    resources:
+    - uuid: 985475ee-d4d6-4581-8fdf-d84d3d8caa48
+      rlinks:
+      - href: https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx
+      title: FedRAMP Applicable Laws and Regulations
+    - props:
+      - name: type
+        value: logo
+      uuid: a2381e87-3d04-4108-a30b-b4d2f36d001f
+      rlinks:
+      - href: https://www.fedramp.gov/assets/img/logo-main-fedramp.png
+      description: FedRAMP Logo
+    - props:
+      - name: version
+        value: 5.1.1
+      uuid: 051a77c1-b61d-4995-8275-dacfe688d510
+      rlinks:
+      - media-type: application/oscal+xml
+        href: NIST_SP-800-53_rev5_catalog.xml
+      title: NIST Special Publication (SP) 800-53 revision 5
