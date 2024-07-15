@@ -1363,11 +1363,11 @@ profile:
   uuid: 2ef3cdd1-6928-494b-b2ef-593e774fae38
   back-matter:
     resources:
-    - props:
-      - value: 5.1.1
-        name: version
-      uuid: 051a77c1-b61d-4995-8275-dacfe688d510
+    - uuid: 051a77c1-b61d-4995-8275-dacfe688d510
       rlinks:
-      - href: FedRAMP_rev5_catalog_tailoring_profile.xml
-        media-type: application/oscal+xml
+      - media-type: application/oscal+xml
+        href: FedRAMP_rev5_catalog_tailoring_profile.xml
       title: FedRAMP Modified NIST Special Publication (SP) 800-53 revision 5
+      props:
+      - name: version
+        value: 5.1.1
