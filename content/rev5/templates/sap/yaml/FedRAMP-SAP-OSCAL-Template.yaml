@@ -1,183 +1,104 @@
 ---
 assessment-plan:
-  assessment-assets:
-    components:
-    - uuid: ba991c3f-1e00-4c38-bf81-86a9e503f3b9
-      description: Describe assessment laptop.
-      status:
-        state: operational
-      props:
-      - value: 10.10.10.10
-        name: ipv4-address
-        ns: https://fedramp.gov/ns/oscal
-      type: hardware
-      remarks: |-
-        Ideally, this assessment laptop would have been defined in the SAP, and not repeated here.
-
-        If the laptop was not known at the time the SAP was drafted, or something different was used, it must be defined here.
-      title: Assessment Laptop
-    - uuid: 040937c3-2e0e-407a-bb3c-d4e61ac1c460
-      description: Describe the purpose of the tool here.
-      status:
-        state: operational
-      props:
-      - value: Vendor Name
-        name: vendor-name
-        ns: https://fedramp.gov/ns/oscal
-      - value: Tool Name
-        name: name
-        ns: https://fedramp.gov/ns/oscal
-      - value: 1.2.3
-        name: version
-      type: software
-      title: XYZ Vulnerability Scanning Tool
-    - uuid: c50104b9-69b3-4383-a1f1-d8a6f6f806f7
-      description: Describe the purpose of the tool here.
-      status:
-        state: operational
-      props:
-      - value: Vendor Name
-        name: vendor-name
-        ns: https://fedramp.gov/ns/oscal
-      - value: Tool Name
-        name: name
-        ns: https://fedramp.gov/ns/oscal
-      - value: 1.2.3
-        name: version
-      type: software
-      title: XYZ Database Scanning Tool
-    - uuid: 332517e5-2033-47dd-a4d0-6ca9c9786f6b
-      description: "Identifies all addresses from which the assessment may be conducted, including scans and penetration testing activities."
-      status:
-        state: operational
-      type: assessment-origination
-      title: Assessment Addresses
-    assessment-platforms:
-    - uses-components:
-      - remarks: Cites assessment laptop.
-        component-uuid: ba991c3f-1e00-4c38-bf81-86a9e503f3b9
-      - remarks: Cites assessment laptop.
-        component-uuid: ba991c3f-1e00-4c38-bf81-86a9e503f3b9
-      - remarks: Cites Vulnerability Scanning Tool
-        component-uuid: 040937c3-2e0e-407a-bb3c-d4e61ac1c460
-      - remarks: Cites Database Scanning Tool
-        component-uuid: c50104b9-69b3-4383-a1f1-d8a6f6f806f7
-      props:
-      - value: 10.10.10.10
-        name: ipv4-address
-        ns: https://fedramp.gov/ns/oscal
-      - value: 10.10.10.11
-        name: ipv4-address
-        ns: https://fedramp.gov/ns/oscal
-      - value: 10.10.10.12
-        name: ipv4-address
-        ns: https://fedramp.gov/ns/oscal
-      title: Scanning Tools
-      uuid: 60218fe9-b01a-4553-b705-dbe9dec44aa1
   back-matter:
     resources:
-    - uuid: ace2963d-ecb4-4be5-bdd0-1f6fd7610f41
-      title: Resolution Resource
+    - title: Resolution Resource
       props:
-      - value: Special Publication
+      - name: dataset
+        value: Special Publication
         class: collection
-        name: dataset
-      - value: 800-53
+      - name: dataset
+        value: 800-53
         class: name
-        name: dataset
-      - value: 5.0.2
+      - name: dataset
+        value: 5.0.2
         class: version
-        name: dataset
-      - value: gov.nist.csrc
+      - name: dataset
+        value: gov.nist.csrc
         class: organization
-        name: dataset
       remarks: "This \"resolution resource\" is used by FedRAMP as a local, authoritative indicator of what version SAP (rev 4 or rev 5) this OSCAL document is for."
-    - uuid: 7c30125f-c056-4888-9f1a-7ed1b6a1b638
-      rlinks:
-      - media-type: text/xml
-        href: ../../ssp/xml/FedRAMP-SSP-OSCAL-Template.xml
+      uuid: ace2963d-ecb4-4be5-bdd0-1f6fd7610f41
+    - rlinks:
+      - href: ../../ssp/xml/FedRAMP-SSP-OSCAL-Template.xml
+        media-type: text/xml
       title: "\\[System Name\\] \\[FIPS-199 Level\\] SSP"
       props:
-      - value: system-security-plan
-        name: type
+      - name: type
         ns: https://fedramp.gov/ns/oscal
-      - value: 2023-04-21T00:00:00Z
-        name: published
-      - value: SSP Version
-        name: version
+        value: system-security-plan
+      - name: published
+        value: 2023-04-21T00:00:00Z
+      - name: version
+        value: SSP Version
       remarks: |-
         Use this to point to an OSCAL-based SSP.
 
         For FedRAMP, do not attach the SSP. This should be delivered by the CSP.
-    - uuid: a78f7e4c-a27a-4b1e-901b-ebfecf2b0301
-      title: System's Full Name
+      uuid: 7c30125f-c056-4888-9f1a-7ed1b6a1b638
+    - title: System's Full Name
       description: |-
         # ONLY USE THIS RESOURCE WHEN NO OSCAL-BASED SSP EXISTS
 
         Briefly describe the system. This will appear in the SAR.
       props:
-      - value: no-oscal-ssp
-        name: type
+      - name: type
         ns: https://fedramp.gov/ns/oscal
-      - value: SFN
-        name: title-short
+        value: no-oscal-ssp
+      - name: title-short
         ns: https://fedramp.gov/ns/oscal
-      - value: FR00000000
-        name: system-id
+        value: SFN
+      - name: system-id
         ns: https://fedramp.gov/ns/oscal
-      - value: '#890170c3-d4fa-4d25-ab96-8e4bf7cc237c'
-        name: import-profile
+        value: FR00000000
+      - name: import-profile
         ns: https://fedramp.gov/ns/oscal
-      - value: Briefly state the system's purpose. This will appear in the SAR.
-        name: purpose
+        value: '#890170c3-d4fa-4d25-ab96-8e4bf7cc237c'
+      - name: purpose
         ns: https://fedramp.gov/ns/oscal
-      - value: 2017-01-23T00:00:00Z
-        name: authorization-date
+        value: Briefly state the system's purpose. This will appear in the SAR.
+      - name: authorization-date
         ns: https://fedramp.gov/ns/oscal
+        value: 2017-01-23T00:00:00Z
       remarks: |-
         Only include this resource if no OSCAL-based SSP is available.
 
         Delete it otherwise.
-    - base64:
-        media-type: application/vnd.ms-excel
-        value: "00000000"
-        filename: SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx
-      uuid: 985475ee-d4d6-4581-8fdf-d84d3d8caa48
-      rlinks:
+      uuid: a78f7e4c-a27a-4b1e-901b-ebfecf2b0301
+    - rlinks:
       - href: https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx
       title: FedRAMP Applicable Laws and Regulations
       props:
-      - value: fedramp-citations
-        name: type
+      - name: type
         ns: https://fedramp.gov/ns/oscal
+        value: fedramp-citations
       remarks: Must be present in a FedRAMP SAP.
-    - base64:
-        media-type: application/pdf
+      base64:
+        filename: SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx
+        media-type: application/vnd.ms-excel
         value: "00000000"
-        filename: FedRAMP_Master_Acronym_and_Glossary.pdf
-      uuid: 1a23a771-d481-4594-9a1a-71d584fa4123
-      rlinks:
+      uuid: 985475ee-d4d6-4581-8fdf-d84d3d8caa48
+    - rlinks:
       - href: https://www.fedramp.gov/assets/resources/documents/FedRAMP_Master_Acronym_and_Glossary.pdf
       title: FedRAMP Master Acronym and Glossary
       props:
-      - value: fedramp-acronyms
-        name: type
+      - name: type
         ns: https://fedramp.gov/ns/oscal
+        value: fedramp-acronyms
       remarks: Must be present in a FedRAMP SAP.
-    - base64:
+      base64:
+        filename: FedRAMP_Master_Acronym_and_Glossary.pdf
         media-type: application/pdf
         value: "00000000"
-        filename: sap-signature.pdf
-      uuid: 671dcc43-fb4d-4d93-b321-88beb2844673
-      rlinks:
-      - media-type: application/pdf
-        href: ./signed-sap.pdf
+      uuid: 1a23a771-d481-4594-9a1a-71d584fa4123
+    - rlinks:
+      - href: ./signed-sap.pdf
+        media-type: application/pdf
       title: Signatures
       description: "The following individuals at \\[IA Name\\] and \\[CSP Name\\] have been identified as having the authority to agree to security testing of \\[CSO Name\\]. \\[CSP Name\\] has validated that the \\[IA Name\\] assessors assigned to this project fulfill the FedRAMP assessor requirements, as noted in Section 6.1 and formally named in Table 6-1. This section must be signed and dated prior to an IA beginning an assessment."
       props:
-      - value: signed-sap
-        name: type
+      - name: type
         ns: https://fedramp.gov/ns/oscal
+        value: signed-sap
       remarks: |-
         FedRAMP is formulating guidelines for handling digital/electronic signatures in OSCAL, and welcome feedback on solutions.
 
@@ -187,26 +108,26 @@ assessment-plan:
         - Render the OSCAL SAP signature page as a printed page that is physically signed, scanned, and attached.
 
         If your organization prefers another approach, please seek prior approval from the FedRAMP PMO.
-    - uuid: 10617261-3e54-403f-9096-b8e4e79ad2b2
-      rlinks:
-      - media-type: application/pdf
-        href: ./sampling-methodology-reference-1.pdf
-      - media-type: application/msword
-        href: ./sampling-methodology-reference-2.docx
+      base64:
+        filename: sap-signature.pdf
+        media-type: application/pdf
+        value: "00000000"
+      uuid: 671dcc43-fb4d-4d93-b321-88beb2844673
+    - rlinks:
+      - href: ./sampling-methodology-reference-1.pdf
+        media-type: application/pdf
+      - href: ./sampling-methodology-reference-2.docx
+        media-type: application/msword
       title: Sampling Methodology
       description: Embed or reference copies of the sampling methodology for security controls assessment and vulnerability scanning (if applicable).
       props:
-      - value: sampling-methodology
-        name: type
+      - name: type
         ns: https://fedramp.gov/ns/oscal
-    - base64:
+        value: sampling-methodology
+      uuid: 10617261-3e54-403f-9096-b8e4e79ad2b2
+    - rlinks:
+      - href: ./pen_test_plan.pdf
         media-type: application/pdf
-        value: "00000000"
-        filename: pen_test_plan.pdf
-      uuid: 8e8d05e4-0d47-4bf9-bbf0-b7070d60a671
-      rlinks:
-      - media-type: application/pdf
-        href: ./pen_test_plan.pdf
       title: Penetration Testing Plan and Methodology
       description: |-
         The following table captures the minimum requirements for penetration testing based on FedRAMP requirements. Additional attack vectors are outlined in the table below and will be recorded in the \[CSO Name\] Penetration Test Report. Deviations between this list and the Penetration Test Report will be recorded and explained in the SAR table "Deviations from the SAP".
@@ -222,17 +143,21 @@ assessment-plan:
         | x       | Mobile Application to Target System                    |         | Application Threat Actor              |         | Execution            |
         | x       | Client-side Application and/or Agents to Target System |         | Physical based attack                 |         | Persistence          |
       props:
-      - value: penetration-test-plan
-        name: type
+      - name: type
         ns: https://fedramp.gov/ns/oscal
-    - uuid: c965ffb0-cd67-4a80-9014-0c7a217c1f85
-      rlinks:
-      - media-type: application/pdf
-        href: ./fedramp_scr_form.pdf
-      - media-type: application/vnd.ms-excel
-        href: ./scr_inventory.xlsx
-      - media-type: application/zip
-        href: ./other_scr_files.zip
+        value: penetration-test-plan
+      base64:
+        filename: pen_test_plan.pdf
+        media-type: application/pdf
+        value: "00000000"
+      uuid: 8e8d05e4-0d47-4bf9-bbf0-b7070d60a671
+    - rlinks:
+      - href: ./fedramp_scr_form.pdf
+        media-type: application/pdf
+      - href: ./scr_inventory.xlsx
+        media-type: application/vnd.ms-excel
+      - href: ./other_scr_files.zip
+        media-type: application/zip
       title: Significant Change Request Documentation
       description: |-
         The following is SCR documentation that was submitted by \[CSP Name\] to \[Choose One: AO/JAB\]
@@ -247,60 +172,60 @@ assessment-plan:
         |-----------|--------------|----------------------|
         |           |              |                      |
       props:
-      - value: significant-change-request
-        name: type
+      - name: type
         ns: https://fedramp.gov/ns/oscal
-    - base64:
-        value: "00000000"
-      uuid: 91d242d0-ccf9-4ff0-996d-e204c19dac52
-      rlinks:
-      - media-type: image/png
-        href: ./logo.png
+        value: significant-change-request
+      uuid: c965ffb0-cd67-4a80-9014-0c7a217c1f85
+    - rlinks:
+      - href: ./logo.png
+        media-type: image/png
       description: 3PAO Logo
       props:
-      - value: logo
-        name: type
-    - uuid: 031a32be-f9ef-45a0-994e-20eb58456dee
-      rlinks:
+      - name: type
+        value: logo
+      base64:
+        value: "00000000"
+      uuid: 91d242d0-ccf9-4ff0-996d-e204c19dac52
+    - rlinks:
       - href: https://github.com/GSA/fedramp-automation/raw/master/assets/FedRAMP_LOGO.png
       description: FedRAMP Logo
       props:
-      - value: logo
-        name: type
+      - name: type
+        value: logo
+      uuid: 031a32be-f9ef-45a0-994e-20eb58456dee
   metadata:
     props:
-    - value: Controlled Unclassified Information
-      name: marking
-    - value: ace2963d-ecb4-4be5-bdd0-1f6fd7610f41
-      name: resolution-resource
+    - name: marking
+      value: Controlled Unclassified Information
+    - name: resolution-resource
       ns: https://fedramp.gov/ns/oscal
-    - value: annual
+      value: ace2963d-ecb4-4be5-bdd0-1f6fd7610f41
+    - name: assessment-type
+      ns: https://fedramp.gov/ns/oscal
+      value: annual
       class: scope
-      name: assessment-type
+    - name: assessment-type
       ns: https://fedramp.gov/ns/oscal
-    - value: significant-change
+      value: significant-change
       class: scope
-      name: assessment-type
+    - name: significant-changes-scope
       ns: https://fedramp.gov/ns/oscal
-    - value: many
-      name: significant-changes-scope
-      ns: https://fedramp.gov/ns/oscal
+      value: many
     locations:
-    - remarks: "The assessor's HQ, or the address of the assessment team's primary business location."
-      uuid: 2ba201ac-8ee9-4a1d-812a-a755591a3963
-      title: Assessor's HQ
+    - title: Assessor's HQ
       address:
-        city: Haven
-        country: US
         addr-lines:
         - Suite 0000
         - 1234 Some Street
         postal-code: "00000"
         type: work
         state: ME
+        city: Haven
+        country: US
+      remarks: "The assessor's HQ, or the address of the assessment team's primary business location."
+      uuid: 2ba201ac-8ee9-4a1d-812a-a755591a3963
     parties:
-    - short-name: Acronym/Short Name
-      links:
+    - links:
       - rel: home-page
         href: https://assessor.web.site
       location-uuids:
@@ -308,16 +233,16 @@ assessment-plan:
       type: organization
       name: Assessment Organization Name
       props:
-      - value: "0000.00"
-        name: iso-iec-17020-identifier
+      - name: iso-iec-17020-identifier
         ns: https://fedramp.gov/ns/oscal
+        value: "0000.00"
       uuid: 49f73135-efab-4275-9a79-003656ad890a
       remarks: |-
         Replace sample 3PAO information.
 
         If the assessor is A2LA Certified, include the ISO/IEC-17020
-    - short-name: FedRAMP PMO
-      links:
+      short-name: Acronym/Short Name
+    - links:
       - rel: homepage
         href: https://fedramp.gov
       - rel: logo
@@ -328,17 +253,18 @@ assessment-plan:
       name: "Federal Risk and Authorization Management Program: Program Management Office"
       uuid: 77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d
       addresses:
-      - city: Washington
-        country: US
-        addr-lines:
+      - addr-lines:
         - 1800 F St. NW
         postal-code: "20006"
         type: work
         state: DC
+        city: Washington
+        country: US
       remarks: |-
         This party entry must be present in a FedRAMP SAP.
 
         The uuid may be different; however, the uuid must be associated with the "fedramp-pmo" role in the responsible-party assemblies.
+      short-name: FedRAMP PMO
     - email-addresses:
       - name@example.com
       location-uuids:
@@ -346,12 +272,12 @@ assessment-plan:
       type: person
       name: "[SAMPLE]Person Name 1"
       props:
-      - value: Individual's Title
+      - name: job-title
+        value: Individual's Title
         uuid: 1146fc8a-3a2e-4196-b098-fb6944bd364f
-        name: job-title
-      - value: Office 1-A
+      - name: mail-stop
+        value: Office 1-A
         uuid: 7709b968-6f59-4e7c-9fda-259a5b3ff316
-        name: mail-stop
       uuid: f4568fda-c6d2-4640-adec-0012015af7d0
       telephone-numbers:
       - number: 202-000-0001
@@ -364,9 +290,9 @@ assessment-plan:
       type: person
       name: "[SAMPLE]Person Name 2"
       props:
-      - value: Office 2-B
+      - name: mail-stop
+        value: Office 2-B
         uuid: 3ddccafa-e9c8-4832-a085-bc42557fc10f
-        name: mail-stop
       uuid: e934d8b5-13e5-4f77-b55e-871e6f2df2fe
       telephone-numbers:
       - number: 202-000-0002
@@ -379,9 +305,9 @@ assessment-plan:
       type: person
       name: "[SAMPLE]Person Name 3"
       props:
-      - value: Office 3-C
+      - name: mail-stop
+        value: Office 3-C
         uuid: 14c88675-1e7d-4e19-94e2-18e653dac452
-        name: mail-stop
       uuid: bcf47707-49e4-4acc-bf43-e63156046390
       telephone-numbers:
       - number: 202-000-0003
@@ -394,9 +320,9 @@ assessment-plan:
       type: person
       name: "[SAMPLE]Person Name 4"
       props:
-      - value: Office 4-D
+      - name: mail-stop
+        value: Office 4-D
         uuid: 9618632e-0d9a-4478-ad75-9373ae5310a0
-        name: mail-stop
       uuid: abc15ce6-1f43-4951-bcd5-ab62cdff7ed9
       telephone-numbers:
       - number: 202-000-0004
@@ -409,12 +335,12 @@ assessment-plan:
       type: person
       name: "[SAMPLE]Person Name 5"
       props:
-      - value: Individual's Title
+      - name: job-title
+        value: Individual's Title
         uuid: 0662559e-78c3-43a7-80f2-6b9b5e1fa3fb
-        name: job-title
-      - value: Office 5-E
+      - name: mail-stop
+        value: Office 5-E
         uuid: db2999e9-526d-4ec6-9fad-4bdf1f8b0d4a
-        name: mail-stop
       uuid: 9135b789-a40c-4a20-9be6-fab23c0ab0f3
       telephone-numbers:
       - number: 202-000-0005
@@ -427,127 +353,123 @@ assessment-plan:
       type: person
       name: "[SAMPLE]Person Name 6"
       props:
-      - value: Individual's Title
+      - name: job-title
+        value: Individual's Title
         uuid: fbd2d7c3-d71e-4cb0-adfb-e466e4d4470a
-        name: job-title
-      - value: Office 6-F
+      - name: mail-stop
+        value: Office 6-F
         uuid: f80b13b8-be5b-4242-bf2a-033c25b3c448
-        name: mail-stop
       uuid: ca9fca9c-4a8a-4487-8242-0a06d6fbed1f
       telephone-numbers:
-      - type: mobile
-        number: 000-000-0000
+      - number: 000-000-0000
+        type: mobile
     - email-addresses:
       - name@example.com
       type: person
       name: "[SAMPLE]Person Name 7"
       props:
-      - value: Individual's Title
+      - name: job-title
+        value: Individual's Title
         uuid: d76162f8-2448-406f-9524-5585fb996bfe
-        name: job-title
       uuid: 877e5bdc-07c3-45da-a2b4-35367a9a0cd0
       addresses:
-      - city: Haven
-        addr-lines:
+      - addr-lines:
         - Suite 0000
         - 1234 Some Street
         postal-code: "00000"
         type: work
         state: ME
+        city: Haven
       telephone-numbers:
-      - type: office
-        number: 000-000-0000
+      - number: 000-000-0000
+        type: office
     version: fedramp2.0.0-oscal1.0.4
     published: 2023-07-06T00:00:00Z
     remarks: This OSCAL-based FedRAMP SAP Template can be used for the FedRAMP initial or annual assessment planning.
     roles:
-    - id: fedramp-pmo
+    - description: "The organization that prepared this SSP. If developed in-house, this is the CSP itself."
+      id: fedramp-pmo
       title: FedRAMP Program Management Office
-      description: "The organization that prepared this SSP. If developed in-house, this is the CSP itself."
-    - id: prepared-by
+    - description: The organization that prepared this SAP.
+      id: prepared-by
       title: Prepared By
-      description: The organization that prepared this SAP.
-    - id: prepared-for
+    - description: The organization for which this SAP was prepared. Typically the CSP.
+      id: prepared-for
       title: Prepared For
-      description: The organization for which this SAP was prepared. Typically the CSP.
-    - id: content-approver
+    - description: The individual or individuals accountable for the accuracy of this SAP.
+      id: content-approver
       title: Security Assessment Plan Approval
-      description: The individual or individuals accountable for the accuracy of this SAP.
-    - id: assessor
+    - description: The organization performing the assessment.
+      id: assessor
       title: Assessment Organization
-      description: The organization performing the assessment.
-    - id: assessment-team
+    - description: The individual or individuals performing the assessment.
+      id: assessment-team
       title: Assessment Team
-      description: The individual or individuals performing the assessment.
-    - id: assessment-lead
+    - description: The individual leading the assessment activities.
+      id: assessment-lead
       title: Assessment Lead
-      description: The individual leading the assessment activities.
-    - id: penetration-test-team
+    - description: The individual or individuals performing the penetration test.
+      id: penetration-test-team
       title: Penetration Test Team
-      description: The individual or individuals performing the penetration test.
-    - id: penetration-test-lead
+    - description: The individual leading the penetration test activities.
+      id: penetration-test-lead
       title: Penetration Test Lead
-      description: The individual leading the penetration test activities.
-    - id: assessment-executive
+    - description: The management-level POC within the assessor's organization accountable for the organization's assessment performance.
+      id: assessment-executive
       title: Assessment Organization's Managerial POC
-      description: The management-level POC within the assessor's organization accountable for the organization's assessment performance.
-    - id: csp-assessment-poc
+    - description: At least three CSP testing points of contact must be identified in a FedRAMP SAP.
+      id: csp-assessment-poc
       title: CSP POCs During Testing
-      description: At least three CSP testing points of contact must be identified in a FedRAMP SAP.
-    - id: csp-operations-center
+    - description: "An operations center role, such as a SOC or NOC."
+      id: csp-operations-center
       title: CSP Operations POC
-      description: "An operations center role, such as a SOC or NOC."
-    - id: csp-end-of-testing-poc
+    - description: A role for an individual within the CSP to be notified by the assessor when testing is complete.
+      id: csp-end-of-testing-poc
       title: CSP's End of Testing Notification POC
-      description: A role for an individual within the CSP to be notified by the assessor when testing is complete.
-    - id: csp-results-poc
+    - description: A role for the individuals within the CSP who are to receive the assessment results.
+      id: csp-results-poc
       title: CSP Results POCs
-      description: A role for the individuals within the CSP who are to receive the assessment results.
-    - id: hold
-      description: T.
+    - description: T.
+      id: hold
     title: "\\[System Name\\] FedRAMP Security Assessment Plan (SAP)"
     responsible-parties:
-    - party-uuids:
+    - role-id: fedramp-pmo
+      party-uuids:
       - 77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d
-      role-id: fedramp-pmo
-    - party-uuids:
-      - 49f73135-efab-4275-9a79-003656ad890a
-      remarks: |-
+    - remarks: |-
         Exactly one party
 
         This is the assessor.
       role-id: prepared-by
-    - party-uuids:
-      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-      remarks: |-
+      party-uuids:
+      - 49f73135-efab-4275-9a79-003656ad890a
+    - remarks: |-
         Exactly one party.
 
         This is the UUID for the CSP in the imported SSP.
 
         If no OSCAL-based SSP exists, create a CSP party in the SAP, and provide that UUID here.
       role-id: prepared-for
-    - party-uuids:
-      - f4568fda-c6d2-4640-adec-0012015af7d0
-      remarks: One ore more parties
+      party-uuids:
+      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
+    - remarks: One ore more parties
       role-id: content-approver
-    - party-uuids:
-      - 49f73135-efab-4275-9a79-003656ad890a
-      remarks: |-
+      party-uuids:
+      - f4568fda-c6d2-4640-adec-0012015af7d0
+    - remarks: |-
         Exactly one party
 
         Assessment Organization (3PAO)
       role-id: assessor
-    - party-uuids:
-      - e934d8b5-13e5-4f77-b55e-871e6f2df2fe
-      - bcf47707-49e4-4acc-bf43-e63156046390
-      - abc15ce6-1f43-4951-bcd5-ab62cdff7ed9
-      props:
-      - value: "yes"
-        name: ia-validated
+      party-uuids:
+      - 49f73135-efab-4275-9a79-003656ad890a
+    - props:
+      - name: ia-validated
         ns: https://fedramp.gov/ns/oscal
-      - value: "yes"
-        name: csp-validated
+        value: "yes"
+      - name: csp-validated
         ns: https://fedramp.gov/ns/oscal
+        value: "yes"
       remarks: |-
         One or more parties
 
@@ -555,37 +477,39 @@ assessment-plan:
 
         Alternatively, assessment team member can be specified in separate "responsible-party" data items, each with their own "ia-validated" and "csp-validated" prop.
       role-id: assessment-team
-    - party-uuids:
-      - 9135b789-a40c-4a20-9be6-fab23c0ab0f3
-      props:
-      - value: "yes"
-        name: ia-validated
-        ns: https://fedramp.gov/ns/oscal
-      - value: "no"
-        name: csp-validated
-        ns: https://fedramp.gov/ns/oscal
-      role-id: assessment-team
-    - party-uuids:
+      party-uuids:
       - e934d8b5-13e5-4f77-b55e-871e6f2df2fe
-      remarks: Exactly one party
+      - bcf47707-49e4-4acc-bf43-e63156046390
+      - abc15ce6-1f43-4951-bcd5-ab62cdff7ed9
+    - props:
+      - name: ia-validated
+        ns: https://fedramp.gov/ns/oscal
+        value: "yes"
+      - name: csp-validated
+        ns: https://fedramp.gov/ns/oscal
+        value: "no"
+      role-id: assessment-team
+      party-uuids:
+      - 9135b789-a40c-4a20-9be6-fab23c0ab0f3
+    - remarks: Exactly one party
       role-id: assessment-lead
-    - party-uuids:
+      party-uuids:
+      - e934d8b5-13e5-4f77-b55e-871e6f2df2fe
+    - remarks: One or more parties
+      role-id: penetration-test-team
+      party-uuids:
       - e934d8b5-13e5-4f77-b55e-871e6f2df2fe
       - ca9fca9c-4a8a-4487-8242-0a06d6fbed1f
       - 877e5bdc-07c3-45da-a2b4-35367a9a0cd0
-      remarks: One or more parties
-      role-id: penetration-test-team
-    - party-uuids:
-      - e934d8b5-13e5-4f77-b55e-871e6f2df2fe
-      remarks: Exactly one party
+    - remarks: Exactly one party
       role-id: penetration-test-lead
-    - party-uuids:
-      - f4568fda-c6d2-4640-adec-0012015af7d0
-      remarks: Exactly one party
+      party-uuids:
+      - e934d8b5-13e5-4f77-b55e-871e6f2df2fe
+    - remarks: Exactly one party
       role-id: assessment-executive
-    - party-uuids:
-      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-      remarks: |-
+      party-uuids:
+      - f4568fda-c6d2-4640-adec-0012015af7d0
+    - remarks: |-
         Exactly one party
 
         The party-uuid should observation-source a party in the SSP.
@@ -594,11 +518,9 @@ assessment-plan:
 
         The SAP tool should not modify the SSP.
       role-id: csp-operations-center
-    - party-uuids:
-      - f4568fda-c6d2-4640-adec-0012015af7d0
-      - e934d8b5-13e5-4f77-b55e-871e6f2df2fe
-      - 877e5bdc-07c3-45da-a2b4-35367a9a0cd0
-      remarks: |-
+      party-uuids:
+      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
+    - remarks: |-
         There should be at least three CSP Assessment POCs.
 
         At least one should be available 24x7 during assessment activities.
@@ -611,15 +533,19 @@ assessment-plan:
 
         The SAP tool should not modify the SSP.
       role-id: csp-assessment-poc
-    - party-uuids:
-      - e934d8b5-13e5-4f77-b55e-871e6f2df2fe
-      remarks: One or more parties
-      role-id: csp-end-of-testing-poc
-    - party-uuids:
+      party-uuids:
       - f4568fda-c6d2-4640-adec-0012015af7d0
       - e934d8b5-13e5-4f77-b55e-871e6f2df2fe
-      remarks: One or more parties
+      - 877e5bdc-07c3-45da-a2b4-35367a9a0cd0
+    - remarks: One or more parties
+      role-id: csp-end-of-testing-poc
+      party-uuids:
+      - e934d8b5-13e5-4f77-b55e-871e6f2df2fe
+    - remarks: One or more parties
       role-id: csp-results-poc
+      party-uuids:
+      - f4568fda-c6d2-4640-adec-0012015af7d0
+      - e934d8b5-13e5-4f77-b55e-871e6f2df2fe
     last-modified: 2023-07-06T00:00:00Z
     oscal-version: 1.0.4
   assessment-subjects:
@@ -754,17 +680,17 @@ assessment-plan:
         prose: "This SAP has been developed by \\[IA Name\\] and is for \\[an initial assessment/an annual assessment/an annual assessment and significant change assessment/a significant change assessment\\] of the \\[CSP Name\\], \\[CSO Name\\]. The SAP provides the goals for the assessment and details how the assessment will be conducted."
         ns: https://fedramp.gov/ns/oscal
         props:
-        - value: "001"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "001"
       - title: "Applicable Laws, Regulations, Standards and Guidance"
         name: laws-regulations
         prose: "The FedRAMP-applicable laws, regulations, standards and guidance is included in the \\[CSO Name\\] SSP section – System Security Plan Approvals. Additionally, in Appendix L of the SSP, the \\[CSP Name\\] has included laws, regulations, standards, and guidance that apply specifically to this system."
         ns: https://fedramp.gov/ns/oscal
         props:
-        - value: "002"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "002"
     - title: Scope
       name: scope
       ns: https://fedramp.gov/ns/oscal
@@ -774,9 +700,9 @@ assessment-plan:
         prose: "This plan is for an initial assessment of \\[CSO Name\\], a \\[One: High/Moderate/ Low\\] baseline system. 100% of the FedRAMP security controls in the system baseline are assessed. The security controls that will be assessed are listed in Appendix A."
         ns: https://fedramp.gov/ns/oscal
         props:
-        - value: "001"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "001"
       - title: Annual Assessment
         name: annual-assessment
         prose: |-
@@ -805,9 +731,9 @@ assessment-plan:
           | \[Insert Package ID\] | \[Insert CSP Name\] | \[Insert CSO Name\] |
         ns: https://fedramp.gov/ns/oscal
         props:
-        - value: "002"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "002"
       - title: Location of Component
         name: location
         prose: |-
@@ -862,9 +788,9 @@ assessment-plan:
         - Add assumptions here; these must be agreed to by the CSP and IA...
         - Add...
       props:
-      - value: "001"
-        name: sort-id
+      - name: sort-id
         ns: https://fedramp.gov/ns/oscal
+        value: "001"
     - title: Methodology
       name: methodology
       parts:
@@ -880,9 +806,9 @@ assessment-plan:
           Deviations from the SAP-defined methodology are described below.
         ns: https://fedramp.gov/ns/oscal
         props:
-        - value: "001"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "001"
       - title: Data Gathering
         name: data-gathering
         prose: |-
@@ -902,9 +828,9 @@ assessment-plan:
           - Technical Tests: \[IA Name\] will perform technical tests, including penetration testing on system components, using automated and manual methods.
         ns: https://fedramp.gov/ns/oscal
         props:
-        - value: "002"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "002"
       - title: Sampling
         name: sampling
         prose: |-
@@ -923,19 +849,19 @@ assessment-plan:
           \[IA Name\] validates that all security controls required to be tested have appropriate sample sizes for items such as account requests, account terminations, account transfers, change control processes as captured in the \[CSO Name\] SSP, \[Version X.X\], \[MM/DD/YYYY\]. The controls sampling methodology is described in Appendix B.
         ns: https://fedramp.gov/ns/oscal
         props:
-        - value: "003"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
-        - value: "no"
-          name: sampling
+          value: "003"
+        - name: sampling
           ns: https://fedramp.gov/ns/oscal
+          value: "no"
       - name: pen-testing
         prose: The Penetration Test Plan and Methodology is attached in Appendix C.
         ns: https://fedramp.gov/ns/oscal
         props:
-        - value: "004"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "004"
     - title: Test Plan
       name: test-plan
       prose: "The \\[IA Name\\] security assessment team, \\[CSP Name\\] points of contact, testing schedule, and testing tools that will be used are described in the sections that follow."
@@ -953,9 +879,9 @@ assessment-plan:
           | \[Insert IA member name\] | \[Insert IA member role\] | \[yes/no\]      | \[yes/no\]       |
         ns: https://fedramp.gov/ns/oscal
         props:
-        - value: "001"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "001"
       - title: CSP Testing Points of Contact (POCs)
         name: csp-testing-poc
         prose: |-
@@ -966,9 +892,9 @@ assessment-plan:
           | \[Insert Name\] | \[Insert Role\] |
         ns: https://fedramp.gov/ns/oscal
         props:
-        - value: "002"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "002"
       - title: Testing Performed Using Automated Tools
         name: automated-tools-testing
         prose: |-
@@ -979,9 +905,9 @@ assessment-plan:
           | \[Insert tool name\] | \[Insert vendor name and tool version\] | \[Insert purpose of tool\] |
         ns: https://fedramp.gov/ns/osccal
         props:
-        - value: "003"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "003"
       - title: Testing Performed Using Manual Methods
         name: manual-methods-testing
         prose: |-
@@ -990,9 +916,9 @@ assessment-plan:
           | \[Insert test ID\] | \[Insert test name\] | \[Insert test description text\] |
         ns: https://fedramp.gov/ns/oscal
         props:
-        - value: "004"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "004"
       - title: Schedule
         name: schedule
         prose: |-
@@ -1003,9 +929,9 @@ assessment-plan:
           | \[Insert task name\] | \[Insert task start date\] | \[Insert task end date\] |
         ns: https://fedramp.gov/ns/oscal
         props:
-        - value: "005"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "005"
     - title: Rules of Engagement
       name: rules-of-engagement
       prose: "The ROE is a document designed to describe proper notifications and disclosures between an owner of a tested system and an IA. In particular, a ROE includes information about targets of automated scans and IP address origination information of automated scans (and other testing tools). Together with the information provided in preceding sections of this document, this document shall serve as a ROE once signed."
@@ -1016,16 +942,16 @@ assessment-plan:
         prose: "Any testing will be performed according to the terms and conditions, cited in this SAP and the Penetration Testing ROE, once this SAP is signed by both parties. These ROEs must be upheld to minimize risk exposure that could occur during security assessment testing."
         ns: https://fedramp.gov/ns/oscal
         props:
-        - value: "001"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "001"
       - name: disclosure
         prose: The following sections provide additional disclosures accepted by the IA and the CSP for proceeding with this Security Assessment.
         ns: https://fedramp.gov/ns/oscal
         props:
-        - value: "002"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "002"
       - title: Security Testing May Include
         name: assessment-inclusions
         prose: "Every assessment requires certain disclosures. Sometimes a CSO may have the same disclosures as another CSO, but not usually. IAs and CSPs are required to ensure that all requirements contracted between the CSP and IA are adequate for both parties. Examples of inclusive disclosures appear below. Add to and delete from this list, as applicable."
@@ -1033,69 +959,69 @@ assessment-plan:
         - name: included-activity
           prose: Port scans and other network service interaction and queries
           props:
-          - value: "001"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "001"
         - name: included-activity
           prose: Port scans and other network service interaction and queries
           props:
-          - value: "002"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "002"
         - name: included-activity
           prose: "Network sniffing, traffic monitoring, traffic analysis, and host discovery"
           props:
-          - value: "003"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "003"
         - name: included-activity
           prose: "Attempted logins or other use of systems, with any account name, token, password, and privilege"
           props:
-          - value: "004"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "004"
         - name: included-activity
           prose: Attempted SQL injection and other forms of input parameter testing
           props:
-          - value: "005"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "005"
         - name: included-activity
           prose: Use of exploit code for leveraging discovered vulnerabilities
           props:
-          - value: "006"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "006"
         - name: included-activity
           prose: Password cracking via capture and scanning of authentication databases
           props:
-          - value: "007"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "007"
         - name: included-activity
           prose: Spoofing or deceiving servers regarding network traffic
           props:
-          - value: "008"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "008"
         - name: included-activity
           prose: Altering running system configuration except where denial of service would result
           props:
-          - value: "009"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "009"
         - name: included-activity
           prose: Adding user accounts
           props:
-          - value: "010"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "010"
         - name: included-activity
           prose: Adding other activities as needed...
           props:
-          - value: "011"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "011"
       - title: Security Testing Will Not Include
         name: assessment-exclusions
         prose: 'Examples of exclusive disclosures appear below. Security testing will not include any of the following activities:'
@@ -1103,51 +1029,51 @@ assessment-plan:
         - name: excluded-activity
           prose: Changes to assigned user passwords
           props:
-          - value: "001"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "001"
         - name: excluded-activity
           prose: Modification of user files or system files
           props:
-          - value: "002"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "002"
         - name: excluded-activity
           prose: Telephone modem probes and scans (active and passive)
           props:
-          - value: "003"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "003"
         - name: excluded-activity
           prose: "Intentional viewing of \\[CSP Name\\] staff email, Internet caches, and/or personnel cookie files"
           props:
-          - value: "004"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "004"
         - name: excluded-activity
           prose: Denial of Service attacks
           props:
-          - value: "005"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "005"
         - name: excluded-activity
           prose: Exploits that will introduce new weaknesses to the system
           props:
-          - value: "0061"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "0061"
         - name: excluded-activity
           prose: "Intentional introduction of malicious code (e.g., viruses, Trojans, worms, etc.)"
           props:
-          - value: "007"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "007"
         - name: excluded-activity
           prose: "Add exclusions here; however, be aware that FedRAMP may not agree with the exclusions listed (e.g., no testing of client side components indicated as imperative for use of the system)"
           props:
-          - value: "008"
-            name: sort-id
+          - name: sort-id
             ns: https://fedramp.gov/ns/oscal
+            value: "008"
     - name: results-delivery
       parts:
       - title: End of Testing
@@ -1156,18 +1082,18 @@ assessment-plan:
         - name: testing-end
           prose: "\\[IA Name\\] will notify \\[Name of Person\\] at \\[CSP Name\\] when security testing has been completed."
         props:
-        - value: "001"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "001"
       - title: Communications of Test Results
         name: results-communication
         parts:
         - name: results-communication
           prose: "All documentation generated by this security assessment effort, is to be handled securely, in such a way to protect the confidentiality, integrity and availability of the data, and according to \\[CSP Name\\] and \\[IA Name\\] acceptable requirements. Security testing results will be provided and disclosed to the individual POCs at \\[CSP Name\\] as noted in this document. This should be accomplished within \\[Number of Days\\] days after security testing has been completed."
         props:
-        - value: "002"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "002"
     - title: Limitation of Liability
       name: liability-limitations
       ns: https://fedramp.gov/ns/oscal
@@ -1175,28 +1101,16 @@ assessment-plan:
       - name: liability-limitation
         prose: "\\[IA Name\\], and its stated partners, shall not be held liable to \\[CSP Name\\] for any and all liabilities, claims, or damages arising out of or relating to the security vulnerability testing portion of this Agreement, howsoever caused and regardless of the legal theory asserted, including breach of contract or warranty, tort, strict liability, statutory liability, or otherwise."
         props:
-        - value: "001"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "001"
       - name: liability-limitation
         prose: "\\[CSP Name\\] acknowledges that there are limitations inherent in the methodologies implemented, and the assessment of security and vulnerability relating to information technology is an uncertain process based on past experiences, currently available information, and the anticipation of reasonable threats at the time of the analysis. There is no assurance that an analysis of this nature will identify all vulnerabilities or propose exhaustive and operationally viable recommendations to mitigate all exposure."
         props:
-        - value: "002"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "002"
   reviewed-controls:
-    control-selections:
-    - exclude-controls:
-      - control-id: ac-1
-      description: |-
-        # Control Scope
-
-        Initial assessments include all controls.
-
-        Annual assessment include a subset of controls as defined by FedRAMP Continuous Monitoring Guidance and any adjudicating officials.
-
-        This example demonstrates including all controls identified in the SSP's baseline, and then explicilty excludes AC-1.
-      include-all: {}
     remarks: |-
       # IMPORTANT: RESPONSE POINTS
 
@@ -1212,10 +1126,7 @@ assessment-plan:
 
       XPath for AC-2(f) control objective response points in a resolved profile catalog: `//*/part[@name='objective' and contains(@id, 'ac-2.f')]/prop[@name='response-point'][@ns='https://fedramp.gov/ns/oscal']/../@id`
     control-objective-selections:
-    - include-objectives:
-      - objective-id: ac-2.f_obj.1
-      - objective-id: ac-2.f_obj.2
-      description: |-
+    - description: |-
         # Control Objective Scope
 
         Within the OSCAL-based FedRAMP baselines, FedRAMP has defined the control objectives for which an assessor must respond. Those must be explicityly listed here.
@@ -1225,6 +1136,21 @@ assessment-plan:
         This is analgous to the individual rows listed in the empty FedRAMP Test Case Workbook ([Moderate](https://www.fedramp.gov/assets/resources/templates/SAP-AA-FedRAMP-Moderate-Security-Test-Case-Procedures-Template.xlsx)).
 
         Note that the specified objective-ids must exist in the referenced profile / catalog.
+      include-objectives:
+      - objective-id: ac-2.f_obj.1
+      - objective-id: ac-2.f_obj.2
+    control-selections:
+    - description: |-
+        # Control Scope
+
+        Initial assessments include all controls.
+
+        Annual assessment include a subset of controls as defined by FedRAMP Continuous Monitoring Guidance and any adjudicating officials.
+
+        This example demonstrates including all controls identified in the SSP's baseline, and then explicilty excludes AC-1.
+      include-all: {}
+      exclude-controls:
+      - control-id: ac-1
   uuid: 1a58d031-b0ef-4e3a-9d6f-5c5969bb711e
   tasks:
   - description: optional description here
@@ -1345,45 +1271,45 @@ assessment-plan:
     - title: "Web Application Test #1"
       type: action
       props:
-      - value: web-application
-        name: test-type
+      - name: test-type
         ns: http://fedramp.gov/ns/oscal
-      - value: https://service.offering.com/login
-        name: login-url
+        value: web-application
+      - name: login-url
         ns: http://fedramp.gov/ns/oscal
-      - value: test-user
-        name: login-id
+        value: https://service.offering.com/login
+      - name: login-id
         ns: http://fedramp.gov/ns/oscal
+        value: test-user
       uuid: 16cc716d-b519-416a-ba61-edd4affbdddb
       associated-activities:
-      - subjects:
+      - activity-uuid: 315b3118-3d2e-420b-b4fb-5acf13b08381
+        subjects:
         - include-subjects:
           - remarks: "References an inventory item, which is linked to a component. The component has a `scan-type` FedRAMP Extension with a value of \"web\""
             type: inventory-item
             subject-uuid: 779d4e89-bba6-432c-b50d-d699fe534129
           type: inventory-item
-        activity-uuid: 315b3118-3d2e-420b-b4fb-5acf13b08381
     - title: "Web Application Test #2"
       type: action
       props:
-      - value: web-application
-        name: test-type
+      - name: test-type
         ns: http://fedramp.gov/ns/oscal
-      - value: https://admin-portal.offering.com/login
-        name: login-url
+        value: web-application
+      - name: login-url
         ns: http://fedramp.gov/ns/oscal
-      - value: test-admin
-        name: login-id
+        value: https://admin-portal.offering.com/login
+      - name: login-id
         ns: http://fedramp.gov/ns/oscal
+        value: test-admin
       uuid: fc869008-9cd5-4499-82c8-6bc532a86142
       associated-activities:
-      - subjects:
+      - activity-uuid: 64142a6f-d8d4-47c6-8bb1-a0e33f17664d
+        subjects:
         - remarks: "References an inventory item, which is linked to a component. The component has a `scan-type` FedRAMP Extension with a value of \"web\""
           include-subjects:
           - type: inventory-item
             subject-uuid: 779d4e89-bba6-432c-b50d-d699fe534129
           type: inventory-item
-        activity-uuid: 64142a6f-d8d4-47c6-8bb1-a0e33f17664d
     uuid: bdf4380d-6d23-4d02-bafe-483b7b64d1fb
   - title: Role-Based Tests
     type: action
@@ -1391,45 +1317,45 @@ assessment-plan:
     - title: "Role Based Test #1"
       type: action
       props:
-      - value: role-based
-        name: test-type
+      - name: test-type
         ns: http://fedramp.gov/ns/oscal
-      - value: test-user
-        name: login-id
+        value: role-based
+      - name: login-id
         ns: http://fedramp.gov/ns/oscal
-      - value: 9cb0fab0-78bd-44ba-bcb8-3e9801cc952f
-        name: user-uuid
+        value: test-user
+      - name: user-uuid
         ns: http://fedramp.gov/ns/oscal
+        value: 9cb0fab0-78bd-44ba-bcb8-3e9801cc952f
       uuid: cfcb0f24-2e1b-49d7-b938-5f58479ed874
       associated-activities:
-      - subjects:
+      - activity-uuid: dc858ece-b430-485d-886c-3a812bb77b13
+        subjects:
         - remarks: "References an inventory item, which is linked to a component. The component has a `scan-type` FedRAMP Extension with a value of \"web\""
           include-subjects:
           - type: inventory-item
             subject-uuid: 779d4e89-bba6-432c-b50d-d699fe534129
           type: inventory-item
-        activity-uuid: dc858ece-b430-485d-886c-3a812bb77b13
     - title: "Role Based Test #2"
       type: action
       props:
-      - value: role-based
-        name: test-type
+      - name: test-type
         ns: http://fedramp.gov/ns/oscal
-      - value: test-admin
-        name: login-id
+        value: role-based
+      - name: login-id
         ns: http://fedramp.gov/ns/oscal
-      - value: sys-role-2
-        name: user-uuid
+        value: test-admin
+      - name: user-uuid
         ns: http://fedramp.gov/ns/oscal
+        value: sys-role-2
       uuid: 74830d19-2820-4487-bd1d-91d8656b7eb0
       associated-activities:
-      - subjects:
+      - activity-uuid: 64142a6f-d8d4-47c6-8bb1-a0e33f17664d
+        subjects:
         - remarks: "References an inventory item, which is linked to a component. The component has a `scan-type` FedRAMP Extension with a value of \"web\""
           include-subjects:
           - type: inventory-item
             subject-uuid: 779d4e89-bba6-432c-b50d-d699fe534129
           type: inventory-item
-        activity-uuid: 64142a6f-d8d4-47c6-8bb1-a0e33f17664d
     uuid: eddbcfa9-d296-4818-adcc-3d5465ed3fdd
   local-definitions:
     activities:
@@ -1437,105 +1363,105 @@ assessment-plan:
       title: Title of the Manual Test
       steps:
       - props:
-        - value: "001"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "001"
         description: "Describe test step #1"
         uuid: fb039fd7-5a2b-4c0f-867c-88cce9c3778c
       - props:
-        - value: "002"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "002"
         description: "Describe test step #2"
         uuid: fb039fd7-5a2b-4c0f-867c-88cce9c3778c
       - props:
-        - value: "003"
-          name: sort-id
+        - name: sort-id
           ns: https://fedramp.gov/ns/oscal
+          value: "003"
         description: "Describe test step #3"
         uuid: fb039fd7-5a2b-4c0f-867c-88cce9c3778c
       description: Description of the manual test
       props:
-      - value: EXAMINE
-        name: method
-      - value: manual
-        name: type
+      - name: method
+        value: EXAMINE
+      - name: type
         ns: https://fedramp.gov/ns/oscal
-      - value: Test ID
-        name: label
+        value: manual
+      - name: label
         ns: https://fedramp.gov/ns/oscal
+        value: Test ID
     - uuid: 3ba68918-80ef-4846-89e0-9f1def7e5223
       title: "\\[SAMPLE\\]Forceful Browsing"
       description: We will login as a customer and try to see if we can gain access to the Network Administrator and Database Administrator privileges and authorizations by navigating to different views and manually forcing the browser to various URLs
       props:
-      - value: TEST
-        name: method
-      - value: manual
-        name: type
+      - name: method
+        value: TEST
+      - name: type
         ns: https://fedramp.gov/ns/oscal
-      - value: Test ID
-        name: label
+        value: manual
+      - name: label
         ns: https://fedramp.gov/ns/oscal
+        value: Test ID
     - uuid: 2233cf20-282a-4967-ab07-a4b7d1ae3a4b
       title: "\\[SAMPLE\\]CAPTCHA"
       description: We will test the CAPTCHA function on the web form manually
       props:
-      - value: TEST
-        name: method
-      - value: manual
-        name: type
+      - name: method
+        value: TEST
+      - name: type
         ns: https://fedramp.gov/ns/oscal
-      - value: Test ID
-        name: label
+        value: manual
+      - name: label
         ns: https://fedramp.gov/ns/oscal
+        value: Test ID
     - uuid: f818a896-3438-409f-a2a4-583a56fa41b4
       title: "\\[SAMPLE\\]OCSP"
       description: We will manually test to see if OCSP is validating certificates.
       props:
-      - value: EXAMINE
-        name: method
-      - value: manual
-        name: type
+      - name: method
+        value: EXAMINE
+      - name: type
         ns: https://fedramp.gov/ns/oscal
-      - value: Test ID
-        name: label
+        value: manual
+      - name: label
         ns: https://fedramp.gov/ns/oscal
+        value: Test ID
     - uuid: 315b3118-3d2e-420b-b4fb-5acf13b08381
       title: "Web Application Test #1"
       description: Describe this web application test.
       props:
-      - value: TEST
-        name: method
-      - value: web-application
-        name: type
+      - name: method
+        value: TEST
+      - name: type
         ns: https://fedramp.gov/ns/oscal
+        value: web-application
     - uuid: 64142a6f-d8d4-47c6-8bb1-a0e33f17664d
       title: "Web Application Test #2"
       description: Describe this web application test.
       props:
-      - value: TEST
-        name: method
-      - value: web-application
-        name: type
+      - name: method
+        value: TEST
+      - name: type
         ns: https://fedramp.gov/ns/oscal
+        value: web-application
     - uuid: dc858ece-b430-485d-886c-3a812bb77b13
       title: "Role Based Test #1"
       description: Describe this role based test.
       props:
-      - value: TEST
-        name: method
-      - value: role-based
-        name: type
+      - name: method
+        value: TEST
+      - name: type
         ns: https://fedramp.gov/ns/oscal
+        value: role-based
     - uuid: 74830d19-2820-4487-bd1d-91d8656b7eb0
       title: "Role Based Test #2"
       description: Describe this role based test.
       props:
-      - value: INTERVIEW
-        name: method
-      - value: role-based
-        name: type
+      - name: method
+        value: INTERVIEW
+      - name: type
         ns: https://fedramp.gov/ns/oscal
+        value: role-based
     objectives-and-methods:
     - control-id: ac-2
       parts:
@@ -1552,8 +1478,8 @@ assessment-plan:
             - disable information system accounts
             - remove information system accounts
         props:
-        - value: ac-2.f_obj.1-1
-          name: method-id
+        - name: method-id
+          value: ac-2.f_obj.1-1
       - id: ac-2.f_obj.1-1
         name: assessment-method
         parts:
@@ -1561,8 +1487,8 @@ assessment-plan:
           name: assessment-objects
           prose: "Access control policy; procedures addressing account management; security plan; information system design documentation; information system configuration settings and associated documentation; list of active system accounts along with the name of the individual associated with each account; list of conditions for group and role membership; notifications or records of recently transferred, separated, or terminated employees; list of recently disabled information system accounts along with the name of the individual associated with each account; access authorization records; account management compliance reviews; information system monitoring records; information system audit records; other relevant documents or records"
         props:
-        - value: EXAMINE
-          name: method
+        - name: method
+          value: EXAMINE
     - control-id: ac-2
       parts:
       - id: ac-2.f_obj.2
@@ -1584,8 +1510,8 @@ assessment-plan:
           name: assessment-objects
           prose: Organizational personnel with account management responsibilities; system/network administrators; organizational personnel with information security responsibilities
         props:
-        - value: INTERVIEW
-          name: method
+        - name: method
+          value: INTERVIEW
       - id: ac-2.f_obj.2-2
         name: assessment-method
         parts:
@@ -1593,10 +1519,14 @@ assessment-plan:
           name: assessment-objects
           prose: Organizational processes for account management on the information system; automated mechanisms for implementing account management
         props:
-        - value: TEST
-          name: method
+        - name: method
+          value: TEST
     inventory-items:
-    - remarks: |-
+    - description: |-
+        A network appliance, not defined in the SSP inventory.
+
+        This could be component that is modified/added as part of a significant change.
+      remarks: |-
         Use any needed prop/annotation allowed in an SSP inventory-item.
 
         If correcting existing SSP, use the "updates-uuid" property to cite the original content.
@@ -1604,77 +1534,74 @@ assessment-plan:
         This could be component that is modified/added as part of a significant change.
       uuid: ce6b1a6e-0391-45d1-997e-3cc97db97d9f
       props:
-      - value: 10.1.2.99
-        name: ipv4-address
-      - value: "no"
-        name: virtual
-      - value: "no"
-        name: public
-      - value: dns.name
-        name: fqdn
-      - value: 00:00:00:00:00:00
-        name: mac-address
-      - value: hardware-model
-        name: hardware-model
-      - value: vendor-name
-        name: vendor-name
+      - name: ipv4-address
+        value: 10.1.2.99
+      - name: virtual
+        value: "no"
+      - name: public
+        value: "no"
+      - name: fqdn
+        value: dns.name
+      - name: mac-address
+        value: 00:00:00:00:00:00
+      - name: hardware-model
+        value: hardware-model
+      - name: vendor-name
         ns: https://fedramp.gov/ns/oscal
-      - value: appliance
-        name: asset-type
-      - value: infrastructure
-        name: scan-type
+        value: vendor-name
+      - name: asset-type
+        value: appliance
+      - name: scan-type
         ns: https://fedramp.gov/ns/oscal
-      - value: web
-        name: scan-type
+        value: infrastructure
+      - name: scan-type
         ns: https://fedramp.gov/ns/oscal
-      - value: "no"
-        name: allows-authenticated-scan
-      description: |-
-        A network appliance, not defined in the SSP inventory.
-
-        This could be component that is modified/added as part of a significant change.
-    - remarks: |-
+        value: web
+      - name: allows-authenticated-scan
+        value: "no"
+    - description: "A Windows laptop, not defined in the SSP inventory."
+      remarks: |-
         Use any needed prop/annotation allowed in an SSP inventory-item.
 
         If correcting existing SSP, use the "updates-uuid" property to cite the original content.
       uuid: 0f9049ed-a01f-484a-b70d-b1894fd196b8
       props:
-      - value: 10.1.1.99
-        name: ipv4-address
-      - value: "no"
-        name: virtual
-      - value: "no"
-        name: public
-      - value: dns.name
-        name: fqdn
-      - value: 00:00:00:00:00:00
-        name: mac-address
-      - value: Windows 10
-        name: os-name
-      - value: 10.0.190944
-        name: os-version
-      - value: hardware-model
-        name: hardware-model
-      - value: vendor-name
-        name: vendor-name
+      - name: ipv4-address
+        value: 10.1.1.99
+      - name: virtual
+        value: "no"
+      - name: public
+        value: "no"
+      - name: fqdn
+        value: dns.name
+      - name: mac-address
+        value: 00:00:00:00:00:00
+      - name: os-name
+        value: Windows 10
+      - name: os-version
+        value: 10.0.190944
+      - name: hardware-model
+        value: hardware-model
+      - name: vendor-name
         ns: https://fedramp.gov/ns/oscal
-      - value: operating-system
-        name: asset-type
-      - value: infrastructure
-        name: scan-type
+        value: vendor-name
+      - name: asset-type
+        value: operating-system
+      - name: scan-type
         ns: https://fedramp.gov/ns/oscal
-      - value: "yes"
-        name: allows-authenticated-scan
-      description: "A Windows laptop, not defined in the SSP inventory."
+        value: infrastructure
+      - name: allows-authenticated-scan
+        value: "yes"
     components:
-    - uuid: 59406025-116a-4fee-84c3-932a9968de54
+    - title: Subnet
+      uuid: 59406025-116a-4fee-84c3-932a9968de54
       description: "A known subnet, which is not defined in the SSP inventory."
       status:
         state: operational
       props:
-      - value: 10.20.30.0/24
-        name: ipv4-subnet
+      - name: ipv4-subnet
         ns: https://fedramp.gov/ns/oscal
+        value: 10.20.30.0/24
       type: subnet
       remarks: |-
         Use any needed prop/annotation allowed in an SSP inventory-item.
@@ -1682,9 +1609,17 @@ assessment-plan:
         If correcting existing SSP, use the "updates-uuid" property to cite the original content.
 
         This could be component that is modified/added as part of a significant change.
-      title: Subnet
     users:
-    - remarks: |-
+    - uuid: ba6b8bd4-c6f1-4b60-aa0f-69875b108f16
+      title: Updated Role
+      authorized-privileges:
+      - title: Corrected Function List
+        functions-performed:
+        - Add/Remove Groups
+        - Add/Remove other admins
+        - Manage logs
+      description: '# Existing Role - Incorrect Associated Functions'
+      remarks: |-
         The UUID assigned to the origional incorrect role in the SSP must be cited in the "updates-uuid" property.
 
         The SAP syntax duplicates the SSP user syntax.
@@ -1694,16 +1629,14 @@ assessment-plan:
         Tools should duplicate the entire assembly from the SSP to this location, then allow the assessor to add or change the details.
 
         This ensures the entry here is complete.
-      uuid: ba6b8bd4-c6f1-4b60-aa0f-69875b108f16
-      title: Updated Role
+    - uuid: 58bb5a77-b40a-4104-ac29-299a1691f76a
+      title: Missing Role
       authorized-privileges:
-      - title: Corrected Function List
+      - title: Typical External User
         functions-performed:
-        - Add/Remove Groups
-        - Add/Remove other admins
-        - Manage logs
-      description: '# Existing Role - Incorrect Associated Functions'
-    - remarks: |-
+        - View Team Content
+        - View/Edit Individual Content
+      remarks: |-
         The ID assigned to this missing role must not be used in the SSP user list.
 
         The SAP user assembly duplicates the SSP user assembly, which requires a role-id.
@@ -1711,15 +1644,7 @@ assessment-plan:
         If an existing role in the SSP is appropriate, reference it here.
 
         If no appropriate role exists in the SSP, the role-id may be left blank in the SAP.
-      uuid: 58bb5a77-b40a-4104-ac29-299a1691f76a
-      title: Missing Role
-      authorized-privileges:
-      - title: Typical External User
-        functions-performed:
-        - View Team Content
-        - View/Edit Individual Content
   import-ssp:
-    href: '#7c30125f-c056-4888-9f1a-7ed1b6a1b638'
     remarks: |-
       Link the SAP to the SSP.
 
@@ -1728,3 +1653,78 @@ assessment-plan:
       This may point to a back-matter resource using a URI fragment.
 
       If no OSCAL-based SSP exists, this must be a URI fragment pointing to a special back-matter resource. The resource must include the `no-oscal-ssp` conformity tag.
+    href: '#7c30125f-c056-4888-9f1a-7ed1b6a1b638'
+  assessment-assets:
+    assessment-platforms:
+    - props:
+      - name: ipv4-address
+        ns: https://fedramp.gov/ns/oscal
+        value: 10.10.10.10
+      - name: ipv4-address
+        ns: https://fedramp.gov/ns/oscal
+        value: 10.10.10.11
+      - name: ipv4-address
+        ns: https://fedramp.gov/ns/oscal
+        value: 10.10.10.12
+      title: Scanning Tools
+      uuid: 60218fe9-b01a-4553-b705-dbe9dec44aa1
+      uses-components:
+      - remarks: Cites assessment laptop.
+        component-uuid: ba991c3f-1e00-4c38-bf81-86a9e503f3b9
+      - remarks: Cites assessment laptop.
+        component-uuid: ba991c3f-1e00-4c38-bf81-86a9e503f3b9
+      - remarks: Cites Vulnerability Scanning Tool
+        component-uuid: 040937c3-2e0e-407a-bb3c-d4e61ac1c460
+      - remarks: Cites Database Scanning Tool
+        component-uuid: c50104b9-69b3-4383-a1f1-d8a6f6f806f7
+    components:
+    - title: Assessment Laptop
+      uuid: ba991c3f-1e00-4c38-bf81-86a9e503f3b9
+      description: Describe assessment laptop.
+      status:
+        state: operational
+      props:
+      - name: ipv4-address
+        ns: https://fedramp.gov/ns/oscal
+        value: 10.10.10.10
+      type: hardware
+      remarks: |-
+        Ideally, this assessment laptop would have been defined in the SAP, and not repeated here.
+
+        If the laptop was not known at the time the SAP was drafted, or something different was used, it must be defined here.
+    - title: XYZ Vulnerability Scanning Tool
+      uuid: 040937c3-2e0e-407a-bb3c-d4e61ac1c460
+      description: Describe the purpose of the tool here.
+      status:
+        state: operational
+      props:
+      - name: vendor-name
+        ns: https://fedramp.gov/ns/oscal
+        value: Vendor Name
+      - name: name
+        ns: https://fedramp.gov/ns/oscal
+        value: Tool Name
+      - name: version
+        value: 1.2.3
+      type: software
+    - title: XYZ Database Scanning Tool
+      uuid: c50104b9-69b3-4383-a1f1-d8a6f6f806f7
+      description: Describe the purpose of the tool here.
+      status:
+        state: operational
+      props:
+      - name: vendor-name
+        ns: https://fedramp.gov/ns/oscal
+        value: Vendor Name
+      - name: name
+        ns: https://fedramp.gov/ns/oscal
+        value: Tool Name
+      - name: version
+        value: 1.2.3
+      type: software
+    - title: Assessment Addresses
+      uuid: 332517e5-2033-47dd-a4d0-6ca9c9786f6b
+      description: "Identifies all addresses from which the assessment may be conducted, including scans and penetration testing activities."
+      status:
+        state: operational
+      type: assessment-origination
