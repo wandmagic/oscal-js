@@ -9,18 +9,18 @@ system-security-plan:
     href: https://raw.githubusercontent.com/GSA/fedramp-automation/master/dist/content/rev5/baselines/xml/FedRAMP_rev5_MODERATE-baseline-resolved-profile_catalog.xml
   system-implementation:
     props:
-    - ns: https://fedramp.gov/ns/oscal
+    - name: users-internal
+      ns: https://fedramp.gov/ns/oscal
       value: "0"
-      name: users-internal
-    - ns: https://fedramp.gov/ns/oscal
+    - name: users-external
+      ns: https://fedramp.gov/ns/oscal
       value: "0"
-      name: users-external
-    - ns: https://fedramp.gov/ns/oscal
+    - name: users-internal-future
+      ns: https://fedramp.gov/ns/oscal
       value: "0"
-      name: users-internal-future
-    - ns: https://fedramp.gov/ns/oscal
+    - name: users-external-future
+      ns: https://fedramp.gov/ns/oscal
       value: "0"
-      name: users-external-future
     components:
     - status:
         state: operational
@@ -37,19 +37,19 @@ system-security-plan:
       - rel: validation-details
         href: https://csrc.nist.gov/projects/cryptographic-module-validation-program/Certificate/3928
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: asset-type
+        ns: https://fedramp.gov/ns/oscal
         value: cryptographic-module
-        name: asset-type
-      - ns: https://fedramp.gov/ns/oscal
+      - name: vendor-name
+        ns: https://fedramp.gov/ns/oscal
         value: CM Vendor
-        name: vendor-name
-      - ns: https://fedramp.gov/ns/oscal
+      - name: cryptographic-module-usage
+        ns: https://fedramp.gov/ns/oscal
         value: data-at-rest
-        name: cryptographic-module-usage
-      - value: fips-140-2
-        name: validation-type
-      - value: "3928"
-        name: validation-reference
+      - name: validation-type
+        value: fips-140-2
+      - name: validation-reference
+        value: "3928"
       type: validation
       title: "\\[SAMPLE\\]Cryptographic Module Name"
       uuid: 95beec7e-6f82-4aaa-8211-969cd7c1f1ab
@@ -65,19 +65,19 @@ system-security-plan:
       - rel: validation-details
         href: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3920
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: asset-type
+        ns: https://fedramp.gov/ns/oscal
         value: cryptographic-module
-        name: asset-type
-      - ns: https://fedramp.gov/ns/oscal
+      - name: vendor-name
+        ns: https://fedramp.gov/ns/oscal
         value: CM Vendor
-        name: vendor-name
-      - ns: https://fedramp.gov/ns/oscal
+      - name: cryptographic-module-usage
+        ns: https://fedramp.gov/ns/oscal
         value: data-in-transit
-        name: cryptographic-module-usage
-      - value: fips-140-3
-        name: validation-type
-      - value: "3920"
-        name: validation-reference
+      - name: validation-type
+        value: fips-140-3
+      - name: validation-reference
+        value: "3920"
       type: validation
       title: "\\[SAMPLE\\]Cryptographic Module Name"
       uuid: 1eaaabbd-b3a6-4316-a868-7b815e7c40f5
@@ -88,39 +88,39 @@ system-security-plan:
     - status:
         state: operational
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: asset-type
+        ns: https://fedramp.gov/ns/oscal
         value: paas
-        name: asset-type
-      - value: system interconnection agreement
-        name: isa-title
-      - value: 2023-01-01T00:00:00Z
-        name: isa-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: isa-title
+        value: system interconnection agreement
+      - name: isa-date
+        value: 2023-01-01T00:00:00Z
+      - name: nature-of-agreement
+        ns: https://fedramp.gov/ns/oscal
         value: SLA
-        name: nature-of-agreement
-      - value: 172.0.0.0
-        name: ipv4-address
-      - value: '::'
-        name: ipv6-address
-      - value: incoming
-        name: direction
-      - ns: https://fedramp.gov/ns/oscal
+      - name: ipv4-address
+        value: 172.0.0.0
+      - name: ipv6-address
+        value: '::'
+      - name: direction
+        value: incoming
+      - name: information
+        ns: https://fedramp.gov/ns/oscal
         value: describe information being transferred
-        name: information
-      - ns: https://fedramp.gov/ns/oscal
+      - name: interconnection-data-type
+        ns: https://fedramp.gov/ns/oscal
         value: C.3.5.1
         class: fedramp
-        name: interconnection-data-type
-      - ns: https://fedramp.gov/ns/oscal
+      - name: interconnection-data-type
+        ns: https://fedramp.gov/ns/oscal
         value: C.3.5.8
         class: fedramp
-        name: interconnection-data-type
-      - value: 5a9c98ab-8e5e-433d-a7bd-515c07cd1497
-        name: leveraged-authorization-uuid
-      - value: external
-        name: implementation-point
-      - value: 11111111-0000-4000-9001-000000000001
-        name: inherited-uuid
+      - name: leveraged-authorization-uuid
+        value: 5a9c98ab-8e5e-433d-a7bd-515c07cd1497
+      - name: implementation-point
+        value: external
+      - name: inherited-uuid
+        value: 11111111-0000-4000-9001-000000000001
       type: leveraged-system
       title: Name of Leveraged System
       uuid: e82e6e07-0c62-417e-8a19-3744991b4c65
@@ -134,12 +134,12 @@ system-security-plan:
       - rel: used-by
         href: 60f92bcf-f353-4236-9803-2a5d417555f4
       props:
-      - value: 5a9c98ab-8e5e-433d-a7bd-515c07cd1497
-        name: leveraged-authorization-uuid
-      - value: external
-        name: implementation-point
-      - value: 11111111-0000-4000-9001-000000000002
-        name: inherited-uuid
+      - name: leveraged-authorization-uuid
+        value: 5a9c98ab-8e5e-433d-a7bd-515c07cd1497
+      - name: implementation-point
+        value: external
+      - name: inherited-uuid
+        value: 11111111-0000-4000-9001-000000000002
       type: service
       title: Service Provided by Leveraged System
       uuid: 77a1614a-57b3-4b32-9fee-613a6520ec58
@@ -153,78 +153,78 @@ system-security-plan:
       - rel: isa-agreement
         href: '#9d6cf2b4-8e88-4040-a33c-7bc206553a1a'
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: service-processor
+        ns: https://fedramp.gov/ns/oscal
         value: "[SAMPLE] Telco Name"
-        name: service-processor
-      - ns: https://fedramp.gov/ns/oscal
+      - name: interconnection-type
+        ns: https://fedramp.gov/ns/oscal
         value: "1"
-        name: interconnection-type
-      - ns: https://fedramp.gov/ns/oscal
+      - name: nature-of-agreement
+        ns: https://fedramp.gov/ns/oscal
         value: Contract
-        name: nature-of-agreement
-      - ns: https://fedramp.gov/ns/oscal
+      - name: still-supported
+        ns: https://fedramp.gov/ns/oscal
         value: "yes"
-        name: still-supported
-      - ns: https://fedramp.gov/ns/oscal
+      - name: interconnection-data-type
+        ns: https://fedramp.gov/ns/oscal
         value: C.3.5.1
         class: fedramp
-        name: interconnection-data-type
-      - ns: https://fedramp.gov/ns/oscal
+      - name: interconnection-data-type
+        ns: https://fedramp.gov/ns/oscal
         value: C.3.5.8
         class: fedramp
-        name: interconnection-data-type
-      - ns: https://fedramp.gov/ns/oscal
+      - name: interconnection-data-categorization
+        ns: https://fedramp.gov/ns/oscal
         value: low
         class: C.3.5.1
-        name: interconnection-data-categorization
-      - ns: https://fedramp.gov/ns/oscal
+      - name: interconnection-data-categorization
+        ns: https://fedramp.gov/ns/oscal
         value: moderate
         class: C.3.5.8
-        name: interconnection-data-categorization
-      - ns: https://fedramp.gov/ns/oscal
+      - name: authorized-users
+        ns: https://fedramp.gov/ns/oscal
         value: SecOps engineers
-        name: authorized-users
-      - ns: https://fedramp.gov/ns/oscal
+      - name: interconnection-compliance
+        ns: https://fedramp.gov/ns/oscal
         value: PCI SOC 2
         class: fedramp
-        name: interconnection-compliance
-      - ns: https://fedramp.gov/ns/oscal
+      - name: interconnection-compliance
+        ns: https://fedramp.gov/ns/oscal
         value: ISO/IEC 27001
         class: fedramp
-        name: interconnection-compliance
-      - ns: https://fedramp.gov/ns/oscal
+      - name: interconnection-hosting-environment
+        ns: https://fedramp.gov/ns/oscal
         value: PaaS
-        name: interconnection-hosting-environment
-      - ns: https://fedramp.gov/ns/oscal
+      - name: interconnection-risk
+        ns: https://fedramp.gov/ns/oscal
         value: None
-        name: interconnection-risk
-      - value: system interconnection agreement
-        name: isa-title
-      - value: 2023-01-01T00:00:00Z
-        name: isa-date
-      - value: 10.1.1.1
+      - name: isa-title
+        value: system interconnection agreement
+      - name: isa-date
+        value: 2023-01-01T00:00:00Z
+      - name: ipv4-address
+        value: 10.1.1.1
         class: local
-        name: ipv4-address
-      - value: 10.2.2.2
+      - name: ipv4-address
+        value: 10.2.2.2
         class: remote
-        name: ipv4-address
-      - value: ::ffff:10.2.2.2
-        name: ipv6-address
-      - value: incoming
-        name: direction
-      - value: outgoing
-        name: direction
-      - ns: https://fedramp.gov/ns/oscal
+      - name: ipv6-address
+        value: ::ffff:10.2.2.2
+      - name: direction
+        value: incoming
+      - name: direction
+        value: outgoing
+      - name: information
+        ns: https://fedramp.gov/ns/oscal
         value: Describe the information being transmitted.
-        name: information
-      - ns: https://fedramp.gov/ns/oscal
+      - name: port
+        ns: https://fedramp.gov/ns/oscal
         value: "80"
         class: remote
-        name: port
-      - ns: https://fedramp.gov/ns/oscal
+      - name: interconnection-security
+        ns: https://fedramp.gov/ns/oscal
         remarks: "If \"other\", remarks are required. Optional otherwise."
         value: ipsec
-        name: interconnection-security
       type: interconnection
       responsible-roles:
       - role-id: isa-poc-remote
@@ -249,19 +249,19 @@ system-security-plan:
       - rel: validation
         href: '#95beec7e-6f82-4aaa-8211-969cd7c1f1ab'
       props:
-      - value: operating-system
-        name: asset-type
-      - ns: https://fedramp.gov/ns/oscal
+      - name: asset-type
+        value: operating-system
+      - name: scan-type
+        ns: https://fedramp.gov/ns/oscal
         value: infrastructure
-        name: scan-type
-      - value: Vendor Name
-        name: vendor-name
-      - value: Model Number
-        name: model
-      - value: Version Number
-        name: version
-      - value: Patch Level
-        name: patch-level
+      - name: vendor-name
+        value: Vendor Name
+      - name: model
+        value: Model Number
+      - name: version
+        value: Version Number
+      - name: patch-level
+        value: Patch Level
       type: software
       responsible-roles:
       - role-id: admin-unix
@@ -274,20 +274,20 @@ system-security-plan:
     - status:
         state: operational
       props:
-      - value: database
-        name: asset-type
-      - ns: https://fedramp.gov/ns/oscal
-        value: infrastructure
-        name: scan-type
-      - ns: https://fedramp.gov/ns/oscal
+      - name: asset-type
         value: database
-        name: scan-type
-      - value: Vendor Name
-        name: vendor-name
-      - value: Model Number
-        name: model
-      - value: Version Number
-        name: version
+      - name: scan-type
+        ns: https://fedramp.gov/ns/oscal
+        value: infrastructure
+      - name: scan-type
+        ns: https://fedramp.gov/ns/oscal
+        value: database
+      - name: vendor-name
+        value: Vendor Name
+      - name: model
+        value: Model Number
+      - name: version
+        value: Version Number
       type: hardware
       responsible-roles:
       - role-id: asset-administrator
@@ -303,15 +303,15 @@ system-security-plan:
     - status:
         state: operational
       props:
-      - value: operating-system
-        name: asset-type
-      - ns: https://fedramp.gov/ns/oscal
+      - name: asset-type
+        value: operating-system
+      - name: scan-type
+        ns: https://fedramp.gov/ns/oscal
         value: infrastructure
-        name: scan-type
-      - value: Baseline Config. Name
-        name: baseline-configuration-name
-      - value: "yes"
-        name: allows-authenticated-scan
+      - name: baseline-configuration-name
+        value: Baseline Config. Name
+      - name: allows-authenticated-scan
+        value: "yes"
       type: software
       title: OS Sample
       uuid: 6617f60b-8bac-422d-9939-94f43ddc0f7a
@@ -319,15 +319,15 @@ system-security-plan:
     - status:
         state: operational
       props:
-      - value: database
-        name: asset-type
-      - ns: https://fedramp.gov/ns/oscal
+      - name: asset-type
         value: database
-        name: scan-type
-      - value: Baseline Config. Name
-        name: baseline-configuration-name
-      - value: "yes"
-        name: allows-authenticated-scan
+      - name: scan-type
+        ns: https://fedramp.gov/ns/oscal
+        value: database
+      - name: baseline-configuration-name
+        value: Baseline Config. Name
+      - name: allows-authenticated-scan
+        value: "yes"
       type: software
       title: Database Sample
       uuid: 120f1404-7c9f-4856-a247-63bd89d9e769
@@ -335,19 +335,19 @@ system-security-plan:
     - status:
         state: operational
       props:
-      - value: appliance
-        name: asset-type
-      - ns: https://fedramp.gov/ns/oscal
+      - name: asset-type
+        value: appliance
+      - name: scan-type
+        ns: https://fedramp.gov/ns/oscal
         value: web
-        name: scan-type
-      - ns: https://fedramp.gov/ns/oscal
+      - name: login-url
+        ns: https://fedramp.gov/ns/oscal
         value: https://admin.offering.com/login
-        name: login-url
-      - value: Baseline Config. Name
-        name: baseline-configuration-name
-      - remarks: Vendor appliance. No admin-level access.
+      - name: baseline-configuration-name
+        value: Baseline Config. Name
+      - name: allows-authenticated-scan
+        remarks: Vendor appliance. No admin-level access.
         value: "no"
-        name: allows-authenticated-scan
       type: software
       title: Appliance Sample
       uuid: 8f230d84-2f9b-44a3-acdb-019566ab2554
@@ -452,15 +452,15 @@ system-security-plan:
       - uuid: 653ad9b9-9c78-4bc0-8a93-6ebd3c0fce54
         name: http
         port-ranges:
-        - transport: TCP
+        - end: 80
+          transport: TCP
           start: 80
-          end: 80
       - uuid: 3ac9b137-479e-47d4-bc7e-aaa97c76aa63
         name: https
         port-ranges:
-        - transport: TCP
+        - end: 443
+          transport: TCP
           start: 443
-          end: 443
       title: "\\[SAMPLE\\]Service Name"
       purpose: Describe the reason the service is needed.
       uuid: d5841417-de4c-4d84-ab3c-39dd1fd32a96
@@ -471,32 +471,32 @@ system-security-plan:
       - rel: isa-agreement
         href: '#9d6cf2b4-8e88-4040-a33c-7bc206553a1a'
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: service-processor
+        ns: https://fedramp.gov/ns/oscal
         value: "[SAMPLE] Telco Name"
-        name: service-processor
-      - value: 10.1.1.1
+      - name: ipv4-address
+        value: 10.1.1.1
         class: local
-        name: ipv4-address
-      - value: 10.2.2.2
+      - name: ipv4-address
+        value: 10.2.2.2
         class: remote
-        name: ipv4-address
-      - value: 2001:0000:0000:0000:0000:ffff:0a02:0202
-        name: ipv6-address
-      - value: incoming
-        name: direction
-      - value: outgoing
-        name: direction
-      - ns: https://fedramp.gov/ns/oscal
+      - name: ipv6-address
+        value: 2001:0000:0000:0000:0000:ffff:0a02:0202
+      - name: direction
+        value: incoming
+      - name: direction
+        value: outgoing
+      - name: information
+        ns: https://fedramp.gov/ns/oscal
         value: Describe the information being transmitted.
-        name: information
-      - ns: https://fedramp.gov/ns/oscal
+      - name: port
+        ns: https://fedramp.gov/ns/oscal
         value: "80"
         class: remote
-        name: port
-      - ns: https://fedramp.gov/ns/oscal
+      - name: interconnection-security
+        ns: https://fedramp.gov/ns/oscal
         remarks: "If \"other\", remarks are required. Optional otherwise."
         value: ipsec
-        name: interconnection-security
       type: interconnection
       responsible-roles:
       - role-id: isa-poc-remote
@@ -538,15 +538,15 @@ system-security-plan:
       description: Email Service
     leveraged-authorizations:
     - props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: leveraged-system-identifier
+        ns: https://fedramp.gov/ns/oscal
         value: F1603047866
-        name: leveraged-system-identifier
-      - ns: https://fedramp.gov/ns/oscal
+      - name: authorization-type
+        ns: https://fedramp.gov/ns/oscal
         value: fedramp-agency
-        name: authorization-type
-      - ns: https://fedramp.gov/ns/oscal
+      - name: impact-level
+        ns: https://fedramp.gov/ns/oscal
         value: moderate
-        name: impact-level
       date-authorized: 2015-01-01
       remarks: |-
         Use one leveraged-authorization assembly for each underlying system. In the legacy world, these may be general support systems.
@@ -560,92 +560,92 @@ system-security-plan:
       - href: //path/to/leveraged_system_legacy_crm.xslt
       - href: //path/to/leveraged_system_responsibility_and_inheritance.xml
     users:
-    - authorized-privileges:
-      - title: Full administrative access (root)
-        functions-performed:
+    - uuid: 9cb0fab0-78bd-44ba-bcb8-3e9801cc952f
+      title: "\\[SAMPLE\\]Unix System Administrator"
+      authorized-privileges:
+      - functions-performed:
         - Add/remove users and hardware
         - install and configure software
         - "OS updates, patches and hotfixes"
         - perform backups
+        title: Full administrative access (root)
       role-ids:
       - admin-unix
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: sensitivity
+        ns: https://fedramp.gov/ns/oscal
         value: high-risk
-        name: sensitivity
-      - value: privileged
-        name: privilege-level
-      - ns: https://fedramp.gov/ns/oscal
+      - name: privilege-level
+        value: privileged
+      - name: authentication-method
+        ns: https://fedramp.gov/ns/oscal
         value: multi-factor OTP device
-        name: authentication-method
-      - value: internal
-        name: type
-      uuid: 9cb0fab0-78bd-44ba-bcb8-3e9801cc952f
-      title: "\\[SAMPLE\\]Unix System Administrator"
-    - authorized-privileges:
-      - title: Portal administration
-        functions-performed:
+      - name: type
+        value: internal
+    - uuid: 16ec71e7-025c-43e4-9d3f-3acb485fac2e
+      title: "\\[SAMPLE\\]Client Administrator"
+      authorized-privileges:
+      - functions-performed:
         - Add/remove client users
         - "Create, modify and delete client applications"
+        title: Portal administration
       role-ids:
       - admin-client
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: sensitivity
+        ns: https://fedramp.gov/ns/oscal
         value: moderate
-        name: sensitivity
-      - value: non-privileged
-        name: privilege-level
-      - ns: https://fedramp.gov/ns/oscal
+      - name: privilege-level
+        value: non-privileged
+      - name: authentication-method
+        ns: https://fedramp.gov/ns/oscal
         value: memorized seccret plus SF OTP device
-        name: authentication-method
-      - value: external
-        name: type
-      uuid: 16ec71e7-025c-43e4-9d3f-3acb485fac2e
-      title: "\\[SAMPLE\\]Client Administrator"
-    - authorized-privileges:
-      - title: Administrative Access Approver
-        functions-performed:
+      - name: type
+        value: external
+    - uuid: ba7708c1-4041-48ab-9b7b-1ddb5e175fe0
+      title: "\\[SAMPLE\\]Program Director"
+      authorized-privileges:
+      - functions-performed:
         - Approves access requests for administrative accounts.
-      - title: Access Approver
-        functions-performed:
+        title: Administrative Access Approver
+      - functions-performed:
         - Approves access requests for administrative accounts.
+        title: Access Approver
       role-ids:
       - information-system-security-officer
       - isa-poc-local
       - isa-authorizing-official-local
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: sensitivity
+        ns: https://fedramp.gov/ns/oscal
         value: limited
-        name: sensitivity
-      - value: no-logical-access
-        name: privilege-level
-      - ns: https://fedramp.gov/ns/oscal
+      - name: privilege-level
+        value: no-logical-access
+      - name: authentication-method
+        ns: https://fedramp.gov/ns/oscal
         value: not-applicable
-        name: authentication-method
-      - value: internal
-        name: type
-      uuid: ba7708c1-4041-48ab-9b7b-1ddb5e175fe0
-      title: "\\[SAMPLE\\]Program Director"
-    - authorized-privileges:
-      - title: External System Access Provider
-        functions-performed:
+      - name: type
+        value: internal
+    - uuid: 73ae456f-5581-4ff7-9ada-49fc057b2e0b
+      title: "\\[SAMPLE\\]ISA POC"
+      authorized-privileges:
+      - functions-performed:
         - Authorizes access to external interconnected system.
+        title: External System Access Provider
       role-ids:
       - isa-poc-remote
       - isa-authorizing-official-remote
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: sensitivity
+        ns: https://fedramp.gov/ns/oscal
         value: not-applicable
-        name: sensitivity
-      - value: no-logical-access
-        name: privilege-level
-      - ns: https://fedramp.gov/ns/oscal
+      - name: privilege-level
+        value: no-logical-access
+      - name: authentication-method
+        ns: https://fedramp.gov/ns/oscal
         value: not-applicable
-        name: authentication-method
-      - value: external
-        name: type
-      uuid: 73ae456f-5581-4ff7-9ada-49fc057b2e0b
-      title: "\\[SAMPLE\\]ISA POC"
+      - name: type
+        value: external
     inventory-items:
     - implemented-components:
       - remarks: "This links to a FIPS 140-2 validated software component that is used by this inventory item. This type of linkage to a validation through the component is preferable to the link\\[rel='validation'\\] example above."
@@ -660,60 +660,60 @@ system-security-plan:
       remarks: "COMMENTS: Additional information about this item."
       uuid: 98e37f90-fbb5-4177-badb-9b55229cc183
       props:
-      - value: unique-asset-ID-1
-        name: asset-id
-      - value: 10.1.1.1
-        name: ipv4-address
-      - value: 2001:db8:3333:4444:5555:6666:7777:8888
-        name: ipv6-address
-      - value: "no"
-        name: virtual
-      - value: "no"
-        name: public
-      - value: dns.name
-        name: fqdn
-      - value: uniform.resource.identifier
-        name: uri
-      - value: netbios-name
-        name: netbios-name
-      - value: 00:00:00:00:00:00
-        name: mac-address
-      - value: software-name
-        name: software-name
-      - value: operating-system
-        name: asset-type
-      - value: "Serial #"
-        name: serial-number
-      - value: Asset Tag
-        name: asset-tag
-      - value: VLAN Identifier
-        name: vlan-id
-      - value: Network Identifier
-        name: network-id
-      - ns: https://fedramp.gov/ns/oscal
-        value: infrastructure
-        name: scan-type
-      - remarks: "If no, explain why. If yes, omit remarks field."
+      - name: asset-id
+        value: unique-asset-ID-1
+      - name: ipv4-address
+        value: 10.1.1.1
+      - name: ipv6-address
+        value: 2001:db8:3333:4444:5555:6666:7777:8888
+      - name: virtual
         value: "no"
-        name: allows-authenticated-scan
-      - value: Baseline Config. Name
-        name: baseline-configuration-name
-      - value: Physical location of Asset
-        name: physical-location
-      - remarks: "If no, explain why. If yes, omit remarks field."
+      - name: public
+        value: "no"
+      - name: fqdn
+        value: dns.name
+      - name: uri
+        value: uniform.resource.identifier
+      - name: netbios-name
+        value: netbios-name
+      - name: mac-address
+        value: 00:00:00:00:00:00
+      - name: software-name
+        value: software-name
+      - name: asset-type
+        value: operating-system
+      - name: serial-number
+        value: "Serial #"
+      - name: asset-tag
+        value: Asset Tag
+      - name: vlan-id
+        value: VLAN Identifier
+      - name: network-id
+        value: Network Identifier
+      - name: scan-type
+        ns: https://fedramp.gov/ns/oscal
+        value: infrastructure
+      - name: allows-authenticated-scan
+        remarks: "If no, explain why. If yes, omit remarks field."
+        value: "no"
+      - name: baseline-configuration-name
+        value: Baseline Config. Name
+      - name: physical-location
+        value: Physical location of Asset
+      - name: is-scanned
+        remarks: "If no, explain why. If yes, omit remarks field."
         value: "yes"
-        name: is-scanned
-      - remarks: "Optional, longer, formatted description."
+      - name: function
+        remarks: "Optional, longer, formatted description."
         value: "Required brief, text-based description."
-        name: function
       links:
       - rel: validation
         href: '#95beec7e-6f82-4aaa-8211-969cd7c1f1ab'
       description: Legacy Example (No implemented-component).
     - implemented-components:
       - props:
-        - value: unique-asset-ID-3
-          name: asset-id
+        - name: asset-id
+          value: unique-asset-ID-3
         component-uuid: 05ceb8df-52e7-49db-9719-891723f366bd
       responsible-parties:
       - role-id: asset-owner
@@ -725,188 +725,568 @@ system-security-plan:
       remarks: "COMMENTS: If needed, provide additional information about this inventory item."
       uuid: c916d3c5-229e-4786-bf3f-4d71baa0e7a5
       props:
-      - value: unique-asset-ID-2
-        name: asset-id
-      - value: 10.2.2.2
-        name: ipv4-address
-      - value: 0000:0000:0000:0000:0000:ffff:0a02:0202
-        name: ipv6-address
-      - value: 00:00:00:00:00:00
-        name: mac-address
-      - value: appliance
-        name: asset-type
-      - value: "no"
-        name: virtual
-      - value: "no"
-        name: public
-      - value: dns.name
-        name: fqdn
-      - value: uniform.resource.locator
-        name: uri
-      - value: netbios-name
-        name: netbios-name
-      - value: Baseline Configuration Name
-        name: baseline-configuration-name
-      - value: Physical location of Asset
-        name: physical-location
-      - remarks: "If no, explain why. If yes, omit remark."
+      - name: asset-id
+        value: unique-asset-ID-2
+      - name: ipv4-address
+        value: 10.2.2.2
+      - name: ipv6-address
+        value: 0000:0000:0000:0000:0000:ffff:0a02:0202
+      - name: mac-address
+        value: 00:00:00:00:00:00
+      - name: asset-type
+        value: appliance
+      - name: virtual
         value: "no"
-        name: allows-authenticated-scan
-      - ns: https://fedramp.gov/ns/oscal
+      - name: public
+        value: "no"
+      - name: fqdn
+        value: dns.name
+      - name: uri
+        value: uniform.resource.locator
+      - name: netbios-name
+        value: netbios-name
+      - name: baseline-configuration-name
+        value: Baseline Configuration Name
+      - name: physical-location
+        value: Physical location of Asset
+      - name: allows-authenticated-scan
+        remarks: "If no, explain why. If yes, omit remark."
+        value: "no"
+      - name: scan-type
+        ns: https://fedramp.gov/ns/oscal
         value: infrastructure
-        name: scan-type
       description: Component Inventory Example
     - implemented-components:
       - component-uuid: 1541015b-6d19-42cb-a991-624cc082ed4d
       uuid: 37c00d5a-ccf2-4112-a0ee-8460be8cff40
       props:
-      - value: unique-asset-ID-4
-        name: asset-id
-      - value: web-server
-        name: asset-type
-      - value: "yes"
-        name: virtual
-      - value: "no"
-        name: public
-      - value: 10.3.3.3
-        name: ipv4-address
-      - value: 0000:0000:0000:0000:0000:ffff:0a03:0303
-        name: ipv6-address
-      - value: "yes"
-        name: is-scanned
-      - ns: https://fedramp.gov/ns/oscal
+      - name: asset-id
+        value: unique-asset-ID-4
+      - name: asset-type
+        value: web-server
+      - name: virtual
+        value: "yes"
+      - name: public
+        value: "no"
+      - name: ipv4-address
+        value: 10.3.3.3
+      - name: ipv6-address
+        value: 0000:0000:0000:0000:0000:ffff:0a03:0303
+      - name: is-scanned
+        value: "yes"
+      - name: scan-type
+        ns: https://fedramp.gov/ns/oscal
         value: infrastructure
-        name: scan-type
       description: None.
     - implemented-components:
       - component-uuid: 05ceb8df-52e7-49db-9719-891723f366bd
       uuid: fb7a84fb-7e30-4f5b-9997-2ecd4d270bdd
       props:
-      - value: unique-asset-ID-5
-        name: asset-id
-      - value: appliance
-        name: asset-type
-      - value: "yes"
-        name: virtual
-      - value: "no"
-        name: public
-      - value: 10.4.4.4
-        name: ipv4-address
-      - value: 0000:0000:0000:0000:0000:ffff:0a04:0404
-        name: ipv6-address
-      - value: "yes"
-        name: is-scanned
-      - ns: https://fedramp.gov/ns/oscal
+      - name: asset-id
+        value: unique-asset-ID-5
+      - name: asset-type
+        value: appliance
+      - name: virtual
+        value: "yes"
+      - name: public
+        value: "no"
+      - name: ipv4-address
+        value: 10.4.4.4
+      - name: ipv6-address
+        value: 0000:0000:0000:0000:0000:ffff:0a04:0404
+      - name: is-scanned
+        value: "yes"
+      - name: scan-type
+        ns: https://fedramp.gov/ns/oscal
         value: infrastructure
-        name: scan-type
       description: None.
     - implemented-components:
       - component-uuid: 8f230d84-2f9b-44a3-acdb-019566ab2554
       uuid: 779d4e89-bba6-432c-b50d-d699fe534129
       props:
-      - value: unique-asset-ID-6
-        name: asset-id
-      - value: firewall
-        name: asset-type
-      - value: 10.5.5.5
-        name: ipv4-address
-      - value: 0000:0000:0000:0000:0000:ffff:0a05:0505
-        name: ipv6-address
-      - value: "no"
-        name: virtual
-      - value: "yes"
-        name: public
-      - value: "yes"
-        name: is-scanned
-      - ns: https://fedramp.gov/ns/oscal
+      - name: asset-id
+        value: unique-asset-ID-6
+      - name: asset-type
+        value: firewall
+      - name: ipv4-address
+        value: 10.5.5.5
+      - name: ipv6-address
+        value: 0000:0000:0000:0000:0000:ffff:0a05:0505
+      - name: virtual
+        value: "no"
+      - name: public
+        value: "yes"
+      - name: is-scanned
+        value: "yes"
+      - name: scan-type
+        ns: https://fedramp.gov/ns/oscal
         value: infrastructure
-        name: scan-type
       description: None.
     - implemented-components:
       - component-uuid: 05ceb8df-52e7-49db-9719-891723f366bd
       uuid: 20b207d5-5e77-4501-b02d-5d2a6e88db85
       props:
-      - value: unique-asset-ID-7
-        name: asset-id
-      - value: 10.6.6.6
-        name: ipv4-address
-      - value: 0000:0000:0000:0000:0000:ffff:0a06:0606
-        name: ipv6-address
-      - value: router
-        name: asset-type
-      - value: "no"
-        name: virtual
-      - value: "no"
-        name: public
-      - remarks: Asset wasn't running at time of scan.
+      - name: asset-id
+        value: unique-asset-ID-7
+      - name: ipv4-address
+        value: 10.6.6.6
+      - name: ipv6-address
+        value: 0000:0000:0000:0000:0000:ffff:0a06:0606
+      - name: asset-type
+        value: router
+      - name: virtual
         value: "no"
-        name: is-scanned
+      - name: public
+        value: "no"
+      - name: is-scanned
+        remarks: Asset wasn't running at time of scan.
+        value: "no"
       description: None.
     - implemented-components:
       - component-uuid: 1541015b-6d19-42cb-a991-624cc082ed4d
       uuid: 79b4f0d1-91ab-49e8-af28-045c12aa9272
       props:
-      - value: unique-asset-ID-8
-        name: asset-id
-      - value: switch
-        name: asset-type
-      - value: 10.7.7.7
-        name: ipv4-address
-      - value: 0000:0000:0000:0000:0000:ffff:0a07:0707
-        name: ipv6-address
-      - value: "no"
-        name: virtual
-      - value: "no"
-        name: public
-      - value: "yes"
-        name: is-scanned
-      - ns: https://fedramp.gov/ns/oscal
+      - name: asset-id
+        value: unique-asset-ID-8
+      - name: asset-type
+        value: switch
+      - name: ipv4-address
+        value: 10.7.7.7
+      - name: ipv6-address
+        value: 0000:0000:0000:0000:0000:ffff:0a07:0707
+      - name: virtual
+        value: "no"
+      - name: public
+        value: "no"
+      - name: is-scanned
+        value: "yes"
+      - name: scan-type
+        ns: https://fedramp.gov/ns/oscal
         value: infrastructure
-        name: scan-type
       description: None.
     - implemented-components:
       - component-uuid: 05ceb8df-52e7-49db-9719-891723f366bd
       uuid: b31b360d-b58b-4c7c-b344-68e17238d858
       props:
-      - value: unique-asset-ID-9
-        name: asset-id
-      - value: web-server
-        name: asset-type
-      - value: 10.8.8.8
-        name: ipv4-address
-      - value: 0000:0000:0000:0000:0000:ffff:0a08:0808
-        name: ipv6-address
-      - value: "yes"
-        name: virtual
-      - value: "no"
-        name: public
-      - remarks: Asset wasn't running at time of scan.
+      - name: asset-id
+        value: unique-asset-ID-9
+      - name: asset-type
+        value: web-server
+      - name: ipv4-address
+        value: 10.8.8.8
+      - name: ipv6-address
+        value: 0000:0000:0000:0000:0000:ffff:0a08:0808
+      - name: virtual
+        value: "yes"
+      - name: public
         value: "no"
-        name: is-scanned
+      - name: is-scanned
+        remarks: Asset wasn't running at time of scan.
+        value: "no"
       description: None.
     - implemented-components:
       - component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f5
       uuid: 13c94c20-e4c4-44ee-bbbf-3d14fb01cb18
       props:
-      - value: unique-asset-ID-10
-        name: asset-id
-      - value: email-server
-        name: asset-type
-      - value: 10.10.10.100
-        name: ipv4-address
-      - value: 0000:0000:0000:0000:0000:ffff:0a08:0808
-        name: ipv6-address
-      - value: "yes"
-        name: virtual
-      - value: "no"
-        name: public
-      - value: "yes"
-        name: is-scanned
-      - ns: https://fedramp.gov/ns/oscal
+      - name: asset-id
+        value: unique-asset-ID-10
+      - name: asset-type
+        value: email-server
+      - name: ipv4-address
+        value: 10.10.10.100
+      - name: ipv6-address
+        value: 0000:0000:0000:0000:0000:ffff:0a08:0808
+      - name: virtual
+        value: "yes"
+      - name: public
+        value: "no"
+      - name: is-scanned
+        value: "yes"
+      - name: scan-type
+        ns: https://fedramp.gov/ns/oscal
         value: infrastructure
-        name: scan-type
       description: Email-Service
   metadata:
+    revisions:
+    - oscal-version: 1.0.4
+      remarks: Initial publication.
+      props:
+      - name: party-uuid
+        ns: https://fedramp.gov/ns/oscal
+        value: 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
+        uuid: 528974e9-fcde-494f-a2fa-35d6f1e31171
+      published: 2023-06-30T00:00:00Z
+      version: "1.0"
+    - oscal-version: 1.0.4
+      remarks: Minor `prop` updates.
+      props:
+      - name: party-uuid
+        ns: https://fedramp.gov/ns/oscal
+        value: 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
+        uuid: 528974e9-fcde-494f-a2fa-35d6f1e31171
+      published: 2023-07-06T00:00:00Z
+      version: "1.1"
+    responsible-parties:
+    - remarks: Exactly one
+      role-id: cloud-service-provider
+      party-uuids:
+      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
+    - remarks: Exactly one
+      role-id: prepared-by
+      party-uuids:
+      - 3360e343-9860-4bda-9dfc-ff427c3dfab6
+    - role-id: prepared-for
+      party-uuids:
+      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
+    - remarks: One or more
+      role-id: content-approver
+      party-uuids:
+      - 3360e343-9860-4bda-9dfc-ff427c3dfab6
+      - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
+    - remarks: Exactly one
+      role-id: system-owner
+      party-uuids:
+      - 3360e343-9860-4bda-9dfc-ff427c3dfab6
+    - remarks: One or more
+      role-id: authorizing-official
+      party-uuids:
+      - 49017ec3-9f51-4dbd-9253-858c2b1295fd
+      - 4fded5fd-7a65-47ea-bd76-df57c46e27d1
+    - remarks: Exactly one
+      role-id: system-poc-management
+      party-uuids:
+      - 0cec09d9-20c6-470b-9ffc-85763375880b
+    - remarks: Exactly one
+      role-id: system-poc-technical
+      party-uuids:
+      - f75e21f6-43d8-46ab-890d-7f2eebc5a830
+    - remarks: Exactly one
+      role-id: information-system-security-officer
+      party-uuids:
+      - 132953a9-640c-46f7-9de9-3fa15ec99361
+    - remarks: Exactly one
+      role-id: authorizing-official-poc
+      party-uuids:
+      - 4fded5fd-7a65-47ea-bd76-df57c46e27d1
+    - remarks: Exactly one
+      role-id: privacy-poc
+      party-uuids:
+      - db234cb7-1776-425c-9ac4-b067c1723011
+    - remarks: Exactly one
+      role-id: fedramp-pmo
+      party-uuids:
+      - 77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d
+    - remarks: Exactly one
+      role-id: fedramp-jab
+      party-uuids:
+      - 49017ec3-9f51-4dbd-9253-858c2b1295fd
+    last-modified: 2023-08-31T00:00:00Z
+    oscal-version: 1.0.4
+    props:
+    - name: marking
+      value: Controlled Unclassified Information
+    - name: resolution-resource
+      ns: https://fedramp.gov/ns/oscal
+      value: ace2963d-ecb4-4be5-bdd0-1f6fd7610f41
+    locations:
+    - remarks: "There must be one location identifying the CSP's primary business address, such as the CSP's HQ, or the address of the system owner's primary business location."
+      uuid: 27b78960-59ef-4619-82b0-ae20b9c709ac
+      title: CSP HQ
+      address:
+        state: ME
+        city: Haven
+        addr-lines:
+        - Suite 0000
+        - 1234 Some Street
+        postal-code: "00000"
+        type: work
+    - remarks: |-
+        There must be one location for each data center.
+
+        There must be at least two data center locations.
+
+        For a data center, briefly summarize the components at this location.
+
+        All data centers must have a "type" property with a value of "data-center".
+
+        The type property must also have a class of "primary" or "alternate".
+      uuid: 16adcc8d-65d8-4583-80d3-9cf007744fec
+      title: Primary Data Center
+      address:
+        state: --
+        city: Anywhere
+        country: US
+        addr-lines:
+        - 2222 Main Street
+        postal-code: 00000-0000
+      props:
+      - name: type
+        value: data-center
+        class: primary
+    - remarks: |-
+        There must be one location for each data center.
+
+        There must be at least two data center locations.
+
+        For a data center, briefly summarize the components at this location.
+
+        All data centers must have a "type" property with a value of "data-center".
+
+        The type property must also have a class of "primary" or "alternate".
+      uuid: ad321514-7b9f-4374-8409-efb18eea6e5d
+      title: Secondary Data Center
+      address:
+        state: --
+        city: Anywhere
+        country: US
+        addr-lines:
+        - 3333 Small Road
+        postal-code: 00000-0000
+      props:
+      - name: type
+        value: data-center
+        class: alternate
+    parties:
+    - uuid: 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
+      remarks: |-
+        Replace sample CSP information.
+
+        CSP information must be present and associated with the "cloud-service-provider" role via `responsible-party`.
+      short-name: CSP Acronym/Short Name
+      links:
+      - rel: logo
+        href: '#31a46c4f-2959-4287-bc1c-67297d7da60b'
+      location-uuids:
+      - 27b78960-59ef-4619-82b0-ae20b9c709ac
+      type: organization
+      name: Cloud Service Provider (CSP) Name
+    - uuid: 77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d
+      addresses:
+      - state: DC
+        city: Washington
+        country: US
+        addr-lines:
+        - 1800 F St. NW
+        postal-code: "20006"
+        type: work
+      remarks: |-
+        This party entry must be present in a FedRAMP SSP.
+
+        The uuid may be different; however, the uuid must be associated with the "fedramp-pmo" role in the responsible-party assemblies.
+      short-name: FedRAMP PMO
+      links:
+      - rel: homepage
+        href: https://fedramp.gov
+      - rel: logo
+        href: '#a2381e87-3d04-4108-a30b-b4d2f36d001f'
+      - rel: reference
+        href: '#1a23a771-d481-4594-9a1a-71d584fa4123'
+      email-addresses:
+      - info@fedramp.gov
+      type: organization
+      name: "Federal Risk and Authorization Management Program: Program Management Office"
+    - uuid: 49017ec3-9f51-4dbd-9253-858c2b1295fd
+      remarks: |-
+        This party entry must be present in a FedRAMP SSP.
+
+        The uuid may be different; however, the uuid must be associated with the "fedramp-jab" role in the responsible-party assemblies.
+      short-name: FedRAMP JAB
+      links:
+      - rel: logo
+        href: '#a2381e87-3d04-4108-a30b-b4d2f36d001f'
+      type: organization
+      name: "Federal Risk and Authorization Management Program: Joint Authorization Board"
+    - uuid: 78992555-4a99-4eaa-868c-f2c249679dd3
+      remarks: Generic placeholder for any external organization.
+      short-name: External
+      type: organization
+      name: External Organization
+    - uuid: f595397b-cbe4-4a87-8c86-9bff91c4e7fd
+      remarks: Generic placeholder for an authorizing agency.
+      short-name: A.N.
+      type: organization
+      name: Agency Name
+    - uuid: 8e3d39da-4851-4d2a-adb5-4b5585ded952
+      addresses:
+      - state: DC
+        city: Washington
+        country: US
+        addr-lines:
+        - 3333 Corporate Way
+        postal-code: "00000"
+        type: work
+      short-name: NOCO
+      links:
+      - href: https://example.com
+      - rel: logo
+        href: '#2c1747d6-874a-49a2-8488-2fd9735416bf'
+      email-addresses:
+      - poc@example.com
+      type: organization
+      name: Name of Consulting Org
+    - uuid: 80361ec4-bfce-4b5c-85c8-313d6ebd220b
+      type: organization
+      name: "[SAMPLE]Remote System Org Name"
+    - uuid: 09ad840f-aa79-43aa-9f22-25182c2ab11b
+      telephone-numbers:
+      - number: "2025551212"
+      member-of-organizations:
+      - 80361ec4-bfce-4b5c-85c8-313d6ebd220b
+      email-addresses:
+      - person@ica.example.org
+      type: person
+      name: "[SAMPLE]ICA POC's Name"
+      props:
+      - name: job-title
+        value: Individual's Title
+    - uuid: f0bc13a4-3303-47dd-80d3-380e159c8362
+      remarks: Underlying service provider. Leveraged Authorization.
+      short-name: E.I.P.
+      type: organization
+      name: "[SAMPLE]Example IaaS Provider"
+    - uuid: 3360e343-9860-4bda-9dfc-ff427c3dfab6
+      telephone-numbers:
+      - number: "2020000001"
+      member-of-organizations:
+      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
+      email-addresses:
+      - name@example.com
+      location-uuids:
+      - 27b78960-59ef-4619-82b0-ae20b9c709ac
+      type: person
+      name: "[SAMPLE]Person Name 1"
+      props:
+      - name: job-title
+        value: Individual's Title
+      - name: mail-stop
+        value: Mailstop A-1
+    - uuid: 36b8d6c0-3b25-42cc-b529-cf4066145cdd
+      addresses:
+      - state: ST
+        city: City
+        country: US
+        addr-lines:
+        - Address Line
+        postal-code: "00000"
+        type: work
+      telephone-numbers:
+      - number: "2020000002"
+      member-of-organizations:
+      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
+      email-addresses:
+      - name@example.com
+      type: person
+      name: "[SAMPLE]Person Name 2"
+      props:
+      - name: job-title
+        value: Individual's Title
+    - uuid: 0cec09d9-20c6-470b-9ffc-85763375880b
+      addresses:
+      - state: ST
+        city: City
+        country: US
+        addr-lines:
+        - Address Line
+        postal-code: "00000"
+        type: work
+      telephone-numbers:
+      - number: "2020000003"
+      member-of-organizations:
+      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
+      email-addresses:
+      - name@example.com
+      type: person
+      name: "[SAMPLE]Person Name 3"
+      props:
+      - name: job-title
+        value: Individual's Title
+    - uuid: f75e21f6-43d8-46ab-890d-7f2eebc5a830
+      addresses:
+      - state: ST
+        city: City
+        country: US
+        addr-lines:
+        - Address Line
+        postal-code: "00000"
+        type: work
+      telephone-numbers:
+      - number: "2020000004"
+      member-of-organizations:
+      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
+      email-addresses:
+      - name@example.com
+      type: person
+      name: "[SAMPLE]Person Name 4"
+      props:
+      - name: job-title
+        value: Individual's Title
+    - uuid: 132953a9-640c-46f7-9de9-3fa15ec99361
+      addresses:
+      - state: ST
+        city: City
+        country: US
+        addr-lines:
+        - Address Line
+        postal-code: "00000"
+        type: work
+      telephone-numbers:
+      - number: "2020000005"
+      member-of-organizations:
+      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
+      email-addresses:
+      - name@example.com
+      type: person
+      name: "[SAMPLE]Person Name 5"
+      props:
+      - name: job-title
+        value: Individual's Title
+    - uuid: 4fded5fd-7a65-47ea-bd76-df57c46e27d1
+      addresses:
+      - state: ST
+        city: City
+        country: US
+        addr-lines:
+        - Address Line
+        postal-code: "00000"
+        type: work
+      telephone-numbers:
+      - number: "2020000006"
+      member-of-organizations:
+      - 78992555-4a99-4eaa-868c-f2c249679dd3
+      email-addresses:
+      - name@example.com
+      type: person
+      name: "[SAMPLE]Person Name 6"
+      props:
+      - name: job-title
+        value: Individual's Title
+    - uuid: db234cb7-1776-425c-9ac4-b067c1723011
+      addresses:
+      - state: ST
+        city: City
+        country: US
+        addr-lines:
+        - Address Line
+        postal-code: "00000"
+        type: work
+      telephone-numbers:
+      - number: "2020000007"
+      member-of-organizations:
+      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
+      email-addresses:
+      - name@example.com
+      type: person
+      name: "[SAMPLE]Person Name 7"
+      props:
+      - name: job-title
+        value: Individual's Title
+    - uuid: b306f5af-b93a-4a7f-a2b2-37a44fc92a79
+      type: organization
+      name: "[SAMPLE] IT Department"
+    - uuid: 59cdc953-5902-4fa4-a878-f3163854624c
+      type: organization
+      name: "[SAMPLE]Security Team"
+    version: fedramp2.0.0-oscal1.0.4
     published: 2023-08-31T00:00:00Z
     remarks: |-
       This OSCAL-based FedRAMP SSP Template can be used for the FedRAMP Low, Moderate, and High baselines.
@@ -988,410 +1368,25 @@ system-security-plan:
       title: "\\[SAMPLE\\]Client Administrator"
       description: This is a sample role.
     title: FedRAMP System Security Plan (SSP)
-    revisions:
-    - oscal-version: 1.0.4
-      remarks: Initial publication.
-      props:
-      - ns: https://fedramp.gov/ns/oscal
-        value: 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-        uuid: 528974e9-fcde-494f-a2fa-35d6f1e31171
-        name: party-uuid
-      published: 2023-06-30T00:00:00Z
-      version: "1.0"
-    - oscal-version: 1.0.4
-      remarks: Minor `prop` updates.
-      props:
-      - ns: https://fedramp.gov/ns/oscal
-        value: 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-        uuid: 528974e9-fcde-494f-a2fa-35d6f1e31171
-        name: party-uuid
-      published: 2023-07-06T00:00:00Z
-      version: "1.1"
-    responsible-parties:
-    - remarks: Exactly one
-      role-id: cloud-service-provider
-      party-uuids:
-      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-    - remarks: Exactly one
-      role-id: prepared-by
-      party-uuids:
-      - 3360e343-9860-4bda-9dfc-ff427c3dfab6
-    - role-id: prepared-for
-      party-uuids:
-      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-    - remarks: One or more
-      role-id: content-approver
-      party-uuids:
-      - 3360e343-9860-4bda-9dfc-ff427c3dfab6
-      - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
-    - remarks: Exactly one
-      role-id: system-owner
-      party-uuids:
-      - 3360e343-9860-4bda-9dfc-ff427c3dfab6
-    - remarks: One or more
-      role-id: authorizing-official
-      party-uuids:
-      - 49017ec3-9f51-4dbd-9253-858c2b1295fd
-      - 4fded5fd-7a65-47ea-bd76-df57c46e27d1
-    - remarks: Exactly one
-      role-id: system-poc-management
-      party-uuids:
-      - 0cec09d9-20c6-470b-9ffc-85763375880b
-    - remarks: Exactly one
-      role-id: system-poc-technical
-      party-uuids:
-      - f75e21f6-43d8-46ab-890d-7f2eebc5a830
-    - remarks: Exactly one
-      role-id: information-system-security-officer
-      party-uuids:
-      - 132953a9-640c-46f7-9de9-3fa15ec99361
-    - remarks: Exactly one
-      role-id: authorizing-official-poc
-      party-uuids:
-      - 4fded5fd-7a65-47ea-bd76-df57c46e27d1
-    - remarks: Exactly one
-      role-id: privacy-poc
-      party-uuids:
-      - db234cb7-1776-425c-9ac4-b067c1723011
-    - remarks: Exactly one
-      role-id: fedramp-pmo
-      party-uuids:
-      - 77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d
-    - remarks: Exactly one
-      role-id: fedramp-jab
-      party-uuids:
-      - 49017ec3-9f51-4dbd-9253-858c2b1295fd
-    last-modified: 2023-08-31T00:00:00Z
-    oscal-version: 1.0.4
-    props:
-    - value: Controlled Unclassified Information
-      name: marking
-    - ns: https://fedramp.gov/ns/oscal
-      value: ace2963d-ecb4-4be5-bdd0-1f6fd7610f41
-      name: resolution-resource
-    locations:
-    - address:
-        addr-lines:
-        - Suite 0000
-        - 1234 Some Street
-        postal-code: "00000"
-        type: work
-        state: ME
-        city: Haven
-      remarks: "There must be one location identifying the CSP's primary business address, such as the CSP's HQ, or the address of the system owner's primary business location."
-      uuid: 27b78960-59ef-4619-82b0-ae20b9c709ac
-      title: CSP HQ
-    - address:
-        country: US
-        addr-lines:
-        - 2222 Main Street
-        postal-code: 00000-0000
-        state: --
-        city: Anywhere
-      props:
-      - value: data-center
-        class: primary
-        name: type
-      remarks: |-
-        There must be one location for each data center.
-
-        There must be at least two data center locations.
-
-        For a data center, briefly summarize the components at this location.
-
-        All data centers must have a "type" property with a value of "data-center".
-
-        The type property must also have a class of "primary" or "alternate".
-      uuid: 16adcc8d-65d8-4583-80d3-9cf007744fec
-      title: Primary Data Center
-    - address:
-        country: US
-        addr-lines:
-        - 3333 Small Road
-        postal-code: 00000-0000
-        state: --
-        city: Anywhere
-      props:
-      - value: data-center
-        class: alternate
-        name: type
-      remarks: |-
-        There must be one location for each data center.
-
-        There must be at least two data center locations.
-
-        For a data center, briefly summarize the components at this location.
-
-        All data centers must have a "type" property with a value of "data-center".
-
-        The type property must also have a class of "primary" or "alternate".
-      uuid: ad321514-7b9f-4374-8409-efb18eea6e5d
-      title: Secondary Data Center
-    parties:
-    - name: Cloud Service Provider (CSP) Name
-      uuid: 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-      remarks: |-
-        Replace sample CSP information.
-
-        CSP information must be present and associated with the "cloud-service-provider" role via `responsible-party`.
-      short-name: CSP Acronym/Short Name
-      links:
-      - rel: logo
-        href: '#31a46c4f-2959-4287-bc1c-67297d7da60b'
-      location-uuids:
-      - 27b78960-59ef-4619-82b0-ae20b9c709ac
-      type: organization
-    - name: "Federal Risk and Authorization Management Program: Program Management Office"
-      uuid: 77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d
-      addresses:
-      - country: US
-        addr-lines:
-        - 1800 F St. NW
-        postal-code: "20006"
-        type: work
-        state: DC
-        city: Washington
-      remarks: |-
-        This party entry must be present in a FedRAMP SSP.
-
-        The uuid may be different; however, the uuid must be associated with the "fedramp-pmo" role in the responsible-party assemblies.
-      short-name: FedRAMP PMO
-      links:
-      - rel: homepage
-        href: https://fedramp.gov
-      - rel: logo
-        href: '#a2381e87-3d04-4108-a30b-b4d2f36d001f'
-      - rel: reference
-        href: '#1a23a771-d481-4594-9a1a-71d584fa4123'
-      email-addresses:
-      - info@fedramp.gov
-      type: organization
-    - name: "Federal Risk and Authorization Management Program: Joint Authorization Board"
-      uuid: 49017ec3-9f51-4dbd-9253-858c2b1295fd
-      remarks: |-
-        This party entry must be present in a FedRAMP SSP.
-
-        The uuid may be different; however, the uuid must be associated with the "fedramp-jab" role in the responsible-party assemblies.
-      short-name: FedRAMP JAB
-      links:
-      - rel: logo
-        href: '#a2381e87-3d04-4108-a30b-b4d2f36d001f'
-      type: organization
-    - name: External Organization
-      uuid: 78992555-4a99-4eaa-868c-f2c249679dd3
-      remarks: Generic placeholder for any external organization.
-      short-name: External
-      type: organization
-    - name: Agency Name
-      uuid: f595397b-cbe4-4a87-8c86-9bff91c4e7fd
-      remarks: Generic placeholder for an authorizing agency.
-      short-name: A.N.
-      type: organization
-    - name: Name of Consulting Org
-      uuid: 8e3d39da-4851-4d2a-adb5-4b5585ded952
-      addresses:
-      - country: US
-        addr-lines:
-        - 3333 Corporate Way
-        postal-code: "00000"
-        type: work
-        state: DC
-        city: Washington
-      short-name: NOCO
-      links:
-      - href: https://example.com
-      - rel: logo
-        href: '#2c1747d6-874a-49a2-8488-2fd9735416bf'
-      email-addresses:
-      - poc@example.com
-      type: organization
-    - name: "[SAMPLE]Remote System Org Name"
-      uuid: 80361ec4-bfce-4b5c-85c8-313d6ebd220b
-      type: organization
-    - name: "[SAMPLE]ICA POC's Name"
-      props:
-      - value: Individual's Title
-        name: job-title
-      uuid: 09ad840f-aa79-43aa-9f22-25182c2ab11b
-      telephone-numbers:
-      - number: "2025551212"
-      member-of-organizations:
-      - 80361ec4-bfce-4b5c-85c8-313d6ebd220b
-      email-addresses:
-      - person@ica.example.org
-      type: person
-    - name: "[SAMPLE]Example IaaS Provider"
-      uuid: f0bc13a4-3303-47dd-80d3-380e159c8362
-      remarks: Underlying service provider. Leveraged Authorization.
-      short-name: E.I.P.
-      type: organization
-    - name: "[SAMPLE]Person Name 1"
-      props:
-      - value: Individual's Title
-        name: job-title
-      - value: Mailstop A-1
-        name: mail-stop
-      uuid: 3360e343-9860-4bda-9dfc-ff427c3dfab6
-      telephone-numbers:
-      - number: "2020000001"
-      member-of-organizations:
-      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-      email-addresses:
-      - name@example.com
-      location-uuids:
-      - 27b78960-59ef-4619-82b0-ae20b9c709ac
-      type: person
-    - name: "[SAMPLE]Person Name 2"
-      props:
-      - value: Individual's Title
-        name: job-title
-      uuid: 36b8d6c0-3b25-42cc-b529-cf4066145cdd
-      addresses:
-      - country: US
-        addr-lines:
-        - Address Line
-        postal-code: "00000"
-        type: work
-        state: ST
-        city: City
-      telephone-numbers:
-      - number: "2020000002"
-      member-of-organizations:
-      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-      email-addresses:
-      - name@example.com
-      type: person
-    - name: "[SAMPLE]Person Name 3"
-      props:
-      - value: Individual's Title
-        name: job-title
-      uuid: 0cec09d9-20c6-470b-9ffc-85763375880b
-      addresses:
-      - country: US
-        addr-lines:
-        - Address Line
-        postal-code: "00000"
-        type: work
-        state: ST
-        city: City
-      telephone-numbers:
-      - number: "2020000003"
-      member-of-organizations:
-      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-      email-addresses:
-      - name@example.com
-      type: person
-    - name: "[SAMPLE]Person Name 4"
-      props:
-      - value: Individual's Title
-        name: job-title
-      uuid: f75e21f6-43d8-46ab-890d-7f2eebc5a830
-      addresses:
-      - country: US
-        addr-lines:
-        - Address Line
-        postal-code: "00000"
-        type: work
-        state: ST
-        city: City
-      telephone-numbers:
-      - number: "2020000004"
-      member-of-organizations:
-      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-      email-addresses:
-      - name@example.com
-      type: person
-    - name: "[SAMPLE]Person Name 5"
-      props:
-      - value: Individual's Title
-        name: job-title
-      uuid: 132953a9-640c-46f7-9de9-3fa15ec99361
-      addresses:
-      - country: US
-        addr-lines:
-        - Address Line
-        postal-code: "00000"
-        type: work
-        state: ST
-        city: City
-      telephone-numbers:
-      - number: "2020000005"
-      member-of-organizations:
-      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-      email-addresses:
-      - name@example.com
-      type: person
-    - name: "[SAMPLE]Person Name 6"
-      props:
-      - value: Individual's Title
-        name: job-title
-      uuid: 4fded5fd-7a65-47ea-bd76-df57c46e27d1
-      addresses:
-      - country: US
-        addr-lines:
-        - Address Line
-        postal-code: "00000"
-        type: work
-        state: ST
-        city: City
-      telephone-numbers:
-      - number: "2020000006"
-      member-of-organizations:
-      - 78992555-4a99-4eaa-868c-f2c249679dd3
-      email-addresses:
-      - name@example.com
-      type: person
-    - name: "[SAMPLE]Person Name 7"
-      props:
-      - value: Individual's Title
-        name: job-title
-      uuid: db234cb7-1776-425c-9ac4-b067c1723011
-      addresses:
-      - country: US
-        addr-lines:
-        - Address Line
-        postal-code: "00000"
-        type: work
-        state: ST
-        city: City
-      telephone-numbers:
-      - number: "2020000007"
-      member-of-organizations:
-      - 6b286b5d-8f07-4fa7-8847-1dd0d88f73fb
-      email-addresses:
-      - name@example.com
-      type: person
-    - name: "[SAMPLE] IT Department"
-      uuid: b306f5af-b93a-4a7f-a2b2-37a44fc92a79
-      type: organization
-    - name: "[SAMPLE]Security Team"
-      uuid: 59cdc953-5902-4fa4-a878-f3163854624c
-      type: organization
-    version: fedramp2.0.0-oscal1.0.4
   back-matter:
     resources:
-    - props:
-      - value: Special Publication
-        class: collection
-        name: dataset
-      - value: 800-53
-        class: name
-        name: dataset
-      - value: 5.0.2
-        class: version
-        name: dataset
-      - value: gov.nist.csrc
-        class: organization
-        name: dataset
-      remarks: "This \"resolution resource\" is used by FedRAMP as a local, authoritative indicator of what version SSP (rev 4 or rev 5) this OSCAL document is for."
+    - remarks: "This \"resolution resource\" is used by FedRAMP as a local, authoritative indicator of what version SSP (rev 4 or rev 5) this OSCAL document is for."
       uuid: ace2963d-ecb4-4be5-bdd0-1f6fd7610f41
       title: Resolution Resource
-    - description: SSP Signature
       props:
-      - ns: https://fedramp.gov/ns/oscal
-        value: signed-ssp
-        name: type
-      remarks: |-
+      - name: dataset
+        value: Special Publication
+        class: collection
+      - name: dataset
+        value: 800-53
+        class: name
+      - name: dataset
+        value: 5.0.2
+        class: version
+      - name: dataset
+        value: gov.nist.csrc
+        class: organization
+    - remarks: |-
         FedRAMP is formulating guidelines for handling digital/electronic signatures in OSCAL, and welcome feedback on solutions.
 
         For now, FedRAMP recommends one of the following:
@@ -1401,826 +1396,825 @@ system-security-plan:
 
         If your organization prefers another approach, please seek prior approval from the FedRAMP PMO.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: ssp.pdf
-        media-type: application/pdf
       uuid: 2ff2eb61-d8b3-4d17-8257-727468329c82
       rlinks:
-      - href: ./signed-ssp.pdf
-        media-type: application/pdf
-    - props:
-      - ns: https://fedramp.gov/ns/oscal
-        value: fedramp-citations
-        name: type
-      remarks: Must be present in a FedRAMP SAP.
+      - media-type: application/pdf
+        href: ./signed-ssp.pdf
+      description: SSP Signature
+      props:
+      - name: type
+        ns: https://fedramp.gov/ns/oscal
+        value: signed-ssp
+    - remarks: Must be present in a FedRAMP SAP.
       base64:
+        media-type: application/vnd.ms-excel
         value: "00000000"
         filename: SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx
-        media-type: application/vnd.ms-excel
       uuid: 985475ee-d4d6-4581-8fdf-d84d3d8caa48
       rlinks:
       - href: https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx
       title: FedRAMP Applicable Laws and Regulations
-    - props:
-      - ns: https://fedramp.gov/ns/oscal
-        value: fedramp-acronyms
-        name: type
-      remarks: Must be present in a FedRAMP SSP.
+      props:
+      - name: type
+        ns: https://fedramp.gov/ns/oscal
+        value: fedramp-citations
+    - remarks: Must be present in a FedRAMP SSP.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: FedRAMP_Master_Acronym_and_Glossary.pdf
-        media-type: application/pdf
       uuid: 1a23a771-d481-4594-9a1a-71d584fa4123
       rlinks:
       - href: https://www.fedramp.gov/assets/resources/documents/FedRAMP_Master_Acronym_and_Glossary.pdf
       title: FedRAMP Master Acronym and Glossary
-    - description: AC Policy document
       props:
-      - value: policy
-        class: ac
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        ns: https://fedramp.gov/ns/oscal
+        value: fedramp-acronyms
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: 330bac69-5840-479a-981b-afda037d7a6f
       rlinks:
-      - href: ./documents/policies/sample_AC_policy.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_AC_policy.pdf
       title: Access Control Policy Title
-    - description: AT Policy document
+      description: AC Policy document
       props:
-      - value: policy
-        class: at
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: ac
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: 184d2fc9-6c9e-4302-acb3-8c24f6843c79
       rlinks:
-      - href: ./documents/policies/sample_AT_policy.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_AT_policy.pdf
       title: Awareness and Training Policy Title
-    - description: AU Policy document
+      description: AT Policy document
       props:
-      - value: policy
-        class: au
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: at
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: 64977a9e-cd62-4c04-891e-7943e9046179
       rlinks:
-      - href: ./documents/policies/sample_AU_policy.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_AU_policy.pdf
       title: Audit and Accountability Policy Title
-    - description: CA Policy document
+      description: AU Policy document
       props:
-      - value: policy
-        class: ca
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: au
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: f81fe324-844f-4b53-b915-8c72b6fde8cf
       rlinks:
-      - href: ./documents/policies/sample_CA_policy.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_CA_policy.pdf
       title: Security Assessment and Authorization Policy Title
-    - description: CM Policy document
+      description: CA Policy document
       props:
-      - value: policy
-        class: cm
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: ca
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: eb4467a5-c3ca-4cac-9181-557886d7d1dc
       rlinks:
-      - href: ./documents/policies/sample_CM_policy.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_CM_policy.pdf
       title: Configuration Management Policy Title
-    - description: CP Policy document
+      description: CM Policy document
       props:
-      - value: policy
-        class: cp
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: cm
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: 4c4395c5-a126-4b77-8c62-cac98c563915
       rlinks:
-      - href: ./documents/policies/sample_CP_policy.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_CP_policy.pdf
       title: Contingency Planning Policy Title
-    - description: IA Policy document
+      description: CP Policy document
       props:
-      - value: policy
-        class: ia
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: cp
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: f6070655-ac54-4c4c-847e-d073bcf23baf
       rlinks:
-      - href: ./documents/policies/sample_IA_policy.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_IA_policy.pdf
       title: Identification and Authentication Policy Title
-    - description: IR Policy document
+      description: IA Policy document
       props:
-      - value: policy
-        class: ir
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: ia
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: e39a9f53-984b-429f-a062-a815228c6687
       rlinks:
-      - href: ./documents/policies/sample_IR_policy.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_IR_policy.pdf
       title: Incident Response Policy Title
-    - description: MA Policy document
+      description: IR Policy document
       props:
-      - value: policy
-        class: ma
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: ir
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: 8b009787-771c-4b02-9a8f-3f3b581e9464
       rlinks:
-      - href: ./documents/policies/sample_MA_policy.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_MA_policy.pdf
       title: Maintenance Policy Title
-    - description: MP Policy document
+      description: MA Policy document
       props:
-      - value: policy
-        class: mp
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: ma
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: 776b9f3b-2896-4118-87d9-7a5e62149afb
       rlinks:
-      - href: ./documents/policies/sample_MP_policy.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_MP_policy.pdf
       title: Media Protection Policy Title
-    - description: PE Policy document
+      description: MP Policy document
       props:
-      - value: policy
-        class: pe
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: mp
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: a54bc32c-6bae-4c89-b5b4-9299c56893fb
       rlinks:
-      - href: ./documents/policies/sample_PE_policy.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_PE_policy.pdf
       title: Physical and Environmental Protection Policy Title
-    - description: PL Policy document
+      description: PE Policy document
       props:
-      - value: policy
-        class: pl
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: pe
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: 9de28452-4b02-4b49-b316-59142a7633c1
       rlinks:
-      - href: ./documents/policies/sample_PL_policy.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_PL_policy.pdf
       title: Planning Policy Title
-    - description: PS Policy document
+      description: PL Policy document
       props:
-      - value: policy
-        class: ps
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: pl
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: 34f3388e-e5b2-4d85-b050-19f62dba6d7e
       rlinks:
       - href: ./documents/policies/sample_PS_policy.pdf
       title: Personnel Security Policy Title
-    - description: RA Policy document
+      description: PS Policy document
       props:
-      - value: policy
-        class: ra
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: ps
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: 53fbc1b6-0f3c-4298-9554-da5acfef3a5a
       rlinks:
       - href: ./documents/policies/sample_RA_policy.pdf
       title: Risk Adjustment Policy Title
-    - description: SA Policy document
+      description: RA Policy document
       props:
-      - value: policy
-        class: sa
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: ra
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: f969f849-8920-4325-9abe-dcc7133518d6
       rlinks:
       - href: ./documents/policies/sample_SA_policy.pdf
       title: System and Service Acquisition Policy Title
-    - description: SC Policy document
+      description: SA Policy document
       props:
-      - value: policy
-        class: sc
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: sa
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: 03ae437f-fffc-48e3-81f1-4040fce2d6e3
       rlinks:
       - href: ./documents/policies/sample_SC_policy.pdf
       title: System and Communications Protection Policy Title
-    - description: SI Policy document
+      description: SC Policy document
       props:
-      - value: policy
-        class: si
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: sc
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: 7a5ee0b7-402c-487f-8ac7-e1735b991674
       rlinks:
       - href: ./documents/policies/sample_SI_policy.pdf
       title: System and Information Integrity Policy Title
-    - description: SR Policy document
+      description: SI Policy document
       props:
-      - value: policy
-        class: sr
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: si
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Policy Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: 7d440e15-ca4d-4e4a-8fcc-50bb05ffa2fd
       rlinks:
       - href: ./documents/policies/sample_SR_policy.pdf
       title: Supply Chain Risk Policy Title
-    - description: AC Procedure document
+      description: SR Policy document
       props:
-      - value: procedure
-        class: ac
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: policy
+        class: sr
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: e1fa7a30-efb8-4738-b4e2-7fbeb86644cd
       rlinks:
-      - href: ./documents/policies/sample_AC_procedure.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_AC_procedure.pdf
       title: Access Control Procedure Title
-    - description: AT Procedure document
+      description: AC Procedure document
       props:
-      - value: procedure
-        class: at
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: ac
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: ce9f3af2-f4bc-47b5-bc25-df52a917748b
       rlinks:
-      - href: ./documents/policies/sample_AT_procedure.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_AT_procedure.pdf
       title: Awareness and Training Procedure Title
-    - description: AU Procedure document
+      description: AT Procedure document
       props:
-      - value: procedure
-        class: au
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: at
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: b1cdaad8-2127-4563-b248-3d2777307c4f
       rlinks:
-      - href: ./documents/policies/sample_AU_procedure.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_AU_procedure.pdf
       title: Audit and Accountability Procedure Title
-    - description: CA Procedure document
+      description: AU Procedure document
       props:
-      - value: procedure
-        class: ca
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: au
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: a552272e-803c-40db-895c-5de35c76d871
       rlinks:
-      - href: ./documents/policies/sample_CA_procedure.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_CA_procedure.pdf
       title: Security Assessment and Authorization Procedure Title
-    - description: CM Procedure document
+      description: CA Procedure document
       props:
-      - value: procedure
-        class: cm
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: ca
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: b4c87da0-0f96-4231-a3c1-2d1a9d0b99a3
       rlinks:
-      - href: ./documents/policies/sample_CM_procedure.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_CM_procedure.pdf
       title: Configuration Management Procedure Title
-    - description: CP Procedure document
+      description: CM Procedure document
       props:
-      - value: procedure
-        class: cp
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: cm
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: 2f1cb360-a743-4ebe-915a-27f215f44dc5
       rlinks:
-      - href: ./documents/policies/sample_CP_procedure.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_CP_procedure.pdf
       title: Contingency Planning Procedure Title
-    - description: IA Procedure document
+      description: CP Procedure document
       props:
-      - value: procedure
-        class: ia
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: cp
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: 08a6ab70-8c56-4713-ae9c-81fbb6594943
       rlinks:
-      - href: ./documents/policies/sample_IA_procedure.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_IA_procedure.pdf
       title: Identification and Authentication Procedure Title
-    - description: IR Procedure document
+      description: IA Procedure document
       props:
-      - value: procedure
-        class: ir
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: ia
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: 649eac51-c21b-4cb2-bd10-7828e0522e50
       rlinks:
-      - href: ./documents/policies/sample_IR_procedure.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_IR_procedure.pdf
       title: Incident Response Procedure Title
-    - description: MA Procedure document
+      description: IR Procedure document
       props:
-      - value: procedure
-        class: ma
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: ir
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: fd29a63b-2a08-4d56-b91e-aadfa4c0f55b
       rlinks:
-      - href: ./documents/policies/sample_MA_procedure.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_MA_procedure.pdf
       title: Maintenance Procedure Title
-    - description: MP Procedure document
+      description: MA Procedure document
       props:
-      - value: procedure
-        class: mp
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: ma
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: 908175c9-7502-4ab4-b469-80450ed18a8b
       rlinks:
-      - href: ./documents/policies/sample_MP_procedure.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_MP_procedure.pdf
       title: Media Protection Procedure Title
-    - description: PE Procedure document
+      description: MP Procedure document
       props:
-      - value: procedure
-        class: pe
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: mp
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: 22522abe-fd09-4476-b09f-c6422b72bf12
       rlinks:
-      - href: ./documents/policies/sample_PE_procedure.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_PE_procedure.pdf
       title: Physical and Environmental Protection Procedure Title
-    - description: PL Procedure document
+      description: PE Procedure document
       props:
-      - value: procedure
-        class: pl
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: pe
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: 937dfbb6-9d82-4974-be85-23f1e4b130d8
       rlinks:
-      - href: ./documents/policies/sample_PL_procedure.pdf
-        media-type: application/pdf
+      - media-type: application/pdf
+        href: ./documents/policies/sample_PL_procedure.pdf
       title: Planning Procedure Title
-    - description: PS Procedure document
+      description: PL Procedure document
       props:
-      - value: procedure
-        class: ps
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: pl
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: 552dec25-74a9-4cbe-b3b0-f865d99bfa9d
       rlinks:
       - href: ./documents/policies/sample_PS_procedure.pdf
       title: Personnel Security Procedure Title
-    - description: RA Procedure document
+      description: PS Procedure document
       props:
-      - value: procedure
-        class: ra
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: ps
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: 1a852337-d28f-4a66-a367-68aebec35698
       rlinks:
       - href: ./documents/policies/sample_RA_procedure.pdf
       title: Risk Adjustment Procedure Title
-    - description: SA Procedure document
+      description: RA Procedure document
       props:
-      - value: procedure
-        class: sa
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: ra
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: 4a59a06d-3b1b-410f-b067-3fe1dab083f2
       rlinks:
       - href: ./documents/policies/sample_SA_procedure.pdf
       title: System and Service Acquisition Procedure Title
-    - description: SC Procedure document
+      description: SA Procedure document
       props:
-      - value: procedure
-        class: sc
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: sa
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: 936093ce-a567-4592-8fcc-eeeef024cdd4
       rlinks:
       - href: ./documents/policies/sample_SC_procedure.pdf
       title: System and Communications Protection Procedure Title
-    - description: SI Procedure document
+      description: SC Procedure document
       props:
-      - value: procedure
-        class: si
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: sc
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_procedure.pdf
-        media-type: application/pdf
       uuid: ac953d62-a392-499f-b832-b90b325cceb6
       rlinks:
       - href: ./documents/policies/sample_SI_procedure.pdf
       title: System and Information Integrity Procedure Title
-    - description: SR Procedure document
+      description: SI Procedure document
       props:
-      - value: procedure
-        class: sr
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: procedure
+        class: si
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_policy.pdf
-        media-type: application/pdf
       uuid: b2aaedad-5ff0-4b0c-b490-bbe64b2033b0
       rlinks:
       - href: ./documents/policies/sample_SR_procedure.pdf
       title: Supply Chain Risk Procedure Title
-    - description: User's Guide
+      description: SR Procedure document
       props:
-      - value: users-guide
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      remarks: |-
+      - name: type
+        value: procedure
+        class: sr
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: User's Guide Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
@@ -2228,232 +2222,237 @@ system-security-plan:
       rlinks:
       - href: ./documents/guides/sample_guide.pdf
       title: User's Guide
-    - description: Rules of Behavior
+      description: User's Guide
       props:
-      - value: rules-of-behavior
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: users-guide
+      - name: published
+        value: 2023-01-01T00:00:00Z
+    - remarks: |-
         Table 12-1 Attachments: Rules of Behavior (ROB)
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/msword
         value: "00000000"
         filename: rob.docx
-        media-type: application/msword
       uuid: 489112e1-57f2-4c29-8dd0-95b1442fbf3b
       rlinks:
-      - href: ./documents/rob.docx
-        media-type: application/msword
+      - media-type: application/msword
+        href: ./documents/rob.docx
       title: Document Title
-    - description: Contingency Plan (CP)
+      description: Rules of Behavior
       props:
-      - value: plan
-        class: information-system-contingency-plan
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: rules-of-behavior
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Contingency Plan (CP) Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/msword
         value: "00000000"
         filename: cp.docx
-        media-type: application/msword
       uuid: c7860916-f2f4-43aa-b578-d48cf8e6d381
       rlinks:
-      - href: ./documents/cp.docx
-        media-type: application/msword
+      - media-type: application/msword
+        href: ./documents/cp.docx
       title: Document Title
-    - description: Configuration Management (CM) Plan
+      description: Contingency Plan (CP)
       props:
-      - value: plan
-        class: configuration-management-plan
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: plan
+        class: information-system-contingency-plan
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Configuration Management (CM) Plan Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/msword
         value: "00000000"
         filename: CM_Plan.docx
-        media-type: application/msword
       uuid: ab56cf27-0dae-40d6-89b7-d750137309af
       rlinks:
-      - href: ./documents/CM_Plan.docx
-        media-type: application/msword
+      - media-type: application/msword
+        href: ./documents/CM_Plan.docx
       title: Document Title
-    - description: Incident Response (IR) Plan
+      description: Configuration Management (CM) Plan
       props:
-      - value: plan
-        class: incident-response-plan
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: plan
+        class: configuration-management-plan
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - remarks: |-
         Table 12-1 Attachments: Incident Response (IR) Plan Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/msword
         value: "00000000"
         filename: IR_Plan.docx
-        media-type: application/msword
       uuid: 3f771ab5-8016-4571-98d1-f0fb962e15e2
       rlinks:
-      - href: ./documents/IR_Plan.docx
-        media-type: application/msword
+      - media-type: application/msword
+        href: ./documents/IR_Plan.docx
       title: Document Title
-    - document-ids:
-      - scheme: https://www.doi.org/
-        identifier: Identification Number
+      description: Incident Response (IR) Plan
       props:
-      - value: law
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      base64:
+      - name: type
+        value: plan
+        class: incident-response-plan
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - base64:
+        media-type: application/pdf
         value: "00000000"
         filename: document.pdf
-        media-type: application/pdf
       uuid: a8a0cc81-800f-479f-93d3-8b8743d9b98d
       rlinks:
       - href: https://example.com/path/to/document.pdf
       title: "\\[SAMPLE\\] Laws and Regulations"
-    - description: Continuous Monitoring Plan
+      document-ids:
+      - identifier: Identification Number
+        scheme: https://www.doi.org/
       props:
-      - value: plan
-        class: continuous-monitoring-plan
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: type
+        value: law
+      - name: published
+        value: 2023-01-01T00:00:00Z
+    - remarks: |-
         Table 12-1 Attachments: Continuous Monitoring Plan Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/msword
         value: "00000000"
         filename: ConMon_Plan.docx
-        media-type: application/msword
       uuid: 47ba08df-d619-4f18-9daf-78d416eede79
       rlinks:
-      - href: ./documents/ConMon_Plan.docx
-        media-type: application/msword
+      - media-type: application/msword
+        href: ./documents/ConMon_Plan.docx
       title: Document Title
-    - props:
-      - value: 2023-05-31T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      - value: plan
-        class: poam
-        name: type
-      base64:
+      description: Continuous Monitoring Plan
+      props:
+      - name: type
+        value: plan
+        class: continuous-monitoring-plan
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - base64:
+        media-type: application/xml
         value: "00000000"
         filename: SAMPLE_POAM_20230531.xml
-        media-type: application/xml
       uuid: e33c2763-d661-4638-a630-bd9138af1238
       rlinks:
       - href: ./documents/POAMs/SAMPLE_POAM_20230531.xml
       title: "\\[SAMPLE\\]Plan of Actions and Milestones (POAM)"
-    - description: Supply Chain Risk Management Plan
       props:
-      - value: plan
-        class: scrmp
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: |-
+      - name: published
+        value: 2023-05-31T00:00:00Z
+      - name: version
+        value: Document Version
+      - name: type
+        value: plan
+        class: poam
+    - remarks: |-
         Table 12-1 Attachments: Procedure Attachment
 
         May use `rlink` with a relative path, or embedded as `base64`.
       base64:
+        media-type: application/pdf
         value: "00000000"
         filename: sample_SCRMP.pdf
-        media-type: application/pdf
       uuid: bdbb4fef-505f-466b-810a-0a5ba03e9fc9
       rlinks:
       - href: ./documents/plans/sample_SCRMP_procedure.pdf
       title: Supply Chain Risk Management Plan
-    - props:
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      - value: agreement
-        class: isa
-        name: type
-      base64:
+      description: Supply Chain Risk Management Plan
+      props:
+      - name: type
+        value: plan
+        class: scrmp
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+    - base64:
+        media-type: application/msword
         value: "00000000"
         filename: ISA-1.docx
-        media-type: application/msword
       uuid: 9d6cf2b4-8e88-4040-a33c-7bc206553a1a
       rlinks:
       - href: ./documents/ISAs/ISA-1.docx
       title: "\\[SAMPLE\\]Interconnection Security Agreement Title"
-    - description: FedRAMP Logo
       props:
-      - ns: https://fedramp.gov/ns/oscal
-        value: fedramp-logo
-        name: type
-      remarks: Must be present in a FedRAMP SSP.
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
+      - name: type
+        value: agreement
+        class: isa
+    - remarks: Must be present in a FedRAMP SSP.
       base64:
+        media-type: image/png
         value: "00000000"
         filename: logo-main-fedramp.png
-        media-type: image/png
       uuid: a2381e87-3d04-4108-a30b-b4d2f36d001f
       rlinks:
       - href: https://www.fedramp.gov/assets/img/logo-main-fedramp.png
       title: FedRAMP Logo
-    - description: CSP Logo
-      remarks: |-
+      description: FedRAMP Logo
+      props:
+      - name: type
+        ns: https://fedramp.gov/ns/oscal
+        value: fedramp-logo
+    - remarks: |-
         May use `rlink` with a relative path, or embedded as `base64`.
 
         FedRAMP prefers `base64` for images and diagrams.
 
         Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
       base64:
+        media-type: image/png
         value: "00000000"
         filename: logo.png
-        media-type: image/png
       uuid: 31a46c4f-2959-4287-bc1c-67297d7da60b
       rlinks:
-      - href: ./img/logo.png
-        media-type: image/png
+      - media-type: image/png
+        href: ./img/logo.png
       title: CSP Logo
-    - description: 3PAO Logo
-      remarks: |-
+      description: CSP Logo
+    - remarks: |-
         May use `rlink` with a relative path, or embedded as `base64`.
 
         FedRAMP prefers `base64` for images and diagrams.
 
         Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
       base64:
+        media-type: image/png
         value: "00000000"
         filename: logo.png
-        media-type: image/png
       uuid: 2c1747d6-874a-49a2-8488-2fd9735416bf
       rlinks:
-      - href: ./img/logo.png
-        media-type: image/png
+      - media-type: image/png
+        href: ./img/logo.png
       title: 3PAO Logo
-    - description: The primary authorization boundary diagram.
-      remarks: |-
+      description: 3PAO Logo
+    - remarks: |-
         Section 8.1, Figure 8-1 Authorization Boundary Diagram (graphic)
 
         This should be referenced in the system-characteristics/authorization-boundary/diagram/link/@href flag using a value of "#d2eb3c18-6754-4e3a-a933-03d289e3fad5"
@@ -2464,15 +2463,15 @@ system-security-plan:
 
         Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
       base64:
+        media-type: image/png
         value: "00000000"
         filename: logo.png
-        media-type: image/png
       uuid: d2eb3c18-6754-4e3a-a933-03d289e3fad5
       rlinks:
       - href: ./diagrams/boundary.png
       title: Boundary Diagram
-    - description: The primary network diagram.
-      remarks: |-
+      description: The primary authorization boundary diagram.
+    - remarks: |-
         Section 8.1, Figure 8-2 Network Diagram (graphic)
 
         This should be referenced in the system-characteristics/network-architecture/diagram/link/@href flag using a value of "#61081e81-850b-43c1-bf43-1ecbddcb9e7f"
@@ -2483,15 +2482,15 @@ system-security-plan:
 
         Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
       base64:
+        media-type: image/png
         value: "00000000"
         filename: network.png
-        media-type: image/png
       uuid: 61081e81-850b-43c1-bf43-1ecbddcb9e7f
       rlinks:
       - href: ./diagrams/network.png
       title: Network Diagram
-    - description: The primary data flow diagram.
-      remarks: |-
+      description: The primary network diagram.
+    - remarks: |-
         Section 8.1, Figure 8-3 Data Flow Diagram (graphic)
 
         This should be referenced in the system-characteristics/data-flow/diagram/link/@href flag using a value of "#ac5d7535-f3b8-45d3-bf3b-735c82c64547"
@@ -2502,33 +2501,35 @@ system-security-plan:
 
         Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
       base64:
+        media-type: image/png
         value: "00000000"
         filename: dataflow.png
-        media-type: image/png
       uuid: ac5d7535-f3b8-45d3-bf3b-735c82c64547
       rlinks:
       - href: ./diagrams/dataflow.png
       title: Data Flow Diagram
-    - description: Separation of Duties Matrix
-      props:
-      - ns: https://fedramp.gov/ns/oscal
-        value: separation-of-duties-matrix
-        name: type
-      - value: 2023-01-01T00:00:00Z
-        name: published
-      - value: Document Version
-        name: version
-      remarks: "May use `rlink` with a relative path, or embedded as `base64`."
+      description: The primary data flow diagram.
+    - remarks: "May use `rlink` with a relative path, or embedded as `base64`."
       base64:
+        media-type: application/msword
         value: "00000000"
         filename: Sep_Matrix.docx
-        media-type: application/msword
       uuid: 49fb4631-1da2-41ca-b0b3-e1b1006d4025
       rlinks:
-      - href: ./documents/Sep_Matrix.docx
-        media-type: application/msword
+      - media-type: application/msword
+        href: ./documents/Sep_Matrix.docx
       title: Separation of Duties Matrix
+      description: Separation of Duties Matrix
+      props:
+      - name: type
+        ns: https://fedramp.gov/ns/oscal
+        value: separation-of-duties-matrix
+      - name: published
+        value: 2023-01-01T00:00:00Z
+      - name: version
+        value: Document Version
   system-characteristics:
+    system-name-short: System's Short Name or Acronym
     status:
       state: operational
       remarks: |-
@@ -2537,49 +2538,44 @@ system-security-plan:
         Remarks are required otherwise.
     network-architecture:
       diagrams:
-      - description: A diagram-specific explanation.
-        uuid: e97c3395-433a-48c1-8cc7-dd1e1555941c
-        caption: Network Diagram
-        links:
+      - links:
         - rel: diagram
           href: '#61081e81-850b-43c1-bf43-1ecbddcb9e7f'
+        description: A diagram-specific explanation.
+        uuid: e97c3395-433a-48c1-8cc7-dd1e1555941c
+        caption: Network Diagram
       description: "A holistic, top-level explanation of the network architecture."
     data-flow:
       diagrams:
-      - description: A diagram-specific explanation.
-        uuid: e3b98448-4219-46a5-b229-412423c566f3
-        caption: Data Flow Diagram
-        links:
+      - links:
         - rel: diagram
           href: '#ac5d7535-f3b8-45d3-bf3b-735c82c64547'
+        description: A diagram-specific explanation.
+        uuid: e3b98448-4219-46a5-b229-412423c566f3
+        caption: Data Flow Diagram
       description: "A holistic, top-level explanation of the system's data flows."
     props:
-    - remarks: Remarks are required if service model is "other". Optional otherwise.
+    - name: cloud-service-model
+      remarks: Remarks are required if service model is "other". Optional otherwise.
       value: saas
-      name: cloud-service-model
-    - remarks: Remarks are required if deployment model is "hybrid-cloud" or "other". Optional otherwise.
+    - name: cloud-deployment-model
+      remarks: Remarks are required if deployment model is "hybrid-cloud" or "other". Optional otherwise.
       value: government-only-cloud
-      name: cloud-deployment-model
-    - value: "2"
-      name: identity-assurance-level
-    - value: "2"
-      name: authenticator-assurance-level
-    - value: "2"
-      name: federation-assurance-level
-    - ns: https://fedramp.gov/ns/oscal
+    - name: identity-assurance-level
+      value: "2"
+    - name: authenticator-assurance-level
+      value: "2"
+    - name: federation-assurance-level
+      value: "2"
+    - name: fully-operational-date
+      ns: https://fedramp.gov/ns/oscal
       value: yyyy-mm-ddThh:mmZ
-      name: fully-operational-date
-    - ns: https://fedramp.gov/ns/oscal
+    - name: authorization-type
+      ns: https://fedramp.gov/ns/oscal
       value: fedramp-agency
-      name: authorization-type
     system-information:
       information-types:
-      - description: A description of the information.
-        integrity-impact:
-          selected: fips-199-moderate
-          base: fips-199-moderate
-          adjustment-justification: Required if the base and selected values do not match.
-        availability-impact:
+      - availability-impact:
           selected: fips-199-moderate
           base: fips-199-moderate
           adjustment-justification: Required if the base and selected values do not match.
@@ -2590,23 +2586,28 @@ system-security-plan:
         uuid: 06ecba4f-db96-4491-a3a2-7febfa227435
         title: Information Type Name
         categorizations:
-        - information-type-ids:
+        - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+          information-type-ids:
           - C.2.4.1
-          system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+        description: A description of the information.
+        integrity-impact:
+          selected: fips-199-moderate
+          base: fips-199-moderate
+          adjustment-justification: Required if the base and selected values do not match.
     system-name: System's Full Name
     security-impact-level:
+      security-objective-confidentiality: fips-199-moderate
       security-objective-availability: fips-199-moderate
       security-objective-integrity: fips-199-moderate
-      security-objective-confidentiality: fips-199-moderate
     security-sensitivity-level: fips-199-moderate
     authorization-boundary:
       diagrams:
-      - description: A diagram-specific explanation.
-        uuid: dbf46c27-52a9-49c4-beb6-b6399cd75497
-        caption: Authorization Boundary Diagram
-        links:
+      - links:
         - rel: diagram
           href: '#d2eb3c18-6754-4e3a-a933-03d289e3fad5'
+        description: A diagram-specific explanation.
+        uuid: dbf46c27-52a9-49c4-beb6-b6399cd75497
+        caption: Authorization Boundary Diagram
       description: "A holistic, top-level explanation of the FedRAMP authorization boundary."
     description: |-
       \[Insert CSO Name\] is delivered as \[a/an\] \[insert based on the Service Model above\] offering using a multi-tenant \[insert based on the Deployment Model above\] cloud computing environment. It is available to \[Insert scope of customers in accordance with instructions above (for example, the public, federal, state, local, and tribal governments, as well as research institutions, federal contractors, government contractors etc.)\].
@@ -2615,29 +2616,11 @@ system-security-plan:
 
       NOTE: The description is expected to be at least 32 words in length.
     system-ids:
-    - identifier-type: https://fedramp.gov
-      id: F00000000
-    system-name-short: System's Short Name or Acronym
+    - id: F00000000
+      identifier-type: https://fedramp.gov
   control-implementation:
-    description: |-
-      Appendix A - FedRAMP SSP Rev5 Template
-
-      This description field is required by OSCAL.
-
-      FedRAMP does not require any specific information here.
     implemented-requirements:
-    - props:
-      - ns: https://fedramp.gov/ns/oscal
-        value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
-        remarks: Describe the plan to complete the implementation.
-        value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
-        value: sp-system
-        name: control-origination
-      control-id: ac-1
+    - control-id: ac-1
       uuid: eee8697a-bc39-45aa-accc-d3e534932efb
       links:
       - rel: policy
@@ -2664,7 +2647,12 @@ system-security-plan:
       - uuid: fb4d039a-dc4f-46f5-9c1f-f6343eaf69bc
         statement-id: ac-1_smt.a.1
         by-components:
-        - description: |-
+        - links:
+          - rel: policy
+            href: '#330bac69-5840-479a-981b-afda037d7a6f'
+          - rel: procedure
+            href: '#e1fa7a30-efb8-4738-b4e2-7fbeb86644cd'
+          description: |-
             Describe how Part a is satisfied within the system.
 
             Legacy approach. If no policy component is defined, describe here how the policy satisfies part a.
@@ -2678,11 +2666,6 @@ system-security-plan:
 
             Any control implementation response that can not be associated with another component is associated with the component representing the system.
           uuid: 3f5612a4-cd1d-4c47-8cae-75d2eaa332cd
-          links:
-          - rel: policy
-            href: '#330bac69-5840-479a-981b-afda037d7a6f'
-          - rel: procedure
-            href: '#e1fa7a30-efb8-4738-b4e2-7fbeb86644cd'
         - description: |-
             Describe how this policy component satisfies part a.
 
@@ -2726,29 +2709,18 @@ system-security-plan:
         - description: Describe how Part b-2 is satisfied.
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: 5a869308-1625-4d92-9ed8-ff5d8bd13656
-    - responsible-roles:
-      - role-id: admin-unix
-        party-uuids:
-        - 3360e343-9860-4bda-9dfc-ff427c3dfab6
-      - role-id: information-system-security-officer
-        party-uuids:
-        - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      - ns: https://fedramp.gov/ns/oscal
-        remarks: Describe any customer-configured requirements for satisfying this control.
-        value: customer-configured
-        name: control-origination
-      control-id: ac-2
+    - control-id: ac-2
       uuid: 7a36cf53-156d-4d1f-9a8b-433f61cc57b7
       statements:
       - uuid: 4a2428eb-41eb-447a-81db-4f6d98a003ce
@@ -2856,22 +2828,29 @@ system-security-plan:
 
               It may be linked directly, but is more commonly provided via an OSCAL-based CRM (Inheritance and Responsibility Model).
             uuid: 780a3910-2019-4d33-a2f9-5c6ac91929d6
-    - responsible-roles:
+      responsible-roles:
+      - role-id: admin-unix
+        party-uuids:
+        - 3360e343-9860-4bda-9dfc-ff427c3dfab6
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: at-1
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
+        remarks: Describe any customer-configured requirements for satisfying this control.
+        value: customer-configured
+    - control-id: at-1
       uuid: c332a6f8-bbe6-4ee9-aaea-d89d251c68df
       links:
       - rel: policy
@@ -2929,22 +2908,22 @@ system-security-plan:
         - description: Describe how Part b-2 is satisfied.
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: fcc63699-04ab-4b69-b7b9-a13bee6685b3
-    - responsible-roles:
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: au-1
+    - control-id: au-1
       uuid: 381c8d0c-e6ec-41a9-9b16-01657226c70f
       links:
       - rel: policy
@@ -2971,12 +2950,12 @@ system-security-plan:
       - uuid: 9a2bd937-226e-4aaf-8261-2cf0c2e3aa10
         statement-id: au-1_smt.a
         by-components:
-        - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
-          component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
-          uuid: 30042cb9-ff85-472f-b769-68bd7bb5bbd9
-          links:
+        - links:
           - rel: policy
             href: '#64977a9e-cd62-4c04-891e-7943e9046179'
+          description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
+          component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
+          uuid: 30042cb9-ff85-472f-b769-68bd7bb5bbd9
         - description: |-
             Describe how this policy component satisfies part a.
 
@@ -2996,37 +2975,37 @@ system-security-plan:
       - uuid: d01f186f-a14f-4e22-b069-84a55e48a112
         statement-id: au-1_smt.b.1
         by-components:
-        - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
-          component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
-          uuid: f41962c7-b53b-46f8-a84f-4aba25904bb8
-          links:
+        - links:
           - rel: policy
             href: '#64977a9e-cd62-4c04-891e-7943e9046179'
+          description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
+          component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
+          uuid: f41962c7-b53b-46f8-a84f-4aba25904bb8
       - uuid: ea153acb-2bd0-41d9-8ebd-ba022d31230a
         statement-id: au-1_smt.b.2
         by-components:
-        - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
-          component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
-          uuid: 9ad59f0d-17a2-4f3f-af6a-a8529d692195
-          links:
+        - links:
           - rel: policy
             href: '#64977a9e-cd62-4c04-891e-7943e9046179'
-    - responsible-roles:
+          description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
+          component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
+          uuid: 9ad59f0d-17a2-4f3f-af6a-a8529d692195
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: ca-1
+    - control-id: ca-1
       uuid: 43e388d9-3854-44f6-8c6f-17a6d51ee6a2
       links:
       - rel: policy
@@ -3084,22 +3063,22 @@ system-security-plan:
         - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: 507b8b9d-2d40-4748-81c9-c5a13c8f8f05
-    - responsible-roles:
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: cm-1
+    - control-id: cm-1
       uuid: c8e45d78-2afe-42ae-80e1-c1e2499a0346
       links:
       - rel: policy
@@ -3157,22 +3136,22 @@ system-security-plan:
         - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: a871cf91-04c7-4e03-9df6-80b3d5afc9bf
-    - responsible-roles:
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: cp-1
+    - control-id: cp-1
       uuid: 13af9343-73e7-4d71-b386-9a0844fa7e45
       statements:
       - uuid: a719de81-694c-4455-b8db-5f2b6b1d9076
@@ -3225,22 +3204,22 @@ system-security-plan:
         - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: 3de33bbe-1a15-4d10-b35d-56fd85e24571
-    - responsible-roles:
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: ia-1
+    - control-id: ia-1
       uuid: 4050c933-3ecc-4a8d-8da7-391364685cbb
       links:
       - rel: policy
@@ -3298,22 +3277,22 @@ system-security-plan:
         - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: c8fde380-9a41-404a-a88b-c20479a21618
-    - responsible-roles:
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: ir-1
+    - control-id: ir-1
       uuid: 229846dc-83cc-4ff2-a9ed-210490a343d9
       links:
       - rel: policy
@@ -3371,22 +3350,22 @@ system-security-plan:
         - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: f443c391-479d-492d-b7e9-55c9c2c107be
-    - responsible-roles:
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: ma-1
+    - control-id: ma-1
       uuid: f0c6b63f-6b94-448f-bb16-db3d54b91734
       links:
       - rel: policy
@@ -3444,22 +3423,22 @@ system-security-plan:
         - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: 32b337f6-eb61-4945-a139-4d2ae7737488
-    - responsible-roles:
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: mp-1
+    - control-id: mp-1
       uuid: fa3a9747-3451-456a-aae9-9896e03a52c8
       links:
       - rel: policy
@@ -3517,22 +3496,22 @@ system-security-plan:
         - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: ea6c7fa7-ccbf-414c-8c6b-9c928e914b35
-    - responsible-roles:
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: pe-1
+    - control-id: pe-1
       uuid: a85ff28e-517c-4455-8bd4-866103a2c94a
       links:
       - rel: policy
@@ -3590,22 +3569,22 @@ system-security-plan:
         - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: f4a94538-220f-4f73-9487-73b72b68813e
-    - responsible-roles:
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: pl-1
+    - control-id: pl-1
       uuid: 97ba1f95-92a8-480b-a489-960661e4206b
       links:
       - rel: policy
@@ -3663,22 +3642,22 @@ system-security-plan:
         - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: 18d7c02e-f21b-4cd2-bf33-d27971ced47f
-    - responsible-roles:
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: ps-1
+    - control-id: ps-1
       uuid: 5e7498de-b540-4a28-b041-4381b023e98a
       links:
       - rel: policy
@@ -3736,22 +3715,22 @@ system-security-plan:
         - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: 2f9c701a-0f3e-4e3d-beae-debb08c406ed
-    - responsible-roles:
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: ra-1
+    - control-id: ra-1
       uuid: 789e6c0f-acda-4a94-9b48-7d41dd4c607c
       links:
       - rel: policy
@@ -3809,22 +3788,22 @@ system-security-plan:
         - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: d6f6ac98-4f15-45f2-9ecc-4447e96af44f
-    - responsible-roles:
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: sa-1
+    - control-id: sa-1
       uuid: 55358f60-db9b-4d75-a313-5fa6c328273c
       links:
       - rel: policy
@@ -3882,22 +3861,22 @@ system-security-plan:
         - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: 518d4987-9436-4c1f-9e07-afa6b332f124
-    - responsible-roles:
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: sc-1
+    - control-id: sc-1
       uuid: 9e2852c6-f48a-47b2-9ea5-77cbbb42b365
       links:
       - rel: policy
@@ -3955,22 +3934,22 @@ system-security-plan:
         - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: ad20ff50-8a7c-4ffc-a918-260960f6fb42
-    - responsible-roles:
+      responsible-roles:
       - role-id: information-system-security-officer
         party-uuids:
         - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
         value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
         remarks: Describe the plan to complete the implementation.
         value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: si-1
+    - control-id: si-1
       uuid: 81ba4fe8-1649-437b-9ecf-367fd87336e6
       links:
       - rel: policy
@@ -4028,18 +4007,22 @@ system-security-plan:
         - description: "For the portion of the control satisfied by the service provider, describe **how** the control is met."
           component-uuid: 60f92bcf-f353-4236-9803-2a5d417555f4
           uuid: 78e8f2bb-67d7-49d3-a993-ce4bedcfbc47
-    - responsible-roles:
-      - role-id: asset-administrator
+      responsible-roles:
+      - role-id: information-system-security-officer
         party-uuids:
-        - 59cdc953-5902-4fa4-a878-f3163854624c
+        - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
       props:
-      - ns: https://fedramp.gov/ns/oscal
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
+        value: 2024-01-31Z
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
+        remarks: Describe the plan to complete the implementation.
+        value: planned
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      - ns: https://fedramp.gov/ns/oscal
-        value: implemented
-        name: implementation-status
-      control-id: si-8
+    - control-id: si-8
       uuid: f33674dc-d16f-4a8c-8902-b8e60f947ce7
       statements:
       - uuid: 9e061e1e-10fa-4896-8597-294d8fd8e52b
@@ -4065,22 +4048,18 @@ system-security-plan:
             values:
             - "[specify frequency]"
           uuid: d63e6f79-c7c5-455b-8b42-8c60c4e7939b
-    - responsible-roles:
-      - role-id: information-system-security-officer
+      responsible-roles:
+      - role-id: asset-administrator
         party-uuids:
-        - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
+        - 59cdc953-5902-4fa4-a878-f3163854624c
       props:
-      - ns: https://fedramp.gov/ns/oscal
-        value: 2024-01-31Z
-        name: planned-completion-date
-      - ns: https://fedramp.gov/ns/oscal
-        remarks: Describe the plan to complete the implementation.
-        value: planned
-        name: implementation-status
-      - ns: https://fedramp.gov/ns/oscal
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
         value: sp-system
-        name: control-origination
-      control-id: sr-1
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
+        value: implemented
+    - control-id: sr-1
       uuid: 2286bf93-2664-4852-bc4c-e235ec076b94
       links:
       - rel: policy
@@ -4126,3 +4105,24 @@ system-security-plan:
             That component contains a link to the procedure, so it does not have to be linked here too.
           component-uuid: fa90644a-8bf8-47da-b0d3-82bffc708afc
           uuid: 73b85fca-3995-447a-a47f-23531335ea58
+      responsible-roles:
+      - role-id: information-system-security-officer
+        party-uuids:
+        - 36b8d6c0-3b25-42cc-b529-cf4066145cdd
+      props:
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
+        value: 2024-01-31Z
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
+        remarks: Describe the plan to complete the implementation.
+        value: planned
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
+        value: sp-system
+    description: |-
+      Appendix A - FedRAMP SSP Rev5 Template
+
+      This description field is required by OSCAL.
+
+      FedRAMP does not require any specific information here.

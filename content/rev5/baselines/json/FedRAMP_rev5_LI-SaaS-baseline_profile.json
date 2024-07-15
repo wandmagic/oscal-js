@@ -1,49 +1,43 @@
 {
   "profile" : {
+    "back-matter" : {
+      "resources" : [ {
+        "title" : "FedRAMP Applicable Laws and Regulations",
+        "rlinks" : [ {
+          "href" : "https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx"
+        } ],
+        "uuid" : "985475ee-d4d6-4581-8fdf-d84d3d8caa48"
+      }, {
+        "description" : "FedRAMP Logo",
+        "rlinks" : [ {
+          "href" : "https://www.fedramp.gov/assets/img/logo-main-fedramp.png"
+        } ],
+        "uuid" : "a2381e87-3d04-4108-a30b-b4d2f36d001f",
+        "props" : [ {
+          "value" : "logo",
+          "name" : "type"
+        } ]
+      }, {
+        "title" : "NIST Special Publication (SP) 800-53 revision 5",
+        "rlinks" : [ {
+          "href" : "NIST_SP-800-53_rev5_catalog.xml",
+          "media-type" : "application/oscal+xml"
+        } ],
+        "uuid" : "051a77c1-b61d-4995-8275-dacfe688d510",
+        "props" : [ {
+          "value" : "5.1.1",
+          "name" : "version"
+        } ]
+      } ]
+    },
     "uuid" : "ece2fd2d-87f7-476a-a295-6e1ec8153771",
     "imports" : [ {
+      "href" : "#051a77c1-b61d-4995-8275-dacfe688d510",
       "include-controls" : [ {
         "with-ids" : [ "ac-1", "ac-2", "ac-3", "ac-7", "ac-8", "ac-14", "ac-17", "ac-18", "ac-19", "ac-20", "ac-22", "at-1", "at-2", "at-2.2", "at-3", "at-4", "au-1", "au-2", "au-3", "au-4", "au-5", "au-6", "au-8", "au-9", "au-11", "au-12", "ca-1", "ca-2", "ca-2.1", "ca-3", "ca-5", "ca-6", "ca-7", "ca-7.4", "ca-8", "ca-9", "cm-1", "cm-2", "cm-4", "cm-5", "cm-6", "cm-7", "cm-8", "cm-10", "cm-11", "cp-1", "cp-2", "cp-3", "cp-4", "cp-9", "cp-10", "ia-1", "ia-2", "ia-2.1", "ia-2.2", "ia-2.8", "ia-2.12", "ia-4", "ia-5", "ia-5.1", "ia-6", "ia-7", "ia-8", "ia-8.1", "ia-8.2", "ia-8.4", "ia-11", "ir-1", "ir-2", "ir-4", "ir-5", "ir-6", "ir-7", "ir-8", "ma-1", "ma-2", "ma-4", "ma-5", "mp-1", "mp-2", "mp-6", "mp-7", "pe-1", "pe-2", "pe-3", "pe-6", "pe-8", "pe-12", "pe-13", "pe-14", "pe-15", "pe-16", "pl-1", "pl-2", "pl-4", "pl-4.1", "pl-8", "pl-10", "pl-11", "ps-1", "ps-2", "ps-3", "ps-4", "ps-5", "ps-6", "ps-7", "ps-8", "ps-9", "ra-1", "ra-2", "ra-3", "ra-3.1", "ra-5", "ra-5.2", "ra-5.11", "ra-7", "sa-1", "sa-2", "sa-3", "sa-4", "sa-4.10", "sa-5", "sa-8", "sa-9", "sa-22", "sc-1", "sc-5", "sc-7", "sc-8", "sc-8.1", "sc-12", "sc-13", "sc-15", "sc-20", "sc-21", "sc-22", "sc-28", "sc-28.1", "sc-39", "si-1", "si-2", "si-3", "si-4", "si-5", "si-12", "sr-1", "sr-2", "sr-2.1", "sr-3", "sr-5", "sr-8", "sr-10", "sr-11", "sr-11.1", "sr-11.2", "sr-12" ]
-      } ],
-      "href" : "#051a77c1-b61d-4995-8275-dacfe688d510"
+      } ]
     } ],
     "metadata" : {
-      "published" : "2023-08-31T00:00:00Z",
-      "version" : "5.1.1+fedramp-20240111-0",
-      "parties" : [ {
-        "type" : "organization",
-        "email-addresses" : [ "info@fedramp.gov" ],
-        "links" : [ {
-          "href" : "https://fedramp.gov",
-          "rel" : "homepage"
-        }, {
-          "href" : "#a2381e87-3d04-4108-a30b-b4d2f36d001f",
-          "rel" : "logo"
-        }, {
-          "href" : "#985475ee-d4d6-4581-8fdf-d84d3d8caa48",
-          "rel" : "reference"
-        } ],
-        "short-name" : "FedRAMP PMO",
-        "addresses" : [ {
-          "addr-lines" : [ "1800 F St. NW" ],
-          "country" : "US",
-          "city" : "Washington",
-          "state" : "DC",
-          "type" : "work",
-          "postal-code" : "20006"
-        } ],
-        "uuid" : "8cc0b8e5-9650-4d5f-9796-316f05fa9a2d",
-        "name" : "Federal Risk and Authorization Management Program: Program Management Office"
-      }, {
-        "type" : "organization",
-        "links" : [ {
-          "href" : "#a2381e87-3d04-4108-a30b-b4d2f36d001f",
-          "rel" : "logo"
-        } ],
-        "short-name" : "FedRAMP JAB",
-        "uuid" : "ca9ba80e-1342-4bfd-b32a-abac468c24b4",
-        "name" : "Federal Risk and Authorization Management Program: Joint Authorization Board"
-      } ],
       "oscal-version" : "1.1.1",
       "last-modified" : "2024-01-11T23:40:17Z",
       "responsible-parties" : [ {
@@ -68,6 +62,42 @@
         "title" : "The FedRAMP Joint Authorization Board (JAB)",
         "id" : "fedramp-jab",
         "short-name" : "JAB"
+      } ],
+      "published" : "2023-08-31T00:00:00Z",
+      "version" : "5.1.1+fedramp-20240111-0",
+      "parties" : [ {
+        "type" : "organization",
+        "email-addresses" : [ "info@fedramp.gov" ],
+        "links" : [ {
+          "rel" : "homepage",
+          "href" : "https://fedramp.gov"
+        }, {
+          "rel" : "logo",
+          "href" : "#a2381e87-3d04-4108-a30b-b4d2f36d001f"
+        }, {
+          "rel" : "reference",
+          "href" : "#985475ee-d4d6-4581-8fdf-d84d3d8caa48"
+        } ],
+        "short-name" : "FedRAMP PMO",
+        "addresses" : [ {
+          "state" : "DC",
+          "type" : "work",
+          "postal-code" : "20006",
+          "addr-lines" : [ "1800 F St. NW" ],
+          "country" : "US",
+          "city" : "Washington"
+        } ],
+        "uuid" : "8cc0b8e5-9650-4d5f-9796-316f05fa9a2d",
+        "name" : "Federal Risk and Authorization Management Program: Program Management Office"
+      }, {
+        "type" : "organization",
+        "links" : [ {
+          "rel" : "logo",
+          "href" : "#a2381e87-3d04-4108-a30b-b4d2f36d001f"
+        } ],
+        "short-name" : "FedRAMP JAB",
+        "uuid" : "ca9ba80e-1342-4bfd-b32a-abac468c24b4",
+        "name" : "Federal Risk and Authorization Management Program: Joint Authorization Board"
       } ]
     },
     "merge" : {
@@ -77,10 +107,10 @@
       "alters" : [ {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ac-1",
@@ -91,80 +121,80 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ac-2_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ac-2_smt"
         }, {
           "parts" : [ {
-            "props" : [ {
-              "name" : "response-point",
-              "value" : "Required",
-              "ns" : "https://fedramp.gov/ns/oscal"
-            }, {
-              "name" : "method",
-              "class" : "fedramp",
-              "value" : "EXAMINE",
-              "ns" : "https://fedramp.gov/ns/oscal"
-            }, {
-              "name" : "method",
-              "class" : "fedramp",
-              "value" : "INTERVIEW",
-              "ns" : "https://fedramp.gov/ns/oscal"
-            }, {
-              "name" : "method",
-              "class" : "fedramp",
-              "value" : "TEST",
-              "ns" : "https://fedramp.gov/ns/oscal"
-            } ],
             "prose" : "Determine if the organization defines information system account types to be identified and selected to support organizational missions/business functions.",
             "name" : "assessment-objective",
-            "id" : "ac-2_obj_fr"
-          }, {
+            "id" : "ac-2_obj_fr",
             "props" : [ {
-              "name" : "method",
+              "value" : "Required",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "response-point"
+            }, {
+              "class" : "fedramp",
               "value" : "EXAMINE",
-              "ns" : "https://fedramp.gov/ns/oscal"
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
+            }, {
+              "class" : "fedramp",
+              "value" : "INTERVIEW",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
+            }, {
+              "class" : "fedramp",
+              "value" : "TEST",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
+            } ]
+          }, {
+            "name" : "assessment-method",
+            "id" : "ac-2_asmt_fr.1",
+            "props" : [ {
+              "value" : "EXAMINE",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
             } ],
             "parts" : [ {
               "prose" : "Access control policy; procedures addressing account management; security plan; information system design documentation; information system configuration settings and associated documentation; list of active system accounts along with the name of the individual associated with each account; list of conditions for group and role membership; notifications or records of recently transferred, separated, or terminated employees; list of recently disabled information system accounts along with the name of the individual associated with each account; access authorization records; account management compliance reviews; information system monitoring records; information system audit records; other relevant documents or records.",
               "name" : "assessment-objects"
-            } ],
-            "name" : "assessment-method",
-            "id" : "ac-2_asmt_fr.1"
+            } ]
           }, {
+            "name" : "assessment-method",
+            "id" : "ac-2_asmt_fr.2",
             "props" : [ {
-              "name" : "method",
               "value" : "INTERVIEW",
-              "ns" : "https://fedramp.gov/ns/oscal"
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
             } ],
             "parts" : [ {
               "prose" : "Organizational personnel with account management responsibilities; system/network administrators; organizational personnel with information security responsibilities.",
               "name" : "assessment-objects"
-            } ],
-            "name" : "assessment-method",
-            "id" : "ac-2_asmt_fr.2"
+            } ]
           }, {
+            "name" : "assessment-method",
+            "id" : "ac-2_asmt_fr.3",
             "props" : [ {
-              "name" : "method",
               "value" : "TEST",
-              "ns" : "https://fedramp.gov/ns/oscal"
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
             } ],
             "parts" : [ {
               "prose" : "Organizational processes for account management on the information system; automated mechanisms for implementing account management.",
               "name" : "assessment-objects"
-            } ],
-            "name" : "assessment-method",
-            "id" : "ac-2_asmt_fr.3"
+            } ]
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ac-2",
@@ -191,62 +221,62 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ac-3_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ac-3_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ac-3"
       }, {
         "adds" : [ {
-          "by-id" : "ac-7_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ac-7_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "NSO for non-privileged users. Attestation for privileged users related to multi-factor identification and authentication.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "NSO",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ac-7"
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "FED - This is related to agency data and agency policy solution.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "FED",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ac-8",
@@ -258,15 +288,15 @@
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "FED - This is related to agency data and agency policy solution.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "FED",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ac-14",
@@ -277,34 +307,34 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ac-17_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ac-17_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ac-17"
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "NSO - All access to Cloud SaaS are via web services and/or API. The device accessed from or whether via wired or wireless connection is out of scope. Regardless of device accessed from, must utilize approved remote access methods (AC-17), secure communication with strong encryption (SC-13), key management (SC-12), and multi-factor authentication for privileged access (IA-2\\[1\\]).",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "NSO",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ac-18",
@@ -316,15 +346,15 @@
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "NSO - All access to Cloud SaaS are via web service and/or API. The device accessed from is out of the scope. Regardless of device accessed from, must utilize approved remote access methods (AC-17), secure communication with strong encryption (SC-13), key management (SC-12), and multi-factor authentication for privileged access (IA-2 \\[1\\]).",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "NSO",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ac-19",
@@ -336,10 +366,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ac-20",
@@ -350,29 +380,29 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ac-22_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ac-22_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ac-22"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "at-1",
@@ -384,10 +414,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "at-2",
@@ -399,10 +429,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "at-2.2",
@@ -414,10 +444,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "at-3",
@@ -429,10 +459,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "at-4",
@@ -444,10 +474,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "au-1",
@@ -459,10 +489,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "au-2",
@@ -473,34 +503,34 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "au-3_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "au-3_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "au-3"
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "NSO - Loss of availability of the audit data has been determined to have little or no impact to government business/mission needs.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "NSO",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "au-4",
@@ -511,47 +541,47 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "au-5_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "au-5_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "au-5"
       }, {
         "adds" : [ {
-          "by-id" : "au-6_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "au-6_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "au-6"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "au-8",
@@ -563,10 +593,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "au-9",
@@ -578,15 +608,15 @@
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "NSO - Loss of availability of the audit data has been determined as little or no impact to government business/mission needs.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "NSO",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "au-11",
@@ -598,10 +628,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "au-12",
@@ -613,10 +643,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ca-1",
@@ -627,29 +657,29 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ca-2_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ca-2_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ca-2"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ca-2.1",
@@ -660,44 +690,44 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ca-3_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ca-3_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: There are connection(s) to external systems. Connections (if any) shall be authorized and must: 1) Identify the interface/connection. 2) Detail what data is involved and its sensitivity. 3) Determine whether the connection is one-way or bi-directional. 4) Identify how the connection is secured.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ca-3"
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Attestation - for compliance with FedRAMP Tailored LI-SaaS Continuous Monitoring Requirements.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ca-5",
@@ -708,111 +738,111 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ca-6_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ca-6_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ca-6"
       }, {
         "adds" : [ {
-          "by-id" : "ca-7_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ca-7_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ca-7"
       }, {
         "adds" : [ {
-          "by-id" : "ca-7.4_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ca-7.4_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ca-7.4"
       }, {
         "adds" : [ {
-          "by-id" : "ca-8_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ca-8_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ca-8"
       }, {
         "adds" : [ {
-          "by-id" : "ca-9_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ca-9_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: There are connection(s) to external systems. Connections (if any) shall be authorized and must: 1) Identify the interface/connection. 2) Detail what data is involved and its sensitivity. 3) Determine whether the connection is one-way or bi-directional. 4) Identify how the connection is secured.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ca-9"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cm-1",
@@ -824,10 +854,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cm-2",
@@ -838,99 +868,99 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "cm-4_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "cm-4_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cm-4"
       }, {
         "adds" : [ {
-          "by-id" : "cm-5_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "cm-5_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cm-5"
       }, {
         "adds" : [ {
-          "by-id" : "cm-6_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "cm-6_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Required - Specifically include details of least functionality.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           }, {
-            "parts" : [ {
-              "props" : [ {
-                "name" : "label",
-                "value" : "Requirement 1:"
-              } ],
-              "prose" : "The service provider shall use the Center for Internet Security guidelines (Level 1) to establish configuration settings or establishes its own configuration settings if USGCB is not available.",
-              "name" : "item",
-              "id" : "cm-6_fr_smt.1"
-            }, {
-              "props" : [ {
-                "name" : "label",
-                "value" : "Requirement 2:"
-              } ],
-              "prose" : "The service provider shall ensure that checklists for configuration settings are Security Content Automation Protocol (SCAP) (<http://scap.nist.gov/>) validated or SCAP compatible (if validated checklists are not available).",
-              "name" : "item",
-              "id" : "cm-6_fr_smt.2"
-            }, {
-              "props" : [ {
-                "name" : "label",
-                "value" : "Guidance:"
-              } ],
-              "prose" : "Information on the USGCB checklists can be found at: <https://csrc.nist.gov/Projects/United-States-Government-Configuration-Baseline>.",
-              "name" : "guidance",
-              "id" : "cm-6_fr_gdn.1"
-            } ],
             "name" : "item",
             "title" : "CM-6(a) Additional FedRAMP Requirements and Guidance",
-            "id" : "cm-6_fr"
+            "id" : "cm-6_fr",
+            "parts" : [ {
+              "prose" : "The service provider shall use the Center for Internet Security guidelines (Level 1) to establish configuration settings or establishes its own configuration settings if USGCB is not available.",
+              "name" : "item",
+              "id" : "cm-6_fr_smt.1",
+              "props" : [ {
+                "value" : "Requirement 1:",
+                "name" : "label"
+              } ]
+            }, {
+              "prose" : "The service provider shall ensure that checklists for configuration settings are Security Content Automation Protocol (SCAP) (<http://scap.nist.gov/>) validated or SCAP compatible (if validated checklists are not available).",
+              "name" : "item",
+              "id" : "cm-6_fr_smt.2",
+              "props" : [ {
+                "value" : "Requirement 2:",
+                "name" : "label"
+              } ]
+            }, {
+              "prose" : "Information on the USGCB checklists can be found at: <https://csrc.nist.gov/Projects/United-States-Government-Configuration-Baseline>.",
+              "name" : "guidance",
+              "id" : "cm-6_fr_gdn.1",
+              "props" : [ {
+                "value" : "Guidance:",
+                "name" : "label"
+              } ]
+            } ]
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cm-6"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cm-7",
@@ -941,34 +971,34 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "cm-8_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "cm-8_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cm-8"
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "NSO- Not directly related to protection of the data.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "NSO",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cm-10",
@@ -980,15 +1010,15 @@
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "NSO - Boundary is specific to SaaS environment; all access is via web services; users' machine or internal network are not contemplated. External services (SA-9), internal connection (CA-9), remote access (AC-17), and secure access (SC-12 and SC-13), and privileged authentication (IA-2\\[1\\]) are considerations.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "NSO",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cm-11",
@@ -1000,10 +1030,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cp-1",
@@ -1015,15 +1045,15 @@
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "NSO",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cp-2",
@@ -1035,15 +1065,15 @@
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "NSO",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cp-3",
@@ -1055,15 +1085,15 @@
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "NSO",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cp-4",
@@ -1074,34 +1104,34 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "cp-9_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "cp-9_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cp-9"
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "NSO",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "cp-10",
@@ -1113,10 +1143,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-1",
@@ -1128,20 +1158,20 @@
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "NSO for non-privileged users. Attestation for privileged users related to multi-factor identification and authentication - specifically include description of management of service accounts.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "NSO",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-2",
@@ -1152,47 +1182,47 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ia-2.1_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ia-2.1_smt"
         }, {
           "parts" : [ {
-            "parts" : [ {
-              "class" : "FedRAMP-Tailored-LI-SaaS",
-              "prose" : "FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP.",
-              "name" : "guidance"
-            } ],
             "name" : "item",
             "title" : "IA-2(1) Additional FedRAMP Requirements and Guidance",
-            "id" : "ia-2.1_fr"
+            "id" : "ia-2.1_fr",
+            "parts" : [ {
+              "prose" : "FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP.",
+              "name" : "guidance",
+              "class" : "FedRAMP-Tailored-LI-SaaS"
+            } ]
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-2.1"
       }, {
         "adds" : [ {
-          "by-id" : "ia-2.2_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ia-2.2_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-2.2",
@@ -1203,77 +1233,77 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ia-2.8_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ia-2.8_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-2.8"
       }, {
         "adds" : [ {
-          "by-id" : "ia-2.12_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ia-2.12_smt"
         }, {
           "parts" : [ {
-            "props" : [ {
-              "name" : "response-point",
-              "value" : "Required",
-              "ns" : "https://fedramp.gov/ns/oscal"
-            }, {
-              "name" : "method",
-              "class" : "fedramp",
-              "value" : "EXAMINE",
-              "ns" : "https://fedramp.gov/ns/oscal"
-            }, {
-              "name" : "method",
-              "class" : "fedramp",
-              "value" : "INTERVIEW",
-              "ns" : "https://fedramp.gov/ns/oscal"
-            }, {
-              "name" : "method",
-              "class" : "fedramp",
-              "value" : "TEST",
-              "ns" : "https://fedramp.gov/ns/oscal"
-            } ],
             "prose" : "Determine if the information system:\n\n- Accepts PIV credentials.\n- Electronically verifies PIV credentials.",
             "name" : "objective",
-            "id" : "ia-2.12_obj_fr"
+            "id" : "ia-2.12_obj_fr",
+            "props" : [ {
+              "value" : "Required",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "response-point"
+            }, {
+              "class" : "fedramp",
+              "value" : "EXAMINE",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
+            }, {
+              "class" : "fedramp",
+              "value" : "INTERVIEW",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
+            }, {
+              "class" : "fedramp",
+              "value" : "TEST",
+              "ns" : "https://fedramp.gov/ns/oscal",
+              "name" : "method"
+            } ]
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-2.12"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-4",
@@ -1285,10 +1315,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-5",
@@ -1300,10 +1330,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-5.1",
@@ -1314,37 +1344,37 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ia-6_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ia-6_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-6"
       }, {
         "adds" : [ {
-          "by-id" : "ia-7_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ia-7_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-7",
@@ -1356,10 +1386,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-8",
@@ -1370,67 +1400,67 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ia-8.1_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ia-8.1_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-8.1"
       }, {
         "adds" : [ {
-          "by-id" : "ia-8.2_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ia-8.2_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-8.2"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-8.4",
@@ -1442,10 +1472,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ia-11",
@@ -1457,10 +1487,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ir-1",
@@ -1472,10 +1502,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ir-2",
@@ -1486,29 +1516,29 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ir-4_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ir-4_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ir-4"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ir-5",
@@ -1519,29 +1549,29 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ir-6_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ir-6_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ir-6"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ir-7",
@@ -1553,15 +1583,15 @@
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Attestation - Specifically attest to US-CERT compliance.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ir-8",
@@ -1573,10 +1603,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ma-1",
@@ -1587,39 +1617,39 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ma-2_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ma-2_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ma-2"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ma-4",
@@ -1630,39 +1660,39 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ma-5_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ma-5_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ma-5"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "mp-1",
@@ -1673,95 +1703,95 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "mp-2_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "mp-2_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "mp-2"
       }, {
         "adds" : [ {
-          "by-id" : "mp-6_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "mp-6_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "mp-6"
       }, {
         "adds" : [ {
-          "by-id" : "mp-7_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "mp-7_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "mp-7"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pe-1",
@@ -1772,279 +1802,279 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "pe-2_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "pe-2_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pe-2"
       }, {
         "adds" : [ {
-          "by-id" : "pe-3_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "pe-3_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pe-3"
       }, {
         "adds" : [ {
-          "by-id" : "pe-6_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "pe-6_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pe-6"
       }, {
         "adds" : [ {
-          "by-id" : "pe-8_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "pe-8_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pe-8"
       }, {
         "adds" : [ {
-          "by-id" : "pe-12_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "pe-12_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pe-12"
       }, {
         "adds" : [ {
-          "by-id" : "pe-13_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "pe-13_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pe-13"
       }, {
         "adds" : [ {
-          "by-id" : "pe-14_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "pe-14_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         }, {
-          "by-id" : "pe-14_smt",
           "parts" : [ {
-            "parts" : [ {
-              "props" : [ {
-                "name" : "label",
-                "value" : "(a) Requirement:"
-              } ],
-              "prose" : "The service provider measures temperature at server inlets and humidity levels by dew point.",
-              "name" : "item",
-              "id" : "pe-14_fr_smt.a"
-            } ],
             "name" : "item",
             "title" : "PE-14(a) Additional FedRAMP Requirements and Guidance",
-            "id" : "pe-14_fr"
-          } ]
+            "id" : "pe-14_fr",
+            "parts" : [ {
+              "prose" : "The service provider measures temperature at server inlets and humidity levels by dew point.",
+              "name" : "item",
+              "id" : "pe-14_fr_smt.a",
+              "props" : [ {
+                "value" : "(a) Requirement:",
+                "name" : "label"
+              } ]
+            } ]
+          } ],
+          "by-id" : "pe-14_smt"
         } ],
         "control-id" : "pe-14"
       }, {
         "adds" : [ {
-          "by-id" : "pe-15_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "pe-15_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pe-15"
       }, {
         "adds" : [ {
-          "by-id" : "pe-16_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "pe-16_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pe-16"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pl-1",
@@ -2055,29 +2085,29 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "pl-2_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "pl-2_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pl-2"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pl-4",
@@ -2089,10 +2119,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pl-4.1",
@@ -2103,29 +2133,29 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "pl-8_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "pl-8_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pl-8"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pl-10",
@@ -2137,10 +2167,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "pl-11",
@@ -2152,10 +2182,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ps-1",
@@ -2167,10 +2197,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "FED",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ps-2",
@@ -2181,29 +2211,29 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ps-3_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ps-3_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ps-3"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ps-4",
@@ -2215,10 +2245,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ps-5",
@@ -2230,10 +2260,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ps-6",
@@ -2245,15 +2275,15 @@
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Attestation - Specifically stating that any third-party security personnel are treated as CSP employees.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ps-7",
@@ -2265,10 +2295,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ps-8",
@@ -2280,10 +2310,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ps-9",
@@ -2295,10 +2325,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ra-1",
@@ -2309,19 +2339,19 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ra-2_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ra-2_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ra-2",
@@ -2332,29 +2362,29 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ra-3_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ra-3_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ra-3"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ra-3.1",
@@ -2365,83 +2395,83 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "ra-5_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ra-5_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ra-5"
       }, {
         "adds" : [ {
-          "by-id" : "ra-5.2_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ra-5.2_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ra-5.2"
       }, {
         "adds" : [ {
-          "by-id" : "ra-5.11_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ra-5.11_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ra-5.11"
       }, {
         "adds" : [ {
-          "by-id" : "ra-7_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "ra-7_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "ra-7"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sa-1",
@@ -2453,10 +2483,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sa-2",
@@ -2468,10 +2498,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sa-3",
@@ -2483,10 +2513,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sa-4",
@@ -2498,10 +2528,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sa-4.10",
@@ -2513,10 +2543,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sa-5",
@@ -2528,10 +2558,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sa-8",
@@ -2542,47 +2572,47 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "sa-9_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "sa-9_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sa-9"
       }, {
         "adds" : [ {
-          "by-id" : "sa-22_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "sa-22_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sa-22"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sc-1",
@@ -2593,144 +2623,144 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "sc-5_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "sc-5_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: If availability is a requirement, define protections in place as per control requirement.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sc-5"
       }, {
         "adds" : [ {
-          "by-id" : "sc-7_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "sc-7_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sc-7"
       }, {
         "adds" : [ {
-          "by-id" : "sc-8_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "sc-8_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sc-8"
       }, {
         "adds" : [ {
-          "by-id" : "sc-8.1_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "sc-8.1_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sc-8.1"
       }, {
         "adds" : [ {
-          "by-id" : "sc-12_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "sc-12_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sc-12"
       }, {
         "adds" : [ {
-          "by-id" : "sc-13_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "sc-13_smt"
         }, {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Condition: If implementing need to detail how they meet it or don't meet it.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           }, {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "CONDITIONAL",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sc-13"
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "NSO - Not directly related to the security of the SaaS.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "NSO",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sc-15",
@@ -2742,10 +2772,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sc-20",
@@ -2757,10 +2787,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sc-21",
@@ -2772,10 +2802,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sc-22",
@@ -2786,47 +2816,47 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "sc-28_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "sc-28_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sc-28"
       }, {
         "adds" : [ {
-          "by-id" : "sc-28.1_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "sc-28.1_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sc-28.1"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sc-39",
@@ -2838,10 +2868,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "si-1",
@@ -2852,65 +2882,65 @@
         } ]
       }, {
         "adds" : [ {
-          "by-id" : "si-2_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "si-2_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "si-2"
       }, {
         "adds" : [ {
-          "by-id" : "si-3_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "si-3_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "si-3"
       }, {
         "adds" : [ {
-          "by-id" : "si-4_smt",
           "props" : [ {
-            "name" : "response-point",
             "value" : "Required",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "response-point"
           } ],
-          "position" : "starting"
+          "position" : "starting",
+          "by-id" : "si-4_smt"
         }, {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ASSESS",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "si-4"
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "si-5",
@@ -2922,15 +2952,15 @@
       }, {
         "adds" : [ {
           "parts" : [ {
-            "class" : "FedRAMP-Tailored-LI-SaaS",
             "prose" : "Attestation - Specifically related to US-CERT and FedRAMP communications procedures.",
-            "name" : "guidance"
+            "name" : "guidance",
+            "class" : "FedRAMP-Tailored-LI-SaaS"
           } ],
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "si-12",
@@ -2942,10 +2972,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sr-1",
@@ -2957,10 +2987,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sr-2",
@@ -2972,10 +3002,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sr-2.1",
@@ -2987,10 +3017,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sr-3",
@@ -3002,10 +3032,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sr-5",
@@ -3017,10 +3047,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sr-8",
@@ -3032,10 +3062,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sr-10",
@@ -3047,10 +3077,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sr-11",
@@ -3062,10 +3092,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sr-11.1",
@@ -3077,10 +3107,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sr-11.2",
@@ -3092,10 +3122,10 @@
       }, {
         "adds" : [ {
           "props" : [ {
-            "name" : "method",
             "class" : "FedRAMP-Tailored-LI-SaaS",
             "value" : "ATTEST",
-            "ns" : "https://fedramp.gov/ns/oscal"
+            "ns" : "https://fedramp.gov/ns/oscal",
+            "name" : "method"
           } ]
         } ],
         "control-id" : "sr-12",
@@ -3106,814 +3136,784 @@
         } ]
       } ],
       "set-parameters" : [ {
+        "param-id" : "ac-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "ac-01_odp.05"
+        } ]
       }, {
+        "param-id" : "ac-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "ac-01_odp.07"
+        } ]
       }, {
+        "param-id" : "ac-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "ac-01_odp.08"
+        } ]
       }, {
+        "param-id" : "ac-02_odp.06",
         "constraints" : [ {
           "description" : "twenty-four (24) hours"
-        } ],
-        "param-id" : "ac-02_odp.06"
+        } ]
       }, {
+        "param-id" : "ac-02_odp.07",
         "constraints" : [ {
           "description" : "eight (8) hours"
-        } ],
-        "param-id" : "ac-02_odp.07"
+        } ]
       }, {
+        "param-id" : "ac-02_odp.08",
         "constraints" : [ {
           "description" : "eight (8) hours"
-        } ],
-        "param-id" : "ac-02_odp.08"
+        } ]
       }, {
+        "param-id" : "ac-02_odp.10",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "ac-02_odp.10"
+        } ]
       }, {
+        "param-id" : "ac-08_odp.01",
         "constraints" : [ {
           "description" : "see additional Requirements and Guidance"
-        } ],
-        "param-id" : "ac-08_odp.01"
+        } ]
       }, {
+        "param-id" : "ac-08_odp.02",
         "constraints" : [ {
           "description" : "see additional Requirements and Guidance"
-        } ],
-        "param-id" : "ac-08_odp.02"
+        } ]
       }, {
+        "param-id" : "ac-22_odp",
         "constraints" : [ {
           "description" : "at least quarterly"
-        } ],
-        "param-id" : "ac-22_odp"
+        } ]
       }, {
+        "param-id" : "at-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "at-01_odp.05"
+        } ]
       }, {
+        "param-id" : "at-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "at-01_odp.07"
+        } ]
       }, {
+        "param-id" : "at-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "at-01_odp.08"
+        } ]
       }, {
+        "param-id" : "at-2_prm_1",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "at-2_prm_1"
+        } ]
       }, {
+        "param-id" : "at-02_odp.06",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "at-02_odp.06"
+        } ]
       }, {
+        "param-id" : "at-03_odp.03",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "at-03_odp.03"
+        } ]
       }, {
+        "param-id" : "at-03_odp.04",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "at-03_odp.04"
+        } ]
       }, {
+        "param-id" : "at-04_odp",
         "constraints" : [ {
           "description" : "at least one (1) year or 1 year after completion of a specific training program"
-        } ],
-        "param-id" : "at-04_odp"
+        } ]
       }, {
+        "param-id" : "au-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "au-01_odp.05"
+        } ]
       }, {
+        "param-id" : "au-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "au-01_odp.07"
+        } ]
       }, {
+        "param-id" : "au-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "au-01_odp.08"
+        } ]
       }, {
+        "param-id" : "au-02_odp.01",
         "constraints" : [ {
           "description" : "successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events. For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes"
-        } ],
-        "param-id" : "au-02_odp.01"
+        } ]
       }, {
+        "param-id" : "au-2_prm_2",
         "constraints" : [ {
           "description" : "organization-defined subset of the auditable events defined in AU-2a to be audited continually for each identified event."
-        } ],
-        "param-id" : "au-2_prm_2"
+        } ]
       }, {
+        "param-id" : "au-02_odp.04",
         "constraints" : [ {
           "description" : "annually and whenever there is a change in the threat environment"
-        } ],
-        "param-id" : "au-02_odp.04"
+        } ]
       }, {
+        "param-id" : "au-05_odp.03",
         "constraints" : [ {
           "description" : "overwrite oldest record"
-        } ],
-        "param-id" : "au-05_odp.03"
+        } ]
       }, {
+        "param-id" : "au-06_odp.01",
         "constraints" : [ {
           "description" : "at least weekly"
-        } ],
-        "param-id" : "au-06_odp.01"
+        } ]
       }, {
+        "param-id" : "au-08_odp",
         "constraints" : [ {
           "description" : "one second granularity of time measurement"
-        } ],
-        "param-id" : "au-08_odp"
+        } ]
       }, {
+        "param-id" : "au-11_odp",
         "constraints" : [ {
           "description" : "a time period in compliance with M-21-31"
-        } ],
-        "param-id" : "au-11_odp"
+        } ]
       }, {
+        "param-id" : "au-12_odp.01",
         "constraints" : [ {
           "description" : "all information system and network components where audit capability is deployed/available"
-        } ],
-        "param-id" : "au-12_odp.01"
+        } ]
       }, {
+        "param-id" : "ca-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "ca-01_odp.05"
+        } ]
       }, {
+        "param-id" : "ca-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "ca-01_odp.07"
+        } ]
       }, {
+        "param-id" : "ca-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "ca-01_odp.08"
+        } ]
       }, {
+        "param-id" : "ca-02_odp.01",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "ca-02_odp.01"
+        } ]
       }, {
+        "param-id" : "ca-02_odp.02",
         "constraints" : [ {
           "description" : "individuals or roles to include FedRAMP PMO"
-        } ],
-        "param-id" : "ca-02_odp.02"
+        } ]
       }, {
+        "param-id" : "ca-03_odp.03",
         "constraints" : [ {
           "description" : "at least annually and on input from JAB/AO"
-        } ],
-        "param-id" : "ca-03_odp.03"
+        } ]
       }, {
+        "param-id" : "ca-05_odp",
         "constraints" : [ {
           "description" : "at least monthly"
-        } ],
-        "param-id" : "ca-05_odp"
+        } ]
       }, {
+        "param-id" : "ca-06_odp",
         "constraints" : [ {
           "description" : "in accordance with OMB A-130 requirements or when a significant change occurs"
-        } ],
-        "param-id" : "ca-06_odp"
+        } ]
       }, {
+        "param-id" : "ca-7_prm_4",
         "constraints" : [ {
           "description" : "to include JAB/AO"
-        } ],
-        "param-id" : "ca-7_prm_4"
+        } ]
       }, {
+        "param-id" : "ca-08_odp.01",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "ca-08_odp.01"
+        } ]
       }, {
+        "param-id" : "cm-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "cm-01_odp.05"
+        } ]
       }, {
+        "param-id" : "cm-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "cm-01_odp.07"
+        } ]
       }, {
+        "param-id" : "cm-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "cm-01_odp.08"
+        } ]
       }, {
+        "param-id" : "cm-02_odp.01",
         "constraints" : [ {
           "description" : "at least annually and when a significant change occurs"
-        } ],
-        "param-id" : "cm-02_odp.01"
+        } ]
       }, {
+        "param-id" : "cm-02_odp.02",
         "constraints" : [ {
           "description" : "to include when directed by the JAB"
-        } ],
-        "param-id" : "cm-02_odp.02"
+        } ]
       }, {
+        "param-id" : "cm-08_odp.02",
         "constraints" : [ {
           "description" : "at least monthly"
-        } ],
-        "param-id" : "cm-08_odp.02"
+        } ]
       }, {
+        "param-id" : "cm-11_odp.03",
         "constraints" : [ {
           "description" : "Continuously (via CM-7 (5))"
-        } ],
-        "param-id" : "cm-11_odp.03"
+        } ]
       }, {
+        "param-id" : "cp-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "cp-01_odp.05"
+        } ]
       }, {
+        "param-id" : "cp-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "cp-01_odp.07"
+        } ]
       }, {
+        "param-id" : "cp-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "cp-01_odp.08"
+        } ]
       }, {
+        "param-id" : "cp-02_odp.05",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "cp-02_odp.05"
+        } ]
       }, {
+        "param-id" : "cp-03_odp.01",
         "constraints" : [ {
           "description" : "\\*See Additional Requirements"
-        } ],
-        "param-id" : "cp-03_odp.01"
+        } ]
       }, {
+        "param-id" : "cp-03_odp.02",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "cp-03_odp.02"
+        } ]
       }, {
+        "param-id" : "cp-03_odp.03",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "cp-03_odp.03"
+        } ]
       }, {
+        "param-id" : "cp-04_odp.01",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "cp-04_odp.01"
+        } ]
       }, {
+        "param-id" : "cp-4_prm_2",
         "constraints" : [ {
           "description" : "classroom exercise/table top written tests"
-        } ],
-        "param-id" : "cp-4_prm_2"
+        } ]
       }, {
+        "param-id" : "cp-09_odp.02",
         "constraints" : [ {
           "description" : "daily incremental; weekly full"
-        } ],
-        "param-id" : "cp-09_odp.02"
+        } ]
       }, {
+        "param-id" : "cp-09_odp.03",
         "constraints" : [ {
           "description" : "daily incremental; weekly full"
-        } ],
-        "param-id" : "cp-09_odp.03"
+        } ]
       }, {
+        "param-id" : "cp-09_odp.04",
         "constraints" : [ {
           "description" : "daily incremental; weekly full"
-        } ],
-        "param-id" : "cp-09_odp.04"
+        } ]
       }, {
+        "param-id" : "ia-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "ia-01_odp.05"
+        } ]
       }, {
+        "param-id" : "ia-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "ia-01_odp.07"
+        } ]
       }, {
+        "param-id" : "ia-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "ia-01_odp.08"
+        } ]
       }, {
+        "param-id" : "ia-04_odp.01",
         "constraints" : [ {
           "description" : "at a minimum, the ISSO (or similar role within the organization)"
-        } ],
-        "param-id" : "ia-04_odp.01"
+        } ]
       }, {
+        "param-id" : "ia-04_odp.02",
         "constraints" : [ {
           "description" : "at least two (2) years"
-        } ],
-        "param-id" : "ia-04_odp.02"
+        } ]
       }, {
+        "param-id" : "ir-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "ir-01_odp.05"
+        } ]
       }, {
+        "param-id" : "ir-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "ir-01_odp.07"
+        } ]
       }, {
+        "param-id" : "ir-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "ir-01_odp.08"
+        } ]
       }, {
+        "param-id" : "ir-02_odp.01",
         "constraints" : [ {
           "description" : "ten (10) days for privileged users, thirty (30) days for Incident Response roles"
-        } ],
-        "param-id" : "ir-02_odp.01"
+        } ]
       }, {
+        "param-id" : "ir-02_odp.02",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "ir-02_odp.02"
+        } ]
       }, {
+        "param-id" : "ir-02_odp.03",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "ir-02_odp.03"
+        } ]
       }, {
+        "param-id" : "ir-06_odp.01",
         "constraints" : [ {
           "description" : "US-CERT incident reporting timelines as specified in NIST Special Publication 800-61 (as amended)"
-        } ],
-        "param-id" : "ir-06_odp.01"
+        } ]
       }, {
+        "param-id" : "ir-08_odp.02",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "ir-08_odp.02"
+        } ]
       }, {
+        "param-id" : "ir-08_odp.04",
         "constraints" : [ {
           "description" : "see additional FedRAMP Requirements and Guidance"
-        } ],
-        "param-id" : "ir-08_odp.04"
+        } ]
       }, {
+        "param-id" : "ir-8_prm_5",
         "constraints" : [ {
           "description" : "see additional FedRAMP Requirements and Guidance"
-        } ],
-        "param-id" : "ir-8_prm_5"
+        } ]
       }, {
+        "param-id" : "ma-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "ma-01_odp.05"
+        } ]
       }, {
+        "param-id" : "ma-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "ma-01_odp.07"
+        } ]
       }, {
+        "param-id" : "ma-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "ma-01_odp.08"
+        } ]
       }, {
+        "param-id" : "mp-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "mp-01_odp.05"
+        } ]
       }, {
+        "param-id" : "mp-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "mp-01_odp.07"
+        } ]
       }, {
+        "param-id" : "mp-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "mp-01_odp.08"
+        } ]
       }, {
+        "param-id" : "mp-6_prm_1",
         "constraints" : [ {
           "description" : "techniques and procedures IAW NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"
-        } ],
-        "param-id" : "mp-6_prm_1"
+        } ]
       }, {
+        "param-id" : "pe-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "pe-01_odp.05"
+        } ]
       }, {
+        "param-id" : "pe-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "pe-01_odp.07"
+        } ]
       }, {
+        "param-id" : "pe-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "pe-01_odp.08"
+        } ]
       }, {
+        "param-id" : "pe-02_odp",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "pe-02_odp"
+        } ]
       }, {
+        "param-id" : "pe-03_odp.02",
         "constraints" : [ {
           "description" : "CSP defined physical access control systems/devices AND guards"
-        } ],
-        "param-id" : "pe-03_odp.02"
+        } ]
       }, {
+        "param-id" : "pe-03_odp.06",
         "constraints" : [ {
           "description" : "in all circumstances within restricted access area where the information system resides"
-        } ],
-        "param-id" : "pe-03_odp.06"
+        } ]
       }, {
+        "param-id" : "pe-03_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "pe-03_odp.07"
+        } ]
       }, {
+        "param-id" : "pe-3_prm_9",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "pe-3_prm_9"
+        } ]
       }, {
+        "param-id" : "pe-06_odp.01",
         "constraints" : [ {
           "description" : "at least monthly"
-        } ],
-        "param-id" : "pe-06_odp.01"
+        } ]
       }, {
+        "param-id" : "pe-08_odp.01",
         "constraints" : [ {
           "description" : "for a minimum of one (1) year"
-        } ],
-        "param-id" : "pe-08_odp.01"
+        } ]
       }, {
+        "param-id" : "pe-08_odp.02",
         "constraints" : [ {
           "description" : "at least monthly"
-        } ],
-        "param-id" : "pe-08_odp.02"
+        } ]
       }, {
+        "param-id" : "pe-14_odp.01",
         "constraints" : [ {
           "description" : "consistent with American Society of Heating, Refrigerating and Air-conditioning Engineers (ASHRAE) document entitled Thermal Guidelines for Data Processing Environments"
-        } ],
-        "param-id" : "pe-14_odp.01"
+        } ]
       }, {
+        "param-id" : "pe-14_odp.04",
         "constraints" : [ {
           "description" : "continuously"
-        } ],
-        "param-id" : "pe-14_odp.04"
+        } ]
       }, {
+        "param-id" : "pe-16_prm_1",
         "constraints" : [ {
           "description" : "all information system components"
-        } ],
-        "param-id" : "pe-16_prm_1"
+        } ]
       }, {
+        "param-id" : "pl-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "pl-01_odp.05"
+        } ]
       }, {
+        "param-id" : "pl-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "pl-01_odp.07"
+        } ]
       }, {
+        "param-id" : "pl-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "pl-01_odp.08"
+        } ]
       }, {
+        "param-id" : "pl-02_odp.03",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "pl-02_odp.03"
+        } ]
       }, {
+        "param-id" : "pl-04_odp.01",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "pl-04_odp.01"
+        } ]
       }, {
+        "param-id" : "pl-04_odp.02",
         "constraints" : [ {
           "description" : "at least annually and when the rules are revised or changed"
-        } ],
-        "param-id" : "pl-04_odp.02"
+        } ]
       }, {
+        "param-id" : "pl-08_odp",
         "constraints" : [ {
           "description" : "at least annually and when a significant change occurs"
-        } ],
-        "param-id" : "pl-08_odp"
+        } ]
       }, {
+        "param-id" : "ps-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "ps-01_odp.05"
+        } ]
       }, {
+        "param-id" : "ps-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "ps-01_odp.07"
+        } ]
       }, {
+        "param-id" : "ps-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "ps-01_odp.08"
+        } ]
       }, {
+        "param-id" : "ps-02_odp",
         "constraints" : [ {
           "description" : "at least every three years"
-        } ],
-        "param-id" : "ps-02_odp"
+        } ]
       }, {
+        "param-id" : "ps-3_prm_1",
         "constraints" : [ {
           "description" : "for national security clearances; a reinvestigation is required during the fifth (5th) year for top secret security clearance, the tenth (10th) year for secret security clearance, and fifteenth (15th) year for confidential security clearance.\n\nFor moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the fifth (5th) year. There is no reinvestigation for other moderate risk positions or any low risk positions"
-        } ],
-        "param-id" : "ps-3_prm_1"
+        } ]
       }, {
+        "param-id" : "ps-04_odp.01",
         "constraints" : [ {
           "description" : "four (4) hours"
-        } ],
-        "param-id" : "ps-04_odp.01"
+        } ]
       }, {
+        "param-id" : "ps-05_odp.02",
         "constraints" : [ {
           "description" : "twenty-four (24) hours"
-        } ],
-        "param-id" : "ps-05_odp.02"
+        } ]
       }, {
+        "param-id" : "ps-05_odp.04",
         "constraints" : [ {
           "description" : "twenty-four (24) hours"
-        } ],
-        "param-id" : "ps-05_odp.04"
+        } ]
       }, {
+        "param-id" : "ps-06_odp.01",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "ps-06_odp.01"
+        } ]
       }, {
+        "param-id" : "ps-06_odp.02",
         "constraints" : [ {
           "description" : "at least annually and any time there is a change to the user's level of access"
-        } ],
-        "param-id" : "ps-06_odp.02"
+        } ]
       }, {
+        "param-id" : "ps-07_odp.01",
         "constraints" : [ {
           "description" : "including access control personnel responsible for the system and/or facilities, as appropriate"
-        } ],
-        "param-id" : "ps-07_odp.01"
+        } ]
       }, {
+        "param-id" : "ps-07_odp.02",
         "constraints" : [ {
           "description" : "within twenty-four (24) hours"
-        } ],
-        "param-id" : "ps-07_odp.02"
+        } ]
       }, {
+        "param-id" : "ps-08_odp.01",
         "constraints" : [ {
           "description" : "at a minimum, the ISSO and/or similar role within the organization"
-        } ],
-        "param-id" : "ps-08_odp.01"
+        } ]
       }, {
+        "param-id" : "ra-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "ra-01_odp.05"
+        } ]
       }, {
+        "param-id" : "ra-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "ra-01_odp.07"
+        } ]
       }, {
+        "param-id" : "ra-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "ra-01_odp.08"
+        } ]
       }, {
+        "param-id" : "ra-03_odp.01",
         "constraints" : [ {
           "description" : "security assessment report"
-        } ],
-        "param-id" : "ra-03_odp.01"
+        } ]
       }, {
+        "param-id" : "ra-03_odp.03",
         "constraints" : [ {
           "description" : "at least every three (3) years and when a significant change occurs"
-        } ],
-        "param-id" : "ra-03_odp.03"
+        } ]
       }, {
+        "param-id" : "ra-03_odp.05",
         "constraints" : [ {
           "description" : "at least every three (3) years"
-        } ],
-        "param-id" : "ra-03_odp.05"
+        } ]
       }, {
+        "param-id" : "ra-5_prm_1",
         "constraints" : [ {
           "description" : "monthly operating system/infrastructure; monthly web applications (including APIs) and databases"
-        } ],
-        "param-id" : "ra-5_prm_1"
+        } ]
       }, {
+        "param-id" : "ra-05_odp.03",
         "constraints" : [ {
           "description" : "high-risk vulnerabilities mitigated within thirty (30) days from date of discovery; moderate-risk vulnerabilities mitigated within ninety (90) days from date of discovery; low risk vulnerabilities mitigated within one hundred and eighty (180) days from date of discovery"
-        } ],
-        "param-id" : "ra-05_odp.03"
+        } ]
       }, {
+        "param-id" : "ra-05.02_odp.01",
         "constraints" : [ {
           "description" : "prior to a new scan"
-        } ],
-        "param-id" : "ra-05.02_odp.01"
+        } ]
       }, {
+        "param-id" : "sa-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "sa-01_odp.05"
+        } ]
       }, {
+        "param-id" : "sa-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "sa-01_odp.07"
+        } ]
       }, {
+        "param-id" : "sa-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "sa-01_odp.08"
+        } ]
       }, {
+        "param-id" : "sa-05_odp.02",
         "constraints" : [ {
           "description" : "at a minimum, the ISSO (or similar role within the organization)"
-        } ],
-        "param-id" : "sa-05_odp.02"
+        } ]
       }, {
+        "param-id" : "sa-09_odp.01",
         "constraints" : [ {
           "description" : "Appropriate FedRAMP Security Controls Baseline (s) if Federal information is processed or stored within the external system"
-        } ],
-        "param-id" : "sa-09_odp.01"
+        } ]
       }, {
+        "param-id" : "sa-09_odp.02",
         "constraints" : [ {
           "description" : "Federal/FedRAMP Continuous Monitoring requirements must be met for external systems where Federal information is processed or stored"
-        } ],
-        "param-id" : "sa-09_odp.02"
+        } ]
       }, {
+        "param-id" : "sc-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "sc-01_odp.05"
+        } ]
       }, {
+        "param-id" : "sc-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "sc-01_odp.07"
+        } ]
       }, {
+        "param-id" : "sc-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "sc-01_odp.08"
+        } ]
       }, {
+        "param-id" : "sc-05_odp.02",
         "constraints" : [ {
           "description" : "Protect against"
-        } ],
-        "param-id" : "sc-05_odp.02"
+        } ]
       }, {
+        "param-id" : "sc-05_odp.01",
         "constraints" : [ {
           "description" : "at a minimum: ICMP (ping) flood, SYN flood, slowloris, buffer overflow attack, and volume attack"
-        } ],
-        "param-id" : "sc-05_odp.01"
+        } ]
       }, {
+        "param-id" : "sc-12_odp",
         "constraints" : [ {
           "description" : "In accordance with Federal requirements"
-        } ],
-        "param-id" : "sc-12_odp"
+        } ]
       }, {
+        "param-id" : "sc-13_odp.02",
         "constraints" : [ {
           "description" : "FIPS-validated or NSA-approved cryptography"
-        } ],
-        "param-id" : "sc-13_odp.02"
+        } ]
       }, {
+        "param-id" : "sc-15_odp",
         "constraints" : [ {
           "description" : "no exceptions for computing devices"
-        } ],
-        "param-id" : "sc-15_odp"
+        } ]
       }, {
+        "param-id" : "sc-28.01_odp.02",
         "constraints" : [ {
           "description" : "all information system components storing Federal data or system data that must be protected at the High or Moderate impact levels"
-        } ],
-        "param-id" : "sc-28.01_odp.02"
+        } ]
       }, {
+        "param-id" : "si-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "si-01_odp.05"
+        } ]
       }, {
+        "param-id" : "si-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "si-01_odp.07"
+        } ]
       }, {
+        "param-id" : "si-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "si-01_odp.08"
+        } ]
       }, {
+        "param-id" : "si-02_odp",
         "constraints" : [ {
           "description" : "within thirty (30) days of release of updates"
-        } ],
-        "param-id" : "si-02_odp"
+        } ]
       }, {
+        "param-id" : "si-03_odp.01",
         "constraints" : [ {
           "description" : "signature based and non-signature based"
-        } ],
-        "param-id" : "si-03_odp.01"
+        } ]
       }, {
+        "param-id" : "si-03_odp.02",
         "constraints" : [ {
           "description" : "at least weekly"
-        } ],
-        "param-id" : "si-03_odp.02"
+        } ]
       }, {
+        "param-id" : "si-03_odp.03",
         "constraints" : [ {
           "description" : "to include endpoints and network entry and exit points"
-        } ],
-        "param-id" : "si-03_odp.03"
+        } ]
       }, {
+        "param-id" : "si-03_odp.04",
         "constraints" : [ {
           "description" : "to include blocking and quarantining malicious code"
-        } ],
-        "param-id" : "si-03_odp.04"
+        } ]
       }, {
+        "param-id" : "si-03_odp.05",
         "constraints" : [ {
           "description" : "administrator or defined security personnel near-realtime"
-        } ],
-        "param-id" : "si-03_odp.05"
+        } ]
       }, {
+        "param-id" : "si-05_odp.01",
         "constraints" : [ {
           "description" : "to include US-CERT and Cybersecurity and Infrastructure Security Agency (CISA) Directives"
-        } ],
-        "param-id" : "si-05_odp.01"
+        } ]
       }, {
+        "param-id" : "si-05_odp.02",
         "constraints" : [ {
           "description" : "to include system security personnel and administrators with configuration/patch-management responsibilities"
-        } ],
-        "param-id" : "si-05_odp.02"
+        } ]
       }, {
+        "param-id" : "sr-01_odp.01",
         "constraints" : [ {
           "description" : "to include chief privacy and ISSO and/or similar role or designees"
-        } ],
-        "param-id" : "sr-01_odp.01"
+        } ]
       }, {
+        "param-id" : "sr-01_odp.05",
         "constraints" : [ {
           "description" : "at least every 3 years"
-        } ],
-        "param-id" : "sr-01_odp.05"
+        } ]
       }, {
+        "param-id" : "sr-01_odp.07",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "sr-01_odp.07"
+        } ]
       }, {
+        "param-id" : "sr-01_odp.08",
         "constraints" : [ {
           "description" : "significant changes"
-        } ],
-        "param-id" : "sr-01_odp.08"
+        } ]
       }, {
+        "param-id" : "sr-02_odp.02",
         "constraints" : [ {
           "description" : "at least annually"
-        } ],
-        "param-id" : "sr-02_odp.02"
+        } ]
       }, {
+        "param-id" : "sr-08_odp.01",
         "constraints" : [ {
           "description" : "notification of supply chain compromises and results of assessment or audits"
-        } ],
-        "param-id" : "sr-08_odp.01"
+        } ]
       }, {
+        "param-id" : "sr-11.02_odp",
         "constraints" : [ {
           "description" : "all"
-        } ],
-        "param-id" : "sr-11.02_odp"
-      } ]
-    },
-    "back-matter" : {
-      "resources" : [ {
-        "uuid" : "985475ee-d4d6-4581-8fdf-d84d3d8caa48",
-        "title" : "FedRAMP Applicable Laws and Regulations",
-        "rlinks" : [ {
-          "href" : "https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx"
-        } ]
-      }, {
-        "uuid" : "a2381e87-3d04-4108-a30b-b4d2f36d001f",
-        "props" : [ {
-          "name" : "type",
-          "value" : "logo"
-        } ],
-        "description" : "FedRAMP Logo",
-        "rlinks" : [ {
-          "href" : "https://www.fedramp.gov/assets/img/logo-main-fedramp.png"
-        } ]
-      }, {
-        "uuid" : "051a77c1-b61d-4995-8275-dacfe688d510",
-        "props" : [ {
-          "name" : "version",
-          "value" : "5.1.1"
-        } ],
-        "title" : "NIST Special Publication (SP) 800-53 revision 5",
-        "rlinks" : [ {
-          "media-type" : "application/oscal+xml",
-          "href" : "NIST_SP-800-53_rev5_catalog.xml"
         } ]
       } ]
     }

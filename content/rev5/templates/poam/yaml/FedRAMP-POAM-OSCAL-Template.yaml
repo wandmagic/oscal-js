@@ -1,12 +1,10 @@
 ---
 plan-of-action-and-milestones:
-  uuid: 6d072a8d-9657-446d-a487-4b6984782472
   system-id:
-    id: F00000000
     identifier-type: https://fedramp.gov
+    id: F00000000
   poam-items:
-  - uuid: 6f5fff73-cac6-4da0-a0d9-0f931a5efafa
-    remarks: |-
+  - remarks: |-
       The FedRAMP Extension, "POAM-ID" captures the traditional CSP-assigned unique POA\&M identifier.
 
       The date-time-stamp identifies the date of discovery. FedRAMP is concerned with the date information. The time information is desirable and should be included where available. The time may be all zeros if unavailable.
@@ -20,8 +18,8 @@ plan-of-action-and-milestones:
     title: "\\[EXAMPLE\\]POA\\&M Item"
     related-risks:
     - risk-uuid: 9cbd98f3-abcb-4948-ad06-14e0bcba742f
-  - uuid: 170dd310-1a92-4fcf-a12b-ebfa03d9e6d8
-    props:
+    uuid: 6f5fff73-cac6-4da0-a0d9-0f931a5efafa
+  - props:
     - value: V-2
       ns: https://fedramp.gov/ns/oscal
       name: POAM-ID
@@ -32,14 +30,8 @@ plan-of-action-and-milestones:
     title: "\\[EXAMPLE\\]Infrastructure Scan Unique Vulnerability"
     related-risks:
     - risk-uuid: ae628cc5-b64c-4030-af30-57e6b24a6ae7
+    uuid: 170dd310-1a92-4fcf-a12b-ebfa03d9e6d8
   metadata:
-    props:
-    - value: Controlled Unclassified Information
-      name: marking
-    - value: ace2963d-ecb4-4be5-bdd0-1f6fd7610f41
-      ns: https://fedramp.gov/ns/oscal
-      name: resolution-resource
-    oscal-version: 1.0.4
     last-modified: 2023-07-06T00:00:00Z
     responsible-parties:
     - role-id: cloud-service-provider
@@ -83,21 +75,26 @@ plan-of-action-and-milestones:
     published: 2023-07-06T00:00:00Z
     version: fedramp2.0.0-oscal1.0.4
     parties:
-    - uuid: 72bf37e1-9f76-4261-886f-8e297599f365
+    - short-name: CSP Acronym/Short Name
+      remarks: Replace sample CSP information.
+      uuid: 72bf37e1-9f76-4261-886f-8e297599f365
       name: Cloud Service Provider (CSP) Name
       type: organization
       location-uuids:
       - 1bd641ff-54a7-40d5-acc9-82eed9d22d4a
-      short-name: CSP Acronym/Short Name
-      remarks: Replace sample CSP information.
-    - addresses:
-      - postal-code: "20006"
-        addr-lines:
-        - 1800 F St. NW
-        country: US
+    - short-name: FedRAMP PMO
+      remarks: |-
+        This party entry must be present in a FedRAMP POAM.
+
+        The uuid may be different; however, the uuid must be associated with the "fedramp-pmo" role in the responsible-party assemblies.
+      addresses:
+      - country: US
         city: Washington
         state: DC
         type: work
+        postal-code: "20006"
+        addr-lines:
+        - 1800 F St. NW
       uuid: 77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d
       name: "Federal Risk and Authorization Management Program: Program Management Office"
       type: organization
@@ -112,25 +109,22 @@ plan-of-action-and-milestones:
         rel: reference
       - href: '#1a23a771-d481-4594-9a1a-71d584fa4123'
         rel: reference
-      short-name: FedRAMP PMO
-      remarks: |-
-        This party entry must be present in a FedRAMP POAM.
-
-        The uuid may be different; however, the uuid must be associated with the "fedramp-pmo" role in the responsible-party assemblies.
-    - uuid: ca9ba80e-1342-4bfd-b32a-abac468c24b4
+    - short-name: FedRAMP JAB
+      uuid: ca9ba80e-1342-4bfd-b32a-abac468c24b4
       name: "Federal Risk and Authorization Management Program: Joint Authorization Board"
       type: organization
-      short-name: FedRAMP JAB
-    - telephone-numbers:
+    - member-of-organizations:
+      - 72bf37e1-9f76-4261-886f-8e297599f365
+      telephone-numbers:
       - number: 202-000-0001
       addresses:
-      - postal-code: "00000"
-        addr-lines:
-        - Address Line
-        country: US
+      - country: US
         city: City
         state: ST
         type: work
+        postal-code: "00000"
+        addr-lines:
+        - Address Line
       uuid: afe665d1-9021-4ad8-8bd2-c15b0f2dcf2d
       props:
       - value: Individual's Title
@@ -139,35 +133,48 @@ plan-of-action-and-milestones:
       type: person
       email-addresses:
       - name@example.com
-      member-of-organizations:
-      - 72bf37e1-9f76-4261-886f-8e297599f365
     locations:
     - address:
-        addr-lines:
-        - 1234 Main Street
         city: Arlington
         state: VA
+        addr-lines:
+        - 1234 Main Street
       uuid: 1bd641ff-54a7-40d5-acc9-82eed9d22d4a
       remarks: EXAMPLE - REPLACE
+    props:
+    - value: Controlled Unclassified Information
+      name: marking
+    - value: ace2963d-ecb4-4be5-bdd0-1f6fd7610f41
+      ns: https://fedramp.gov/ns/oscal
+      name: resolution-resource
+    oscal-version: 1.0.4
   back-matter:
     resources:
-    - title: Resolution Resource
+    - props:
+      - class: collection
+        value: Special Publication
+        name: dataset
+      - class: name
+        value: 800-53
+        name: dataset
+      - class: version
+        value: 5.0.2
+        name: dataset
+      - class: organization
+        value: gov.nist.csrc
+        name: dataset
+      title: Resolution Resource
       uuid: ace2963d-ecb4-4be5-bdd0-1f6fd7610f41
       remarks: "This \"resolution resource\" is used by FedRAMP as a local, authoritative indicator of what version POA\\&M (rev 4 or rev 5) this OSCAL document is for."
-      props:
-      - value: Special Publication
-        name: dataset
-        class: collection
-      - value: 800-53
-        name: dataset
-        class: name
-      - value: 5.0.2
-        name: dataset
-        class: version
-      - value: gov.nist.csrc
-        name: dataset
-        class: organization
-    - title: "\\[System Name\\] \\[FIPS-199 Level\\] SSP"
+    - props:
+      - value: system-security-plan
+        ns: https://fedramp.gov/ns/oscal
+        name: type
+      - value: 2023-04-21T00:00:00Z
+        name: published
+      - value: SSP Version
+        name: version
+      title: "\\[System Name\\] \\[FIPS-199 Level\\] SSP"
       rlinks:
       - href: ../../ssp/xml/FedRAMP-SSP-OSCAL-Template.xml
         media-type: text/xml
@@ -176,25 +183,7 @@ plan-of-action-and-milestones:
         Use this to point to an OSCAL-based SSP.
 
         For FedRAMP, do not attach the SSP. This should be delivered by the CSP.
-      props:
-      - value: system-security-plan
-        ns: https://fedramp.gov/ns/oscal
-        name: type
-      - value: 2023-04-21T00:00:00Z
-        name: published
-      - value: SSP Version
-        name: version
-    - description: |-
-        # ONLY USE THIS RESOURCE WHEN NO OSCAL-BASED SSP EXISTS
-
-        Briefly describe the system. This will appear in the SAR.
-      title: System's Full Name
-      uuid: a78f7e4c-a27a-4b1e-901b-ebfecf2b0301
-      remarks: |-
-        Only include this resource if no OSCAL-based SSP is available.
-
-        Delete it otherwise.
-      props:
+    - props:
       - value: no-oscal-ssp
         ns: https://fedramp.gov/ns/oscal
         name: type
@@ -213,7 +202,21 @@ plan-of-action-and-milestones:
       - value: 2017-01-23T00:00:00Z
         ns: https://fedramp.gov/ns/oscal
         name: authorization-date
-    - title: FedRAMP Applicable Laws and Regulations
+      description: |-
+        # ONLY USE THIS RESOURCE WHEN NO OSCAL-BASED SSP EXISTS
+
+        Briefly describe the system. This will appear in the SAR.
+      title: System's Full Name
+      uuid: a78f7e4c-a27a-4b1e-901b-ebfecf2b0301
+      remarks: |-
+        Only include this resource if no OSCAL-based SSP is available.
+
+        Delete it otherwise.
+    - props:
+      - value: fedramp-citations
+        ns: https://fedramp.gov/ns/oscal
+        name: type
+      title: FedRAMP Applicable Laws and Regulations
       rlinks:
       - href: https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx
       uuid: 985475ee-d4d6-4581-8fdf-d84d3d8caa48
@@ -222,11 +225,11 @@ plan-of-action-and-milestones:
         value: "00000000"
         media-type: application/vnd.ms-excel
       remarks: Must be present in a FedRAMP POA\&M.
-      props:
-      - value: fedramp-citations
+    - props:
+      - value: fedramp-acronyms
         ns: https://fedramp.gov/ns/oscal
         name: type
-    - title: FedRAMP Master Acronym and Glossary
+      title: FedRAMP Master Acronym and Glossary
       rlinks:
       - href: https://www.fedramp.gov/assets/resources/documents/FedRAMP_Master_Acronym_and_Glossary.pdf
       uuid: 1a23a771-d481-4594-9a1a-71d584fa4123
@@ -235,19 +238,14 @@ plan-of-action-and-milestones:
         value: "00000000"
         media-type: application/pdf
       remarks: Must be present in a FedRAMP POA\&M.
-      props:
-      - value: fedramp-acronyms
-        ns: https://fedramp.gov/ns/oscal
+    - props:
+      - value: logo
         name: type
-    - description: FedRAMP Logo
+      description: FedRAMP Logo
       rlinks:
       - href: https://github.com/GSA/fedramp-automation/raw/master/assets/FedRAMP_LOGO.png
       uuid: 031a32be-f9ef-45a0-994e-20eb58456dee
-      props:
-      - value: logo
-        name: type
   import-ssp:
-    href: '#7c30125f-c056-4888-9f1a-7ed1b6a1b638'
     remarks: |-
       Link the SAP to the SSP.
 
@@ -256,20 +254,8 @@ plan-of-action-and-milestones:
       This may point to a back-matter resource using a URI fragment.
 
       If no OSCAL-based SSP exists, this must be a URI fragment pointing to a special back-matter resource. The resource must include the `no-oscal-ssp` conformity tag.
+    href: '#7c30125f-c056-4888-9f1a-7ed1b6a1b638'
   local-definitions:
-    inventory-items:
-    - uuid: deb26a75-6d97-4811-ae0e-ae1c710366c1
-      remarks: Uses the same syntax as SSP inventory-items.
-      implemented-components:
-      - component-uuid: a49ed61e-fca1-4ffa-b5e7-c23a2375a7a0
-      description: An instance of the above component.
-      props:
-      - value: org-asset-id
-        name: asset-id
-      - value: 10.10.10.10
-        name: ipv4-address
-      - value: host.domain.cloud
-        name: fqdn
     remarks: |-
       Define one component for each scanning tool referenced by a POA\&M entry.
 
@@ -279,7 +265,9 @@ plan-of-action-and-milestones:
 
       The CSP may import all SSP components and inventory items into the POA\&M's `local-definitions` section to satisfy the system inventory delivery requirement.
     components:
-    - type: software
+    - title: XYZ Vulnerability Scanning Tool
+      remarks: This is a scanning tool referenced as a source by a POA\&M entry.
+      type: software
       props:
       - value: Vendor Name
         ns: https://fedramp.gov/ns/oscal
@@ -293,9 +281,9 @@ plan-of-action-and-milestones:
         state: operational
       description: Provide description
       uuid: 9d194268-a9d1-4c38-839f-9c4aa57bf71e
-      title: XYZ Vulnerability Scanning Tool
-      remarks: This is a scanning tool referenced as a source by a POA\&M entry.
-    - type: virtual
+    - title: Component Definition
+      remarks: Uses the same syntax as SSP components.
+      type: virtual
       props:
       - value: "yes"
         name: allows-authenticated-scan
@@ -303,10 +291,25 @@ plan-of-action-and-milestones:
         state: operational
       description: A virtual component.
       uuid: a49ed61e-fca1-4ffa-b5e7-c23a2375a7a0
-      title: Component Definition
-      remarks: Uses the same syntax as SSP components.
+    inventory-items:
+    - props:
+      - value: org-asset-id
+        name: asset-id
+      - value: 10.10.10.10
+        name: ipv4-address
+      - value: host.domain.cloud
+        name: fqdn
+      uuid: deb26a75-6d97-4811-ae0e-ae1c710366c1
+      remarks: Uses the same syntax as SSP inventory-items.
+      implemented-components:
+      - component-uuid: a49ed61e-fca1-4ffa-b5e7-c23a2375a7a0
+      description: An instance of the above component.
   observations:
-  - uuid: 0aa54106-8a63-4953-ac0d-30ff91f8d4ab
+  - relevant-evidence:
+    - href: ./raw_scans/scanner_output.csv
+      description: Optional pointer to the raw scanner output that generated this POA\&M entry.
+    remarks: The origin field identifies the "Weakness Detector Source"
+    uuid: 0aa54106-8a63-4953-ac0d-30ff91f8d4ab
     collected: 2020-10-10T00:00:00Z
     origins:
     - actors:
@@ -319,11 +322,10 @@ plan-of-action-and-milestones:
     description: ""
     types:
     - finding
-    relevant-evidence:
-    - href: ./raw_scans/scanner_output.csv
-      description: Optional pointer to the raw scanner output that generated this POA\&M entry.
-    remarks: The origin field identifies the "Weakness Detector Source"
-  - subjects:
+  - relevant-evidence:
+    - href: '#171b44a2-9b52-4c46-b912-54bd274b2761'
+      description: Raw scanner tool output - Infrastructure and OS Scan.
+    subjects:
     - subject-uuid: f61f4408-2cb8-444a-a312-bc88412e7c61
       type: inventory-item
     - subject-uuid: 02075556-3660-4112-8982-02fc7d6fac00
@@ -347,9 +349,6 @@ plan-of-action-and-milestones:
     description: "\\[EXAMPLE\\]Scanner Output."
     types:
     - finding
-    relevant-evidence:
-    - href: '#171b44a2-9b52-4c46-b912-54bd274b2761'
-      description: Raw scanner tool output - Infrastructure and OS Scan.
   - subjects:
     - subject-uuid: a49ed61e-fca1-4ffa-b5e7-c23a2375a7a0
       type: component
@@ -361,7 +360,12 @@ plan-of-action-and-milestones:
     description: Describe the vendor dependency here.
     types:
     - vendor-dependency
-  - uuid: 9de7cba9-40fc-4c4d-b6af-01bd24f1def6
+  - relevant-evidence:
+    - href: '#53af7193-b25d-4ed2-a82f-5954d2d0df61'
+      description: A screen shot showing the system impact when patch is applied.
+    - href: https://vendor.site/article/describing/something.htm
+      description: Vendor detail describing why this happens.
+    uuid: 9de7cba9-40fc-4c4d-b6af-01bd24f1def6
     collected: 2020-10-10T00:00:00Z
     title: Operational Requirement
     methods:
@@ -369,12 +373,12 @@ plan-of-action-and-milestones:
     description: Provide the justification for the operational requirement.
     types:
     - operational-requirement
-    relevant-evidence:
+  - relevant-evidence:
     - href: '#53af7193-b25d-4ed2-a82f-5954d2d0df61'
-      description: A screen shot showing the system impact when patch is applied.
+      description: A screen shot showing the setting is correct
     - href: https://vendor.site/article/describing/something.htm
       description: Vendor detail describing why this happens.
-  - uuid: 46209140-8263-4e74-b3c9-cead4ffed22c
+    uuid: 46209140-8263-4e74-b3c9-cead4ffed22c
     collected: 2020-10-10T00:00:00Z
     title: False Positive
     methods:
@@ -382,20 +386,7 @@ plan-of-action-and-milestones:
     description: Describe the false positive here.
     types:
     - false-positive
-    relevant-evidence:
-    - href: '#53af7193-b25d-4ed2-a82f-5954d2d0df61'
-      description: A screen shot showing the setting is correct
-    - href: https://vendor.site/article/describing/something.htm
-      description: Vendor detail describing why this happens.
-  - uuid: 7acee179-1570-4ea0-94dc-01b8c0a29c0a
-    collected: 2020-10-10T00:00:00Z
-    title: Risk Adjustment
-    methods:
-    - EXAMINE
-    description: Describe the risk adjustment justification here.
-    types:
-    - risk-adjustment
-    relevant-evidence:
+  - relevant-evidence:
     - remarks: |-
         Attach relevant evidence as a `resource`.
 
@@ -404,49 +395,26 @@ plan-of-action-and-milestones:
       - href: '#53af7193-b25d-4ed2-a82f-5954d2d0df61'
         rel: evidence
       description: Describe the risk adjustment evidence here.
+    uuid: 7acee179-1570-4ea0-94dc-01b8c0a29c0a
+    collected: 2020-10-10T00:00:00Z
+    title: Risk Adjustment
+    methods:
+    - EXAMINE
+    description: Describe the risk adjustment justification here.
+    types:
+    - risk-adjustment
   risks:
-  - uuid: 9cbd98f3-abcb-4948-ad06-14e0bcba742f
-    props:
-    - value: ac-2
-      ns: https://fedramp.gov/ns/oscal
-      name: impacted-control-id
-    remediations:
-    - uuid: 039aa7e5-9aaf-4b84-b48e-41616714bcae
-      description: Provided a description of the recommended response for this risk.
-      title: Recommended Response
-      lifecycle: recommendation
-    - uuid: ffa1848f-86bb-4799-86a0-85718ddfcd6c
-      description: A description of the CSP's intended approach to remediating the identified risk.
-      tasks:
-      - uuid: 17199ced-a6eb-47a9-bee5-1f94c12275c1
-        type: milestone
-        title: "\\[Example\\]Milestone 1"
-        timing:
-          within-date-range:
-            end: 2023-07-02T00:00:00Z
-            start: 2023-07-01T00:00:00Z
-        description: Optional description
-      - uuid: b266e354-f132-45fe-80f6-79121eb798bf
-        type: milestone
-        title: "\\[Example\\]Milestone 2"
-        timing:
-          within-date-range:
-            end: 2023-07-07T00:00:00Z
-            start: 2023-07-05T00:00:00Z
-        description: Optional description
-      title: CSP's Remediation Plan
-      lifecycle: planned
-    status: open
+  - status: open
     title: Weakness Name
     deadline: 2023-07-30T00:00:00Z
     characterizations:
     - facets:
-      - system: https://fedramp.gov/ns/oscal
-        props:
+      - props:
         - value: initial
           name: state
         value: high
         name: risk
+        system: https://fedramp.gov/ns/oscal
       origin:
         actors:
         - type: party
@@ -455,7 +423,118 @@ plan-of-action-and-milestones:
           actor-uuid: 9d194268-a9d1-4c38-839f-9c4aa57bf71e
     statement: Describe the risk
     description: Weakness Description
-  - uuid: ae628cc5-b64c-4030-af30-57e6b24a6ae7
+    uuid: 9cbd98f3-abcb-4948-ad06-14e0bcba742f
+    props:
+    - value: ac-2
+      ns: https://fedramp.gov/ns/oscal
+      name: impacted-control-id
+    remediations:
+    - description: Provided a description of the recommended response for this risk.
+      title: Recommended Response
+      lifecycle: recommendation
+      uuid: 039aa7e5-9aaf-4b84-b48e-41616714bcae
+    - description: A description of the CSP's intended approach to remediating the identified risk.
+      tasks:
+      - uuid: 17199ced-a6eb-47a9-bee5-1f94c12275c1
+        type: milestone
+        title: "\\[Example\\]Milestone 1"
+        timing:
+          within-date-range:
+            start: 2023-07-01T00:00:00Z
+            end: 2023-07-02T00:00:00Z
+        description: Optional description
+      - uuid: b266e354-f132-45fe-80f6-79121eb798bf
+        type: milestone
+        title: "\\[Example\\]Milestone 2"
+        timing:
+          within-date-range:
+            start: 2023-07-05T00:00:00Z
+            end: 2023-07-07T00:00:00Z
+        description: Optional description
+      title: CSP's Remediation Plan
+      lifecycle: planned
+      uuid: ffa1848f-86bb-4799-86a0-85718ddfcd6c
+  - status: open
+    title: Vulnerability Title
+    risk-log:
+      entries:
+      - title: Activity 1
+        start: 2020-07-02T00:00:00Z
+        related-responses:
+        - related-tasks:
+          - task-uuid: a12dea1d-e4d1-4f09-aacf-1eaf203a3092
+          response-uuid: e9ee6fe2-856f-42c7-8c2e-ff6466d31010
+        description: Provide description
+        uuid: 1b500d56-1936-41eb-8b60-a2984937ab89
+      - title: Activity 2
+        start: 2020-07-07T00:00:00Z
+        description: Provide description
+        uuid: 316fb3fe-927a-49a1-9a72-a58722862623
+      - title: Vendor Check-in
+        start: 2020-07-07T00:00:00Z
+        description: Description of the result of the vendor check-in.
+        uuid: d084a039-bdd1-4ccd-a06a-53355e07fa2f
+      - title: Risk Closed
+        status-change: closed
+        start: 2020-07-07T00:00:00Z
+        description: |-
+          Describe what action(s) the CSP took to close the risk.
+
+          \[EXAMPLE\]Applied patch. Vulnerability no longer found in subsequent scan.
+        uuid: 0b09e341-cf3c-4de7-b728-751c6e88b653
+    deadline: 2023-05-31T00:00:00Z
+    characterizations:
+    - facets:
+      - value: high
+        name: iavm-severity
+        system: https://us-cert.cisa.gov
+      - value: network
+        name: attack-vector
+        system: http://www.first.org/cvss/v3.1
+      - value: CVE-2020-00000
+        name: cve-id
+        system: http://cve.mitre.org
+      - value: high
+        name: impact
+        system: http://csrc.nist.gov/ns/oscal/unknown
+      origin:
+        actors:
+        - type: tool
+          props:
+          - value: VulID-001
+            ns: https://fedramp.gov/ns/oscal
+            name: vulnerability-id
+          - value: Plugin-ID
+            ns: https://fedramp.gov/ns/oscal
+            name: plugin-id
+          actor-uuid: 9d194268-a9d1-4c38-839f-9c4aa57bf71e
+    - facets:
+      - props:
+        - value: initial
+          name: state
+        value: high
+        name: risk
+        system: https://fedramp.gov
+      - props:
+        - value: adjusted
+          remarks: Explain why risk was adjusted.
+          name: state
+        value: moderate
+        name: risk
+        system: https://fedramp.gov
+      - value: network
+        name: AV
+        system: http://csrc.nist.gov/ns/oscal/unknown
+      origin:
+        actors:
+        - type: party
+          actor-uuid: 49f73135-efab-4275-9a79-003656ad890a
+    statement: |-
+      This is a statement about the identified risk as provided by the tool.
+
+      This field must be present, but may be blank (or state 'No Risk Statement' if no statement is provided by the tool.
+    description: This is a description of the vulnerability provided by the tool.
+    uuid: ae628cc5-b64c-4030-af30-57e6b24a6ae7
     props:
     - value: ac-2
       ns: https://fedramp.gov/ns/oscal
@@ -473,8 +552,7 @@ plan-of-action-and-milestones:
       ns: https://fedramp.gov/ns/oscal
       name: risk-adjustment
     remediations:
-    - uuid: a3106e23-8b79-4b1b-abf4-74f16c51ad0c
-      remarks: Recommended and planned remediation entries should remain when the risk is closed.
+    - remarks: Recommended and planned remediation entries should remain when the risk is closed.
       description: A description of the recommended remediation as provided by the tool.
       origins:
       - actors:
@@ -482,8 +560,8 @@ plan-of-action-and-milestones:
           actor-uuid: 9d194268-a9d1-4c38-839f-9c4aa57bf71e
       title: Tool's Recommendation
       lifecycle: recommendation
-    - uuid: 69344d05-937e-40f4-9c3f-9aa8702ad99d
-      remarks: |-
+      uuid: a3106e23-8b79-4b1b-abf4-74f16c51ad0c
+    - remarks: |-
         If the identified risk is as a result of an assessment, the assessor's recommendation should also be copied into the POA\&M
 
         The assessor should leave the tool recommendation, adding a second recommendation of their own.
@@ -496,8 +574,8 @@ plan-of-action-and-milestones:
           actor-uuid: 49f73135-efab-4275-9a79-003656ad890a
       title: Assessor's Recommendation
       lifecycle: recommendation
-    - uuid: e9ee6fe2-856f-42c7-8c2e-ff6466d31010
-      required-assets:
+      uuid: 69344d05-937e-40f4-9c3f-9aa8702ad99d
+    - required-assets:
       - uuid: 7bd1a61e-4fda-4c52-a447-14072ef6e042
         remarks: |-
           Use one subject-reference field for each resource identified by its UUID in the subject-reference field.
@@ -526,102 +604,24 @@ plan-of-action-and-milestones:
         title: "\\[Example\\]Milestone 1"
         timing:
           within-date-range:
-            end: 2023-07-02T00:00:00Z
             start: 2023-07-01T00:00:00Z
+            end: 2023-07-02T00:00:00Z
         description: Optional description
       - uuid: 08c50f90-3b08-49fd-862d-32ec96e6bee5
         type: milestone
         title: "\\[Example\\]Milestone 2"
         timing:
           within-date-range:
-            end: 2023-07-07T00:00:00Z
             start: 2023-07-05T00:00:00Z
+            end: 2023-07-07T00:00:00Z
         description: Optional description
       title: CSP's Remediation Plan
       lifecycle: planned
+      uuid: e9ee6fe2-856f-42c7-8c2e-ff6466d31010
     mitigating-factors:
-    - uuid: 260d3c0a-fc2e-4627-9fb9-a003acdc4b14
-      description: Describe mitigating factor
-    - uuid: fd061039-e9b0-4b4c-a78b-ca024d411174
+    - description: Describe mitigating factor
+      uuid: 260d3c0a-fc2e-4627-9fb9-a003acdc4b14
+    - description: Describe why the cited implementation statement justifies lowering the risk.
+      uuid: fd061039-e9b0-4b4c-a78b-ca024d411174
       implementation-uuid: 46f4c261-e488-4fb5-84d6-6a61dd30c3d7
-      description: Describe why the cited implementation statement justifies lowering the risk.
-    status: open
-    title: Vulnerability Title
-    risk-log:
-      entries:
-      - start: 2020-07-02T00:00:00Z
-        related-responses:
-        - response-uuid: e9ee6fe2-856f-42c7-8c2e-ff6466d31010
-          related-tasks:
-          - task-uuid: a12dea1d-e4d1-4f09-aacf-1eaf203a3092
-        description: Provide description
-        uuid: 1b500d56-1936-41eb-8b60-a2984937ab89
-        title: Activity 1
-      - start: 2020-07-07T00:00:00Z
-        description: Provide description
-        uuid: 316fb3fe-927a-49a1-9a72-a58722862623
-        title: Activity 2
-      - start: 2020-07-07T00:00:00Z
-        description: Description of the result of the vendor check-in.
-        uuid: d084a039-bdd1-4ccd-a06a-53355e07fa2f
-        title: Vendor Check-in
-      - status-change: closed
-        start: 2020-07-07T00:00:00Z
-        description: |-
-          Describe what action(s) the CSP took to close the risk.
-
-          \[EXAMPLE\]Applied patch. Vulnerability no longer found in subsequent scan.
-        uuid: 0b09e341-cf3c-4de7-b728-751c6e88b653
-        title: Risk Closed
-    deadline: 2023-05-31T00:00:00Z
-    characterizations:
-    - facets:
-      - system: https://us-cert.cisa.gov
-        value: high
-        name: iavm-severity
-      - system: http://www.first.org/cvss/v3.1
-        value: network
-        name: attack-vector
-      - system: http://cve.mitre.org
-        value: CVE-2020-00000
-        name: cve-id
-      - system: http://csrc.nist.gov/ns/oscal/unknown
-        value: high
-        name: impact
-      origin:
-        actors:
-        - type: tool
-          props:
-          - value: VulID-001
-            ns: https://fedramp.gov/ns/oscal
-            name: vulnerability-id
-          - value: Plugin-ID
-            ns: https://fedramp.gov/ns/oscal
-            name: plugin-id
-          actor-uuid: 9d194268-a9d1-4c38-839f-9c4aa57bf71e
-    - facets:
-      - system: https://fedramp.gov
-        props:
-        - value: initial
-          name: state
-        value: high
-        name: risk
-      - system: https://fedramp.gov
-        props:
-        - value: adjusted
-          remarks: Explain why risk was adjusted.
-          name: state
-        value: moderate
-        name: risk
-      - system: http://csrc.nist.gov/ns/oscal/unknown
-        value: network
-        name: AV
-      origin:
-        actors:
-        - type: party
-          actor-uuid: 49f73135-efab-4275-9a79-003656ad890a
-    statement: |-
-      This is a statement about the identified risk as provided by the tool.
-
-      This field must be present, but may be blank (or state 'No Risk Statement' if no statement is provided by the tool.
-    description: This is a description of the vulnerability provided by the tool.
+  uuid: 6d072a8d-9657-446d-a487-4b6984782472
