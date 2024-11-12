@@ -1,674 +1,6 @@
 ---
 profile:
-  imports:
-  - include-controls:
-    - with-ids:
-      - ac-1
-      - ac-2
-      - ac-2.1
-      - ac-2.2
-      - ac-2.3
-      - ac-2.4
-      - ac-2.5
-      - ac-2.7
-      - ac-2.9
-      - ac-2.12
-      - ac-2.13
-      - ac-3
-      - ac-4
-      - ac-4.21
-      - ac-5
-      - ac-6
-      - ac-6.1
-      - ac-6.2
-      - ac-6.5
-      - ac-6.7
-      - ac-6.9
-      - ac-6.10
-      - ac-7
-      - ac-8
-      - ac-11
-      - ac-11.1
-      - ac-12
-      - ac-14
-      - ac-17
-      - ac-17.1
-      - ac-17.2
-      - ac-17.3
-      - ac-17.4
-      - ac-18
-      - ac-18.1
-      - ac-18.3
-      - ac-19
-      - ac-19.5
-      - ac-20
-      - ac-20.1
-      - ac-20.2
-      - ac-21
-      - ac-22
-      - at-1
-      - at-2
-      - at-2.2
-      - at-2.3
-      - at-3
-      - at-4
-      - au-1
-      - au-2
-      - au-3
-      - au-3.1
-      - au-4
-      - au-5
-      - au-6
-      - au-6.1
-      - au-6.3
-      - au-7
-      - au-7.1
-      - au-8
-      - au-9
-      - au-9.4
-      - au-11
-      - au-12
-      - ca-1
-      - ca-2
-      - ca-2.1
-      - ca-2.3
-      - ca-3
-      - ca-5
-      - ca-6
-      - ca-7
-      - ca-7.1
-      - ca-7.4
-      - ca-8
-      - ca-8.1
-      - ca-8.2
-      - ca-9
-      - cm-1
-      - cm-2
-      - cm-2.2
-      - cm-2.3
-      - cm-2.7
-      - cm-3
-      - cm-3.2
-      - cm-3.4
-      - cm-4
-      - cm-4.2
-      - cm-5
-      - cm-5.1
-      - cm-5.5
-      - cm-6
-      - cm-6.1
-      - cm-7
-      - cm-7.1
-      - cm-7.2
-      - cm-7.5
-      - cm-8
-      - cm-8.1
-      - cm-8.3
-      - cm-9
-      - cm-10
-      - cm-11
-      - cm-12
-      - cm-12.1
-      - cp-1
-      - cp-2
-      - cp-2.1
-      - cp-2.3
-      - cp-2.8
-      - cp-3
-      - cp-4
-      - cp-4.1
-      - cp-6
-      - cp-6.1
-      - cp-6.3
-      - cp-7
-      - cp-7.1
-      - cp-7.2
-      - cp-7.3
-      - cp-8
-      - cp-8.1
-      - cp-8.2
-      - cp-9
-      - cp-9.1
-      - cp-9.8
-      - cp-10
-      - cp-10.2
-      - ia-1
-      - ia-2
-      - ia-2.1
-      - ia-2.2
-      - ia-2.5
-      - ia-2.6
-      - ia-2.8
-      - ia-2.12
-      - ia-3
-      - ia-4
-      - ia-4.4
-      - ia-5
-      - ia-5.1
-      - ia-5.2
-      - ia-5.6
-      - ia-5.7
-      - ia-6
-      - ia-7
-      - ia-8
-      - ia-8.1
-      - ia-8.2
-      - ia-8.4
-      - ia-11
-      - ia-12
-      - ia-12.2
-      - ia-12.3
-      - ia-12.5
-      - ir-1
-      - ir-2
-      - ir-3
-      - ir-3.2
-      - ir-4
-      - ir-4.1
-      - ir-5
-      - ir-6
-      - ir-6.1
-      - ir-6.3
-      - ir-7
-      - ir-7.1
-      - ir-8
-      - ir-9
-      - ir-9.2
-      - ir-9.3
-      - ir-9.4
-      - ma-1
-      - ma-2
-      - ma-3
-      - ma-3.1
-      - ma-3.2
-      - ma-3.3
-      - ma-4
-      - ma-5
-      - ma-5.1
-      - ma-6
-      - mp-1
-      - mp-2
-      - mp-3
-      - mp-4
-      - mp-5
-      - mp-6
-      - mp-7
-      - pe-1
-      - pe-2
-      - pe-3
-      - pe-4
-      - pe-5
-      - pe-6
-      - pe-6.1
-      - pe-8
-      - pe-9
-      - pe-10
-      - pe-11
-      - pe-12
-      - pe-13
-      - pe-13.1
-      - pe-13.2
-      - pe-14
-      - pe-15
-      - pe-16
-      - pe-17
-      - pl-1
-      - pl-2
-      - pl-4
-      - pl-4.1
-      - pl-8
-      - pl-10
-      - pl-11
-      - ps-1
-      - ps-2
-      - ps-3
-      - ps-3.3
-      - ps-4
-      - ps-5
-      - ps-6
-      - ps-7
-      - ps-8
-      - ps-9
-      - ra-1
-      - ra-2
-      - ra-3
-      - ra-3.1
-      - ra-5
-      - ra-5.2
-      - ra-5.3
-      - ra-5.5
-      - ra-5.11
-      - ra-7
-      - ra-9
-      - sa-1
-      - sa-2
-      - sa-3
-      - sa-4
-      - sa-4.1
-      - sa-4.2
-      - sa-4.9
-      - sa-4.10
-      - sa-5
-      - sa-8
-      - sa-9
-      - sa-9.1
-      - sa-9.2
-      - sa-9.5
-      - sa-10
-      - sa-11
-      - sa-11.1
-      - sa-11.2
-      - sa-15
-      - sa-15.3
-      - sa-22
-      - sc-1
-      - sc-2
-      - sc-4
-      - sc-5
-      - sc-7
-      - sc-7.3
-      - sc-7.4
-      - sc-7.5
-      - sc-7.7
-      - sc-7.8
-      - sc-7.12
-      - sc-7.18
-      - sc-8
-      - sc-8.1
-      - sc-10
-      - sc-12
-      - sc-13
-      - sc-15
-      - sc-17
-      - sc-18
-      - sc-20
-      - sc-21
-      - sc-22
-      - sc-23
-      - sc-28
-      - sc-28.1
-      - sc-39
-      - sc-45
-      - sc-45.1
-      - si-1
-      - si-2
-      - si-2.2
-      - si-2.3
-      - si-3
-      - si-4
-      - si-4.1
-      - si-4.2
-      - si-4.4
-      - si-4.5
-      - si-4.16
-      - si-4.18
-      - si-4.23
-      - si-5
-      - si-6
-      - si-7
-      - si-7.1
-      - si-7.7
-      - si-8
-      - si-8.2
-      - si-10
-      - si-11
-      - si-12
-      - si-16
-      - sr-1
-      - sr-2
-      - sr-2.1
-      - sr-3
-      - sr-5
-      - sr-6
-      - sr-8
-      - sr-10
-      - sr-11
-      - sr-11.1
-      - sr-11.2
-      - sr-12
-    href: '#051a77c1-b61d-4995-8275-dacfe688d510'
-  metadata:
-    published: 2024-06-24T00:00:00Z
-    version: 5.1.1+fedramp-20240111-0
-    oscal-version: 1.1.1
-    last-modified: 2024-06-24T00:00:00Z
-    title: FedRAMP Rev 5 Moderate Baseline
-  merge:
-    as-is: true
   modify:
-    alters:
-    - adds:
-      - position: after
-        by-id: cp-2_obj.f
-        parts:
-        - props:
-          - ns: https://fedramp.gov/ns/oscal
-            name: response-point
-            value: You must fill in this response point.
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: EXAMINE
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: INTERVIEW
-          - name: label
-            class: sp800-53a
-            value: CP-02g.
-          parts:
-          - props:
-            - name: label
-              class: sp800-53a
-              value: "CP-02g.[01]"
-            prose: lessons learned from contingency plan testing or actual contingency activities are incorporated into contingency testing;
-            name: assessment-objective
-            links:
-            - href: '#cp-2_smt.g'
-              rel: assessment-for
-            id: cp-2_obj.g-1
-          - props:
-            - name: label
-              class: sp800-53a
-              value: "CP-02g.[02]"
-            prose: lessons learned from contingency plan training or actual contingency activities are incorporated into contingency testing and training;
-            name: assessment-objective
-            links:
-            - href: '#cp-2_smt.g'
-              rel: assessment-for
-            id: cp-2_obj.g-2
-          name: assessment-objective
-          links:
-          - href: '#cp-2_smt.g'
-            rel: assessment-for
-          id: cp-2_obj.g
-      control-id: cp-2
-      removes:
-      - by-id: cp-2_obj.g
-    - adds:
-      - by-id: ia-5_fr
-        parts:
-        - props:
-          - name: label
-            value: 'Requirement:'
-          ns: https://fedramp.gov/ns/oscal
-          prose: "Authenticators must be compliant with NIST SP 800-63-3 Digital Identity Guidelines IAL, AAL, FAL level 2. Link https://pages.nist.gov/800-63-3"
-          name: item
-          id: ia-5_fr_smt.1
-      control-id: ia-5
-      removes:
-      - by-id: ia-5_fr_smt.1
-    - adds:
-      - by-id: ia-11_fr
-        parts:
-        - props:
-          - name: label
-            value: 'Guidance:'
-          ns: https://fedramp.gov/ns/oscal
-          prose: |-
-            The fixed time period cannot exceed the limits set in SP 800-63. At this writing they are:
-
-            - AAL2 (moderate baseline)
-              - 12 hours or
-              - 30 minutes of inactivity
-          name: guidance
-          id: ia-11_fr_gdn.1
-      control-id: ia-11
-      removes:
-      - by-id: ia-11_fr_gdn.1
-    - adds:
-      - by-id: ma-5.1_smt
-        parts:
-        - parts:
-          - props:
-            - name: label
-              value: 'Requirement:'
-            ns: https://fedramp.gov/ns/oscal
-            prose: Only MA-5 (1) (a) (1) is required by FedRAMP Moderate Baseline
-            name: item
-            id: ma-5.1_fr_smt.1
-          ns: https://fedramp.gov/ns/oscal
-          name: item
-          title: MA-5 (1) Additional FedRAMP Requirements and Guidance
-          id: ma-5.1_fr
-      control-id: ma-5.1
-    - adds:
-      - position: after
-        by-id: pe-3_obj.d
-        parts:
-        - props:
-          - name: label
-            class: sp800-53a
-            value: PE-03e.
-          parts:
-          - props:
-            - name: label
-              class: sp800-53a
-              value: "PE-03e.[01]"
-            - ns: https://fedramp.gov/ns/oscal
-              name: response-point
-              value: You must fill in this response point.
-            - ns: https://fedramp.gov/ns/oscal
-              name: method
-              class: fedramp
-              value: TEST
-            prose: keys are secured;
-            name: assessment-objective
-            links:
-            - href: '#pe-3_smt.e'
-              rel: assessment-for
-            id: pe-3_obj.e-1
-          - props:
-            - name: label
-              class: sp800-53a
-              value: "PE-03e.[02]"
-            - ns: https://fedramp.gov/ns/oscal
-              name: response-point
-              value: You must fill in this response point.
-            - ns: https://fedramp.gov/ns/oscal
-              name: method
-              class: fedramp
-              value: TEST
-            prose: combinations are secured;
-            name: assessment-objective
-            links:
-            - href: '#pe-3_smt.e'
-              rel: assessment-for
-            id: pe-3_obj.e-2
-          - props:
-            - name: label
-              class: sp800-53a
-              value: "PE-03e.[03]"
-            - ns: https://fedramp.gov/ns/oscal
-              name: response-point
-              value: You must fill in this response point.
-            - ns: https://fedramp.gov/ns/oscal
-              name: method
-              class: fedramp
-              value: TEST
-            prose: other physical access devices are secured;
-            name: assessment-objective
-            links:
-            - href: '#pe-3_smt.e'
-              rel: assessment-for
-            id: pe-3_obj.e-3
-          name: assessment-objective
-          links:
-          - href: '#pe-3_smt.e'
-            rel: assessment-for
-          id: pe-3_obj.e
-      control-id: pe-3
-      removes:
-      - by-id: pe-3_obj.e
-    - adds:
-      - position: starting
-        by-id: ps-3_obj.b
-        parts:
-        - props:
-          - name: label
-            class: sp800-53a
-            value: "PS-03b.[01]"
-          - ns: https://fedramp.gov/ns/oscal
-            name: response-point
-            value: You must fill in this response point.
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: EXAMINE
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: INTERVIEW
-          prose: "individuals are rescreened in accordance with {{ insert: param, ps-03_odp.01 }};"
-          name: assessment-objective
-          links:
-          - href: '#ps-3_smt.b'
-            rel: assessment-for
-          id: ps-3_obj.b-1
-        - props:
-          - name: label
-            class: sp800-53a
-            value: "PS-03b.[02]"
-          - ns: https://fedramp.gov/ns/oscal
-            name: response-point
-            value: You must fill in this response point.
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: EXAMINE
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: INTERVIEW
-          prose: "where rescreening is so indicated, individuals are rescreened {{ insert: param, ps-03_odp.02 }}."
-          name: assessment-objective
-          links:
-          - href: '#ps-3_smt.b'
-            rel: assessment-for
-          id: ps-3_obj.b-2
-      control-id: ps-3
-      removes:
-      - by-id: ps-3_obj.b-1
-      - by-id: ps-3_obj.b-2
-    - adds:
-      - position: after
-        by-id: sa-8_obj-5
-        parts:
-        - props:
-          - ns: https://fedramp.gov/ns/oscal
-            name: response-point
-            value: You must fill in this response point.
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: EXAMINE
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: TEST
-          - name: label
-            class: sp800-53a
-            value: "SA-08[06]"
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the specification of the system and system components;"
-          name: assessment-objective
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          id: sa-8_obj-6
-        - props:
-          - ns: https://fedramp.gov/ns/oscal
-            name: response-point
-            value: You must fill in this response point.
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: EXAMINE
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: TEST
-          - name: label
-            class: sp800-53a
-            value: "SA-08[07]"
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the design of the system and system components;"
-          name: assessment-objective
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          id: sa-8_obj-7
-        - props:
-          - ns: https://fedramp.gov/ns/oscal
-            name: response-point
-            value: You must fill in this response point.
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: EXAMINE
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: TEST
-          - name: label
-            class: sp800-53a
-            value: "SA-08[08]"
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the development of the system and system components;"
-          name: assessment-objective
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          id: sa-8_obj-8
-        - props:
-          - ns: https://fedramp.gov/ns/oscal
-            name: response-point
-            value: You must fill in this response point.
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: EXAMINE
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: TEST
-          - name: label
-            class: sp800-53a
-            value: "SA-08[09]"
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the implementation of the system and system components;"
-          name: assessment-objective
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          id: sa-8_obj-9
-        - props:
-          - ns: https://fedramp.gov/ns/oscal
-            name: response-point
-            value: You must fill in this response point.
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: EXAMINE
-          - ns: https://fedramp.gov/ns/oscal
-            name: method
-            class: fedramp
-            value: TEST
-          - name: label
-            class: sp800-53a
-            value: "SA-08[10]"
-          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the modification of the system and system components."
-          name: assessment-objective
-          links:
-          - href: '#sa-8_smt'
-            rel: assessment-for
-          id: sa-8_obj-10
-      control-id: sa-8
-      removes:
-      - by-id: sa-8_obj-6
-      - by-id: sa-8_obj-7
-      - by-id: sa-8_obj-8
-      - by-id: sa-8_obj-9
-      - by-id: sa-8_obj-10
-    - control-id: sc-20
-      removes:
-      - by-id: sc-20_fr_smt.2
     set-parameters:
     - constraints:
       - description: at least every 3 years
@@ -1468,14 +800,682 @@ profile:
     - constraints:
       - description: all
       param-id: sr-11.02_odp
+    alters:
+    - adds:
+      - position: after
+        parts:
+        - parts:
+          - props:
+            - value: "CP-02g.[01]"
+              class: sp800-53a
+              name: label
+            id: cp-2_obj.g-1
+            links:
+            - rel: assessment-for
+              href: "#cp-2_smt.g"
+            name: assessment-objective
+            prose: lessons learned from contingency plan testing or actual contingency activities are incorporated into contingency testing;
+          - props:
+            - value: "CP-02g.[02]"
+              class: sp800-53a
+              name: label
+            id: cp-2_obj.g-2
+            links:
+            - rel: assessment-for
+              href: "#cp-2_smt.g"
+            name: assessment-objective
+            prose: lessons learned from contingency plan training or actual contingency activities are incorporated into contingency testing and training;
+          props:
+          - ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+            name: response-point
+          - ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+            class: fedramp
+            name: method
+          - ns: https://fedramp.gov/ns/oscal
+            value: INTERVIEW
+            class: fedramp
+            name: method
+          - value: CP-02g.
+            class: sp800-53a
+            name: label
+          id: cp-2_obj.g
+          links:
+          - rel: assessment-for
+            href: "#cp-2_smt.g"
+          name: assessment-objective
+        by-id: cp-2_obj.f
+      removes:
+      - by-id: cp-2_obj.g
+      control-id: cp-2
+    - adds:
+      - parts:
+        - ns: https://fedramp.gov/ns/oscal
+          props:
+          - value: "Requirement:"
+            name: label
+          id: ia-5_fr_smt.1
+          name: item
+          prose: "Authenticators must be compliant with NIST SP 800-63-3 Digital Identity Guidelines IAL, AAL, FAL level 2. Link https://pages.nist.gov/800-63-3"
+        by-id: ia-5_fr
+      removes:
+      - by-id: ia-5_fr_smt.1
+      control-id: ia-5
+    - adds:
+      - parts:
+        - ns: https://fedramp.gov/ns/oscal
+          props:
+          - value: "Guidance:"
+            name: label
+          id: ia-11_fr_gdn.1
+          name: guidance
+          prose: |-
+            The fixed time period cannot exceed the limits set in SP 800-63. At this writing they are:
+
+            - AAL2 (moderate baseline)
+              - 12 hours or
+              - 30 minutes of inactivity
+        by-id: ia-11_fr
+      removes:
+      - by-id: ia-11_fr_gdn.1
+      control-id: ia-11
+    - adds:
+      - parts:
+        - ns: https://fedramp.gov/ns/oscal
+          parts:
+          - ns: https://fedramp.gov/ns/oscal
+            props:
+            - value: "Requirement:"
+              name: label
+            id: ma-5.1_fr_smt.1
+            name: item
+            prose: Only MA-5 (1) (a) (1) is required by FedRAMP Moderate Baseline
+          id: ma-5.1_fr
+          title: MA-5 (1) Additional FedRAMP Requirements and Guidance
+          name: item
+        by-id: ma-5.1_smt
+      control-id: ma-5.1
+    - adds:
+      - position: after
+        parts:
+        - parts:
+          - props:
+            - value: "PE-03e.[01]"
+              class: sp800-53a
+              name: label
+            - ns: https://fedramp.gov/ns/oscal
+              value: You must fill in this response point.
+              name: response-point
+            - ns: https://fedramp.gov/ns/oscal
+              value: TEST
+              class: fedramp
+              name: method
+            id: pe-3_obj.e-1
+            links:
+            - rel: assessment-for
+              href: "#pe-3_smt.e"
+            name: assessment-objective
+            prose: keys are secured;
+          - props:
+            - value: "PE-03e.[02]"
+              class: sp800-53a
+              name: label
+            - ns: https://fedramp.gov/ns/oscal
+              value: You must fill in this response point.
+              name: response-point
+            - ns: https://fedramp.gov/ns/oscal
+              value: TEST
+              class: fedramp
+              name: method
+            id: pe-3_obj.e-2
+            links:
+            - rel: assessment-for
+              href: "#pe-3_smt.e"
+            name: assessment-objective
+            prose: combinations are secured;
+          - props:
+            - value: "PE-03e.[03]"
+              class: sp800-53a
+              name: label
+            - ns: https://fedramp.gov/ns/oscal
+              value: You must fill in this response point.
+              name: response-point
+            - ns: https://fedramp.gov/ns/oscal
+              value: TEST
+              class: fedramp
+              name: method
+            id: pe-3_obj.e-3
+            links:
+            - rel: assessment-for
+              href: "#pe-3_smt.e"
+            name: assessment-objective
+            prose: other physical access devices are secured;
+          props:
+          - value: PE-03e.
+            class: sp800-53a
+            name: label
+          id: pe-3_obj.e
+          links:
+          - rel: assessment-for
+            href: "#pe-3_smt.e"
+          name: assessment-objective
+        by-id: pe-3_obj.d
+      removes:
+      - by-id: pe-3_obj.e
+      control-id: pe-3
+    - adds:
+      - position: starting
+        parts:
+        - props:
+          - value: "PS-03b.[01]"
+            class: sp800-53a
+            name: label
+          - ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+            name: response-point
+          - ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+            class: fedramp
+            name: method
+          - ns: https://fedramp.gov/ns/oscal
+            value: INTERVIEW
+            class: fedramp
+            name: method
+          id: ps-3_obj.b-1
+          links:
+          - rel: assessment-for
+            href: "#ps-3_smt.b"
+          name: assessment-objective
+          prose: "individuals are rescreened in accordance with {{ insert: param, ps-03_odp.01 }};"
+        - props:
+          - value: "PS-03b.[02]"
+            class: sp800-53a
+            name: label
+          - ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+            name: response-point
+          - ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+            class: fedramp
+            name: method
+          - ns: https://fedramp.gov/ns/oscal
+            value: INTERVIEW
+            class: fedramp
+            name: method
+          id: ps-3_obj.b-2
+          links:
+          - rel: assessment-for
+            href: "#ps-3_smt.b"
+          name: assessment-objective
+          prose: "where rescreening is so indicated, individuals are rescreened {{ insert: param, ps-03_odp.02 }}."
+        by-id: ps-3_obj.b
+      removes:
+      - by-id: ps-3_obj.b-1
+      - by-id: ps-3_obj.b-2
+      control-id: ps-3
+    - adds:
+      - position: after
+        parts:
+        - props:
+          - ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+            name: response-point
+          - ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+            class: fedramp
+            name: method
+          - ns: https://fedramp.gov/ns/oscal
+            value: TEST
+            class: fedramp
+            name: method
+          - value: "SA-08[06]"
+            class: sp800-53a
+            name: label
+          id: sa-8_obj-6
+          links:
+          - rel: assessment-for
+            href: "#sa-8_smt"
+          name: assessment-objective
+          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the specification of the system and system components;"
+        - props:
+          - ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+            name: response-point
+          - ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+            class: fedramp
+            name: method
+          - ns: https://fedramp.gov/ns/oscal
+            value: TEST
+            class: fedramp
+            name: method
+          - value: "SA-08[07]"
+            class: sp800-53a
+            name: label
+          id: sa-8_obj-7
+          links:
+          - rel: assessment-for
+            href: "#sa-8_smt"
+          name: assessment-objective
+          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the design of the system and system components;"
+        - props:
+          - ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+            name: response-point
+          - ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+            class: fedramp
+            name: method
+          - ns: https://fedramp.gov/ns/oscal
+            value: TEST
+            class: fedramp
+            name: method
+          - value: "SA-08[08]"
+            class: sp800-53a
+            name: label
+          id: sa-8_obj-8
+          links:
+          - rel: assessment-for
+            href: "#sa-8_smt"
+          name: assessment-objective
+          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the development of the system and system components;"
+        - props:
+          - ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+            name: response-point
+          - ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+            class: fedramp
+            name: method
+          - ns: https://fedramp.gov/ns/oscal
+            value: TEST
+            class: fedramp
+            name: method
+          - value: "SA-08[09]"
+            class: sp800-53a
+            name: label
+          id: sa-8_obj-9
+          links:
+          - rel: assessment-for
+            href: "#sa-8_smt"
+          name: assessment-objective
+          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the implementation of the system and system components;"
+        - props:
+          - ns: https://fedramp.gov/ns/oscal
+            value: You must fill in this response point.
+            name: response-point
+          - ns: https://fedramp.gov/ns/oscal
+            value: EXAMINE
+            class: fedramp
+            name: method
+          - ns: https://fedramp.gov/ns/oscal
+            value: TEST
+            class: fedramp
+            name: method
+          - value: "SA-08[10]"
+            class: sp800-53a
+            name: label
+          id: sa-8_obj-10
+          links:
+          - rel: assessment-for
+            href: "#sa-8_smt"
+          name: assessment-objective
+          prose: "{{ insert: param, sa-08_odp.02 }} are applied in the modification of the system and system components."
+        by-id: sa-8_obj-5
+      removes:
+      - by-id: sa-8_obj-6
+      - by-id: sa-8_obj-7
+      - by-id: sa-8_obj-8
+      - by-id: sa-8_obj-9
+      - by-id: sa-8_obj-10
+      control-id: sa-8
+    - removes:
+      - by-id: sc-20_fr_smt.2
+      control-id: sc-20
+  merge:
+    as-is: true
+  metadata:
+    last-modified: 2024-06-24T00:00:00Z
+    oscal-version: 1.1.1
+    version: 5.1.1+fedramp-20240111-0
+    published: 2024-06-24T00:00:00Z
+    title: FedRAMP Rev 5 Moderate Baseline
+  imports:
+  - include-controls:
+    - with-ids:
+      - ac-1
+      - ac-2
+      - ac-2.1
+      - ac-2.2
+      - ac-2.3
+      - ac-2.4
+      - ac-2.5
+      - ac-2.7
+      - ac-2.9
+      - ac-2.12
+      - ac-2.13
+      - ac-3
+      - ac-4
+      - ac-4.21
+      - ac-5
+      - ac-6
+      - ac-6.1
+      - ac-6.2
+      - ac-6.5
+      - ac-6.7
+      - ac-6.9
+      - ac-6.10
+      - ac-7
+      - ac-8
+      - ac-11
+      - ac-11.1
+      - ac-12
+      - ac-14
+      - ac-17
+      - ac-17.1
+      - ac-17.2
+      - ac-17.3
+      - ac-17.4
+      - ac-18
+      - ac-18.1
+      - ac-18.3
+      - ac-19
+      - ac-19.5
+      - ac-20
+      - ac-20.1
+      - ac-20.2
+      - ac-21
+      - ac-22
+      - at-1
+      - at-2
+      - at-2.2
+      - at-2.3
+      - at-3
+      - at-4
+      - au-1
+      - au-2
+      - au-3
+      - au-3.1
+      - au-4
+      - au-5
+      - au-6
+      - au-6.1
+      - au-6.3
+      - au-7
+      - au-7.1
+      - au-8
+      - au-9
+      - au-9.4
+      - au-11
+      - au-12
+      - ca-1
+      - ca-2
+      - ca-2.1
+      - ca-2.3
+      - ca-3
+      - ca-5
+      - ca-6
+      - ca-7
+      - ca-7.1
+      - ca-7.4
+      - ca-8
+      - ca-8.1
+      - ca-8.2
+      - ca-9
+      - cm-1
+      - cm-2
+      - cm-2.2
+      - cm-2.3
+      - cm-2.7
+      - cm-3
+      - cm-3.2
+      - cm-3.4
+      - cm-4
+      - cm-4.2
+      - cm-5
+      - cm-5.1
+      - cm-5.5
+      - cm-6
+      - cm-6.1
+      - cm-7
+      - cm-7.1
+      - cm-7.2
+      - cm-7.5
+      - cm-8
+      - cm-8.1
+      - cm-8.3
+      - cm-9
+      - cm-10
+      - cm-11
+      - cm-12
+      - cm-12.1
+      - cp-1
+      - cp-2
+      - cp-2.1
+      - cp-2.3
+      - cp-2.8
+      - cp-3
+      - cp-4
+      - cp-4.1
+      - cp-6
+      - cp-6.1
+      - cp-6.3
+      - cp-7
+      - cp-7.1
+      - cp-7.2
+      - cp-7.3
+      - cp-8
+      - cp-8.1
+      - cp-8.2
+      - cp-9
+      - cp-9.1
+      - cp-9.8
+      - cp-10
+      - cp-10.2
+      - ia-1
+      - ia-2
+      - ia-2.1
+      - ia-2.2
+      - ia-2.5
+      - ia-2.6
+      - ia-2.8
+      - ia-2.12
+      - ia-3
+      - ia-4
+      - ia-4.4
+      - ia-5
+      - ia-5.1
+      - ia-5.2
+      - ia-5.6
+      - ia-5.7
+      - ia-6
+      - ia-7
+      - ia-8
+      - ia-8.1
+      - ia-8.2
+      - ia-8.4
+      - ia-11
+      - ia-12
+      - ia-12.2
+      - ia-12.3
+      - ia-12.5
+      - ir-1
+      - ir-2
+      - ir-3
+      - ir-3.2
+      - ir-4
+      - ir-4.1
+      - ir-5
+      - ir-6
+      - ir-6.1
+      - ir-6.3
+      - ir-7
+      - ir-7.1
+      - ir-8
+      - ir-9
+      - ir-9.2
+      - ir-9.3
+      - ir-9.4
+      - ma-1
+      - ma-2
+      - ma-3
+      - ma-3.1
+      - ma-3.2
+      - ma-3.3
+      - ma-4
+      - ma-5
+      - ma-5.1
+      - ma-6
+      - mp-1
+      - mp-2
+      - mp-3
+      - mp-4
+      - mp-5
+      - mp-6
+      - mp-7
+      - pe-1
+      - pe-2
+      - pe-3
+      - pe-4
+      - pe-5
+      - pe-6
+      - pe-6.1
+      - pe-8
+      - pe-9
+      - pe-10
+      - pe-11
+      - pe-12
+      - pe-13
+      - pe-13.1
+      - pe-13.2
+      - pe-14
+      - pe-15
+      - pe-16
+      - pe-17
+      - pl-1
+      - pl-2
+      - pl-4
+      - pl-4.1
+      - pl-8
+      - pl-10
+      - pl-11
+      - ps-1
+      - ps-2
+      - ps-3
+      - ps-3.3
+      - ps-4
+      - ps-5
+      - ps-6
+      - ps-7
+      - ps-8
+      - ps-9
+      - ra-1
+      - ra-2
+      - ra-3
+      - ra-3.1
+      - ra-5
+      - ra-5.2
+      - ra-5.3
+      - ra-5.5
+      - ra-5.11
+      - ra-7
+      - ra-9
+      - sa-1
+      - sa-2
+      - sa-3
+      - sa-4
+      - sa-4.1
+      - sa-4.2
+      - sa-4.9
+      - sa-4.10
+      - sa-5
+      - sa-8
+      - sa-9
+      - sa-9.1
+      - sa-9.2
+      - sa-9.5
+      - sa-10
+      - sa-11
+      - sa-11.1
+      - sa-11.2
+      - sa-15
+      - sa-15.3
+      - sa-22
+      - sc-1
+      - sc-2
+      - sc-4
+      - sc-5
+      - sc-7
+      - sc-7.3
+      - sc-7.4
+      - sc-7.5
+      - sc-7.7
+      - sc-7.8
+      - sc-7.12
+      - sc-7.18
+      - sc-8
+      - sc-8.1
+      - sc-10
+      - sc-12
+      - sc-13
+      - sc-15
+      - sc-17
+      - sc-18
+      - sc-20
+      - sc-21
+      - sc-22
+      - sc-23
+      - sc-28
+      - sc-28.1
+      - sc-39
+      - sc-45
+      - sc-45.1
+      - si-1
+      - si-2
+      - si-2.2
+      - si-2.3
+      - si-3
+      - si-4
+      - si-4.1
+      - si-4.2
+      - si-4.4
+      - si-4.5
+      - si-4.16
+      - si-4.18
+      - si-4.23
+      - si-5
+      - si-6
+      - si-7
+      - si-7.1
+      - si-7.7
+      - si-8
+      - si-8.2
+      - si-10
+      - si-11
+      - si-12
+      - si-16
+      - sr-1
+      - sr-2
+      - sr-2.1
+      - sr-3
+      - sr-5
+      - sr-6
+      - sr-8
+      - sr-10
+      - sr-11
+      - sr-11.1
+      - sr-11.2
+      - sr-12
+    href: "#051a77c1-b61d-4995-8275-dacfe688d510"
+  uuid: b3d53132-0160-417a-ae1b-c9da8385d698
   back-matter:
     resources:
     - props:
-      - name: version
-        value: 5.1.1
-      title: FedRAMP Modified NIST Special Publication (SP) 800-53 revision 5
+      - value: 5.1.1
+        name: version
+      uuid: 051a77c1-b61d-4995-8275-dacfe688d510
       rlinks:
       - media-type: application/oscal+xml
         href: FedRAMP_rev5_catalog_tailoring_profile.xml
-      uuid: 051a77c1-b61d-4995-8275-dacfe688d510
-  uuid: b3d53132-0160-417a-ae1b-c9da8385d698
+      title: FedRAMP Modified NIST Special Publication (SP) 800-53 revision 5
